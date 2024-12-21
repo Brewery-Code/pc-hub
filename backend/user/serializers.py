@@ -8,7 +8,7 @@ class CustomUserRegistrationSerializer(serializers.ModelSerializer):
     """Серіалізатор для створення нового користувача
 
     Поля:
-        - username: Псевдонім користувача.
+        - name: Ім'я користувача.
         - email: Електронна адреса користувача.
         - password: Пароль користувача.
 
@@ -16,12 +16,12 @@ class CustomUserRegistrationSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CustomUser
-        fields = ["username", "email", "password"]
+        fields = ["name", "email", "password"]
 
     def create(self, validated_data):
         user = CustomUser.objects.create_user(
             email=validated_data["email"],
-            username=validated_data["username"],
+            name=validated_data["name"],
             password=validated_data["password"],
         )
 
@@ -33,25 +33,14 @@ class CustomUserRegistrationSerializer(serializers.ModelSerializer):
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
-    """Серіалізатор для обробки даних користувача.
-
-    Поля:
-        - username: Псевдонім користувача.
-        - email: Електронна адреса користувача (тільки для читання).
-        - first_name: Ім'я користувача.
-        - last_name: Прізвище користувача.
-        - phone: Телефон користувача.
-        - address: Адреса користувача.
-        - photo: Фото профілю користувача.
-    """
+    """Серіалізатор для обробки даних користувача."""
 
     class Meta:
         model = CustomUser
         fields = [
-            "username",
             "email",
-            "first_name",
-            "last_name",
+            "name",
+            "surname",
             "phone",
             "address",
             "photo",

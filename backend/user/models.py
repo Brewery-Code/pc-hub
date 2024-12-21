@@ -57,7 +57,7 @@ def validate_image(image):
 class CustomUserManager(BaseUserManager):
     """Користувацький менеджер для створення користувачів"""
 
-    def create_user(self, email, username, password=None, **extra_fields):
+    def create_user(self, email, name, password=None, **extra_fields):
         """Створює користувача та повертає його дані
 
         Args:
@@ -75,12 +75,12 @@ class CustomUserManager(BaseUserManager):
             raise ValueError("The email field must be set")
 
         email = self.normalize_email(email)
-        user = self.model(email=email, username=username, **extra_fields)
+        user = self.model(email=email, name=name, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password=None, **extra_fields):
+    def create_superuser(self, email, name, password=None, **extra_fields):
         """Створює суперкористувача і повертає його дані
 
         Args:
@@ -93,7 +93,7 @@ class CustomUserManager(BaseUserManager):
         """
         extra_fields.setdefault("is_staff", True)
         extra_fields.setdefault("is_superuser", True)
-        return self.create_user(email, username, password, **extra_fields)
+        return self.create_user(email, name, password, **extra_fields)
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
@@ -108,8 +108,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     Поля:
         email: Електронна адреса користувача (унікальна).
         username: Псевдонім користувача (унікальний).
-        first_name: Ім'я користувача.
-        last_name: Прізвище користувача.
+        name: Ім'я користувача.
+        surname: Прізвище користувача.
         phone: Номер телефону користувача (необов'язково).
         address: Адреса користувача (необов'язково).
         photo: Фото профілю користувача (необов'язково).
@@ -121,10 +121,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     """
 
     email = models.EmailField(unique=True, verbose_name="Електронна адреса")
-    username = models.CharField(max_length=30, unique=True, verbose_name="Псевдонім")
-    first_name = models.CharField(max_length=30, blank=True, verbose_name="Ім'я")
-    last_name = models.CharField(max_length=30, blank=True, verbose_name="Прізвище")
-    phone = PhoneNumberField(blank=True, verbose_name="Номер телефону")
+    name = models.CharField(max_length=30, verbose_name="Ім'я")
+    surname = models.CharField(max_length=30, blank=True, verbose_name="Прізвище")
+    phone = PhoneNumberField(
+        unique=True, null=True, blank=True, verbose_name="Номер телефону"
+    )
     address = models.TextField(
         max_length=200, blank=True, verbose_name="Адреса доставки"
     )
@@ -143,10 +144,10 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     objects = CustomUserManager()
 
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["username"]
+    REQUIRED_FIELDS = ["name"]
 
     def __str__(self) -> str:
-        return f"{self.first_name} {self.last_name}".strip()
+        return f"{self.name} {self.surname}".strip()
 
     class Meta:
         verbose_name = "Користувач"
@@ -155,5 +156,5 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         db_table = "User"
         indexes = [
             models.Index(fields=["email"]),
-            models.Index(fields=["username"]),
+            models.Index(fields=["name"]),
         ]

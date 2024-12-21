@@ -36,7 +36,7 @@ class RegisterCustomUserView(APIView):
                     "access": access_token,
                     "refresh": refresh_token,
                     "data": {
-                        "username": user.username,
+                        "name": user.name,
                         "email": user.email,
                     },
                 },
@@ -63,10 +63,9 @@ class CustomUserView(APIView):
 
         return Response(
             {
-                "username": user.username,
                 "email": user.email,
-                "first_name": user.first_name,
-                "last_name": user.last_name,
+                "name": user.name,
+                "surname": user.surname,
                 "phone": user.phone,
                 "address": user.address,
                 "photo": user.photo.url if user.photo else None,
@@ -87,7 +86,7 @@ class CustomUserView(APIView):
             updated_user = serializer.save()
 
             updated_data = {
-                field: getattr(updated_user, field)
+                field: str(getattr(updated_user, field))
                 for field in serializer.validated_data.keys()
             }
 
