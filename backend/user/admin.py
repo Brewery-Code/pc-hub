@@ -3,9 +3,9 @@ from .models import CustomUser
 
 
 class CustomUserAdmin(admin.ModelAdmin):
-    list_display = ("username", "email", "last_login", "is_active", "is_staff")
-    list_display_links = ("username", "email", "is_active")
-    search_fields = ("username", "first_name", "last_name", "email")
+    list_display = ("name", "last_login", "email", "is_active", "is_staff")
+    list_display_links = ("name", "email", "is_active")
+    search_fields = ("name", "surname", "email")
     list_filter = ("is_active", "is_staff")
 
 
