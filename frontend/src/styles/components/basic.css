@@ -16,7 +16,7 @@ body {
   background-color: var(--background-color-primary);
 }
 
-[class*="__container"] {
+[class$="__container"] {
   max-width: 1564px;
   width: 100%;
   margin: 0 auto;

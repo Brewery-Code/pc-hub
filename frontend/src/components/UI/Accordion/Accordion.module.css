@@ -1,0 +1,36 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion__title {
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.accordion__title::after {
+  content: '12';
+  position: absolute;
+  right: 0;
+  width: 12px;
+  height: 6px;
+  background-image: url('../../../assets/icons/header-arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.accordion__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion__item {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 133%;
+}

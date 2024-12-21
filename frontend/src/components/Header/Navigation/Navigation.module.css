@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 8px 0;
   font-weight: 500;
   font-size: 10px;
@@ -15,7 +16,9 @@
 .menu {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
+  padding-right: 8px;
 }
 
 .burger-menu {
@@ -24,9 +27,10 @@
   align-items: center;
   height: 24px;
   width: 24px;
+  cursor: pointer;
 }
 
-.burger-menu span {
+.burger-menu .burger-menu_icon {
   position: relative;
   height: 1px;
   width: 20px;
@@ -34,8 +38,8 @@
   animation: closeBurgerMenu 0.5s forwards;
 }
 
-.burger-menu span::before,
-.burger-menu span::after {
+.burger-menu .burger-menu_icon::before,
+.burger-menu .burger-menu_icon::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -43,29 +47,31 @@
   background-color: var(--font-color-white);
 }
 
-.burger-menu span::before {
+.burger-menu .burger-menu_icon::before {
   top: -8px;
   animation: closeBurgerMenuBefore 0.5s forwards;
 }
 
-.burger-menu span::after {
+.burger-menu .burger-menu_icon::after {
   bottom: -8px;
   animation: closeBurgerMenuAfter 0.5s forwards;
 }
 
-.burger-menu_active span {
+.burger-menu_active .burger-menu_icon {
   animation: openBurgerMenu 0.5s forwards;
 }
 
-.burger-menu_active span::before {
+.burger-menu_active .burger-menu_icon::before {
   animation: openBurgerMenuBefore 0.5s forwards;
 }
 
-.burger-menu_active span::after {
+.burger-menu_active .burger-menu_icon::after {
   animation: openBurgerMenuAfter 0.5s forwards;
 }
 
-.menu__item {}
+.menu__item {
+  cursor: pointer;
+}
 
 .settings {
   display: flex;
@@ -81,6 +87,70 @@
 
 .language_inactive {
   opacity: 50%;
+}
+
+.settings__profile img {
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
+  display: none;
+}
+
+.logo img {
+  width: 124;
+  height: 32px;
+}
+
+.phone {
+  display: none;
+}
+
+.phone img {
+  width: 26px;
+  height: 26px;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    gap: 12px;
+  }
+
+  .settings {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .menu {
+    padding: 0;
+  }
+
+  .burger-menu {
+    width: 21px;
+    height: 21px;
+  }
+
+  .menu__item {
+    display: none;
+  }
+
+  .settings {
+    display: none;
+  }
+
+  .logo {
+    display: inherit;
+  }
+
+  .phone {
+    display: inherit;
+  }
+
+  .navigation__body {
+    padding: 16px 0 8px;
+  }
 }
 
 @keyframes openBurgerMenu {

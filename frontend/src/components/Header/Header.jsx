@@ -4,11 +4,11 @@ import styles from './Header.module.css';
 
 export default function () {
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <div className={styles.header__body}>
         <Navigation></Navigation>
         <Utility></Utility>
       </div>
-    </div>
+    </header>
   );
 }
