@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "drf_yasg",
     "rest_framework.authtoken",
     "user.apps.UserConfig",
+    "product.apps.ProductConfig",
 ]
 
 MIDDLEWARE = [
