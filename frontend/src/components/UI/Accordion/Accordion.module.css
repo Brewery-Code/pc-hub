@@ -11,6 +11,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 133%;
+  cursor: pointer;
 }
 
 .title__arrow {
@@ -38,7 +39,34 @@
 }
 
 .accordion__item {
+  position: relative;
   font-size: 12px;
   font-weight: 500;
   line-height: 133%;
+  cursor: pointer;
 }
+
+.accordion__item:hover a {
+  transform: scale(1.2);
+}
+
+.accordion__item a {
+  display: inline-block;
+  color: var(--font-color-grey);
+}
+
+/* .accordion__item::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.accordion__item:hover::before {
+  width: 100%;
+} */

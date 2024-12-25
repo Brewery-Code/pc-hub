@@ -1,7 +1,8 @@
 import { useState } from 'react';
-// import profileImg from '../../../assets/icons/header-profile.svg';
+import { ReactComponent as ProfileIcon } from '../../../assets/icons/header-profile.svg';
 // import logoImg from '../../../assets/icons/logo-white.svg';
-// import phoneImg from '../../../assets/icons/header-phone.svg';
+import { ReactComponent as PhoneIcon } from '../../../assets/icons/header-phone.svg';
+import { ReactComponent as LogoIcon } from '../../../assets/icons/logo.svg'
 import styles from './Navigation.module.css';
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
@@ -19,8 +20,8 @@ export default function Navigation() {
               onClick={toggleBurgerMenu}
             >
               <span className={styles['burger-menu_icon']}></span>
-              <BurgerMenu></BurgerMenu>
             </li>
+            <BurgerMenu isBurgerMenuOpen={isBurgerMenuOpen} toggleBurgerMenu={toggleBurgerMenu} />
             <li className={styles.menu__item}>Акції</li>
             <li className={styles.menu__item}>Кредит</li>
             <li className={styles.menu__item}>Оплата і доставка</li>
@@ -35,14 +36,14 @@ export default function Navigation() {
               <div className={`${styles.language_en} ${styles.language_inactive}`}>EN</div>
             </div>
             <div className={styles.settings__profile}>
-              {/* <img src={profileImg} alt="profile" /> */}
+              <ProfileIcon />
             </div>
           </div>
           <div className={styles.logo}>
-            {/* <img src={logoImg} alt="logo" /> */}
+            <LogoIcon fill='white' />
           </div>
           <div className={styles.phone}>
-            {/* <img src={phoneImg} alt="phone" /> */}
+            <PhoneIcon />
           </div>
         </div>
       </div>

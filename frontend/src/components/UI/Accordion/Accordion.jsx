@@ -12,7 +12,7 @@ export default function Accordion({ title, list, whichAccordionIsActive, toggleA
       </div>
       <ul className={whichAccordionIsActive === title ? `${styles.accordion__list} ${styles.accordion__list_active}` : styles.accordion__list}>
         {list?.map(item => (
-          <li key={item} className={styles.accordion__item}>{item}</li>
+          <li key={item} className={styles.accordion__item}><a href="">{item}</a></li>
         ))}
       </ul>
     </div>
