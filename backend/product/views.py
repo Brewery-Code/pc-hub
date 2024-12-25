@@ -1,7 +1,8 @@
+from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import Category
-from .serializers import CategorySerializer
+from .models import *
+from .serializers import *
 
 
 class CategoryView(APIView):
