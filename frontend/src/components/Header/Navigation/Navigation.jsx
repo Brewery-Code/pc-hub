@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import profileImg from '../../../assets/icons/header-profile.svg';
-import logoImg from '../../../assets/icons/logo-white.svg';
-import phoneImg from '../../../assets/icons/header-phone.svg';
+// import profileImg from '../../../assets/icons/header-profile.svg';
+// import logoImg from '../../../assets/icons/logo-white.svg';
+// import phoneImg from '../../../assets/icons/header-phone.svg';
 import styles from './Navigation.module.css';
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
@@ -35,14 +35,14 @@ export default function Navigation() {
               <div className={`${styles.language_en} ${styles.language_inactive}`}>EN</div>
             </div>
             <div className={styles.settings__profile}>
-              <img src={profileImg} alt="profile" />
+              {/* <img src={profileImg} alt="profile" /> */}
             </div>
           </div>
           <div className={styles.logo}>
-            <img src={logoImg} alt="logo" />
+            {/* <img src={logoImg} alt="logo" /> */}
           </div>
           <div className={styles.phone}>
-            <img src={phoneImg} alt="phone" />
+            {/* <img src={phoneImg} alt="phone" /> */}
           </div>
         </div>
       </div>
