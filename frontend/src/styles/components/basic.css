@@ -13,6 +13,7 @@ body {
 
 .main {
   flex: 1 1 auto;
+  margin-top: 138px;
   background-color: var(--background-color-primary);
 }
 

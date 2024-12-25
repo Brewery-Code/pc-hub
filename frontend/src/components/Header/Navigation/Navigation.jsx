@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { ReactComponent as ProfileIcon } from '../../../assets/icons/header-profile.svg';
-// import logoImg from '../../../assets/icons/logo-white.svg';
 import { ReactComponent as PhoneIcon } from '../../../assets/icons/header-phone.svg';
 import { ReactComponent as LogoIcon } from '../../../assets/icons/logo.svg'
 import styles from './Navigation.module.css';
