@@ -15,12 +15,14 @@ class CategorySerializer(serializers.ModelSerializer):
     """
 
     children = serializers.SerializerMethodField()
+    name = serializers.CharField()
 
     class Meta:
         model = Category
         fields = ["id", "name", "children"]
 
     def get_children(self, obj):
+        """Метод для отримання підкатегорій поточної категорії."""
         children = Category.objects.filter(parent=obj)
         if children.exists():
             return CategorySerializer(children, many=True).data
@@ -55,18 +57,16 @@ class ProductSerializer(serializers.ModelSerializer):
 
     attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
     category = serializers.SerializerMethodField()
+    name = serializers.CharField()
+    description = serializers.CharField()
 
     def get_category(self, obj):
-        """Отримує ієрархію категорій для продукту.
-
-        Вбудовує всі батьківські категорії до списку від батьківської до поточної категорії.
-        """
         category = obj.category
         hierarchy = []
         while category:
             hierarchy.insert(0, category.name)
             category = category.parent
-        return hierarchy or [category.name]
+        return hierarchy
 
     class Meta:
         model = Product

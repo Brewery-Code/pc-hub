@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import *
 from .serializers import *
+from django.utils import translation
 
 
 class CategoryView(APIView):
@@ -15,6 +16,9 @@ class CategoryView(APIView):
     """
 
     def get(self, request, parent_id=None):
+        language = request.headers.get("Accept-Language", "en")
+        translation.activate(language)
+
         if parent_id:
             category = Category.objects.get(id=parent_id)
             children = Category.objects.filter(parent_id=parent_id)
@@ -43,6 +47,11 @@ class ProductListView(ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
+    def get_queryset(self):
+        language = self.request.headers.get("Accept-Language", "en")
+        translation.activate(language)
+        return super().get_queryset()
+
 
 class ProductDetailView(RetrieveAPIView):
     """API View для отримання детальної інформації про продукт.
@@ -57,3 +66,8 @@ class ProductDetailView(RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = "id"
+
+    def get_queryset(self):
+        language = self.request.headers.get("Accept-Language", "en")
+        translation.activate(language)
+        return super().get_queryset()
