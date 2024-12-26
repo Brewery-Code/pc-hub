@@ -1,8 +1,10 @@
 from django.contrib import admin
+from modeltranslation.admin import TranslationAdmin
 from .models import *
+from .translation import *
 
 
-class CategoryAdmin(admin.ModelAdmin):
+class CategoryAdmin(TranslationAdmin):
     list_display = ("name",)
     list_display_links = ("name",)
     search_fields = ("name",)
@@ -12,7 +14,7 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(TranslationAdmin):
     list_display = ("name", "category", "price", "created_at", "updated_at")
     search_fields = ("name", "category__name")
     list_filter = ("category", "created_at")
@@ -23,7 +25,7 @@ class ProductAdmin(admin.ModelAdmin):
 admin.site.register(Product, ProductAdmin)
 
 
-class AttributeAdmin(admin.ModelAdmin):
+class AttributeAdmin(TranslationAdmin):
     list_display = (
         "name",
         "category",

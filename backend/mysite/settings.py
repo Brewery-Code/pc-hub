@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "drf_yasg",
+    "modeltranslation",
     "rest_framework.authtoken",
     "user.apps.UserConfig",
     "product.apps.ProductConfig",
@@ -192,3 +193,11 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_OBTAIN_SERIALIZER": "rest_framework_simplejwt.serializers.TokenObtainSlidingSerializer",
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
+
+# Languages
+LANGUAGES = [
+    ("en", "English"),
+    ("uk", "Ukrainian"),
+]
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = "uk"
