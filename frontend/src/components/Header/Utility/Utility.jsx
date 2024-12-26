@@ -32,6 +32,9 @@ export default function Utility() {
               <SearchIcon />
             </button>
           </form>
+          <button className={`${styles.utility__search_mobile} ${styles['only-mobile']}`}>
+            <SearchIcon />
+          </button>
           <div className={styles.utility__number}>
             050 065 87 96
             <ArrowIcon
@@ -43,13 +46,13 @@ export default function Utility() {
           <div className={styles.utility__line}></div>
           <div className={styles.purchase}>
             <div className={styles.purchase__comparison}>
-              <ComparIcon stroke='var(--background-color-blue)' />
+              <ComparIcon />
             </div>
             <div className={styles.purchase__like}>
-              <LikeIcon fill='var(--background-color-blue)' />
+              <LikeIcon />
             </div>
             <div className={styles.purchase__cart}>
-              <CartIcon fill='var(--background-color-blue)' stroke='var(--background-color-blue)' />
+              <CartIcon />
             </div>
           </div>
         </div>

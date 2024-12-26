@@ -72,6 +72,15 @@
   height: 20px;
 }
 
+.utility__search_mobile {
+  background-color: var(--background-color-blue);
+}
+
+.utility__search_mobile svg {
+  width: 32px;
+  height: 32px;
+}
+
 .utility__number {
   display: flex;
   align-items: center;
@@ -115,9 +124,22 @@
   font-weight: 900;
 }
 
+.purchase__comparison svg {
+  stroke: var(--background-color-blue);
+}
+
+.purchase__like svg {
+  fill: var(--background-color-blue);
+}
+
 .purchase__comparison::before,
 .purchase__like::before {
   background-color: var(--color-accent-yellow);
+}
+
+.purchase__cart svg {
+  fill: var(--background-color-blue);
+  stroke: var(--background-color-blue);
 }
 
 .purchase__cart::before {
@@ -127,4 +149,108 @@
 .purchase div svg {
   width: 40px;
   height: 40px;
+}
+
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 1124px) {
+  .utility__body {
+    grid-template-columns: auto 1fr auto auto;
+    gap: 12px;
+  }
+
+  .utility__navigation {
+    gap: 12px;
+  }
+
+  .utility__line {
+    display: none;
+  }
+
+  .purchase {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .utility__number {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .utility__logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .utility__catalog {
+    height: 42px;
+  }
+
+  .utility__catalog svg {
+    display: none;
+  }
+
+  .purchase div svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .utility {
+    background-color: var(--background-color-blue);
+  }
+
+  .utility__body {
+    grid-template-columns: auto 1fr auto;
+    padding: 24px 0 16px;
+    box-shadow: none;
+  }
+
+  .utility__catalog svg {
+    display: inherit;
+    height: 24px;
+    width: 24px;
+  }
+
+  .purchase__comparison,
+  .purchase__like {
+    display: none;
+  }
+
+  .purchase__cart svg {
+    fill: #fff;
+    stroke: #fff;
+  }
+}
+
+@media (max-width: 479.8px) {
+  .utility__body {
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+
+  .utility__search {
+    display: none;
+  }
+
+  .only-mobile {
+    display: inherit;
+  }
+}
+
+@media (max-width: 240px) {
+  .utility__body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .utility__navigation {
+    grid-column: span 2;
+  }
 }
