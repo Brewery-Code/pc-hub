@@ -44,6 +44,21 @@ class Category(MPTTModel):
 
 # Products
 class Product(models.Model):
+    """Модель для збереження товарів
+
+    Args:
+        Model (models.Model): Наслідування від класу `models.Model` для збереження товарів.
+
+    Fields:
+        name: Назва товару
+        category: Категорія товару, з якою асоціюється продукт
+        description: Опис товару
+        price: Ціна товару
+        stock_quantity: Кількість товару на складі
+        created_at: Дата створення товару
+        updated_at: Дата останнього оновлення товару
+    """
+
     name = models.CharField(max_length=255, verbose_name="Назва товару")
     category = models.ForeignKey(
         Category,
@@ -53,11 +68,18 @@ class Product(models.Model):
     )
     description = models.TextField(blank=True, verbose_name="Опис товару")
     price = models.FloatField(verbose_name="Ціна товару")
+    stock_quantity = models.PositiveIntegerField(
+        default=0, verbose_name="Кількість на складі"
+    )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата оновлення")
 
     def __str__(self):
         return self.name
+
+    def is_available(self):
+        """Перевірка наявності товару в наявності."""
+        return self.stock_quantity > 0
 
     class Meta:
         verbose_name = "Товар"
@@ -68,7 +90,18 @@ class Product(models.Model):
         ]
 
 
+# Attributes
 class Attribute(models.Model):
+    """Модель для збереження атрибутів товарів
+
+    Args:
+        Model (models.Model): Наслідування від класу `models.Model` для збереження атрибутів товарів.
+
+    Fields:
+        name: Назва атрибуту (наприклад, процесор, відеокарта)
+        category: Категорія, до якої належить атрибут
+    """
+
     name = models.CharField(max_length=100, verbose_name="Назва атрибуту")
     category = models.ForeignKey(
         Category, on_delete=models.PROTECT, verbose_name="Категорія"
@@ -86,7 +119,19 @@ class Attribute(models.Model):
         ]
 
 
+# ProductAttributes
 class ProductAttribute(models.Model):
+    """Модель для збереження зв'язку між товарами та їх атрибутами
+
+    Args:
+        Model (models.Model): Наслідування від класу `models.Model` для збереження атрибутів конкретних товарів.
+
+    Fields:
+        product: Товар, до якого належить атрибут
+        attribute: Атрибут, що описує товар
+        value: Значення атрибуту
+    """
+
     product = models.ForeignKey(
         Product, on_delete=models.PROTECT, verbose_name="ID товару"
     )
@@ -105,7 +150,19 @@ class ProductAttribute(models.Model):
         ]
 
 
+# ProductImages
 class ProductImage(models.Model):
+    """Модель для збереження зображень товарів
+
+    Args:
+        Model (models.Model): Наслідування від класу `models.Model` для збереження зображень для товарів.
+
+    Fields:
+        product: Товар, до якого належить зображення
+        image: Зображення товару
+        is_main: Прапорець, чи є це основним зображенням
+    """
+
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Товар")
     image = models.ImageField(
         upload_to="product_images/%Y/%m/%d/", verbose_name="Фото товару"
@@ -113,6 +170,7 @@ class ProductImage(models.Model):
     is_main = models.BooleanField(default=False, verbose_name="Основне фото")
 
     def save(self, *args, **kwargs):
+        """Збереження зображення з унікальним ім'ям файлу, яке включає ID товару."""
         if not self.image.name:
             self.image.name = f"{self.product.id}_{uuid.uuid4().hex}_{self.image.name}"
         super(ProductImage, self).save(*args, **kwargs)

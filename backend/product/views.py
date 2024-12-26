@@ -1,4 +1,5 @@
 from rest_framework import status
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import *
@@ -27,3 +28,32 @@ class CategoryView(APIView):
             categories = Category.objects.filter(parent=None)
             serializer = CategorySerializer(categories, many=True)
             return Response(serializer.data)
+
+
+class ProductListView(ListAPIView):
+    """API View для отримання списку продуктів.
+
+    Доступні операції:
+    - GET api/v1/products/ - Отримання списку всіх продуктів.
+
+    Відповідь:
+    - JSON з даними всіх продуктів.
+    """
+
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+
+class ProductDetailView(RetrieveAPIView):
+    """API View для отримання детальної інформації про продукт.
+
+    Доступні операції:
+    - GET api/v1/products/{id}/ - Отримання детальної інформації про продукт за його ID.
+
+    Відповідь:
+    - JSON з детальною інформацією про продукт.
+    """
+
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    lookup_field = "id"
