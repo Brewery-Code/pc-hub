@@ -1,4 +1,5 @@
 .utility {
+  background-color: #fff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
 }
 
@@ -231,8 +232,8 @@
 
 @media (max-width: 479.8px) {
   .utility__body {
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
+    grid-template-columns: 1fr auto auto;
+    gap: 28px;
   }
 
   .utility__search {

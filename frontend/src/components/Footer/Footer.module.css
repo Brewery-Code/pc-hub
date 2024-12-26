@@ -1,0 +1,278 @@
+.footer {
+  background-color: var(--background-color-blue);
+  color: var(--font-color-grey);
+}
+
+.footer a {
+  color: var(--font-color-grey);
+}
+
+.footer__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 40px;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.block__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+}
+
+.block__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.block__item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+}
+
+.location,
+.schedule {
+  line-height: 150%;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.social__item svg {
+  width: 24px;
+  height: 24px;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.subscription__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+}
+
+.subscription__form {
+  display: flex;
+  align-items: center;
+}
+
+.subscription__form input {
+  flex-grow: 1;
+  padding: 8px;
+  height: 40px;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.subscription__form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 0 6px 6px 0;
+}
+
+.licenses {
+  position: relative;
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.licenses::before,
+.licenses::after {
+  content: '';
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  background-color: rgba(217, 217, 217, 0.5);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.licenses::before {
+  top: 0;
+}
+
+.licenses::after {
+  bottom: 0;
+}
+
+.licenses__logo {
+  height: 40px;
+}
+
+.licenses__logo svg {
+  width: 160px;
+  height: 100%;
+  fill: var(--font-color-grey);
+}
+
+.licenses__text {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 115%;
+}
+
+.licenses__payment {
+  display: flex;
+}
+
+.licenses__payment svg {
+  width: 50px;
+}
+
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 991.8px) {
+  .footer__body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .footer__body .block:nth-child(1) {
+    order: 2;
+    grid-row: 2;
+  }
+
+  .footer__body .block:nth-child(2) {
+    order: 3;
+    grid-row: 2;
+  }
+
+  .footer__body .block:nth-child(3) {
+    order: 4;
+    grid-row: 2;
+  }
+
+  .footer__body .block:nth-child(4) {
+    order: 1;
+    grid-column: span 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 10px;
+  }
+
+  .footer__body .block:nth-child(4) .block__title {
+    order: 1;
+  }
+
+  .footer__body .block:nth-child(4) .social {
+    order: 3;
+    align-self: start;
+  }
+
+  .footer__body .block:nth-child(4) .subscription {
+    order: 2;
+    grid-row: span 2;
+  }
+
+  .footer__body .block:nth-child(4) .subscription form input {
+    height: 40px;
+  }
+
+  .licenses {
+    order: 5;
+  }
+}
+
+@media (max-width: 544px) {
+  .only-mobile {
+    display: block;
+  }
+
+  .footer__body {
+    row-gap: 0;
+    padding: 0;
+  }
+
+  .block,
+  .footer__body .block:nth-child(4) {
+    display: none;
+  }
+
+  .licenses {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 16px;
+    justify-content: center;
+  }
+
+  .licenses::before,
+  .licenses::after {
+    display: none;
+  }
+
+  .licenses__logo {
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  .licenses__logo svg {
+    width: 124px;
+    height: 32px;
+  }
+
+  .licenses .subscription {
+    grid-row: 2;
+    display: flex;
+    gap: 2px;
+  }
+
+  .licenses__text {
+    grid-row: 4;
+    margin: 0;
+    text-align: center;
+  }
+
+  .licenses__payment {
+    grid-row: 3;
+    justify-content: center;
+    padding: 4px 0;
+    width: 100%;
+    height: auto;
+  }
+}
