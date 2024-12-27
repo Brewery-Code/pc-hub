@@ -1,0 +1,21 @@
+.hero {
+  margin-top: 32px;
+  height: 556px;
+  overflow: hidden;
+}
+
+.hero__body {
+  display: grid;
+  grid-template-columns: 24% 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 16px;
+  row-gap: 46px;
+}
+
+.hero__catalog {
+  grid-row: span 2;
+}
+
+.hero__slider {}
+
+.hero__advantages {}
