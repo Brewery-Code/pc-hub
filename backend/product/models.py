@@ -26,6 +26,9 @@ class Category(MPTTModel):
         related_name="children",
         verbose_name="Бітьківська категорія",
     )
+    image = models.FileField(
+        upload_to="category_images/", verbose_name="Фото товару", null=True, blank=True
+    )
 
     class MpttMeta:
         order_insertion_by = ["name"]
