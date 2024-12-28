@@ -11,7 +11,7 @@ export default function Slider() {
   ];
 
   let autoPlay = true;
-  let autoPlayInterval = 3000;
+  let autoPlayInterval = 5000;
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -36,15 +36,10 @@ export default function Slider() {
 
   return (
     <div className={styles.slider}>
-      <button className={styles.slider__prev}
-        onClick={prevSlide}
-      >
-        -
-      </button>
       <div className={styles.slider__list}>
         {slides.map((slide) => (
           <div
-            className={`${styles.slider__item} ${slide.id === currentSlide ? styles.slider__item_active : ''
+            className={`${styles.slide} ${slide.id === currentSlide ? styles.slide_active : ''
               }`}
             key={slide.id}
             style={{
@@ -52,15 +47,22 @@ export default function Slider() {
               background: slide.background,
             }}
           >
-            {slide.content}
+            <div className={styles.slide__title}>TEXT BANNER</div>
+            <div className={styles.slide__description}>BANNER DESCRIPTION SMALL TEXT</div>
+            <button className={styles.slide__button}>BANNER BUTTON</button>
           </div>
         ))}
+        <div className={styles.counter}>
+          {slides.map((slide) => (
+            <div className={currentSlide === slide.id ?
+              `${styles.counter__item} ${styles.counter__item_active}` :
+              styles.counter__item}
+              key={slide.id}
+            >
+            </div>
+          ))}
+        </div>
       </div>
-      <button className={styles.slider__next}
-        onClick={nextSlide}
-      >
-        +
-      </button>
     </div>
   );
 }

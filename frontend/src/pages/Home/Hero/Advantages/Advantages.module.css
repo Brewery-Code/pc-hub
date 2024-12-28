@@ -1,0 +1,20 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 58px;
+  padding-right: 27px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 13px;
+  width: 110px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--background-color-blue);
+}
