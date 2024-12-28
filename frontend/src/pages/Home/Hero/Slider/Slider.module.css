@@ -1,0 +1,24 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.slider__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.slider__prev,
+.slider__next {
+  position: absolute;
+}

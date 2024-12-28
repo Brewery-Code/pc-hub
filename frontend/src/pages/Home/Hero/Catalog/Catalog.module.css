@@ -1,13 +1,19 @@
 .catalog {
-  height: 556px;
-  overflow: hidden;
+  position: relative;
 }
 
 .catalog__list {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2.8px;
+  max-height: 556px;
+  overflow: hidden;
+}
+
+.catalog__list:hover {
+  /* position: absolute; */
+  /* z-index: 100; */
+  max-height: none;
 }
 
 .catalog__item {

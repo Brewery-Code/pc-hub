@@ -22,7 +22,6 @@ export default function Catalog() {
         <li className={styles.catalog__item}><LikeIcon /><div>Комплектуючі ПК</div><ArrowIcon /></li>
         <li className={styles.catalog__item}><LikeIcon /><div>Комплектуючі ПК</div><ArrowIcon /></li>
         <li className={styles.catalog__item}><LikeIcon /><div>Комплектуючі ПК</div><ArrowIcon /></li>
-
         <button className={styles.catalog__open}><ArrowIcon /></button>
       </ul>
     </div>

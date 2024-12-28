@@ -1,6 +1,5 @@
 .hero {
   margin-top: 32px;
-  height: 556px;
   overflow: hidden;
 }
 
@@ -19,3 +18,27 @@
 .hero__slider {}
 
 .hero__advantages {}
+
+
+
+
+
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.item-1 {
+  background-color: green;
+}
+
+.item-2 {
+  background-color: yellow;
+}
+
+.item-3 {
+  background-color: orange;
+}
