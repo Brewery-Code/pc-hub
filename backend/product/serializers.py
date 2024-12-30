@@ -16,10 +16,11 @@ class CategorySerializer(serializers.ModelSerializer):
 
     children = serializers.SerializerMethodField()
     name = serializers.CharField()
+    is_new = serializers.SerializerMethodField()
 
     class Meta:
         model = Category
-        fields = ["id", "name", "children"]
+        fields = ["id", "name", "children", "image", "is_new"]
 
     def get_children(self, obj):
         """Метод для отримання підкатегорій поточної категорії."""
@@ -27,6 +28,9 @@ class CategorySerializer(serializers.ModelSerializer):
         if children.exists():
             return CategorySerializer(children, many=True).data
         return []
+
+    def get_is_new(self, obj):
+        return obj.is_new()
 
 
 # Products

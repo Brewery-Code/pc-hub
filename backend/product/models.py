@@ -1,6 +1,6 @@
-from tabnanny import verbose
+from datetime import timedelta
+from django.utils.timezone import now
 from django.db import models
-from django.template.defaulttags import VerbatimNode
 from mptt.models import MPTTModel, TreeForeignKey
 import uuid
 
@@ -24,11 +24,15 @@ class Category(MPTTModel):
         null=True,
         blank=True,
         related_name="children",
-        verbose_name="Бітьківська категорія",
+        verbose_name="Батьківська категорія",
     )
     image = models.FileField(
         upload_to="category_images/", verbose_name="Фото товару", null=True, blank=True
     )
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
+
+    def is_new(self):
+        return now() - self.created_at <= timedelta(days=7)
 
     class MpttMeta:
         order_insertion_by = ["name"]
