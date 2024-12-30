@@ -6,8 +6,11 @@ import { ReactComponent as CartIcon } from '../../../assets/icons/header-cart.sv
 import { ReactComponent as LikeIcon } from '../../../assets/icons/like.svg';
 import { ReactComponent as ComparIcon } from '../../../assets/icons/comparison.svg';
 import styles from './Utility.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Utility() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.utility}>
       <div className="utility__container">
@@ -19,7 +22,7 @@ export default function Utility() {
               fill='var(--color-action-secondary)'
             />
             <button className={styles.utility__catalog}>
-              <div>КАТАЛОГ ТОВАРІВ</div>
+              <div>{t('header.catalog')}</div>
               <CatalogIcon />
             </button>
           </div>

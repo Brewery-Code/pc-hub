@@ -10,33 +10,37 @@ import styles from './Advantages.module.css';
 export default function Advantages() {
   return (
     <div className={styles.advantages}>
-      <div className={styles.advantages__item}>
-        <AssemblyIcon />
-        <p>Безкоштовна збірка</p>
+      <div className={styles.advantages__row}>
+        <div className={styles.advantages__item}>
+          <AssemblyIcon />
+          <p>Безкоштовна збірка</p>
+        </div>
+        <div className={styles.advantages__item}>
+          <InstallmentIcon />
+          <p>Розстрочка 4 міс./0% без переплат</p>
+        </div>
+        <div className={styles.advantages__item}>
+          <DeliveryIcon />
+          <p>Безкоштовна доставка</p>
+        </div>
+        <div className={styles.advantages__item}>
+          <WarrantyIcon />
+          <p>Офіційна гарантія</p>
+        </div>
       </div>
-      <div className={styles.advantages__item}>
-        <InstallmentIcon />
-        <p>Розстрочка 4 міс./0% без переплат</p>
-      </div>
-      <div className={styles.advantages__item}>
-        <DeliveryIcon />
-        <p>Безкоштовна доставка</p>
-      </div>
-      <div className={styles.advantages__item}>
-        <WarrantyIcon />
-        <p>Офіційна гарантія</p>
-      </div>
-      <div className={styles.advantages__item}>
-        <PriceIcon />
-        <p>Краща ціна</p>
-      </div>
-      <div className={styles.advantages__item}>
-        <YearsIcon />
-        <p>11 років на ринку</p>
-      </div>
-      <div className={styles.advantages__item}>
-        <ConsultationIcon />
-        <p>Професійна консультація</p>
+      <div className={styles.advantages__row}>
+        <div className={styles.advantages__item}>
+          <PriceIcon />
+          <p>Краща ціна</p>
+        </div>
+        <div className={styles.advantages__item}>
+          <YearsIcon />
+          <p>11 років на ринку</p>
+        </div>
+        <div className={styles.advantages__item}>
+          <ConsultationIcon />
+          <p>Професійна консультація</p>
+        </div>
       </div>
     </div>
   );

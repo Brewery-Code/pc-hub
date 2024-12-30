@@ -39,6 +39,7 @@
 
 .utility__catalog div {
   padding-top: 2px;
+  text-transform: uppercase;
 }
 
 .utility__search {

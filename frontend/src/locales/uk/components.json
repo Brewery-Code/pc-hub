@@ -1,0 +1,57 @@
+{
+  "header": {
+    "promotion": "Акції",
+    "credit": "Кредит",
+    "payment": "Оплата та доставка",
+    "help": "Допомога",
+    "secondHand": "Покупка Б/У",
+    "contacts": "Контакти",
+    "catalog": "Каталог товарів"
+  },
+  "information": {
+    "information": "Інформація",
+    "promotion": "Акції",
+    "credit": "Кредит",
+    "payment": "Оплата та доставка",
+    "warranty": "Гарантія",
+    "questions": "Часті запитання",
+    "news": "Новини",
+    "blog": "Блог",
+    "about": "Про нас",
+    "privacy": "Політика конфіденційності",
+    "contacts": "Контакти"
+  },
+  "services": {
+    "services": "Послуги та сервіси",
+    "serviceCenter": "Сервісний центр v-comp",
+    "secondHandStore": "Магазин Б/У товара",
+    "secondHand": "Скупка Б/У",
+    "repair": "Ремонт ПК і оргтехніки",
+    "help": "Комп'ютерна допомога",
+    "cooperation": "Співробітництво",
+    "home": "Головна"
+  },
+  "contacts": {
+    "contacts": "Контакти",
+    "salesDepartment": "Відділ продажу",
+    "city": "Дніпро",
+    "street": "Європейська, 8 (колишня Миронова 8)",
+    "scheduleWeekdays": "Понеділок-П'ятниця 9:00-19:00",
+    "scheduleWeekend": "Субота-Неділя з 9:00-16:00"
+  },
+  "subscription": {
+    "follow": "Слідкуйте за нами",
+    "subscription": "Підписуйтесь на знижки",
+    "email": "Вкажіть ваш email"
+  },
+  "footer": {
+    "rights": "2008-2021 Інтернет-магазин v-comp.com.ua Всі права захищені"
+  },
+  "burgerMenu": {
+    "signIn": "Вхід",
+    "register": "Реєстрація",
+    "cart": "Кошик",
+    "comparison": "Порівняння",
+    "selected": "Обрані"
+  }
+}
