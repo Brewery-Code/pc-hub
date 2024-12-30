@@ -45,7 +45,7 @@ class ProductListView(ListAPIView):
     """
 
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+    serializer_class = ProductListSerializer
 
     def get_queryset(self):
         language = self.request.headers.get("Accept-Language", "en")
@@ -64,7 +64,7 @@ class ProductDetailView(RetrieveAPIView):
     """
 
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+    serializer_class = ProductDetailSerializer
     lookup_field = "id"
 
     def get_queryset(self):
