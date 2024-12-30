@@ -1,3 +1,4 @@
+from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.views import APIView
@@ -5,6 +6,7 @@ from rest_framework.response import Response
 from .models import *
 from .serializers import *
 from django.utils import translation
+from rest_framework.exceptions import NotFound
 
 
 class CategoryView(APIView):
@@ -20,7 +22,11 @@ class CategoryView(APIView):
         translation.activate(language)
 
         if parent_id:
-            category = Category.objects.get(id=parent_id)
+            try:
+                category = Category.objects.get(id=parent_id)
+            except Category.DoesNotExist:
+                raise NotFound("Category not found")
+
             children = Category.objects.filter(parent_id=parent_id)
             category_data = CategorySerializer(category).data
             children_data = CategorySerializer(children, many=True).data
@@ -29,7 +35,7 @@ class CategoryView(APIView):
             return Response(category_data)
 
         else:
-            categories = Category.objects.filter(parent=None)
+            categories = Category.objects.filter(parent=None).order_by("order")
             serializer = CategorySerializer(categories, many=True)
             return Response(serializer.data)
 
@@ -66,6 +72,25 @@ class ProductDetailView(RetrieveAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductDetailSerializer
     lookup_field = "id"
+
+    def get_queryset(self):
+        language = self.request.headers.get("Accept-Language", "en")
+        translation.activate(language)
+        return super().get_queryset()
+
+
+class BannerView(ListAPIView):
+    """API View для отримання списку банерів.
+
+    Доступні операції:
+    - GET api/v1/banners/ - Отримання списку всіх банерів.
+
+    Відповідь:
+    - JSON з даними всіх банерів.
+    """
+
+    queryset = Banner.objects.all()
+    serializer_class = BannerSerializer
 
     def get_queryset(self):
         language = self.request.headers.get("Accept-Language", "en")

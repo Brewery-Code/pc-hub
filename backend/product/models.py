@@ -30,6 +30,7 @@ class Category(MPTTModel):
         upload_to="category_images/", verbose_name="Фото товару", null=True, blank=True
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
+    order = models.PositiveIntegerField(default=0)
 
     def is_new(self):
         return now() - self.created_at <= timedelta(days=7)
@@ -67,11 +68,11 @@ class Product(models.Model):
     """
 
     name = models.CharField(max_length=255, verbose_name="Назва товару")
-    category = models.ForeignKey(
+    categories = models.ManyToManyField(
         Category,
-        on_delete=models.PROTECT,
-        verbose_name="Категорія товару",
+        through="ProductCategory",
         related_name="products",
+        verbose_name="Категорії товару",
     )
     description = models.TextField(blank=True, verbose_name="Опис товару")
     price = models.FloatField(verbose_name="Ціна товару")
@@ -85,16 +86,26 @@ class Product(models.Model):
         return self.name
 
     def is_available(self):
-        """Перевірка наявності товару в наявності."""
+        """Перевірка наявності товару"""
         return self.stock_quantity > 0
 
     class Meta:
         verbose_name = "Товар"
         verbose_name_plural = "Товари"
         db_table = "Product"
-        indexes = [
-            models.Index(fields=["category"]),
-        ]
+
+
+class ProductCategory(models.Model):
+    """Модель для збереження зв'язку між товарами та категоріями"""
+
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "Категорія товару"
+        verbose_name_plural = "Категорії товару"
+        db_table = "ProductCategory"
+        unique_together = ("product", "category")
 
 
 # Attributes
@@ -189,3 +200,26 @@ class ProductImage(models.Model):
 
     def __str__(self):
         return f"Фото для товару {self.product.name} ({'Основне' if self.is_main else 'Додаткове'})"
+
+
+# Banners
+class Banner(models.Model):
+    """Модель для збереження банерів
+
+    Args:
+        models (models.Model): Наслідування від класу `models.Model` для збереження даних про банери.
+
+    Fields:
+        title: Заголовок банера
+        description: Опис банера
+        image: Фото банера
+    """
+
+    title = models.CharField(max_length=100, verbose_name="Заголовок")
+    description = models.TextField(verbose_name="Опис")
+    image = models.ImageField(upload_to="banner_img/", verbose_name="Фото банера")
+
+    class Meta:
+        verbose_name = "Банер"
+        verbose_name_plural = "Банери"
+        db_table = "Banner"

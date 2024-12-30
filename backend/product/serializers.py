@@ -75,6 +75,7 @@ class ProductListSerializer(serializers.ModelSerializer):
     """
 
     main_image = serializers.SerializerMethodField()
+    categories = CategorySerializer(many=True)
 
     def get_main_image(self, obj):
         main_image = obj.productimage_set.filter(is_main=True).first()
@@ -84,7 +85,13 @@ class ProductListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ["id", "name", "price", "main_image"]
+        fields = [
+            "id",
+            "name",
+            "price",
+            "main_image",
+            "categories",
+        ]
 
 
 class ProductDetailSerializer(serializers.ModelSerializer):
@@ -108,11 +115,15 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     images = ProductImageSerializer(source="productimage_set", many=True)
 
     def get_category(self, obj):
-        category = obj.category
+        """Метод для отримання всіх категорій товару (множинні категорії)"""
+        categories = obj.categories.all()
         hierarchy = []
-        while category:
-            hierarchy.insert(0, category.name)
-            category = category.parent
+        for category in categories:
+            category_hierarchy = []
+            while category:
+                category_hierarchy.insert(0, category.name)
+                category = category.parent
+            hierarchy.append(category_hierarchy)
         return hierarchy
 
     class Meta:
@@ -126,3 +137,11 @@ class ProductDetailSerializer(serializers.ModelSerializer):
             "attributes",
             "images",
         ]
+
+
+class BannerSerializer(serializers.ModelSerializer):
+    """Серіалізатор для моделі банерів"""
+
+    class Meta:
+        model = Banner
+        fields = ["title", "description", "image"]
