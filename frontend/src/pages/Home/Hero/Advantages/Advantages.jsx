@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { ReactComponent as AssemblyIcon } from '../../../../assets/icons/advantages-assembly.svg';
 import { ReactComponent as ConsultationIcon } from '../../../../assets/icons/advantages-consultation.svg';
 import { ReactComponent as DeliveryIcon } from '../../../../assets/icons/advantages-delivery.svg';
@@ -8,38 +9,39 @@ import { ReactComponent as YearsIcon } from '../../../../assets/icons/advantages
 import styles from './Advantages.module.css';
 
 export default function Advantages() {
+  const { t } = useTranslation('home');
   return (
     <div className={styles.advantages}>
       <div className={styles.advantages__row}>
         <div className={styles.advantages__item}>
           <AssemblyIcon />
-          <p>Безкоштовна збірка</p>
+          <p>{t('advantage.assembly')}</p>
         </div>
         <div className={styles.advantages__item}>
           <InstallmentIcon />
-          <p>Розстрочка 4 міс./0% без переплат</p>
+          <p>{t('advantage.installment')}</p>
         </div>
         <div className={styles.advantages__item}>
           <DeliveryIcon />
-          <p>Безкоштовна доставка</p>
+          <p>{t('advantage.delivery')}</p>
         </div>
         <div className={styles.advantages__item}>
           <WarrantyIcon />
-          <p>Офіційна гарантія</p>
+          <p>{t('advantage.warranty')}</p>
         </div>
       </div>
       <div className={styles.advantages__row}>
         <div className={styles.advantages__item}>
           <PriceIcon />
-          <p>Краща ціна</p>
+          <p>{t('advantage.price')}</p>
         </div>
         <div className={styles.advantages__item}>
           <YearsIcon />
-          <p>11 років на ринку</p>
+          <p>{t('advantage.experience')}</p>
         </div>
         <div className={styles.advantages__item}>
           <ConsultationIcon />
-          <p>Професійна консультація</p>
+          <p>{t('advantage.consultation')}</p>
         </div>
       </div>
     </div>

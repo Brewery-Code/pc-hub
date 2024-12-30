@@ -17,7 +17,7 @@ export default function Navigation() {
   const handleLanguage = () => { dispatch(toggleLanguage()); };
 
 
-  const { t } = useTranslation();
+  const { t } = useTranslation('components');
 
   return (
     <nav className={styles.navigation}>
@@ -42,9 +42,9 @@ export default function Navigation() {
             <div className={styles.language}
               onClick={handleLanguage}
             >
-              <div className={styles.language_uk}>UK</div>
+              <div className={`${styles.language} ${language === 'uk' ? '' : styles.language_inactive}`}>UK</div>
               <span>/</span>
-              <div className={`${styles.language_en} ${styles.language_inactive}`}>EN</div>
+              <div className={`${styles.language} ${language === 'en' ? '' : styles.language_inactive}`}>EN</div>
             </div>
             <div className={styles.settings__profile}>
               <ProfileIcon />

@@ -30,11 +30,11 @@ export default function BurgerMenu({ isBurgerMenuOpen, toggleBurgerMenu }) {
     }
   };
 
-  const language = useSelector((state) => { state.language.value });
+  const language = useSelector((state) => state.language.value);
   const dispatch = useDispatch();
   const handleLanguage = () => { dispatch(toggleLanguage()); };
 
-  const { t } = useTranslation();
+  const { t } = useTranslation('components');
 
   const information = [
     t('information.promotion'),
@@ -80,9 +80,9 @@ export default function BurgerMenu({ isBurgerMenuOpen, toggleBurgerMenu }) {
           <div className={`${styles.language} ${styles['only-mobile']}`}
             onClick={handleLanguage}
           >
-            <div className={styles.language_uk}>UK</div>
+            <div className={`${styles.language} ${language === 'uk' ? '' : styles.language_inactive}`}>UK</div>
             <span>/</span>
-            <div className={`${styles.language_en} ${styles.language_inactive}`}>EN</div>
+            <div className={`${styles.language} ${language === 'en' ? '' : styles.language_inactive}`}>EN</div>
           </div>
           <div className={styles.account}>
             <ProfileIcon className={`${styles.account__icon} ${styles['only-mobile']}`} />
