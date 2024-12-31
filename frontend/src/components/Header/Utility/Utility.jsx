@@ -9,7 +9,7 @@ import styles from './Utility.module.css';
 import { useTranslation } from 'react-i18next';
 
 export default function Utility() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('components');
 
   return (
     <div className={styles.utility}>

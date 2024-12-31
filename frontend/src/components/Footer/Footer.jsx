@@ -14,7 +14,7 @@ import { ReactComponent as VisaIcon } from '../../assets/icons/visa.svg';
 import styles from './Footer.module.css';
 
 export default function () {
-  const { t } = useTranslation();
+  const { t } = useTranslation('components');
 
   const information = [
     t('information.promotion'),

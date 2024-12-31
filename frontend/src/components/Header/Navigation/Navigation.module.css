@@ -113,7 +113,7 @@
   height: 26px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .menu {
     gap: 12px;
   }

@@ -12,37 +12,33 @@ export default function Advantages() {
   const { t } = useTranslation('home');
   return (
     <div className={styles.advantages}>
-      <div className={styles.advantages__row}>
-        <div className={styles.advantages__item}>
-          <AssemblyIcon />
-          <p>{t('advantage.assembly')}</p>
-        </div>
-        <div className={styles.advantages__item}>
-          <InstallmentIcon />
-          <p>{t('advantage.installment')}</p>
-        </div>
-        <div className={styles.advantages__item}>
-          <DeliveryIcon />
-          <p>{t('advantage.delivery')}</p>
-        </div>
-        <div className={styles.advantages__item}>
-          <WarrantyIcon />
-          <p>{t('advantage.warranty')}</p>
-        </div>
+      <div className={styles.advantages__item}>
+        <AssemblyIcon />
+        <p>{t('advantage.assembly')}</p>
       </div>
-      <div className={styles.advantages__row}>
-        <div className={styles.advantages__item}>
-          <PriceIcon />
-          <p>{t('advantage.price')}</p>
-        </div>
-        <div className={styles.advantages__item}>
-          <YearsIcon />
-          <p>{t('advantage.experience')}</p>
-        </div>
-        <div className={styles.advantages__item}>
-          <ConsultationIcon />
-          <p>{t('advantage.consultation')}</p>
-        </div>
+      <div className={styles.advantages__item}>
+        <InstallmentIcon />
+        <p>{t('advantage.installment')}</p>
+      </div>
+      <div className={styles.advantages__item}>
+        <DeliveryIcon />
+        <p>{t('advantage.delivery')}</p>
+      </div>
+      <div className={styles.advantages__item}>
+        <WarrantyIcon />
+        <p>{t('advantage.warranty')}</p>
+      </div>
+      <div className={styles.advantages__item}>
+        <PriceIcon />
+        <p>{t('advantage.price')}</p>
+      </div>
+      <div className={styles.advantages__item}>
+        <YearsIcon />
+        <p>{t('advantage.experience')}</p>
+      </div>
+      <div className={styles.advantages__item}>
+        <ConsultationIcon />
+        <p>{t('advantage.consultation')}</p>
       </div>
     </div>
   );

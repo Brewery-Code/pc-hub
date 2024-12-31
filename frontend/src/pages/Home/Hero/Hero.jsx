@@ -7,7 +7,7 @@ import styles from './Hero.module.css';
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <div className="hero__container">
+      <div className='hero__container'>
         <div className={styles.hero__body}>
           <div className={styles.hero__catalog}>
             <Catalog />

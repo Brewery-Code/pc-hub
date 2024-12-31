@@ -41,8 +41,10 @@
 .slide__button {
   padding: 16px 40px;
   font-size: 10px;
+  font-weight: 900;
   line-height: 120%;
   color: #fff;
+  text-transform: uppercase;
   background-color: var(--color-accent-red);
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
@@ -66,4 +68,42 @@
 
 .counter__item_active {
   background-color: var(--color-action-secondary);
+}
+
+@media (max-width: 767.8px) {
+  .slider {
+    width: 100vw;
+    left: -16px;
+  }
+
+  .slide {
+    align-items: end;
+    gap: 6px;
+    padding: 54px 16px;
+  }
+
+  .slide__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 114%;
+  }
+
+  .slide__description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .slide__button {
+    width: 121px;
+    padding: 13px 16px;
+    font-weight: 700;
+    letter-spacing: 3%;
+  }
+
+  .counter {
+    right: 16px;
+    bottom: 12px;
+    justify-content: end;
+  }
 }

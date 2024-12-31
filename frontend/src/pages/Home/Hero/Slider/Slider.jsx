@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './Slider.module.css';
 
 export default function Slider() {
+
+  const { t } = useTranslation('home');
+
   const slides = [
     { id: 0, content: "Слайд 1: Вітальний текст", background: "grey" },
     { id: 1, content: "Слайд 2: Опис продукту", background: "yellow" },
@@ -47,9 +51,9 @@ export default function Slider() {
               background: slide.background,
             }}
           >
-            <div className={styles.slide__title}>TEXT BANNER</div>
-            <div className={styles.slide__description}>BANNER DESCRIPTION SMALL TEXT</div>
-            <button className={styles.slide__button}>BANNER BUTTON</button>
+            <h4 className={styles.slide__title}>TEXT BANNER</h4>
+            <p className={styles.slide__description}>BANNER DESCRIPTION SMALL TEXT</p>
+            <button className={styles.slide__button}>{t('slider.button')}</button>
           </div>
         ))}
         <div className={styles.counter}>

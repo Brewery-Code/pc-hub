@@ -1,13 +1,22 @@
+import { useState } from 'react';
 import { ReactComponent as LikeIcon } from '../../../../assets/icons/like.svg';
 import { ReactComponent as ArrowIcon } from '../../../../assets/icons/arrow.svg';
 import styles from './Catalog.module.css';
-import { useState } from 'react';
 
 export default function Catalog() {
   const [isCatalogActive, setIsCatalogActive] = useState(false);
 
-  const handleMouseEnter = () => setIsCatalogActive(true);
-  const handleMouseLeave = () => setIsCatalogActive(false);
+  const handleMouseEnter = () => {
+    if (window.innerWidth >= 768) {
+      setIsCatalogActive(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (window.innerWidth >= 768) {
+      setIsCatalogActive(false);
+    }
+  };
 
   return (
     <div className={styles.catalog}>
@@ -19,7 +28,8 @@ export default function Catalog() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <li className={styles.category}><LikeIcon />
+        <li className={styles.category}>
+          <LikeIcon />
           <div className={styles.category__title}>Комплектуючі ПК</div>
           <ArrowIcon />
           <div className={styles.subcategory}>

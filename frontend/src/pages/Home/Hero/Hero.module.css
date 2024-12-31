@@ -4,7 +4,7 @@
 
 .hero__body {
   display: grid;
-  grid-template-columns: minmax(218px, 370px) minmax(500px, 1145px);
+  grid-template-columns: minmax(218px, 370px) minmax(800px, 1145px);
   grid-template-rows: 400px auto;
   column-gap: 16px;
   row-gap: 46px;
@@ -18,8 +18,28 @@
 
 .hero__advantages {}
 
-@media (max-width: 1280px) {
+@media (max-width: 1080px) {
   .hero__body {
-    grid-template-rows: 300px auto;
+    grid-template-columns: minmax(218px, 230px) minmax(500px, 1145px);
+  }
+}
+
+@media (max-width: 767.8px) {
+  .hero__body {
+    grid-template-columns: 100%;
+    grid-template-rows: 201px auto auto;
+    row-gap: 16px;
+  }
+
+  .hero__catalog {
+    grid-row: 2;
+  }
+
+  .hero__slider {
+    grid-row: 1;
+  }
+
+  .hero {
+    margin-top: inherit;
   }
 }

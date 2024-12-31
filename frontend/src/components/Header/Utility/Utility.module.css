@@ -9,6 +9,7 @@
   align-items: center;
   column-gap: 16px;
   padding: 24px 0;
+  height: 97px;
 }
 
 .utility__navigation {
@@ -211,6 +212,7 @@
   .utility__body {
     grid-template-columns: auto 1fr auto;
     padding: 24px 0 16px;
+    height: inherit;
     box-shadow: none;
   }
 
