@@ -1,3 +1,4 @@
+from django.http import JsonResponse
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from .models import *
 from .serializers import *

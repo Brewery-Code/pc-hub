@@ -71,7 +71,6 @@ class ProductListSerializer(serializers.ModelSerializer):
     """
 
     main_image = serializers.SerializerMethodField()
-    categories = CategorySerializer(many=True)
 
     def get_main_image(self, obj):
         main_image = obj.productimage_set.filter(is_main=True).first()
@@ -86,7 +85,6 @@ class ProductListSerializer(serializers.ModelSerializer):
             "name",
             "price",
             "main_image",
-            "categories",
         ]
 
 
