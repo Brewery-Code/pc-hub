@@ -1,52 +1,12 @@
 import Hero from './Hero/Hero';
 import styles from './Home.module.css';
+import Selling from './Selling/Selling';
 
 export default function Home() {
   return (
     <div className={styles.home}>
       <Hero />
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p><p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
-      <p>4</p>
+      <Selling />
     </div>
   );
 }
