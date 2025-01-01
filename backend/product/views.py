@@ -1,43 +1,32 @@
-from django.shortcuts import get_object_or_404
-from rest_framework import status
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from rest_framework.views import APIView
-from rest_framework.response import Response
 from .models import *
 from .serializers import *
 from django.utils import translation
-from rest_framework.exceptions import NotFound
 
 
-class CategoryView(APIView):
+class CategoryView(ListAPIView):
+    """API View для роботи з категоріями товарів.
+
+    Доступні операції:
+    - GET api/v1/categories/parent_id/ - Отримання підкатегорій.
+    """
+
+    serializer_class = CategorySerializer
+
+    def get_queryset(self):
+        parent_id = self.kwargs.get("parent_id")
+        return Category.objects.filter(parent_id=parent_id).prefetch_related("children")
+
+
+class TopLevelCategoryView(ListAPIView):
     """API View для роботи з категоріями товарів.
 
     Доступні операції:
     - GET api/v1/categories/ - Отримання всіх категорій.
-    - GET api/v1/categories/parent_id/ - Отримання підкатегорій.
     """
 
-    def get(self, request, parent_id=None):
-        language = request.headers.get("Accept-Language", "en")
-        translation.activate(language)
-
-        if parent_id:
-            try:
-                category = Category.objects.get(id=parent_id)
-            except Category.DoesNotExist:
-                raise NotFound("Category not found")
-
-            children = Category.objects.filter(parent_id=parent_id)
-            category_data = CategorySerializer(category).data
-            children_data = CategorySerializer(children, many=True).data
-
-            category_data["children"] = children_data
-            return Response(category_data)
-
-        else:
-            categories = Category.objects.filter(parent=None).order_by("order")
-            serializer = CategorySerializer(categories, many=True)
-            return Response(serializer.data)
+    queryset = Category.objects.all().prefetch_related("children")
+    serializer_class = CategorySerializer
 
 
 class ProductListView(ListAPIView):

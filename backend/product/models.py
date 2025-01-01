@@ -121,9 +121,6 @@ class Attribute(models.Model):
     """
 
     name = models.CharField(max_length=100, verbose_name="Назва атрибуту")
-    category = models.ForeignKey(
-        Category, on_delete=models.PROTECT, verbose_name="Категорія"
-    )
 
     def __str__(self):
         return self.name
@@ -132,9 +129,6 @@ class Attribute(models.Model):
         verbose_name = "Атрибут"
         verbose_name_plural = "Атрибути"
         db_table = "Attribute"
-        indexes = [
-            models.Index(fields=["category"]),
-        ]
 
 
 # ProductAttributes

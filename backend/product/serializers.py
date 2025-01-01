@@ -5,17 +5,13 @@ from .models import *
 
 # Categories
 class CategorySerializer(serializers.ModelSerializer):
-    """Серіалізатор для категорій товарів
+    """Серіалізатор для підкатегорій товарів
 
     Атрибути:
         children (list): Список підкатегорій, що належать поточній категорії. Підкатегорії серіалізуються за допомогою рекурсивного виклику серіалізатора.
-
-    Методи:
-        get_children (function): Метод для отримання підкатегорій поточної категорії.
     """
 
     children = serializers.SerializerMethodField()
-    name = serializers.CharField()
     is_new = serializers.SerializerMethodField()
 
     class Meta:
