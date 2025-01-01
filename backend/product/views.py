@@ -1,12 +1,7 @@
-from django.shortcuts import get_object_or_404
-from rest_framework import status
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from rest_framework.views import APIView
-from rest_framework.response import Response
 from .models import *
 from .serializers import *
 from django.utils import translation
-from rest_framework.exceptions import NotFound
 
 
 class CategoryView(ListAPIView):
@@ -30,8 +25,8 @@ class TopLevelCategoryView(ListAPIView):
     - GET api/v1/categories/ - Отримання всіх категорій.
     """
 
-    queryset = Category.objects.filter(parent=None).prefetch_related("children")
-    serializer_class = TopLevelCategorySerializer
+    queryset = Category.objects.all().prefetch_related("children")
+    serializer_class = CategorySerializer
 
 
 class ProductListView(ListAPIView):

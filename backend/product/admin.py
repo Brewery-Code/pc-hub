@@ -42,12 +42,8 @@ admin.site.register(ProductCategory, ProductCategoryAdmin)
 
 
 class AttributeAdmin(TranslationAdmin):
-    list_display = (
-        "name",
-        "category",
-    )
-    search_fields = ("name", "category__name")
-    list_filter = ("category",)
+    list_display = ("name",)
+    search_fields = ("name",)
     ordering = ("name",)
     list_per_page = 20
 
@@ -58,7 +54,7 @@ admin.site.register(Attribute, AttributeAdmin)
 class ProductAttributeAdmin(admin.ModelAdmin):
     list_display = ("product", "attribute", "value")
     search_fields = ("product__name", "attribute__name", "value")
-    list_filter = ("product__categories", "attribute__category")
+    list_filter = ("product__categories",)
     ordering = ("product", "attribute")
     list_per_page = 20
 

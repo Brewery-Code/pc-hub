@@ -4,20 +4,7 @@ from .models import *
 
 
 # Categories
-class BaseCategorySerializer(serializers.ModelSerializer):
-    """Базовий серіалізатор для моделі Category
-
-    Методи:
-        get_children (function): Метод для отримання підкатегорій поточної категорії.
-    """
-
-    is_new = serializers.SerializerMethodField()
-
-    def get_is_new(self, obj):
-        return obj.is_new()
-
-
-class CategorySerializer(BaseCategorySerializer):
+class CategorySerializer(serializers.ModelSerializer):
     """Серіалізатор для підкатегорій товарів
 
     Атрибути:
@@ -25,6 +12,7 @@ class CategorySerializer(BaseCategorySerializer):
     """
 
     children = serializers.SerializerMethodField()
+    is_new = serializers.SerializerMethodField()
 
     class Meta:
         model = Category
@@ -37,13 +25,8 @@ class CategorySerializer(BaseCategorySerializer):
             return CategorySerializer(children, many=True).data
         return []
 
-
-class TopLevelCategorySerializer(BaseCategorySerializer):
-    """Серіалізатор для батьківських категорій товарів"""
-
-    class Meta:
-        model = Category
-        fields = ["id", "name", "image", "is_new"]
+    def get_is_new(self, obj):
+        return obj.is_new()
 
 
 # Products
