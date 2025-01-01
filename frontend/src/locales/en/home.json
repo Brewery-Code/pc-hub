@@ -10,5 +10,8 @@
     "price": "The best price",
     "experience": "11 years on the market",
     "consultation": "Professional consultation"
+  },
+  "selling": {
+    "title": "Top selling"
   }
 }
