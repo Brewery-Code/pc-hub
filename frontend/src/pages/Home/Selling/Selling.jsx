@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import Product from '../../../components/UI/Goods/Product';
+import Product from '../../../components/UI/Product/Product';
+import { ReactComponent as ArrowIcon } from '../../../assets/icons/arrow-more.svg';
 import styles from './Selling.module.css';
 
 export default function Selling() {
@@ -19,7 +20,7 @@ export default function Selling() {
               <Product />
             </ul>
             <div className={styles.products__more}>
-              <button>Смотреть все товари</button>
+              <button>Смотреть все товари<ArrowIcon /></button>
             </div>
           </div>
           <div className={styles.products}>
@@ -32,7 +33,7 @@ export default function Selling() {
               <Product />
             </ul>
             <div className={styles.products__more}>
-              <button>Смотреть все товари</button>
+              <button>Смотреть все товари<ArrowIcon /></button>
             </div>
           </div>
         </div>

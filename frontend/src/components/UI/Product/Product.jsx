@@ -8,7 +8,9 @@ export default function Product() {
   return (
     <div className={styles.product}>
       <div className={styles.head}>
-        <div className={styles.head__new}><p>Новинка</p></div>
+        <div className={styles.head__new}>
+          <p>Новинка</p>
+        </div>
         <button className={styles.head__comparison}>
           <ComparisonIcon stroke={'var(--color-action-secondary)'} />
         </button>
@@ -17,7 +19,7 @@ export default function Product() {
         </button>
       </div>
       <img className={styles.product__img} src={productImg}></img>
-      <p className={styles.product__title}>Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)</p>
+      <p className={styles.product__title}>Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)</p>
       <div className={styles.reviews}>
         {/* <div className=""></div> */}
         <div className={styles.reviews__count}>Відгуки: 0</div>

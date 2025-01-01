@@ -60,12 +60,14 @@
 .product__img {
   flex-grow: 1;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-
-
 .product__title {
+  position: relative;
+  overflow: hidden;
+  word-break: break-all;
+  max-height: 2rem;
   font-weight: 500;
   font-size: 14px;
   line-height: 114%;
@@ -119,14 +121,14 @@
   display: none;
 }
 
+
 @media (max-width: 700px) {
   .only-mobile {
     display: block;
   }
 
-  .product {
-    max-width: 156px;
-    max-height: 325px;
+  .head {
+    gap: 4px;
   }
 
   .product__title {
@@ -146,5 +148,12 @@
   .row__buy svg {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .head__new p {
+    width: 50px;
+    font-size: 10px;
   }
 }
