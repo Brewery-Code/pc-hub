@@ -1,8 +1,15 @@
 from django.http import JsonResponse
 from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.pagination import PageNumberPagination
 from .models import *
 from .serializers import *
 from django.utils import translation
+
+
+class StandardResultsSetPagination(PageNumberPagination):
+    page_size = 6
+    page_size_query_param = "page_size"
+    max_page_size = 100
 
 
 class CategoryView(ListAPIView):
@@ -42,6 +49,7 @@ class ProductListView(ListAPIView):
 
     queryset = Product.objects.all()
     serializer_class = ProductListSerializer
+    pagination_class = StandardResultsSetPagination
 
     def get_queryset(self):
         language = self.request.headers.get("Accept-Language", "en")
