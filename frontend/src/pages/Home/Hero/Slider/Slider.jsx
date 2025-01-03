@@ -1,18 +1,18 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './Slider.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchSliderData } from '../../../../features/slider/sliderSlice';
 
 export default function Slider() {
+  const dispatch = useDispatch();
+  const { loading, error, slider } = useSelector((state) => state.slider);
+
+  useEffect(() => {
+    dispatch(fetchSliderData());
+  }, [dispatch]);
 
   const { t } = useTranslation('home');
-
-  const slides = [
-    { id: 0, content: "Слайд 1: Вітальний текст", background: "grey" },
-    { id: 1, content: "Слайд 2: Опис продукту", background: "yellow" },
-    { id: 2, content: "Слайд 3: Особливості", background: "green" },
-    { id: 3, content: "Слайд 4: Відгуки клієнтів", background: "purple" },
-    { id: 4, content: "Слайд 5: Контактна інформація", background: "orange" },
-  ];
 
   let autoPlay = true;
   let autoPlayInterval = 5000;
@@ -21,13 +21,13 @@ export default function Slider() {
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+      prevSlide === slider.length - 1 ? 0 : prevSlide + 1
     );
   };
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+      prevSlide === 0 ? slider.length - 1 : prevSlide - 1
     );
   };
 
@@ -41,24 +41,24 @@ export default function Slider() {
   return (
     <div className={styles.slider}>
       <div className={styles.slider__list}>
-        {slides.map((slide) => (
+        {slider.map((slide, index) => (
           <div
-            className={`${styles.slide} ${slide.id === currentSlide ? styles.slide_active : ''
+            className={`${styles.slide} ${index + 1 === currentSlide ? styles.slide_active : ''
               }`}
             key={slide.id}
             style={{
-              transform: `translateX(${(slide.id - currentSlide) * 100}%)`,
-              background: slide.background,
+              transform: `translateX(${(index - currentSlide) * 100}%)`,
+              backgroundImage: `url(${slide.image})`,
             }}
           >
-            <h4 className={styles.slide__title}>TEXT BANNER</h4>
-            <p className={styles.slide__description}>BANNER DESCRIPTION SMALL TEXT</p>
+            <h4 className={styles.slide__title}>{slide.title}</h4>
+            <p className={styles.slide__description}>{slide.description}</p>
             <button className={styles.slide__button}>{t('slider.button')}</button>
           </div>
         ))}
         <div className={styles.counter}>
-          {slides.map((slide) => (
-            <div className={currentSlide === slide.id ?
+          {slider.map((slide, index) => (
+            <div className={currentSlide === index ?
               `${styles.counter__item} ${styles.counter__item_active}` :
               styles.counter__item}
               key={slide.id}
