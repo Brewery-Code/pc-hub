@@ -138,4 +138,4 @@ class BannerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Banner
-        fields = ["title", "description", "image"]
+        fields = ["id", "title", "description", "image"]
