@@ -29,29 +29,41 @@ export default function GameZone() {
           <div className={styles.category}>
             <h4 className={styles.category__title}>Категорії для геймерів</h4>
             <div className={styles.category__list}>
-              <div className={styles.category__item}>
-                <img src={CategoryImg} alt="" />
-                <div className={styles.category__name}>Клава</div>
+              <div className={styles.category__block}>
+                <div className={styles.category__item}>
+                  <img src={CategoryImg} alt="" />
+                </div>
+                <div className={styles.category__name}>Клавіатура</div>
               </div>
-              <div className={styles.category__item}>
-                <img src={CategoryImg} alt="" />
-                <div className={styles.category__name}>Клава</div>
+              <div className={styles.category__block}>
+                <div className={styles.category__item}>
+                  <img src={CategoryImg} alt="" />
+                </div>
+                <div className={styles.category__name}>Клавіатура</div>
               </div>
-              <div className={styles.category__item}>
-                <img src={CategoryImg} alt="" />
-                <div className={styles.category__name}>Клава</div>
+              <div className={styles.category__block}>
+                <div className={styles.category__item}>
+                  <img src={CategoryImg} alt="" />
+                </div>
+                <div className={styles.category__name}>Клавіатура</div>
               </div>
-              <div className={styles.category__item}>
-                <img src={CategoryImg} alt="" />
-                <div className={styles.category__name}>Клава</div>
+              <div className={styles.category__block}>
+                <div className={styles.category__item}>
+                  <img src={CategoryImg} alt="" />
+                </div>
+                <div className={styles.category__name}>Клавіатура</div>
               </div>
-              <div className={styles.category__item}>
-                <img src={CategoryImg} alt="" />
-                <div className={styles.category__name}>Клава</div>
+              <div className={styles.category__block}>
+                <div className={styles.category__item}>
+                  <img src={CategoryImg} alt="" />
+                </div>
+                <div className={styles.category__name}>Клавіатура</div>
               </div>
-              <div className={styles.category__item}>
-                <img src={CategoryImg} alt="" />
-                <div className={styles.category__name}>Клава</div>
+              <div className={styles.category__block}>
+                <div className={styles.category__item}>
+                  <img src={CategoryImg} alt="" />
+                </div>
+                <div className={styles.category__name}>Клавіатура</div>
               </div>
             </div>
           </div>

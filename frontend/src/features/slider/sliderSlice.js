@@ -23,19 +23,6 @@ const sliderSlice = createSlice({
     error: null,
     slider: [],
   },
-  reducers: {
-    fetchSliderDataStart: (state) => {
-      state.loading = true;
-    },
-    fetchSliderDataSuccess: (state, action) => {
-      state.loading = false;
-      state.slider = action.payload;
-    },
-    fetchSliderDataFailure: (state, action) => {
-      state.loading = false;
-      state.error = action.payload;
-    },
-  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchSliderData.pending, (state) => {

@@ -118,26 +118,33 @@
   left: 100%;
   top: 0;
   z-index: 100;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 222px));
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 222px)); */
+  /* gap: 26px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: start;
   gap: 26px;
   padding: 14px 30px;
   width: 1028px;
   height: 100%;
   background-color: #fff;
   border-radius: 0 4px 4px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: none;
 }
 
 .category:hover .subcategory {
-  display: grid;
+  display: flex;
 }
 
 .subcategory__item {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  overflow: hidden;
+  max-width: 222px;
+  /* overflow: hidden; */
 }
 
 .subcategory__title {
