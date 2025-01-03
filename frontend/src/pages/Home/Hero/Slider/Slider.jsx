@@ -1,8 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import styles from './Slider.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchSliderData } from '../../../../features/slider/sliderSlice';
 
 export default function Slider() {
+  const dispatch = useDispatch();
+  const { loading, error, slider } = useSelector((state) => state.slider);
+  console.log(slider)
+
+  useEffect(() => {
+    dispatch(fetchSliderData());
+  }, [dispatch]);
 
   const { t } = useTranslation('home');
 
@@ -21,13 +30,13 @@ export default function Slider() {
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+      prevSlide === slider.length - 1 ? 0 : prevSlide + 1
     );
   };
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+      prevSlide === 0 ? slider.length - 1 : prevSlide - 1
     );
   };
 
@@ -40,19 +49,20 @@ export default function Slider() {
 
   return (
     <div className={styles.slider}>
+      <img src={slider[0].image} alt="" />
       <div className={styles.slider__list}>
-        {slides.map((slide) => (
+        {slider.map((slide) => (
           <div
             className={`${styles.slide} ${slide.id === currentSlide ? styles.slide_active : ''
               }`}
-            key={slide.id}
+            key={slide.title}
             style={{
               transform: `translateX(${(slide.id - currentSlide) * 100}%)`,
-              background: slide.background,
+              backgroundImage: slide.image,
             }}
           >
-            <h4 className={styles.slide__title}>TEXT BANNER</h4>
-            <p className={styles.slide__description}>BANNER DESCRIPTION SMALL TEXT</p>
+            <h4 className={styles.slide__title}>{slide.title}</h4>
+            <p className={styles.slide__description}>{slide.description}</p>
             <button className={styles.slide__button}>{t('slider.button')}</button>
           </div>
         ))}

@@ -36,22 +36,18 @@ export default function GameZone() {
               <div className={styles.category__item}>
                 <img src={CategoryImg} alt="" />
                 <div className={styles.category__name}>Клава</div>
-
               </div>
               <div className={styles.category__item}>
                 <img src={CategoryImg} alt="" />
                 <div className={styles.category__name}>Клава</div>
-
               </div>
               <div className={styles.category__item}>
                 <img src={CategoryImg} alt="" />
                 <div className={styles.category__name}>Клава</div>
-
               </div>
               <div className={styles.category__item}>
                 <img src={CategoryImg} alt="" />
                 <div className={styles.category__name}>Клава</div>
-
               </div>
               <div className={styles.category__item}>
                 <img src={CategoryImg} alt="" />
