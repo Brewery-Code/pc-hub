@@ -7,21 +7,12 @@ import { fetchSliderData } from '../../../../features/slider/sliderSlice';
 export default function Slider() {
   const dispatch = useDispatch();
   const { loading, error, slider } = useSelector((state) => state.slider);
-  console.log(slider)
 
   useEffect(() => {
     dispatch(fetchSliderData());
   }, [dispatch]);
 
   const { t } = useTranslation('home');
-
-  const slides = [
-    { id: 0, content: "Слайд 1: Вітальний текст", background: "grey" },
-    { id: 1, content: "Слайд 2: Опис продукту", background: "yellow" },
-    { id: 2, content: "Слайд 3: Особливості", background: "green" },
-    { id: 3, content: "Слайд 4: Відгуки клієнтів", background: "purple" },
-    { id: 4, content: "Слайд 5: Контактна інформація", background: "orange" },
-  ];
 
   let autoPlay = true;
   let autoPlayInterval = 5000;
@@ -49,16 +40,15 @@ export default function Slider() {
 
   return (
     <div className={styles.slider}>
-      <img src={slider[0].image} alt="" />
       <div className={styles.slider__list}>
-        {slider.map((slide) => (
+        {slider.map((slide, index) => (
           <div
-            className={`${styles.slide} ${slide.id === currentSlide ? styles.slide_active : ''
+            className={`${styles.slide} ${index + 1 === currentSlide ? styles.slide_active : ''
               }`}
-            key={slide.title}
+            key={slide.id}
             style={{
-              transform: `translateX(${(slide.id - currentSlide) * 100}%)`,
-              backgroundImage: slide.image,
+              transform: `translateX(${(index - currentSlide) * 100}%)`,
+              backgroundImage: `url(${slide.image})`,
             }}
           >
             <h4 className={styles.slide__title}>{slide.title}</h4>
@@ -67,8 +57,8 @@ export default function Slider() {
           </div>
         ))}
         <div className={styles.counter}>
-          {slides.map((slide) => (
-            <div className={currentSlide === slide.id ?
+          {slider.map((slide, index) => (
+            <div className={currentSlide === index ?
               `${styles.counter__item} ${styles.counter__item_active}` :
               styles.counter__item}
               key={slide.id}

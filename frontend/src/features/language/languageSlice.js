@@ -12,6 +12,7 @@ const languageSlice = createSlice({
       state.value = newLang;
       localStorage.setItem('language', newLang);
       i18n.changeLanguage(newLang);
+      location.reload();
     },
   },
 });

@@ -1,7 +1,13 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const fetchSliderData = createAsyncThunk('slider/fetchSliderData', async () => {
-  const response = await fetch('http://127.0.0.1:8000/api/v1/banners/');
+export const fetchSliderData = createAsyncThunk('slider/fetchSliderData', async (_, { getState }) => {
+  const language = getState().language.value;
+  const response = await fetch('http://127.0.0.1:8000/api/v1/banners/', {
+    method: 'GET',
+    headers: {
+      'Accept-Language': language,
+    },
+  });
   if (!response.ok) {
     throw new Error('Помилка зантаження даних слайдера');
   }

@@ -23,6 +23,8 @@
   height: 100%;
   padding: 40px;
   transition: transform 0.8s ease;
+  background-position: center;
+  background-size: cover;
 }
 
 .slide__title {
@@ -92,6 +94,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 133%;
+    text-align: right;
   }
 
   .slide__button {
