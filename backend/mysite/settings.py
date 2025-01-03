@@ -3,7 +3,7 @@ from pathlib import Path
 from decouple import config
 from datetime import timedelta
 
-from django.conf.global_settings import STATICFILES_DIRS
+from django.conf.global_settings import DEFAULT_CHARSET, STATICFILES_DIRS
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -204,3 +204,5 @@ LANGUAGES = [
 ]
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = "uk"
+
+DEFAULT_CHARSET = "utf-8"
