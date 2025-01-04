@@ -33,7 +33,7 @@ class TopLevelCategoryView(ListAPIView):
     - GET api/v1/categories/ - Отримання всіх категорій.
     """
 
-    queryset = Category.objects.all().prefetch_related("children")
+    queryset = Category.objects.filter(parent=None).prefetch_related("children")
     serializer_class = CategorySerializer
 
 
