@@ -71,6 +71,8 @@ class ProductListSerializer(serializers.ModelSerializer):
     """
 
     main_image = serializers.SerializerMethodField()
+    is_new = serializers.SerializerMethodField()
+    discounted_price = serializers.FloatField(read_only=True)
 
     def get_main_image(self, obj):
         main_image = obj.productimage_set.filter(is_main=True).first()
@@ -78,13 +80,19 @@ class ProductListSerializer(serializers.ModelSerializer):
             return main_image.image.url
         return None
 
+    def get_is_new(self, obj):
+        return obj.is_new()
+
     class Meta:
         model = Product
         fields = [
             "id",
             "name",
             "price",
+            "discounted_price",
+            "rating",
             "main_image",
+            "is_new",
         ]
 
 
@@ -104,9 +112,9 @@ class ProductDetailSerializer(serializers.ModelSerializer):
 
     attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
     category = serializers.SerializerMethodField()
-    name = serializers.CharField()
-    description = serializers.CharField()
     images = ProductImageSerializer(source="productimage_set", many=True)
+    is_new = serializers.SerializerMethodField()
+    discounted_price = serializers.FloatField(read_only=True)
 
     def get_category(self, obj):
         """Метод для отримання всіх категорій товару (множинні категорії)"""
@@ -120,6 +128,9 @@ class ProductDetailSerializer(serializers.ModelSerializer):
             hierarchy.append(category_hierarchy)
         return hierarchy
 
+    def get_is_new(self, obj):
+        return obj.is_new()
+
     class Meta:
         model = Product
         fields = [
@@ -128,8 +139,11 @@ class ProductDetailSerializer(serializers.ModelSerializer):
             "category",
             "description",
             "price",
+            "discounted_price",
+            "rating",
             "attributes",
             "images",
+            "is_new",
         ]
 
 

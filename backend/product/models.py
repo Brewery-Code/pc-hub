@@ -1,4 +1,5 @@
 from datetime import timedelta
+import random
 from django.utils.timezone import now
 from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
@@ -79,6 +80,12 @@ class Product(models.Model):
     stock_quantity = models.PositiveIntegerField(
         default=0, verbose_name="Кількість на складі"
     )
+    discount = models.PositiveIntegerField(
+        default=0,
+        verbose_name="Знижка (%)",
+        help_text="Введіть знижку у відсотках (0-100)",
+    )
+    rating = models.FloatField(default=0.0, verbose_name="Рейтинг")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата оновлення")
 
@@ -88,6 +95,19 @@ class Product(models.Model):
     def is_available(self):
         """Перевірка наявності товару"""
         return self.stock_quantity > 0
+
+    def is_new(self):
+        return now() - self.created_at <= timedelta(days=7)
+
+    @property
+    def discounted_price(self):
+        if self.discount > 0:
+            return self.price * (1 - self.discount / 100)
+        return self.price
+
+    @property
+    def rating(self):
+        return round(random.uniform(1.0, 5.0), 1)
 
     class Meta:
         verbose_name = "Товар"
