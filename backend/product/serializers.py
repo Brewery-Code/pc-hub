@@ -75,9 +75,10 @@ class ProductListSerializer(serializers.ModelSerializer):
     discounted_price = serializers.FloatField(read_only=True)
 
     def get_main_image(self, obj):
+        request = self.context.get("request")
         main_image = obj.productimage_set.filter(is_main=True).first()
-        if main_image:
-            return main_image.image.url
+        if main_image and request:
+            return request.build_absolute_uri(main_image.image.url)
         return None
 
     def get_is_new(self, obj):
