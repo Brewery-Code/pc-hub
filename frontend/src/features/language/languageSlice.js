@@ -1,5 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import i18n from '../../i18n';
+import { fetchCatalogData } from '../catalog/catalogSlice';
+import { fetchSliderData } from '../slider/sliderSlice';
+import { fetchTopSalesData } from '../topSales/topSales';
 
 const initialLanguage = localStorage.getItem('language') || 'en';
 
@@ -7,15 +10,24 @@ const languageSlice = createSlice({
   name: 'language',
   initialState: { value: initialLanguage },
   reducers: {
-    toggleLanguage: (state) => {
-      const newLang = state.value === 'en' ? 'uk' : 'en';
-      state.value = newLang;
-      localStorage.setItem('language', newLang);
-      i18n.changeLanguage(newLang);
-      location.reload();
+    setLanguage: (state, action) => {
+      state.value = action.payload;
     },
   },
 });
 
-export const { toggleLanguage } = languageSlice.actions;
+export const { setLanguage } = languageSlice.actions;
+
+export const toggleLanguage = () => async (dispatch, getState) => {
+  const currentLang = getState().language.value;
+  const newLang = currentLang === 'en' ? 'uk' : 'en';
+  localStorage.setItem('language', newLang);
+  i18n.changeLanguage(newLang);
+
+  dispatch(setLanguage(newLang));
+  dispatch(fetchCatalogData());
+  dispatch(fetchSliderData());
+  dispatch(fetchTopSalesData());
+};
+
 export default languageSlice.reducer;

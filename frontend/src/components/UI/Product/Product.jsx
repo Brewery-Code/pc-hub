@@ -4,7 +4,10 @@ import { ReactComponent as CartIcon } from '../../../assets/icons/header-cart.sv
 import productImg from '../../../assets/img/product.jpeg';
 import styles from './Product.module.css';
 
-export default function Product() {
+export default function Product({ item }) {
+  if (!item) {
+    return <div>Продукт не знайдено</div>;
+  }
   return (
     <div className={styles.product}>
       <div className={styles.head}>
@@ -18,14 +21,14 @@ export default function Product() {
           <LikeIcon fill={'var(--color-action-secondary)'} />
         </button>
       </div>
-      <img className={styles.product__img} src={productImg}></img>
-      <p className={styles.product__title}>Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)</p>
+      <img className={styles.product__img} src={item.main_image}></img>
+      <p className={styles.product__title}>{item.name}</p>
       <div className={styles.reviews}>
         {/* <div className=""></div> */}
         <div className={styles.reviews__count}>Відгуки: 0</div>
       </div>
       <div className={styles.row}>
-        <div className={styles.row__price}>3500 <p>грн.</p></div>
+        <div className={styles.row__price}>{item.price} <p>грн.</p></div>
         <button className={styles.row__buy}>Купити
           <CartIcon fill={'white'} stroke={'white'} className={styles['only-mobile']} />
         </button>
