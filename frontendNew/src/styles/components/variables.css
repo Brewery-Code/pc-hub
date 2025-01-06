@@ -1,0 +1,20 @@
+:root {
+  --tablet-size-l: 991.8px;
+  --tablet-size-m: 767.8px;
+  --mobile-size-l: 479.8px;
+  --mobile-size-m: 374.8px;
+
+  --grey-scale-100: rgb(0, 0, 0);
+  --grey-scale-60: rgb(102, 102, 102);
+  --grey-scale-40: rgb(153, 153, 153);
+  --grey-scale-20: rgb(204, 204, 204);
+  --grey-scale-10: rgb(230, 230, 230);
+  --dark: rgb(6, 15, 66);
+  --dark-grey: rgb(51, 51, 51);
+  --soft: rgb(244, 248, 251);
+  --white: rgb(255, 255, 255);
+  --action-primary: rgb(6, 165, 108);
+  --action-secondary: rgb(1, 87, 155);
+  --accent-red: rgb(233, 50, 50);
+  --accent-orange: rgb(255, 205, 27);
+}
