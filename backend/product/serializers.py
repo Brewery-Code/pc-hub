@@ -58,7 +58,15 @@ class ProductImageSerializer(serializers.ModelSerializer):
         fields = ["image"]
 
 
-class ProductListSerializer(serializers.ModelSerializer):
+class ProductSerializer(serializers.ModelSerializer):
+    is_new = serializers.SerializerMethodField()
+    discounted_price = serializers.FloatField(read_only=True)
+
+    def get_is_new(self, obj):
+        return obj.is_new()
+
+
+class ProductListSerializer(ProductSerializer):
     """Серіалізатор для списку продуктів.
 
     Використовується для передачі основної інформації про продукти, зокрема головного зображення, назви, ціни та ідентифікатора.
@@ -71,8 +79,6 @@ class ProductListSerializer(serializers.ModelSerializer):
     """
 
     main_image = serializers.SerializerMethodField()
-    is_new = serializers.SerializerMethodField()
-    discounted_price = serializers.FloatField(read_only=True)
 
     def get_main_image(self, obj):
         request = self.context.get("request")
@@ -80,9 +86,6 @@ class ProductListSerializer(serializers.ModelSerializer):
         if main_image and request:
             return request.build_absolute_uri(main_image.image.url)
         return None
-
-    def get_is_new(self, obj):
-        return obj.is_new()
 
     class Meta:
         model = Product
@@ -97,7 +100,7 @@ class ProductListSerializer(serializers.ModelSerializer):
         ]
 
 
-class ProductDetailSerializer(serializers.ModelSerializer):
+class ProductDetailSerializer(ProductSerializer):
     """Серіалізатор для деталей продуктів.
 
     Використовується для передачі детальної інформації про продукт, включаючи атрибути, ієрархію категорій, опис, ціну та всі зображення продукту.
@@ -114,8 +117,6 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
     category = serializers.SerializerMethodField()
     images = ProductImageSerializer(source="productimage_set", many=True)
-    is_new = serializers.SerializerMethodField()
-    discounted_price = serializers.FloatField(read_only=True)
 
     def get_category(self, obj):
         """Метод для отримання всіх категорій товару (множинні категорії)"""
@@ -128,9 +129,6 @@ class ProductDetailSerializer(serializers.ModelSerializer):
                 category = category.parent
             hierarchy.append(category_hierarchy)
         return hierarchy
-
-    def get_is_new(self, obj):
-        return obj.is_new()
 
     class Meta:
         model = Product
