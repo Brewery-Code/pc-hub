@@ -14,7 +14,9 @@
   --soft: rgb(244, 248, 251);
   --white: rgb(255, 255, 255);
   --action-primary: rgb(6, 165, 108);
+  --action-primary-hover: rgb(55, 189, 141);
   --action-secondary: rgb(1, 87, 155);
+  --action-secondary-hover: rgb(53, 130, 191);
   --accent-red: rgb(233, 50, 50);
   --accent-orange: rgb(255, 205, 27);
 }

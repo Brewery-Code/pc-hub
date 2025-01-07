@@ -7,11 +7,18 @@
   cursor: pointer;
 }
 
+.burger-menu:hover .burger-menu__icon,
+.burger-menu:hover .burger-menu__icon::before,
+.burger-menu:hover .burger-menu__icon::after {
+  background-color: var(--accent-orange);
+}
+
 .burger-menu__icon {
   position: relative;
   width: 20px;
   height: 1px;
   background-color: var(--soft);
+  transition: background-color 0.3s ease;
 }
 
 .burger-menu__icon::before,
@@ -22,6 +29,7 @@
   height: 1px;
   transform: translateX(-50%);
   background-color: var(--soft);
+  transition: background-color 0.3s ease;
 }
 
 .burger-menu__icon::before {
@@ -30,4 +38,10 @@
 
 .burger-menu__icon::after {
   bottom: -8px;
+}
+
+@media (max-width: 767.8px) {
+  .burger-menu {
+    width: 21px;
+  }
 }

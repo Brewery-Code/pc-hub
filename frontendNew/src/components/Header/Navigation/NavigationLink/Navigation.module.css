@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 
+.link:hover a {
+  color: var(--accent-orange);
+}
+
 .link::before {
   content: "";
   position: absolute;
@@ -12,7 +16,7 @@
   left: 50%;
   width: 0%;
   height: 1px;
-  background-color: var(--soft);
+  background-color: var(--accent-orange);
   transition:
     transform 0.3s ease,
     width 0.3s ease,
@@ -26,4 +30,5 @@
 
 .link a {
   color: var(--soft);
+  transition: color 0.3s ease;
 }

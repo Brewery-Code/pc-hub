@@ -1,0 +1,25 @@
+.language-button {
+  display: flex;
+  gap: 4px;
+  color: var(--soft);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 120%;
+  transition: color 0.3s ease;
+}
+
+.language-button:hover {
+  color: var(--accent-orange);
+}
+
+.language-button__separator {
+}
+
+.language-button__language {
+  box-shadow: 0 4px 4px rgba(red, green, blue, 0.25);
+  opacity: 50%;
+}
+
+.language-button__language_active {
+  opacity: 1;
+}

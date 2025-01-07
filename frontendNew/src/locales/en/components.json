@@ -1,0 +1,12 @@
+{
+  "header": {
+    "promotion": "Promotion",
+    "credit": "Credit",
+    "payment": "Payment and delivery",
+    "help": "Help",
+    "secondHand": "S/H purchase",
+    "contacts": "Contacts",
+    "catalog": "Product catalog",
+    "search": "Search"
+  }
+}

@@ -1,11 +1,12 @@
-import clsx from "clsx";
 import { Navigation } from "./Navigation";
 import styles from "./Header.module.css";
+import { Utility } from "./Utility";
 
 function Header() {
   return (
-    <header className={clsx(styles.header)}>
+    <header className={styles.header}>
       <Navigation />
+      <Utility />
     </header>
   );
 }

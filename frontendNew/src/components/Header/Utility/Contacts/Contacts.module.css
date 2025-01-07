@@ -1,0 +1,36 @@
+.contacts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts:hover .contacts__title,
+.contacts:hover .contacts__title svg {
+  color: var(--accent-orange);
+  stroke: var(--accent-orange);
+}
+
+.contacts__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 155%;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.contacts__title-arrow-icon {
+  width: 12px;
+  height: 6px;
+  stroke: var(--dark);
+}
+
+.contacts__list {
+}
+
+.contacts__list-item {
+}
