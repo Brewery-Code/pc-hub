@@ -1,4 +1,3 @@
-from urllib import response
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
@@ -8,18 +7,40 @@ from product.models import Product
 
 
 def get_main_image_url(request, product):
-    """Метод для отримання абсолютного URL головного зображення товару."""
+    """Метод для отримання абсолютного URL головного зображення товару.
+
+    Аргументи:
+        request (HttpRequest): Поточний запит.
+        product (Product): Об'єкт товару.
+
+    """
     main_image = product.productimage_set.filter(is_main=True).first()
     if main_image and main_image.image:
-        request = request
         return request.build_absolute_uri(main_image.image.url)
     return None
 
 
 class CartViewSet(ViewSet):
+    """ViewSet для роботи з кошиком користувача.
+
+    Доступні операції:
+    - GET /api/v1/cart/ - Отримання кошика користувача.
+    - POST /api/v1/cart/ - Додавання товару до кошика.
+
+    Робота з кошиком:
+    - Для авторизованих користувачів кошик прив'язаний до облікового запису.
+    - Для анонімних користувачів кошик зберігається на основі сесії.
+
+    """
+
     permission_classes = [AllowAny]
 
     def get_cart(self, request):
+        """Отримання або створення кошика для поточного користувача або сесії.
+
+        Повертає:
+            Cart: Об'єкт кошика.
+        """
         if request.user.is_authenticated:
             cart, created = Cart.objects.get_or_create(user=request.user)
         else:
@@ -33,6 +54,11 @@ class CartViewSet(ViewSet):
         return cart
 
     def list(self, request):
+        """Отримання списку товарів у кошику.
+
+        Відповідь:
+        - JSON з інформацією про кошик, товари, загальну вартість.
+        """
         cart = self.get_cart(request)
         cart_items = CartItem.objects.filter(cart=cart)
 
@@ -45,6 +71,7 @@ class CartViewSet(ViewSet):
                     "product_name": item.product.name,
                     "quantity": item.quantity,
                     "price": item.price,
+                    "main_image_url": get_main_image_url(request, item.product),
                 }
                 for item in cart_items
             ],
@@ -53,6 +80,15 @@ class CartViewSet(ViewSet):
         return Response(response_data)
 
     def create(self, request):
+        """Додавання товару до кошика.
+
+        Аргументи:
+        - product_id (int): ID товару.
+        - quantity (int): Кількість товару.
+
+        Відповідь:
+        - JSON з повідомленням про успішне додавання або помилку.
+        """
         cart = self.get_cart(request)
         product_id = request.data.get("product_id")
         quantity = request.data.get("quantity", 1)
@@ -75,6 +111,11 @@ class CartViewSet(ViewSet):
         return Response({"message": "Product added to cart"})
 
     def get_queryset(self):
+        """Активація локалізації відповідно до заголовку запиту.
+
+        Повертає:
+            QuerySet: Відфільтровані об'єкти.
+        """
         language = self.request.headers.get("Accept-Language", "en")
         translation.activate(language)
         return super().get_queryset()
