@@ -5,6 +5,7 @@ interface ISVGIconProps {
   height?: string;
   hoverColor?: string;
   stroke?: string;
+  isIconSmall?: boolean;
 }
 
 export default ISVGIconProps;
