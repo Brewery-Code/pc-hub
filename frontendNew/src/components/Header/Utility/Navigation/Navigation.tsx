@@ -12,7 +12,7 @@ function Navigation({ isClassName }: INavigationProps) {
       <div className={clsx(styles.navigation__comparison, "only-desktop")}>
         <ComparisonIcon className={styles["navigation__comparison-icon"]} />
       </div>
-      <div className={(styles.navigation__like, "only-desktop")}>
+      <div className={clsx(styles.navigation__like, "only-desktop")}>
         <LikeIcon className={styles["navigation__like-icon"]} />
       </div>
       <div className={styles.navigation__cart}>

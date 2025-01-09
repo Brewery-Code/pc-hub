@@ -8,18 +8,17 @@ import styles from "./Utility.module.css";
 import clsx from "clsx";
 
 function Utility() {
-  const [isCatalogLarge, setIsCatalogLarge] = useState(window.innerWidth > 900);
-  const [isLogoSmall, setIsLogoSmall] = useState(window.innerWidth > 1124);
-
-  const checkWindowSize = () => {
-    setIsCatalogLarge(window.innerWidth > 900 || window.innerWidth < 767.8);
-    setIsLogoSmall(window.innerWidth < 1124 || window.innerWidth < 767.8);
-  };
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    checkWindowSize();
-    window.addEventListener("resize", checkWindowSize);
-    return () => window.removeEventListener("resize", checkWindowSize);
+    const handleScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleScreenWidth);
+
+    return () => {
+      window.removeEventListener("resize", handleScreenWidth);
+    };
   }, []);
 
   const { t } = useTranslation("components");
@@ -29,7 +28,7 @@ function Utility() {
         <div className={styles.utility__body}>
           <LogoIcon
             className={clsx(styles.utility__logo, "only-desktop")}
-            isIconSmall={isLogoSmall}
+            isIconSmall={screenWidth < 1124 || screenWidth < 767.8}
           />
           <UIButton
             className={styles["utility__catalog-button"]}
@@ -38,7 +37,7 @@ function Utility() {
             style="filled"
             type="catalog"
           >
-            {isCatalogLarge && t("header.catalog")}
+            {(screenWidth > 900 || screenWidth < 767.8) && t("header.catalog")}
             <CatalogIcon className={styles["utility__catalog-button-icon"]} />
           </UIButton>
           <form className={styles["search-form"]} action="">
