@@ -83,8 +83,8 @@ class CartViewSet(ViewSet):
         """Додавання товару до кошика.
 
         Аргументи:
-        - product_id (int): ID товару.
-        - quantity (int): Кількість товару.
+        - product_id (int): ID товару. (в тілі запиту)
+        - quantity (int): Кількість товару. (в тілі запиту)
 
         Відповідь:
         - JSON з повідомленням про успішне додавання або помилку.
@@ -109,6 +109,57 @@ class CartViewSet(ViewSet):
             cart_item.save()
 
         return Response({"message": "Product added to cart"})
+
+    def update(self, request, pk=None):
+        """Оновлення кількості товару в кошику.
+
+        Аргументи:
+        - pk (int): ID товару, кількість якого потрібно збільшити. (у URL)
+        - quantity (int): Кількість товару. (в тілі запиту)
+
+        Відповідь:
+        - JSON з повідомленням про успішне оновлення кількості товару або помилку.
+        """
+        cart = self.get_cart(request)
+
+        try:
+            cart_item = CartItem.objects.get(cart=cart, product_id=pk)
+        except CartItem.DoesNotExist:
+            return Response({"error": "Product not in cart"}, status=404)
+
+        quantity = request.data.get("quantity", 1)
+        if quantity <= 0:
+            cart_item.delete()
+            return Response({"message": "Product removed from cart"})
+        else:
+            cart_item.quantity = quantity
+            cart_item.save()
+            return Response({"message": "Product quantity updated"})
+
+    def destroy(self, request, pk=None):
+        """Видалення товару з кошика.
+
+        Аргументи:
+        - pk (int): ID товару, який потрібно видалити. (у URL)
+
+        Відповідь:
+        - JSON з повідомленням про успішне видалення або помилку.
+        """
+        cart = self.get_cart(request)
+
+        try:
+            product = Product.objects.get(pk=pk)
+        except Product.DoesNotExist:
+            return Response({"error": "Product not found"}, status=404)
+
+        try:
+            cart_item = CartItem.objects.get(cart=cart, product=product)
+            cart_item.delete()
+            return Response({"message": "Product removed from cart"})
+        except CartItem.DoesNotExist:
+            return Response({"error": "Product not in cart"}, status=404)
+        except Exception as e:
+            return Response({"error": f"An error occurred: {str(e)}"}, status=500)
 
     def get_queryset(self):
         """Активація локалізації відповідно до заголовку запиту.
