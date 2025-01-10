@@ -127,14 +127,18 @@ class CartViewSet(ViewSet):
         except CartItem.DoesNotExist:
             return Response({"error": "Product not in cart"}, status=404)
 
-        quantity = request.data.get("quantity", 1)
-        if quantity <= 0:
+        change = request.data.get("quantity", 0)
+
+        cart_item.quantity += change
+
+        if cart_item.quantity <= 0:
             cart_item.delete()
             return Response({"message": "Product removed from cart"})
         else:
-            cart_item.quantity = quantity
             cart_item.save()
-            return Response({"message": "Product quantity updated"})
+            return Response(
+                {"message": "Product quantity updated", "quantity": cart_item.quantity}
+            )
 
     def destroy(self, request, pk=None):
         """Видалення товару з кошика.
