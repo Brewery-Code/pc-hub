@@ -6,29 +6,34 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from .serializers import CustomUserRegistrationSerializer, CustomUserSerializer
 from rest_framework.decorators import permission_classes
+from cart.models import Cart, CartItem
 
 
 class RegisterCustomUserView(APIView):
-    """API View для реєстрації користувача
-
-    Доступні операції:
-    - POST /api/v1/users/register/ - Зареєструвати користувача
-    """
+    """API View для реєстрації користувача."""
 
     @permission_classes([AllowAny])
     def post(self, request):
-        """Реєструє нового користувача на основі отриманих даних
-
-        Параметри запиту:
-        - username: псевдонім користувача
-        - email: електронна адреса користувача
-        - password: пароль користувача
-        """
+        """Реєструє нового користувача на основі отриманих даних."""
 
         serializer = CustomUserRegistrationSerializer(data=request.data)
 
         if serializer.is_valid():
             user, access_token, refresh_token = serializer.save()
+
+            session_id = request.session.session_key
+            anonymous_cart = Cart.objects.filter(
+                session_id=session_id, user=None
+            ).first()
+
+            if anonymous_cart:
+                user_cart, created = Cart.objects.get_or_create(user=user)
+
+                for item in anonymous_cart.cartitem_set.all():
+                    CartItem.objects.create(
+                        cart=user_cart, product=item.product, quantity=item.quantity
+                    )
+                anonymous_cart.delete()
 
             return Response(
                 {
