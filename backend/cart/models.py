@@ -1,19 +1,29 @@
 from django.db import models
 from user.models import CustomUser
 from product.models import Product
+from django.utils.timezone import now
 
 
 class Cart(models.Model):
     user = models.ForeignKey(
-        CustomUser, on_delete=models.CASCADE, verbose_name="Користувач"
+        CustomUser,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name="Користувач",
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     updated_at = models.DateTimeField(
         auto_now=True, verbose_name="Дата останнього оновлення"
     )
     session_id = models.CharField(
-        max_length=255, null=True, blank=True, verbose_name="Сесія"
+        max_length=255, null=True, blank=True, unique=True, verbose_name="Сесія"
     )
+    last_accessed = models.DateTimeField(default=now)
+
+    def update_access_time(self):
+        self.last_accesed = now()
+        self.save()
 
     class Meta:
         verbose_name = "Кошик"
