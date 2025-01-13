@@ -120,7 +120,7 @@ class ProductDetailSerializer(ProductSerializer):
 
     def get_category(self, obj):
         """Метод для отримання всіх категорій товару (множинні категорії)"""
-        categories = obj.categories.all()
+        categories = obj.category.all()
         hierarchy = []
         for category in categories:
             category_hierarchy = []
