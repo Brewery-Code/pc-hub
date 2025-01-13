@@ -1,6 +1,6 @@
-from django.http import JsonResponse
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.pagination import PageNumberPagination
+from django_filters.rest_framework import DjangoFilterBackend
 from .models import *
 from .serializers import *
 from django.utils import translation
@@ -52,6 +52,8 @@ class ProductListView(ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductListSerializer
     pagination_class = StandardResultsSetPagination
+    filter_backends = [DjangoFilterBackend]
+    filterset_fields = ["category"]
 
     def get_queryset(self):
         language = self.request.headers.get("Accept-Language", "en")

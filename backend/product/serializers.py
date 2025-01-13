@@ -16,7 +16,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = ["id", "name", "image", "is_new", "parent", "children"]
+        fields = ["id", "name", "slug", "image", "is_new", "parent", "children"]
 
     def get_children(self, obj):
         """Метод для отримання підкатегорій поточної категорії."""

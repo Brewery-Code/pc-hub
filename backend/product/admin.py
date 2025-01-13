@@ -18,13 +18,13 @@ admin.site.register(Category, CategoryAdmin)
 
 class ProductAdmin(TranslationAdmin):
     list_display = ("name", "price", "created_at", "updated_at", "display_categories")
-    search_fields = ("name", "categories__name")
-    list_filter = ("categories", "created_at")
+    search_fields = ("name", "category__name")
+    list_filter = ("category", "created_at")
     ordering = ("-created_at",)
     list_per_page = 20
 
     def display_categories(self, obj):
-        return ", ".join([category.name for category in obj.categories.all()])
+        return ", ".join([category.name for category in obj.category.all()])
 
     display_categories.short_description = "Категорії"
 
@@ -56,7 +56,7 @@ admin.site.register(Attribute, AttributeAdmin)
 class ProductAttributeAdmin(admin.ModelAdmin):
     list_display = ("product", "attribute", "value")
     search_fields = ("product__name", "attribute__name", "value")
-    list_filter = ("product__categories",)
+    list_filter = ("product__category",)
     ordering = ("product", "attribute")
     list_per_page = 20
 
@@ -67,7 +67,7 @@ admin.site.register(ProductAttribute, ProductAttributeAdmin)
 class ProductImageAdmin(admin.ModelAdmin):
     list_display = ("product", "image", "is_main")
     search_fields = ("product__name", "image")
-    list_filter = ("is_main", "product__categories")
+    list_filter = ("is_main", "product__category")
     list_per_page = 20
 
 

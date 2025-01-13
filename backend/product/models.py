@@ -4,6 +4,7 @@ from django.utils.timezone import now
 from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
 import uuid
+from django.utils.text import slugify
 
 
 # Categories
@@ -32,6 +33,14 @@ class Category(MPTTModel):
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     order = models.PositiveIntegerField(default=0)
+    slug = models.SlugField(
+        max_length=60, unique=True, null=True, blank=True, verbose_name="Слаг"
+    )
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
 
     def is_new(self):
         return now() - self.created_at <= timedelta(days=7)
@@ -69,7 +78,7 @@ class Product(models.Model):
     """
 
     name = models.CharField(max_length=255, verbose_name="Назва товару")
-    categories = models.ManyToManyField(
+    category = models.ManyToManyField(
         Category,
         through="ProductCategory",
         related_name="products",

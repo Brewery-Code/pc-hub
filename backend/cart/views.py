@@ -53,12 +53,18 @@ class CartViewSet(ViewSet):
 
         return cart
 
+    def activate_translation(self, request):
+        """Активує переклад на основі заголовку 'Accept-Language'."""
+        language = request.headers.get("Accept-Language", "en")
+        translation.activate(language)
+
     def list(self, request):
         """Отримання списку товарів у кошику.
 
         Відповідь:
         - JSON з інформацією про кошик, товари, загальну вартість.
         """
+        self.activate_translation(request)
         cart = self.get_cart(request)
         cart_items = CartItem.objects.filter(cart=cart)
 
@@ -164,13 +170,3 @@ class CartViewSet(ViewSet):
             return Response({"error": "Product not in cart"}, status=404)
         except Exception as e:
             return Response({"error": f"An error occurred: {str(e)}"}, status=500)
-
-    def get_queryset(self):
-        """Активація локалізації відповідно до заголовку запиту.
-
-        Повертає:
-            QuerySet: Відфільтровані об'єкти.
-        """
-        language = self.request.headers.get("Accept-Language", "en")
-        translation.activate(language)
-        return super().get_queryset()
