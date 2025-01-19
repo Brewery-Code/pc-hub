@@ -4,21 +4,19 @@
   --mobile-size-l: 479.8px;
   --mobile-size-m: 374.8px;
 
-  --background-color-primary: rgb(255, 255, 255);
-  --font-color-grey: rgb(217, 217, 217);
-
-  --font-color-white: rgb(244, 248, 251);
-  --font-color-primary: rgb(51, 51, 51);
-  --background-color-blue: rgb(6, 15, 66);
-
-  --color-grey-scale-10: rgb(230, 230, 230);
-  --color-grey-scale-20: rgb(204, 204, 204);
-  --color-grey-scale-40: rgb(153, 153, 153);
-  --color-grey-scale-60: rgb(102, 102, 102);
-
-  --color-action-primary: rgb(6, 165, 108);
-  --color-action-secondary: rgb(1, 87, 155);
-
-  --color-accent-red: rgb(233, 50, 50);
-  --color-accent-yellow: rgb(255, 205, 27);
+  --grey-scale-100: rgb(0, 0, 0);
+  --grey-scale-60: rgb(102, 102, 102);
+  --grey-scale-40: rgb(153, 153, 153);
+  --grey-scale-20: rgb(204, 204, 204);
+  --grey-scale-10: rgb(230, 230, 230);
+  --dark: rgb(6, 15, 66);
+  --dark-grey: rgb(51, 51, 51);
+  --soft: rgb(244, 248, 251);
+  --white: rgb(255, 255, 255);
+  --action-primary: rgb(6, 165, 108);
+  --action-primary-hover: rgb(55, 189, 141);
+  --action-secondary: rgb(1, 87, 155);
+  --action-secondary-hover: rgb(53, 130, 191);
+  --accent-red: rgb(233, 50, 50);
+  --accent-orange: rgb(255, 205, 27);
 }

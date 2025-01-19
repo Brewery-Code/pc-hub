@@ -1,260 +1,158 @@
 .utility {
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .utility__body {
-  display: grid;
-  grid-template-columns: auto 1fr auto auto auto;
-  align-items: center;
-  column-gap: 16px;
-  padding: 24px 0;
-  height: 97px;
-}
-
-.utility__navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  margin: 27.5px 0;
 }
 
 .utility__logo {
-  margin-bottom: 7px;
+  position: relative;
+  bottom: 3.5px;
+  width: 165px;
+  height: 42px;
+  fill: var(--action-secondary);
 }
 
-.utility__catalog {
+.utility__catalog-button {
+  margin-left: 30px;
+  padding: 9px 12px 9px 10px;
+}
+
+.utility__catalog-button-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--soft);
+  fill: var(--soft);
+}
+
+.search-form {
+  flex-grow: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 9px 12px;
-
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--font-color-white);
-  text-align: center;
-
-  background-color: var(--color-action-primary);
-  border-radius: 4px;
+  margin-left: 16px;
 }
 
-.utility__catalog div {
-  padding-top: 2px;
-  text-transform: uppercase;
-}
-
-.utility__search {
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-
-.utility__search input {
-  padding: 12px 12px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 133%;
-  border: 1px solid var(--color-grey-scale-10);
+.search-form__input-field {
   border-radius: 4px 0 0 4px;
 }
 
-.utility__search input::placeholder {
-  color: rgb(229, 229, 229);
-}
-
-.utility__search button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 14px;
-  background-color: var(--color-action-secondary);
+.search-form__submit-button {
+  padding: 9px 12px;
   border-radius: 0 4px 4px 0;
 }
 
-.utility__search button svg {
+.search-form__submit-button-icon {
   width: 20px;
   height: 20px;
+  fill: var(--soft);
 }
 
-.utility__search_mobile {
-  background-color: var(--background-color-blue);
+.utility__contacts {
+  margin-left: 16px;
 }
 
-.utility__search_mobile svg {
+.utility__separator {
   width: 32px;
-  height: 32px;
-}
-
-.utility__number {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 160%;
-  color: var(--background-color-blue);
-}
-
-.utility__line {
-  width: 32px;
-  height: 0px;
-  border: 1px solid var(--background-color-blue);
-  border-radius: 100px;
+  height: 2px;
+  margin-left: 18px;
+  background-color: var(--dark);
   transform: rotate(90deg);
 }
 
-.purchase {
-  display: flex;
-  gap: 15px;
+.utility__navigation {
+  margin-left: 8px;
 }
 
-.purchase div {
-  position: relative;
-  margin-right: 6px;
-}
-
-.purchase div::before {
-  content: '12';
-  position: absolute;
-  right: -6px;
-  top: -8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  font-size: 10px;
-  font-weight: 900;
-}
-
-.purchase__comparison svg {
-  stroke: var(--background-color-blue);
-}
-
-.purchase__like svg {
-  fill: var(--background-color-blue);
-}
-
-.purchase__comparison::before,
-.purchase__like::before {
-  background-color: var(--color-accent-yellow);
-}
-
-.purchase__cart svg {
-  fill: var(--background-color-blue);
-  stroke: var(--background-color-blue);
-}
-
-.purchase__cart::before {
-  background-color: var(--color-action-primary);
-}
-
-.purchase div svg {
-  width: 40px;
-  height: 40px;
-}
-
-.only-mobile {
+.utility__search-button_mobile {
   display: none;
 }
 
+.utility__search-button_mobile:hover .utility__search-button-icon_mobile {
+  fill: var(--accent-orange);
+}
+
+.utility__search-button-icon_mobile {
+  width: 32px;
+  height: 32px;
+  fill: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .utility__catalog-button {
+    margin-left: 8px;
+  }
+
+  .search-form {
+    margin-left: 8px;
+  }
+
+  .utility__contacts {
+    margin-left: 8px;
+  }
+  .utility__separator {
+    margin-left: 0px;
+  }
+
+  .utility__navigation {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 1124px) {
-  .utility__body {
-    grid-template-columns: auto 1fr auto auto;
-    gap: 12px;
-  }
-
-  .utility__navigation {
-    gap: 12px;
-  }
-
-  .utility__line {
-    display: none;
-  }
-
-  .purchase {
-    gap: 12px;
-  }
-}
-
-@media (max-width: 991.8px) {
-  .utility__number {
-    display: none;
-  }
-}
-
-@media (max-width: 880px) {
   .utility__logo {
-    display: none;
+    width: 50px;
   }
 }
 
-@media (max-width: 768px) {
-  .utility__catalog {
-    height: 42px;
-  }
-
-  .utility__catalog svg {
-    display: none;
-  }
-
-  .purchase div svg {
-    width: 32px;
-    height: 32px;
+@media (max-width: 900px) {
+  .utility__catalog-button {
+    padding: 9px;
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 767.8px) {
   .utility {
-    background-color: var(--background-color-blue);
+    background-color: var(--dark);
   }
 
   .utility__body {
-    grid-template-columns: auto 1fr auto;
-    padding: 24px 0 16px;
-    height: inherit;
-    box-shadow: none;
+    gap: 16px;
+    margin: 16px 0;
   }
 
-  .utility__catalog svg {
-    display: inherit;
-    height: 24px;
-    width: 24px;
-  }
-
-  .purchase__comparison,
-  .purchase__like {
-    display: none;
-  }
-
-  .purchase__cart svg {
-    fill: #fff;
-    stroke: #fff;
+  .utility__catalog-button,
+  .search-form {
+    margin: 0;
   }
 }
 
-@media (max-width: 479.8px) {
+@media (max-width: 551px) {
   .utility__body {
-    grid-template-columns: 1fr auto auto;
-    gap: 28px;
+    gap: 38px;
   }
-
-  .utility__search {
+  .search-form {
     display: none;
   }
 
-  .only-mobile {
-    display: inherit;
+  .utility__search-button_mobile {
+    display: block;
+    margin-left: auto;
   }
 }
 
-@media (max-width: 240px) {
+@media (max-width: 400px) {
   .utility__body {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    gap: 16px;
   }
+}
 
-  .utility__navigation {
-    grid-column: span 2;
+@media (max-width: 340px) {
+  .utility__body {
+    gap: 8px;
   }
 }
