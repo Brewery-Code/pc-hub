@@ -208,3 +208,8 @@ LANGUAGES = [
 MODELTRANSLATION_DEFAULT_LANGUAGE = "uk"
 
 DEFAULT_CHARSET = "utf-8"
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, "locale"),
+]

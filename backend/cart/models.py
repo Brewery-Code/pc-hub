@@ -38,7 +38,7 @@ class CartItem(models.Model):
     )
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Товар")
     quantity = models.PositiveIntegerField(verbose_name="Кількість товару", default=1)
-    price = models.FloatField(default=10000, verbose_name="Ціна товару", editable=False)
+    price = models.FloatField(default=0, verbose_name="Ціна товару", editable=False)
 
     class Meta:
         verbose_name = "Товар в кошику"

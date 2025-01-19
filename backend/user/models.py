@@ -107,11 +107,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     Поля:
         email: Електронна адреса користувача (унікальна).
-        username: Псевдонім користувача (унікальний).
         name: Ім'я користувача.
         surname: Прізвище користувача.
         phone: Номер телефону користувача (необов'язково).
-        address: Адреса користувача (необов'язково).
         photo: Фото профілю користувача (необов'язково).
         created_at: Дата створення користувача.
         last_login: Дата останнього входу користувача.
@@ -125,9 +123,6 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     surname = models.CharField(max_length=30, blank=True, verbose_name="Прізвище")
     phone = PhoneNumberField(
         unique=True, null=True, blank=True, verbose_name="Номер телефону"
-    )
-    address = models.TextField(
-        max_length=200, blank=True, verbose_name="Адреса доставки"
     )
     photo = models.ImageField(
         upload_to=user_directory_path,
