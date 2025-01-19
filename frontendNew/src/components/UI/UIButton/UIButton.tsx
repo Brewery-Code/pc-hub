@@ -5,10 +5,9 @@ import styles from "./UIButton.module.css";
 type UIButtonPrimaryProps = {
   children?: ReactNode;
   className?: string;
-  type?: "cart" | "catalog";
   color: "primary" | "secondary";
   style: "filled" | "outline";
-  size?: "m" | "s" | "xs";
+  size?: "m" | "s";
   width?: boolean;
 };
 

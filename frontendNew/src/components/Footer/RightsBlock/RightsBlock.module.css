@@ -1,0 +1,54 @@
+.block {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(217, 217, 217, 0.5);
+  border-bottom: 1px solid rgba(217, 217, 217, 0.5);
+}
+
+.block__logo {
+}
+
+.block__logo-icon {
+  width: 160px;
+  height: 40px;
+  fill: rgb(217, 217, 217);
+}
+
+.block__text {
+  flex-grow: 1;
+  font-size: 12px;
+  line-height: 116%;
+  color: rgb(217, 217, 217);
+}
+
+.block__payment {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.block__payment-mastercard {
+  width: 32px;
+  height: 19px;
+}
+
+.block__payment-visa {
+  width: 36px;
+  height: 12px;
+}
+
+@media (max-width: 767.8px) {
+  .block {
+    flex-direction: column-reverse;
+    gap: 23px;
+    padding: 0;
+    border: none;
+  }
+
+  .block__text {
+    text-align: center;
+  }
+}

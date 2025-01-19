@@ -1,0 +1,37 @@
+.zone {
+  margin-top: 21px;
+  background-image: linear-gradient(
+      rgba(34, 39, 94, 0.92),
+      rgba(34, 39, 94, 0.92)
+    ),
+    url(../../../assets/img/gameZoneBackground.jpeg);
+  background-size: cover;
+}
+
+.zone__body {
+  padding: 40px 0;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 0.1fr auto 1fr;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.head span {
+  height: 2px;
+  background-color: var(--white);
+}
+
+.head__title {
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 111%;
+  text-transform: uppercase;
+}
+
+.zone__products {
+  margin-top: 24px;
+}

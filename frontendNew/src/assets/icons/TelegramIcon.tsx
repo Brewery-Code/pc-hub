@@ -17,6 +17,7 @@ function TelegramIcon({ className, width, height, fill }: ISVGIconProps) {
         fill={fill}
         fillOpacity="1.000000"
         fillRule="nonzero"
+        stroke="none"
       />
     </svg>
   );

@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import styles from './Slider.module.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchSliderData } from '../../../../features/slider/sliderSlice';
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import styles from "./Slider.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchSliderData } from "../../../../features/slider/sliderSlice";
 
 export default function Slider() {
   const dispatch = useDispatch();
@@ -12,7 +12,7 @@ export default function Slider() {
     dispatch(fetchSliderData());
   }, [dispatch]);
 
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
 
   let autoPlay = true;
   let autoPlayInterval = 5000;
@@ -38,35 +38,44 @@ export default function Slider() {
     }
   }, [autoPlay, autoPlayInterval, currentSlide]);
 
-  return (
-    <div className={styles.slider}>
-      <div className={styles.slider__list}>
-        {slider.map((slide, index) => (
-          <div
-            className={`${styles.slide} ${index + 1 === currentSlide ? styles.slide_active : ''
-              }`}
-            key={slide.id}
-            style={{
-              transform: `translateX(${(index - currentSlide) * 100}%)`,
-              backgroundImage: `url(${slide.image})`,
-            }}
-          >
-            <h4 className={styles.slide__title}>{slide.title}</h4>
-            <p className={styles.slide__description}>{slide.description}</p>
-            <button className={styles.slide__button}>{t('slider.button')}</button>
-          </div>
-        ))}
-        <div className={styles.counter}>
+  if (loading) {
+    return <div>Loading...</div>;
+  } else {
+    return (
+      <div className={styles.slider}>
+        <div className={styles.slider__list}>
           {slider.map((slide, index) => (
-            <div className={currentSlide === index ?
-              `${styles.counter__item} ${styles.counter__item_active}` :
-              styles.counter__item}
+            <div
+              className={`${styles.slide} ${
+                index + 1 === currentSlide ? styles.slide_active : ""
+              }`}
               key={slide.id}
+              style={{
+                transform: `translateX(${(index - currentSlide) * 100}%)`,
+                backgroundImage: `url(${slide.image})`,
+              }}
             >
+              <h4 className={styles.slide__title}>{slide.title}</h4>
+              <p className={styles.slide__description}>{slide.description}</p>
+              <button className={styles.slide__button}>
+                {t("slider.button")}
+              </button>
             </div>
           ))}
+          <div className={styles.counter}>
+            {slider.map((slide, index) => (
+              <div
+                className={
+                  currentSlide === index
+                    ? `${styles.counter__item} ${styles.counter__item_active}`
+                    : styles.counter__item
+                }
+                key={slide.id}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

@@ -26,9 +26,9 @@ function Navigation() {
           <PhoneIcon
             className={clsx("only-mobile", styles["navigation__phone-icon"])}
           />
-          <div className={clsx("only-desktop", styles.navigation__language)}>
-            <UIChangeLanguage />
-          </div>
+          <UIChangeLanguage
+            className={clsx("only-desktop", styles.navigation__language)}
+          />
           <ProfileIcon
             className={clsx("only-desktop", styles.navigation__profile)}
           />

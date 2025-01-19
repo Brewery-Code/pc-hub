@@ -1,0 +1,40 @@
+.hero__body {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.323fr 1fr;
+  grid-template-rows: 400px 156px;
+  column-gap: 16px;
+  max-height: 556px;
+  margin-top: 32px;
+}
+
+.hero__catalog {
+  grid-row: 1 / 3;
+}
+
+.hero__slider {
+}
+
+.hero__advantages {
+}
+
+@media (max-width: 767.8px) {
+  .hero__body {
+    overflow: visible;
+    grid-template-columns: 1fr;
+    grid-template-rows: 201px auto auto;
+    row-gap: 16px;
+    margin-top: 0;
+  }
+  .hero__catalog {
+    grid-row: 2;
+  }
+
+  .hero__slider {
+    grid-row: 1;
+  }
+
+  .hero__advantages {
+    grid-row: 3;
+  }
+}
