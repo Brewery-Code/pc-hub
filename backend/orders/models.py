@@ -55,3 +55,8 @@ class Order(models.Model):
 
     def __str__(self):
         return f"Order {self.id} - {self.get_status_display()} - {self.get_payment_method_display()} - {self.get_delivery_method_display()}"
+
+    class Meta:
+        verbose_name = "Замовлення"
+        verbose_name_plural = "Замовлення"
+        db_table = "Orders"
