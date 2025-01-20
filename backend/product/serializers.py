@@ -92,6 +92,7 @@ class ProductListSerializer(ProductSerializer):
         fields = [
             "id",
             "name",
+            "description",
             "price",
             "discounted_price",
             "rating",
