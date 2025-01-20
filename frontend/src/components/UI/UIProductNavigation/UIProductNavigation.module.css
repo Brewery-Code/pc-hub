@@ -38,6 +38,20 @@
   transform: rotate(90deg);
 }
 
+/* Modifiers */
+
+.navigation_white .navigation__more,
+.navigation_white .navigation__all {
+  color: var(--white);
+}
+
+.navigation_white .navigation__more-icon,
+.navigation_white .navigation__all-icon {
+  stroke: var(--white);
+}
+
+/* Modifiers */
+
 @media (max-width: 767.8px) {
   .navigation__more,
   .navigation__all {
