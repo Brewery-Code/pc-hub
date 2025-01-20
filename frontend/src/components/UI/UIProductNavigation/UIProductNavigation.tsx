@@ -7,16 +7,24 @@ interface IUIProductNavigationProps {
   className?: string;
   isListOpen?: boolean;
   toggleList?: () => void;
+  type?: "common" | "white";
 }
 
 function UIProductNavigation({
   className,
   isListOpen,
   toggleList,
+  type,
 }: IUIProductNavigationProps) {
   const { t } = useTranslation("components");
   return (
-    <div className={clsx(styles.navigation, className)}>
+    <div
+      className={clsx(
+        styles.navigation,
+        className,
+        type === "white" && styles.navigation_white,
+      )}
+    >
       <button
         className={clsx(
           styles.navigation__more,

@@ -58,14 +58,12 @@ function TopSales() {
           <h4 className={styles.sales__title}>{t("selling.title")}</h4>
           <div ref={firstListRef}>
             <UIProductList
-              className={clsx(
-                styles.sales__list,
-                isFirstListOpen && styles.sales__list_open,
-              )}
+              className={clsx(styles.sales__list)}
               list={firstList}
               style={
                 isFirstListOpen ? { maxHeight: `${firstListHeight}px` } : {}
               }
+              isListOpen={isFirstListOpen}
             />
           </div>
           <UIProductNavigation
@@ -78,14 +76,12 @@ function TopSales() {
           </h4>
           <div ref={secondListRef}>
             <UIProductList
-              className={clsx(
-                styles.sales__list,
-                isSecondListOpen && styles.sales__list_open,
-              )}
+              className={clsx(styles.sales__list)}
               list={secondList}
               style={
                 isSecondListOpen ? { maxHeight: `${secondListHeight}px` } : {}
               }
+              isListOpen={isSecondListOpen}
             />
           </div>
           <UIProductNavigation

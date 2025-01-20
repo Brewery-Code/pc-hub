@@ -9,6 +9,7 @@ interface IUIProductListProps {
   style?: React.CSSProperties;
   childClassName?: string;
   childType?: "common" | "dark";
+  isListOpen?: boolean;
 }
 
 function UIProductList({
@@ -17,9 +18,13 @@ function UIProductList({
   style,
   childClassName,
   childType,
+  isListOpen,
 }: IUIProductListProps) {
   return (
-    <div className={clsx(styles.list, className)} style={style}>
+    <div
+      className={clsx(styles.list, className, isListOpen && styles.list_open)}
+      style={style}
+    >
       {list?.map((item) => (
         <UIProductCard
           key={item.id}
