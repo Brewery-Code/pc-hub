@@ -171,6 +171,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-height: 200px;
+    margin-top: 12px;
   }
   .category__item {
     gap: 8px;

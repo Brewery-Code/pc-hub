@@ -16,5 +16,12 @@
   },
   "gameZone": {
     "subtitle": "Categories for gamers"
+  },
+  "media": {
+    "instagram": "Instagram",
+    "instagramMore": "Follow",
+    "reviews": "Reviews",
+    "allReviews": "All reviews",
+    "googleReviews": "reviews on Google"
   }
 }

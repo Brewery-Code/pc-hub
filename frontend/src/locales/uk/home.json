@@ -16,5 +16,12 @@
   },
   "gameZone": {
     "subtitle": "Категорії для геймерів"
+  },
+  "media": {
+    "instagram": "Інстаграм",
+    "instagramMore": "Перейти",
+    "reviews": "Відгуки",
+    "allReviews": "Всі відгуки",
+    "googleReviews": "відгуків на Google"
   }
 }
