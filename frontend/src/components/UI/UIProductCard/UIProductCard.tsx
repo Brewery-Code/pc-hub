@@ -1,14 +1,10 @@
 import { useTranslation } from "react-i18next";
-import {
-  CartIcon,
-  ComparisonIcon,
-  LikeIcon,
-  StarIcon,
-} from "../../../assets/icons";
+import { CartIcon, ComparisonIcon, LikeIcon } from "../../../assets/icons";
 import { IProduct } from "../../../store/topSales/topSales.slice";
 import styles from "./UIProductCard.module.css";
 import clsx from "clsx";
 import { UIButton } from "..";
+import UIRatingStars from "../UIRatingStars/UIRatingStars";
 
 interface IUIProductCardProps {
   product: IProduct;
@@ -17,21 +13,6 @@ interface IUIProductCardProps {
 }
 
 function UIProductCard({ product, className, type }: IUIProductCardProps) {
-  const stars = () => (
-    <>
-      {Array.from({ length: 5 }).map((_, index) => (
-        <StarIcon
-          key={index}
-          className={clsx(
-            styles["reviews__star"],
-            index + 1 <= Math.round(product.rating) &&
-              styles["reviews__star_active"],
-          )}
-        />
-      ))}
-    </>
-  );
-
   const price = () => {
     if (product.discounted_price !== product.price) {
       return (
@@ -97,7 +78,9 @@ function UIProductCard({ product, className, type }: IUIProductCardProps) {
         {product.name}
       </div>
       <div className={styles.reviews}>
-        <div className={styles.reviews__stars}>{stars()}</div>
+        <div className={styles.reviews__stars}>
+          <UIRatingStars rating={product.rating} />
+        </div>
         <div className={styles.reviews__count}>
           {t("productCard.reviews")}: {product.rating}
         </div>

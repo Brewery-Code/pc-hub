@@ -1,0 +1,16 @@
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  width: 12px;
+  height: 12px;
+  fill: rgb(217, 217, 217);
+  stroke: rgb(217, 217, 217);
+}
+
+.star_active {
+  fill: var(--accent-orange);
+  stroke: var(--accent-orange);
+}

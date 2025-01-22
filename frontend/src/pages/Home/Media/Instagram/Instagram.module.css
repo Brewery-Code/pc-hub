@@ -11,18 +11,35 @@
 }
 
 .instagram__posts {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 8px;
   height: 156px;
   margin-top: 24px;
   padding: 8px;
   box-shadow: 0 2px 10px rgba(50, 50, 71, 0.14);
 }
 
+.instagram__posts-container1,
+.instagram__posts-container2 {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  padding: 0 4px;
+}
+
+.instagram__posts-container1 {
+  animation: list1 40s linear infinite;
+}
+
+.instagram__posts-container2 {
+  animation:
+    list2Secondary 20s linear infinite 0s,
+    list2Primary 40s linear infinite 20s;
+}
+
 .instagram__post {
-  flex: 1 1 100%;
   cursor: pointer;
 }
 
@@ -31,7 +48,7 @@
 }
 
 .instagram__post-img {
-  width: 100%;
+  border-radius: 4px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -42,6 +59,7 @@
   align-items: center;
   gap: 4px;
   margin-top: 26px;
+  margin-right: 4px;
   color: var(--action-secondary);
   font-size: 14px;
   font-weight: 500;
@@ -53,4 +71,82 @@
   width: 16px;
   height: 16px;
   stroke: var(--action-secondary);
+}
+
+@keyframes list1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes list2Secondary {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes list2Primary {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 767.8px) {
+  .instagram {
+    margin-top: 32px;
+  }
+  .instagram__title {
+    font-size: 18px;
+    line-height: 133%;
+  }
+  .instagram__posts {
+    height: auto;
+    margin-top: 15px;
+  }
+  .instagram__posts-container1 {
+    display: none;
+  }
+  .instagram__posts-container2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    animation: none;
+  }
+  .instagram__post-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .instagram__more {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 479.8px) {
+  .instagram__posts-container2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 359.8px) {
+  .instagram__posts-container2 {
+    grid-template-columns: 1fr;
+  }
 }
