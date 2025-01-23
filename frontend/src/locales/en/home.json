@@ -23,5 +23,14 @@
     "reviews": "Reviews",
     "allReviews": "All reviews",
     "googleReviews": "reviews on Google"
+  },
+  "partners": {
+    "title": "Partners",
+    "allPartners": "All partners"
+  },
+  "news": {
+    "title": "News",
+    "readMore": "Read more",
+    "allNews": "All news"
   }
 }

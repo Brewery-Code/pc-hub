@@ -23,5 +23,14 @@
     "reviews": "Відгуки",
     "allReviews": "Всі відгуки",
     "googleReviews": "відгуків на Google"
+  },
+  "partners": {
+    "title": "Партнери",
+    "allPartners": "Всі партнери"
+  },
+  "news": {
+    "title": "Новини",
+    "readMore": "Читати повністю",
+    "allNews": "Всі новини"
   }
 }
