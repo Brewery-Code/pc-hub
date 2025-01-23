@@ -1,5 +1,6 @@
 from random import choice
 from django.db import models
+from product.models import Product
 from user.models import CustomUser
 from django.utils.translation import gettext_lazy as _
 
@@ -60,3 +61,22 @@ class Order(models.Model):
         verbose_name = "Замовлення"
         verbose_name_plural = "Замовлення"
         db_table = "Orders"
+
+
+class OrderItem(models.Model):
+    order = models.ForeignKey(
+        Order,
+        on_delete=models.PROTECT,
+        verbose_name="Замовлення",
+    )
+    product = models.ForeignKey(Product, on_delete=models.PROTECT, verbose_name="Товар")
+    quantity = models.PositiveIntegerField(default=0)
+    price = models.FloatField(default=0)
+
+    def __str__(self):
+        return f"Order {self.order.id}. Product List."
+
+    class Meta:
+        verbose_name = "Замовлений товар"
+        verbose_name_plural = "Замовлені товари"
+        db_table = "OrderItem"

@@ -6565,6 +6565,71 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 506,
+    "fields": {
+        "action_time": "2025-01-23T14:30:19.531Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "Partner object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 507,
+    "fields": {
+        "action_time": "2025-01-23T14:30:38.238Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "Partner object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 508,
+    "fields": {
+        "action_time": "2025-01-23T14:30:46.315Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "3",
+        "object_repr": "Partner object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 509,
+    "fields": {
+        "action_time": "2025-01-23T14:30:58.856Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "4",
+        "object_repr": "Partner object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 510,
+    "fields": {
+        "action_time": "2025-01-23T14:31:06.956Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "5",
+        "object_repr": "Partner object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -7213,6 +7278,78 @@
     }
 },
 {
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add Логотип партнера",
+        "content_type": 19,
+        "codename": "add_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change Логотип партнера",
+        "content_type": 19,
+        "codename": "change_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete Логотип партнера",
+        "content_type": 19,
+        "codename": "delete_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view Логотип партнера",
+        "content_type": 19,
+        "codename": "view_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add Замовлений товар",
+        "content_type": 20,
+        "codename": "add_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change Замовлений товар",
+        "content_type": 20,
+        "codename": "change_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete Замовлений товар",
+        "content_type": 20,
+        "codename": "delete_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view Замовлений товар",
+        "content_type": 20,
+        "codename": "view_orderitem"
+    }
+},
+{
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -7354,6 +7491,22 @@
     "fields": {
         "app_label": "orders",
         "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "core",
+        "model": "partner"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "orders",
+        "model": "orderitem"
     }
 },
 {
@@ -12901,6 +13054,46 @@
         "product": 5,
         "quantity": 2,
         "price": 10000.0
+    }
+},
+{
+    "model": "core.partner",
+    "pk": 1,
+    "fields": {
+        "title": "Acer",
+        "image": "partners/acer.png"
+    }
+},
+{
+    "model": "core.partner",
+    "pk": 2,
+    "fields": {
+        "title": "Lenovo",
+        "image": "partners/lenovo.png"
+    }
+},
+{
+    "model": "core.partner",
+    "pk": 3,
+    "fields": {
+        "title": "HP",
+        "image": "partners/hp.png"
+    }
+},
+{
+    "model": "core.partner",
+    "pk": 4,
+    "fields": {
+        "title": "Samsung",
+        "image": "partners/samsung.png"
+    }
+},
+{
+    "model": "core.partner",
+    "pk": 5,
+    "fields": {
+        "title": "Sony",
+        "image": "partners/sony.png"
     }
 }
 ]
