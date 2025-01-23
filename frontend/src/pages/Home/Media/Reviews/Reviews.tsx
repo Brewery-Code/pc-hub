@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import avatarImg1 from "../../../../assets/img/avatar1.png";
-import avatarImg2 from "../../../../assets/img/avatar2.png";
-import avatarImg3 from "../../../../assets/img/avatar3.png";
+import avatarImg2 from "../../../../assets/img/avatar2.jpg";
+import avatarImg3 from "../../../../assets/img/avatar3.jpg";
 import styles from "./Reviews.module.css";
 import { ArrowCommon } from "../../../../assets/icons";
 import UIRatingStars from "../../../../components/UI/UIRatingStars/UIRatingStars";
