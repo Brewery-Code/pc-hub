@@ -1,3 +1,4 @@
+import AboutUs from "./AboutUs/AboutUs";
 import { GameZone } from "./GameZone";
 import { HeroSection } from "./HeroSection";
 import { Media } from "./Media";
@@ -14,15 +15,7 @@ function Home() {
       <Media />
       <Partners />
       <News />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <AboutUs />
     </>
   );
 }

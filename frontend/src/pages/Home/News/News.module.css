@@ -133,9 +133,19 @@
 
 @media (max-width: 767.8px) {
   .news__list {
+    position: relative;
+    left: -16px;
+    overflow-x: auto;
     grid-template-rows: 292px;
     grid-auto-flow: column;
-    overflow-x: scroll;
+    width: calc(100% + 32px);
+    margin-top: 0;
+    padding: 24px 16px 14px 16px;
+    scrollbar-width: none;
+  }
+
+  .news__list::-webkit-scrollbar {
+    display: none;
   }
 
   .news__list > *:nth-child(n + 3) {
@@ -148,7 +158,7 @@
 
   .news__more {
     gap: 2px;
-    margin-top: 14px;
+    margin-top: 0;
     margin-right: 16px;
     font-size: 12px;
   }
