@@ -1,0 +1,66 @@
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import i18n from "../../locales/i18n";
+
+const fetchCatalog = createAsyncThunk("catalog/fetchCatalog", async () => {
+  const response = await fetch("http://127.0.0.1:8000/api/v1/categories/", {
+    method: "GET",
+    headers: {
+      "Accept-Language": i18n.language,
+    },
+  });
+  return response.json();
+});
+
+interface ICategoryChildren {
+  id: number;
+  name: string;
+  slug: string;
+  image: string;
+  is_new: boolean;
+  children: ICategoryChildren[];
+  parent: number;
+}
+
+interface ICategory {
+  id: number;
+  name: string;
+  slug: string;
+  image: string;
+  is_new: boolean;
+  children: ICategoryChildren[];
+  parent: null;
+}
+
+interface ICatalogState {
+  catalog: ICategory[];
+  status: "idle" | "pending" | "succeeded" | "failed";
+  error: string | null;
+}
+
+const initialState: ICatalogState = {
+  catalog: [],
+  status: "idle",
+  error: null,
+};
+
+const catalogSlice = createSlice({
+  name: "catalog",
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchCatalog.pending, (state) => {
+        state.status = "pending";
+      })
+      .addCase(fetchCatalog.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.catalog = action.payload;
+      })
+      .addCase(fetchCatalog.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message ?? "Unknown error";
+      });
+  },
+});
+
+export { catalogSlice, fetchCatalog };
