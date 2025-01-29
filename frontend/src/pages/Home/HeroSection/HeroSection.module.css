@@ -1,10 +1,8 @@
 .hero__body {
-  overflow: hidden;
   display: grid;
   grid-template-columns: 0.323fr 1fr;
   grid-template-rows: 400px 156px;
   column-gap: 16px;
-  max-height: 556px;
   margin-top: 32px;
 }
 
@@ -13,9 +11,11 @@
 }
 
 .hero__slider {
+  grid-column: 2 / 3;
 }
 
 .hero__advantages {
+  grid-column: 2 / 3;
 }
 
 @media (max-width: 767.8px) {
@@ -28,13 +28,16 @@
   }
   .hero__catalog {
     grid-row: 2;
+    grid-column: 1;
   }
 
   .hero__slider {
     grid-row: 1;
+    grid-column: 1;
   }
 
   .hero__advantages {
     grid-row: 3;
+    grid-column: 1;
   }
 }
