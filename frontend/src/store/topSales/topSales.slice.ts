@@ -23,6 +23,7 @@ interface IProduct {
   rating: number;
   main_image: string;
   is_new: boolean;
+  description: string;
 }
 
 interface ITopSalesState {

@@ -94,6 +94,10 @@ function UIProductCard({ product, className, type }: IUIProductCardProps) {
           />
         </UIButton>
       </div>
+      <div className={styles.description}>
+        {/* <div className={styles.description__title}>Descripttion</div> */}
+        <p className={styles.description__text}>{product.description}</p>
+      </div>
     </div>
   );
 }

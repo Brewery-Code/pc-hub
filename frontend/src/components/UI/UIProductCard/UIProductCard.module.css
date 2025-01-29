@@ -9,6 +9,15 @@
   background-color: var(--white);
   box-shadow: 0 2px 10px rgba(50, 50, 71, 0.14);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-radius: 4px 4px 0 0;
+}
+
+.card:hover .description {
+  display: block;
 }
 
 .head {
@@ -180,6 +189,34 @@
   fill: var(--white);
   stroke: var(--white);
 }
+
+.description {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 100%;
+  display: none;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 5px 8px rgba(50, 50, 71, 0.1);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dark-grey);
+  line-height: 133%;
+}
+
+.description::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 12px;
+  width: calc(100% - 24px);
+  height: 1px;
+  background-color: var(--grey-scale-10);
+}
+
 /* Modifiers */
 .card_dark {
   transition: background-color 0.3s ease;
@@ -199,6 +236,11 @@
 .card_dark:hover .head__like-icon {
   fill: var(--accent-orange);
   stroke: var(--accent-orange);
+}
+
+.card_dark .description {
+  background-color: var(--dark);
+  color: var(--soft);
 }
 
 /* Modifiers */
