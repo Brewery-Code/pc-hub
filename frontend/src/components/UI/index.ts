@@ -4,3 +4,4 @@ export { default as UIInputField } from "./UIInputField/UIInputField";
 export { default as UIProductList } from "./UIProductList/UIProductList";
 export { default as UIProductCard } from "./UIProductCard/UIProductCard";
 export { default as UIProductNavigation } from "./UIProductNavigation/UIProductNavigation";
+export { default as UIModalBody } from "./UIModalBody/UIModalBody";

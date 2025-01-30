@@ -1,10 +1,11 @@
 import { useState } from "react";
 import clsx from "clsx";
 import styles from "./BurgerMenu.module.css";
+import { MBurgerMenu } from "../../../Modals";
 
 function BurgerMenu() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState<boolean>(false);
-  const toggleBurgerMenu = (): void => {
+  const toggleBurgerMenu = () => {
     setIsBurgerMenuOpen((prev) => !prev);
   };
 
@@ -16,6 +17,10 @@ function BurgerMenu() {
       onClick={toggleBurgerMenu}
     >
       <span className={styles["burger-menu__icon"]} />
+      <MBurgerMenu
+        isBurgerMenuOpen={isBurgerMenuOpen}
+        setIsBurgerMenuOpen={toggleBurgerMenu}
+      />
     </button>
   );
 }
