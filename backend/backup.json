@@ -6630,6 +6630,487 @@
     }
 },
 {
+    "model": "admin.logentry",
+    "pk": 511,
+    "fields": {
+        "action_time": "2025-01-30T18:22:33.546Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "22",
+        "object_repr": "Samsung galaxy AI",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 512,
+    "fields": {
+        "action_time": "2025-01-30T18:22:53.128Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "23",
+        "object_repr": "Smartphones Samsung Galaxy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 513,
+    "fields": {
+        "action_time": "2025-01-30T18:23:05.759Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "26",
+        "object_repr": "Tablets Samsung Galaxy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 514,
+    "fields": {
+        "action_time": "2025-01-30T18:23:13.011Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "29",
+        "object_repr": "Headphones Samsung Galaxy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 515,
+    "fields": {
+        "action_time": "2025-01-30T18:23:22.865Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "32",
+        "object_repr": "Smart-watch Samsung Galaxy Watch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 516,
+    "fields": {
+        "action_time": "2025-01-30T18:23:31.703Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "35",
+        "object_repr": "Fitness bracelets Samsung",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 517,
+    "fields": {
+        "action_time": "2025-01-30T18:24:01.241Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "36",
+        "object_repr": "Apple Iphone",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 518,
+    "fields": {
+        "action_time": "2025-01-30T18:24:22.119Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "39",
+        "object_repr": "laptops MacBook",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 519,
+    "fields": {
+        "action_time": "2025-01-30T18:24:38.444Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "42",
+        "object_repr": "Computers Mac",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 520,
+    "fields": {
+        "action_time": "2025-01-30T18:24:52.365Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "45",
+        "object_repr": "Airpods",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 521,
+    "fields": {
+        "action_time": "2025-01-30T18:25:08.153Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "48",
+        "object_repr": "iPad",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 522,
+    "fields": {
+        "action_time": "2025-01-30T18:25:20.787Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "51",
+        "object_repr": "Apple Watch",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 523,
+    "fields": {
+        "action_time": "2025-01-30T18:25:31.645Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "54",
+        "object_repr": "Apple TV",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 524,
+    "fields": {
+        "action_time": "2025-01-30T18:25:46.457Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "55",
+        "object_repr": "Accessories for MacBook",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 525,
+    "fields": {
+        "action_time": "2025-01-30T18:25:52.046Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "58",
+        "object_repr": "Accessories for iPhone",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 526,
+    "fields": {
+        "action_time": "2025-01-30T18:26:04.048Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "73",
+        "object_repr": "Accessories",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 527,
+    "fields": {
+        "action_time": "2025-01-30T18:26:47.962Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "61",
+        "object_repr": "Smartphones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 528,
+    "fields": {
+        "action_time": "2025-01-30T18:27:03.380Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "74",
+        "object_repr": "Glass and films for smartphones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 529,
+    "fields": {
+        "action_time": "2025-01-30T18:27:18.866Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "79",
+        "object_repr": "For Smartphones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 530,
+    "fields": {
+        "action_time": "2025-01-30T18:27:37.098Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "65",
+        "object_repr": "Tablets",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 531,
+    "fields": {
+        "action_time": "2025-01-30T18:27:47.184Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "82",
+        "object_repr": "For Tablet",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 532,
+    "fields": {
+        "action_time": "2025-01-30T18:28:13.337Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "69",
+        "object_repr": "Headphones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 533,
+    "fields": {
+        "action_time": "2025-01-30T18:28:21.539Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "89",
+        "object_repr": "Headphones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 534,
+    "fields": {
+        "action_time": "2025-01-30T18:28:45.863Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "72",
+        "object_repr": "Portable acoustics",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 535,
+    "fields": {
+        "action_time": "2025-01-30T18:29:16.817Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "85",
+        "object_repr": "For laptops and PC",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 536,
+    "fields": {
+        "action_time": "2025-01-30T18:29:26.812Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "98",
+        "object_repr": "Laptops",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 537,
+    "fields": {
+        "action_time": "2025-01-30T18:29:36.148Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "105",
+        "object_repr": "Periphery for laptop",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 538,
+    "fields": {
+        "action_time": "2025-01-30T18:30:25.866Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "92",
+        "object_repr": "Microphones",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 539,
+    "fields": {
+        "action_time": "2025-01-30T18:30:43.999Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "78",
+        "object_repr": "Fitness bracelets",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 540,
+    "fields": {
+        "action_time": "2025-01-30T18:30:49.945Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "95",
+        "object_repr": "Brand",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 541,
+    "fields": {
+        "action_time": "2025-01-30T18:30:55.026Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "132",
+        "object_repr": "Brand",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 542,
+    "fields": {
+        "action_time": "2025-01-30T18:31:45.460Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "124",
+        "object_repr": "Periphery",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 543,
+    "fields": {
+        "action_time": "2025-01-30T18:32:04.819Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "108",
+        "object_repr": "Bags and backpacks",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 544,
+    "fields": {
+        "action_time": "2025-01-30T18:32:27.898Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "111",
+        "object_repr": "Computers components",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 545,
+    "fields": {
+        "action_time": "2025-01-30T18:36:14.526Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "118",
+        "object_repr": "Computers",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 546,
+    "fields": {
+        "action_time": "2025-01-30T18:36:37.291Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "115",
+        "object_repr": "External drives",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 547,
+    "fields": {
+        "action_time": "2025-01-30T18:37:00.290Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "121",
+        "object_repr": "Monitors",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0424\\u043e\\u0442\\u043e \\u0442\\u043e\\u0432\\u0430\\u0440\\u0443\"]}}]"
+    }
+},
+{
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -7892,7 +8373,7 @@
         "name_en": "Samsung galaxy AI",
         "name_uk": "Samsung galaxy AI",
         "parent": 7,
-        "image": "",
+        "image": "category_images/Rectangle_304.jpeg",
         "created_at": "2024-12-30T10:50:13.480Z",
         "order": 0,
         "slug": "samsung-galaxy-ai-1",
@@ -7910,7 +8391,7 @@
         "name_en": "Smartphones Samsung Galaxy",
         "name_uk": "Смартфони Samsung Galaxy",
         "parent": 7,
-        "image": "",
+        "image": "category_images/Rectangle_304_1.jpeg",
         "created_at": "2024-12-30T10:50:59.844Z",
         "order": 0,
         "slug": "smartfoni-samsung-galaxy",
@@ -7964,7 +8445,7 @@
         "name_en": "Tablets Samsung Galaxy",
         "name_uk": "Планшети Samsung Galaxy",
         "parent": 7,
-        "image": "",
+        "image": "category_images/Rectangle_304_2.jpeg",
         "created_at": "2024-12-30T10:52:18.055Z",
         "order": 0,
         "slug": "plansheti-samsung-galaxy",
@@ -8018,7 +8499,7 @@
         "name_en": "Headphones Samsung Galaxy",
         "name_uk": "Навушники Samsung Galaxy",
         "parent": 7,
-        "image": "",
+        "image": "category_images/Rectangle_304_3.jpeg",
         "created_at": "2024-12-30T10:54:41.674Z",
         "order": 0,
         "slug": "navushniki-samsung-galaxy",
@@ -8072,7 +8553,7 @@
         "name_en": "Smart-watch Samsung Galaxy Watch",
         "name_uk": "Смарт-годинники Samsung Galaxy Watch",
         "parent": 7,
-        "image": "",
+        "image": "category_images/Rectangle_304_6.jpeg",
         "created_at": "2024-12-30T10:55:56.760Z",
         "order": 0,
         "slug": "smart-godinniki-samsung-galaxy-watch",
@@ -8126,7 +8607,7 @@
         "name_en": "Fitness bracelets Samsung",
         "name_uk": "Фітнес браслети Samsung",
         "parent": 7,
-        "image": "",
+        "image": "category_images/Rectangle_304_6_hdygbrV.jpeg",
         "created_at": "2024-12-30T10:57:51.495Z",
         "order": 0,
         "slug": "fitnes-brasleti-samsung",
@@ -8144,7 +8625,7 @@
         "name_en": "Apple Iphone",
         "name_uk": "Apple Iphone",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_3_0Kb8I0U.jpeg",
         "created_at": "2024-12-30T10:58:26.900Z",
         "order": 0,
         "slug": "apple-iphone",
@@ -8198,7 +8679,7 @@
         "name_en": "laptops MacBook",
         "name_uk": "Ноутбуки MacBook",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_11.jpeg",
         "created_at": "2024-12-30T10:59:33.010Z",
         "order": 0,
         "slug": "noutbuki-macbook",
@@ -8252,7 +8733,7 @@
         "name_en": "Computers Mac",
         "name_uk": "Комп'ютери Mac",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_2_sOwnQKq.jpeg",
         "created_at": "2024-12-30T11:00:30.037Z",
         "order": 0,
         "slug": "kompiuteri-mac",
@@ -8306,7 +8787,7 @@
         "name_en": "Airpods",
         "name_uk": "Airpods",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_5.jpeg",
         "created_at": "2024-12-30T11:01:12.469Z",
         "order": 0,
         "slug": "airpods",
@@ -8360,7 +8841,7 @@
         "name_en": "iPad",
         "name_uk": "iPad",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_10.jpeg",
         "created_at": "2024-12-30T11:02:40.787Z",
         "order": 0,
         "slug": "ipad",
@@ -8414,7 +8895,7 @@
         "name_en": "Apple Watch",
         "name_uk": "Apple Watch",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_ftPqFq5.jpeg",
         "created_at": "2024-12-30T11:03:24.282Z",
         "order": 0,
         "slug": "apple-watch",
@@ -8468,7 +8949,7 @@
         "name_en": "Apple TV",
         "name_uk": "Apple TV",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_1_76OHe7U.jpeg",
         "created_at": "2024-12-30T11:04:09.628Z",
         "order": 0,
         "slug": "apple-tv",
@@ -8486,7 +8967,7 @@
         "name_en": "Accessories for MacBook",
         "name_uk": "Аксесуари для MacBook",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_2_0L0skdx.jpeg",
         "created_at": "2024-12-30T11:04:46.867Z",
         "order": 0,
         "slug": "aksesuari-dlia-macbook",
@@ -8540,7 +9021,7 @@
         "name_en": "Accessories for iPhone",
         "name_uk": "Аксесуари для iPhone",
         "parent": 8,
-        "image": "",
+        "image": "category_images/Rectangle_304_3_DIiZmyk.jpeg",
         "created_at": "2024-12-30T11:06:04.623Z",
         "order": 0,
         "slug": "aksesuari-dlia-iphone",
@@ -8594,7 +9075,7 @@
         "name_en": "Smartphones",
         "name_uk": "Смартфони",
         "parent": 10,
-        "image": "",
+        "image": "category_images/Rectangle_304_3_3byRfqP.jpeg",
         "created_at": "2024-12-30T11:07:59.267Z",
         "order": 0,
         "slug": "smartfoni",
@@ -8666,7 +9147,7 @@
         "name_en": "Tablets",
         "name_uk": "Планшети",
         "parent": 10,
-        "image": "",
+        "image": "category_images/Rectangle_304_5_V8QOsb8.jpeg",
         "created_at": "2024-12-30T11:14:10.141Z",
         "order": 0,
         "slug": "plansheti",
@@ -8738,7 +9219,7 @@
         "name_en": "Headphones",
         "name_uk": "Навушники",
         "parent": 10,
-        "image": "",
+        "image": "category_images/Rectangle_304_5_GRs89mT.jpeg",
         "created_at": "2024-12-30T11:15:10.882Z",
         "order": 0,
         "slug": "navushniki",
@@ -8792,7 +9273,7 @@
         "name_en": "Portable acoustics",
         "name_uk": "Портативна акустика",
         "parent": 10,
-        "image": "",
+        "image": "category_images/Rectangle_304_10_k8oThTI.jpeg",
         "created_at": "2024-12-30T11:16:11.018Z",
         "order": 0,
         "slug": "portativna-akustika",
@@ -8810,7 +9291,7 @@
         "name_en": "Accessories",
         "name_uk": "Аксесуари",
         "parent": 10,
-        "image": "",
+        "image": "category_images/Rectangle_304_4.jpeg",
         "created_at": "2024-12-30T11:16:42.869Z",
         "order": 0,
         "slug": "aksesuari",
@@ -8828,7 +9309,7 @@
         "name_en": "Glass and films for smartphones",
         "name_uk": "Скло та плівки для смартфона",
         "parent": 73,
-        "image": "",
+        "image": "category_images/Rectangle_304_4_md4Iq8I.jpeg",
         "created_at": "2024-12-30T11:17:10.140Z",
         "order": 0,
         "slug": "sklo-ta-plivki-dlia-smartfona",
@@ -8900,7 +9381,7 @@
         "name_en": "Fitness bracelets",
         "name_uk": "Фітнес браслети",
         "parent": 11,
-        "image": "",
+        "image": "category_images/Rectangle_304_11_6oguJwC.jpeg",
         "created_at": "2024-12-30T11:19:52.562Z",
         "order": 0,
         "slug": "fitnes-brasleti",
@@ -8918,7 +9399,7 @@
         "name_en": "For Smartphones",
         "name_uk": "Для смартфонів",
         "parent": 11,
-        "image": "",
+        "image": "category_images/Rectangle_304_6_MWXaVkp.jpeg",
         "created_at": "2024-12-30T11:20:18.367Z",
         "order": 0,
         "slug": "dlia-smartfoniv",
@@ -8972,7 +9453,7 @@
         "name_en": "For Tablet",
         "name_uk": "Для планшетів",
         "parent": 11,
-        "image": "",
+        "image": "category_images/Rectangle_304_5_m9ZjATK.jpeg",
         "created_at": "2024-12-30T11:21:54.388Z",
         "order": 0,
         "slug": "dlia-planshetiv",
@@ -9026,7 +9507,7 @@
         "name_en": "For laptops and PC",
         "name_uk": "Для ноутбуків та ПК",
         "parent": 11,
-        "image": "",
+        "image": "category_images/Rectangle_304_6_Nb3mALJ.jpeg",
         "created_at": "2024-12-30T11:23:31.314Z",
         "order": 0,
         "slug": "dlia-noutbukiv-ta-pk",
@@ -9098,7 +9579,7 @@
         "name_en": "Headphones",
         "name_uk": "Навушники",
         "parent": 12,
-        "image": "",
+        "image": "category_images/Rectangle_304_8.jpeg",
         "created_at": "2024-12-30T11:25:43.447Z",
         "order": 0,
         "slug": "navushniki-1",
@@ -9152,7 +9633,7 @@
         "name_en": "Microphones",
         "name_uk": "Мікрофони",
         "parent": 12,
-        "image": "",
+        "image": "category_images/Rectangle_304_a6iYmhi.jpeg",
         "created_at": "2024-12-30T11:26:38.121Z",
         "order": 0,
         "slug": "mikrofoni",
@@ -9206,7 +9687,7 @@
         "name_en": "Brand",
         "name_uk": "Бренд",
         "parent": 12,
-        "image": "",
+        "image": "category_images/Rectangle_304_9.jpeg",
         "created_at": "2024-12-30T11:27:36.288Z",
         "order": 0,
         "slug": "brend",
@@ -9260,7 +9741,7 @@
         "name_en": "Laptops",
         "name_uk": "Ноутбуки",
         "parent": 13,
-        "image": "",
+        "image": "category_images/Rectangle_304_6_jrHKOMP.jpeg",
         "created_at": "2024-12-30T11:28:41.948Z",
         "order": 0,
         "slug": "noutbuki-1",
@@ -9386,7 +9867,7 @@
         "name_en": "Periphery for laptop",
         "name_uk": "Периферія для ноутбуків",
         "parent": 13,
-        "image": "",
+        "image": "category_images/Rectangle_304_2_0Bbyum1.jpeg",
         "created_at": "2024-12-30T11:30:41.669Z",
         "order": 0,
         "slug": "periferiia-dlia-noutbukiv",
@@ -9440,7 +9921,7 @@
         "name_en": "Bags and backpacks",
         "name_uk": "Сумки та рюкзаки",
         "parent": 13,
-        "image": "",
+        "image": "category_images/Rectangle_304_7.jpeg",
         "created_at": "2024-12-30T11:31:27.833Z",
         "order": 0,
         "slug": "sumki-ta-riukzaki-1",
@@ -9494,7 +9975,7 @@
         "name_en": "Computers components",
         "name_uk": "Комп'ютерні комплектуючі",
         "parent": 14,
-        "image": "",
+        "image": "category_images/Rectangle_304_3_6OoxmDy.jpeg",
         "created_at": "2024-12-30T11:32:49.080Z",
         "order": 0,
         "slug": "kompiuterni-komplektuiuchi",
@@ -9566,7 +10047,7 @@
         "name_en": "External drives",
         "name_uk": "Зовнішні накопичувачі",
         "parent": 14,
-        "image": "",
+        "image": "category_images/Rectangle_304_5_CRap81r.jpeg",
         "created_at": "2024-12-30T11:34:20.373Z",
         "order": 0,
         "slug": "zovnishni-nakopichuvachi",
@@ -9620,7 +10101,7 @@
         "name_en": "Computers",
         "name_uk": "Комп'ютери",
         "parent": 14,
-        "image": "",
+        "image": "category_images/Rectangle_304_7_gkRuazw.jpeg",
         "created_at": "2024-12-30T11:35:00.694Z",
         "order": 0,
         "slug": "kompiuteri",
@@ -9674,7 +10155,7 @@
         "name_en": "Monitors",
         "name_uk": "Монітори",
         "parent": 14,
-        "image": "",
+        "image": "category_images/Rectangle_304_7_PMtbGNi.jpeg",
         "created_at": "2024-12-30T11:35:58.503Z",
         "order": 0,
         "slug": "monitori",
@@ -9728,7 +10209,7 @@
         "name_en": "Periphery",
         "name_uk": "Периферія",
         "parent": 14,
-        "image": "",
+        "image": "category_images/Rectangle_304_4_mXsyDqq.jpeg",
         "created_at": "2024-12-30T11:37:34.571Z",
         "order": 0,
         "slug": "periferiia",
@@ -9872,7 +10353,7 @@
         "name_en": "Brand",
         "name_uk": "За брендом",
         "parent": 15,
-        "image": "",
+        "image": "category_images/Rectangle_304_3_DVeyf7R.jpeg",
         "created_at": "2024-12-30T11:40:13.013Z",
         "order": 0,
         "slug": "za-brendom",
