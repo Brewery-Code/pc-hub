@@ -6,6 +6,15 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Order(models.Model):
+    """_summary_
+
+    Args:
+        models (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
+
     class OrderStatus(models.TextChoices):
         PENDING = "pending", _("Pending Payment")
         PAID = "paid", _("Paid")
@@ -55,6 +64,11 @@ class Order(models.Model):
     )
 
     def __str__(self):
+        """_summary_
+
+        Returns:
+            _type_: _description_
+        """
         return f"Order {self.id} - {self.get_status_display()} - {self.get_payment_method_display()} - {self.get_delivery_method_display()}"
 
     class Meta:
