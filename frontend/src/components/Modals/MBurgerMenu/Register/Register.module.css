@@ -1,0 +1,21 @@
+.register {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--some-1);
+}
+
+.register__sign-in,
+.register__sign-up,
+.register__separator {
+  color: var(--some-1);
+  font-size: 18px;
+  line-height: 133%;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.register__sign-in:hover,
+.register__sign-up:hover {
+  color: var(--accent-orange);
+}

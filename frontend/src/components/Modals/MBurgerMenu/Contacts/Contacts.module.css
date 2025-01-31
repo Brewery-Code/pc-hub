@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts__title {
+  color: var(--some-1);
+  font-size: 18px;
+  line-height: 133%;
+  font-weight: 600;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contacts__list-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--some-1);
+  font-size: 12px;
+  line-height: 133%;
+  font-weight: 500;
+}
+
+.contacts__viber-icon,
+.contacts__telegram-icon {
+  width: 12px;
+  height: 13px;
+  fill: var(--some-1);
+}

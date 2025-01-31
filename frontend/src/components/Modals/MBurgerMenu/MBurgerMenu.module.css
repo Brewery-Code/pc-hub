@@ -3,4 +3,37 @@
   height: 100%;
   padding: 70px 30px 30px 30px;
   background-color: var(--dark);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.menu_active {
+  transform: translateX(0);
+}
+
+.menu__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__logo {
+}
+
+.menu__logo-icon {
+  width: 160px;
+  height: 40px;
+  fill: var(--white);
+}
+
+.menu__body {
+  margin-top: 40px;
+}
+
+.menu__contacts {
+  margin-top: 20px;
+}
+
+.menu__social {
+  margin-top: 16px;
 }

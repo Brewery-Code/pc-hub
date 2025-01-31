@@ -24,12 +24,11 @@ function UIModalBody({
       )}
       onClick={(event) => {
         if (event.target === event.currentTarget) {
-          console.log("Закриваю модальне вікно...", isModalOpen);
           setIsModalOpen();
         }
       }}
     >
-      <div onClick={(event) => event.stopPropagation()}>{children}</div>
+      {children}
     </div>
   );
 }

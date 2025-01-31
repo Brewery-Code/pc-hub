@@ -5,14 +5,16 @@ import enComponents from "./en/components.json";
 import ukComponents from "./uk/components.json";
 import enHome from "./en/home.json";
 import ukHome from "./uk/home.json";
+import enModals from "./en/modals.json";
+import ukModals from "./uk/modals.json";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
-      en: { components: enComponents, home: enHome },
-      uk: { components: ukComponents, home: ukHome },
+      en: { components: enComponents, home: enHome, modals: enModals },
+      uk: { components: ukComponents, home: ukHome, modals: ukModals },
     },
     detection: {
       lookupQuerystring: "lng",

@@ -1,0 +1,43 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--some-1);
+  font-size: 18px;
+  line-height: 133%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accordion__title-arrow {
+  width: 12px;
+  height: 6px;
+  stroke: var(--some-1);
+  transition: transform 0.3s ease;
+}
+
+.accordion__title-arrow_active {
+  transform: rotate(90deg);
+}
+
+.accordion__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 16px;
+}
+
+.accordion__item {
+  color: var(--some-1);
+  font-size: 12px;
+  line-height: 133%;
+  font-weight: 500;
+}

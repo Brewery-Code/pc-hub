@@ -6,21 +6,27 @@ import { ArrowCommon } from "../../../../assets/icons";
 function Instagram() {
   const posts = [
     {
+      id: 1,
       image: instagramPostImg,
     },
     {
+      id: 2,
       image: instagramPostImg,
     },
     {
+      id: 3,
       image: instagramPostImg,
     },
     {
+      id: 4,
       image: instagramPostImg,
     },
     {
+      id: 5,
       image: instagramPostImg,
     },
     {
+      id: 6,
       image: instagramPostImg,
     },
   ];
@@ -33,7 +39,7 @@ function Instagram() {
       <div className={styles.instagram__posts}>
         <div className={styles["instagram__posts-container1"]}>
           {posts.map((post) => (
-            <div className={styles.instagram__post}>
+            <div key={post.id} className={styles.instagram__post}>
               <img
                 className={styles["instagram__post-img"]}
                 src={post.image}
@@ -44,7 +50,7 @@ function Instagram() {
         </div>
         <div className={styles["instagram__posts-container2"]}>
           {posts.map((post) => (
-            <div className={styles.instagram__post}>
+            <div key={post.id} className={styles.instagram__post}>
               <img
                 className={styles["instagram__post-img"]}
                 src={post.image}

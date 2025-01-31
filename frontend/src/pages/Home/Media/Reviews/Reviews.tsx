@@ -156,6 +156,7 @@ function Reviews() {
           {reviewsData.map((review, index) => (
             <div
               className={clsx(styles.review)}
+              key={review.id}
               style={
                 {
                   "--translateReview": `${(index - currentReview) * 100}%`,

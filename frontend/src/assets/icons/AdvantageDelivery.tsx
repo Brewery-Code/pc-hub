@@ -17,7 +17,7 @@ function AdvantageDelivery() {
         fill="#FFFFFF"
         fillOpacity="0"
       />
-      <g clip-path="url(#clip18_24087)">
+      <g clipPath="url(#clip18_24087)">
         <path
           id="Vector"
           d="M3.66 1.17L43.66 1.17L43.66 27.64L3.66 27.64L3.66 1.17Z"
