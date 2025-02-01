@@ -1,6 +1,10 @@
 {
-  "register": {
+  "burgerMenu": {
     "signIn": "Sign in",
-    "signUp": "Sign up"
+    "signUp": "Sign up",
+    "catalog": "Product catalog",
+    "cart": "Cart",
+    "comparison": "Comparison",
+    "likes": "Likes"
   }
 }

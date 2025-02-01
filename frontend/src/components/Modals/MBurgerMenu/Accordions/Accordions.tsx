@@ -4,7 +4,11 @@ import { useRef, useState } from "react";
 import ArrowBold from "../../../../assets/icons/ArrowBold";
 import clsx from "clsx";
 
-function Accordions() {
+interface IAccordionProps {
+  className?: string;
+}
+
+function Accordions({ className }: IAccordionProps) {
   const informationRef = useRef<HTMLDivElement>(null);
   const informationHeight = informationRef.current?.scrollHeight;
 
@@ -23,7 +27,7 @@ function Accordions() {
   return (
     <>
       <div
-        className={styles.accordion}
+        className={clsx(styles.accordion, className)}
         ref={informationRef}
         style={{
           maxHeight: activeAccordion === "information" ? informationHeight : 24,
@@ -64,7 +68,7 @@ function Accordions() {
         </ul>
       </div>
       <div
-        className={styles.accordion}
+        className={clsx(styles.accordion, className)}
         ref={servicesRef}
         style={{
           maxHeight: activeAccordion === "services" ? servicesHeight : 24,

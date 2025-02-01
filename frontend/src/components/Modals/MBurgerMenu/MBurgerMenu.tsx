@@ -1,12 +1,19 @@
 import { createPortal } from "react-dom";
 import styles from "./MBurgerMenu.module.css";
-import { UICross, UIModalBody } from "../../UI";
+import { UIChangeLanguage, UICross, UIModalBody } from "../../UI";
 import clsx from "clsx";
-import { LogoIcon } from "../../../assets/icons";
+import {
+  CartIcon,
+  CatalogIcon,
+  ComparisonIcon,
+  LikeIcon,
+  LogoIcon,
+} from "../../../assets/icons";
 import Register from "./Register/Register";
 import Accordions from "./Accordions/Accordions";
 import Contacts from "./Contacts/Contacts";
 import Social from "./Social/Social";
+import { useTranslation } from "react-i18next";
 
 interface IBurgerMenuProps {
   isBurgerMenuOpen: boolean;
@@ -17,6 +24,8 @@ function MBurgerMenu({
   isBurgerMenuOpen,
   setIsBurgerMenuOpen,
 }: IBurgerMenuProps) {
+  const { t } = useTranslation("modals");
+
   return createPortal(
     <UIModalBody
       setIsModalOpen={setIsBurgerMenuOpen}
@@ -32,8 +41,27 @@ function MBurgerMenu({
           <UICross closeMenu={setIsBurgerMenuOpen} />
         </div>
         <div className={styles.menu__body}>
+          <UIChangeLanguage
+            className={clsx(styles.menu__language, "only-mobile")}
+          />
           <Register />
-          <Accordions />
+          <div className={clsx(styles.menu__nav, "only-mobile")}>
+            <CatalogIcon className={styles["menu__catalog-icon"]} />
+            {t("burgerMenu.catalog")}
+          </div>
+          <div className={clsx(styles.menu__nav, "only-mobile")}>
+            <CartIcon className={styles["menu__cart-icon"]} />
+            {t("burgerMenu.cart")}
+          </div>
+          <div className={clsx(styles.menu__nav, "only-mobile")}>
+            <ComparisonIcon className={styles["menu__comparison-icon"]} />
+            {t("burgerMenu.comparison")}
+          </div>
+          <div className={clsx(styles.menu__nav, "only-mobile")}>
+            <LikeIcon className={styles["menu__like-icon"]} />
+            {t("burgerMenu.likes")}
+          </div>
+          <Accordions className={styles.menu__accordions} />
           <Contacts className={styles.menu__contacts} />
           <Social className={styles.menu__social} />
         </div>

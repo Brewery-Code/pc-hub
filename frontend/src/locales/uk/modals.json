@@ -1,6 +1,10 @@
 {
-  "register": {
+  "burgerMenu": {
     "signIn": "Вхід",
-    "signUp": "Реєстрація"
+    "signUp": "Реєстрація",
+    "catalog": "Каталог товарів",
+    "cart": "Кошик",
+    "comparison": "Порівняння",
+    "likes": "Вподобання"
   }
 }

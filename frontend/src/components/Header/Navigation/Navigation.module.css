@@ -20,6 +20,8 @@
 
 .navigation__language {
   margin-left: auto;
+  font-size: 10px;
+  line-height: 120%;
 }
 
 .navigation__profile {

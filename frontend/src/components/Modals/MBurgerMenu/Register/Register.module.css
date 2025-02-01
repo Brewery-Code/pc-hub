@@ -19,3 +19,26 @@
 .register__sign-up:hover {
   color: var(--accent-orange);
 }
+
+.register__profile-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--soft);
+}
+
+@media (max-width: 767.8px) {
+  .register {
+    margin-top: 20px;
+  }
+  .register__sign-in {
+    margin-left: 13px;
+  }
+
+  .register__sign-in,
+  .register__sign-up,
+  .register__separator {
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+}
