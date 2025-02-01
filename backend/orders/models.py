@@ -6,13 +6,12 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Order(models.Model):
-    """_summary_
+    """Модель для збереження інформації про замовлення
 
-    Args:
-        models (_type_): _description_
-
-    Returns:
-        _type_: _description_
+    Fields:
+        product: Товар, до якого належить зображення
+        image: Зображення товару
+        is_main: Прапорець, чи є це основним зображенням
     """
 
     class OrderStatus(models.TextChoices):
@@ -94,3 +93,29 @@ class OrderItem(models.Model):
         verbose_name = "Замовлений товар"
         verbose_name_plural = "Замовлені товари"
         db_table = "OrderItem"
+
+
+class Payment(models.Model):
+    class PaymentStatus(models.TextChoices):
+        SUCCESSFULLY = "successfully", _("Successfully")
+        FAILED = "failed", _("Failed")
+        EXPECTATION = "expectation", _("Expectation")
+
+    order = models.ForeignKey(
+        Order, on_delete=models.PROTECT, verbose_name="Замовлення"
+    )
+    status = models.CharField(
+        max_length=20,
+        choices=PaymentStatus.choices,
+        default=PaymentStatus.EXPECTATION,
+        verbose_name="Статус",
+    )
+    payment_method = models.CharField(
+        max_length=30, choices=Order.PaymentMethod.choices, verbose_name="Спосіб оплати"
+    )
+    amount = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Сума")
+    transaction_id = models.CharField(
+        max_length=100, unique=True, blank=True, null=True, verbose_name="ID транзакції"
+    )
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Оновлено")
