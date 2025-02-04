@@ -1,32 +1,41 @@
 from pyexpat import model
 from rest_framework import serializers
 from .models import *
+from django.conf import settings
 
 
 # Categories
 class CategorySerializer(serializers.ModelSerializer):
-    """Серіалізатор для підкатегорій товарів
-
-    Атрибути:
-        children (list): Список підкатегорій, що належать поточній категорії. Підкатегорії серіалізуються за допомогою рекурсивного виклику серіалізатора.
-    """
+    """Серіалізатор для підкатегорій товарів"""
 
     children = serializers.SerializerMethodField()
     is_new = serializers.SerializerMethodField()
+    image = serializers.SerializerMethodField()
 
     class Meta:
         model = Category
         fields = ["id", "name", "slug", "image", "is_new", "parent", "children"]
 
     def get_children(self, obj):
-        """Метод для отримання підкатегорій поточної категорії."""
+        """Повертає список підкатегорій"""
         children = Category.objects.filter(parent=obj)
         if children.exists():
-            return CategorySerializer(children, many=True).data
+            return CategorySerializer(children, many=True, context=self.context).data
         return []
 
     def get_is_new(self, obj):
-        return obj.is_new()
+        return obj.is_new if isinstance(obj.is_new, bool) else bool(obj.is_new())
+
+    def get_image(self, obj):
+        """Повертає абсолютний URL до зображення"""
+        request = self.context.get("request")
+        if obj.image:
+            return (
+                request.build_absolute_uri(obj.image.url)
+                if request
+                else f"{settings.MEDIA_URL}{obj.image.url}"
+            )
+        return None
 
 
 # Products
