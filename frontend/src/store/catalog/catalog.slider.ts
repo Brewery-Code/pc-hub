@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
+import { RootState } from "../store";
 
 const fetchCatalog = createAsyncThunk("catalog/fetchCatalog", async () => {
   const response = await fetch("http://127.0.0.1:8000/api/v1/categories/", {
@@ -63,4 +64,27 @@ const catalogSlice = createSlice({
   },
 });
 
-export { catalogSlice, fetchCatalog };
+const selectCategory = (state: RootState, slug: string | undefined) => {
+  if (slug) {
+    for (const category of state.catalog.catalog) {
+      if (category.slug === slug) {
+        return category;
+      }
+      for (const subcategory of category.children) {
+        if (subcategory.slug === slug) {
+          return subcategory;
+        }
+      }
+    }
+  } else {
+    return state.catalog.catalog;
+  }
+};
+
+export {
+  catalogSlice,
+  fetchCatalog,
+  selectCategory,
+  type ICategory,
+  type ICategoryChildren,
+};

@@ -3,7 +3,7 @@ export { default as ProfileIcon } from "./ProfileIcon";
 export { default as PhoneIcon } from "./PhoneIcon";
 export { default as CatalogIcon } from "./CatalogIcon";
 export { default as SearchIcon } from "./SearchIcon";
-export { default as ArrowBolt } from "./ArrowBold";
+export { default as ArrowBold } from "./ArrowBold";
 export { default as ComparisonIcon } from "./ComparisonIcon";
 export { default as LikeIcon } from "./LikeIcon";
 export { default as CartIcon } from "./CartIcon";

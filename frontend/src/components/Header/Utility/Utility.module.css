@@ -16,11 +16,15 @@
   width: 165px;
   height: 42px;
   fill: var(--action-secondary);
+  cursor: pointer;
 }
 
 .utility__catalog-button {
   margin-left: 30px;
   padding: 9px 12px 9px 10px;
+}
+
+.utility__catalog-button-text {
 }
 
 .utility__catalog-button-icon {
@@ -113,6 +117,10 @@
   .utility__catalog-button {
     padding: 9px;
   }
+
+  .utility__catalog-button-text {
+    display: none;
+  }
 }
 
 @media (max-width: 767.8px) {
@@ -128,6 +136,10 @@
   .utility__catalog-button,
   .search-form {
     margin: 0;
+  }
+
+  .utility__catalog-button-text {
+    display: block;
   }
 }
 

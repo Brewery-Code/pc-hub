@@ -1,0 +1,35 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 500;
+  color: var(--action-secondary);
+  cursor: pointer;
+}
+
+.crumb__text::first-letter {
+  text-transform: uppercase;
+}
+
+.crumb-arrow-icon {
+  width: 9px;
+  height: 5px;
+  margin-left: 10px;
+  stroke: var(--grey-scale-40);
+  transform: rotate(-90deg);
+}
+
+.crumb:last-of-type .crumb__text {
+  color: var(--grey-scale-40);
+}
+
+.crumb:last-of-type .crumb-arrow-icon {
+  display: none;
+}

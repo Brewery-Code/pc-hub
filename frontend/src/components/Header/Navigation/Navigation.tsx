@@ -5,6 +5,7 @@ import { LogoIcon, PhoneIcon, ProfileIcon } from "../../../assets/icons";
 import styles from "./Navigation.module.css";
 import { UIChangeLanguage } from "../../UI";
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const { t } = useTranslation<string>("components");
@@ -22,7 +23,11 @@ function Navigation() {
             <NavigationLink>{t("header.secondHand")}</NavigationLink>
             <NavigationLink>{t("header.contacts")}</NavigationLink>
           </ul>
-          <LogoIcon className={clsx("only-mobile", styles.navigation__logo)} />
+          <Link to="/home">
+            <LogoIcon
+              className={clsx("only-mobile", styles.navigation__logo)}
+            />
+          </Link>
           <PhoneIcon
             className={clsx("only-mobile", styles["navigation__phone-icon"])}
           />

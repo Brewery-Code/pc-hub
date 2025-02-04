@@ -6,6 +6,7 @@ import { Contacts } from "./Contacts";
 import { Navigation } from "./Navigation";
 import styles from "./Utility.module.css";
 import clsx from "clsx";
+import { Link, useNavigate } from "react-router-dom";
 
 function Utility() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -21,25 +22,37 @@ function Utility() {
     };
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("home");
+  };
+
   const { t } = useTranslation("components");
+
   return (
     <div className={styles.utility}>
       <div className="utility__container">
         <div className={styles.utility__body}>
-          <LogoIcon
-            className={clsx(styles.utility__logo, "only-desktop")}
-            isIconSmall={screenWidth < 1124 || screenWidth < 767.8}
-          />
-          <UIButton
-            className={styles["utility__catalog-button"]}
-            color="primary"
-            size="m"
-            style="filled"
-            type="catalog"
-          >
-            {(screenWidth > 900 || screenWidth < 767.8) && t("header.catalog")}
-            <CatalogIcon className={styles["utility__catalog-button-icon"]} />
-          </UIButton>
+          <div className={"only-desktop"} onClick={handleLogoClick}>
+            <LogoIcon
+              className={clsx(styles.utility__logo, "only-desktop")}
+              isIconSmall={screenWidth < 1124 || screenWidth < 767.8}
+            />
+          </div>
+          <Link to="/home/catalog">
+            <UIButton
+              className={styles["utility__catalog-button"]}
+              color="primary"
+              size="m"
+              style="filled"
+            >
+              <div className={styles["utility__catalog-button-text"]}>
+                {t("header.catalog")}
+              </div>
+              <CatalogIcon className={styles["utility__catalog-button-icon"]} />
+            </UIButton>
+          </Link>
           <form className={styles["search-form"]} action="">
             <UIInputField
               className={styles["search-form__input-field"]}

@@ -1,10 +1,11 @@
 import clsx from "clsx";
-import { ArrowBolt } from "../../../../assets/icons";
+import { ArrowBold } from "../../../../assets/icons";
 import styles from "./Catalog.module.css";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../../../store/store";
 import { useEffect } from "react";
 import { fetchCatalog } from "../../../../store/catalog/catalog.slider";
+import { Link } from "react-router-dom";
 
 interface ICatalogProps {
   className: string;
@@ -25,16 +26,22 @@ function Catalog({ className }: ICatalogProps) {
       <div className={styles.catalog}>
         <ul className={clsx(styles.catalog__body, className)}>
           {catalog.map((category) => (
-            <li className={styles.category} key={category.id}>
-              <img
-                className={styles.category__img}
-                src={category.image}
-                alt="categoryImg"
-              />
-              <span className={styles.category__name}>{category.name}</span>
-              <ArrowBolt
-                className={clsx(styles.category__arrow, "only-desktop")}
-              />
+            <li key={category.id} className={styles.category}>
+              <Link
+                to={`/home/catalog/${category.slug}/${category.slug}-list}`}
+              >
+                <div className={styles.category__row}>
+                  <img
+                    className={styles.category__img}
+                    src={category.image}
+                    alt="categoryImg"
+                  />
+                  <span className={styles.category__name}>{category.name}</span>
+                  <ArrowBold
+                    className={clsx(styles.category__arrow, "only-desktop")}
+                  />
+                </div>
+              </Link>
               <div className={styles.subcategory}>
                 <div className={styles.subcategory__body}>
                   {category.children.map((subcategory) => (
@@ -42,14 +49,22 @@ function Catalog({ className }: ICatalogProps) {
                       className={styles.subcategory__item}
                       key={subcategory.id}
                     >
-                      <div className={styles.subcategory__title}>
-                        {subcategory.name}
-                      </div>
+                      <Link
+                        to={`/home/catalog/${category.slug}/${subcategory.slug}-list`}
+                      >
+                        <div className={styles.subcategory__title}>
+                          {subcategory.name}
+                        </div>
+                      </Link>
                       <ul className={styles["product-list"]}>
                         {subcategory.children.map((item) => (
-                          <li className={styles.product__item} key={item.id}>
-                            {item.name}
-                          </li>
+                          <Link
+                            to={`/home/catalog/${category.slug}/${item.slug}-list`}
+                          >
+                            <li className={styles.product__item} key={item.id}>
+                              {item.name}
+                            </li>
+                          </Link>
                         ))}
                       </ul>
                     </div>
@@ -59,7 +74,7 @@ function Catalog({ className }: ICatalogProps) {
             </li>
           ))}
           <div className={clsx(styles.catalog__more, "only-desktop")}>
-            <ArrowBolt className={clsx(styles["catalog__more-arrow"])} />
+            <ArrowBold className={clsx(styles["catalog__more-arrow"])} />
           </div>
         </ul>
       </div>
