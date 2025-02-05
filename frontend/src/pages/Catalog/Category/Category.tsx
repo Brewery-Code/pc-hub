@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {
   ICategory,
   ICategoryChildren,
@@ -11,12 +11,14 @@ interface ICategoryProps {
 }
 
 function Category({ category, isCatalog }: ICategoryProps) {
+  const { category: categoryParam } = useParams();
+
   return (
     <Link
       to={
         isCatalog
           ? `/home/catalog/${category.slug}`
-          : `/home/catalog/${category.slug}/${category.slug}-list`
+          : `/home/catalog/${categoryParam}/${category.slug}-list`
       }
     >
       <div className={styles.category}>

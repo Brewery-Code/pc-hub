@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./UIBreadcrumbs.module.css";
 import { ArrowBold } from "../../../assets/icons";
 import clsx from "clsx";
@@ -12,19 +12,17 @@ function UIBreadcrumbs({ className }: IUIBreadcrumbsProps) {
     .pathname.split("/")
     .filter((crumb) => crumb !== "");
 
-  const navigate = useNavigate();
-
   return (
     <div className={clsx(className, styles.breadcrumbs)}>
       {breadcrumbs.map((crumb, index) => (
-        <div
+        <Link
           key={index}
+          to={`/${breadcrumbs.slice(0, index + 1).join("/")}`}
           className={styles.crumb}
-          onClick={() => navigate(`/${crumb}`)}
         >
           <span className={styles.crumb__text}>{crumb}</span>
           <ArrowBold className={styles["crumb-arrow-icon"]} />
-        </div>
+        </Link>
       ))}
     </div>
   );
