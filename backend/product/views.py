@@ -45,8 +45,10 @@ class CategoryView(ListAPIView):
     serializer_class = CategorySerializer
 
     def get_queryset(self):
-        parent_id = self.kwargs.get("parent_id")
-        return Category.objects.filter(parent_id=parent_id).prefetch_related("children")
+        parent_slug = self.kwargs.get("parent_slug")
+        return Category.objects.filter(parent__slug=parent_slug).prefetch_related(
+            "children"
+        )
 
 
 class TopLevelCategoryView(ListAPIView):

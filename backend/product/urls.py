@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
     path("categories/", views.TopLevelCategoryView.as_view(), name="category-list"),
     path(
-        "categories/<int:parent_id>/children/",
+        "categories/<slug:parent_slug>/children/",
         views.CategoryView.as_view(),
         name="category-children",
     ),
