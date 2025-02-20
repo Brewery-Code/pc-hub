@@ -5,4 +5,6 @@ from cart.views import CartViewSet
 
 router = DefaultRouter()
 router.register("", CartViewSet, basename="cart")
-urlpatterns = router.urls
+urlpatterns = [
+    *router.urls,
+]

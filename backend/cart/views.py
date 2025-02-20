@@ -4,12 +4,14 @@ from rest_framework.viewsets import ViewSet
 from cart.models import Cart, CartItem
 from django.utils import translation
 from product.models import Product
+from rest_framework import status
+from django.db.models import Sum
 
 
 def get_main_image_url(request, product):
     """Метод для отримання абсолютного URL головного зображення товару.
 
-    Аргументи:
+    Args:
         request (HttpRequest): Поточний запит.
         product (Product): Об'єкт товару.
 
@@ -21,25 +23,34 @@ def get_main_image_url(request, product):
 
 
 class CartViewSet(ViewSet):
-    """ViewSet для роботи з кошиком користувача.
+    """
+    ViewSet для роботи з кошиком користувача.
 
-    Доступні операції:
-    - GET /api/v1/cart/ - Отримання кошика користувача.
-    - POST /api/v1/cart/ - Додавання товару до кошика.
+    Дозволені операції та HTTP-методи:
+        - list (GET /cart/): Отримати список товарів у кошику
+        - create (POST /cart/): Додати товар до кошика
+        - update (PUT /cart/{id}/): Оновити кількість товару в кошику або видалити його
+        - destroy (DELETE /cart/{id}/): Видалити товар з кошика
 
     Робота з кошиком:
-    - Для авторизованих користувачів кошик прив'язаний до облікового запису.
-    - Для анонімних користувачів кошик зберігається на основі сесії.
+        - Для авторизованих користувачів кошик прив'язаний до облікового запису.
+        - Для анонімних користувачів кошик зберігається на основі сесії.
 
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
     """
 
     permission_classes = [AllowAny]
 
-    def get_cart(self, request):
-        """Отримання або створення кошика для поточного користувача або сесії.
+    def get_cart(self, request) -> Cart:
+        """
+        Повертає кошик користувача або створює його, якщо відсутній.
 
-        Повертає:
-            Cart: Об'єкт кошика.
+        - Авторизований користувач: кошик прив'язується до облікового запису.
+        - Анонімний користувач: кошик створюється на основі сесії.
+
+        Returns:
+            Cart: Об'єкт кошика користувача.
         """
         if request.user.is_authenticated:
             cart, created = Cart.objects.get_or_create(user=request.user)
@@ -58,19 +69,23 @@ class CartViewSet(ViewSet):
         language = request.headers.get("Accept-Language", "en")
         translation.activate(language)
 
-    def list(self, request):
-        """Отримання списку товарів у кошику.
+    def list(self, request) -> Response:
+        """
+        Повертає список товарів у кошику
 
-        Відповідь:
-        - JSON з інформацією про кошик, товари, загальну вартість.
+        :Returns:
+            Response:
+                - 200 OK: Якщо список товару повернено успішно
+
         """
         self.activate_translation(request)
         cart = self.get_cart(request)
         cart_items = CartItem.objects.filter(cart=cart)
+        total_price = cart_items.aggregate(total=Sum("price"))["total"] or 0
 
         response_data = {
             "cart_id": cart.id,
-            "total_price": sum(item.price for item in cart_items),
+            "total_price": total_price,
             "items": [
                 {
                     "product_id": item.product.id,
@@ -83,26 +98,38 @@ class CartViewSet(ViewSet):
             ],
         }
 
-        return Response(response_data)
+        return Response(response_data, status=status.HTTP_200_OK)
 
-    def create(self, request):
-        """Додавання товару до кошика.
+    def create(self, request) -> Response:
+        """
+        Додає новий товар до кошика користувача або оновлює кількість, якщо товар уже додано.
 
-        Аргументи:
-        - product_id (int): ID товару. (в тілі запиту)
-        - quantity (int): Кількість товару. (в тілі запиту)
+        :Args:
+            - product_id (int): ID товару. (передається у тілі запиту)
+            - quantity (int): Кількість товару (за замовчуванням 1). (передається у тілі запиту)
 
-        Відповідь:
-        - JSON з повідомленням про успішне додавання або помилку.
+        :Returns:
+            Response:
+                - 201 CREATED: Якщо товар додано або оновлено у кошику.
+                - 400 BAD REQUEST: Якщо передано некоректну кількість товару.
+                - 404 NOT FOUND: Якщо товар не знайдено.
         """
         cart = self.get_cart(request)
         product_id = request.data.get("product_id")
         quantity = request.data.get("quantity", 1)
 
+        if not isinstance(quantity, int) or quantity <= 0:
+            return Response(
+                {"error": "Quantity must be a positive integer."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
         try:
             product = Product.objects.get(pk=product_id)
         except Product.DoesNotExist:
-            return Response({"error": "Product not found"}, status=404)
+            return Response(
+                {"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND
+            )
 
         cart_item, created = CartItem.objects.get_or_create(
             cart=cart,
@@ -113,60 +140,96 @@ class CartViewSet(ViewSet):
         if not created:
             cart_item.quantity += quantity
             cart_item.save()
+            return Response(
+                {"message": "Product quantity updated", "quantity": cart_item.quantity},
+                status=status.HTTP_200_OK,
+            )
+        else:
+            return Response(
+                {"message": "Product added to cart", "quantity": cart_item.quantity},
+                status=status.HTTP_201_CREATED,
+            )
 
-        return Response({"message": "Product added to cart"})
+    def update(self, request, id=None):
+        """Оновлює кількість товару в кошику, ябо видаляє його якщо кількість <= 0.
 
-    def update(self, request, pk=None):
-        """Оновлення кількості товару в кошику.
+        :Args:
+            - id (int): ID товару, кількість якого потрібно збільшити. (передається у URL)
+            - quantity (int): Значення, на яке потрібно змінити кількість товару
+            (може бути додатним або від'ємним). (передається у тілі запиту)
 
-        Аргументи:
-        - pk (int): ID товару, кількість якого потрібно збільшити. (у URL)
-        - quantity (int): Кількість товару. (в тілі запиту)
-
-        Відповідь:
-        - JSON з повідомленням про успішне оновлення кількості товару або помилку.
+        :Returns:
+            Response:
+                - 200 OK: Якщо кількість товару успішно оновлено.
+                - 200 OK: Якщо товар видалено з кошика (при кількості <= 0).
+                - 400 BAD REQUEST: Якщо кількість передана некоректно.
+                - 404 NOT FOUND: Якщо товар не знайдено у кошику.
         """
         cart = self.get_cart(request)
 
         try:
-            cart_item = CartItem.objects.get(cart=cart, product_id=pk)
+            cart_item = CartItem.objects.get(cart=cart, product_id=id)
         except CartItem.DoesNotExist:
-            return Response({"error": "Product not in cart"}, status=404)
+            return Response(
+                {"error": "Product not in cart"}, status=status.HTTP_404_NOT_FOUND
+            )
 
         change = request.data.get("quantity", 0)
+
+        if not isinstance(change, int):
+            return Response(
+                {"error": "Quantity must be an integer."},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
 
         cart_item.quantity += change
 
         if cart_item.quantity <= 0:
             cart_item.delete()
-            return Response({"message": "Product removed from cart"})
+            return Response(
+                {"message": "Product removed from cart"}, status=status.HTTP_200_OK
+            )
         else:
             cart_item.save()
             return Response(
-                {"message": "Product quantity updated", "quantity": cart_item.quantity}
+                {"message": "Product quantity updated", "quantity": cart_item.quantity},
+                status=status.HTTP_200_OK,
             )
 
-    def destroy(self, request, pk=None):
-        """Видалення товару з кошика.
+    def destroy(self, request, id=None):
+        """
+        Видаляє товар з кошика користувача
 
-        Аргументи:
-        - pk (int): ID товару, який потрібно видалити. (у URL)
+        :Args:
+            - id (int): ID товару, який потрібно видалити. (передається у URL)
 
-        Відповідь:
-        - JSON з повідомленням про успішне видалення або помилку.
+        :Returns:
+            Response:
+                - 200 OK: Якщо товар успішно видалено з кошика.
+                - 404 NOT FOUND: Якщо товар не існує або його немає у кошику.
+                - 500 INTERNAL SERVER ERROR: Якщо сталася непередбачена помилка.
         """
         cart = self.get_cart(request)
 
         try:
-            product = Product.objects.get(pk=pk)
+            product = Product.objects.get(pk=id)
         except Product.DoesNotExist:
-            return Response({"error": "Product not found"}, status=404)
+            return Response(
+                {"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND
+            )
 
         try:
             cart_item = CartItem.objects.get(cart=cart, product=product)
             cart_item.delete()
-            return Response({"message": "Product removed from cart"})
+            return Response(
+                {"message": "Product removed from cart"}, status=status.HTTP_200_OK
+            )
         except CartItem.DoesNotExist:
-            return Response({"error": "Product not in cart"}, status=404)
+            return Response(
+                {"error": "Product not in cart"}, status=status.HTTP_404_NOT_FOUND
+            )
         except Exception as e:
-            return Response({"error": f"An error occurred: {str(e)}"}, status=500)
+            return Response(
+                {"error": f"An error occurred: {str(e)}"},
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )

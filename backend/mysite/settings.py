@@ -215,3 +215,12 @@ DEFAULT_CHARSET = "utf-8"
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, "locale"),
 ]
+
+SWAGGER_SETTINGS = {
+    "DEFAULT_INFO": "mysite.urls.schema_view",
+    "USE_SESSION_AUTH": False,
+    "DOC_EXPANSION": "list",
+    "DEFAULT_AUTO_SCHEMA_CLASS": "drf_yasg.inspectors.SwaggerAutoSchema",
+    "REFETCH_SCHEMA_WITH_AUTH": False,
+    "SHOW_REQUEST_HEADERS": True,
+}

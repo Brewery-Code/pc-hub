@@ -5,6 +5,16 @@ from datetime import timedelta
 
 
 class Command(BaseCommand):
+    """
+    Django management команда для очищення прострочених анонімних кошиків.
+
+    Опис:
+        Видаляє всі кошики, прив'язані до сесій, які не оновлювалися протягом останніх 7 днів.
+
+    Використання:
+        python manage.py clear_carts
+    """
+
     help = "Clear expired session-based carts"
 
     def handle(self, *args, **kwargs):
