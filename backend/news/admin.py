@@ -4,6 +4,10 @@ from .models import News
 
 @admin.register(News)
 class PostAdmin(admin.ModelAdmin):
+    """
+    Адмін-інтерфейс для керування новинами
+    """
+
     list_display = ["title", "slug", "publish", "status"]
     list_filter = ["status", "created", "publish"]
     search_fields = ["title", "content"]

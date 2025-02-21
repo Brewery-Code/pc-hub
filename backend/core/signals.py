@@ -6,7 +6,7 @@ from .models import *
 
 # Banner
 @receiver(pre_delete, sender=Banner)
-def delete_banner_image(sender, instance, **kwargs):
+def delete_banner_image(sender, instance, **kwargs) -> None:
     """
     Видаляє зображення банера зі сховища перед видаленням об'єкта Banner.
 
