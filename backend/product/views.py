@@ -116,22 +116,3 @@ class ProductDetailView(RetrieveAPIView):
         language = self.request.headers.get("Accept-Language", "en")
         translation.activate(language)
         return super().get_queryset()
-
-
-class BannerView(ListAPIView):
-    """API View для отримання списку банерів.
-
-    Доступні операції:
-    - GET api/v1/banners/ - Отримання списку всіх банерів.
-
-    Відповідь:
-    - JSON з даними всіх банерів.
-    """
-
-    queryset = Banner.objects.all()
-    serializer_class = BannerSerializer
-
-    def get_queryset(self):
-        language = self.request.headers.get("Accept-Language", "en")
-        translation.activate(language)
-        return super().get_queryset()

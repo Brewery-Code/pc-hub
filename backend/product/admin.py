@@ -72,14 +72,3 @@ class ProductImageAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ProductImage, ProductImageAdmin)
-
-
-@admin.register(Banner)
-class BannerAdmin(TranslationAdmin):
-    list_display = (
-        "title_en",
-        "title_uk",
-        "description",
-        "image",
-    )
-    fields = ["title_en", "title_uk", "description", "image"]

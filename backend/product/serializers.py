@@ -154,11 +154,3 @@ class ProductDetailSerializer(ProductSerializer):
             "images",
             "is_new",
         ]
-
-
-class BannerSerializer(serializers.ModelSerializer):
-    """Серіалізатор для моделі банерів"""
-
-    class Meta:
-        model = Banner
-        fields = ["id", "title", "description", "image"]

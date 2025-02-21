@@ -18,11 +18,3 @@ def delete_category_image(sender, instance, **kwargs):
     if instance.image:
         if default_storage.exists(instance.image.name):
             default_storage.delete(instance.image.name)
-
-
-# Banner
-@receiver(pre_delete, sender=Banner)
-def delete_banner_image(sender, instance, **kwargs):
-    if instance.image:
-        if default_storage.exists(instance.image.name):
-            default_storage.delete(instance.image.name)

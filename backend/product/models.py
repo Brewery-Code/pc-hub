@@ -223,26 +223,3 @@ class ProductImage(models.Model):
 
     def __str__(self):
         return f"Фото для товару {self.product.name} ({'Основне' if self.is_main else 'Додаткове'})"
-
-
-# Banners
-class Banner(models.Model):
-    """Модель для збереження банерів
-
-    Args:
-        models (models.Model): Наслідування від класу `models.Model` для збереження даних про банери.
-
-    Fields:
-        title: Заголовок банера
-        description: Опис банера
-        image: Фото банера
-    """
-
-    title = models.CharField(max_length=100, verbose_name="Заголовок")
-    description = models.TextField(verbose_name="Опис")
-    image = models.ImageField(upload_to="banner_img/", verbose_name="Фото банера")
-
-    class Meta:
-        verbose_name = "Банер"
-        verbose_name_plural = "Банери"
-        db_table = "Banner"
