@@ -1,38 +1,67 @@
+from typing import LiteralString
 from django.contrib import admin
 from django.utils.html import format_html
 from modeltranslation.admin import TranslationAdmin
 from .models import *
 from .translation import *
-from django import forms
+from django.utils.html import format_html
+from django.urls import reverse
 
 
+@admin.register(Category)
 class CategoryAdmin(TranslationAdmin):
-    list_display = ("name",)
-    list_display_links = ("name",)
-    search_fields = ("name",)
+    """Адмін-інтерфейс для керування категоріями"""
+
+    list_display = ("display_full_hierarchy",)
+    list_display_links = ("display_full_hierarchy",)
+    search_fields = (
+        "name",
+        "parent__name",
+        "parent__parent__name",
+        "parent__parent__parent__name",
+    )
     list_per_page = 20
 
+    def get_queryset(self, request):
+        """Прибираємо дублікати верхнього рівня, якщо вони вже показані в ієрархії."""
+        qs = super().get_queryset(request)
+        return qs.filter(children__isnull=True)
 
-admin.site.register(Category, CategoryAdmin)
+    @admin.display(description="Ієрархія категорій")
+    def display_full_hierarchy(self, obj):
+        """Відображає повну ієрархію категорії з посиланнями на редагування."""
+        hierarchy = []
+        category = obj
+        while category:
+            url = reverse(
+                f"admin:{category._meta.app_label}_{category._meta.model_name}_change",
+                args=[category.pk],
+            )
+            hierarchy.append(f'<a href="{url}">{category.name}</a>')
+            category = category.parent
+        return format_html(" ----------> ".join(reversed(hierarchy)))
 
 
+@admin.register(Product)
 class ProductAdmin(TranslationAdmin):
+    """Адмін-інтерфейс для керування товарами"""
+
     list_display = ("name", "price", "created_at", "updated_at", "display_categories")
     search_fields = ("name", "category__name")
     list_filter = ("category", "created_at")
     ordering = ("-created_at",)
     list_per_page = 20
 
-    def display_categories(self, obj):
+    @admin.display(description="Категорії")
+    def display_categories(self, obj) -> LiteralString:
+        """Відображення категорій для товару в адмін-панелі"""
         return ", ".join([category.name for category in obj.category.all()])
 
-    display_categories.short_description = "Категорії"
 
-
-admin.site.register(Product, ProductAdmin)
-
-
+@admin.register(ProductCategory)
 class ProductCategoryAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для керування категоріями товару"""
+
     list_display = ("product", "category")
     search_fields = ("product__name", "category__name")
     list_filter = ("category",)
@@ -40,20 +69,20 @@ class ProductCategoryAdmin(admin.ModelAdmin):
     list_per_page = 20
 
 
-admin.site.register(ProductCategory, ProductCategoryAdmin)
-
-
+@admin.register(Attribute)
 class AttributeAdmin(TranslationAdmin):
+    """Адмін-інтерфейс для керування атрибутами"""
+
     list_display = ("name",)
     search_fields = ("name",)
     ordering = ("name",)
     list_per_page = 20
 
 
-admin.site.register(Attribute, AttributeAdmin)
-
-
+@admin.register(ProductAttribute)
 class ProductAttributeAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для керування атрибутами товару"""
+
     list_display = ("product", "attribute", "value")
     search_fields = ("product__name", "attribute__name", "value")
     list_filter = ("product__category",)
@@ -61,14 +90,11 @@ class ProductAttributeAdmin(admin.ModelAdmin):
     list_per_page = 20
 
 
-admin.site.register(ProductAttribute, ProductAttributeAdmin)
-
-
+@admin.register(ProductImage)
 class ProductImageAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для керування зображеннями товарів"""
+
     list_display = ("product", "image", "is_main")
     search_fields = ("product__name", "image")
     list_filter = ("is_main", "product__category")
     list_per_page = 20
-
-
-admin.site.register(ProductImage, ProductImageAdmin)

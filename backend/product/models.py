@@ -7,16 +7,18 @@ import uuid
 from django.utils.text import slugify
 
 
-# Categories
 class Category(MPTTModel):
-    """Модель для збереження категорій товарів
+    """
+    Модель для збереження інформації про категорії
 
-    Args:
-        MPTTModel (Model): Наслідування від класу `MPTTModel`, що надає функціональність для побудови ієрархії категорій.
+    Атрибути:
+        name (str): Назва категорії
+        parent (TreeFK): Зворотнє посилання на батьківську категорію (Якщо вона існує)
+        image (str): Зображення категорії
+        created_at (datetime): Дата створення
+        order (int): Порядок відображення категорій
+        slug (str): Слаг
 
-    Fields:
-        name: Ім'я категорії
-        parent: Ім'я батьківської категорії
     """
 
     name = models.CharField(max_length=50, verbose_name="Назва категорії")
@@ -37,13 +39,19 @@ class Category(MPTTModel):
         max_length=60, unique=True, null=True, blank=True, verbose_name="Слаг"
     )
 
-    def save(self, *args, **kwargs):
+    def save(self, *args, **kwargs) -> None:
+        """При збереженні перетворює назву категорії в слаг"""
         if not self.slug:
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
-    def is_new(self):
+    def is_new(self) -> bool:
+        """Перевірка чи категорія нова"""
         return now() - self.created_at <= timedelta(days=7)
+
+    def __str__(self) -> str:
+        """Повертає рядкове представлення категорії"""
+        return self.name
 
     class MpttMeta:
         order_insertion_by = ["name"]
@@ -56,25 +64,20 @@ class Category(MPTTModel):
             models.Index(fields=["parent"]),
         ]
 
-    def __str__(self):
-        return self.name
 
-
-# Products
 class Product(models.Model):
     """Модель для збереження товарів
 
-    Args:
-        Model (models.Model): Наслідування від класу `models.Model` для збереження товарів.
-
-    Fields:
-        name: Назва товару
-        category: Категорія товару, з якою асоціюється продукт
-        description: Опис товару
-        price: Ціна товару
-        stock_quantity: Кількість товару на складі
-        created_at: Дата створення товару
-        updated_at: Дата останнього оновлення товару
+    Атрибути:
+        name (str): Назва товару
+        category (Category): Категорія товару, з якою асоціюється продукт
+        description (str): Опис товару
+        price (float): Ціна товару
+        stock_quantity (int): Кількість товару на складі
+        discount (int): Знижка на товар у %
+        rating (float): Рейтинг товару
+        created_at (datetime): Дата створення товару
+        updated_at (datetime): Дата останнього оновлення товару
     """
 
     name = models.CharField(max_length=255, verbose_name="Назва товару")
@@ -98,24 +101,28 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата оновлення")
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """Строкове представлення товару"""
         return self.name
 
-    def is_available(self):
+    def is_available(self) -> bool:
         """Перевірка наявності товару"""
         return self.stock_quantity > 0
 
-    def is_new(self):
+    def is_new(self) -> bool:
+        """Перевірка чи товар новий"""
         return now() - self.created_at <= timedelta(days=7)
 
     @property
-    def discounted_price(self):
+    def discounted_price(self) -> float:
+        """Розрахунок вартості товару з урахуванням знижки"""
         if self.discount > 0:
             return self.price * (1 - self.discount / 100)
         return self.price
 
     @property
-    def rating(self):
+    def rating(self) -> float:
+        """Тимчасовий метод. Генерація рандомного рейтингу для товару"""
         return round(random.uniform(1.0, 5.0), 1)
 
     class Meta:
@@ -125,7 +132,12 @@ class Product(models.Model):
 
 
 class ProductCategory(models.Model):
-    """Модель для збереження зв'язку між товарами та категоріями"""
+    """Модель для збереження зв'язку між товарами та категоріями
+
+    Атрибути:
+        product (Product): Товар
+        category (Category): Категорія
+    """
 
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
@@ -137,21 +149,18 @@ class ProductCategory(models.Model):
         unique_together = ("product", "category")
 
 
-# Attributes
 class Attribute(models.Model):
     """Модель для збереження атрибутів товарів
 
-    Args:
-        Model (models.Model): Наслідування від класу `models.Model` для збереження атрибутів товарів.
+    Атрибути:
+        name (str): Назва атрибуту
 
-    Fields:
-        name: Назва атрибуту (наприклад, процесор, відеокарта)
-        category: Категорія, до якої належить атрибут
     """
 
     name = models.CharField(max_length=100, verbose_name="Назва атрибуту")
 
-    def __str__(self):
+    def __str__(self) -> str:
+        """Строкове представлення атрибуту"""
         return self.name
 
     class Meta:
@@ -160,17 +169,13 @@ class Attribute(models.Model):
         db_table = "Attribute"
 
 
-# ProductAttributes
 class ProductAttribute(models.Model):
     """Модель для збереження зв'язку між товарами та їх атрибутами
 
-    Args:
-        Model (models.Model): Наслідування від класу `models.Model` для збереження атрибутів конкретних товарів.
-
-    Fields:
-        product: Товар, до якого належить атрибут
-        attribute: Атрибут, що описує товар
-        value: Значення атрибуту
+    Атрибути:
+        product (Product): Товар, до якого належить атрибут
+        attribute (Attribute): Атрибут, що описує товар
+        value (str): Значення атрибуту
     """
 
     product = models.ForeignKey(
@@ -191,17 +196,13 @@ class ProductAttribute(models.Model):
         ]
 
 
-# ProductImages
 class ProductImage(models.Model):
     """Модель для збереження зображень товарів
 
-    Args:
-        Model (models.Model): Наслідування від класу `models.Model` для збереження зображень для товарів.
-
-    Fields:
-        product: Товар, до якого належить зображення
-        image: Зображення товару
-        is_main: Прапорець, чи є це основним зображенням
+    Атрибути:
+        product (Product): Товар, до якого належить зображення
+        image (str): Зображення товару
+        is_main (bool): Прапорець, чи є це основним зображенням
     """
 
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Товар")
@@ -210,16 +211,17 @@ class ProductImage(models.Model):
     )
     is_main = models.BooleanField(default=False, verbose_name="Основне фото")
 
-    def save(self, *args, **kwargs):
+    def save(self, *args, **kwargs) -> None:
         """Збереження зображення з унікальним ім'ям файлу, яке включає ID товару."""
         if not self.image.name:
             self.image.name = f"{self.product.id}_{uuid.uuid4().hex}_{self.image.name}"
         super(ProductImage, self).save(*args, **kwargs)
 
+    def __str__(self) -> str:
+        """Строкове представлення зображень товару"""
+        return f"Фото для товару {self.product.name} ({'Основне' if self.is_main else 'Додаткове'})"
+
     class Meta:
         verbose_name = "Фото товару"
         verbose_name_plural = "Фотографії товарів"
         db_table = "ProductImage"
-
-    def __str__(self):
-        return f"Фото для товару {self.product.name} ({'Основне' if self.is_main else 'Додаткове'})"
