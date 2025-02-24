@@ -5,20 +5,14 @@ from .models import CustomUser
 
 
 class CustomUserRegistrationSerializer(serializers.ModelSerializer):
-    """Серіалізатор для створення нового користувача
-
-    Поля:
-        - name: Ім'я користувача.
-        - email: Електронна адреса користувача.
-        - password: Пароль користувача.
-
-    """
+    """Серіалізатор для створення нового користувача"""
 
     class Meta:
         model = CustomUser
         fields = ["name", "email", "password"]
 
     def create(self, validated_data):
+        """Створює користувача на основі отриманих даних"""
         user = CustomUser.objects.create_user(
             email=validated_data["email"],
             name=validated_data["name"],
@@ -48,6 +42,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
         read_only_fields = ["email"]
 
     def update(self, instance, validated_data):
+        """Оновлює дані користувача (За потреби)"""
         for key, value in validated_data.items():
             setattr(instance, key, value)
         instance.save()

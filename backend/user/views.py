@@ -10,11 +10,29 @@ from cart.models import Cart, CartItem
 
 
 class RegisterCustomUserView(APIView):
-    """API View для реєстрації користувача."""
+    """APIView для реєстрації користувача.
+
+    Дозволені операції та HTTP-методи:
+        - (POST /users/register/): Реєстрація нового користувача.
+
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
+    """
 
     @permission_classes([AllowAny])
     def post(self, request):
-        """Реєструє нового користувача на основі отриманих даних."""
+        """Реєструє нового користувача на основі отриманих даних.
+
+        :Args:
+            - name (str): Ім'я користувача. (передається у тілі запиту)
+            - email (str): Електронна адреса користувача. (передається у тілі запиту)
+            - password (str): Пароль користувача. (передається у тілі запиту)
+
+        :Returns:
+            Response:
+                - 201 CREATED: Якщо користувач створений успішно
+                - 400 BAD REQUEST: Некоректний запит
+        """
 
         serializer = CustomUserRegistrationSerializer(data=request.data)
 
@@ -53,16 +71,25 @@ class RegisterCustomUserView(APIView):
 class CustomUserView(APIView):
     """API View для роботи з даними користувача.
 
-    Доступні операції:
-    - GET api/v1/users/me/ - Отримання даних користувача.
-    - PATCH api/v1/users/me/ - Оновлення частини даних користувача.
-    - DELETE api/v1/users/me/ - Видалення акаунту користувача.
+    Дозволені операції та HTTP-методи:
+        - (GET /users/me/): Отримання даних користувача.
+        - (PATCH /users/me): Оновлення частини даних користувача.
+        - (DELETE /users/me/): Видалення акаунту користувача.
+
+    Доступ:
+        - Доступний тільки для авторизованих користувачів (IsAuthenticated)
     """
 
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        """Отримує дані поточного користувача."""
+        """
+        Повертає дані про поточного користувача
+
+        :Returns:
+            Response:
+                - 200 OK: Якщо інформація повернута успішно.
+        """
 
         user = request.user
 
@@ -81,8 +108,13 @@ class CustomUserView(APIView):
     def patch(self, request):
         """Оновлює частину даних користувача.
 
-        Параметри запиту:
-            - Поля, що потрібно оновити (наприклад, email, phone).
+        Args:
+            - Поля, що потрібно оновити (наприклад, email, phone). (передається в тілі запиту)
+
+        :Returns:
+            Response:
+                - 200 OK: Якщо дані користувача оновлені успішно.
+
         """
 
         serializer = CustomUserSerializer(request.user, data=request.data, partial=True)
@@ -104,10 +136,17 @@ class CustomUserView(APIView):
             )
 
     def delete(self, request):
-        """Видаляє акаунт поточного користувача після перевірки пароля.
+        """
+        Видаляє акаунт поточного користувача після перевірки пароля.
 
         Параметри запиту:
-            - password: Пароль для підтвердження видалення акаунту.
+            - password (str): Пароль для підтвердження видалення акаунту. (передається в тілі запиту)
+
+        :Returns:
+            Response:
+                - 400 BAD REQUEST: Некоректний запит (Не вказано пароль).
+                - 401 NOT UNAUTHORIZED: Неправильний пароль.
+                - 204 NO CONTENT: Акаунт користувача успішно видалено
         """
 
         user = request.user
