@@ -64,7 +64,7 @@ class CartViewSet(ViewSet):
 
         return cart
 
-    def activate_translation(self, request):
+    def activate_translation(self, request) -> None:
         """Активує переклад на основі заголовку 'Accept-Language'."""
         language = request.headers.get("Accept-Language", "en")
         translation.activate(language)
@@ -150,7 +150,7 @@ class CartViewSet(ViewSet):
                 status=status.HTTP_201_CREATED,
             )
 
-    def update(self, request, id=None):
+    def update(self, request, id=None) -> Response:
         """Оновлює кількість товару в кошику, ябо видаляє його якщо кількість <= 0.
 
         :Args:
@@ -196,7 +196,7 @@ class CartViewSet(ViewSet):
                 status=status.HTTP_200_OK,
             )
 
-    def destroy(self, request, id=None):
+    def destroy(self, request, id=None) -> Response:
         """
         Видаляє товар з кошика користувача
 

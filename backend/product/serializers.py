@@ -6,7 +6,7 @@ from django.conf import settings
 
 # Categories
 class CategorySerializer(serializers.ModelSerializer):
-    """Серіалізатор для підкатегорій товарів"""
+    """Серіалізатор для моделі Category"""
 
     children = serializers.SerializerMethodField()
     is_new = serializers.SerializerMethodField()
@@ -23,7 +23,8 @@ class CategorySerializer(serializers.ModelSerializer):
             return CategorySerializer(children, many=True, context=self.context).data
         return []
 
-    def get_is_new(self, obj):
+    def get_is_new(self, obj) -> bool:
+        """Повретає прапорець чи категорія нова"""
         return obj.is_new if isinstance(obj.is_new, bool) else bool(obj.is_new())
 
     def get_image(self, obj):
@@ -40,11 +41,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
 # Products
 class ProductAttributeSerializer(serializers.ModelSerializer):
-    """Серіалізатор для атрибутів продуктів.
-
-    Атрибути:
-        attribute_name (str): Назва атрибуту продукту.
-    """
+    """Серіалізатор для моделі ProductAttribute."""
 
     attribute_name = serializers.CharField(source="attribute.name")
 
@@ -54,13 +51,7 @@ class ProductAttributeSerializer(serializers.ModelSerializer):
 
 
 class ProductImageSerializer(serializers.ModelSerializer):
-    """Серіалізатор для зображень продуктів.
-
-    Серіалізатор використовується для роботи зі зображеннями продуктів, зокрема для передачі URL-адрес зображень.
-
-    Атрибути:
-        image (str): URL зображення продукту.
-    """
+    """Серіалізатор для моделі ProductImage."""
 
     class Meta:
         model = ProductImage
@@ -68,28 +59,26 @@ class ProductImageSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
+    """Серіалізатор для серіалізації полів is_new та discounted_price"""
+
     is_new = serializers.SerializerMethodField()
     discounted_price = serializers.FloatField(read_only=True)
 
     def get_is_new(self, obj):
+        """Перевірка чи об'єкт новий"""
         return obj.is_new()
 
 
 class ProductListSerializer(ProductSerializer):
-    """Серіалізатор для списку продуктів.
+    """Серіалізатор для моделі Product.
 
     Використовується для передачі основної інформації про продукти, зокрема головного зображення, назви, ціни та ідентифікатора.
-
-    Атрибути:
-        main_image (str): URL головного зображення продукту.
-
-    Методи:
-        get_main_image (function): Метод для отримання головного зображення продукту. Якщо головного зображення немає, повертає `None`.
     """
 
     main_image = serializers.SerializerMethodField()
 
     def get_main_image(self, obj):
+        """Повертає основне зображення товару"""
         request = self.context.get("request")
         main_image = obj.productimage_set.filter(is_main=True).first()
         if main_image and request:
@@ -111,17 +100,10 @@ class ProductListSerializer(ProductSerializer):
 
 
 class ProductDetailSerializer(ProductSerializer):
-    """Серіалізатор для деталей продуктів.
+    """Серіалізатор для моделі Product.
 
     Використовується для передачі детальної інформації про продукт, включаючи атрибути, ієрархію категорій, опис, ціну та всі зображення продукту.
 
-    Атрибути:
-        attributes (list): Список атрибутів продукту, серіалізованих за допомогою `ProductAttributeSerializer`.
-        category (list): Ієрархічний список категорій продукту (від батьківської до поточної).
-        images (list): Список зображень продукту, серіалізованих за допомогою `ProductImageSerializer`.
-
-    Методи:
-        get_category (function): Метод для побудови ієрархії категорії продукту.
     """
 
     attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
@@ -154,11 +136,3 @@ class ProductDetailSerializer(ProductSerializer):
             "images",
             "is_new",
         ]
-
-
-class BannerSerializer(serializers.ModelSerializer):
-    """Серіалізатор для моделі банерів"""
-
-    class Meta:
-        model = Banner
-        fields = ["id", "title", "description", "image"]

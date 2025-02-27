@@ -36,15 +36,19 @@ class StandardResultsSetPagination(PageNumberPagination):
 
 
 class CategoryView(ListAPIView):
-    """API View для роботи з категоріями товарів.
+    """APIView для отримання списку підкатегорій категорії.
 
-    Доступні операції:
-    - GET api/v1/categories/parent_id/ - Отримання підкатегорій.
+    Дозволені операції та HTTP-методи:
+        - (GET /categories/{parent_id}/) - Отримання підкатегорій.
+
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
     """
 
     serializer_class = CategorySerializer
 
     def get_queryset(self):
+        """Повертає queryset підкатегорій для категорії"""
         parent_slug = self.kwargs.get("parent_slug")
         return Category.objects.filter(parent__slug=parent_slug).prefetch_related(
             "children"
@@ -52,10 +56,13 @@ class CategoryView(ListAPIView):
 
 
 class TopLevelCategoryView(ListAPIView):
-    """API View для роботи з категоріями товарів.
+    """APIView для отримання списку всіх категорій.
 
     Доступні операції:
-    - GET api/v1/categories/ - Отримання всіх категорій.
+        - (GET /categories/) - Отримання всіх категорій.
+
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
     """
 
     queryset = Category.objects.filter(parent=None).prefetch_related("children")
@@ -63,13 +70,13 @@ class TopLevelCategoryView(ListAPIView):
 
 
 class ProductListView(ListAPIView):
-    """API View для отримання списку продуктів.
+    """APIView для отримання списку продуктів.
 
     Доступні операції:
-    - GET api/v1/products/ - Отримання списку всіх продуктів.
+        - (GET /products/) - Отримання списку всіх продуктів.
 
-    Відповідь:
-    - JSON з даними всіх продуктів.
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
     """
 
     queryset = Product.objects.all()
@@ -78,6 +85,7 @@ class ProductListView(ListAPIView):
     filter_backends = [DjangoFilterBackend]
     filterset_class = ProductFilter
 
+    # Swagger документація
     @swagger_auto_schema(
         manual_parameters=[
             openapi.Parameter(
@@ -93,6 +101,7 @@ class ProductListView(ListAPIView):
         return super().get(request, *args, **kwargs)
 
     def get_queryset(self):
+        """Активує переклад на основі заголовку 'Accept-Language'."""
         language = self.request.headers.get("Accept-Language", "en")
         translation.activate(language)
         return super().get_queryset()
@@ -102,10 +111,10 @@ class ProductDetailView(RetrieveAPIView):
     """API View для отримання детальної інформації про продукт.
 
     Доступні операції:
-    - GET api/v1/products/{id}/ - Отримання детальної інформації про продукт за його ID.
+        - (GET /products/{id}/) - Отримання детальної інформації про продукт за його ID.
 
-    Відповідь:
-    - JSON з детальною інформацією про продукт.
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
     """
 
     queryset = Product.objects.all()
@@ -113,25 +122,7 @@ class ProductDetailView(RetrieveAPIView):
     lookup_field = "id"
 
     def get_queryset(self):
-        language = self.request.headers.get("Accept-Language", "en")
-        translation.activate(language)
-        return super().get_queryset()
-
-
-class BannerView(ListAPIView):
-    """API View для отримання списку банерів.
-
-    Доступні операції:
-    - GET api/v1/banners/ - Отримання списку всіх банерів.
-
-    Відповідь:
-    - JSON з даними всіх банерів.
-    """
-
-    queryset = Banner.objects.all()
-    serializer_class = BannerSerializer
-
-    def get_queryset(self):
+        """Активує переклад на основі заголовку 'Accept-Language'."""
         language = self.request.headers.get("Accept-Language", "en")
         translation.activate(language)
         return super().get_queryset()

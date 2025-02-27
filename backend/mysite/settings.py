@@ -27,6 +27,7 @@ AUTH_USER_MODEL = "user.CustomUser"
 # Application definition
 
 INSTALLED_APPS = [
+    "modeltranslation",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -36,7 +37,6 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "drf_yasg",
-    "modeltranslation",
     "rest_framework.authtoken",
     "user.apps.UserConfig",
     "product.apps.ProductConfig",
