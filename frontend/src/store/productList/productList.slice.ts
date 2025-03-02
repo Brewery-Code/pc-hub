@@ -34,9 +34,11 @@ const productListSlice = createSlice({
         state.status = "succeeded";
         state.data = action.payload;
       })
-      .addCase(fetchProductList.rejected, (state, action) => {
+      .addCase(fetchProductList.rejected, (state) => {
         state.status = "failed";
-        state.error = action.error.message ?? "Unknown error";
+        // state.error = action.error.message ?? "Unknown error";
       });
   },
 });
+
+export { productListSlice, fetchProductList };
