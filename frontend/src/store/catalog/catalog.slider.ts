@@ -3,12 +3,15 @@ import i18n from "../../locales/i18n";
 import { RootState } from "../store";
 
 const fetchCatalog = createAsyncThunk("catalog/fetchCatalog", async () => {
-  const response = await fetch("http://127.0.0.1:8000/api/v1/categories/", {
-    method: "GET",
-    headers: {
-      "Accept-Language": i18n.language,
+  const response = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/categories/`,
+    {
+      method: "GET",
+      headers: {
+        "Accept-Language": i18n.language,
+      },
     },
-  });
+  );
   return response.json();
 });
 

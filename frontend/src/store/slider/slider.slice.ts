@@ -2,12 +2,16 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
 
 const fetchSlider = createAsyncThunk("slider/fetchSlider", async () => {
-  const response = await fetch("http://127.0.0.1:8000/api/v1/banners/", {
-    method: "GET",
-    headers: {
-      "Accept-Language": i18n.language,
+  const response = await fetch(
+    `${import.meta.env.VITE_API_BASE_URL}/core/banners/`,
+    {
+      method: "GET",
+      headers: {
+        "Accept-Language": i18n.language,
+      },
     },
-  });
+  );
+
   return response.json();
 });
 

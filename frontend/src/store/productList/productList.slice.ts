@@ -5,7 +5,7 @@ const fetchProductList = createAsyncThunk(
   "productList/fetchProductList",
   async (parentId, productList) => {
     const response = await fetch(
-      `http://127.0.0.1:8000/api/v1/categories/${parentId}/${productList}/`,
+      `${import.meta.env.VITE_API_BASE_URL}/categories/${parentId}/${productList}/`,
       {
         method: "GET",
         headers: {

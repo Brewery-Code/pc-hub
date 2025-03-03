@@ -3,7 +3,7 @@ import i18n from "../../locales/i18n";
 
 const fetchTopSales = createAsyncThunk("topSales/fetchTopSales", async () => {
   const response = await fetch(
-    "http://127.0.0.1:8000/api/v1/products/?page_size=12",
+    `${import.meta.env.VITE_API_BASE_URL}/products/?page_size=12`,
     {
       method: "GET",
       headers: {
