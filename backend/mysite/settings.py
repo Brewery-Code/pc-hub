@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "orders.apps.OrdersConfig",
     "core.apps.CoreConfig",
     "news.apps.NewsConfig",
+    "django_filters",
 ]
 
 MIDDLEWARE = [

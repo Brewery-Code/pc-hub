@@ -4,27 +4,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from .models import *
 from .serializers import *
 from django.utils import translation
-from django_filters import rest_framework as filters
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-
-
-class ProductFilter(filters.FilterSet):
-    """Фільтрація товарів за категорією"""
-
-    category = filters.CharFilter(method="filter_by_category")
-
-    class Meta:
-        model = Product
-        fields = ["category"]
-
-    def filter_by_category(self, queryset, name, value):
-        try:
-            category = Category.objects.get(slug=value)
-            descendants = category.get_descendants(include_self=True)
-            return queryset.filter(category__in=descendants)
-        except Category.DoesNotExist:
-            return queryset.none()
+from .filters import ProductFilter
 
 
 class StandardResultsSetPagination(PageNumberPagination):
@@ -79,7 +61,7 @@ class ProductListView(ListAPIView):
         - Доступний для всіх користувачів (AllowAny).
     """
 
-    queryset = Product.objects.all()
+    queryset = Product.objects.order_by("-created_at")
     serializer_class = ProductListSerializer
     pagination_class = StandardResultsSetPagination
     filter_backends = [DjangoFilterBackend]
