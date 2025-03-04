@@ -58,5 +58,8 @@
     "all": "See all products",
     "more": "See more",
     "hide": "Hide"
+  },
+  "paginator": {
+    "seeMore": "Show more products"
   }
 }

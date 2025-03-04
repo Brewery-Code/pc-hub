@@ -10,9 +10,10 @@ interface IUIProductCardProps {
   product: IProduct;
   className?: string;
   type?: "common" | "dark";
+  key?: string | number;
 }
 
-function UIProductCard({ product, className, type }: IUIProductCardProps) {
+function UIProductCard({ product, className, type, key }: IUIProductCardProps) {
   const price = () => {
     if (product.discounted_price !== product.price) {
       return (
@@ -45,6 +46,7 @@ function UIProductCard({ product, className, type }: IUIProductCardProps) {
 
   return (
     <div
+      key={key}
       className={clsx(
         styles.card,
         className,
@@ -95,7 +97,6 @@ function UIProductCard({ product, className, type }: IUIProductCardProps) {
         </UIButton>
       </div>
       <div className={styles.description}>
-        {/* <div className={styles.description__title}>Descripttion</div> */}
         <p className={styles.description__text}>{product.description}</p>
       </div>
     </div>

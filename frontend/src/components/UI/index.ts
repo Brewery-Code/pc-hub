@@ -7,3 +7,4 @@ export { default as UIProductNavigation } from "./UIProductNavigation/UIProductN
 export { default as UIModalBody } from "./UIModalBody/UIModalBody";
 export { default as UICross } from "./UICross/UICross";
 export { default as UIBreadcrumbs } from "./UIBreadcrumbs/UIBreadcrumbs";
+export { default as UIPaginator } from "./UIPaginator/UIPaginator";

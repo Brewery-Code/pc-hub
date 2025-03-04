@@ -45,18 +45,18 @@ function Catalog() {
             )}
             {isCatalog
               ? selectedCategory.map(
-                  (category: ICategory | ICategoryChildren) => (
+                  (category: ICategory | ICategoryChildren, index: number) => (
                     <Category
-                      key={category.id}
+                      key={index}
                       category={category}
                       isCatalog={isCatalog}
                     />
                   ),
                 )
               : selectedCategory?.children.map(
-                  (category: ICategoryChildren) => (
+                  (category: ICategoryChildren, index: number) => (
                     <Category
-                      key={category.id}
+                      key={index}
                       category={category}
                       isCatalog={isCatalog}
                     />
