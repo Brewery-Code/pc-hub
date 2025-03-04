@@ -6,7 +6,7 @@ from .serializers import *
 from django.utils import translation
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from .filters import ProductCategoryFilter, ProductFilter
+from .filters import ProductFilter
 
 
 class StandardResultsSetPagination(PageNumberPagination):
@@ -61,7 +61,7 @@ class ProductListView(ListAPIView):
         - Доступний для всіх користувачів (AllowAny).
     """
 
-    queryset = Product.objects.all()
+    queryset = Product.objects.order_by("-created_at")
     serializer_class = ProductListSerializer
     pagination_class = StandardResultsSetPagination
     filter_backends = [DjangoFilterBackend]

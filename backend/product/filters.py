@@ -4,24 +4,21 @@ from .models import Product, Category
 from django_filters import rest_framework as filters
 
 
-class ProductCategoryFilter(filters.FilterSet):
-    """Фільтрація товарів за категорією"""
+class ProductFilter(django_filters.FilterSet):
+    """Клас який дозволяє фільтрацію товарів за їх полями"""
 
-    category = filters.CharFilter(method="filter_by_category")
+    price_min = django_filters.NumberFilter(field_name="price", lookup_expr="gte")
+    price_max = django_filters.NumberFilter(field_name="price", lookup_expr="lte")
+    category = django_filters.NumberFilter(field_name="category__id")
+    in_stock = django_filters.BooleanFilter(
+        field_name="stock_quantity", method="filter_in_stock"
+    )
+
+    def filter_in_stock(self, queryset, name, value):
+        if value:
+            return queryset.filter(stock_quantity__gt=0)
+        return queryset.filter(stock_quantity=0)
 
     class Meta:
         model = Product
-        fields = ["category"]
-
-    def filter_by_category(self, queryset, name, value):
-        try:
-            category = Category.objects.get(slug=value)
-            descendants = category.get_descendants(include_self=True)
-            return queryset.filter(category__in=descendants)
-        except Category.DoesNotExist:
-            return queryset.none()
-
-
-class ProductFilter(django_filters.FilterSet):
-    price_min = django_filters.NumberFilter(field_name="price", lookup_expr="gte")
-    price_max = django_filters.NumberFilter(field_name="price", lookup_expr="lte")
+        fields = ["in_stock"]
