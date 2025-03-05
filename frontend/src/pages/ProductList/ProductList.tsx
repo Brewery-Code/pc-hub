@@ -18,7 +18,7 @@ function ProductList() {
       dispatch(fetchProductList({ parentID: category, page }));
     }
   }, [category, dispatch, page]);
-
+  console.log(productList);
   return (
     <div className={styles.productList}>
       <div className="productList__container">

@@ -1,6 +1,5 @@
-import django
 import django_filters
-from .models import Product, Category
+from .models import Product
 from django_filters import rest_framework as filters
 
 
@@ -9,7 +8,7 @@ class ProductFilter(django_filters.FilterSet):
 
     price_min = django_filters.NumberFilter(field_name="price", lookup_expr="gte")
     price_max = django_filters.NumberFilter(field_name="price", lookup_expr="lte")
-    category = django_filters.NumberFilter(field_name="category__id")
+    category = django_filters.CharFilter(field_name="category__slug", lookup_expr="iexact")
     in_stock = django_filters.BooleanFilter(
         field_name="stock_quantity", method="filter_in_stock"
     )
@@ -21,4 +20,4 @@ class ProductFilter(django_filters.FilterSet):
 
     class Meta:
         model = Product
-        fields = ["in_stock"]
+        fields = ["in_stock", "category"]

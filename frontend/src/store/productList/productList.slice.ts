@@ -18,7 +18,7 @@ const fetchProductList = createAsyncThunk(
         "Accept-Language": i18n.language,
       },
     });
-
+    // console.log(await response.json());
     return await response.json();
   },
 );
@@ -57,7 +57,6 @@ const productListSlice = createSlice({
       })
       .addCase(fetchProductList.fulfilled, (state, action) => {
         state.status = "succeeded";
-
         // Якщо є нові продукти, додаємо їх до старих, щоб вони не заміщували один одного
         if (action.payload.results) {
           state.productList = [...state.productList, ...action.payload.results];
