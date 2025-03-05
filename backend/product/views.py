@@ -1,6 +1,7 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.response import Response
 from .models import *
 from .serializers import *
 from django.utils import translation
@@ -9,12 +10,23 @@ from drf_yasg import openapi
 from .filters import ProductFilter
 
 
-class StandardResultsSetPagination(PageNumberPagination):
+class CustomPagination(PageNumberPagination):
     """Клас який реалізує пагінацію"""
 
-    page_size = 6
+    page_size = 10
     page_size_query_param = "page_size"
     max_page_size = 100
+
+    def get_paginated_response(self, data):
+        return Response(
+            {
+                "total_items": self.page.paginator.count,
+                "total_pages": self.page.paginator.num_pages,
+                "next": self.get_next_link(),
+                "previous": self.get_previous_link(),
+                "results": data,
+            }
+        )
 
 
 class CategoryView(ListAPIView):
@@ -63,7 +75,7 @@ class ProductListView(ListAPIView):
 
     queryset = Product.objects.order_by("-created_at")
     serializer_class = ProductListSerializer
-    pagination_class = StandardResultsSetPagination
+    pagination_class = CustomPagination
     filter_backends = [DjangoFilterBackend]
     filterset_class = ProductFilter
 
