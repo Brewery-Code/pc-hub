@@ -23,9 +23,11 @@ class CategoryAdmin(TranslationAdmin):
     list_per_page = 20
 
     def get_queryset(self, request):
-        """Прибираємо дублікати верхнього рівня, якщо вони вже показані в ієрархії."""
+        """Показує всі категорії, але у списку відображає тільки кінцеві вузли."""
         qs = super().get_queryset(request)
-        return qs.filter(children__isnull=True)
+        if request.resolver_match.url_name == "category_changelist":
+            return qs.filter(children__isnull=True)
+        return qs
 
     @admin.display(description="Ієрархія категорій")
     def display_full_hierarchy(self, obj):
