@@ -26,3 +26,4 @@ export { default as AdvantageConsultation } from "./AdvantageConsultation";
 export { default as StarIcon } from "./StarIcon";
 export { default as ArrowCommon } from "./ArrowCommon";
 export { default as PaginatorArrow } from "./PaginatorArrow";
+export { default as PaginatorArrowStraight } from "./PaginatorArrowStraight";

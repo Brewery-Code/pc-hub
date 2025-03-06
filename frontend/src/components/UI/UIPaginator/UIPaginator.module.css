@@ -1,12 +1,15 @@
 .paginator {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 .paginator__more {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .paginator__text {
@@ -20,4 +23,46 @@
   width: 32px;
   height: 32px;
   stroke: var(--action-secondary);
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.pages__page {
+  padding: 11px 30px;
+  color: var(--action-secondary);
+}
+
+.pages__page:first-of-type {
+  margin-left: 40px;
+}
+
+.pages__page:last-of-type {
+  margin-right: 40px;
+}
+
+.pages__page_active {
+  background-color: var(--soft);
+}
+
+.pages__next,
+.pages__previous {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--action-secondary);
+}
+
+.pages__arrow_next,
+.pages__arrow_previous {
+  width: 24px;
+  height: 24px;
+  stroke: var(--action-secondary);
+}
+
+.pages__arrow_next {
+  transform: rotate(180deg);
 }

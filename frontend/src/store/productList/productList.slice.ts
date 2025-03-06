@@ -3,11 +3,8 @@ import i18n from "../../locales/i18n";
 
 const fetchProductList = createAsyncThunk(
   "productList/fetchProductList",
-  async ({ parentID, page }: { parentID: string; page?: string }) => {
-    // Створюємо URL з базовим шляхом
-    let url = `${import.meta.env.VITE_API_BASE_URL}/products/?category=${encodeURIComponent(parentID)}&page_size=60`;
-
-    // Додаємо параметр page, якщо він є
+  async ({ category, page }: { category: string; page?: string }) => {
+    let url = `${import.meta.env.VITE_API_BASE_URL}/products/?category=${encodeURIComponent(category)}&page_size=60`;
     if (page) {
       url += `&page=${encodeURIComponent(page)}`;
     }
@@ -18,8 +15,8 @@ const fetchProductList = createAsyncThunk(
         "Accept-Language": i18n.language,
       },
     });
-    // console.log(await response.json());
-    return await response.json();
+    const data = await response.json();
+    return { data, category };
   },
 );
 
@@ -36,12 +33,19 @@ interface IProduct {
 
 interface IProductListState {
   productList: IProduct[];
+  category: string;
+  totalItems: number;
+  totalPages: number;
+
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null;
 }
 
 const initialState: IProductListState = {
   productList: [],
+  category: "",
+  totalItems: 0,
+  totalPages: 0,
   status: "idle",
   error: null,
 };
@@ -57,9 +61,16 @@ const productListSlice = createSlice({
       })
       .addCase(fetchProductList.fulfilled, (state, action) => {
         state.status = "succeeded";
-        // Якщо є нові продукти, додаємо їх до старих, щоб вони не заміщували один одного
-        if (action.payload.results) {
-          state.productList = [...state.productList, ...action.payload.results];
+        state.totalItems = action.payload.data.total__items;
+        state.totalPages = action.payload.data.total_pages;
+        if (state.category == action.payload.category) {
+          state.productList = [
+            ...state.productList,
+            ...action.payload.data.results,
+          ];
+        } else {
+          state.productList = action.payload.data.results;
+          state.category = action.payload.category;
         }
       })
       .addCase(fetchProductList.rejected, (state, action) => {

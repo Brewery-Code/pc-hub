@@ -4,28 +4,29 @@ import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./ProductList.module.css";
 import { fetchProductList } from "../../store/productList/productList.slice";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 function ProductList() {
-  const { category, page } = useParams();
+  const { productList: category } = useParams();
+  const [searchParams] = useSearchParams();
+  const page = searchParams.get("page") || "1";
   const dispatch = useAppDispatch();
-  const productList = useSelector(
-    (state: RootState) => state.productList.productList,
+  const { productList, totalPages } = useSelector(
+    (state: RootState) => state.productList,
   );
-  console.log(page);
+
   useEffect(() => {
     if (category) {
-      dispatch(fetchProductList({ parentID: category, page }));
+      dispatch(fetchProductList({ category, page }));
     }
   }, [category, dispatch, page]);
-  console.log(productList);
   return (
     <div className={styles.productList}>
       <div className="productList__container">
         <div className={styles.productList__body}>
           <div className={styles.head}>
             <UIBreadcrumbs />
-            <h4 className={styles.head__title}>Title</h4>
+            <h4 className={styles.head__title}>{category}</h4>
           </div>
           <div className={styles.productList__main}>
             <aside className={styles.filter}>Filters</aside>
@@ -35,7 +36,10 @@ function ProductList() {
               ))}
             </div>
           </div>
-          <UIPaginator className={styles.productList__paginator} />
+          <UIPaginator
+            className={styles.productList__paginator}
+            totalPages={totalPages}
+          />
         </div>
       </div>
     </div>

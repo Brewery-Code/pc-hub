@@ -60,6 +60,8 @@
     "hide": "Hide"
   },
   "paginator": {
-    "seeMore": "Show more products"
+    "seeMore": "Show more products",
+    "next": "Next",
+    "previous": "Previous"
   }
 }

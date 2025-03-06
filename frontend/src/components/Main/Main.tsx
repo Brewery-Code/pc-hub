@@ -11,7 +11,7 @@ function Main() {
         <Route path="/home/catalog" element={<Catalog />} />
         <Route path="/home/catalog/:category" element={<Catalog />} />
         <Route
-          path="/home/catalog/:category/:productList/:page?"
+          path="/home/catalog/:category/:productList"
           element={<ProductList />}
         />
       </Routes>

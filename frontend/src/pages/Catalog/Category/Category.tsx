@@ -18,7 +18,7 @@ function Category({ category, isCatalog }: ICategoryProps) {
       to={
         isCatalog
           ? `/home/catalog/${category.slug}`
-          : `/home/catalog/${categoryParam}/${category.slug}-list`
+          : `/home/catalog/${categoryParam}/${category.slug}`
       }
     >
       <div className={styles.category}>
