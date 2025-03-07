@@ -88,26 +88,26 @@ function UIPaginator({ className, totalPages }: IUIPaginatorProps) {
             {t("paginator.previous")}
           </Link>
         ) : null}
-        {generatePageList(pageInt, totalPages).map((item, index) => (
-          <Link
-            key={index}
-            className={clsx(
-              styles.pages__page,
-              typeof item === "number" &&
-                item <= pageInt &&
-                styles.pages__page_active &&
-                item >= pageInt - lengthInt + 1 &&
-                styles.pages__page_active,
-            )}
-            to={
-              item === "..."
-                ? `/home/catalog/${category}/${productList}?page=${page}`
-                : `/home/catalog/${category}/${productList}?page=${item}`
-            }
-          >
-            {item}
-          </Link>
-        ))}
+        {generatePageList(pageInt, totalPages).map((item, index) =>
+          item === "..." ? (
+            <div className={styles.pages__page}>{item}</div>
+          ) : (
+            <Link
+              key={index}
+              className={clsx(
+                styles.pages__page,
+                typeof item === "number" &&
+                  item <= pageInt &&
+                  styles.pages__page_active &&
+                  item >= pageInt - lengthInt + 1 &&
+                  styles.pages__page_active,
+              )}
+              to={`/home/catalog/${category}/${productList}?page=${item}`}
+            >
+              {item}
+            </Link>
+          ),
+        )}
         {totalPages > pageInt ? (
           <Link
             className={styles.pages__next}

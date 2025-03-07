@@ -36,13 +36,13 @@
   color: var(--action-secondary);
 }
 
-.pages__page:first-of-type {
+/* .pages__page:first-of-type {
   margin-left: 40px;
 }
 
 .pages__page:last-of-type {
   margin-right: 40px;
-}
+} */
 
 .pages__page_active {
   background-color: var(--soft);
