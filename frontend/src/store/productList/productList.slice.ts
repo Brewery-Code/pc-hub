@@ -3,7 +3,15 @@ import i18n from "../../locales/i18n";
 
 const fetchProductList = createAsyncThunk(
   "productList/fetchProductList",
-  async ({ category, page }: { category: string; page?: string }) => {
+  async ({
+    category,
+    page,
+    length,
+  }: {
+    category: string;
+    page?: string;
+    length?: string;
+  }) => {
     let url = `${import.meta.env.VITE_API_BASE_URL}/products/?category=${encodeURIComponent(category)}&page_size=60`;
     if (page) {
       url += `&page=${encodeURIComponent(page)}`;
@@ -16,7 +24,11 @@ const fetchProductList = createAsyncThunk(
       },
     });
     const data = await response.json();
-    return { data, category };
+    let lengthInt = 0;
+    if (length !== undefined) {
+      lengthInt = parseInt(length);
+    }
+    return { data, category, lengthInt };
   },
 );
 
@@ -36,7 +48,7 @@ interface IProductListState {
   category: string;
   totalItems: number;
   totalPages: number;
-
+  length: number;
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null;
 }
@@ -46,6 +58,7 @@ const initialState: IProductListState = {
   category: "",
   totalItems: 0,
   totalPages: 0,
+  length: 0,
   status: "idle",
   error: null,
 };
@@ -63,7 +76,10 @@ const productListSlice = createSlice({
         state.status = "succeeded";
         state.totalItems = action.payload.data.total__items;
         state.totalPages = action.payload.data.total_pages;
-        if (state.category == action.payload.category) {
+        if (
+          state.category == action.payload.category &&
+          action.payload.lengthInt > state.length
+        ) {
           state.productList = [
             ...state.productList,
             ...action.payload.data.results,
@@ -71,7 +87,9 @@ const productListSlice = createSlice({
         } else {
           state.productList = action.payload.data.results;
           state.category = action.payload.category;
+          state.length = 0;
         }
+        state.length = action.payload.lengthInt;
       })
       .addCase(fetchProductList.rejected, (state, action) => {
         state.status = "failed";

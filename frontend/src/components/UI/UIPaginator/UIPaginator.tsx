@@ -18,19 +18,25 @@ function UIPaginator({ className, totalPages }: IUIPaginatorProps) {
   const { t } = useTranslation();
   const { category, productList } = useParams();
   const [searchParams] = useSearchParams();
-  const page = searchParams.get("page") || "1";
+  const page = searchParams.get("page");
+  const length = searchParams.get("length");
   const navigate = useNavigate();
-  let pageInt = 0;
-  if (page === undefined) {
-    pageInt = 1;
-  } else {
+  let pageInt = 1;
+  if (typeof page === "string") {
     pageInt = parseInt(page);
   }
+  let lengthInt = 1;
+  if (typeof length === "string") {
+    lengthInt = parseInt(length);
+  }
+
   const loadMoreProducts = () => {
     if (page === undefined) {
-      navigate(`/home/catalog/${category}/${productList}?page=2`);
+      navigate(`/home/catalog/${category}/${productList}?page=2&length=2`);
     } else {
-      navigate(`/home/catalog/${category}/${productList}?page=${pageInt + 1}`);
+      navigate(
+        `/home/catalog/${category}/${productList}?page=${pageInt + 1}&length=${lengthInt + 1}`,
+      );
     }
   };
 
@@ -66,23 +72,32 @@ function UIPaginator({ className, totalPages }: IUIPaginatorProps) {
 
   return (
     <div className={clsx(styles.paginator, className)}>
-      <div className={styles.paginator__more} onClick={loadMoreProducts}>
-        <div className={styles.paginator__text}>{t("paginator.seeMore")}</div>
-        <PaginatorArrow className={styles.paginator__arrow} />
-      </div>
+      {totalPages > pageInt && (
+        <div className={styles.paginator__more} onClick={loadMoreProducts}>
+          <div className={styles.paginator__text}>{t("paginator.seeMore")}</div>
+          <PaginatorArrow className={styles.paginator__arrow} />
+        </div>
+      )}
       <div className={styles.pages}>
-        {totalPages > 3 ? (
-          <div className={styles.pages__previous}>
+        {pageInt !== 1 ? (
+          <Link
+            className={styles.pages__previous}
+            to={`/home/catalog/${category}/${productList}?page=${pageInt - 1}`}
+          >
             <PaginatorArrowStraight className={styles.pages__arrow_previous} />
             {t("paginator.previous")}
-          </div>
+          </Link>
         ) : null}
         {generatePageList(pageInt, totalPages).map((item, index) => (
           <Link
             key={index}
             className={clsx(
               styles.pages__page,
-              item === pageInt && styles.pages__page_active,
+              typeof item === "number" &&
+                item <= pageInt &&
+                styles.pages__page_active &&
+                item >= pageInt - lengthInt + 1 &&
+                styles.pages__page_active,
             )}
             to={
               item === "..."
@@ -93,11 +108,14 @@ function UIPaginator({ className, totalPages }: IUIPaginatorProps) {
             {item}
           </Link>
         ))}
-        {totalPages > 3 ? (
-          <div className={styles.pages__next}>
+        {totalPages > pageInt ? (
+          <Link
+            className={styles.pages__next}
+            to={`/home/catalog/${category}/${productList}?page=${pageInt + 1}`}
+          >
             {t("paginator.next")}
             <PaginatorArrowStraight className={styles.pages__arrow_next} />
-          </div>
+          </Link>
         ) : null}
       </div>
     </div>

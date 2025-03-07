@@ -10,6 +10,7 @@ function ProductList() {
   const { productList: category } = useParams();
   const [searchParams] = useSearchParams();
   const page = searchParams.get("page") || "1";
+  const length = searchParams.get("length") || "1";
   const dispatch = useAppDispatch();
   const { productList, totalPages } = useSelector(
     (state: RootState) => state.productList,
@@ -17,9 +18,9 @@ function ProductList() {
 
   useEffect(() => {
     if (category) {
-      dispatch(fetchProductList({ category, page }));
+      dispatch(fetchProductList({ category, page, length }));
     }
-  }, [category, dispatch, page]);
+  }, [category, dispatch, page, length]);
   return (
     <div className={styles.productList}>
       <div className="productList__container">
