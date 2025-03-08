@@ -5,7 +5,8 @@ import { topSalesSlice } from "./topSales/topSales.slice";
 import { catalogSlice } from "./catalog/catalog.slider";
 import { productListSlice } from "./productList/productList.slice";
 import { partnersSlice } from "./partners/partners.slice";
-import { newsSlice } from "./News/news.slice";
+import { newsSlice } from "./news/news.slice";
+import { productSlice } from "./product/product.slice";
 
 const store = configureStore({
   reducer: {
@@ -15,6 +16,7 @@ const store = configureStore({
     productList: productListSlice.reducer,
     partners: partnersSlice.reducer,
     news: newsSlice.reducer,
+    product: productSlice.reducer,
   },
 });
 

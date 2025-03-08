@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { Catalog, Home, ProductList } from "../../pages";
+import { Catalog, Home, Product, ProductList } from "../../pages";
 
 function Main() {
   return (
@@ -13,6 +13,10 @@ function Main() {
         <Route
           path="/home/catalog/:category/:productList"
           element={<ProductList />}
+        />
+        <Route
+          path="/home/catalog/:category/:productList/:product"
+          element={<Product />}
         />
       </Routes>
     </div>

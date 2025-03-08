@@ -5,7 +5,7 @@ import { ArrowCommon } from "../../../assets/icons";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../../store/store";
 import { useEffect } from "react";
-import { fetchNews } from "../../../store/News/news.slice";
+import { fetchNews } from "../../../store/news/news.slice";
 
 function News() {
   const { t } = useTranslation("home");

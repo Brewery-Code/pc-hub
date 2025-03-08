@@ -5,6 +5,7 @@ import styles from "./UIProductCard.module.css";
 import clsx from "clsx";
 import { UIButton } from "..";
 import UIRatingStars from "../UIRatingStars/UIRatingStars";
+import { Link, useLocation } from "react-router-dom";
 
 interface IUIProductCardProps {
   product: IProduct;
@@ -44,9 +45,12 @@ function UIProductCard({ product, className, type, key }: IUIProductCardProps) {
 
   const { t } = useTranslation("components");
 
+  const location = useLocation();
+
   return (
-    <div
+    <Link
       key={key}
+      to={`${location.pathname}/${product.id}`}
       className={clsx(
         styles.card,
         className,
@@ -99,7 +103,7 @@ function UIProductCard({ product, className, type, key }: IUIProductCardProps) {
       <div className={styles.description}>
         <p className={styles.description__text}>{product.description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 
