@@ -5,6 +5,8 @@ from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
 import uuid
 from django.utils.text import slugify
+import random
+import string
 
 
 class Category(MPTTModel):
@@ -81,6 +83,7 @@ class Product(models.Model):
     """
 
     name = models.CharField(max_length=255, verbose_name="Назва товару")
+    slug = models.SlugField(unique=True, blank=True, max_length=150)
     category = models.ManyToManyField(
         Category,
         through="ProductCategory",
@@ -124,6 +127,20 @@ class Product(models.Model):
     def rating(self) -> float:
         """Тимчасовий метод. Генерація рандомного рейтингу для товару"""
         return round(random.uniform(1.0, 5.0), 1)
+
+    def generate_random_string(length=8):
+        """Генерує випадковий набір символів та чисел"""
+        return "".join(random.choices(string.ascii_lowercase + string.digits, k=length))
+
+    def save(self, *args, **kwargs) -> None:
+        """Створює унікальний слаг для товару, додаючи випадковий набір символів в кінець"""
+        if not self.slug:
+            base_slug = slugify(self.name)
+            slug = base_slug
+            while Product.objects.filter(slug=slug).exists():
+                slug = f"{base_slug}-{self.generate_random_string()}"
+            self.slug = slug
+        super().save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Товар"
