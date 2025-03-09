@@ -1,0 +1,12 @@
+{
+  "head": {
+    "productCode": "Product code",
+    "reviews": "Reviews"
+  },
+  "navigation": {
+    "allInfo": "All information",
+    "characteristics": "Characteristics",
+    "reviews": "Reviews",
+    "credit": "Credit"
+  }
+}

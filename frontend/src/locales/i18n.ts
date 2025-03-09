@@ -9,6 +9,8 @@ import enModals from "./en/modals.json";
 import ukModals from "./uk/modals.json";
 import enCatalog from "./en/catalog.json";
 import ukCatalog from "./uk/catalog.json";
+import enProduct from "./en/product.json";
+import ukProduct from "./uk/product.json";
 
 i18n
   .use(LanguageDetector)
@@ -20,12 +22,14 @@ i18n
         home: enHome,
         modals: enModals,
         catalog: enCatalog,
+        product: enProduct,
       },
       uk: {
         components: ukComponents,
         home: ukHome,
         modals: ukModals,
         catalog: ukCatalog,
+        product: ukProduct,
       },
     },
     detection: {

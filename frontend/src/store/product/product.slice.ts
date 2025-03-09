@@ -18,6 +18,10 @@ const fetchProduct = createAsyncThunk(
   },
 );
 
+interface IImages {
+  image: string;
+}
+
 interface IProduct {
   id: string;
   name: string;
@@ -27,18 +31,29 @@ interface IProduct {
   discounted_price: number;
   rating: number;
   attributes: [];
-  images: string;
+  images: IImages[];
   is_new: boolean;
 }
 
 interface IProductState {
-  product: IProduct[];
+  product: IProduct;
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null;
 }
 
 const initialState: IProductState = {
-  product: [],
+  product: {
+    id: "",
+    name: "",
+    category: "",
+    description: "",
+    price: 0,
+    discounted_price: 0,
+    rating: 0,
+    attributes: [],
+    images: [],
+    is_new: false,
+  },
   status: "idle",
   error: null,
 };
@@ -64,4 +79,4 @@ const productSlice = createSlice({
   },
 });
 
-export { fetchProduct, productSlice };
+export { fetchProduct, productSlice, type IProduct };

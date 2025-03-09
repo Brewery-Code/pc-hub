@@ -1,0 +1,9 @@
+.images {
+  display: grid;
+  grid-template-columns: 162px 1fr;
+  column-gap: 16px;
+}
+
+.images__list img {
+  object-fit: contain;
+}

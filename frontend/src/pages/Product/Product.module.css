@@ -1,3 +1,11 @@
 .product__breadcrumbs {
   margin-top: 32px;
 }
+
+.product__head {
+  margin-top: 48px;
+}
+
+.product__body {
+  margin-top: 24px;
+}

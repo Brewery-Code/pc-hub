@@ -1,0 +1,12 @@
+{
+  "head": {
+    "productCode": "Код товару",
+    "reviews": "Відгуки"
+  },
+  "navigation": {
+    "allInfo": "Все про товар",
+    "characteristics": "Характеристики",
+    "reviews": "Відгуки",
+    "credit": "Кредит"
+  }
+}
