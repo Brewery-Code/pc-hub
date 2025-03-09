@@ -72,6 +72,7 @@ class Product(models.Model):
 
     Атрибути:
         name (str): Назва товару
+        slug (str): Слаг
         category (Category): Категорія товару, з якою асоціюється продукт
         description (str): Опис товару
         price (float): Ціна товару
