@@ -67,6 +67,19 @@ class Category(MPTTModel):
         ]
 
 
+class Brand(models.Model):
+    name = models.CharField(max_length=100)
+    slug = models.SlugField(unique=True)
+
+    def __str__(self):
+        return f"Бренд: {self.name}"
+
+    class Meta:
+        verbose_name = "Бренд"
+        verbose_name_plural = "Бренди"
+        db_table = "Brand"
+
+
 class Product(models.Model):
     """Модель для збереження товарів
 
@@ -81,6 +94,7 @@ class Product(models.Model):
         rating (float): Рейтинг товару
         created_at (datetime): Дата створення товару
         updated_at (datetime): Дата останнього оновлення товару
+        brand (Brand): Бренд товару
     """
 
     name = models.CharField(max_length=255, verbose_name="Назва товару")
@@ -104,6 +118,9 @@ class Product(models.Model):
     rating = models.FloatField(default=0.0, verbose_name="Рейтинг")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата оновлення")
+    brand = models.ForeignKey(
+        Brand, related_name="products", on_delete=models.CASCADE, null=True
+    )
 
     def __str__(self) -> str:
         """Строкове представлення товару"""
