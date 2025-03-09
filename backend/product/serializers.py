@@ -90,6 +90,7 @@ class ProductListSerializer(ProductSerializer):
         fields = [
             "id",
             "name",
+            "slug",
             "description",
             "price",
             "discounted_price",
@@ -127,6 +128,7 @@ class ProductDetailSerializer(ProductSerializer):
         fields = [
             "id",
             "name",
+            "slug",
             "category",
             "description",
             "price",
