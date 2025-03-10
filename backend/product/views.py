@@ -2,6 +2,7 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from .models import *
 from .serializers import *
 from django.utils import translation
@@ -120,3 +121,26 @@ class ProductDetailView(RetrieveAPIView):
         language = self.request.headers.get("Accept-Language", "en")
         translation.activate(language)
         return super().get_queryset()
+
+
+class BrandFilterByCategory(APIView):
+    """API View для отримання списку брендів для категорії.
+
+    Доступні операції:
+        - (GET /{category_slug}/brands/) - Отримання списку брендів для категорії.
+
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
+    """
+
+    def get(self, request, category_slug):
+        category = Category.objects.filter(slug=category_slug).first()
+
+        if category is None:
+            return Response({"error": "Category not found"}, status=404)
+
+        brands = Brand.objects.filter(products__category=category).distinct()
+
+        brand_list = [{"id": brand.id, "name": brand.name} for brand in brands]
+
+        return Response({"brands": brand_list})

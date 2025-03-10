@@ -63,6 +63,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     is_new = serializers.SerializerMethodField()
     discounted_price = serializers.FloatField(read_only=True)
+    brand = serializers.CharField(source="brand.name", read_only=True)
 
     def get_is_new(self, obj):
         """Перевірка чи об'єкт новий"""
@@ -91,6 +92,7 @@ class ProductListSerializer(ProductSerializer):
             "id",
             "name",
             "slug",
+            "brand",
             "description",
             "price",
             "discounted_price",
@@ -129,6 +131,7 @@ class ProductDetailSerializer(ProductSerializer):
             "id",
             "name",
             "slug",
+            "brand",
             "category",
             "description",
             "price",

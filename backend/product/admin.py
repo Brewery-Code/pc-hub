@@ -100,3 +100,12 @@ class ProductImageAdmin(admin.ModelAdmin):
     search_fields = ("product__name", "image")
     list_filter = ("is_main", "product__category")
     list_per_page = 20
+
+
+@admin.register(Brand)
+class BrandAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для керування брендами товарів"""
+
+    list_display = ("name", "slug")
+    prepopulated_fields = {"slug": ("name",)}
+    list_per_page = 20

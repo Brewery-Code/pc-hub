@@ -12,6 +12,7 @@ class ProductFilter(django_filters.FilterSet):
     in_stock = django_filters.BooleanFilter(
         field_name="stock_quantity", method="filter_in_stock"
     )
+    brand = django_filters.CharFilter(field_name="brand__slug", lookup_expr="iexact")
 
     def filter_category(self, queryset, name, value):
         """Фільтрує товари за категорією та всіма її підкатегоріями"""
@@ -29,4 +30,4 @@ class ProductFilter(django_filters.FilterSet):
 
     class Meta:
         model = Product
-        fields = ["in_stock", "category"]
+        fields = ["in_stock", "category", "brand"]
