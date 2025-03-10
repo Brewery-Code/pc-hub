@@ -8,5 +8,8 @@
     "characteristics": "Характеристики",
     "reviews": "Відгуки",
     "credit": "Кредит"
+  },
+  "characteristics": {
+    "title": "Основні характеристики"
   }
 }

@@ -18,6 +18,11 @@ const fetchProduct = createAsyncThunk(
   },
 );
 
+interface IAttribute {
+  attribute_name: string;
+  value: string;
+}
+
 interface IImages {
   image: string;
 }
@@ -30,7 +35,7 @@ interface IProduct {
   price: number;
   discounted_price: number;
   rating: number;
-  attributes: [];
+  attributes: IAttribute[];
   images: IImages[];
   is_new: boolean;
 }

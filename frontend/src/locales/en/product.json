@@ -8,5 +8,8 @@
     "characteristics": "Characteristics",
     "reviews": "Reviews",
     "credit": "Credit"
+  },
+  "characteristics": {
+    "title": "Main characteristics"
   }
 }
