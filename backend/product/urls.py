@@ -10,4 +10,9 @@ urlpatterns = [
     ),
     path("products/", views.ProductListView.as_view(), name="all products"),
     path("products/<int:id>/", views.ProductDetailView.as_view(), name="Product"),
+    path(
+        "<slug:category_slug>/brands/",
+        views.BrandFilterByCategory.as_view(),
+        name="brands",
+    ),
 ]
