@@ -21,7 +21,9 @@ function Body({ className, product }: IBodyProps) {
             ))}
           </div>
           <div className={styles.image__main}>
-            <img src={product.images[0].image} alt="productImg" />
+            {/* {product.images[0].image && (
+              <img src={product.images[0].image} alt="productImg" />
+            )} */}
           </div>
         </div>
       </div>
