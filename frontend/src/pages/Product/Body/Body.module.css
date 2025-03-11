@@ -4,13 +4,19 @@
 }
 
 .images {
+  position: relative;
   display: grid;
   grid-template-columns: 162px 1fr;
-  grid-template-rows: 580px;
   column-gap: 16px;
 }
 
+.images__container {
+  position: relative;
+  overflow: hidden;
+}
+
 .images__list {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,6 +35,7 @@
 
 .image__main img {
   width: 100%;
+  height: 31vw;
   object-fit: contain;
 }
 
@@ -63,4 +70,107 @@
 
 .characteristics__item:nth-child(odd) {
   background-color: var(--soft);
+}
+
+.characteristics__show-all {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 6px;
+  margin-top: 16px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--action-secondary);
+}
+
+.characteristics__show-all-arrow {
+  width: 12px;
+  height: 12px;
+  stroke: var(--action-secondary);
+}
+
+.description {
+  margin-top: 32px;
+}
+
+.description__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 112%;
+  color: var(--dark-grey);
+}
+
+.description__text {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 142%;
+  color: var(--dark-grey);
+}
+
+.description__more {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--action-secondary);
+}
+
+.description__more-arrow {
+  width: 6px;
+  height: 6px;
+  stroke: var(--action-secondary);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  /* gap: 8px; */
+}
+
+.head__new,
+.head__hit {
+  padding: 6px 19px;
+  background-color: var(--accent-red);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 114%;
+  color: var(--white);
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+}
+
+.head__new {
+  margin-right: 16px;
+}
+
+.head__comparison {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+
+.head__like {
+  margin-left: 8px;
+}
+
+.head__comparison-icon,
+.head__like-icon {
+  stroke: var(--action-secondary);
+  fill: var(--action-secondary);
+}
+
+.head__comparison-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.head__like-icon {
+  width: 26px;
+  height: 26px;
 }

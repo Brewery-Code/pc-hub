@@ -10,6 +10,15 @@
     "credit": "Credit"
   },
   "characteristics": {
-    "title": "Main characteristics"
+    "title": "Main characteristics",
+    "showAll": "Show all characteristics"
+  },
+  "description": {
+    "title": "Product description",
+    "showAll": "See more"
+  },
+  "banners": {
+    "isNew": "New",
+    "topSales": "Top sales"
   }
 }
