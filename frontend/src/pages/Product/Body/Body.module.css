@@ -1,6 +1,7 @@
 .body {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
 }
 
 .images {
@@ -173,4 +174,115 @@
 .head__like-icon {
   width: 26px;
   height: 26px;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.buy__price {
+  display: flex;
+  gap: 2px;
+  color: var(--accent-red);
+}
+
+.buy__numbers {
+  font-size: 28px;
+}
+
+.buy__currency {
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.buy__common,
+.buy__credit {
+  height: 42px;
+}
+
+.buy__common {
+  margin-left: 20px;
+  padding: 0 43px;
+}
+
+.buy__credit {
+  margin-left: 12px;
+  padding: 0 12px;
+}
+
+.delivery,
+.payment,
+.guarantee {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 16px 24px;
+  box-shadow: 0 2px 10px rgba(50, 50, 71, 0.14);
+  border-radius: 4px;
+}
+
+.delivery__title,
+.payment__title,
+.guarantee__title {
+  margin-bottom: 6px;
+  color: var(--dark-grey);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.delivery__row {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr auto;
+  align-items: center;
+  column-gap: 10px;
+  color: var(--dark-grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 114%;
+}
+
+.delivery__icon,
+.payment__icon,
+.guarantee__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.delivery__name {
+}
+
+.delivery__date {
+}
+
+.right__line {
+  height: 1px;
+  width: 100%;
+  margin-top: 24px;
+  background-color: var(--grey-scale-10);
+}
+
+.payment__block,
+.guarantee__block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment__row,
+.guarantee__row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.payment__tex,
+.guarantee__text {
+  color: var(--dark-grey);
+  font-size: 14px;
+  line-height: 142%;
 }

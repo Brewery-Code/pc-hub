@@ -75,6 +75,7 @@
 .button__outline:hover {
   background-color: var(--color-hover);
   border: 2px solid var(--color-hover);
+  color: var(--soft);
 }
 
 .button__outline:active {

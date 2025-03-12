@@ -20,5 +20,32 @@
   "banners": {
     "isNew": "New",
     "topSales": "Top sales"
+  },
+  "buy": {
+    "uah": "uah",
+    "buyCommon": "Buy",
+    "buyCredit": "Buy on credit"
+  },
+  "delivery": {
+    "title": "Delivery",
+    "local": "Pickup from the store (Rivne)",
+    "justin": "Pickup from Justin",
+    "ukrposhta": "Pickup from UKRPOST",
+    "novaposhta": "Pickup from Nova Poshta",
+    "home": "By courier to the address",
+    "date": "We will ship tomorrow.",
+    "price": "According to carrier tariffs",
+    "free": "Free"
+  },
+  "payment": {
+    "title": "Payment",
+    "cash": "Payment upon receipt of goods, Google Pay, online card",
+    "installment": "Installment 0% for 4 months",
+    "credit": "Credit, you can read the terms here"
+  },
+  "guarantee": {
+    "title": "Guarantee",
+    "month": "36 month",
+    "exchange": "Exchange/return of goods within 14 days"
   }
 }

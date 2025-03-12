@@ -3,7 +3,7 @@ import clsx from "clsx";
 import styles from "./UIButton.module.css";
 import { useNavigate } from "react-router-dom";
 
-type UIButtonPrimaryProps = {
+type UIButtonProps = {
   children?: ReactNode;
   className?: string;
   color: "primary" | "secondary";
@@ -13,7 +13,7 @@ type UIButtonPrimaryProps = {
   link?: string;
 };
 
-function UIButtonPrimary({
+function UIButton({
   children,
   className,
   color,
@@ -21,7 +21,7 @@ function UIButtonPrimary({
   style,
   width,
   link,
-}: UIButtonPrimaryProps) {
+}: UIButtonProps) {
   const navigate = useNavigate();
 
   const navigation = () => {
@@ -45,4 +45,4 @@ function UIButtonPrimary({
   );
 }
 
-export default UIButtonPrimary;
+export default UIButton;
