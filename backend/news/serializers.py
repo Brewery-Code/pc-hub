@@ -1,11 +1,14 @@
 from rest_framework import serializers
-
-from news.models import News
+from .models import News
+import markdown
 
 
 class NewsSerializer(serializers.ModelSerializer):
-    """Серіалізатор для моделі News"""
+    content_html = serializers.SerializerMethodField()
 
     class Meta:
         model = News
-        fields = "__all__"
+        fields = ["id", "title", "content", "content_html", "slug", "publish"]
+
+    def get_content_html(self, obj):
+        return markdown.markdown(obj.content)

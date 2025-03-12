@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 from django.urls import reverse
+import markdown
+from django.utils.safestring import mark_safe
 
 
 class PublishedManager(models.Manager):
@@ -42,6 +44,9 @@ class News(models.Model):
     updated = models.DateTimeField(auto_now=True)
     objects = models.Manager()
     published = PublishedManager()
+    image = models.ImageField(
+        upload_to="news_images/%Y/%m/%d/", verbose_name="Фото новини"
+    )
 
     class Meta:
         ordering = ["-publish"]
@@ -60,3 +65,7 @@ class News(models.Model):
             "news:news_detail",
             args=[self.id],
         )
+
+    def get_content_as_html(self):
+        """Конвертує markdown текст"""
+        return mark_safe(markdown.markdown(self.content)).replace("\n", "")
