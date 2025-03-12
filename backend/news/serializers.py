@@ -8,7 +8,7 @@ class NewsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = News
-        fields = ["id", "title", "content", "content_html", "slug", "publish"]
+        fields = ["id", "title", "content", "content_html", "slug", "publish", "image"]
 
     def get_content_html(self, obj):
         return markdown.markdown(obj.content)
