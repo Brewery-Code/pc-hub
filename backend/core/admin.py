@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Partner, Banner
+from .models import Partner, Banner, Review
 from modeltranslation.admin import TranslationAdmin
 
 
@@ -27,3 +27,11 @@ class BannerAdmin(TranslationAdmin):
         "image",
     )
     fields = ["title_en", "title_uk", "description", "image"]
+
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для керування відгуками"""
+
+    list_display = ["author", "content", "created_at", "status"]
+    list_filter = ("status",)

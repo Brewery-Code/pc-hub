@@ -142,5 +142,291 @@
     "updated": "2025-03-12T11:40:04.766Z",
     "image": "news_images/2025/03/12/Мандрівник.jpg"
   }
+},
+{
+  "model": "core.partner",
+  "pk": 1,
+  "fields": {
+    "title": "Acer",
+    "image": "partners/acer.png"
+  }
+},
+{
+  "model": "core.partner",
+  "pk": 2,
+  "fields": {
+    "title": "Lenovo",
+    "image": "partners/lenovo.png"
+  }
+},
+{
+  "model": "core.partner",
+  "pk": 3,
+  "fields": {
+    "title": "HP",
+    "image": "partners/hp.png"
+  }
+},
+{
+  "model": "core.partner",
+  "pk": 4,
+  "fields": {
+    "title": "Samsung",
+    "image": "partners/samsung.png"
+  }
+},
+{
+  "model": "core.partner",
+  "pk": 5,
+  "fields": {
+    "title": "Sony",
+    "image": "partners/sony.png"
+  }
+},
+{
+  "model": "core.banner",
+  "pk": 1,
+  "fields": {
+    "title": "Монітори",
+    "title_en": "Monitors",
+    "title_uk": "Монітори",
+    "description": "Широкий асортимент, приємні ціни та якісна техніка.",
+    "description_en": "A wide range, good prices and high-quality equipment.",
+    "description_uk": "Широкий асортимент, приємні ціни та якісна техніка.",
+    "image": "banner_img/8p89jtryp0zguakv0wsp1ef4pggvwgie.jpg"
+  }
+},
+{
+  "model": "core.banner",
+  "pk": 2,
+  "fields": {
+    "title": "Ноутбуки",
+    "title_en": "Laptops",
+    "title_uk": "Ноутбуки",
+    "description": "Професійні, продуктивні та автономні - на найтемніші часи.",
+    "description_en": "Professional, productive and autonomous - for the darkest times.",
+    "description_uk": "Професійні, продуктивні та автономні - на найтемніші часи.",
+    "image": "banner_img/bestofficelaptop.jpg"
+  }
+},
+{
+  "model": "core.banner",
+  "pk": 3,
+  "fields": {
+    "title": "POCO",
+    "title_en": "POCO",
+    "title_uk": "POCO",
+    "description": "Нові моделі вже в магазині. Хутчіш!",
+    "description_en": "New models are already in the store. Faster!",
+    "description_uk": "Нові моделі вже в магазині. Хутчіш!",
+    "image": "banner_img/POCO-X7-5G-cover.png"
+  }
+},
+{
+  "model": "core.banner",
+  "pk": 4,
+  "fields": {
+    "title": "RedmiBook",
+    "title_en": "RedmiBook",
+    "title_uk": "RedmiBook",
+    "description": "Серія RedmiBook пропонує найкращий продукт для професіоналів!",
+    "description_en": "The RedmiBook series offers the best product for professionals!",
+    "description_uk": "Серія RedmiBook пропонує найкращий продукт для професіоналів!",
+    "image": "banner_img/redmibook-pro-14-15-2022-title.jpg"
+  }
+},
+{
+  "model": "core.banner",
+  "pk": 5,
+  "fields": {
+    "title": "Клавіатури",
+    "title_en": "Keyboards",
+    "title_uk": "Клавіатури",
+    "description": "Обирай свою друкарську машинку прямо зараз!",
+    "description_en": "Choose your typewriter right now!",
+    "description_uk": "Обирай свою друкарську машинку прямо зараз!",
+    "image": "banner_img/photo_2024-12-31_09-50-36.jpg"
+  }
+},
+{
+  "model": "core.review",
+  "pk": 2,
+  "fields": {
+    "author": 5,
+    "content": "Магазин якщо чесно гімна. Нічого не працює а адміністратор Віталій посилає всіх на три букви і каже що його зарплата пачка сухариків",
+    "rating": 1.0,
+    "created_at": "2025-03-12T13:47:17.503Z",
+    "status": "AP",
+    "reply": "Сам ти гімно!!!!!"
+  }
+},
+{
+  "model": "core.review",
+  "pk": 3,
+  "fields": {
+    "author": 6,
+    "content": "Був в Америці, навіть там немає таких крутих магазинів. Доставка протягом 20хв, кур'єри просто душка. Передав Ілону Маску щоб брав приклад",
+    "rating": 5.0,
+    "created_at": "2025-03-12T13:53:50.917Z",
+    "status": "AP",
+    "reply": "Fuck Trump."
+  }
+},
+{
+  "model": "core.review",
+  "pk": 4,
+  "fields": {
+    "author": 7,
+    "content": "Трамп порадив цей сервіс. Дуже задоволений. Навіть ммоя компанія Tesla не така крута.",
+    "rating": 5.0,
+    "created_at": "2025-03-12T13:55:10.414Z",
+    "status": "AP",
+    "reply": "Пішов ти нахуй, маразматик"
+  }
+},
+{
+  "model": "core.review",
+  "pk": 5,
+  "fields": {
+    "author": 8,
+    "content": "Купив мишку, прийшла клавіатура. Адміністратор Віталій дуже грубий, агриться на кожне слово!",
+    "rating": 1.0,
+    "created_at": "2025-03-12T13:57:22.160Z",
+    "status": "AP",
+    "reply": "Хахаха. Людішка обідився"
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$Wrfd4XefSO3Nty8VciiovE$CLoAREn7Z3HzLXqboZaFW5HTkKEBGDDuKioSvUOA+Kc=",
+    "email": "admin@admin.com",
+    "name": "admin",
+    "surname": "",
+    "phone": null,
+    "photo": "",
+    "created_at": "2024-12-26T08:38:05.894Z",
+    "last_login": "2025-03-05T12:54:11.937Z",
+    "is_active": true,
+    "is_staff": true,
+    "is_superuser": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$d4nvX8FAkvvev7JBds24BJ$4jrOzXhblTKLxTmjbS+gEYFe4C9UzGhJ64Qd3Qx3xgc=",
+    "email": "testuser@gmail.com",
+    "name": "testUser",
+    "surname": "",
+    "phone": null,
+    "photo": "",
+    "created_at": "2025-01-03T09:41:39.091Z",
+    "last_login": "2025-01-03T09:41:39.091Z",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$j8RQDAd22fBZgmjNTtavX5$LaTRDkvSXULP3s8PkZ9RRlg9C2lmwlqhN+vKH7XCFVc=",
+    "email": "testIvan@gmail.com",
+    "name": "Ivan",
+    "surname": "",
+    "phone": null,
+    "photo": "",
+    "created_at": "2025-01-12T08:27:32.050Z",
+    "last_login": "2025-01-12T08:27:32.050Z",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$OYbzoQou2YxJOKoa1nr8mr$Xwf8Pit+tTjpSku6R8S9yIhYrCK5fJ7otL+YllUYTLY=",
+    "email": "vitaliiparkhomchuk@gmail.com",
+    "name": "Vitalii",
+    "surname": "Parkhomchuk",
+    "phone": null,
+    "photo": "avatars/default.png",
+    "created_at": "2025-03-12T13:33:34.015Z",
+    "last_login": "2025-03-12T13:51:40.478Z",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$lDaGltg3I0MqSWj1XZVn7w$r7W/y3UrLP37bsTeUeWEcCh/1QOV3yI4+6FR5/2ks/Y=",
+    "email": "donuld_trump@gmail.com",
+    "name": "Donald Trump",
+    "surname": "",
+    "phone": null,
+    "photo": "avatars/default.png",
+    "created_at": "2025-03-12T13:52:30.518Z",
+    "last_login": "2025-03-12T13:52:30.518Z",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$ArnCbkBqtrnsAwUbF89K3H$LsLLbPQr8Wo/xUzedD9eLPYfMAS7ApBRAZYO9TGeFCA=",
+    "email": "elonmusk@gmail.com",
+    "name": "Elon Musk",
+    "surname": "",
+    "phone": null,
+    "photo": "avatars/default.png",
+    "created_at": "2025-03-12T13:54:18.136Z",
+    "last_login": "2025-03-12T13:54:18.136Z",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.customuser",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$wumMLE9DtsQmE8dxeohiUv$YUDLpP5sii8uLtj62Evz7WsgHJsW3Vptm8az4cTnNv4=",
+    "email": "dr.lysak@gmail.com",
+    "name": "Lysak Oleg",
+    "surname": "",
+    "phone": null,
+    "photo": "avatars/default.png",
+    "created_at": "2025-03-12T13:56:30.362Z",
+    "last_login": "2025-03-12T13:56:30.362Z",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "groups": [],
+    "user_permissions": []
+  }
 }
 ]

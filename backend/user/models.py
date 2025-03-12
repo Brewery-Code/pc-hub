@@ -126,6 +126,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         null=True,
         verbose_name="Фото профілю",
         validators=[validate_image],
+        default="avatars/default.png",
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     last_login = models.DateTimeField(auto_now=True, verbose_name="Останній вхід")
