@@ -56,7 +56,7 @@ class ProductAdmin(TranslationAdmin):
         "updated_at",
         "display_categories",
     )
-    search_fields = ("name", "category__name")
+    search_fields = ("id", "name", "category__name")
     list_filter = ("category", "created_at")
     ordering = ("-created_at",)
     list_per_page = 20

@@ -179,3 +179,38 @@ class ProductDetailSerializer(ProductSerializer):
             "estimated_shipping_time",
             "delivery_options",
         ]
+
+
+class ProductWishlistSerializer(ProductSerializer):
+    """Серіалізатор для повернення даних продукту у Wishlist"""
+
+    main_image = serializers.SerializerMethodField()
+    attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
+    is_new = serializers.SerializerMethodField()
+    discounted_price = serializers.FloatField(read_only=True)
+
+    def get_main_image(self, obj):
+        """Повертає основне зображення товару"""
+        request = self.context.get("request")
+        main_image = obj.productimage_set.filter(is_main=True).first()
+        if main_image and request:
+            return request.build_absolute_uri(main_image.image.url)
+        return None
+
+    def get_is_new(self, obj):
+        """Перевірка чи об'єкт новий"""
+        return obj.is_new()
+
+    class Meta:
+        model = Product
+        fields = [
+            "id",
+            "name",
+            "slug",
+            "rating",
+            "price",
+            "discounted_price",
+            "attributes",
+            "is_new",
+            "main_image",
+        ]

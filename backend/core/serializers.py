@@ -1,5 +1,8 @@
 from rest_framework import serializers
-from .models import Partner, Banner, Review
+
+from product.models import Product
+from product.serializers import ProductWishlistSerializer
+from .models import Partner, Banner, Review, Wishlist, WishlistItem
 
 
 class PartnerSerializer(serializers.ModelSerializer):
@@ -39,3 +42,23 @@ class ReviewSerializer(serializers.ModelSerializer):
             "username": obj.author.name + " " + obj.author.surname,
             "avatar": avatar_url,
         }
+
+
+class WishlistItemSerializer(serializers.ModelSerializer):
+    """Серіалізатор для моделі WishlistItem"""
+
+    product = ProductWishlistSerializer(read_only=True)
+
+    class Meta:
+        model = WishlistItem
+        fields = ["product"]
+
+
+class WishlistSerializer(serializers.ModelSerializer):
+    """Серіалізатор для моделі Wishlist"""
+
+    items = WishlistItemSerializer(source="items", many=True, read_only=True)
+
+    class Meta:
+        model = Wishlist
+        fields = ["id", "user", "session_id", "last_accessed", "items"]
