@@ -1,7 +1,12 @@
 from pyexpat import model
 from rest_framework import serializers
+
+from orders.serializers import DeliveryOptionSerializer
 from .models import *
 from django.conf import settings
+from datetime import timedelta
+import pytz
+from django.utils import timezone
 
 
 # Categories
@@ -119,6 +124,8 @@ class ProductDetailSerializer(ProductSerializer):
     attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
     category = serializers.SerializerMethodField()
     images = ProductImageSerializer(source="productimage_set", many=True)
+    estimated_shipping_time = serializers.SerializerMethodField()
+    delivery_options = DeliveryOptionSerializer(many=True, read_only=True)
 
     def get_category(self, obj):
         """Метод для отримання всіх категорій товару (множинні категорії)"""
@@ -131,6 +138,26 @@ class ProductDetailSerializer(ProductSerializer):
                 category = category.parent
             hierarchy.append(category_hierarchy)
         return hierarchy
+
+    def get_estimated_shipping_time(self, obj):
+        """Розраховує, коли буде відправка товару"""
+        kyiv_tz = pytz.timezone("Europe/Kyiv")
+        now = timezone.now().astimezone(kyiv_tz)
+
+        if now.weekday() in [5, 6]:
+            days_to_monday = 7 - now.weekday()
+            return (now + timedelta(days=days_to_monday)).date()
+
+        if 9 <= now.hour < 18:
+            return now.date()
+        elif 18 <= now.hour < 24:
+            next_day = now + timedelta(days=1)
+            if next_day.weekday() in [5, 6]:
+                days_to_monday = 7 - next_day.weekday()
+                return (now + timedelta(days=days_to_monday)).date()
+            return next_day.date()
+
+        return None
 
     class Meta:
         model = Product
@@ -149,4 +176,6 @@ class ProductDetailSerializer(ProductSerializer):
             "is_new",
             "in_stock",
             "varranty",
+            "estimated_shipping_time",
+            "delivery_options",
         ]
