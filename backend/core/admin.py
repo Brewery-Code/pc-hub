@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Partner, Banner, Review
+from .models import Partner, Banner, Review, Wishlist
 from modeltranslation.admin import TranslationAdmin
 
 
@@ -35,3 +35,10 @@ class ReviewAdmin(admin.ModelAdmin):
 
     list_display = ["author", "content", "created_at", "status"]
     list_filter = ("status",)
+
+
+@admin.register(Wishlist)
+class WishlistAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для керування списком бажаного"""
+
+    list_display = ["last_accessed"]

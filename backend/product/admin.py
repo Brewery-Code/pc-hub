@@ -48,8 +48,15 @@ class CategoryAdmin(TranslationAdmin):
 class ProductAdmin(TranslationAdmin):
     """Адмін-інтерфейс для керування товарами"""
 
-    list_display = ("name", "price", "created_at", "updated_at", "display_categories")
-    search_fields = ("name", "category__name")
+    list_display = (
+        "id",
+        "name",
+        "price",
+        "created_at",
+        "updated_at",
+        "display_categories",
+    )
+    search_fields = ("id", "name", "category__name")
     list_filter = ("category", "created_at")
     ordering = ("-created_at",)
     list_per_page = 20

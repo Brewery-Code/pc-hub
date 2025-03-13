@@ -8,6 +8,8 @@ from django.utils.text import slugify
 import random
 import string
 
+from orders.models import DeliveryOption
+
 
 class Category(MPTTModel):
     """
@@ -120,6 +122,13 @@ class Product(models.Model):
     updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата оновлення")
     brand = models.ForeignKey(
         Brand, related_name="products", on_delete=models.CASCADE, null=True
+    )
+    varranty = models.PositiveIntegerField(default=0, verbose_name="Гарантія")
+    delivery_options = models.ManyToManyField(
+        DeliveryOption,
+        related_name="products",
+        blank=True,
+        verbose_name="Способи доставки",
     )
 
     def __str__(self) -> str:

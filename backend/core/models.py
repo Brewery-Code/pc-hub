@@ -1,6 +1,8 @@
 from django.db import models
 from user.models import CustomUser
 from django.core.validators import MinValueValidator, MaxValueValidator
+from product.models import Product
+from django.utils.timezone import now
 
 
 class Partner(models.Model):
@@ -91,4 +93,49 @@ class Review(models.Model):
         ]
 
     def __str__(self):
-        return f"Відгук від {self.author} - {self.rating}★"
+        return f"Відгук від {self.author} - {self.rating}"
+
+
+class Wishlist(models.Model):
+    """Модель для списку бажаного
+
+    Атрибути:
+        user (CustomUser): Користувач
+        session_id (str): ID сесії
+        last_accessed (datetime): Останній вхід
+
+    """
+
+    user = models.ForeignKey(
+        CustomUser, on_delete=models.CASCADE, null=True, blank=True
+    )
+    session_id = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Сесія"
+    )
+    last_accessed = models.DateTimeField(default=now, verbose_name="Останній вхід")
+
+    class Meta:
+        verbose_name = "Список бажаного"
+        verbose_name_plural = "Списки бажаного"
+        db_table = "Wishlist"
+
+
+class WishlistItem(models.Model):
+    """Модель для збереження товарів в списку бажаного
+
+    Атрибути:
+        wishlist (Wishlist): Список бажаного
+        product (Product): Продукт
+    """
+
+    wishlist = models.ForeignKey(
+        Wishlist, on_delete=models.CASCADE, related_name="items"
+    )
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = (
+            "wishlist",
+            "product",
+        )
+        db_table = "WishlistItem"
