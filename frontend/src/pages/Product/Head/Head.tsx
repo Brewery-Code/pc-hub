@@ -7,9 +7,10 @@ import clsx from "clsx";
 interface IHeadProps {
   product: IProduct;
   className?: string;
+  handleSection: (section: string) => () => void;
 }
 
-function Head({ product, className }: IHeadProps) {
+function Head({ product, className, handleSection }: IHeadProps) {
   const { t } = useTranslation("product");
   return (
     <div className={clsx(className, styles.head)}>
@@ -28,17 +29,33 @@ function Head({ product, className }: IHeadProps) {
         </div>
       </div>
       <ul className={styles.navigation}>
-        <li className={styles.navigation__item}>{t("navigation.allInfo")}</li>
+        <li
+          className={styles.navigation__item}
+          onClick={handleSection("AllProducts")}
+        >
+          {t("navigation.allInfo")}
+        </li>
         <li
           className={clsx(
             styles.navigation__item,
             styles.navigation__item_active,
           )}
+          onClick={handleSection("Characteristics")}
         >
           {t("navigation.characteristics")}
         </li>
-        <li className={styles.navigation__item}>{t("navigation.reviews")}</li>
-        <li className={styles.navigation__item}>{t("navigation.credit")}</li>
+        <li
+          className={styles.navigation__item}
+          onClick={handleSection("Reviews")}
+        >
+          {t("navigation.reviews")}
+        </li>
+        <li
+          className={styles.navigation__item}
+          onClick={handleSection("Credit")}
+        >
+          {t("navigation.credit")}
+        </li>
       </ul>
     </div>
   );

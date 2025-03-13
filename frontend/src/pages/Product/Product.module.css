@@ -7,5 +7,6 @@
 }
 
 .product__body {
+  /* position: relative; */
   margin-top: 24px;
 }

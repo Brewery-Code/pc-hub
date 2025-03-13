@@ -39,7 +39,10 @@
 }
 
 .navigation {
-  position: relative;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  z-index: 2000;
   display: flex;
   align-items: center;
   margin-top: 24px;

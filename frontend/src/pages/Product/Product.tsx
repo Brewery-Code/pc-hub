@@ -1,13 +1,16 @@
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./Product.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { fetchProduct } from "../../store/product/product.slice";
 import { useParams } from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
 import { useTranslation } from "react-i18next";
 import Head from "./Head/Head";
 import Body from "./Body/Body";
+import Characteristics from "./Characteristics/Characteristics";
+import Reviews from "./Reviews/Reviews";
+import Credit from "./Credit/Credit";
 
 function Product() {
   const { product: id } = useParams();
@@ -20,13 +23,26 @@ function Product() {
   }, [dispatch, status, id]);
 
   const { t } = useTranslation("product");
+
+  const [activeSection, setActiveSection] = useState("AllProducts");
+  const handleSection = (section: string) => () => setActiveSection(section);
+
   return (
     <div className={styles.product}>
       <div className="product__container">
         <div className={styles.product__body}>
           <UIBreadcrumbs className={styles.product__breadcrumbs} />
-          <Head product={product} className={styles["product__head"]} />
-          <Body className={styles.product__body} product={product} />
+          <Head
+            product={product}
+            className={styles["product__head"]}
+            handleSection={handleSection}
+          />
+          {activeSection === "AllProducts" && (
+            <Body className={styles.product__body} product={product} />
+          )}
+          {activeSection === "Characteristics" && <Characteristics />}
+          {activeSection === "Reviews" && <Reviews />}
+          {activeSection === "Credit" && <Credit />}
         </div>
       </div>
     </div>
