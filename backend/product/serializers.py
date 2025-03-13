@@ -64,10 +64,15 @@ class ProductSerializer(serializers.ModelSerializer):
     is_new = serializers.SerializerMethodField()
     discounted_price = serializers.FloatField(read_only=True)
     brand = serializers.CharField(source="brand.name", read_only=True)
+    in_stock = serializers.SerializerMethodField()
 
     def get_is_new(self, obj):
         """Перевірка чи об'єкт новий"""
         return obj.is_new()
+
+    def get_in_stock(self, obj) -> bool:
+        """Метод для отримання булевого значення наявності товару"""
+        return True if obj.stock_quantity else False
 
 
 class ProductListSerializer(ProductSerializer):
@@ -77,6 +82,7 @@ class ProductListSerializer(ProductSerializer):
     """
 
     main_image = serializers.SerializerMethodField()
+    in_stock = serializers.SerializerMethodField()
 
     def get_main_image(self, obj):
         """Повертає основне зображення товару"""
@@ -99,6 +105,7 @@ class ProductListSerializer(ProductSerializer):
             "rating",
             "main_image",
             "is_new",
+            "in_stock",
         ]
 
 
@@ -140,4 +147,6 @@ class ProductDetailSerializer(ProductSerializer):
             "attributes",
             "images",
             "is_new",
+            "in_stock",
+            "varranty",
         ]
