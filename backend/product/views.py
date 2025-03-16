@@ -1,4 +1,4 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.generics import CreateAPIView, ListAPIView, RetrieveAPIView
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response

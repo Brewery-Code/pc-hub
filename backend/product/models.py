@@ -9,6 +9,8 @@ import random
 import string
 
 from orders.models import DeliveryOption
+from user.models import CustomUser
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Category(MPTTModel):

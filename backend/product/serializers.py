@@ -115,20 +115,16 @@ class ProductListSerializer(ProductSerializer):
 
 
 class ProductDetailSerializer(ProductSerializer):
-    """Серіалізатор для моделі Product.
-
-    Використовується для передачі детальної інформації про продукт, включаючи атрибути, ієрархію категорій, опис, ціну та всі зображення продукту.
-
-    """
+    """Серіалізатор для моделі Product з коментарями та доставкою"""
 
     attributes = ProductAttributeSerializer(source="productattribute_set", many=True)
     category = serializers.SerializerMethodField()
     images = ProductImageSerializer(source="productimage_set", many=True)
     estimated_shipping_time = serializers.SerializerMethodField()
-    delivery_options = DeliveryOptionSerializer(many=True, read_only=True)
+    delivery_options = DeliveryOptionSerializer(many=True)
 
     def get_category(self, obj):
-        """Метод для отримання всіх категорій товару (множинні категорії)"""
+        """Отримує всі категорії товару"""
         categories = obj.category.all()
         hierarchy = []
         for category in categories:
