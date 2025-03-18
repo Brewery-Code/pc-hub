@@ -47,5 +47,10 @@
     "title": "Guarantee",
     "month": "36 month",
     "exchange": "Exchange/return of goods within 14 days"
+  },
+  "characteristicsSection": {
+    "title": "Characteristics",
+    "warning": "* Product specifications and packaging may be changed by the manufacturer without notice.",
+    "availability": "In stock"
   }
 }

@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { fetchProduct } from "../../store/product/product.slice";
 import { useParams } from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
-import { useTranslation } from "react-i18next";
 import Head from "./Head/Head";
 import Body from "./Body/Body";
 import Characteristics from "./Characteristics/Characteristics";
@@ -22,8 +21,6 @@ function Product() {
     }
   }, [dispatch, status, id]);
 
-  const { t } = useTranslation("product");
-
   const [activeSection, setActiveSection] = useState("AllProducts");
   const handleSection = (section: string) => () => setActiveSection(section);
 
@@ -36,11 +33,14 @@ function Product() {
             product={product}
             className={styles["product__head"]}
             handleSection={handleSection}
+            activeSection={activeSection}
           />
           {activeSection === "AllProducts" && (
             <Body className={styles.product__body} product={product} />
           )}
-          {activeSection === "Characteristics" && <Characteristics />}
+          {activeSection === "Characteristics" && (
+            <Characteristics product={product} />
+          )}
           {activeSection === "Reviews" && <Reviews />}
           {activeSection === "Credit" && <Credit />}
         </div>

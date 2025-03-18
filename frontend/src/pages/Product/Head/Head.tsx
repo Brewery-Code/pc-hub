@@ -8,9 +8,15 @@ interface IHeadProps {
   product: IProduct;
   className?: string;
   handleSection: (section: string) => () => void;
+  activeSection: string;
 }
 
-function Head({ product, className, handleSection }: IHeadProps) {
+function Head({
+  product,
+  className,
+  handleSection,
+  activeSection,
+}: IHeadProps) {
   const { t } = useTranslation("product");
   return (
     <div className={clsx(className, styles.head)}>
@@ -30,7 +36,10 @@ function Head({ product, className, handleSection }: IHeadProps) {
       </div>
       <ul className={styles.navigation}>
         <li
-          className={styles.navigation__item}
+          className={clsx(
+            styles.navigation__item,
+            activeSection == "AllProducts" && styles.navigation__item_active,
+          )}
           onClick={handleSection("AllProducts")}
         >
           {t("navigation.allInfo")}
@@ -38,20 +47,27 @@ function Head({ product, className, handleSection }: IHeadProps) {
         <li
           className={clsx(
             styles.navigation__item,
-            styles.navigation__item_active,
+            activeSection == "Characteristics" &&
+              styles.navigation__item_active,
           )}
           onClick={handleSection("Characteristics")}
         >
           {t("navigation.characteristics")}
         </li>
         <li
-          className={styles.navigation__item}
+          className={clsx(
+            styles.navigation__item,
+            activeSection == "Reviews" && styles.navigation__item_active,
+          )}
           onClick={handleSection("Reviews")}
         >
           {t("navigation.reviews")}
         </li>
         <li
-          className={styles.navigation__item}
+          className={clsx(
+            styles.navigation__item,
+            activeSection == "Credit" && styles.navigation__item_active,
+          )}
           onClick={handleSection("Credit")}
         >
           {t("navigation.credit")}
