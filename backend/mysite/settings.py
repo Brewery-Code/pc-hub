@@ -19,7 +19,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG")
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 # Auth settings
 AUTH_USER_MODEL = "user.CustomUser"
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "news.apps.NewsConfig",
     "django_filters",
+    "django_elasticsearch_dsl",
 ]
 
 MIDDLEWARE = [
@@ -226,4 +227,9 @@ SWAGGER_SETTINGS = {
     "DEFAULT_AUTO_SCHEMA_CLASS": "drf_yasg.inspectors.SwaggerAutoSchema",
     "REFETCH_SCHEMA_WITH_AUTH": False,
     "SHOW_REQUEST_HEADERS": True,
+}
+
+# ElasticSearch
+ELASTICSEARCH_DSL = {
+    "default": {"hosts": "localhost:9200", "http_auth": ("username", "password")}
 }
