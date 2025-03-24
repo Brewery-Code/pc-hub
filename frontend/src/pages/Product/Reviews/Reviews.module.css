@@ -1,0 +1,136 @@
+.block {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 16px;
+  align-items: start;
+  margin-top: 24px;
+}
+
+.reviews__title {
+  color: var(--dark-grey);
+  font-size: 28px;
+  line-height: 114%;
+  font-weight: 600;
+}
+
+.reviews__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.reviews__subtitle {
+  color: var(--grey-scale-60);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.reviews__leave-review {
+  padding: 15px 60px;
+  color: var(--soft);
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.review__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  column-gap: 16px;
+  margin-top: 24px;
+  padding: 8px;
+  box-shadow: 0 2px 10px rgba(50, 50, 71, 0.14);
+}
+
+.review__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review__icon {
+  width: 100%;
+  object-fit: contain;
+}
+
+.review__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review__is-bought {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 4px;
+  color: var(--action-primary);
+  text-transform: lowercase;
+}
+
+.review__cart-icon {
+  width: 24px;
+  fill: var(--action-primary);
+  stroke: var(--action-primary);
+}
+
+.review__date {
+  margin-left: auto;
+  color: var(--grey-scale-20);
+  font-size: 14px;
+  line-height: 142%;
+}
+
+.review__comment {
+  color: var(--grey-scale-60);
+  font-size: 14px;
+  line-height: 142%;
+}
+
+.review__title {
+  color: var(--dark);
+  font-size: 14px;
+  line-height: 142%;
+}
+
+.review__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.review__answer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--action-secondary);
+}
+.review__comment-icon {
+  width: 24px;
+  fill: var(--action-secondary);
+  stroke: var(--action-secondary);
+}
+
+.review__like {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  color: var(--action-secondary);
+  font-size: 14px;
+  line-height: 142%;
+}
+
+.review__like-icon {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  stroke: var(--action-secondary);
+}

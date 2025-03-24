@@ -37,3 +37,6 @@ export { default as Time } from "./Time";
 export { default as Credit } from "./Credit";
 export { default as Guarantee } from "./Guarantee";
 export { default as Exchange } from "./Exchange";
+export { default as CheckMarkAvailability } from "./CheckMarkAvailability";
+export { default as CommentIcon } from "./CommentIcon";
+export { default as LikeFingerIcon } from "./LikeFingerIcon";

@@ -52,5 +52,14 @@
     "title": "Characteristics",
     "warning": "* Product specifications and packaging may be changed by the manufacturer without notice.",
     "availability": "In stock"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "subtitle": "Leave your review about the product",
+    "leaveReview": "Leave review",
+    "isBought": "Already bought",
+    "advantage": "Advantage",
+    "disadvantage": "Disadvantage",
+    "answer": "Answer"
   }
 }
