@@ -6,6 +6,52 @@ from .models import *
 from .translation import *
 from django.utils.html import format_html
 from django.urls import reverse
+from django import forms
+
+
+# Кастомна форма для інлайну ProductCategoryInline
+class ProductCategoryInlineForm(forms.ModelForm):
+    class Meta:
+        model = ProductCategory
+        fields = "__all__"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["category"].queryset = Category.objects.filter(
+            children__isnull=True
+        )
+
+
+# Інлайн для категорій товару через проміжну модель із autocomplete
+class ProductCategoryInline(admin.TabularInline):
+    model = ProductCategory
+    form = ProductCategoryInlineForm
+    extra = 1
+    autocomplete_fields = ["category"]
+
+
+# Інлайн для атрибутів товару
+class ProductAttributeInline(admin.TabularInline):
+    model = ProductAttribute
+    extra = 1
+    autocomplete_fields = ["attribute"]
+
+
+# Інлайн для зображень товару з попереднім переглядом фото
+class ProductImageInline(admin.TabularInline):
+    model = ProductImage
+    extra = 1
+    readonly_fields = ("image_preview",)
+
+    def image_preview(self, obj):
+        if obj.image:
+            return format_html(
+                '<img src="{}" style="max-height: 100px; max-width: 100px;" />',
+                obj.image.url,
+            )
+        return ""
+
+    image_preview.short_description = "Попередній перегляд"
 
 
 @admin.register(Category)
@@ -46,7 +92,7 @@ class CategoryAdmin(TranslationAdmin):
 
 @admin.register(Product)
 class ProductAdmin(TranslationAdmin):
-    """Адмін-інтерфейс для керування товарами"""
+    """Адмін-інтерфейс для керування товарами з розширеним функціоналом"""
 
     list_display = (
         "id",
@@ -61,9 +107,14 @@ class ProductAdmin(TranslationAdmin):
     ordering = ("-created_at",)
     list_per_page = 20
 
+    # Додаємо інлайни для зв'язку з категоріями, атрибутами та зображеннями
+    inlines = [ProductCategoryInline, ProductAttributeInline, ProductImageInline]
+
+    # Додаємо autocomplete для вибору бренду
+    autocomplete_fields = ["brand"]
+
     @admin.display(description="Категорії")
-    def display_categories(self, obj) -> LiteralString:
-        """Відображення категорій для товару в адмін-панелі"""
+    def display_categories(self, obj) -> str:
         return ", ".join([category.name for category in obj.category.all()])
 
 
@@ -111,8 +162,9 @@ class ProductImageAdmin(admin.ModelAdmin):
 
 @admin.register(Brand)
 class BrandAdmin(admin.ModelAdmin):
-    """Адмін-інтерфейс для керування брендами товарів"""
+    """Адмін-інтерфейс для керування брендами товарів з пошуком"""
 
     list_display = ("name", "slug")
     prepopulated_fields = {"slug": ("name",)}
     list_per_page = 20
+    search_fields = ("name",)
