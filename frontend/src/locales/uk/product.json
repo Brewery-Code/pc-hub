@@ -61,5 +61,22 @@
     "advantage": "Переваги",
     "disadvantage": "Недоліки",
     "answer": "Відповісти"
+  },
+  "credit": {
+    "title": "Кредит",
+    "buy": "Купити в кредит",
+    "creditor": "Кредитор",
+    "privateBank": "ПриватБанк",
+    "monobank": "Монобанк",
+    "oschadbank": "Ощадбанк",
+    "conditions": "Умови кредита",
+    "deadline": "Термін кредиту",
+    "installment": "Перший внесок",
+    "currency": "грн",
+    "monthly": "Щомісячно",
+    "termsAndConditions": "Читати умови",
+    "month": "місяців",
+    "paymentInInstallments": "Оплата частинами",
+    "commonCredit": "Звичайний кредит"
   }
 }

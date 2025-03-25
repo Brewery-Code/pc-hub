@@ -42,7 +42,7 @@ function Product() {
             <Characteristics product={product} />
           )}
           {activeSection === "Reviews" && <Reviews product={product} />}
-          {activeSection === "Credit" && <Credit />}
+          {activeSection === "Credit" && <Credit product={product} />}
         </div>
       </div>
     </div>

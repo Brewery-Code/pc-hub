@@ -40,3 +40,5 @@ export { default as Exchange } from "./Exchange";
 export { default as CheckMarkAvailability } from "./CheckMarkAvailability";
 export { default as CommentIcon } from "./CommentIcon";
 export { default as LikeFingerIcon } from "./LikeFingerIcon";
+export { default as PrivateBankIcon } from "./PrivateBankIcon";
+export { default as MonobankIcon } from "./MonobankIcon";

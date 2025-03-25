@@ -61,5 +61,22 @@
     "advantage": "Advantage",
     "disadvantage": "Disadvantage",
     "answer": "Answer"
+  },
+  "credit": {
+    "title": "Credit",
+    "buy": "Buy in credit",
+    "creditor": "Creditor",
+    "privateBank": "PrivateBank",
+    "monobank": "Monobank",
+    "oschadbank": "Oschadbank",
+    "conditions": "Credit conditions",
+    "deadline": "Credit deadline",
+    "installment": "First installment",
+    "currency": "uah",
+    "monthly": "Monthly",
+    "termsAndConditions": "Read terms and conditions",
+    "month": "month",
+    "paymentInInstallments": "Payment in installments",
+    "commonCredit": "Common credit"
   }
 }
