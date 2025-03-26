@@ -26,13 +26,11 @@ function News() {
           <div className={styles.news__list}>
             {news.map((newsItem, index) => (
               <div key={index} className={styles.article}>
-                <div className={styles["article__img-container"]}>
-                  <img
-                    className={styles.article__img}
-                    src={newsImg}
-                    alt="newsImg"
-                  />
-                </div>
+                <img
+                  className={styles.article__img}
+                  src={newsItem.image}
+                  alt="newsImg"
+                />
                 <div className={styles.article__content}>
                   <div className={styles.article__title}>{newsItem.title}</div>
                   <p className={styles.article__text}>{newsItem.content}</p>

@@ -21,6 +21,8 @@ interface INews {
   publish: string;
   created: string;
   updated: string;
+  image: string;
+  content_html: string;
 }
 
 interface INewsState {
@@ -45,6 +47,7 @@ const newsSlice = createSlice({
         state.status = "loading";
       })
       .addCase(fetchNews.fulfilled, (state, action) => {
+        console.log(action.payload);
         state.news = action.payload;
         state.status = "succeeded";
       })
