@@ -152,17 +152,13 @@ class Product(models.Model):
             return self.price * (1 - self.discount / 100)
         return self.price
 
-    @property
-    def rating(self) -> float:
-        """Тимчасовий метод. Генерація рандомного рейтингу для товару"""
-        return round(random.uniform(1.0, 5.0), 1)
-
     def generate_random_string(length=8):
         """Генерує випадковий набір символів та чисел"""
         return "".join(random.choices(string.ascii_lowercase + string.digits, k=length))
 
     def save(self, *args, **kwargs) -> None:
         """Створює унікальний слаг для товару, додаючи випадковий набір символів в кінець"""
+
         if not self.slug:
             base_slug = slugify(self.name)
             slug = base_slug
