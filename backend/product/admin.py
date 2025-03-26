@@ -1,4 +1,3 @@
-from typing import LiteralString
 from django.contrib import admin
 from django.utils.html import format_html
 from modeltranslation.admin import TranslationAdmin
@@ -107,10 +106,7 @@ class ProductAdmin(TranslationAdmin):
     ordering = ("-created_at",)
     list_per_page = 20
 
-    # Додаємо інлайни для зв'язку з категоріями, атрибутами та зображеннями
     inlines = [ProductCategoryInline, ProductAttributeInline, ProductImageInline]
-
-    # Додаємо autocomplete для вибору бренду
     autocomplete_fields = ["brand"]
 
     @admin.display(description="Категорії")
