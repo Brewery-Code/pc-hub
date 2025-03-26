@@ -42,3 +42,4 @@ export { default as CommentIcon } from "./CommentIcon";
 export { default as LikeFingerIcon } from "./LikeFingerIcon";
 export { default as PrivateBankIcon } from "./PrivateBankIcon";
 export { default as MonobankIcon } from "./MonobankIcon";
+export { default as OschadbankIcon } from "./OschadbankIcon";

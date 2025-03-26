@@ -6,53 +6,62 @@ import { UIButton } from "../../../components/UI";
 import {
   ArrowBold,
   MonobankIcon,
+  OschadbankIcon,
   PrivateBankIcon,
 } from "../../../assets/icons";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import clsx from "clsx";
 
 interface ICreditProps {
   product: IProduct;
 }
 
+interface IBank {
+  conditionRef: React.RefObject<HTMLUListElement>;
+  isConditionMenuOpen: boolean;
+  deadlineRef: React.RefObject<HTMLUListElement>;
+  isDeadlineMenuOpen: boolean;
+  name: string;
+  conditions: string;
+  deadline: number;
+  icon: JSX.Element;
+}
+
 function Credit({ product }: ICreditProps) {
-  const [privateBank, setPrivateBank] = useState({
-    isConditionMenuOpen: false,
-    isDeadlineMenuOpen: false,
-    name: "privatebank",
-    conditions: "Оплата частинами",
-    deadline: 3,
-  });
+  const { t } = useTranslation("product");
 
-  const [monobank, setMonobank] = useState({
-    isMenuOpen: false,
-    name: "monobank",
-    conditions: "Оплата частинами",
-    deadline: 3,
-  });
-
-  const [oschadbank, setOschadbank] = useState({
-    isMenuOpen: false,
-    name: "oschadbank",
-    conditions: "Оплата частинами",
-    deadline: 3,
-  });
-
-  const privateDeadlineRef = useRef<HTMLUListElement>(null);
-  const [privateDeadlineHeight, setPrivateDeadlineHeight] = useState(0);
-  useEffect(() => {
-    if (privateDeadlineRef.current) {
-      setPrivateDeadlineHeight(privateDeadlineRef.current.scrollHeight);
-    }
-  }, [privateBank.isDeadlineMenuOpen]);
-
-  const privateConditionRef = useRef<HTMLUListElement>(null);
-  const [privateConditionHeight, setPrivateConditionHeight] = useState(0);
-  useEffect(() => {
-    if (privateConditionRef.current) {
-      setPrivateConditionHeight(privateConditionRef.current.scrollHeight);
-    }
-  }, [privateBank.isConditionMenuOpen]);
+  const [banksList, setBanksList] = useState<IBank[]>([
+    {
+      conditionRef: useRef<HTMLUListElement>(null),
+      deadlineRef: useRef<HTMLUListElement>(null),
+      isConditionMenuOpen: false,
+      isDeadlineMenuOpen: false,
+      name: "privatebank",
+      conditions: "Оплата частинами",
+      deadline: 3,
+      icon: <PrivateBankIcon className={styles.bank__icon} />,
+    },
+    {
+      conditionRef: useRef<HTMLUListElement>(null),
+      deadlineRef: useRef<HTMLUListElement>(null),
+      isConditionMenuOpen: false,
+      isDeadlineMenuOpen: false,
+      name: "mono",
+      conditions: "Оплата частинами",
+      deadline: 3,
+      icon: <MonobankIcon className={styles.bank__icon} />,
+    },
+    {
+      conditionRef: useRef<HTMLUListElement>(null),
+      deadlineRef: useRef<HTMLUListElement>(null),
+      isConditionMenuOpen: false,
+      isDeadlineMenuOpen: false,
+      name: "oschadbank",
+      conditions: "Оплата частинами",
+      deadline: 3,
+      icon: <OschadbankIcon className={styles.bank__icon} />,
+    },
+  ]);
 
   const handleBank = (
     name: string,
@@ -61,647 +70,171 @@ function Credit({ product }: ICreditProps) {
     conditions?: string,
     deadline?: number,
   ) => {
-    switch (name) {
-      case privateBank.name:
-        setPrivateBank((prev) => ({
-          ...prev,
-          ...(conditions !== undefined && { conditions }),
-          ...(deadline !== undefined && { deadline }),
-          ...(isConditionMenuOpen !== undefined && { isConditionMenuOpen }),
-          ...(isDeadlineMenuOpen !== undefined && { isDeadlineMenuOpen }),
-        }));
-        break;
-      case monobank.name:
-        setMonobank((prev) => ({
-          ...prev,
-          ...(conditions !== undefined && { conditions }),
-          ...(deadline !== undefined && { deadline }),
-          ...(isConditionMenuOpen !== undefined && { isConditionMenuOpen }),
-          ...(isDeadlineMenuOpen !== undefined && { isDeadlineMenuOpen }),
-        }));
-        break;
-      case oschadbank.name:
-        setOschadbank((prev) => ({
-          ...prev,
-          ...(conditions !== undefined && { conditions }),
-          ...(deadline !== undefined && { deadline }),
-          ...(isConditionMenuOpen !== undefined && { isConditionMenuOpen }),
-          ...(isDeadlineMenuOpen !== undefined && { isDeadlineMenuOpen }),
-        }));
-        break;
-    }
+    setBanksList((prevState) =>
+      prevState.map((bank) =>
+        bank.name === name
+          ? {
+              ...bank,
+              ...(conditions !== undefined && { conditions }),
+              ...(deadline !== undefined && { deadline }),
+              ...(isConditionMenuOpen !== undefined && { isConditionMenuOpen }),
+              ...(isDeadlineMenuOpen !== undefined && { isDeadlineMenuOpen }),
+            }
+          : bank,
+      ),
+    );
   };
-
-  const { t } = useTranslation("product");
 
   return (
     <div className={styles.credit}>
       <div className={styles.credit__block}>
         <h4 className={styles.credit__title}>{t("credit.title")}</h4>
         <ul className={styles.credit__list}>
-          <li className={styles.credit__item}>
-            <div className={styles.bank}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.creditor")}
-              </div>
-              <div className={styles.bank__logo}>
-                <PrivateBankIcon className={styles.bank__icon} />
-                <div className={styles.bank__name}>
-                  {t("credit.privateBank")}
+          {banksList.map((bank) => (
+            <li className={styles.credit__item} key={bank.name}>
+              <div className={styles.bank}>
+                <div className={styles.credit__subtitle}>
+                  {t("credit.creditor")}
+                </div>
+                <div className={styles.bank__logo}>
+                  {bank.icon}
+                  <div className={styles.bank__name}>
+                    {t(`credit.${bank.name}`)}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={styles.conditions}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.conditions")}
-              </div>
-              <div className={styles.menu}>
-                <div
-                  className={styles.menu__active}
-                  onClick={() =>
-                    handleBank(
-                      privateBank.name,
-                      !privateBank.isConditionMenuOpen,
-                    )
-                  }
-                >
-                  {privateBank.conditions}
-                  <ArrowBold className={styles.menu__arrow} />
+              <div className={styles.conditions}>
+                <div className={styles.credit__subtitle}>
+                  {t("credit.conditions")}
                 </div>
-                <ul
-                  className={clsx(
-                    styles.menu__list,
-                    privateBank.isConditionMenuOpen && styles.menu__list_active,
-                  )}
-                  ref={privateConditionRef}
-                  style={{
-                    maxHeight: privateBank.isConditionMenuOpen
-                      ? `${privateConditionHeight}px`
-                      : "0px",
-                  }}
-                >
-                  {privateBank.conditions !==
-                    t("credit.paymentInInstallments") && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          false,
-                          undefined,
-                          t("credit.paymentInInstallments"),
-                        )
-                      }
-                    >
-                      {t("credit.paymentInInstallments")}
-                    </li>
-                  )}
-                  {privateBank.conditions !== t("credit.commonCredit") && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          false,
-                          undefined,
-                          t("credit.commonCredit"),
-                        )
-                      }
-                    >
-                      {t("credit.commonCredit")}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
-            <div className={styles.deadline}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.deadline")}
-              </div>
-              <div className={styles.menu}>
-                <div
-                  className={styles.menu__active}
-                  onClick={() =>
-                    handleBank(
-                      privateBank.name,
-                      undefined,
-                      !privateBank.isDeadlineMenuOpen,
-                    )
-                  }
-                >
-                  {privateBank.deadline} {t("credit.month")}
-                  <ArrowBold className={styles.menu__arrow} />
-                </div>
-                <ul
-                  className={clsx(
-                    styles.menu__list,
-                    privateBank.isDeadlineMenuOpen && styles.menu__list_active,
-                  )}
-                  ref={privateDeadlineRef}
-                  style={{
-                    maxHeight: privateBank.isDeadlineMenuOpen
-                      ? `${privateDeadlineHeight}px`
-                      : "0px",
-                  }}
-                >
-                  {privateBank.deadline !== 3 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          3,
-                        )
-                      }
-                    >
-                      3 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 6 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          6,
-                        )
-                      }
-                    >
-                      6 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 9 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          9,
-                        )
-                      }
-                    >
-                      9 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 12 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          12,
-                        )
-                      }
-                    >
-                      12 {t("credit.month")}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
-            <div className={styles.installment}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.installment")}
-              </div>
-              <div className={styles.installment__amount}>
-                0 {t("credit.currency")}
-              </div>
-            </div>
-            <div className={styles.monthly}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.installment")}
-              </div>
-              <div className={styles.monthly__amount}>
-                {Math.round(product.price / privateBank.deadline)}{" "}
-                {t("credit.currency")}
-              </div>
-            </div>
-            <UIButton
-              color="primary"
-              style="filled"
-              className={styles.credit__buy}
-            >
-              {t("credit.buy")}
-            </UIButton>
-            <button className={styles.credit__more}>
-              {t("credit.termsAndConditions")}
-            </button>
-          </li>
-          <span className={styles.credit__line}></span>
-          <li className={styles.credit__item}>
-            <div className={styles.bank}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.creditor")}
-              </div>
-              <div className={styles.bank__logo}>
-                <MonobankIcon
-                  className={clsx(styles.bank__icon, styles.bank__monobank)}
-                />
-                <div className={styles.bank__name}>{t("credit.monobank")}</div>
-              </div>
-            </div>
-            <div className={styles.conditions}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.conditions")}
-              </div>
-              <div className={styles.menu}>
-                <div
-                  className={styles.menu__active}
-                  onClick={() =>
-                    handleBank(
-                      privateBank.name,
-                      !privateBank.isConditionMenuOpen,
-                    )
-                  }
-                >
-                  {privateBank.conditions}
-                  <ArrowBold className={styles.menu__arrow} />
-                </div>
-                <ul
-                  className={clsx(
-                    styles.menu__list,
-                    privateBank.isConditionMenuOpen && styles.menu__list_active,
-                  )}
-                  ref={privateConditionRef}
-                  style={{
-                    maxHeight: privateBank.isConditionMenuOpen
-                      ? `${privateConditionHeight}px`
-                      : "0px",
-                  }}
-                >
-                  {privateBank.conditions !==
-                    t("credit.paymentInInstallments") && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          false,
-                          undefined,
-                          t("credit.paymentInInstallments"),
-                        )
-                      }
-                    >
-                      {t("credit.paymentInInstallments")}
-                    </li>
-                  )}
-                  {privateBank.conditions !== t("credit.commonCredit") && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          false,
-                          undefined,
-                          t("credit.commonCredit"),
-                        )
-                      }
-                    >
-                      {t("credit.commonCredit")}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
-            <div className={styles.deadline}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.deadline")}
-              </div>
-              <div className={styles.menu}>
-                <div
-                  className={styles.menu__active}
-                  onClick={() =>
-                    handleBank(
-                      privateBank.name,
-                      undefined,
-                      !privateBank.isDeadlineMenuOpen,
-                    )
-                  }
-                >
-                  {privateBank.deadline} {t("credit.month")}
-                  <ArrowBold className={styles.menu__arrow} />
-                </div>
-                <ul
-                  className={clsx(
-                    styles.menu__list,
-                    privateBank.isDeadlineMenuOpen && styles.menu__list_active,
-                  )}
-                  ref={privateDeadlineRef}
-                  style={{
-                    maxHeight: privateBank.isDeadlineMenuOpen
-                      ? `${privateDeadlineHeight}px`
-                      : "0px",
-                  }}
-                >
-                  {privateBank.deadline !== 3 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          3,
-                        )
-                      }
-                    >
-                      3 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 6 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          6,
-                        )
-                      }
-                    >
-                      6 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 9 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          9,
-                        )
-                      }
-                    >
-                      9 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 12 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          12,
-                        )
-                      }
-                    >
-                      12 {t("credit.month")}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
-            <div className={styles.installment}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.installment")}
-              </div>
-              <div className={styles.installment__amount}>
-                0 {t("credit.currency")}
-              </div>
-            </div>
-            <div className={styles.monthly}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.installment")}
-              </div>
-              <div className={styles.monthly__amount}>
-                {Math.round(product.price / privateBank.deadline)}{" "}
-                {t("credit.currency")}
-              </div>
-            </div>
-            <UIButton
-              color="primary"
-              style="filled"
-              className={styles.credit__buy}
-            >
-              {t("credit.buy")}
-            </UIButton>
-            <button className={styles.credit__more}>
-              {t("credit.termsAndConditions")}
-            </button>
-          </li>
-          <span className={styles.credit__line}></span>
-          <li className={styles.credit__item}>
-            <div className={styles.bank}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.creditor")}
-              </div>
-              <div className={styles.bank__logo}>
-                <PrivateBankIcon className={styles.bank__icon} />
-                <div className={styles.bank__name}>
-                  {t("credit.privateBank")}
+                <div className={styles.menu}>
+                  <div
+                    className={styles.menu__active}
+                    onClick={() =>
+                      handleBank(bank.name, !bank.isConditionMenuOpen)
+                    }
+                  >
+                    {bank.conditions}
+                    <ArrowBold className={styles.menu__arrow} />
+                  </div>
+                  <ul
+                    className={clsx(
+                      styles.menu__list,
+                      bank.isConditionMenuOpen && styles.menu__list_active,
+                    )}
+                    ref={bank.conditionRef}
+                    style={{
+                      maxHeight: bank.isConditionMenuOpen ? `${100}px` : "0px",
+                    }}
+                  >
+                    {bank.conditions !== t("credit.paymentInInstallments") && (
+                      <li
+                        className={styles.menu__item}
+                        onClick={() =>
+                          handleBank(
+                            bank.name,
+                            false,
+                            undefined,
+                            t("credit.paymentInInstallments"),
+                          )
+                        }
+                      >
+                        {t("credit.paymentInInstallments")}
+                      </li>
+                    )}
+                    {bank.conditions !== t("credit.commonCredit") && (
+                      <li
+                        className={styles.menu__item}
+                        onClick={() =>
+                          handleBank(
+                            bank.name,
+                            false,
+                            undefined,
+                            t("credit.commonCredit"),
+                          )
+                        }
+                      >
+                        {t("credit.commonCredit")}
+                      </li>
+                    )}
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div className={styles.conditions}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.conditions")}
-              </div>
-              <div className={styles.menu}>
-                <div
-                  className={styles.menu__active}
-                  onClick={() =>
-                    handleBank(
-                      privateBank.name,
-                      !privateBank.isConditionMenuOpen,
-                    )
-                  }
-                >
-                  {privateBank.conditions}
-                  <ArrowBold className={styles.menu__arrow} />
+              <div className={styles.deadline}>
+                <div className={styles.credit__subtitle}>
+                  {t("credit.deadline")}
                 </div>
-                <ul
-                  className={clsx(
-                    styles.menu__list,
-                    privateBank.isConditionMenuOpen && styles.menu__list_active,
-                  )}
-                  ref={privateConditionRef}
-                  style={{
-                    maxHeight: privateBank.isConditionMenuOpen
-                      ? `${privateConditionHeight}px`
-                      : "0px",
-                  }}
-                >
-                  {privateBank.conditions !==
-                    t("credit.paymentInInstallments") && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          false,
-                          undefined,
-                          t("credit.paymentInInstallments"),
-                        )
-                      }
-                    >
-                      {t("credit.paymentInInstallments")}
-                    </li>
-                  )}
-                  {privateBank.conditions !== t("credit.commonCredit") && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          false,
-                          undefined,
-                          t("credit.commonCredit"),
-                        )
-                      }
-                    >
-                      {t("credit.commonCredit")}
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
-            <div className={styles.deadline}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.deadline")}
-              </div>
-              <div className={styles.menu}>
-                <div
-                  className={styles.menu__active}
-                  onClick={() =>
-                    handleBank(
-                      privateBank.name,
-                      undefined,
-                      !privateBank.isDeadlineMenuOpen,
-                    )
-                  }
-                >
-                  {privateBank.deadline} {t("credit.month")}
-                  <ArrowBold className={styles.menu__arrow} />
+                <div className={styles.menu}>
+                  <div
+                    className={styles.menu__active}
+                    onClick={() =>
+                      handleBank(bank.name, undefined, !bank.isDeadlineMenuOpen)
+                    }
+                  >
+                    {bank.deadline} {t("credit.month")}
+                    <ArrowBold className={styles.menu__arrow} />
+                  </div>
+                  <ul
+                    className={clsx(
+                      styles.menu__list,
+                      bank.isDeadlineMenuOpen && styles.menu__list_active,
+                    )}
+                    ref={bank.deadlineRef}
+                    style={{
+                      maxHeight: bank.isDeadlineMenuOpen ? `${100}px` : "0px",
+                    }}
+                  >
+                    {[3, 6, 9, 12].map((month) =>
+                      bank.deadline !== month ? (
+                        <li
+                          key={month}
+                          className={styles.menu__item}
+                          onClick={() =>
+                            handleBank(
+                              bank.name,
+                              undefined,
+                              false,
+                              undefined,
+                              month,
+                            )
+                          }
+                        >
+                          {month} {t("credit.month")}
+                        </li>
+                      ) : null,
+                    )}
+                  </ul>
                 </div>
-                <ul
-                  className={clsx(
-                    styles.menu__list,
-                    privateBank.isDeadlineMenuOpen && styles.menu__list_active,
-                  )}
-                  ref={privateDeadlineRef}
-                  style={{
-                    maxHeight: privateBank.isDeadlineMenuOpen
-                      ? `${privateDeadlineHeight}px`
-                      : "0px",
-                  }}
-                >
-                  {privateBank.deadline !== 3 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          3,
-                        )
-                      }
-                    >
-                      3 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 6 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          6,
-                        )
-                      }
-                    >
-                      6 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 9 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          9,
-                        )
-                      }
-                    >
-                      9 {t("credit.month")}
-                    </li>
-                  )}
-                  {privateBank.deadline !== 12 && (
-                    <li
-                      className={styles.menu__item}
-                      onClick={() =>
-                        handleBank(
-                          privateBank.name,
-                          undefined,
-                          false,
-                          undefined,
-                          12,
-                        )
-                      }
-                    >
-                      12 {t("credit.month")}
-                    </li>
-                  )}
-                </ul>
               </div>
-            </div>
-            <div className={styles.installment}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.installment")}
+              <div className={styles.installment}>
+                <div className={styles.credit__subtitle}>
+                  {t("credit.installment")}
+                </div>
+                <div className={styles.installment__amount}>
+                  0 {t("credit.currency")}
+                </div>
               </div>
-              <div className={styles.installment__amount}>
-                0 {t("credit.currency")}
+              <div className={styles.monthly}>
+                <div className={styles.credit__subtitle}>
+                  {t("credit.installment")}
+                </div>
+                <div className={styles.monthly__amount}>
+                  {Math.round(product.price / bank.deadline)}{" "}
+                  {t("credit.currency")}
+                </div>
               </div>
-            </div>
-            <div className={styles.monthly}>
-              <div className={styles.credit__subtitle}>
-                {t("credit.installment")}
-              </div>
-              <div className={styles.monthly__amount}>
-                {Math.round(product.price / privateBank.deadline)}{" "}
-                {t("credit.currency")}
-              </div>
-            </div>
-            <UIButton
-              color="primary"
-              style="filled"
-              className={styles.credit__buy}
-            >
-              {t("credit.buy")}
-            </UIButton>
-            <button className={styles.credit__more}>
-              {t("credit.termsAndConditions")}
-            </button>
-          </li>
-          <span className={styles.credit__line}></span>
+              <UIButton
+                color="primary"
+                style="filled"
+                className={styles.credit__buy}
+              >
+                {t("credit.buy")}
+              </UIButton>
+              <button className={styles.credit__more}>
+                {t("credit.termsAndConditions")}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
       <ProductSmall product={product} />
