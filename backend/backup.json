@@ -1,53 +1,5 @@
 [
 {
-    "model": "core.review",
-    "pk": 2,
-    "fields": {
-        "author": 5,
-        "content": "Магазин якщо чесно гімна. Нічого не працює а адміністратор Віталій посилає всіх на три букви і каже що його зарплата пачка сухариків",
-        "rating": 1.0,
-        "created_at": "2025-03-12T13:47:17.503Z",
-        "status": "AP",
-        "reply": "Сам ти гімно!!!!!"
-    }
-},
-{
-    "model": "core.review",
-    "pk": 3,
-    "fields": {
-        "author": 6,
-        "content": "Був в Америці, навіть там немає таких крутих магазинів. Доставка протягом 20хв, кур'єри просто душка. Передав Ілону Маску щоб брав приклад",
-        "rating": 5.0,
-        "created_at": "2025-03-12T13:53:50.917Z",
-        "status": "AP",
-        "reply": "Fuck Trump."
-    }
-},
-{
-    "model": "core.review",
-    "pk": 4,
-    "fields": {
-        "author": 7,
-        "content": "Трамп порадив цей сервіс. Дуже задоволений. Навіть ммоя компанія Tesla не така крута.",
-        "rating": 5.0,
-        "created_at": "2025-03-12T13:55:10.414Z",
-        "status": "AP",
-        "reply": "Пішов ти нахуй, маразматик"
-    }
-},
-{
-    "model": "core.review",
-    "pk": 5,
-    "fields": {
-        "author": 8,
-        "content": "Купив мишку, прийшла клавіатура. Адміністратор Віталій дуже грубий, агриться на кожне слово!",
-        "rating": 1.0,
-        "created_at": "2025-03-12T13:57:22.160Z",
-        "status": "AP",
-        "reply": "Хахаха. Людішка обідився"
-    }
-},
-{
     "model": "core.partner",
     "pk": 1,
     "fields": {
@@ -153,195 +105,51 @@
     }
 },
 {
-    "model": "user.customuser",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$Wrfd4XefSO3Nty8VciiovE$CLoAREn7Z3HzLXqboZaFW5HTkKEBGDDuKioSvUOA+Kc=",
-        "email": "admin@admin.com",
-        "name": "admin",
-        "surname": "",
-        "phone": null,
-        "photo": "",
-        "created_at": "2024-12-26T08:38:05.894Z",
-        "last_login": "2025-03-25T14:45:32.133Z",
-        "is_active": true,
-        "is_staff": true,
-        "is_superuser": true,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 3,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$d4nvX8FAkvvev7JBds24BJ$4jrOzXhblTKLxTmjbS+gEYFe4C9UzGhJ64Qd3Qx3xgc=",
-        "email": "testuser@gmail.com",
-        "name": "testUser",
-        "surname": "",
-        "phone": null,
-        "photo": "",
-        "created_at": "2025-01-03T09:41:39.091Z",
-        "last_login": "2025-01-03T09:41:39.091Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 4,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$j8RQDAd22fBZgmjNTtavX5$LaTRDkvSXULP3s8PkZ9RRlg9C2lmwlqhN+vKH7XCFVc=",
-        "email": "testIvan@gmail.com",
-        "name": "Ivan",
-        "surname": "",
-        "phone": null,
-        "photo": "",
-        "created_at": "2025-01-12T08:27:32.050Z",
-        "last_login": "2025-01-12T08:27:32.050Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 5,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$OYbzoQou2YxJOKoa1nr8mr$Xwf8Pit+tTjpSku6R8S9yIhYrCK5fJ7otL+YllUYTLY=",
-        "email": "vitaliiparkhomchuk@gmail.com",
-        "name": "Vitalii",
-        "surname": "Parkhomchuk",
-        "phone": null,
-        "photo": "avatars/default.png",
-        "created_at": "2025-03-12T13:33:34.015Z",
-        "last_login": "2025-03-12T13:51:40.478Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 6,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$lDaGltg3I0MqSWj1XZVn7w$r7W/y3UrLP37bsTeUeWEcCh/1QOV3yI4+6FR5/2ks/Y=",
-        "email": "donuld_trump@gmail.com",
-        "name": "Donald Trump",
-        "surname": "",
-        "phone": null,
-        "photo": "avatars/default.png",
-        "created_at": "2025-03-12T13:52:30.518Z",
-        "last_login": "2025-03-12T13:52:30.518Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 7,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$ArnCbkBqtrnsAwUbF89K3H$LsLLbPQr8Wo/xUzedD9eLPYfMAS7ApBRAZYO9TGeFCA=",
-        "email": "elonmusk@gmail.com",
-        "name": "Elon Musk",
-        "surname": "",
-        "phone": null,
-        "photo": "avatars/default.png",
-        "created_at": "2025-03-12T13:54:18.136Z",
-        "last_login": "2025-03-12T13:54:18.136Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 8,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$wumMLE9DtsQmE8dxeohiUv$YUDLpP5sii8uLtj62Evz7WsgHJsW3Vptm8az4cTnNv4=",
-        "email": "dr.lysak@gmail.com",
-        "name": "Lysak Oleg",
-        "surname": "",
-        "phone": null,
-        "photo": "avatars/default.png",
-        "created_at": "2025-03-12T13:56:30.362Z",
-        "last_login": "2025-03-12T13:56:30.362Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "user.customuser",
-    "pk": 9,
-    "fields": {
-        "password": "pbkdf2_sha256$870000$TssDeRKVR0dOVsFUpJj5MN$32o0ofoh5Y65HjHBZgV2deB5jsX78eAYt95XCtFBgcU=",
-        "email": "dr.lysak10@gmail.com",
-        "name": "Lysak Oleg",
-        "surname": "",
-        "phone": null,
-        "photo": "avatars/default.png",
-        "created_at": "2025-03-16T10:16:58.314Z",
-        "last_login": "2025-03-16T10:16:58.315Z",
-        "is_active": true,
-        "is_staff": false,
-        "is_superuser": false,
-        "groups": [],
-        "user_permissions": []
-    }
-},
-{
-    "model": "orders.deliveryoption",
+    "model": "core.review",
     "pk": 2,
     "fields": {
-        "name": "Укр-Пошта",
-        "name_en": "Ukr-Poshta",
-        "name_uk": "Укр-Пошта",
-        "free_from": "5000.00"
+        "author": 5,
+        "content": "Магазин якщо чесно гімна. Нічого не працює а адміністратор Віталій посилає всіх на три букви і каже що його зарплата пачка сухариків",
+        "rating": 1.0,
+        "created_at": "2025-03-12T13:47:17.503Z",
+        "status": "AP",
+        "reply": "Сам ти гімно!!!!!"
     }
 },
 {
-    "model": "orders.deliveryoption",
+    "model": "core.review",
     "pk": 3,
     "fields": {
-        "name": "Нова Пошта",
-        "name_en": "Nova Poshta",
-        "name_uk": "Нова Пошта",
-        "free_from": "6000.00"
+        "author": 6,
+        "content": "Був в Америці, навіть там немає таких крутих магазинів. Доставка протягом 20хв, кур'єри просто душка. Передав Ілону Маску щоб брав приклад",
+        "rating": 5.0,
+        "created_at": "2025-03-12T13:53:50.917Z",
+        "status": "AP",
+        "reply": "Fuck Trump."
     }
 },
 {
-    "model": "orders.deliveryoption",
+    "model": "core.review",
     "pk": 4,
     "fields": {
-        "name": "Austin",
-        "name_en": "Austin",
-        "name_uk": "Austin",
-        "free_from": "3000.00"
+        "author": 7,
+        "content": "Трамп порадив цей сервіс. Дуже задоволений. Навіть ммоя компанія Tesla не така крута.",
+        "rating": 5.0,
+        "created_at": "2025-03-12T13:55:10.414Z",
+        "status": "AP",
+        "reply": "Пішов ти нахуй, маразматик"
     }
 },
 {
-    "model": "orders.deliveryoption",
+    "model": "core.review",
     "pk": 5,
     "fields": {
-        "name": "Кур'єр",
-        "name_en": "Courier",
-        "name_uk": "Кур'єр",
-        "free_from": "3000.00"
+        "author": 8,
+        "content": "Купив мишку, прийшла клавіатура. Адміністратор Віталій дуже грубий, агриться на кожне слово!",
+        "rating": 1.0,
+        "created_at": "2025-03-12T13:57:22.160Z",
+        "status": "AP",
+        "reply": "Хахаха. Людішка обідився"
     }
 },
 {
@@ -489,789 +297,43 @@
     }
 },
 {
-    "model": "product.attribute",
-    "pk": 4,
-    "fields": {
-        "name": "Серія",
-        "name_en": "Series",
-        "name_uk": "Серія"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 5,
-    "fields": {
-        "name": "Діагональ екрану",
-        "name_en": "Screen diagonal",
-        "name_uk": "Діагональ екрану"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 6,
-    "fields": {
-        "name": "Частота оновлення екрану",
-        "name_en": "Screen refresh rate",
-        "name_uk": "Частота оновлення екрану"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 7,
-    "fields": {
-        "name": "Роздільна здатність",
-        "name_en": "Resolution",
-        "name_uk": "Роздільна здатність"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 8,
-    "fields": {
-        "name": "Тип екрану",
-        "name_en": "Screen type",
-        "name_uk": "Тип екрану"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 9,
-    "fields": {
-        "name": "Покриття екрану",
-        "name_en": "Screen coverage",
-        "name_uk": "Покриття екрану"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 10,
-    "fields": {
-        "name": "Процесор",
-        "name_en": "Processor",
-        "name_uk": "Процесор"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 11,
-    "fields": {
-        "name": "Операційна система",
-        "name_en": "Operating system",
-        "name_uk": "Операційна система"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 12,
-    "fields": {
-        "name": "Покоління процесора",
-        "name_en": "Processor generation",
-        "name_uk": "Покоління процесора"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 13,
-    "fields": {
-        "name": "Обсяг оперативної пам'яті",
-        "name_en": "RAM size",
-        "name_uk": "Обсяг оперативної пам'яті"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 14,
-    "fields": {
-        "name": "Тип оперативної пам'яті",
-        "name_en": "RAM type",
-        "name_uk": "Тип оперативної пам'яті"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 15,
-    "fields": {
-        "name": "Характеристики оперативної пам'яті",
-        "name_en": "RAM characteristics",
-        "name_uk": "Характеристики оперативної пам'яті"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 16,
-    "fields": {
-        "name": "Обсяг SSD",
-        "name_en": "SSD capacity",
-        "name_uk": "Обсяг SSD"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 17,
-    "fields": {
-        "name": "Тип накопичувача",
-        "name_en": "Drive type",
-        "name_uk": "Тип накопичувача"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 18,
-    "fields": {
-        "name": "Виробник відеокарти",
-        "name_en": "Video card manufacturer",
-        "name_uk": "Виробник відеокарти"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 19,
-    "fields": {
-        "name": "Дискретна відеокарта",
-        "name_en": "Discrete graphics card",
-        "name_uk": "Дискретна відеокарта"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 20,
-    "fields": {
-        "name": "Обсяг пам'яті відеокарти",
-        "name_en": "Video card memory size",
-        "name_uk": "Обсяг пам'яті відеокарти"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 21,
-    "fields": {
-        "name": "Тип відеокарти",
-        "name_en": "Video card type",
-        "name_uk": "Тип відеокарти"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 22,
-    "fields": {
-        "name": "Інтегрована відеокарта",
-        "name_en": "Integrated graphics card",
-        "name_uk": "Інтегрована відеокарта"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 23,
-    "fields": {
-        "name": "Ємність акумулятора, ВТ год",
-        "name_en": "Battery capacity, Wh",
-        "name_uk": "Ємність акумулятора, ВТ год"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 24,
-    "fields": {
-        "name": "Вага, кг",
-        "name_en": "Weight, kg",
-        "name_uk": "Вага, кг"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 25,
-    "fields": {
-        "name": "Колір",
-        "name_en": "Color",
-        "name_uk": "Колір"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 26,
-    "fields": {
-        "name": "Маніпулятори",
-        "name_en": "Manipulators",
-        "name_uk": "Маніпулятори"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 27,
-    "fields": {
-        "name": "Характеристики батареї",
-        "name_en": "Battery specifications",
-        "name_uk": "Характеристики батареї"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 28,
-    "fields": {
-        "name": "Габарити (Ш х Г х В)",
-        "name_en": "Dimensions (W x D x H)",
-        "name_uk": "Габарити (Ш х Г х В)"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 29,
-    "fields": {
-        "name": "Максимальна роздільна здатність",
-        "name_en": "Maximum refresh rate",
-        "name_uk": "Максимальна роздільна здатність"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 30,
-    "fields": {
-        "name": "Час реакції матриці",
-        "name_en": "Matrix response time",
-        "name_uk": "Час реакції матриці"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 31,
-    "fields": {
-        "name": "Яскравість дисплея",
-        "name_en": "Display brightness",
-        "name_uk": "Яскравість дисплея"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 32,
-    "fields": {
-        "name": "Тип матриці",
-        "name_en": "Matrix type",
-        "name_uk": "Тип матриці"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 33,
-    "fields": {
-        "name": "Контрасність дисплея",
-        "name_en": "Display contrast",
-        "name_uk": "Контрасність дисплея"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 34,
-    "fields": {
-        "name": "Країна виробник",
-        "name_en": "Country of origin",
-        "name_uk": "Країна виробник"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 35,
-    "fields": {
-        "name": "Відеокарта",
-        "name_en": "Video card",
-        "name_uk": "Відеокарта"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 36,
-    "fields": {
-        "name": "Чипсет материнської плати",
-        "name_en": "Motherboard chipset",
-        "name_uk": "Чипсет материнської плати"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 37,
-    "fields": {
-        "name": "Порти",
-        "name_en": "Ports",
-        "name_uk": "Порти"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 38,
-    "fields": {
-        "name": "Короткі технічні характеристики",
-        "name_en": "Brief technical specifications",
-        "name_uk": "Короткі технічні характеристики"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 39,
-    "fields": {
-        "name": "Type",
-        "name_en": "Type",
-        "name_uk": "Type"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 40,
-    "fields": {
-        "name": "Battery Life",
-        "name_en": "Battery Life",
-        "name_uk": "Battery Life"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 41,
-    "fields": {
-        "name": "Camera",
-        "name_en": "Camera",
-        "name_uk": "Camera"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 42,
-    "fields": {
-        "name": "Sensor",
-        "name_en": "Sensor",
-        "name_uk": "Sensor"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 43,
-    "fields": {
-        "name": "Resolution",
-        "name_en": "Resolution",
-        "name_uk": "Resolution"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 44,
-    "fields": {
-        "name": "Controller",
-        "name_en": "Controller",
-        "name_uk": "Controller"
-    }
-},
-{
-    "model": "product.attribute",
-    "pk": 45,
-    "fields": {
-        "name": "Size",
-        "name_en": "Size",
-        "name_uk": "Size"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 1,
-    "fields": {
-        "name": "Samsung",
-        "slug": "samsung"
-    }
-},
-{
-    "model": "product.brand",
+    "model": "orders.deliveryoption",
     "pk": 2,
     "fields": {
-        "name": "Xiaomi",
-        "slug": "xiaomi"
+        "name": "Укр-Пошта",
+        "name_en": "Ukr-Poshta",
+        "name_uk": "Укр-Пошта",
+        "free_from": "5000.00"
     }
 },
 {
-    "model": "product.brand",
+    "model": "orders.deliveryoption",
     "pk": 3,
     "fields": {
-        "name": "Apple",
-        "slug": "apple"
+        "name": "Нова Пошта",
+        "name_en": "Nova Poshta",
+        "name_uk": "Нова Пошта",
+        "free_from": "6000.00"
     }
 },
 {
-    "model": "product.brand",
+    "model": "orders.deliveryoption",
     "pk": 4,
     "fields": {
-        "name": "Acer",
-        "slug": "acer"
+        "name": "Austin",
+        "name_en": "Austin",
+        "name_uk": "Austin",
+        "free_from": "3000.00"
     }
 },
 {
-    "model": "product.brand",
+    "model": "orders.deliveryoption",
     "pk": 5,
     "fields": {
-        "name": "Dell",
-        "slug": "dell"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 6,
-    "fields": {
-        "name": "Gugabyte",
-        "slug": "gugabyte"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 7,
-    "fields": {
-        "name": "HP",
-        "slug": "hp"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 8,
-    "fields": {
-        "name": "Huawei",
-        "slug": "huawei"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 9,
-    "fields": {
-        "name": "Lenovo",
-        "slug": "lenovo"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 10,
-    "fields": {
-        "name": "MSI",
-        "slug": "msi"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 11,
-    "fields": {
-        "name": "2E",
-        "slug": "2e"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 12,
-    "fields": {
-        "name": "AMD",
-        "slug": "amd"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 13,
-    "fields": {
-        "name": "Vitalik",
-        "slug": "vitalik"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 14,
-    "fields": {
-        "name": "Aquado",
-        "slug": "aquado"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 15,
-    "fields": {
-        "name": "Blackview",
-        "slug": "blackview"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 16,
-    "fields": {
-        "name": "Cello",
-        "slug": "cello"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 17,
-    "fields": {
-        "name": "Element",
-        "slug": "element"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 18,
-    "fields": {
-        "name": "Epic",
-        "slug": "epic"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 19,
-    "fields": {
-        "name": "Ergo",
-        "slug": "ergo"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 20,
-    "fields": {
-        "name": "GPD",
-        "slug": "gpd"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 21,
-    "fields": {
-        "name": "Google",
-        "slug": "google"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 22,
-    "fields": {
-        "name": "linux",
-        "slug": "linux"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 23,
-    "fields": {
-        "name": "Windows",
-        "slug": "windows"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 24,
-    "fields": {
-        "name": "Frog",
-        "slug": "frog"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 25,
-    "fields": {
-        "name": "Elephant",
-        "slug": "elephant"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 26,
-    "fields": {
-        "name": "NUWM",
-        "slug": "nuwm"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 27,
-    "fields": {
-        "name": "GodDamn",
-        "slug": "goddamn"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 28,
-    "fields": {
-        "name": "WTF",
-        "slug": "wtf"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 29,
-    "fields": {
-        "name": "hello",
-        "slug": "hello"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 30,
-    "fields": {
-        "name": "Wizard",
-        "slug": "wizard"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 31,
-    "fields": {
-        "name": "PlayStation",
-        "slug": "playstation"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 32,
-    "fields": {
-        "name": "Airbag",
-        "slug": "airbag"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 33,
-    "fields": {
-        "name": "Defender",
-        "slug": "defender"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 34,
-    "fields": {
-        "name": "BMW",
-        "slug": "bmw"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 35,
-    "fields": {
-        "name": "Audi",
-        "slug": "audi"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 36,
-    "fields": {
-        "name": "Rog strix",
-        "slug": "rog-strix"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 37,
-    "fields": {
-        "name": "dino",
-        "slug": "dino"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 38,
-    "fields": {
-        "name": "Master Ninja",
-        "slug": "master-ninja"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 39,
-    "fields": {
-        "name": "Qiwi",
-        "slug": "qiwi"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 40,
-    "fields": {
-        "name": "Fuck Trump",
-        "slug": "fuck-trump"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 41,
-    "fields": {
-        "name": "America",
-        "slug": "america"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 42,
-    "fields": {
-        "name": "France",
-        "slug": "france"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 43,
-    "fields": {
-        "name": "Italy",
-        "slug": "italy"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 44,
-    "fields": {
-        "name": "Ukraine",
-        "slug": "ukraine"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 45,
-    "fields": {
-        "name": "Mr Robot",
-        "slug": "mr-robot"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 46,
-    "fields": {
-        "name": "Add",
-        "slug": "add"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 47,
-    "fields": {
-        "name": "GigaChad",
-        "slug": "gigachad"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 48,
-    "fields": {
-        "name": "Sigma",
-        "slug": "sigma"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 49,
-    "fields": {
-        "name": "SigmaBoy",
-        "slug": "sigmaboy"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 50,
-    "fields": {
-        "name": "Why are you gay",
-        "slug": "why-are-you-gay"
-    }
-},
-{
-    "model": "product.brand",
-    "pk": 51,
-    "fields": {
-        "name": "Europe",
-        "slug": "europe"
+        "name": "Кур'єр",
+        "name_en": "Courier",
+        "name_uk": "Кур'єр",
+        "free_from": "3000.00"
     }
 },
 {
@@ -4278,6 +3340,858 @@
         "rght": 39,
         "tree_id": 10,
         "level": 1
+    }
+},
+{
+    "model": "product.brand",
+    "pk": 52,
+    "fields": {
+        "name": "Cobra",
+        "slug": "cobra"
+    }
+},
+{
+    "model": "product.product",
+    "pk": 1,
+    "fields": {
+        "name": "Комп'ютер COBRA Advanced (I14F.16.S4.165.12991) Intel Core i5 10400F / H470M / 16GB DDR4 / ASUS RTX 3050 8GB Dual OC / SSD 480GB / AeroCool Hexform-G / 600W",
+        "name_en": "Computer COBRA Advanced (I14F.16.S4.165.12991) Intel Core i5 10400F / H470M / 16GB DDR4 / ASUS RTX 3050 8GB Dual OC / SSD 480GB / AeroCool Hexform-G / 600W",
+        "name_uk": "Комп'ютер COBRA Advanced (I14F.16.S4.165.12991) Intel Core i5 10400F / H470M / 16GB DDR4 / ASUS RTX 3050 8GB Dual OC / SSD 480GB / AeroCool Hexform-G / 600W",
+        "slug": "cobra-advanced-i14f16s416512991-intel-core-i5-10400f-h470m-16gb-ddr4-asus-rtx-3050-8gb-dual-oc-ssd-480gb-aerocool-hexform-g-600w",
+        "description": "Комп'ютер COBRA Advanced розроблений з прицілом на домашнє застосування та призначений для тих, хто любить та хоче відпочивати! Стінки ПК не опломбовані виробником, що дозволяє самостійно проводити модернізацію ПК та його профілактику! Також Комп'ютер COBRA Advanced легко впорається з роллю справжнього робочого інструменту, захоплених програмуванням, редагуванням фото та відео матеріалів, перекладами текстів, створенням музики та іншою творчістю. Комп'ютер оснащений процесором 10 покоління Intel Core i5-10400F, побудований на базі материнської плати з чипсетом H410. У ПК встановлено 16 ГБ оперативної пам'яті, для операційної системи та ігор - SSD 480 ГБ для зберігання даних, а у зв'язці з дискретною графікою GeForce RTX 3050 цей ПК є чудовим інструментом для сучасних ігор у високій роздільній здатності, продуктивної роботи та домашніх розваг. ПК обладнаний БЖ 600 Вт. Професійне складання Комп'ютера COBRA забезпечить оптимальний повітряний потік усередині корпусу, а отже, і чудове охолодження всіх компонентів ПК.",
+        "description_en": "The COBRA Advanced computer is designed for home use and is perfect for those who love to relax and enjoy their free time! The PC case is not sealed by the manufacturer, allowing users to upgrade and maintain the system on their own.\r\n\r\nAdditionally, the COBRA Advanced computer excels as a reliable workstation for programming, photo and video editing, text translations, music creation, and other creative tasks.\r\n\r\nIt is powered by a 10th-generation Intel Core i5-10400F processor and built on a motherboard with an H410 chipset. The system includes 16GB of RAM and a 480GB SSD for the operating system and games. Combined with a GeForce RTX 3050 discrete graphics card, this PC is an excellent tool for modern high-resolution gaming, productive work, and home entertainment.\r\n\r\nThe computer is equipped with a 600W power supply unit. The professional assembly of the COBRA Advanced ensures optimal airflow inside the case, providing excellent cooling for all components.",
+        "description_uk": "Комп'ютер COBRA Advanced розроблений з прицілом на домашнє застосування та призначений для тих, хто любить та хоче відпочивати! Стінки ПК не опломбовані виробником, що дозволяє самостійно проводити модернізацію ПК та його профілактику! Також Комп'ютер COBRA Advanced легко впорається з роллю справжнього робочого інструменту, захоплених програмуванням, редагуванням фото та відео матеріалів, перекладами текстів, створенням музики та іншою творчістю. Комп'ютер оснащений процесором 10 покоління Intel Core i5-10400F, побудований на базі материнської плати з чипсетом H410. У ПК встановлено 16 ГБ оперативної пам'яті, для операційної системи та ігор - SSD 480 ГБ для зберігання даних, а у зв'язці з дискретною графікою GeForce RTX 3050 цей ПК є чудовим інструментом для сучасних ігор у високій роздільній здатності, продуктивної роботи та домашніх розваг. ПК обладнаний БЖ 600 Вт. Професійне складання Комп'ютера COBRA забезпечить оптимальний повітряний потік усередині корпусу, а отже, і чудове охолодження всіх компонентів ПК.",
+        "price": 26999.0,
+        "stock_quantity": 6,
+        "discount": 5,
+        "rating": 0.0,
+        "created_at": "2025-03-27T08:44:24.822Z",
+        "updated_at": "2025-03-27T08:45:52.003Z",
+        "brand": 52,
+        "varranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "category": 119
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 4,
+    "fields": {
+        "name": "Серія",
+        "name_en": "Series",
+        "name_uk": "Серія"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 5,
+    "fields": {
+        "name": "Діагональ екрану",
+        "name_en": "Screen diagonal",
+        "name_uk": "Діагональ екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 6,
+    "fields": {
+        "name": "Частота оновлення екрану",
+        "name_en": "Screen refresh rate",
+        "name_uk": "Частота оновлення екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 7,
+    "fields": {
+        "name": "Роздільна здатність",
+        "name_en": "Resolution",
+        "name_uk": "Роздільна здатність"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 8,
+    "fields": {
+        "name": "Тип екрану",
+        "name_en": "Screen type",
+        "name_uk": "Тип екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 9,
+    "fields": {
+        "name": "Покриття екрану",
+        "name_en": "Screen coverage",
+        "name_uk": "Покриття екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 10,
+    "fields": {
+        "name": "Процесор",
+        "name_en": "Processor",
+        "name_uk": "Процесор"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 11,
+    "fields": {
+        "name": "Операційна система",
+        "name_en": "Operating system",
+        "name_uk": "Операційна система"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 12,
+    "fields": {
+        "name": "Покоління процесора",
+        "name_en": "Processor generation",
+        "name_uk": "Покоління процесора"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 13,
+    "fields": {
+        "name": "Обсяг оперативної пам'яті",
+        "name_en": "RAM size",
+        "name_uk": "Обсяг оперативної пам'яті"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 14,
+    "fields": {
+        "name": "Тип оперативної пам'яті",
+        "name_en": "RAM type",
+        "name_uk": "Тип оперативної пам'яті"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 15,
+    "fields": {
+        "name": "Характеристики оперативної пам'яті",
+        "name_en": "RAM characteristics",
+        "name_uk": "Характеристики оперативної пам'яті"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 16,
+    "fields": {
+        "name": "Обсяг SSD",
+        "name_en": "SSD capacity",
+        "name_uk": "Обсяг SSD"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 17,
+    "fields": {
+        "name": "Тип накопичувача",
+        "name_en": "Drive type",
+        "name_uk": "Тип накопичувача"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 18,
+    "fields": {
+        "name": "Виробник відеокарти",
+        "name_en": "Video card manufacturer",
+        "name_uk": "Виробник відеокарти"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 19,
+    "fields": {
+        "name": "Дискретна відеокарта",
+        "name_en": "Discrete graphics card",
+        "name_uk": "Дискретна відеокарта"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 20,
+    "fields": {
+        "name": "Обсяг пам'яті відеокарти",
+        "name_en": "Video card memory size",
+        "name_uk": "Обсяг пам'яті відеокарти"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 21,
+    "fields": {
+        "name": "Тип відеокарти",
+        "name_en": "Video card type",
+        "name_uk": "Тип відеокарти"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 22,
+    "fields": {
+        "name": "Інтегрована відеокарта",
+        "name_en": "Integrated graphics card",
+        "name_uk": "Інтегрована відеокарта"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 23,
+    "fields": {
+        "name": "Ємність акумулятора, ВТ год",
+        "name_en": "Battery capacity, Wh",
+        "name_uk": "Ємність акумулятора, ВТ год"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 24,
+    "fields": {
+        "name": "Вага, кг",
+        "name_en": "Weight, kg",
+        "name_uk": "Вага, кг"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 25,
+    "fields": {
+        "name": "Колір",
+        "name_en": "Color",
+        "name_uk": "Колір"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 26,
+    "fields": {
+        "name": "Маніпулятори",
+        "name_en": "Manipulators",
+        "name_uk": "Маніпулятори"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 27,
+    "fields": {
+        "name": "Характеристики батареї",
+        "name_en": "Battery specifications",
+        "name_uk": "Характеристики батареї"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 28,
+    "fields": {
+        "name": "Габарити (Ш х Г х В)",
+        "name_en": "Dimensions (W x D x H)",
+        "name_uk": "Габарити (Ш х Г х В)"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 29,
+    "fields": {
+        "name": "Максимальна роздільна здатність",
+        "name_en": "Maximum refresh rate",
+        "name_uk": "Максимальна роздільна здатність"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 30,
+    "fields": {
+        "name": "Час реакції матриці",
+        "name_en": "Matrix response time",
+        "name_uk": "Час реакції матриці"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 31,
+    "fields": {
+        "name": "Яскравість дисплея",
+        "name_en": "Display brightness",
+        "name_uk": "Яскравість дисплея"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 32,
+    "fields": {
+        "name": "Тип матриці",
+        "name_en": "Matrix type",
+        "name_uk": "Тип матриці"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 33,
+    "fields": {
+        "name": "Контрасність дисплея",
+        "name_en": "Display contrast",
+        "name_uk": "Контрасність дисплея"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 34,
+    "fields": {
+        "name": "Країна виробник",
+        "name_en": "Country of origin",
+        "name_uk": "Країна виробник"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 35,
+    "fields": {
+        "name": "Відеокарта",
+        "name_en": "Video card",
+        "name_uk": "Відеокарта"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 36,
+    "fields": {
+        "name": "Чипсет материнської плати",
+        "name_en": "Motherboard chipset",
+        "name_uk": "Чипсет материнської плати"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 37,
+    "fields": {
+        "name": "Порти",
+        "name_en": "Ports",
+        "name_uk": "Порти"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 38,
+    "fields": {
+        "name": "Короткі технічні характеристики",
+        "name_en": "Brief technical specifications",
+        "name_uk": "Короткі технічні характеристики"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 39,
+    "fields": {
+        "name": "Type",
+        "name_en": "Type",
+        "name_uk": "Type"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 40,
+    "fields": {
+        "name": "Battery Life",
+        "name_en": "Battery Life",
+        "name_uk": "Battery Life"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 41,
+    "fields": {
+        "name": "Camera",
+        "name_en": "Camera",
+        "name_uk": "Camera"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 42,
+    "fields": {
+        "name": "Sensor",
+        "name_en": "Sensor",
+        "name_uk": "Sensor"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 43,
+    "fields": {
+        "name": "Resolution",
+        "name_en": "Resolution",
+        "name_uk": "Resolution"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 44,
+    "fields": {
+        "name": "Controller",
+        "name_en": "Controller",
+        "name_uk": "Controller"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 45,
+    "fields": {
+        "name": "Size",
+        "name_en": "Size",
+        "name_uk": "Size"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 46,
+    "fields": {
+        "name": "Короткі технічні характеристики",
+        "name_en": "Brief technical specifications",
+        "name_uk": "Короткі технічні характеристики"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 47,
+    "fields": {
+        "name": "Потужність БЖ",
+        "name_en": "Power supply unit",
+        "name_uk": "Потужність БЖ"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 48,
+    "fields": {
+        "name": "Охолодження",
+        "name_en": "Cooling",
+        "name_uk": "Охолодження"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 49,
+    "fields": {
+        "name": "Розміри",
+        "name_en": "SIze",
+        "name_uk": "Розміри"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 50,
+    "fields": {
+        "name": "Додаткові можливості",
+        "name_en": "Additional features",
+        "name_uk": "Додаткові можливості"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "attribute": 46,
+        "value": "Intel Core i5-10400F (2.9 - 4.3 ГГц) / RAM 16 ГБ / SSD 480 ГБ / nVidia GeForce RTX 3050, 8 ГБ / без ОД / LAN / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 2,
+    "fields": {
+        "product": 1,
+        "attribute": 35,
+        "value": "GeForce RTX 3050"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "attribute": 10,
+        "value": "Intel Core i5-10400F (2.9 – 4.3 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 4,
+    "fields": {
+        "product": 1,
+        "attribute": 36,
+        "value": "Intel H410"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 5,
+    "fields": {
+        "product": 1,
+        "attribute": 13,
+        "value": "16GB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 6,
+    "fields": {
+        "product": 1,
+        "attribute": 37,
+        "value": "На передній панелі:\r\n1 x USB 3.0\r\n1 x USB 2.0\r\n2 x Audio\r\n\r\nНа задній панелі (материнська плата):\r\n1 x PS/2 комбінований порт для клавіатури/миші\r\n2 x USB 2.0 порту\r\n3 x USB 3.0 порту\r\n\r\nНа задній панелі ( відеокарта):\r\n1 х HDMI порт\r\n1 х Display Port\r\n1 x DVI порт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 7,
+    "fields": {
+        "product": 1,
+        "attribute": 47,
+        "value": "600 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 8,
+    "fields": {
+        "product": 1,
+        "attribute": 48,
+        "value": "Охолодження ЦП: BOX\r\nОхолодження корпусу: 3 х 120 мм кулера\r\nЗ підтримкою системи водяного охолодження"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 9,
+    "fields": {
+        "product": 1,
+        "attribute": 49,
+        "value": "190 x 355 x 325 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 10,
+    "fields": {
+        "product": 1,
+        "attribute": 24,
+        "value": "12.5kg"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 11,
+    "fields": {
+        "product": 1,
+        "attribute": 50,
+        "value": "Процесор -- Intel Core i5 10400F\r\nКулер процесорный -- ID-Cooling SE-214-XT\r\nМатеринська плата -- ASRock H470M-HVS R2.0 Socket 1200\r\nМодуль пам'яті -- 16GB/2666 DDR4 Prologix (PRO16GB2666D4)\r\nВідеокарта -- ASUS RTX 3050 8GB GDDR6 Dual OC V2 (DUAL-RTX3050-O8G-V2)\r\nНакопичувач SSD -- 480GB Prologix S320 2.5\" SATAIII TLC (PRO480GS320)\r\nКорпус -- AeroCool Hexform-G-BK-v2 (ACCS-PV38033.11) Black\r\nБлок живлення -- AeroCool VX Plus 600 (ACPN-VS60NEY.11) 600W"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 12,
+    "fields": {
+        "product": 1,
+        "attribute": 16,
+        "value": "480gb"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 13,
+    "fields": {
+        "product": 1,
+        "attribute": 20,
+        "value": "8gb"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 14,
+    "fields": {
+        "product": 1,
+        "attribute": 14,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 15,
+    "fields": {
+        "product": 1,
+        "attribute": 34,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 16,
+    "fields": {
+        "product": 1,
+        "attribute": 21,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 17,
+    "fields": {
+        "product": 1,
+        "attribute": 25,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 18,
+    "fields": {
+        "product": 1,
+        "attribute": 18,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 1,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/1.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 2,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/2.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 3,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/3.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 4,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/4.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 5,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/5.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 6,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/6.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 7,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/7.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 8,
+    "fields": {
+        "product": 1,
+        "image": "product_images/2025/03/27/8.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$Wrfd4XefSO3Nty8VciiovE$CLoAREn7Z3HzLXqboZaFW5HTkKEBGDDuKioSvUOA+Kc=",
+        "email": "admin@admin.com",
+        "name": "admin",
+        "surname": "",
+        "phone": null,
+        "photo": "",
+        "created_at": "2024-12-26T08:38:05.894Z",
+        "last_login": "2025-03-26T10:16:43.258Z",
+        "is_active": true,
+        "is_staff": true,
+        "is_superuser": true,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$d4nvX8FAkvvev7JBds24BJ$4jrOzXhblTKLxTmjbS+gEYFe4C9UzGhJ64Qd3Qx3xgc=",
+        "email": "testuser@gmail.com",
+        "name": "testUser",
+        "surname": "",
+        "phone": null,
+        "photo": "",
+        "created_at": "2025-01-03T09:41:39.091Z",
+        "last_login": "2025-01-03T09:41:39.091Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$j8RQDAd22fBZgmjNTtavX5$LaTRDkvSXULP3s8PkZ9RRlg9C2lmwlqhN+vKH7XCFVc=",
+        "email": "testIvan@gmail.com",
+        "name": "Ivan",
+        "surname": "",
+        "phone": null,
+        "photo": "",
+        "created_at": "2025-01-12T08:27:32.050Z",
+        "last_login": "2025-01-12T08:27:32.050Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$OYbzoQou2YxJOKoa1nr8mr$Xwf8Pit+tTjpSku6R8S9yIhYrCK5fJ7otL+YllUYTLY=",
+        "email": "vitaliiparkhomchuk@gmail.com",
+        "name": "Vitalii",
+        "surname": "Parkhomchuk",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-03-12T13:33:34.015Z",
+        "last_login": "2025-03-12T13:51:40.478Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$lDaGltg3I0MqSWj1XZVn7w$r7W/y3UrLP37bsTeUeWEcCh/1QOV3yI4+6FR5/2ks/Y=",
+        "email": "donuld_trump@gmail.com",
+        "name": "Donald Trump",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-03-12T13:52:30.518Z",
+        "last_login": "2025-03-12T13:52:30.518Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$ArnCbkBqtrnsAwUbF89K3H$LsLLbPQr8Wo/xUzedD9eLPYfMAS7ApBRAZYO9TGeFCA=",
+        "email": "elonmusk@gmail.com",
+        "name": "Elon Musk",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-03-12T13:54:18.136Z",
+        "last_login": "2025-03-12T13:54:18.136Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$wumMLE9DtsQmE8dxeohiUv$YUDLpP5sii8uLtj62Evz7WsgHJsW3Vptm8az4cTnNv4=",
+        "email": "dr.lysak@gmail.com",
+        "name": "Lysak Oleg",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-03-12T13:56:30.362Z",
+        "last_login": "2025-03-12T13:56:30.362Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$TssDeRKVR0dOVsFUpJj5MN$32o0ofoh5Y65HjHBZgV2deB5jsX78eAYt95XCtFBgcU=",
+        "email": "dr.lysak10@gmail.com",
+        "name": "Lysak Oleg",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-03-16T10:16:58.314Z",
+        "last_login": "2025-03-16T10:16:58.315Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
     }
 }
 ]
