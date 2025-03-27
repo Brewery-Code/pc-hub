@@ -14,7 +14,7 @@ interface IUIProductCardProps {
   key?: string | number;
 }
 
-function UIProductCard({ product, className, type, key }: IUIProductCardProps) {
+function UIProductCard({ product, className, type }: IUIProductCardProps) {
   const price = () => {
     if (product.discounted_price !== product.price) {
       return (
@@ -49,7 +49,7 @@ function UIProductCard({ product, className, type, key }: IUIProductCardProps) {
 
   return (
     <Link
-      key={key}
+      key="1"
       to={`${location.pathname}/${product.id}`}
       className={clsx(
         styles.card,

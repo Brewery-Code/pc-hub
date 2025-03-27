@@ -183,9 +183,27 @@
 }
 
 .buy__price {
+  position: relative;
   display: flex;
   gap: 2px;
+  color: var(--dark-grey);
+}
+
+.buy__price_discount {
+  margin-left: 12px;
   color: var(--accent-red);
+}
+
+.buy__price_discount.buy__price::before {
+  position: absolute;
+  content: attr(common-price);
+  left: -12px;
+  top: -14px;
+  color: var(--grey-scale-40);
+  font-size: 12px;
+  line-height: 114%;
+  font-weight: 700;
+  text-decoration: line-through;
 }
 
 .buy__numbers {

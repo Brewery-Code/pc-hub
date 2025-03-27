@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "./Body.module.css";
+import styles from "./AllInfo.module.css";
 import { useTranslation } from "react-i18next";
 import { IProduct } from "../../../store/product/product.slice";
 import { useEffect, useState } from "react";
@@ -21,12 +21,12 @@ import {
 } from "../../../assets/icons";
 import { UIButton } from "../../../components/UI";
 
-interface IBodyProps {
+interface IAllInfoProps {
   product: IProduct;
   className?: string;
 }
 
-function Body({ className, product }: IBodyProps) {
+function AllInfo({ className, product }: IAllInfoProps) {
   const { t } = useTranslation("product");
 
   const [activeImg, setActiveImg] = useState("");
@@ -44,8 +44,9 @@ function Body({ className, product }: IBodyProps) {
         <div className={styles.images}>
           <div className={styles.images__container}>
             <div className={styles.images__list}>
-              {product.images.map((image) => (
+              {product.images.map((image, index) => (
                 <img
+                  key={index}
                   src={image.image}
                   alt="productImg"
                   onClick={() => changeActiveImg(image.image)}
@@ -99,8 +100,18 @@ function Body({ className, product }: IBodyProps) {
           </div>
         </div>
         <div className={styles.buy}>
-          <div className={styles.buy__price}>
-            <span className={styles.buy__numbers}>{product.price}</span>
+          <div
+            className={clsx(
+              styles.buy__price,
+              product.discounted_price != 0 && styles.buy__price_discount,
+            )}
+            common-price={`${product.price} ${t("buy.uah")}`}
+          >
+            <span className={clsx(styles.buy__numbers)}>
+              {product.discounted_price == 0
+                ? product.price
+                : product.discounted_price}
+            </span>
             <span className={styles.buy__currency}>{t("buy.uah")}.</span>
           </div>
           <UIButton
@@ -197,4 +208,4 @@ function Body({ className, product }: IBodyProps) {
   );
 }
 
-export default Body;
+export default AllInfo;

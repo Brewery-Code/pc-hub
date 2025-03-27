@@ -192,6 +192,7 @@
 }
 
 .description {
+  overflow: hidden;
   position: absolute;
   z-index: 1;
   left: 0;
@@ -202,10 +203,6 @@
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 5px 8px rgba(50, 50, 71, 0.1);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--dark-grey);
-  line-height: 133%;
 }
 
 .description::before {
@@ -216,6 +213,15 @@
   width: calc(100% - 24px);
   height: 1px;
   background-color: var(--grey-scale-10);
+}
+
+.description__text {
+  overflow: hidden;
+  height: 60px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--dark-grey);
+  line-height: 133%;
 }
 
 /* Modifiers */

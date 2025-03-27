@@ -11,7 +11,7 @@ function PaymentCash({ className, width, height }: ISVGIconProps) {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <g clip-path="url(#clip27_24895)">
+      <g clipPath="url(#clip27_24895)">
         <path
           id="Vector"
           d="M20.99 8.67C21.54 8.67 21.99 9.12 21.99 9.67L21.99 25.46C21.99 26.56 21.09 27.46 19.99 27.46L11.89 27.46C10.78 27.46 9.89 26.56 9.89 25.46L9.89 9.67C9.89 9.12 10.34 8.67 10.89 8.67L20.99 8.67Z"

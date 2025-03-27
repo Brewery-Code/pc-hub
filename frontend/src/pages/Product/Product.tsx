@@ -6,7 +6,7 @@ import { fetchProduct } from "../../store/product/product.slice";
 import { useParams } from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
 import Head from "./Head/Head";
-import Body from "./Body/Body";
+import AllInfo from "./AllInfo/AllInfo";
 import Characteristics from "./Characteristics/Characteristics";
 import Reviews from "./Reviews/Reviews";
 import Credit from "./Credit/Credit";
@@ -36,7 +36,7 @@ function Product() {
             activeSection={activeSection}
           />
           {activeSection === "AllProducts" && (
-            <Body className={styles.product__body} product={product} />
+            <AllInfo className={styles.product__body} product={product} />
           )}
           {activeSection === "Characteristics" && (
             <Characteristics product={product} />

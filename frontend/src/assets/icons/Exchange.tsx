@@ -20,7 +20,7 @@ function Exchange({ className, width, height }: ISVGIconProps) {
         fill="#FFFFFF"
         fillOpacity="0"
       />
-      <g clip-path="url(#clip27_24930)">
+      <g clipPath="url(#clip27_24930)">
         <rect
           id="Frame 90"
           rx="0.000000"
