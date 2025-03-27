@@ -84,6 +84,7 @@ class CartViewSet(ViewSet):
         total_price = cart_items.aggregate(total=Sum("price"))["total"] or 0
 
         response_data = {
+            "session": request.session.session_key,
             "cart_id": cart.id,
             "total_price": total_price,
             "items": [
@@ -150,7 +151,7 @@ class CartViewSet(ViewSet):
                 status=status.HTTP_201_CREATED,
             )
 
-    def update(self, request, id=None) -> Response:
+    def update(self, request, pk=None) -> Response:
         """Оновлює кількість товару в кошику, ябо видаляє його якщо кількість <= 0.
 
         :Args:
@@ -168,7 +169,7 @@ class CartViewSet(ViewSet):
         cart = self.get_cart(request)
 
         try:
-            cart_item = CartItem.objects.get(cart=cart, product_id=id)
+            cart_item = CartItem.objects.get(cart=cart, product_id=pk)
         except CartItem.DoesNotExist:
             return Response(
                 {"error": "Product not in cart"}, status=status.HTTP_404_NOT_FOUND
@@ -196,7 +197,7 @@ class CartViewSet(ViewSet):
                 status=status.HTTP_200_OK,
             )
 
-    def destroy(self, request, id=None) -> Response:
+    def destroy(self, request, pk=None) -> Response:
         """
         Видаляє товар з кошика користувача
 
@@ -212,7 +213,7 @@ class CartViewSet(ViewSet):
         cart = self.get_cart(request)
 
         try:
-            product = Product.objects.get(pk=id)
+            product = Product.objects.get(pk=pk)
         except Product.DoesNotExist:
             return Response(
                 {"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND
