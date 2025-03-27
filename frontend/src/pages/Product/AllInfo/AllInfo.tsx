@@ -2,7 +2,7 @@ import clsx from "clsx";
 import styles from "./AllInfo.module.css";
 import { useTranslation } from "react-i18next";
 import { IProduct } from "../../../store/product/product.slice";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowBold,
   ArrowCommon,
@@ -29,33 +29,95 @@ interface IAllInfoProps {
 function AllInfo({ className, product }: IAllInfoProps) {
   const { t } = useTranslation("product");
 
-  const [activeImg, setActiveImg] = useState("");
-  useEffect(() => {
-    if (product && product.images.length > 0) {
-      setActiveImg(product.images[0].image);
-    }
-  }, [product]);
+  const imagesViewportRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement | null>(null);
+  const [currentImg, setCurrentImg] = useState(0);
+  const [numberOfDisplayedImages, setNumberOfDisplayedImages] = useState(0);
 
-  const changeActiveImg = (src: string) => setActiveImg(src);
+  const getNumberOfDisplayedImages = () => {
+    if (imagesViewportRef.current && imageRef.current) {
+      setNumberOfDisplayedImages(
+        Math.round(
+          imagesViewportRef.current.clientHeight /
+            imageRef.current.clientHeight,
+        ),
+      );
+    }
+  };
+
+  useEffect(() => {
+    getNumberOfDisplayedImages();
+  }, [currentImg]);
+
+  const nextImg = () => {
+    if (currentImg + 1 < product.images.length) {
+      setCurrentImg((prev) => prev + 1);
+    } else {
+      setCurrentImg(0);
+    }
+  };
+
+  const prevImg = () => {
+    if (currentImg > 0) {
+      setCurrentImg((prev) => prev - 1);
+    } else {
+      setCurrentImg(product.images.length - 1);
+    }
+  };
+
+  const setImg = (index: number) => {
+    setCurrentImg(index);
+  };
+
+  const listTransform = () => {
+    if (imageRef.current && numberOfDisplayedImages > 0) {
+      if (currentImg + 2 >= numberOfDisplayedImages) {
+        return `translateY(${
+          -(currentImg - numberOfDisplayedImages + 2) *
+          imageRef.current.clientHeight
+        }px)`;
+      }
+    }
+    return undefined;
+  };
 
   return (
     <div className={clsx(className, styles.body)}>
       <div className={styles.left}>
         <div className={styles.images}>
-          <div className={styles.images__container}>
-            <div className={styles.images__list}>
+          <div className={styles.images__container} ref={imagesViewportRef}>
+            <button className={styles.image__prev} onClick={prevImg}>
+              <ArrowBold className={styles["image__prev-icon"]} />
+            </button>
+            <div
+              className={styles.images__list}
+              style={
+                imageRef.current
+                  ? {
+                      transform: listTransform(),
+                    }
+                  : {}
+              }
+            >
               {product.images.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.image}
-                  alt="productImg"
-                  onClick={() => changeActiveImg(image.image)}
-                />
+                <div key={index}>
+                  <img
+                    ref={index == 0 ? imageRef : null}
+                    src={image.image}
+                    alt="productImg"
+                    onClick={() => setImg(index)}
+                  />
+                </div>
               ))}
             </div>
+            <button className={styles.image__next} onClick={nextImg}>
+              <ArrowBold className={styles["image__next-icon"]} />
+            </button>
           </div>
           <div className={styles.image__main}>
-            <img src={activeImg} alt="productImg" />
+            {product.images.length > 0 && (
+              <img src={product.images[currentImg]?.image} alt="productImg" />
+            )}
           </div>
         </div>
         <div className={styles.characteristics}>
@@ -90,7 +152,9 @@ function AllInfo({ className, product }: IAllInfoProps) {
       </div>
       <div className={styles.right}>
         <div className={styles.head}>
-          <div className={styles.head__new}>{t("banners.isNew")}</div>
+          {product.is_new && (
+            <div className={styles.head__new}>{t("banners.isNew")}</div>
+          )}
           <div className={styles.head__hit}>{t("banners.topSales")}</div>
           <div className={styles.head__comparison}>
             <ComparisonIcon className={styles["head__comparison-icon"]} />
@@ -105,8 +169,13 @@ function AllInfo({ className, product }: IAllInfoProps) {
               styles.buy__price,
               product.discounted_price != 0 && styles.buy__price_discount,
             )}
-            common-price={`${product.price} ${t("buy.uah")}`}
           >
+            {product.discounted_price != 0 && (
+              <div className={styles.buy__price_common}>
+                <span>{product.price}</span>
+                <span>{t("buy.uah")}</span>
+              </div>
+            )}
             <span className={clsx(styles.buy__numbers)}>
               {product.discounted_price == 0
                 ? product.price
@@ -192,7 +261,7 @@ function AllInfo({ className, product }: IAllInfoProps) {
             <div className={styles.guarantee__row}>
               <Guarantee className={styles.guarantee__icon} />
               <div className={styles.guarantee__text}>
-                {t("guarantee.month")}
+                {`${product.warranty} ${t("guarantee.month")}`}
               </div>
             </div>
             <div className={styles.guarantee__row}>

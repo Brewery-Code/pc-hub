@@ -27,9 +27,16 @@ interface IImages {
   image: string;
 }
 
+interface IDelivery_options {
+  name: string;
+  free_from: string;
+}
+
 interface IProduct {
   id: string;
   name: string;
+  slug: string;
+  brand: string;
   category: string;
   description: string;
   price: number;
@@ -38,6 +45,10 @@ interface IProduct {
   attributes: IAttribute[];
   images: IImages[];
   is_new: boolean;
+  is_stock: boolean;
+  warranty: number;
+  estimated_shipping_time: string;
+  delivery_options: IDelivery_options[];
 }
 
 interface IProductState {
@@ -50,6 +61,8 @@ const initialState: IProductState = {
   product: {
     id: "",
     name: "",
+    slug: "",
+    brand: "",
     category: "",
     description: "",
     price: 0,
@@ -58,6 +71,10 @@ const initialState: IProductState = {
     attributes: [],
     images: [],
     is_new: false,
+    is_stock: false,
+    warranty: 0,
+    estimated_shipping_time: "",
+    delivery_options: [],
   },
   status: "idle",
   error: null,
@@ -74,7 +91,7 @@ const productSlice = createSlice({
       })
       .addCase(fetchProduct.fulfilled, (state, action) => {
         state.status = "succeeded";
-        // console.log(action.payload);
+        console.log(action.payload);
         state.product = action.payload;
       })
       .addCase(fetchProduct.rejected, (state, action) => {
