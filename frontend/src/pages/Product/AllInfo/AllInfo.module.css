@@ -94,6 +94,7 @@
 .image__main {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .image__main img {

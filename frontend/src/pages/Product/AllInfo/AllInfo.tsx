@@ -20,6 +20,7 @@ import {
   Time,
 } from "../../../assets/icons";
 import { UIButton } from "../../../components/UI";
+import { MProductImagesList } from "../../../components/Modals";
 
 interface IAllInfoProps {
   product: IProduct;
@@ -67,18 +68,31 @@ function AllInfo({ className, product }: IAllInfoProps) {
 
   const setImg = (index: number) => {
     setCurrentImg(index);
+    handleModalImageList();
   };
 
   const listTransform = () => {
     if (imageRef.current && numberOfDisplayedImages > 0) {
       if (currentImg + 2 >= numberOfDisplayedImages) {
-        return `translateY(${
-          -(currentImg - numberOfDisplayedImages + 2) *
-          imageRef.current.clientHeight
-        }px)`;
+        if (currentImg + 1 == product.images.length) {
+          return `translateY(${
+            -(currentImg - numberOfDisplayedImages + 1) *
+            imageRef.current.clientHeight
+          }px)`;
+        } else {
+          return `translateY(${
+            -(currentImg - numberOfDisplayedImages + 2) *
+            imageRef.current.clientHeight
+          }px)`;
+        }
       }
     }
     return undefined;
+  };
+
+  const [isModalImageListOpen, setIsModalImageListOpen] = useState(false);
+  const handleModalImageList = () => {
+    setIsModalImageListOpen((prev) => !prev);
   };
 
   return (
@@ -114,11 +128,19 @@ function AllInfo({ className, product }: IAllInfoProps) {
               <ArrowBold className={styles["image__next-icon"]} />
             </button>
           </div>
-          <div className={styles.image__main}>
+          <div className={styles.image__main} onClick={handleModalImageList}>
             {product.images.length > 0 && (
               <img src={product.images[currentImg]?.image} alt="productImg" />
             )}
           </div>
+          <MProductImagesList
+            isModalOpen={isModalImageListOpen}
+            setIsModalOpen={() => handleModalImageList()}
+            product={product}
+            nextImg={nextImg}
+            prevImg={prevImg}
+            currentImg={currentImg}
+          />
         </div>
         <div className={styles.characteristics}>
           <h4 className={styles.characteristics__title}>
