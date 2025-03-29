@@ -6,7 +6,7 @@
 
 🖥 - Backend: Django, Django REST Framework (DRF), PostgreSQL
 
-🌐 - Frontend: React
+🌐 - Frontend: React, Redux
 
 📄 - Документація API: Swagger
 
