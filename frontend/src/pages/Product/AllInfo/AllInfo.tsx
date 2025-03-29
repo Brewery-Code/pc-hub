@@ -68,10 +68,11 @@ function AllInfo({ className, product }: IAllInfoProps) {
 
   const setImg = (index: number) => {
     setCurrentImg(index);
-    handleModalImageList();
   };
 
   const listTransform = () => {
+    if (window.innerWidth <= 767.8) return undefined;
+
     if (imageRef.current && numberOfDisplayedImages > 0) {
       if (currentImg + 2 >= numberOfDisplayedImages) {
         if (currentImg + 1 == product.images.length) {
@@ -97,51 +98,50 @@ function AllInfo({ className, product }: IAllInfoProps) {
 
   return (
     <div className={clsx(className, styles.body)}>
-      <div className={styles.left}>
-        <div className={styles.images}>
-          <div className={styles.images__container} ref={imagesViewportRef}>
-            <button className={styles.image__prev} onClick={prevImg}>
-              <ArrowBold className={styles["image__prev-icon"]} />
-            </button>
-            <div
-              className={styles.images__list}
-              style={
-                imageRef.current
-                  ? {
-                      transform: listTransform(),
-                    }
-                  : {}
-              }
-            >
-              {product.images.map((image, index) => (
-                <div key={index}>
-                  <img
-                    ref={index == 0 ? imageRef : null}
-                    src={image.image}
-                    alt="productImg"
-                    onClick={() => setImg(index)}
-                  />
-                </div>
-              ))}
-            </div>
-            <button className={styles.image__next} onClick={nextImg}>
-              <ArrowBold className={styles["image__next-icon"]} />
-            </button>
+      <div className={styles.images}>
+        <div className={styles.images__container} ref={imagesViewportRef}>
+          <button className={styles.image__prev} onClick={prevImg}>
+            <ArrowBold className={styles["image__prev-icon"]} />
+          </button>
+          <div
+            className={styles.images__list}
+            style={
+              imageRef.current
+                ? {
+                    transform: listTransform(),
+                  }
+                : {}
+            }
+          >
+            {product.images.map((image, index) => (
+              <img
+                key={index}
+                ref={index == 0 ? imageRef : null}
+                src={image.image}
+                alt="productImg"
+                onClick={() => setImg(index)}
+              />
+            ))}
           </div>
-          <div className={styles.image__main} onClick={handleModalImageList}>
-            {product.images.length > 0 && (
-              <img src={product.images[currentImg]?.image} alt="productImg" />
-            )}
-          </div>
-          <MProductImagesList
-            isModalOpen={isModalImageListOpen}
-            setIsModalOpen={() => handleModalImageList()}
-            product={product}
-            nextImg={nextImg}
-            prevImg={prevImg}
-            currentImg={currentImg}
-          />
+          <button className={styles.image__next} onClick={nextImg}>
+            <ArrowBold className={styles["image__next-icon"]} />
+          </button>
         </div>
+        <div className={styles.image__main} onClick={handleModalImageList}>
+          {product.images.length > 0 && (
+            <img src={product.images[currentImg]?.image} alt="productImg" />
+          )}
+        </div>
+        <MProductImagesList
+          isModalOpen={isModalImageListOpen}
+          setIsModalOpen={() => handleModalImageList()}
+          product={product}
+          nextImg={nextImg}
+          prevImg={prevImg}
+          currentImg={currentImg}
+        />
+      </div>
+      <div className={styles.left}>
         <div className={styles.characteristics}>
           <h4 className={styles.characteristics__title}>
             {t("characteristics.title")}
