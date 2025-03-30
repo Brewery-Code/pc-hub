@@ -320,9 +320,9 @@
     "model": "orders.deliveryoption",
     "pk": 4,
     "fields": {
-        "name": "Austin",
-        "name_en": "Austin",
-        "name_uk": "Austin",
+        "name": "Justin",
+        "name_en": "Justin",
+        "name_uk": "Justin",
         "free_from": "3000.00"
     }
 },

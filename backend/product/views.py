@@ -44,8 +44,8 @@ class CategoryView(ListAPIView):
 
     def get_queryset(self):
         """Повертає queryset підкатегорій для категорії"""
-        parent_slug = self.kwargs.get("parent_slug")
-        return Category.objects.filter(parent__slug=parent_slug).prefetch_related(
+        parent_id = self.kwargs.get("parent_id")
+        return Category.objects.filter(parent__pk=parent_id).prefetch_related(
             "children"
         )
 
@@ -133,8 +133,8 @@ class BrandFilterByCategory(APIView):
         - Доступний для всіх користувачів (AllowAny).
     """
 
-    def get(self, request, category_slug):
-        category = Category.objects.filter(slug=category_slug).first()
+    def get(self, request, category_id):
+        category = Category.objects.filter(pk=category_id).first()
 
         if category is None:
             return Response({"error": "Category not found"}, status=404)
