@@ -125,7 +125,7 @@ class Product(models.Model):
     brand = models.ForeignKey(
         Brand, related_name="products", on_delete=models.CASCADE, null=True
     )
-    varranty = models.PositiveIntegerField(default=0, verbose_name="Гарантія")
+    warranty = models.PositiveIntegerField(default=0, verbose_name="Гарантія")
     delivery_options = models.ManyToManyField(
         DeliveryOption,
         related_name="products",
