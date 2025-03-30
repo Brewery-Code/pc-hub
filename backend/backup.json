@@ -1,5 +1,37 @@
 [
 {
+    "model": "cart.cart",
+    "pk": 2,
+    "fields": {
+        "user": 10,
+        "created_at": "2025-03-27T11:32:39.841Z",
+        "updated_at": "2025-03-27T11:32:39.841Z",
+        "session_id": null,
+        "last_accessed": "2025-03-27T11:32:39.841Z"
+    }
+},
+{
+    "model": "cart.cart",
+    "pk": 3,
+    "fields": {
+        "user": null,
+        "created_at": "2025-03-27T11:34:02.211Z",
+        "updated_at": "2025-03-27T11:34:02.211Z",
+        "session_id": "j4rl01ynl0w9hm03w6bz5dsp4k1bpufq",
+        "last_accessed": "2025-03-27T11:34:02.211Z"
+    }
+},
+{
+    "model": "cart.cartitem",
+    "pk": 3,
+    "fields": {
+        "cart": 2,
+        "product": 1,
+        "quantity": 25,
+        "price": 26999.0
+    }
+},
+{
     "model": "core.partner",
     "pk": 1,
     "fields": {
@@ -303,7 +335,8 @@
         "name": "Укр-Пошта",
         "name_en": "Ukr-Poshta",
         "name_uk": "Укр-Пошта",
-        "free_from": "5000.00"
+        "free_from": "5000.00",
+        "image": "delivery-options-images/Ukrpost.svg"
     }
 },
 {
@@ -313,7 +346,8 @@
         "name": "Нова Пошта",
         "name_en": "Nova Poshta",
         "name_uk": "Нова Пошта",
-        "free_from": "6000.00"
+        "free_from": "6000.00",
+        "image": "delivery-options-images/Nova_poshta.svg"
     }
 },
 {
@@ -323,7 +357,8 @@
         "name": "Justin",
         "name_en": "Justin",
         "name_uk": "Justin",
-        "free_from": "3000.00"
+        "free_from": "3000.00",
+        "image": "delivery-options-images/Justin.svg"
     }
 },
 {
@@ -333,7 +368,19 @@
         "name": "Кур'єр",
         "name_en": "Courier",
         "name_uk": "Кур'єр",
-        "free_from": "3000.00"
+        "free_from": "3000.00",
+        "image": "delivery-options-images/Courier.svg"
+    }
+},
+{
+    "model": "orders.deliveryoption",
+    "pk": 6,
+    "fields": {
+        "name": "Самовивіз з магазину (Рівне)",
+        "name_en": "Pick-up from the store (Rivne)",
+        "name_uk": "Самовивіз з магазину (Рівне)",
+        "free_from": "0.00",
+        "image": "delivery-options-images/White___Shop___Free_Shipping.svg"
     }
 },
 {
@@ -3363,17 +3410,18 @@
         "description_uk": "Комп'ютер COBRA Advanced розроблений з прицілом на домашнє застосування та призначений для тих, хто любить та хоче відпочивати! Стінки ПК не опломбовані виробником, що дозволяє самостійно проводити модернізацію ПК та його профілактику! Також Комп'ютер COBRA Advanced легко впорається з роллю справжнього робочого інструменту, захоплених програмуванням, редагуванням фото та відео матеріалів, перекладами текстів, створенням музики та іншою творчістю. Комп'ютер оснащений процесором 10 покоління Intel Core i5-10400F, побудований на базі материнської плати з чипсетом H410. У ПК встановлено 16 ГБ оперативної пам'яті, для операційної системи та ігор - SSD 480 ГБ для зберігання даних, а у зв'язці з дискретною графікою GeForce RTX 3050 цей ПК є чудовим інструментом для сучасних ігор у високій роздільній здатності, продуктивної роботи та домашніх розваг. ПК обладнаний БЖ 600 Вт. Професійне складання Комп'ютера COBRA забезпечить оптимальний повітряний потік усередині корпусу, а отже, і чудове охолодження всіх компонентів ПК.",
         "price": 26999.0,
         "stock_quantity": 6,
-        "discount": 5,
+        "discounted_price": 24999,
         "rating": 0.0,
         "created_at": "2025-03-27T08:44:24.822Z",
-        "updated_at": "2025-03-27T08:45:52.003Z",
+        "updated_at": "2025-03-30T11:08:40.573Z",
         "brand": 52,
-        "varranty": 12,
+        "warranty": 12,
         "delivery_options": [
             2,
             3,
             4,
-            5
+            5,
+            6
         ]
     }
 },
@@ -4187,6 +4235,25 @@
         "photo": "avatars/default.png",
         "created_at": "2025-03-16T10:16:58.314Z",
         "last_login": "2025-03-16T10:16:58.315Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$f47iPWn0ybb7D4CG8QB5p8$YFKAOzvfjSIaz33q1TTbQMTT3ar+2Tb4IXlusuQizVI=",
+        "email": "parkhomchuk1000@gmail.com",
+        "name": "parkhomchuk Vitalii",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-03-27T11:32:39.819Z",
+        "last_login": "2025-03-27T11:32:39.819Z",
         "is_active": true,
         "is_staff": false,
         "is_superuser": false,
