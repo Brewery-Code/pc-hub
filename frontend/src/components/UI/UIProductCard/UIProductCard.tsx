@@ -16,7 +16,7 @@ interface IUIProductCardProps {
 
 function UIProductCard({ product, className, type }: IUIProductCardProps) {
   const price = () => {
-    if (product.discounted_price !== product.price) {
+    if (product.discounted_price != 0) {
       return (
         <div className={styles.discount}>
           <div className={styles["discount__common-price"]}>
