@@ -7,4 +7,4 @@ class DeliveryOptionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = DeliveryOption
-        fields = ["name", "free_from"]
+        fields = ["name", "free_from", "image"]

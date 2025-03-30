@@ -114,10 +114,10 @@ class Product(models.Model):
     stock_quantity = models.PositiveIntegerField(
         default=0, verbose_name="Кількість на складі"
     )
-    discount = models.PositiveIntegerField(
+    discounted_price = models.PositiveIntegerField(
         default=0,
-        verbose_name="Знижка (%)",
-        help_text="Введіть знижку у відсотках (0-100)",
+        verbose_name="Знижка",
+        help_text="Введіть ціну з урахуванням знижки",
     )
     rating = models.FloatField(default=0.0, verbose_name="Рейтинг")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
@@ -145,13 +145,6 @@ class Product(models.Model):
         """Перевірка чи товар новий"""
         return now() - self.created_at <= timedelta(days=7)
 
-    @property
-    def discounted_price(self) -> float:
-        """Розрахунок вартості товару з урахуванням знижки"""
-        if self.discount > 0:
-            return self.price * (1 - self.discount / 100)
-        return self.price
-
     def generate_random_string(length=8):
         """Генерує випадковий набір символів та чисел"""
         return "".join(random.choices(string.ascii_lowercase + string.digits, k=length))
@@ -166,6 +159,9 @@ class Product(models.Model):
                 slug = f"{base_slug}-{self.generate_random_string()}"
             self.slug = slug
         super().save(*args, **kwargs)
+
+    def get_rounded_price(self):
+        return round(self.price)
 
     class Meta:
         verbose_name = "Товар"

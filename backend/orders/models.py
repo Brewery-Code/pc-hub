@@ -13,6 +13,12 @@ class DeliveryOption(models.Model):
     free_from = models.DecimalField(
         max_digits=10, decimal_places=2, null=True, blank=True
     )
+    image = models.FileField(
+        upload_to="delivery-options-images/",
+        verbose_name="Іконка доставки",
+        null=True,
+        blank=True,
+    )
 
     def __str__(self):
         return self.name
