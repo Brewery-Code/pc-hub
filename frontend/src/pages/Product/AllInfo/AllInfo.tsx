@@ -25,9 +25,10 @@ import { MProductImagesList } from "../../../components/Modals";
 interface IAllInfoProps {
   product: IProduct;
   className?: string;
+  handleSection: (section: string) => () => void;
 }
 
-function AllInfo({ className, product }: IAllInfoProps) {
+function AllInfo({ className, product, handleSection }: IAllInfoProps) {
   const { t } = useTranslation("product");
 
   const imagesViewportRef = useRef<HTMLDivElement>(null);
@@ -70,6 +71,26 @@ function AllInfo({ className, product }: IAllInfoProps) {
     setCurrentImg(index);
   };
 
+  const imgSliderState = useRef({ startX: 0, currentX: 0 });
+
+  const handleTouchStart: React.TouchEventHandler<HTMLDivElement> = (e) => {
+    imgSliderState.current.startX = e.touches[0].clientX;
+  };
+
+  const handleTouchMove: React.TouchEventHandler<HTMLDivElement> = (e) => {
+    imgSliderState.current.currentX = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const deltaX =
+      imgSliderState.current.currentX - imgSliderState.current.startX;
+    if (deltaX > 40 && currentImg > 0) {
+      prevImg();
+    } else if (deltaX < -40 && currentImg < product.images.length - 1) {
+      nextImg();
+    }
+  };
+
   const listTransform = () => {
     if (window.innerWidth <= 767.8) return undefined;
 
@@ -94,6 +115,18 @@ function AllInfo({ className, product }: IAllInfoProps) {
   const [isModalImageListOpen, setIsModalImageListOpen] = useState(false);
   const handleModalImageList = () => {
     setIsModalImageListOpen((prev) => !prev);
+  };
+
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+  const handleDescription = () => {
+    setIsDescriptionOpen((prev) => !prev);
+  };
+
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const getScrollHeight = () => {
+    if (descriptionRef.current) {
+      return descriptionRef.current.scrollHeight;
+    }
   };
 
   return (
@@ -127,7 +160,13 @@ function AllInfo({ className, product }: IAllInfoProps) {
             <ArrowBold className={styles["image__next-icon"]} />
           </button>
         </div>
-        <div className={styles.image__main} onClick={handleModalImageList}>
+        <div
+          className={styles.image__main}
+          onClick={handleModalImageList}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           {product.images.length > 0 && (
             <img src={product.images[currentImg]?.image} alt="productImg" />
           )}
@@ -139,6 +178,9 @@ function AllInfo({ className, product }: IAllInfoProps) {
           nextImg={nextImg}
           prevImg={prevImg}
           currentImg={currentImg}
+          handleTouchEnd={handleTouchEnd}
+          handleTouchMove={handleTouchMove}
+          handleTouchStart={handleTouchStart}
         />
       </div>
       <div className={styles.left}>
@@ -154,7 +196,10 @@ function AllInfo({ className, product }: IAllInfoProps) {
               </li>
             ))}
           </ul>
-          <button className={styles["characteristics__show-all"]}>
+          <button
+            className={styles["characteristics__show-all"]}
+            onClick={handleSection("Characteristics")}
+          >
             {t("characteristics.showAll")}
             <ArrowCommon
               className={styles["characteristics__show-all-arrow"]}
@@ -164,10 +209,26 @@ function AllInfo({ className, product }: IAllInfoProps) {
             <h4 className={styles.description__title}>
               {t("description.title")}
             </h4>
-            <p className={styles.description__text}>{product.description}</p>
-            <button className={styles.description__more}>
+            <p
+              className={styles.description__text}
+              ref={descriptionRef}
+              style={{
+                maxHeight: isDescriptionOpen ? `${getScrollHeight()}px` : "",
+              }}
+            >
+              {product.description}
+            </p>
+            <button
+              className={styles.description__more}
+              onClick={handleDescription}
+            >
               {t("description.showAll")}
-              <ArrowBold className={styles["description__more-arrow"]} />
+              <ArrowBold
+                className={clsx(
+                  styles["description__more-arrow"],
+                  isDescriptionOpen && styles["description__more-arrow_active"],
+                )}
+              />
             </button>
           </div>
         </div>
@@ -185,7 +246,12 @@ function AllInfo({ className, product }: IAllInfoProps) {
             <LikeIcon className={styles["head__like-icon"]} />
           </div>
         </div>
-        <div className={styles.buy}>
+        <div
+          className={styles.buy}
+          style={{
+            paddingTop: product.discounted_price != 0 ? `${28}px` : "",
+          }}
+        >
           <div
             className={clsx(
               styles.buy__price,
@@ -193,7 +259,7 @@ function AllInfo({ className, product }: IAllInfoProps) {
             )}
           >
             {product.discounted_price != 0 && (
-              <div className={styles.buy__price_common}>
+              <div className={styles.buy__price_old}>
                 <span>{product.price}</span>
                 <span>{t("buy.uah")}</span>
               </div>

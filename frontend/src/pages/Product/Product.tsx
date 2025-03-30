@@ -36,7 +36,11 @@ function Product() {
             activeSection={activeSection}
           />
           {activeSection === "AllProducts" && (
-            <AllInfo className={styles.product__body} product={product} />
+            <AllInfo
+              className={styles.product__body}
+              product={product}
+              handleSection={handleSection}
+            />
           )}
           {activeSection === "Characteristics" && (
             <Characteristics product={product} />

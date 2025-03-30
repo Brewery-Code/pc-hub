@@ -7,16 +7,18 @@ import {
 import { UIButton } from "../../../components/UI";
 import styles from "./ProductSmall.module.css";
 import { useTranslation } from "react-i18next";
+import clsx from "clsx";
 
 interface IProductSmallProps {
   product: IProduct;
+  className?: string;
 }
 
-function ProductSmall({ product }: IProductSmallProps) {
+function ProductSmall({ product, className }: IProductSmallProps) {
   const { t } = useTranslation("product");
 
   return (
-    <div className={styles.product}>
+    <div className={clsx(styles.product, className)}>
       <div className={styles.product__head}>
         <img
           className={styles.product__image}

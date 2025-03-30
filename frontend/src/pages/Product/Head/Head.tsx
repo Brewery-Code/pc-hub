@@ -18,21 +18,29 @@ function Head({
   activeSection,
 }: IHeadProps) {
   const { t } = useTranslation("product");
+
+  const productCode = (className: string) => {
+    return (
+      <div className={clsx(styles.head__code, className)}>
+        <div className={styles["head__code-text"]}>
+          {t("head.productCode")}: {product.id}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className={clsx(className, styles.head)}>
       <div className={styles.head__row}>
         <h3 className={styles.head__name}>{product.name}</h3>
-        <div className={styles.head__code}>
-          <div className={styles["head__code-text"]}>
-            {t("head.productCode")}: {product.id}
-          </div>
-        </div>
+        {productCode("only-desktop")}
       </div>
       <div className={styles.head__rating}>
-        <UIRatingStars rating={product.rating} />
+        <UIRatingStars rating={product.rating} starSize="16px" />
         <div className={styles.head__reviews}>
           {t("head.reviews")}: {product.rating}
         </div>
+        {productCode("only-mobile")}
       </div>
       <ul className={styles.navigation}>
         <li

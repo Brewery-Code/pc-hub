@@ -1,10 +1,11 @@
 import { createPortal } from "react-dom";
-import { UIButton, UIModalBody } from "../../UI";
+import { UIButton, UICross, UIModalBody } from "../../UI";
 import styles from "./MProductImagesList.module.css";
 import { IProduct } from "../../../store/product/product.slice";
 import { ArrowThin } from "../../../assets/icons";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
+import { TouchEventHandler } from "react";
 
 interface MProductImagesListProps {
   isModalOpen: boolean;
@@ -13,6 +14,9 @@ interface MProductImagesListProps {
   nextImg: () => void;
   prevImg: () => void;
   currentImg: number;
+  handleTouchStart: TouchEventHandler<HTMLDivElement>;
+  handleTouchMove: TouchEventHandler<HTMLDivElement>;
+  handleTouchEnd: () => void;
 }
 
 function MProductImagesList({
@@ -22,6 +26,9 @@ function MProductImagesList({
   nextImg,
   prevImg,
   currentImg,
+  handleTouchEnd,
+  handleTouchMove,
+  handleTouchStart,
 }: MProductImagesListProps) {
   const { t } = useTranslation("product");
   return createPortal(
@@ -31,12 +38,18 @@ function MProductImagesList({
       className={styles.modal}
     >
       <div className={styles.modal__body}>
+        <UICross className={styles.modal__close} closeMenu={setIsModalOpen} />
         <h6 className={styles.modal__title}>{product.name}</h6>
         <div className={styles.list}>
           <button className={styles.list__prev} onClick={prevImg}>
             <ArrowThin />
           </button>
-          <div className={styles.list__container}>
+          <div
+            className={styles.list__container}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div
               className={styles.list__body}
               style={{

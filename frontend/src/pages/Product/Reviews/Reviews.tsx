@@ -5,6 +5,7 @@ import styles from "./Reviews.module.css";
 import { UIButton, UIRatingStars } from "../../../components/UI";
 import reviewerIcon from "../../../assets/img/avatar1.png";
 import { CartIcon, CommentIcon, LikeFingerIcon } from "../../../assets/icons";
+import clsx from "clsx";
 
 interface IReviewsProps {
   product: IProduct;
@@ -32,12 +33,17 @@ function Reviews({ product }: IReviewsProps) {
         <ul className={styles.reviews__list}>
           <li className={styles.review}>
             <img
-              className={styles.review__icon}
+              className={clsx(styles.review__icon, "only-desktop")}
               src={reviewerIcon}
               alt="reviewerIcon"
             />
             <div className={styles.review__body}>
               <div className={styles.review__head}>
+                <img
+                  className={clsx(styles.review__icon, "only-mobile")}
+                  src={reviewerIcon}
+                  alt="reviewerIcon"
+                />
                 <div className={styles.review__name}>Сергійко</div>
                 <div className={styles["review__is-bought"]}>
                   <CartIcon className={styles["review__cart-icon"]} />
@@ -126,7 +132,7 @@ function Reviews({ product }: IReviewsProps) {
           </li>
         </ul>
       </div>
-      <ProductSmall product={product} />
+      <ProductSmall product={product} className="only-desktop" />
     </div>
   );
 }

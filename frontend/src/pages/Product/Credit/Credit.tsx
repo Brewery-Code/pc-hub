@@ -36,7 +36,7 @@ function Credit({ product }: ICreditProps) {
       deadlineRef: useRef<HTMLUListElement>(null),
       isConditionMenuOpen: false,
       isDeadlineMenuOpen: false,
-      name: "privatebank",
+      name: "privateBank",
       conditions: "Оплата частинами",
       deadline: 3,
       icon: <PrivateBankIcon className={styles.bank__icon} />,
@@ -46,7 +46,7 @@ function Credit({ product }: ICreditProps) {
       deadlineRef: useRef<HTMLUListElement>(null),
       isConditionMenuOpen: false,
       isDeadlineMenuOpen: false,
-      name: "mono",
+      name: "monobank",
       conditions: "Оплата частинами",
       deadline: 3,
       icon: <MonobankIcon className={styles.bank__icon} />,
@@ -91,153 +91,166 @@ function Credit({ product }: ICreditProps) {
         <h4 className={styles.credit__title}>{t("credit.title")}</h4>
         <ul className={styles.credit__list}>
           {banksList.map((bank) => (
-            <li className={styles.credit__item} key={bank.name}>
-              <div className={styles.bank}>
-                <div className={styles.credit__subtitle}>
-                  {t("credit.creditor")}
-                </div>
-                <div className={styles.bank__logo}>
-                  {bank.icon}
-                  <div className={styles.bank__name}>
-                    {t(`credit.${bank.name}`)}
+            <>
+              <li className={styles.credit__item} key={bank.name}>
+                <div className={styles.bank}>
+                  <div className={styles.credit__subtitle}>
+                    {t("credit.creditor")}
+                  </div>
+                  <div className={styles.bank__logo}>
+                    {bank.icon}
+                    <div className={styles.bank__name}>
+                      {t(`credit.${bank.name}`)}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.conditions}>
-                <div className={styles.credit__subtitle}>
-                  {t("credit.conditions")}
-                </div>
-                <div className={styles.menu}>
-                  <div
-                    className={styles.menu__active}
-                    onClick={() =>
-                      handleBank(bank.name, !bank.isConditionMenuOpen)
-                    }
-                  >
-                    {bank.conditions}
-                    <ArrowBold className={styles.menu__arrow} />
+                <button className={clsx(styles.credit__more, "only-mobile")}>
+                  {t("credit.termsAndConditions")}
+                </button>
+                <div className={styles.conditions}>
+                  <div className={styles.credit__subtitle}>
+                    {t("credit.conditions")}
                   </div>
-                  <ul
-                    className={clsx(
-                      styles.menu__list,
-                      bank.isConditionMenuOpen && styles.menu__list_active,
-                    )}
-                    ref={bank.conditionRef}
-                    style={{
-                      maxHeight: bank.isConditionMenuOpen ? `${100}px` : "0px",
-                    }}
-                  >
-                    {bank.conditions !== t("credit.paymentInInstallments") && (
-                      <li
-                        className={styles.menu__item}
-                        onClick={() =>
-                          handleBank(
-                            bank.name,
-                            false,
-                            undefined,
-                            t("credit.paymentInInstallments"),
-                          )
-                        }
-                      >
-                        {t("credit.paymentInInstallments")}
-                      </li>
-                    )}
-                    {bank.conditions !== t("credit.commonCredit") && (
-                      <li
-                        className={styles.menu__item}
-                        onClick={() =>
-                          handleBank(
-                            bank.name,
-                            false,
-                            undefined,
-                            t("credit.commonCredit"),
-                          )
-                        }
-                      >
-                        {t("credit.commonCredit")}
-                      </li>
-                    )}
-                  </ul>
-                </div>
-              </div>
-              <div className={styles.deadline}>
-                <div className={styles.credit__subtitle}>
-                  {t("credit.deadline")}
-                </div>
-                <div className={styles.menu}>
-                  <div
-                    className={styles.menu__active}
-                    onClick={() =>
-                      handleBank(bank.name, undefined, !bank.isDeadlineMenuOpen)
-                    }
-                  >
-                    {bank.deadline} {t("credit.month")}
-                    <ArrowBold className={styles.menu__arrow} />
-                  </div>
-                  <ul
-                    className={clsx(
-                      styles.menu__list,
-                      bank.isDeadlineMenuOpen && styles.menu__list_active,
-                    )}
-                    ref={bank.deadlineRef}
-                    style={{
-                      maxHeight: bank.isDeadlineMenuOpen ? `${100}px` : "0px",
-                    }}
-                  >
-                    {[3, 6, 9, 12].map((month) =>
-                      bank.deadline !== month ? (
+                  <div className={styles.menu}>
+                    <div
+                      className={styles.menu__active}
+                      onClick={() =>
+                        handleBank(bank.name, !bank.isConditionMenuOpen)
+                      }
+                    >
+                      {bank.conditions}
+                      <ArrowBold className={styles.menu__arrow} />
+                    </div>
+                    <ul
+                      className={clsx(
+                        styles.menu__list,
+                        bank.isConditionMenuOpen && styles.menu__list_active,
+                      )}
+                      ref={bank.conditionRef}
+                      style={{
+                        maxHeight: bank.isConditionMenuOpen
+                          ? `${100}px`
+                          : "0px",
+                      }}
+                    >
+                      {bank.conditions !==
+                        t("credit.paymentInInstallments") && (
                         <li
-                          key={month}
                           className={styles.menu__item}
                           onClick={() =>
                             handleBank(
                               bank.name,
-                              undefined,
                               false,
                               undefined,
-                              month,
+                              t("credit.paymentInInstallments"),
                             )
                           }
                         >
-                          {month} {t("credit.month")}
+                          {t("credit.paymentInInstallments")}
                         </li>
-                      ) : null,
-                    )}
-                  </ul>
+                      )}
+                      {bank.conditions !== t("credit.commonCredit") && (
+                        <li
+                          className={styles.menu__item}
+                          onClick={() =>
+                            handleBank(
+                              bank.name,
+                              false,
+                              undefined,
+                              t("credit.commonCredit"),
+                            )
+                          }
+                        >
+                          {t("credit.commonCredit")}
+                        </li>
+                      )}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className={styles.installment}>
-                <div className={styles.credit__subtitle}>
-                  {t("credit.installment")}
+                <div className={styles.deadline}>
+                  <div className={styles.credit__subtitle}>
+                    {t("credit.deadline")}
+                  </div>
+                  <div className={styles.menu}>
+                    <div
+                      className={styles.menu__active}
+                      onClick={() =>
+                        handleBank(
+                          bank.name,
+                          undefined,
+                          !bank.isDeadlineMenuOpen,
+                        )
+                      }
+                    >
+                      {bank.deadline} {t("credit.month")}
+                      <ArrowBold className={styles.menu__arrow} />
+                    </div>
+                    <ul
+                      className={clsx(
+                        styles.menu__list,
+                        bank.isDeadlineMenuOpen && styles.menu__list_active,
+                      )}
+                      ref={bank.deadlineRef}
+                      style={{
+                        maxHeight: bank.isDeadlineMenuOpen ? `${100}px` : "0px",
+                      }}
+                    >
+                      {[3, 6, 9, 12].map((month) =>
+                        bank.deadline !== month ? (
+                          <li
+                            key={month}
+                            className={styles.menu__item}
+                            onClick={() =>
+                              handleBank(
+                                bank.name,
+                                undefined,
+                                false,
+                                undefined,
+                                month,
+                              )
+                            }
+                          >
+                            {month} {t("credit.month")}
+                          </li>
+                        ) : null,
+                      )}
+                    </ul>
+                  </div>
                 </div>
-                <div className={styles.installment__amount}>
-                  0 {t("credit.currency")}
+                <div className={styles.installment}>
+                  <div className={styles.credit__subtitle}>
+                    {t("credit.installment")}
+                  </div>
+                  <div className={styles.installment__amount}>
+                    0 {t("credit.currency")}
+                  </div>
                 </div>
-              </div>
-              <div className={styles.monthly}>
-                <div className={styles.credit__subtitle}>
-                  {t("credit.installment")}
+                <div className={styles.monthly}>
+                  <div className={styles.credit__subtitle}>
+                    {t("credit.installment")}
+                  </div>
+                  <div className={styles.monthly__amount}>
+                    {Math.round(product.price / bank.deadline)}{" "}
+                    {t("credit.currency")}
+                  </div>
                 </div>
-                <div className={styles.monthly__amount}>
-                  {Math.round(product.price / bank.deadline)}{" "}
-                  {t("credit.currency")}
-                </div>
-              </div>
-              <UIButton
-                color="primary"
-                style="filled"
-                className={styles.credit__buy}
-              >
-                {t("credit.buy")}
-              </UIButton>
-              <button className={styles.credit__more}>
-                {t("credit.termsAndConditions")}
-              </button>
-            </li>
+                <UIButton
+                  color="primary"
+                  style="filled"
+                  className={styles.credit__buy}
+                >
+                  {t("credit.buy")}
+                </UIButton>
+                <button className={clsx(styles.credit__more, "only-desktop")}>
+                  {t("credit.termsAndConditions")}
+                </button>
+              </li>
+              <div className={styles.credit__line}></div>
+            </>
           ))}
         </ul>
       </div>
-      <ProductSmall product={product} />
+      <ProductSmall product={product} className={styles.credit__product} />
     </div>
   );
 }

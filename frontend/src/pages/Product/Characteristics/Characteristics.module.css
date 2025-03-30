@@ -29,3 +29,27 @@
 .characteristics__item:nth-child(odd) {
   background-color: var(--soft);
 }
+
+.product__warning {
+  margin-top: 24px;
+  color: var(--dark-grey);
+  font-size: 14px;
+  line-height: 142%;
+}
+
+@media (max-width: 767.8px) {
+  .characteristics {
+    grid-template-columns: 1fr;
+  }
+
+  .characteristics__title {
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  .product__warning {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 133%;
+  }
+}

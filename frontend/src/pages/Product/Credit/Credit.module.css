@@ -124,6 +124,10 @@
   padding: 2px 0;
 }
 
+.bank__logo svg {
+  width: 32px;
+}
+
 .bank__name {
   color: var(--dark-grey);
   font-size: 12px;
@@ -148,6 +152,10 @@
   margin-top: auto;
   display: flex;
   padding: 13px 4px;
+  color: var(--soft);
+  font-size: 10px;
+  line-height: 100%;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -155,4 +163,49 @@
   display: flex;
   height: 1px;
   background-color: var(--grey-scale-10);
+}
+
+@media (max-width: 1200px) {
+  .credit {
+    grid-template-columns: 1fr;
+  }
+
+  .credit__product {
+    display: none;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .credit__block {
+    overflow-x: scroll;
+  }
+
+  .credit__title {
+    font-size: 18px;
+    line-height: 133%;
+    font-weight: 600;
+  }
+
+  .credit__list {
+    overflow-x: scroll;
+    flex-direction: row;
+    gap: 0;
+    margin-top: 12px;
+  }
+
+  .credit__item {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 13px;
+    border-left: 1px solid var(--grey-scale-10);
+  }
+
+  .credit__item:last-of-type {
+    border-right: 1px solid var(--grey-scale-10);
+  }
+
+  .credit__buy {
+    padding: 13px 41px;
+    text-wrap: nowrap;
+  }
 }

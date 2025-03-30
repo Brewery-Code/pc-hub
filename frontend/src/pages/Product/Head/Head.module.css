@@ -29,14 +29,16 @@
 
 .head__rating {
   display: flex;
+  align-items: center;
   gap: 12px;
   margin-top: 12px;
 }
 
 .head__reviews {
+  color: var(--grey-scale-40);
   font-size: 12px;
   line-height: 133%;
-  color: var(--grey-scale-40);
+  font-weight: 500;
 }
 
 .navigation {
@@ -77,4 +79,18 @@
   width: 100%;
   height: 1px;
   background-color: var(--action-secondary);
+}
+
+@media (max-width: 767.8px) {
+  .head__name {
+    font-size: 24px;
+    line-height: 116%;
+  }
+
+  .head__code {
+    height: auto;
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 133%;
+  }
 }

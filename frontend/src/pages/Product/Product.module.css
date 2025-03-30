@@ -10,3 +10,9 @@
   /* position: relative; */
   margin-top: 24px;
 }
+
+@media (max-width: 767.8px) {
+  .product__head {
+    margin-top: 24px;
+  }
+}

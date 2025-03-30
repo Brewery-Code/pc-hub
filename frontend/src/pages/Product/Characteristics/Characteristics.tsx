@@ -24,7 +24,7 @@ function Characteristics({ product }: ICharacteristicsProps) {
           ))}
         </ul>
       </div>
-      <ProductSmall product={product} />
+      <ProductSmall product={product} className={"only-desktop"} />
       <div className={styles.product__warning}>
         {t("characteristicsSection.warning")}
       </div>
