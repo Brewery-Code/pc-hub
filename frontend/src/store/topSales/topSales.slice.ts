@@ -17,6 +17,7 @@ const fetchTopSales = createAsyncThunk("topSales/fetchTopSales", async () => {
 
 interface IProduct {
   id: number;
+  slug: string;
   name: string;
   price: number;
   discounted_price: number;

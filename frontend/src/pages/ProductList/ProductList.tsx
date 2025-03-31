@@ -4,11 +4,11 @@ import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./ProductList.module.css";
 import { fetchProductList } from "../../store/productList/productList.slice";
 import { useEffect } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 
 function ProductList() {
-  const { productList: category } = useParams();
   const [searchParams] = useSearchParams();
+  const category = searchParams.get("category") || "";
   const page = searchParams.get("page") || "1";
   const length = searchParams.get("length") || "1";
   const dispatch = useAppDispatch();

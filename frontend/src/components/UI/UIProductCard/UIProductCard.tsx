@@ -45,12 +45,11 @@ function UIProductCard({ product, className, type }: IUIProductCardProps) {
 
   const { t } = useTranslation("components");
 
-  const location = useLocation();
-
   return (
     <Link
       key="1"
-      to={`${location.pathname}/${product.id}`}
+      to={`/products/${product.slug}`}
+      state={{ id: product.id }}
       className={clsx(
         styles.card,
         className,

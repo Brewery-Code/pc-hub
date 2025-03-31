@@ -3,7 +3,7 @@ import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./Product.module.css";
 import { useEffect, useState } from "react";
 import { fetchProduct } from "../../store/product/product.slice";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
 import Head from "./Head/Head";
 import AllInfo from "./AllInfo/AllInfo";
@@ -12,12 +12,15 @@ import Reviews from "./Reviews/Reviews";
 import Credit from "./Credit/Credit";
 
 function Product() {
-  const { product: id } = useParams();
+  const location = useLocation();
+  const state = location.state;
+  const id = state.id.toString();
   const dispatch = useAppDispatch();
   const { status, product } = useSelector((state: RootState) => state.product);
   useEffect(() => {
     if (status === "idle") {
-      if (id) dispatch(fetchProduct({ id }));
+      console.log(id);
+      if (id) dispatch(fetchProduct(id));
     }
   }, [dispatch, status, id]);
 

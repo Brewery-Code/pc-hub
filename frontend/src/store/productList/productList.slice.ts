@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
+import { IProduct } from "../types";
 
 const fetchProductList = createAsyncThunk(
   "productList/fetchProductList",
@@ -31,17 +32,6 @@ const fetchProductList = createAsyncThunk(
     return { data, category, lengthInt };
   },
 );
-
-interface IProduct {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  discounted_price: number;
-  rating: number;
-  main_image: string;
-  is_new: boolean;
-}
 
 interface IProductListState {
   productList: IProduct[];

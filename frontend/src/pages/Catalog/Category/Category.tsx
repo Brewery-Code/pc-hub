@@ -16,9 +16,7 @@ function Category({ category, isCatalog }: ICategoryProps) {
   return (
     <Link
       to={
-        isCatalog
-          ? `/home/catalog/${category.slug}`
-          : `/home/catalog/${categoryParam}/${category.slug}`
+        isCatalog ? `${category.slug}/` : `/products?category=${category.slug}`
       }
     >
       <div className={styles.category}>

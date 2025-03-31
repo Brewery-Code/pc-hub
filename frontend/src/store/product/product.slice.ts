@@ -1,9 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
+import { IProduct } from "../types";
 
 const fetchProduct = createAsyncThunk(
   "product/fetchProduct",
-  async ({ id }: { id: string }) => {
+  async (id: string) => {
+    console.log(id);
     const response = await fetch(
       `${import.meta.env.VITE_API_BASE_URL}/products/${id}`,
       {
@@ -17,39 +19,6 @@ const fetchProduct = createAsyncThunk(
     return data;
   },
 );
-
-interface IAttribute {
-  attribute_name: string;
-  value: string;
-}
-
-interface IImages {
-  image: string;
-}
-
-interface IDelivery_options {
-  name: string;
-  free_from: string;
-}
-
-interface IProduct {
-  id: string;
-  name: string;
-  slug: string;
-  brand: string;
-  category: string;
-  description: string;
-  price: number;
-  discounted_price: number;
-  rating: number;
-  attributes: IAttribute[];
-  images: IImages[];
-  is_new: boolean;
-  is_stock: boolean;
-  warranty: number;
-  estimated_shipping_time: string;
-  delivery_options: IDelivery_options[];
-}
 
 interface IProductState {
   product: IProduct;

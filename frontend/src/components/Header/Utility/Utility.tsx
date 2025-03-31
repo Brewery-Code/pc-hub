@@ -25,7 +25,7 @@ function Utility() {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate("home");
+    navigate("/");
   };
 
   const { t } = useTranslation("components");
@@ -40,7 +40,7 @@ function Utility() {
               isIconSmall={screenWidth < 1124 || screenWidth < 767.8}
             />
           </div>
-          <Link to="/home/catalog">
+          <Link to="/catalog/">
             <UIButton
               className={styles["utility__catalog-button"]}
               color="primary"
