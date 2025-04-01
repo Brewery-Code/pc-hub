@@ -6,5 +6,17 @@
     "cart": "Кошик",
     "comparison": "Порівняння",
     "likes": "Вподобання"
+  },
+  "signIn": {},
+  "signUp": {
+    "title": "Реєстрація",
+    "inputPhone": "Ваш номер телефону",
+    "inputPassword": "Пароль",
+    "register": "Зареєструватись",
+    "termsAndConditions": "умовами користувача",
+    "agreement": "Реєструючись ви погоджуєтесь з",
+    "otherRegisterWays": "Або зареєструйтесь використовуючи",
+    "alreadyRegistered": "Вже зареєстровані",
+    "signIn": "Вхід"
   }
 }

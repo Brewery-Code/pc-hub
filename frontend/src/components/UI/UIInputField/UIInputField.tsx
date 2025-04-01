@@ -12,6 +12,7 @@ interface UIInputFieldProps {
   size?: "m" | "s";
   isError?: boolean;
   isWidth?: boolean;
+  children?: React.ReactNode;
 }
 
 function UIInputField({
@@ -25,6 +26,7 @@ function UIInputField({
   size,
   isError,
   isWidth,
+  children,
 }: UIInputFieldProps) {
   return (
     <input
@@ -41,7 +43,9 @@ function UIInputField({
       name={name}
       placeholder={placeholder}
       required={required}
-    />
+    >
+      {children}
+    </input>
   );
 }
 

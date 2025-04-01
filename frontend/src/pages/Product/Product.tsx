@@ -3,7 +3,7 @@ import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./Product.module.css";
 import { useEffect, useState } from "react";
 import { fetchProduct } from "../../store/product/product.slice";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
 import Head from "./Head/Head";
 import AllInfo from "./AllInfo/AllInfo";

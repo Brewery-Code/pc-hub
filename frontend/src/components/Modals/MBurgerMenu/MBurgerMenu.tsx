@@ -1,7 +1,11 @@
 import { createPortal } from "react-dom";
-import styles from "./MBurgerMenu.module.css";
-import { UIChangeLanguage, UICross, UIModalBody } from "../../UI";
+import { useTranslation } from "react-i18next";
 import clsx from "clsx";
+import Register from "./Register/Register";
+import Accordions from "./Accordions/Accordions";
+import Contacts from "./Contacts/Contacts";
+import Social from "./Social/Social";
+import { UIChangeLanguage, UICross, UIModalBody } from "../../UI";
 import {
   CartIcon,
   CatalogIcon,
@@ -9,11 +13,7 @@ import {
   LikeIcon,
   LogoIcon,
 } from "../../../assets/icons";
-import Register from "./Register/Register";
-import Accordions from "./Accordions/Accordions";
-import Contacts from "./Contacts/Contacts";
-import Social from "./Social/Social";
-import { useTranslation } from "react-i18next";
+import styles from "./MBurgerMenu.module.css";
 
 interface IBurgerMenuProps {
   isBurgerMenuOpen: boolean;

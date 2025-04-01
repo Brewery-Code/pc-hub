@@ -6,5 +6,17 @@
     "cart": "Cart",
     "comparison": "Comparison",
     "likes": "Likes"
+  },
+  "signIn": {},
+  "signUp": {
+    "title": "Registration",
+    "inputPhone": "Your phone number",
+    "inputPassword": "Password",
+    "register": "Register",
+    "termsAndConditions": "User terms and conditions",
+    "agreement": "By registering you agree to the",
+    "otherRegisterWays": "Or register using",
+    "alreadyRegistered": "Already registered",
+    "signIn": "Sign in"
   }
 }

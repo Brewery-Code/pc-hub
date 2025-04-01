@@ -7,6 +7,7 @@ import { productListSlice } from "./productList/productList.slice";
 import { partnersSlice } from "./partners/partners.slice";
 import { newsSlice } from "./news/news.slice";
 import { productSlice } from "./product/product.slice";
+import { siteReviewsSlice } from "./siteReviews/siteReviews";
 
 const store = configureStore({
   reducer: {
@@ -17,6 +18,7 @@ const store = configureStore({
     partners: partnersSlice.reducer,
     news: newsSlice.reducer,
     product: productSlice.reducer,
+    siteReview: siteReviewsSlice.reducer,
   },
 });
 
