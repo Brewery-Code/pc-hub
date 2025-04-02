@@ -146,6 +146,20 @@ class ProductAttributeAdmin(admin.ModelAdmin):
     list_per_page = 20
 
 
+@admin.register(CategoryAttribute)
+class CategoryAttributeAdmin(admin.ModelAdmin):
+    """Адмін-інтерфейс для атрибутів категорії"""
+
+    list_display = ("display_categories", "attribute", "is_filterable")
+    list_filter = ("attribute", "category")
+    search_fields = ("attribute__name", "category__name")
+
+    def display_categories(self, obj):
+        return ", ".join([category.name for category in obj.category.all()])
+
+    display_categories.short_description = "Категорії"
+
+
 @admin.register(ProductImage)
 class ProductImageAdmin(admin.ModelAdmin):
     """Адмін-інтерфейс для керування зображеннями товарів"""

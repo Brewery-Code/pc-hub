@@ -1,5 +1,6 @@
 from datetime import timedelta
 import random
+from unicodedata import category
 from django.utils.timezone import now
 from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
@@ -232,6 +233,26 @@ class ProductAttribute(models.Model):
             models.Index(fields=["product"]),
             models.Index(fields=["attribute"]),
         ]
+
+
+class CategoryAttribute(models.Model):
+    category = models.ManyToManyField(
+        Category, related_name="attributes", verbose_name="Категорія"
+    )
+    attribute = models.ForeignKey(
+        Attribute, on_delete=models.CASCADE, verbose_name="Атрибут"
+    )
+    is_filterable = models.BooleanField(
+        default=True, verbose_name="Доступний для фільтрів"
+    )
+
+    class Meta:
+        verbose_name = "Атрибут категорії"
+        verbose_name_plural = "Атрибути категорій"
+        db_table = "CategoryAttribute"
+
+    def __str__(self):
+        return f"{', '.join([cat.name for cat in self.category.all()])} - {self.attribute.name}"
 
 
 class ProductImage(models.Model):

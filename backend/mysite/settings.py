@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "news.apps.NewsConfig",
     "django_filters",
-    "django_elasticsearch_dsl",
+    "django.contrib.postgres",
 ]
 
 MIDDLEWARE = [
