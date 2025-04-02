@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../../../store/store";
-import { fetchSiteReviews } from "../../../../store/siteReviews/siteReviews";
+import { fetchSiteReviews } from "../../../../store/siteReviews/siteReviews.slice";
 import { ArrowCommon } from "../../../../assets/icons";
 import UIRatingStars from "../../../../components/UI/UIRatingStars/UIRatingStars";
 import styles from "./Reviews.module.css";
@@ -61,8 +61,6 @@ function Reviews() {
   };
   const totalRating = totalRatingCounter();
 
-  const { t } = useTranslation("home");
-
   const displayDate = (date: Date) => {
     let result =
       (date.getDay() < 10 ? "0" + date.getDay() : date.getDay()) + ".";
@@ -70,6 +68,8 @@ function Reviews() {
     result += date.getFullYear().toString();
     return result;
   };
+
+  const { t } = useTranslation("home");
 
   return (
     <div className={styles.reviews}>

@@ -6,19 +6,20 @@ interface UIInputFieldProps {
   className?: string;
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onClick?: () => void;
   name?: string;
   placeholder?: string;
   required?: boolean;
   size?: "m" | "s";
   isError?: boolean;
   isWidth?: boolean;
-  children?: React.ReactNode;
 }
 
 function UIInputField({
   type,
   className,
   value,
+  onClick,
   onChange,
   name,
   placeholder,
@@ -26,7 +27,6 @@ function UIInputField({
   size,
   isError,
   isWidth,
-  children,
 }: UIInputFieldProps) {
   return (
     <input
@@ -40,12 +40,11 @@ function UIInputField({
       type={type}
       value={value}
       onChange={onChange}
+      onClick={onClick}
       name={name}
       placeholder={placeholder}
       required={required}
-    >
-      {children}
-    </input>
+    />
   );
 }
 

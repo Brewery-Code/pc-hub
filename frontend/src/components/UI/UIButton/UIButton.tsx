@@ -11,6 +11,8 @@ type UIButtonProps = {
   size?: "m" | "s";
   width?: boolean;
   link?: string;
+  onClick?: () => void;
+  type: "submit";
 };
 
 function UIButton({
@@ -20,14 +22,9 @@ function UIButton({
   size,
   style,
   width,
-  link,
+  onClick,
+  type,
 }: UIButtonProps) {
-  const navigate = useNavigate();
-
-  const navigation = () => {
-    navigate(link || "/", { replace: false });
-  };
-
   return (
     <button
       className={clsx(
@@ -38,7 +35,8 @@ function UIButton({
         size && styles[`button__${size}`],
         width && styles.button__width,
       )}
-      onClick={navigation}
+      onClick={onClick}
+      type={type}
     >
       {children}
     </button>

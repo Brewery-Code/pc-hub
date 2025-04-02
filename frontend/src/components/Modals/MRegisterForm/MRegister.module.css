@@ -51,6 +51,19 @@
   line-height: 133%;
 }
 
+.modal__error {
+  position: absolute;
+  display: none;
+  left: 8px;
+  bottom: 2px;
+  color: var(--accent-red);
+  font-size: 12px;
+}
+
+.modal__error_active {
+  display: block;
+}
+
 .modal__passwordVisibility {
   position: absolute;
   top: 50%;

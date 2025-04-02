@@ -11,8 +11,6 @@ interface ICategoryProps {
 }
 
 function Category({ category, isCatalog }: ICategoryProps) {
-  const { category: categoryParam } = useParams();
-
   return (
     <Link
       to={

@@ -6,7 +6,6 @@ import { MBurgerMenu } from "../../../Modals";
 function BurgerMenu() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState<boolean>(false);
   const toggleBurgerMenu = () => {
-    console.log("Mega test");
     setIsBurgerMenuOpen((prev) => !prev);
   };
 

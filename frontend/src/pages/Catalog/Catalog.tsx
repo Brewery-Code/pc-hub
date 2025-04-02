@@ -54,12 +54,8 @@ function Catalog() {
                   ),
                 )
               : selectedCategory?.children.map(
-                  (category: ICategoryChildren, index: number) => (
-                    <Category
-                      key={index}
-                      category={category}
-                      isCatalog={isCatalog}
-                    />
+                  (category: ICategoryChildren) => (
+                    <Category category={category} isCatalog={isCatalog} />
                   ),
                 )}
           </div>

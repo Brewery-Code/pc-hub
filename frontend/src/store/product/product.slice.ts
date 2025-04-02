@@ -5,7 +5,6 @@ import { IProduct } from "../types";
 const fetchProduct = createAsyncThunk(
   "product/fetchProduct",
   async (id: string) => {
-    console.log(id);
     const response = await fetch(
       `${import.meta.env.VITE_API_BASE_URL}/products/${id}`,
       {

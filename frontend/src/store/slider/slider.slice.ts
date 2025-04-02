@@ -12,7 +12,7 @@ const fetchSlider = createAsyncThunk("slider/fetchSlider", async () => {
     },
   );
 
-  return response.json();
+  return await response.json();
 });
 
 interface ISlider {

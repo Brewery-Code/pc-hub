@@ -31,4 +31,14 @@ interface IProduct {
   delivery_options: IDelivery_options[];
 }
 
-export { type IProduct };
+interface IUser {
+  status: "idle" | "pending" | "succeeded" | "failed";
+  error: string | null;
+  name: string;
+  surname: string;
+  email: string;
+  access: string;
+  refresh: string;
+}
+
+export { type IProduct, type IUser };

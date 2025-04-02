@@ -30,6 +30,7 @@ function MBurgerMenu({
     <UIModalBody
       setIsModalOpen={setIsBurgerMenuOpen}
       isModalOpen={isBurgerMenuOpen}
+      className={clsx(isBurgerMenuOpen && styles.blur)}
     >
       <div
         className={clsx(styles.menu, isBurgerMenuOpen && styles.menu_active)}

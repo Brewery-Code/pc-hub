@@ -15,9 +15,7 @@
   width: 100%;
   height: 2px;
   background-color: var(--some-1);
-  transition:
-    width 0.3s ease,
-    background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .cross::before {
@@ -30,6 +28,5 @@
 
 .cross:hover.cross::before,
 .cross:hover.cross::after {
-  width: 110%;
   background-color: var(--accent-orange);
 }

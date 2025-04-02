@@ -10,7 +10,8 @@
   "signIn": {},
   "signUp": {
     "title": "Реєстрація",
-    "inputPhone": "Ваш номер телефону",
+    "inputName": "Ваше ім'я",
+    "inputEmail": "Ваша пошта",
     "inputPassword": "Пароль",
     "register": "Зареєструватись",
     "termsAndConditions": "умовами користувача",

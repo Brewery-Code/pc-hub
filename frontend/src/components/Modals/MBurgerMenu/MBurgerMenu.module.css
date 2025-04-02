@@ -1,3 +1,7 @@
+.blur {
+  z-index: 500;
+}
+
 .menu {
   width: 424px;
   height: 100%;

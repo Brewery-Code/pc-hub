@@ -10,7 +10,8 @@
   "signIn": {},
   "signUp": {
     "title": "Registration",
-    "inputPhone": "Your phone number",
+    "inputName": "Your name",
+    "inputEmail": "Your email",
     "inputPassword": "Password",
     "register": "Register",
     "termsAndConditions": "User terms and conditions",
