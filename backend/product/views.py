@@ -1,14 +1,21 @@
-from rest_framework.generics import CreateAPIView, ListAPIView, RetrieveAPIView
+from rest_framework.generics import (
+    CreateAPIView,
+    ListAPIView,
+    RetrieveAPIView,
+    get_object_or_404,
+)
 from rest_framework.pagination import PageNumberPagination
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from yaml import serialize
 from .models import *
 from .serializers import *
 from django.utils import translation
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from .filters import ProductFilter
+from rest_framework import status
 
 
 class CustomPagination(PageNumberPagination):
@@ -102,7 +109,28 @@ class ProductListView(ListAPIView):
         return super().get_queryset()
 
 
-class ProductDetailView(RetrieveAPIView):
+# class ProductDetailView(RetrieveAPIView):
+#     """API View для отримання детальної інформації про продукт.
+
+#     Доступні операції:
+#         - (GET /products/{id}/) - Отримання детальної інформації про продукт за його ID.
+
+#     Доступ:
+#         - Доступний для всіх користувачів (AllowAny).
+#     """
+
+#     queryset = Product.objects.all()
+#     serializer_class = ProductDetailSerializer
+#     lookup_field = "slug"
+
+#     def get_queryset(self):
+#         """Активує переклад на основі заголовку 'Accept-Language'."""
+#         language = self.request.headers.get("Accept-Language", "en")
+#         translation.activate(language)
+#         return super().get_queryset()
+
+
+class ProductDetailView(APIView):
     """API View для отримання детальної інформації про продукт.
 
     Доступні операції:
@@ -112,9 +140,14 @@ class ProductDetailView(RetrieveAPIView):
         - Доступний для всіх користувачів (AllowAny).
     """
 
-    queryset = Product.objects.all()
-    serializer_class = ProductDetailSerializer
-    lookup_field = "id"
+    def get(self, request, identifier):
+        if identifier.isdigit():
+            product = get_object_or_404(Product, id=int(identifier))
+        else:
+            product = get_object_or_404(Product, slug=identifier)
+
+        serializer = ProductDetailSerializer(product)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     def get_queryset(self):
         """Активує переклад на основі заголовку 'Accept-Language'."""

@@ -9,7 +9,9 @@ urlpatterns = [
         name="category-children",
     ),
     path("products/", views.ProductListView.as_view(), name="all products"),
-    path("products/<int:id>/", views.ProductDetailView.as_view(), name="Product"),
+    path(
+        "products/<str:identifier>/", views.ProductDetailView.as_view(), name="Product"
+    ),
     path(
         "<int:category_id>/brands/",
         views.BrandFilterByCategory.as_view(),
