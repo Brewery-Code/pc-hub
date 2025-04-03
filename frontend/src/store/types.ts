@@ -31,14 +31,26 @@ interface IProduct {
   delivery_options: IDelivery_options[];
 }
 
+interface ICart {
+  cart_id: number;
+  items: IProduct[];
+  total_price: number;
+}
+
 interface IUser {
   status: "idle" | "pending" | "succeeded" | "failed";
   error: string | null;
+  access: string | null;
   name: string;
   surname: string;
   email: string;
-  access: string;
-  refresh: string;
+  cart: ICart;
 }
 
-export { type IProduct, type IUser };
+enum SignFormState {
+  SignIn = "SignIn",
+  SignUp = "SignUp",
+  None = "None",
+}
+
+export { type IProduct, type IUser, SignFormState };

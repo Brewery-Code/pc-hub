@@ -7,7 +7,19 @@
     "comparison": "Порівняння",
     "likes": "Вподобання"
   },
-  "signIn": {},
+  "signIn": {
+    "title": "Вхід",
+    "inputEmail": "Ваша пошта",
+    "inputPassword": "Пароль",
+    "forgotPassword": "Забули пароль",
+    "signIn": "Ввійти",
+    "otherSignInWays": "Або увійдіть використовуючи",
+    "notRegister": "Не маєте акаунту",
+    "register": "Зареєструватись",
+    "invalidEmail": "Недійсна електронна адреса",
+    "passwordShort": "Пароль повинен містити мінімум 8 символів",
+    "passwordOnlySymbols": "Пароль повинен містити латинські символи та цифри"
+  },
   "signUp": {
     "title": "Реєстрація",
     "inputName": "Ваше ім'я",
@@ -18,6 +30,11 @@
     "agreement": "Реєструючись ви погоджуєтесь з",
     "otherRegisterWays": "Або зареєструйтесь використовуючи",
     "alreadyRegistered": "Вже зареєстровані",
-    "signIn": "Вхід"
+    "signIn": "Вхід",
+    "invalidEmail": "Недійсна електронна адреса",
+    "firstCapital": "Перша буква має бути великою",
+    "onlyLetters": "Ім'я повинне складатись лише з літер",
+    "passwordShort": "Пароль повинен містити мінімум 8 символів",
+    "passwordOnlySymbols": "Пароль повинен містити латинські символи та цифри"
   }
 }

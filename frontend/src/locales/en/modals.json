@@ -7,7 +7,19 @@
     "comparison": "Comparison",
     "likes": "Likes"
   },
-  "signIn": {},
+  "signIn": {
+    "title": "Sign in",
+    "inputEmail": "Your email",
+    "inputPassword": "Password",
+    "forgotPassword": "Forgot password",
+    "signIn": "SignIn",
+    "otherSignInWays": "Or log in using",
+    "notRegister": "You don't have an account.",
+    "register": "Sign up",
+    "invalidEmail": "Invalid email address",
+    "passwordShort": "Password must contain at least 8 characters",
+    "passwordOnlySymbols": "Password must contain only latin characters"
+  },
   "signUp": {
     "title": "Registration",
     "inputName": "Your name",
@@ -18,6 +30,11 @@
     "agreement": "By registering you agree to the",
     "otherRegisterWays": "Or register using",
     "alreadyRegistered": "Already registered",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "invalidEmail": "Invalid email address",
+    "firstCapital": "The first letter must be capitalized.",
+    "onlyLetters": "The name must consist only of letters.",
+    "passwordShort": "Password must contain at least 8 characters",
+    "passwordOnlySymbols": "Password must contain only latin characters"
   }
 }

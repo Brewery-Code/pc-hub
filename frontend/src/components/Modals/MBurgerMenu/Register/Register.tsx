@@ -4,15 +4,19 @@ import clsx from "clsx";
 import { ProfileIcon } from "../../../../assets/icons";
 import styles from "./Register.module.css";
 import MRegisterForm from "../../MRegisterForm/MRegisterForm";
+import MSignInFrom from "../../MSignInFrom/MSignInFrom";
+import { SignFormState } from "../../../../store/types";
 
 interface IRegisterProps {
   className?: string;
 }
 
-function Register({ className }: IRegisterProps) {
-  const [isRegisterFormOpen, setIsRegisterFormOpen] = useState(false);
-  const handleRegisterForm = () => {
-    setIsRegisterFormOpen((prev) => !prev);
+export default function Register({ className }: IRegisterProps) {
+  const [whichFormIsOpen, setWhichFormIsOpen] = useState<SignFormState>(
+    SignFormState.None,
+  );
+  const handleForm = (formState: SignFormState) => {
+    setWhichFormIsOpen(formState);
   };
 
   const { t } = useTranslation("modals");
@@ -22,22 +26,21 @@ function Register({ className }: IRegisterProps) {
       <ProfileIcon
         className={clsx(styles["register__profile-icon"], "only-mobile")}
       />
-      <button className={styles["register__sign-in"]}>
+      <button
+        className={styles["register__sign-in"]}
+        onClick={() => handleForm(SignFormState.SignIn)}
+      >
         {t("burgerMenu.signIn")}
       </button>
+      <MSignInFrom isFormOpen={whichFormIsOpen} handleForm={handleForm} />
       <span className={styles.register__separator}>|</span>
       <button
         className={styles["register__sign-up"]}
-        onClick={handleRegisterForm}
+        onClick={() => handleForm(SignFormState.SignUp)}
       >
         {t("burgerMenu.signUp")}
       </button>
-      <MRegisterForm
-        isFormOpen={isRegisterFormOpen}
-        handleForm={handleRegisterForm}
-      />
+      <MRegisterForm isFormOpen={whichFormIsOpen} handleForm={handleForm} />
     </h6>
   );
 }
-
-export default Register;
