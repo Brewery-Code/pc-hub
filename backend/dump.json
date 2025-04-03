@@ -362,7 +362,7 @@
         "phone": null,
         "photo": "",
         "created_at": "2024-12-26T08:38:05.894Z",
-        "last_login": "2025-03-26T10:16:43.258Z",
+        "last_login": "2025-04-02T12:54:48.901Z",
         "is_active": true,
         "is_staff": true,
         "is_superuser": true,
@@ -520,6 +520,2150 @@
         "is_superuser": false,
         "groups": [],
         "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$XDvIxvBKzYCPWD2j9x0ZVl$XztcZRD8zPJ61N5zgVOQxNWfjxfbo+wiT25QSEcvdvc=",
+        "email": "testuser038@gmail.com",
+        "name": "Test User",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-04-03T10:01:56.741Z",
+        "last_login": "2025-04-03T10:01:56.741Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user.customuser",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$wu0lpy6LT6ueL5yHawR86n$4kSgypyLe036xOsAeyy1pnnKSzDnbUunjEF+TlFMevQ=",
+        "email": "testuhhhser038@gmail.com",
+        "name": "Test User",
+        "surname": "",
+        "phone": null,
+        "photo": "avatars/default.png",
+        "created_at": "2025-04-03T10:08:49.603Z",
+        "last_login": "2025-04-03T10:08:49.603Z",
+        "is_active": true,
+        "is_staff": false,
+        "is_superuser": false,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "product.category",
+    "pk": 1,
+    "fields": {
+        "name": "Смартфони та телефони",
+        "name_en": "Smartphones and phones",
+        "name_uk": "Смартфони та телефони",
+        "parent": null,
+        "image": "category_images/smartphony-ta-multimedia.svg",
+        "created_at": "2025-04-02T13:23:31.706Z",
+        "order": 1,
+        "slug": "smartphones-and-phones",
+        "lft": 1,
+        "rght": 84,
+        "tree_id": 1,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 2,
+    "fields": {
+        "name": "Ноутбуки, ПК, та планшети",
+        "name_en": "Laptops, PCs, and tablets",
+        "name_uk": "Ноутбуки, ПК, та планшети",
+        "parent": null,
+        "image": "category_images/Noutbuki-pk.svg",
+        "created_at": "2025-04-02T13:24:38.942Z",
+        "order": 2,
+        "slug": "laptops-pcs-and-tablets",
+        "lft": 1,
+        "rght": 130,
+        "tree_id": 2,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 3,
+    "fields": {
+        "name": "Товари для геймерів",
+        "name_en": "Products for gamers",
+        "name_uk": "Товари для геймерів",
+        "parent": null,
+        "image": "category_images/tovary-dlia-goev.svg",
+        "created_at": "2025-04-02T13:26:41.887Z",
+        "order": 3,
+        "slug": "products-for-gamers",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 3,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 4,
+    "fields": {
+        "name": "Телевізори та мультимедіа",
+        "name_en": "TV and multimedia",
+        "name_uk": "Телевізори та мультимедіа",
+        "parent": null,
+        "image": "category_images/televizory.svg",
+        "created_at": "2025-04-02T13:27:28.034Z",
+        "order": 4,
+        "slug": "tv-and-multimedia",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 4,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 5,
+    "fields": {
+        "name": "Смарт-годинники і гаджети",
+        "name_en": "Smart watches and gadgets",
+        "name_uk": "Смарт-годинники і гаджети",
+        "parent": null,
+        "image": "category_images/smart-hodinniki.svg",
+        "created_at": "2025-04-02T13:28:31.119Z",
+        "order": 5,
+        "slug": "smart-watches-and-gadgets",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 5,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 6,
+    "fields": {
+        "name": "Аудіо",
+        "name_en": "Audio",
+        "name_uk": "Аудіо",
+        "parent": null,
+        "image": "category_images/Audio.svg",
+        "created_at": "2025-04-02T13:28:56.558Z",
+        "order": 6,
+        "slug": "audio",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 6,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 7,
+    "fields": {
+        "name": "Побутова техніка",
+        "name_en": "Household appliances",
+        "name_uk": "Побутова техніка",
+        "parent": null,
+        "image": "category_images/pobutova-tehnika.svg",
+        "created_at": "2025-04-02T13:29:43.500Z",
+        "order": 7,
+        "slug": "household-appliances",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 7,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 8,
+    "fields": {
+        "name": "Спорт та здоров'я",
+        "name_en": "Sports and health",
+        "name_uk": "Спорт та здоров'я",
+        "parent": null,
+        "image": "category_images/sport.svg",
+        "created_at": "2025-04-02T13:30:19.052Z",
+        "order": 8,
+        "slug": "sports-and-health",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 8,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 9,
+    "fields": {
+        "name": "Транспорт та велотовари",
+        "name_en": "Transport and bicycle goods",
+        "name_uk": "Транспорт та велотовари",
+        "parent": null,
+        "image": "category_images/transport-ta-tovary.svg",
+        "created_at": "2025-04-02T13:30:56.917Z",
+        "order": 9,
+        "slug": "transport-and-bicycle-goods",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 9,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 10,
+    "fields": {
+        "name": "Одяг, взуття та аксесуари",
+        "name_en": "Clothing, shoes and accessories",
+        "name_uk": "Одяг, взуття та аксесуари",
+        "parent": null,
+        "image": "category_images/odag-vzuttia.svg",
+        "created_at": "2025-04-02T13:31:40.140Z",
+        "order": 10,
+        "slug": "clothing-shoes-and-accessories",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 10,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 11,
+    "fields": {
+        "name": "Туризм та риболовля",
+        "name_en": "Tourism and fishing",
+        "name_uk": "Туризм та риболовля",
+        "parent": null,
+        "image": "category_images/tyrizm.svg",
+        "created_at": "2025-04-02T13:32:16.125Z",
+        "order": 11,
+        "slug": "tourism-and-fishing",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 11,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 12,
+    "fields": {
+        "name": "Ремонт та обладнання",
+        "name_en": "Repair and equipment",
+        "name_uk": "Ремонт та обладнання",
+        "parent": null,
+        "image": "category_images/remont.svg",
+        "created_at": "2025-04-02T13:32:51.160Z",
+        "order": 12,
+        "slug": "repair-and-equipment",
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 12,
+        "level": 0
+    }
+},
+{
+    "model": "product.category",
+    "pk": 13,
+    "fields": {
+        "name": "Смартфони",
+        "name_en": "Smartphones",
+        "name_uk": "Смартфони",
+        "parent": 1,
+        "image": "category_images/smartphone-svgrepo-com_uQwR5c9.svg",
+        "created_at": "2025-04-02T13:41:35.423Z",
+        "order": 0,
+        "slug": "smartphones",
+        "lft": 2,
+        "rght": 25,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 14,
+    "fields": {
+        "name": "Навушники",
+        "name_en": "Headphones",
+        "name_uk": "Навушники",
+        "parent": 1,
+        "image": "category_images/headphones-alt-svgrepo-com.svg",
+        "created_at": "2025-04-02T13:42:16.674Z",
+        "order": 0,
+        "slug": "headphones",
+        "lft": 26,
+        "rght": 39,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 15,
+    "fields": {
+        "name": "Портативна акустика",
+        "name_en": "Portable acoustics",
+        "name_uk": "Портативна акустика",
+        "parent": 1,
+        "image": "category_images/speakers-audio-svgrepo-com.svg",
+        "created_at": "2025-04-02T13:44:48.520Z",
+        "order": 0,
+        "slug": "portable-acoustics",
+        "lft": 40,
+        "rght": 41,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 16,
+    "fields": {
+        "name": "Аксесуари",
+        "name_en": "Accessories",
+        "name_uk": "Аксесуари",
+        "parent": 1,
+        "image": "category_images/magic-wand-01-svgrepo-com.svg",
+        "created_at": "2025-04-02T13:46:02.838Z",
+        "order": 0,
+        "slug": "accessories",
+        "lft": 42,
+        "rght": 57,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 17,
+    "fields": {
+        "name": "Чохли для смартфонів",
+        "name_en": "Smartphone cases",
+        "name_uk": "Чохли для смартфонів",
+        "parent": 1,
+        "image": "category_images/airbuds-case-minimalistic-svgrepo-com.svg",
+        "created_at": "2025-04-02T13:47:23.953Z",
+        "order": 0,
+        "slug": "smartphone-cases",
+        "lft": 58,
+        "rght": 69,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 18,
+    "fields": {
+        "name": "Павербанки",
+        "name_en": "Power bank",
+        "name_uk": "Павербанки",
+        "parent": 1,
+        "image": "category_images/power-bank-svgrepo-com.svg",
+        "created_at": "2025-04-02T13:48:09.410Z",
+        "order": 0,
+        "slug": "power-bank",
+        "lft": 70,
+        "rght": 83,
+        "tree_id": 1,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 19,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:50:40.730Z",
+        "order": 0,
+        "slug": "xiaomi",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 20,
+    "fields": {
+        "name": "Samsung",
+        "name_en": "Samsung",
+        "name_uk": "Samsung",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:50:56.712Z",
+        "order": 0,
+        "slug": "samsung",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 21,
+    "fields": {
+        "name": "Apple",
+        "name_en": "Apple",
+        "name_uk": "Apple",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:51:08.833Z",
+        "order": 0,
+        "slug": "apple",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 22,
+    "fields": {
+        "name": "Motorola",
+        "name_en": "Motorola",
+        "name_uk": "Motorola",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:51:18.786Z",
+        "order": 0,
+        "slug": "motorola",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 23,
+    "fields": {
+        "name": "Honor",
+        "name_en": "Honor",
+        "name_uk": "Honor",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:51:28.660Z",
+        "order": 0,
+        "slug": "honor",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 24,
+    "fields": {
+        "name": "Poco",
+        "name_en": "Poco",
+        "name_uk": "Poco",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:51:37.003Z",
+        "order": 0,
+        "slug": "poco",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 25,
+    "fields": {
+        "name": "Redmagic",
+        "name_en": "RedMagic",
+        "name_uk": "Redmagic",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:51:53.027Z",
+        "order": 0,
+        "slug": "redmagic",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 26,
+    "fields": {
+        "name": "Realme",
+        "name_en": "Realme",
+        "name_uk": "Realme",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:52:02.039Z",
+        "order": 0,
+        "slug": "realme",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 27,
+    "fields": {
+        "name": "OnePlus",
+        "name_en": "OnePlus",
+        "name_uk": "OnePlus",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:52:12.847Z",
+        "order": 0,
+        "slug": "oneplus",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 28,
+    "fields": {
+        "name": "Huawei",
+        "name_en": "Huawei",
+        "name_uk": "Huawei",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:52:26.458Z",
+        "order": 0,
+        "slug": "huawei",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 29,
+    "fields": {
+        "name": "Google",
+        "name_en": "Google",
+        "name_uk": "Google",
+        "parent": 13,
+        "image": "",
+        "created_at": "2025-04-02T13:52:37.284Z",
+        "order": 0,
+        "slug": "google",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 30,
+    "fields": {
+        "name": "Навушники TWS",
+        "name_en": "TWS headphones",
+        "name_uk": "Навушники TWS",
+        "parent": 14,
+        "image": "",
+        "created_at": "2025-04-02T14:07:25.608Z",
+        "order": 0,
+        "slug": "tws-headphones",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 31,
+    "fields": {
+        "name": "Геймерські навушники",
+        "name_en": "Gaming headphones",
+        "name_uk": "Геймерські навушники",
+        "parent": 14,
+        "image": "",
+        "created_at": "2025-04-02T14:07:54.179Z",
+        "order": 0,
+        "slug": "gaming-headphones",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 32,
+    "fields": {
+        "name": "Повнорозмірні навушники",
+        "name_en": "Full-size headphones",
+        "name_uk": "Повнорозмірні навушники",
+        "parent": 14,
+        "image": "",
+        "created_at": "2025-04-02T14:08:19.785Z",
+        "order": 0,
+        "slug": "full-size-headphones",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 33,
+    "fields": {
+        "name": "Накладні навушники",
+        "name_en": "Over-ear headphones",
+        "name_uk": "Накладні навушники",
+        "parent": 14,
+        "image": "",
+        "created_at": "2025-04-02T14:08:41.958Z",
+        "order": 0,
+        "slug": "over-ear-headphones",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 34,
+    "fields": {
+        "name": "Бездротові навушники",
+        "name_en": "Wireless headphones",
+        "name_uk": "Бездротові навушники",
+        "parent": 14,
+        "image": "",
+        "created_at": "2025-04-02T14:09:08.810Z",
+        "order": 0,
+        "slug": "wireless-headphones",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 35,
+    "fields": {
+        "name": "Дротові навушники",
+        "name_en": "Wired headphones",
+        "name_uk": "Дротові навушники",
+        "parent": 14,
+        "image": "",
+        "created_at": "2025-04-02T14:09:26.283Z",
+        "order": 0,
+        "slug": "wired-headphones",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 38,
+    "fields": {
+        "name": "Чохли для смартфонів",
+        "name_en": "Smartphone case",
+        "name_uk": "Чохли для смартфонів",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:19:42.447Z",
+        "order": 0,
+        "slug": "smartphone-case",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 39,
+    "fields": {
+        "name": "Карти пам'яті",
+        "name_en": "Memory cards",
+        "name_uk": "Карти пам'яті",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:20:53.140Z",
+        "order": 0,
+        "slug": "memory-cards",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 40,
+    "fields": {
+        "name": "Захисне скло",
+        "name_en": "Protective glass",
+        "name_uk": "Захисне скло",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:21:14.365Z",
+        "order": 0,
+        "slug": "protective-glass",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 41,
+    "fields": {
+        "name": "Зарядні пристрої",
+        "name_en": "Chargers",
+        "name_uk": "Зарядні пристрої",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:21:39.510Z",
+        "order": 0,
+        "slug": "chargers",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 42,
+    "fields": {
+        "name": "Бездротові зарядки",
+        "name_en": "Wireless charging",
+        "name_uk": "Бездротові зарядки",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:22:03.206Z",
+        "order": 0,
+        "slug": "wireless-charging",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 43,
+    "fields": {
+        "name": "Адаптери та кабелі",
+        "name_en": "Adapters and cables",
+        "name_uk": "Адаптери та кабелі",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:22:35.412Z",
+        "order": 0,
+        "slug": "adapters-and-cables",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 44,
+    "fields": {
+        "name": "Захисні плівки",
+        "name_en": "Protective films",
+        "name_uk": "Захисні плівки",
+        "parent": 16,
+        "image": "",
+        "created_at": "2025-04-02T14:22:53.420Z",
+        "order": 0,
+        "slug": "protective-films",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 45,
+    "fields": {
+        "name": "Чохол сумка",
+        "name_en": "Cover bag",
+        "name_uk": "Чохол сумка",
+        "parent": 17,
+        "image": "",
+        "created_at": "2025-04-02T14:25:24.376Z",
+        "order": 0,
+        "slug": "cover-bag",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 46,
+    "fields": {
+        "name": "Накладка",
+        "name_en": "Overlay",
+        "name_uk": "Накладка",
+        "parent": 17,
+        "image": "",
+        "created_at": "2025-04-02T14:25:39.780Z",
+        "order": 0,
+        "slug": "overlay",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 47,
+    "fields": {
+        "name": "Книжка",
+        "name_en": "Book",
+        "name_uk": "Книжка",
+        "parent": 17,
+        "image": "",
+        "created_at": "2025-04-02T14:25:56.621Z",
+        "order": 0,
+        "slug": "book",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 48,
+    "fields": {
+        "name": "Спортивні",
+        "name_en": "Sports",
+        "name_uk": "Спортивні",
+        "parent": 17,
+        "image": "",
+        "created_at": "2025-04-02T14:26:13.951Z",
+        "order": 0,
+        "slug": "sports",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 49,
+    "fields": {
+        "name": "Чохол акумулятор",
+        "name_en": "Battery cover",
+        "name_uk": "Чохол акумулятор",
+        "parent": 17,
+        "image": "",
+        "created_at": "2025-04-02T14:26:37.279Z",
+        "order": 0,
+        "slug": "battery-cover",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 50,
+    "fields": {
+        "name": "Для ноутбуків",
+        "name_en": "For laptops",
+        "name_uk": "Для ноутбуків",
+        "parent": 18,
+        "image": "",
+        "created_at": "2025-04-02T14:28:03.860Z",
+        "order": 0,
+        "slug": "for-laptops",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 51,
+    "fields": {
+        "name": "Для айфон з MagSave",
+        "name_en": "For iPhone with MagSave",
+        "name_uk": "Для айфон з MagSave",
+        "parent": 18,
+        "image": "",
+        "created_at": "2025-04-02T14:28:34.367Z",
+        "order": 0,
+        "slug": "for-iphone-with-magsave",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 52,
+    "fields": {
+        "name": "Безперебійники для роутера",
+        "name_en": "Uninterruptible power supplies for routers",
+        "name_uk": "Безперебійники для роутера",
+        "parent": 18,
+        "image": "",
+        "created_at": "2025-04-02T14:29:11.572Z",
+        "order": 0,
+        "slug": "uninterruptible-power-supplies-for-routers",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 53,
+    "fields": {
+        "name": "10000мАГ",
+        "name_en": "10000mAG",
+        "name_uk": "10000мАГ",
+        "parent": 18,
+        "image": "",
+        "created_at": "2025-04-02T14:29:32.962Z",
+        "order": 0,
+        "slug": "10000mag",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 54,
+    "fields": {
+        "name": "20000мАГ",
+        "name_en": "20000mAG",
+        "name_uk": "20000мАГ",
+        "parent": 18,
+        "image": "",
+        "created_at": "2025-04-02T14:29:45.253Z",
+        "order": 0,
+        "slug": "20000mag",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 55,
+    "fields": {
+        "name": "30000мАГ",
+        "name_en": "30000mAG",
+        "name_uk": "30000мАГ",
+        "parent": 18,
+        "image": "",
+        "created_at": "2025-04-02T14:29:58.722Z",
+        "order": 0,
+        "slug": "30000mag",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 1,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 56,
+    "fields": {
+        "name": "Game Zone",
+        "name_en": "Game Zone",
+        "name_uk": "Game Zone",
+        "parent": 2,
+        "image": "category_images/game-zone.svg",
+        "created_at": "2025-04-03T17:52:07.423Z",
+        "order": 0,
+        "slug": "game-zone",
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 57,
+    "fields": {
+        "name": "Ноутбуки",
+        "name_en": "Laptops",
+        "name_uk": "Ноутбуки",
+        "parent": 2,
+        "image": "category_images/laptop.svg",
+        "created_at": "2025-04-03T17:53:05.614Z",
+        "order": 0,
+        "slug": "laptops",
+        "lft": 4,
+        "rght": 15,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 58,
+    "fields": {
+        "name": "аксесуари для ноутбуків",
+        "name_en": "Laptop accessories",
+        "name_uk": "аксесуари для ноутбуків",
+        "parent": 2,
+        "image": "category_images/laptop-accessory.svg",
+        "created_at": "2025-04-03T17:54:27.599Z",
+        "order": 0,
+        "slug": "laptop-accessories",
+        "lft": 16,
+        "rght": 37,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 59,
+    "fields": {
+        "name": "Планшети",
+        "name_en": "Tablets",
+        "name_uk": "Планшети",
+        "parent": 2,
+        "image": "category_images/tablet.svg",
+        "created_at": "2025-04-03T17:55:17.518Z",
+        "order": 0,
+        "slug": "tablets",
+        "lft": 38,
+        "rght": 53,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 60,
+    "fields": {
+        "name": "Аксесуари для планшетів",
+        "name_en": "Tablet accessories",
+        "name_uk": "Аксесуари для планшетів",
+        "parent": 2,
+        "image": "category_images/charger-svgrepo-com.svg",
+        "created_at": "2025-04-03T17:56:00.403Z",
+        "order": 0,
+        "slug": "tablet-accessories",
+        "lft": 54,
+        "rght": 67,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 61,
+    "fields": {
+        "name": "Накопичувачі інформації",
+        "name_en": "Information storage devices",
+        "name_uk": "Накопичувачі інформації",
+        "parent": 2,
+        "image": "category_images/hard-drive-svgrepo-com.svg",
+        "created_at": "2025-04-03T17:57:35.088Z",
+        "order": 0,
+        "slug": "information-storage-devices",
+        "lft": 68,
+        "rght": 75,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 62,
+    "fields": {
+        "name": "Геймерські крісла",
+        "name_en": "Gaming chairs",
+        "name_uk": "Геймерські крісла",
+        "parent": 2,
+        "image": "category_images/chair-2-svgrepo-com.svg",
+        "created_at": "2025-04-03T17:58:17.713Z",
+        "order": 0,
+        "slug": "gaming-chairs",
+        "lft": 76,
+        "rght": 77,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 63,
+    "fields": {
+        "name": "Комп'ютерні столи",
+        "name_en": "Computer desks",
+        "name_uk": "Комп'ютерні столи",
+        "parent": 2,
+        "image": "category_images/computer-desk-svgrepo-com.svg",
+        "created_at": "2025-04-03T17:59:11.662Z",
+        "order": 0,
+        "slug": "computer-desks",
+        "lft": 78,
+        "rght": 79,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 64,
+    "fields": {
+        "name": "Комп'ютери",
+        "name_en": "Computers",
+        "name_uk": "Комп'ютери",
+        "parent": 2,
+        "image": "category_images/computer.svg",
+        "created_at": "2025-04-03T18:00:45.785Z",
+        "order": 0,
+        "slug": "computers",
+        "lft": 80,
+        "rght": 89,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 65,
+    "fields": {
+        "name": "Монітори",
+        "name_en": "Monitors",
+        "name_uk": "Монітори",
+        "parent": 2,
+        "image": "category_images/monitor.svg",
+        "created_at": "2025-04-03T18:01:03.755Z",
+        "order": 0,
+        "slug": "monitors",
+        "lft": 90,
+        "rght": 101,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 66,
+    "fields": {
+        "name": "Комплектуючі для ПК",
+        "name_en": "PC accessories",
+        "name_uk": "Комплектуючі для ПК",
+        "parent": 2,
+        "image": "category_images/complekt.svg",
+        "created_at": "2025-04-03T18:02:01.159Z",
+        "order": 0,
+        "slug": "pc-accessories",
+        "lft": 102,
+        "rght": 129,
+        "tree_id": 2,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 67,
+    "fields": {
+        "name": "Ігрові ноутбуки",
+        "name_en": "Gaming laptops",
+        "name_uk": "Ігрові ноутбуки",
+        "parent": 57,
+        "image": "",
+        "created_at": "2025-04-03T18:18:30.227Z",
+        "order": 0,
+        "slug": "gaming-laptops",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 68,
+    "fields": {
+        "name": "Для роботи та навчання",
+        "name_en": "For work and study",
+        "name_uk": "Для роботи та навчання",
+        "parent": 57,
+        "image": "",
+        "created_at": "2025-04-03T18:18:45.372Z",
+        "order": 0,
+        "slug": "for-work",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 69,
+    "fields": {
+        "name": "Ультрабуки",
+        "name_en": "Ultrabooks",
+        "name_uk": "Ультрабуки",
+        "parent": 57,
+        "image": "",
+        "created_at": "2025-04-03T18:19:42.259Z",
+        "order": 0,
+        "slug": "ultrabooks",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 70,
+    "fields": {
+        "name": "Ноутбуки трансформери",
+        "name_en": "Transformer laptops",
+        "name_uk": "Ноутбуки трансформери",
+        "parent": 57,
+        "image": "",
+        "created_at": "2025-04-03T18:20:49.195Z",
+        "order": 0,
+        "slug": "transformer-laptops",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 71,
+    "fields": {
+        "name": "З windows",
+        "name_en": "With windows",
+        "name_uk": "З windows",
+        "parent": 57,
+        "image": "",
+        "created_at": "2025-04-03T18:21:08.057Z",
+        "order": 0,
+        "slug": "with-windows",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 72,
+    "fields": {
+        "name": "Мишки",
+        "name_en": "Mice",
+        "name_uk": "Мишки",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:23:46.627Z",
+        "order": 0,
+        "slug": "mice",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 73,
+    "fields": {
+        "name": "Клавіатури",
+        "name_en": "Keyboards",
+        "name_uk": "Клавіатури",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:24:05.832Z",
+        "order": 0,
+        "slug": "keyboards",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 74,
+    "fields": {
+        "name": "Сумки для ноутбуків",
+        "name_en": "Laptop bags",
+        "name_uk": "Сумки для ноутбуків",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:24:47.352Z",
+        "order": 0,
+        "slug": "laptop-bags",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 75,
+    "fields": {
+        "name": "Мікрофони",
+        "name_en": "Microphones",
+        "name_uk": "Мікрофони",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:25:07.344Z",
+        "order": 0,
+        "slug": "microphones",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 76,
+    "fields": {
+        "name": "Килимки для миші",
+        "name_en": "Mouse pads",
+        "name_uk": "Килимки для миші",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:25:33.189Z",
+        "order": 0,
+        "slug": "mouse-pads",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 77,
+    "fields": {
+        "name": "Підставки для ноутбуків",
+        "name_en": "Laptop stands",
+        "name_uk": "Підставки для ноутбуків",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:25:56.988Z",
+        "order": 0,
+        "slug": "laptop-stands",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 78,
+    "fields": {
+        "name": "Веб-камери",
+        "name_en": "Web cameras",
+        "name_uk": "Веб-камери",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:26:15.871Z",
+        "order": 0,
+        "slug": "web-cameras",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 79,
+    "fields": {
+        "name": "Зовнішні HDD",
+        "name_en": "External HDD",
+        "name_uk": "Зовнішні HDD",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:26:32.785Z",
+        "order": 0,
+        "slug": "external-hdd",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 80,
+    "fields": {
+        "name": "SSD накопичувачі",
+        "name_en": "SSD-drives",
+        "name_uk": "SSD накопичувачі",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:27:08.029Z",
+        "order": 0,
+        "slug": "ssd-drives",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 81,
+    "fields": {
+        "name": "Геймпади",
+        "name_en": "Gamepads",
+        "name_uk": "Геймпади",
+        "parent": 58,
+        "image": "",
+        "created_at": "2025-04-03T18:27:23.965Z",
+        "order": 0,
+        "slug": "gamepads",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 83,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:30:12.375Z",
+        "order": 0,
+        "slug": "xiaomi-32828912",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 84,
+    "fields": {
+        "name": "Lenovo",
+        "name_en": "Lenovo",
+        "name_uk": "Lenovo",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:30:30.470Z",
+        "order": 0,
+        "slug": "lenovo-738373",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 85,
+    "fields": {
+        "name": "Samsung",
+        "name_en": "Samsung",
+        "name_uk": "Samsung",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:30:50.504Z",
+        "order": 0,
+        "slug": "samsung-3983833",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 86,
+    "fields": {
+        "name": "Apple",
+        "name_en": "Apple",
+        "name_uk": "Apple",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:31:05.188Z",
+        "order": 0,
+        "slug": "apple-84393",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 87,
+    "fields": {
+        "name": "З можливістю дзвінків",
+        "name_en": "With the possibility of calls",
+        "name_uk": "З можливістю дзвінків",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:31:22.895Z",
+        "order": 0,
+        "slug": "with-the-possibility-of-calls",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 88,
+    "fields": {
+        "name": "Протиударні",
+        "name_en": "Shockproof",
+        "name_uk": "Протиударні",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:31:44.912Z",
+        "order": 0,
+        "slug": "shockproof",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 89,
+    "fields": {
+        "name": "Бюджетні",
+        "name_en": "Budgetary",
+        "name_uk": "Бюджетні",
+        "parent": 59,
+        "image": "",
+        "created_at": "2025-04-03T18:32:03.909Z",
+        "order": 0,
+        "slug": "budgetary",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 90,
+    "fields": {
+        "name": "Чохли для планшетів",
+        "name_en": "Tablet cases",
+        "name_uk": "Чохли для планшетів",
+        "parent": 60,
+        "image": "",
+        "created_at": "2025-04-03T18:35:15.778Z",
+        "order": 0,
+        "slug": "tablet-cases",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 91,
+    "fields": {
+        "name": "Захисне скло",
+        "name_en": "Protective glass",
+        "name_uk": "Захисне скло",
+        "parent": 60,
+        "image": "",
+        "created_at": "2025-04-03T18:35:56.991Z",
+        "order": 0,
+        "slug": "protective-glass-34494",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 92,
+    "fields": {
+        "name": "Захисні плівки",
+        "name_en": "Protective films",
+        "name_uk": "Захисні плівки",
+        "parent": 60,
+        "image": "",
+        "created_at": "2025-04-03T18:36:33.498Z",
+        "order": 0,
+        "slug": "protective-films-34494",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 94,
+    "fields": {
+        "name": "Карти пам'яті",
+        "name_en": "Memory cards",
+        "name_uk": "Карти пам'яті",
+        "parent": 60,
+        "image": "",
+        "created_at": "2025-04-03T18:37:23.620Z",
+        "order": 0,
+        "slug": "memory-cards-4834983",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 95,
+    "fields": {
+        "name": "Стилуси",
+        "name_en": "Stylus",
+        "name_uk": "Стилуси",
+        "parent": 60,
+        "image": "",
+        "created_at": "2025-04-03T18:37:45.745Z",
+        "order": 0,
+        "slug": "stylus",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 96,
+    "fields": {
+        "name": "Зарядні пристрої для планшетів",
+        "name_en": "Tablet chargers",
+        "name_uk": "Зарядні пристрої для планшетів",
+        "parent": 60,
+        "image": "",
+        "created_at": "2025-04-03T18:38:14.353Z",
+        "order": 0,
+        "slug": "tablet-chargers",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 97,
+    "fields": {
+        "name": "SSD",
+        "name_en": "SSD",
+        "name_uk": "SSD",
+        "parent": 61,
+        "image": "",
+        "created_at": "2025-04-03T18:39:08.513Z",
+        "order": 0,
+        "slug": "ssd-6373",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 98,
+    "fields": {
+        "name": "HDD",
+        "name_en": "HDD",
+        "name_uk": "HDD",
+        "parent": 61,
+        "image": "",
+        "created_at": "2025-04-03T18:39:19.258Z",
+        "order": 0,
+        "slug": "hdd-3733",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 99,
+    "fields": {
+        "name": "SD карти",
+        "name_en": "SD-cards",
+        "name_uk": "SD карти",
+        "parent": 61,
+        "image": "",
+        "created_at": "2025-04-03T18:39:40.484Z",
+        "order": 0,
+        "slug": "sd-cards",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 100,
+    "fields": {
+        "name": "Системні блоки",
+        "name_en": "System units",
+        "name_uk": "Системні блоки",
+        "parent": 64,
+        "image": "",
+        "created_at": "2025-04-03T18:42:25.237Z",
+        "order": 0,
+        "slug": "system-units",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 101,
+    "fields": {
+        "name": "Моноблоки",
+        "name_en": "Monoblocs",
+        "name_uk": "Моноблоки",
+        "parent": 64,
+        "image": "",
+        "created_at": "2025-04-03T18:42:45.387Z",
+        "order": 0,
+        "slug": "monoblocs",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 102,
+    "fields": {
+        "name": "Неттопи",
+        "name_en": "Nettops",
+        "name_uk": "Неттопи",
+        "parent": 64,
+        "image": "",
+        "created_at": "2025-04-03T18:43:02.472Z",
+        "order": 0,
+        "slug": "nettops",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 103,
+    "fields": {
+        "name": "Сервери",
+        "name_en": "Servers",
+        "name_uk": "Сервери",
+        "parent": 64,
+        "image": "",
+        "created_at": "2025-04-03T18:43:12.219Z",
+        "order": 0,
+        "slug": "servers",
+        "lft": 87,
+        "rght": 88,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 104,
+    "fields": {
+        "name": "Ігрові",
+        "name_en": "Gaming",
+        "name_uk": "Ігрові",
+        "parent": 65,
+        "image": "",
+        "created_at": "2025-04-03T18:45:34.569Z",
+        "order": 0,
+        "slug": "igrovi-48933",
+        "lft": 91,
+        "rght": 92,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 105,
+    "fields": {
+        "name": "Для дому та офісу",
+        "name_en": "For home and office",
+        "name_uk": "Для дому та офісу",
+        "parent": 65,
+        "image": "",
+        "created_at": "2025-04-03T18:45:53.367Z",
+        "order": 0,
+        "slug": "for-home-and-office",
+        "lft": 93,
+        "rght": 94,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 106,
+    "fields": {
+        "name": "4к і більше",
+        "name_en": "4k and above",
+        "name_uk": "4к і більше",
+        "parent": 65,
+        "image": "",
+        "created_at": "2025-04-03T18:46:18.251Z",
+        "order": 0,
+        "slug": "4k-and-above",
+        "lft": 95,
+        "rght": 96,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 107,
+    "fields": {
+        "name": "Ультраширокі",
+        "name_en": "Ultra wide",
+        "name_uk": "Ультраширокі",
+        "parent": 65,
+        "image": "",
+        "created_at": "2025-04-03T18:46:35.363Z",
+        "order": 0,
+        "slug": "ultra-wide",
+        "lft": 97,
+        "rght": 98,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 108,
+    "fields": {
+        "name": "Вигнутий екран",
+        "name_en": "Curved screen",
+        "name_uk": "Вигнутий екран",
+        "parent": 65,
+        "image": "",
+        "created_at": "2025-04-03T18:46:54.249Z",
+        "order": 0,
+        "slug": "curved-screen",
+        "lft": 99,
+        "rght": 100,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 109,
+    "fields": {
+        "name": "Відеокарти",
+        "name_en": "Video cards",
+        "name_uk": "Відеокарти",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:49:45.649Z",
+        "order": 0,
+        "slug": "video-cards",
+        "lft": 103,
+        "rght": 104,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 110,
+    "fields": {
+        "name": "Оперативна пам'ять",
+        "name_en": "RAM",
+        "name_uk": "Оперативна пам'ять",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:50:09.213Z",
+        "order": 0,
+        "slug": "ram",
+        "lft": 105,
+        "rght": 106,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 111,
+    "fields": {
+        "name": "Процесори",
+        "name_en": "Processors",
+        "name_uk": "Процесори",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:50:26.334Z",
+        "order": 0,
+        "slug": "processors",
+        "lft": 107,
+        "rght": 108,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 112,
+    "fields": {
+        "name": "Материнські плати",
+        "name_en": "Motherboards",
+        "name_uk": "Материнські плати",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:50:48.199Z",
+        "order": 0,
+        "slug": "motherboards",
+        "lft": 109,
+        "rght": 110,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 113,
+    "fields": {
+        "name": "SSD накопичувачі",
+        "name_en": "SSD-drives",
+        "name_uk": "SSD накопичувачі",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:51:16.458Z",
+        "order": 0,
+        "slug": "ssd-drives-43848",
+        "lft": 111,
+        "rght": 112,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 114,
+    "fields": {
+        "name": "HDD накопичувачі",
+        "name_en": "HDD-drives",
+        "name_uk": "HDD накопичувачі",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:51:42.591Z",
+        "order": 0,
+        "slug": "hdd-drives-87474",
+        "lft": 113,
+        "rght": 114,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 115,
+    "fields": {
+        "name": "Звукові карти",
+        "name_en": "Sound cards",
+        "name_uk": "Звукові карти",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:51:59.993Z",
+        "order": 0,
+        "slug": "sound-cards",
+        "lft": 115,
+        "rght": 116,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 116,
+    "fields": {
+        "name": "Системи охолодження",
+        "name_en": "Cooling systems",
+        "name_uk": "Системи охолодження",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:52:19.866Z",
+        "order": 0,
+        "slug": "cooling-systems",
+        "lft": 117,
+        "rght": 118,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 117,
+    "fields": {
+        "name": "Блоки живлення",
+        "name_en": "Power supply units",
+        "name_uk": "Блоки живлення",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:52:38.848Z",
+        "order": 0,
+        "slug": "power-supply-units",
+        "lft": 119,
+        "rght": 120,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 118,
+    "fields": {
+        "name": "Контроллери для комп'ютерів",
+        "name_en": "Controllers for computers",
+        "name_uk": "Контроллери для комп'ютерів",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:52:59.477Z",
+        "order": 0,
+        "slug": "controllers-for-computers",
+        "lft": 121,
+        "rght": 122,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 119,
+    "fields": {
+        "name": "Корпуси",
+        "name_en": "Cases",
+        "name_uk": "Корпуси",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:53:41.336Z",
+        "order": 0,
+        "slug": "cases",
+        "lft": 123,
+        "rght": 124,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 120,
+    "fields": {
+        "name": "Пристрої відеозахвату",
+        "name_en": "Video capture devices",
+        "name_uk": "Пристрої відеозахвату",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:54:07.157Z",
+        "order": 0,
+        "slug": "video-capture-devices",
+        "lft": 125,
+        "rght": 126,
+        "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 121,
+    "fields": {
+        "name": "Кронштейни",
+        "name_en": "Brackets",
+        "name_uk": "Кронштейни",
+        "parent": 66,
+        "image": "",
+        "created_at": "2025-04-03T18:54:26.152Z",
+        "order": 0,
+        "slug": "brackets",
+        "lft": 127,
+        "rght": 128,
+        "tree_id": 2,
+        "level": 2
     }
 }
 ]

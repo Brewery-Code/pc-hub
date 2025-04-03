@@ -179,10 +179,10 @@ SIMPLE_JWT = {
     "SIGNING_KEY": SECRET_KEY,
     "AUTH_HEADER_TYPES": ("Bearer",),
     # Налаштування для cookie:
-    "AUTH_COOKIE": "access_token",  # Ім'я cookie для access токена
-    "AUTH_COOKIE_DOMAIN": None,  # Якщо потрібно вказати домен, інакше None
-    "AUTH_COOKIE_SECURE": False,  # Для тестування можна False, в продакшені — True (тільки HTTPS)
-    "AUTH_COOKIE_HTTP_ONLY": True,  # HttpOnly – робить cookie недоступним з JS
+    "AUTH_COOKIE": "access_token",
+    "AUTH_COOKIE_DOMAIN": None,
+    "AUTH_COOKIE_SECURE": False,
+    "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_PATH": "/",
     "AUTH_COOKIE_SAMESITE": "Lax",
 }
