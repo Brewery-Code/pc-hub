@@ -7,6 +7,9 @@ from rest_framework.views import APIView
 from .serializers import CustomUserRegistrationSerializer, CustomUserSerializer
 from rest_framework.decorators import permission_classes
 from cart.models import Cart, CartItem
+from django.conf import settings
+from django.middleware import csrf
+from rest_framework_simplejwt.tokens import RefreshToken
 
 
 class RegisterCustomUserView(APIView):
@@ -19,7 +22,8 @@ class RegisterCustomUserView(APIView):
         - Доступний для всіх користувачів (AllowAny).
     """
 
-    @permission_classes([AllowAny])
+    permission_classes = [AllowAny]
+
     def post(self, request):
         """Реєструє нового користувача на основі отриманих даних.
 
@@ -35,7 +39,6 @@ class RegisterCustomUserView(APIView):
         """
 
         serializer = CustomUserRegistrationSerializer(data=request.data)
-
         if serializer.is_valid():
             user, access_token, refresh_token = serializer.save()
 
@@ -43,21 +46,18 @@ class RegisterCustomUserView(APIView):
             anonymous_cart = Cart.objects.filter(
                 session_id=session_id, user=None
             ).first()
-
             if anonymous_cart:
                 user_cart, created = Cart.objects.get_or_create(user=user)
-
                 for item in anonymous_cart.cartitem_set.all():
                     CartItem.objects.create(
                         cart=user_cart, product=item.product, quantity=item.quantity
                     )
                 anonymous_cart.delete()
 
-            return Response(
+            response = Response(
                 {
                     "message": "User registered successfully",
                     "access": access_token,
-                    "refresh": refresh_token,
                     "data": {
                         "name": user.name,
                         "email": user.email,
@@ -65,7 +65,40 @@ class RegisterCustomUserView(APIView):
                 },
                 status=status.HTTP_201_CREATED,
             )
+            response.set_cookie(
+                key="refresh_token",
+                value=refresh_token,
+                expires=settings.SIMPLE_JWT["REFRESH_TOKEN_LIFETIME"],
+                secure=settings.SIMPLE_JWT["AUTH_COOKIE_SECURE"],
+                httponly=True,
+                samesite=settings.SIMPLE_JWT["AUTH_COOKIE_SAMESITE"],
+            )
+            csrf.get_token(request)
+            return response
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class RefreshTokenView(APIView):
+    """Перевизначення класу TokenRefreshView для використання HTTP only до refresh_token"""
+
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        refresh_token = request.COOKIES.get("refresh_token")
+        if not refresh_token:
+            return Response(
+                {"error": "Refresh token is missing"},
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
+        try:
+            refresh = RefreshToken(refresh_token)
+            access_token = str(refresh.access_token)
+            return Response({"access": access_token}, status=status.HTTP_200_OK)
+        except Exception:
+            return Response(
+                {"error": "Invalid refresh token"}, status=status.HTTP_401_UNAUTHORIZED
+            )
 
 
 class CustomUserView(APIView):
