@@ -211,7 +211,5 @@ SWAGGER_SETTINGS = {
     "SHOW_REQUEST_HEADERS": True,
 }
 
-# ElasticSearch
-ELASTICSEARCH_DSL = {
-    "default": {"hosts": "localhost:9200", "http_auth": ("username", "password")}
-}
+# Sessions
+CART_SESSION_ID = "cart"
