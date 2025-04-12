@@ -65,6 +65,7 @@ class CategoryAdmin(TranslationAdmin):
         "parent__parent__name",
         "parent__parent__parent__name",
     )
+    prepopulated_fields = {"slug": ("name",)}
     list_per_page = 20
 
     def get_queryset(self, request):
