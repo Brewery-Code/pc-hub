@@ -362,7 +362,7 @@
         "phone": null,
         "photo": "",
         "created_at": "2024-12-26T08:38:05.894Z",
-        "last_login": "2025-04-02T12:54:48.901Z",
+        "last_login": "2025-04-11T17:24:22.102Z",
         "is_active": true,
         "is_staff": true,
         "is_superuser": true,
@@ -609,7 +609,7 @@
         "order": 3,
         "slug": "products-for-gamers",
         "lft": 1,
-        "rght": 2,
+        "rght": 104,
         "tree_id": 3,
         "level": 0
     }
@@ -627,7 +627,7 @@
         "order": 4,
         "slug": "tv-and-multimedia",
         "lft": 1,
-        "rght": 2,
+        "rght": 106,
         "tree_id": 4,
         "level": 0
     }
@@ -645,7 +645,7 @@
         "order": 5,
         "slug": "smart-watches-and-gadgets",
         "lft": 1,
-        "rght": 2,
+        "rght": 80,
         "tree_id": 5,
         "level": 0
     }
@@ -663,7 +663,7 @@
         "order": 6,
         "slug": "audio",
         "lft": 1,
-        "rght": 2,
+        "rght": 88,
         "tree_id": 6,
         "level": 0
     }
@@ -681,7 +681,7 @@
         "order": 7,
         "slug": "household-appliances",
         "lft": 1,
-        "rght": 2,
+        "rght": 110,
         "tree_id": 7,
         "level": 0
     }
@@ -699,7 +699,7 @@
         "order": 8,
         "slug": "sports-and-health",
         "lft": 1,
-        "rght": 2,
+        "rght": 94,
         "tree_id": 8,
         "level": 0
     }
@@ -717,7 +717,7 @@
         "order": 9,
         "slug": "transport-and-bicycle-goods",
         "lft": 1,
-        "rght": 2,
+        "rght": 78,
         "tree_id": 9,
         "level": 0
     }
@@ -735,7 +735,7 @@
         "order": 10,
         "slug": "clothing-shoes-and-accessories",
         "lft": 1,
-        "rght": 2,
+        "rght": 82,
         "tree_id": 10,
         "level": 0
     }
@@ -753,7 +753,7 @@
         "order": 11,
         "slug": "tourism-and-fishing",
         "lft": 1,
-        "rght": 2,
+        "rght": 66,
         "tree_id": 11,
         "level": 0
     }
@@ -771,7 +771,7 @@
         "order": 12,
         "slug": "repair-and-equipment",
         "lft": 1,
-        "rght": 2,
+        "rght": 72,
         "tree_id": 12,
         "level": 0
     }
@@ -2663,6 +2663,7746 @@
         "lft": 127,
         "rght": 128,
         "tree_id": 2,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 122,
+    "fields": {
+        "name": "Телевізори",
+        "name_en": "TV",
+        "name_uk": "Телевізори",
+        "parent": 4,
+        "image": "category_images/TV.svg",
+        "created_at": "2025-04-12T08:01:26.410Z",
+        "order": 0,
+        "slug": "",
+        "lft": 2,
+        "rght": 19,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 123,
+    "fields": {
+        "name": "Аксесуари",
+        "name_en": "Accessories",
+        "name_uk": "Аксесуари",
+        "parent": 4,
+        "image": "category_images/accessories.svg",
+        "created_at": "2025-04-12T08:02:05.711Z",
+        "order": 0,
+        "slug": "accessories-37299",
+        "lft": 20,
+        "rght": 33,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 125,
+    "fields": {
+        "name": "Проекційне обладнання",
+        "name_en": "Projection equipment",
+        "name_uk": "Проекційне обладнання",
+        "parent": 4,
+        "image": "category_images/зкщоусещу_KMnRJRJ.svg",
+        "created_at": "2025-04-12T08:03:27.806Z",
+        "order": 0,
+        "slug": "proekziyne-obladnania",
+        "lft": 34,
+        "rght": 43,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 126,
+    "fields": {
+        "name": "Звук. Обладнання",
+        "name_en": "Sound. Equipment",
+        "name_uk": "Звук. Обладнання",
+        "parent": 4,
+        "image": "category_images/sound-volume-2-svgrepo-com.svg",
+        "created_at": "2025-04-12T08:05:54.470Z",
+        "order": 0,
+        "slug": "zvuk-obladnannya",
+        "lft": 44,
+        "rght": 53,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 127,
+    "fields": {
+        "name": "Товари для геймерів",
+        "name_en": "Products for gamers",
+        "name_uk": "Товари для геймерів",
+        "parent": 4,
+        "image": "category_images/gamepad.svg",
+        "created_at": "2025-04-12T08:06:29.347Z",
+        "order": 0,
+        "slug": "tovari-dlya-gejmeriv-2772",
+        "lft": 54,
+        "rght": 69,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 128,
+    "fields": {
+        "name": "Екшн-камери",
+        "name_en": "Action cameras",
+        "name_uk": "Екшн-камери",
+        "parent": 4,
+        "image": "category_images/camera.svg",
+        "created_at": "2025-04-12T08:06:53.862Z",
+        "order": 0,
+        "slug": "ekshn-kameri",
+        "lft": 70,
+        "rght": 75,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 129,
+    "fields": {
+        "name": "Музичні інструменти",
+        "name_en": "Musical instruments",
+        "name_uk": "Музичні інструменти",
+        "parent": 4,
+        "image": "category_images/music.svg",
+        "created_at": "2025-04-12T08:07:25.146Z",
+        "order": 0,
+        "slug": "muzichni-instrumenti",
+        "lft": 76,
+        "rght": 87,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 130,
+    "fields": {
+        "name": "Фото і відеотехніка",
+        "name_en": "Photo and video equipment",
+        "name_uk": "Фото і відеотехніка",
+        "parent": 4,
+        "image": "category_images/video.svg",
+        "created_at": "2025-04-12T08:08:03.521Z",
+        "order": 0,
+        "slug": "foto-i-videotehnika",
+        "lft": 88,
+        "rght": 105,
+        "tree_id": 4,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 131,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:10:49.180Z",
+        "order": 0,
+        "slug": "xiaomi-8188",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 132,
+    "fields": {
+        "name": "Samsung",
+        "name_en": "Samsung",
+        "name_uk": "Samsung",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:11:05.303Z",
+        "order": 0,
+        "slug": "samsung-8118",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 133,
+    "fields": {
+        "name": "Sharp",
+        "name_en": "Sharp",
+        "name_uk": "Sharp",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:11:21.771Z",
+        "order": 0,
+        "slug": "sharp",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 134,
+    "fields": {
+        "name": "LG",
+        "name_en": "LG",
+        "name_uk": "LG",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:11:35.862Z",
+        "order": 0,
+        "slug": "lg",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 135,
+    "fields": {
+        "name": "Sony",
+        "name_en": "Sony",
+        "name_uk": "Sony",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:11:49.865Z",
+        "order": 0,
+        "slug": "sony",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 136,
+    "fields": {
+        "name": "Phillips",
+        "name_en": "Phillips",
+        "name_uk": "Phillips",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:12:06.025Z",
+        "order": 0,
+        "slug": "phillips",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 137,
+    "fields": {
+        "name": "Hisense",
+        "name_en": "Hisense",
+        "name_uk": "Hisense",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:12:29.480Z",
+        "order": 0,
+        "slug": "hisense",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 138,
+    "fields": {
+        "name": "Kivi",
+        "name_en": "Kivi",
+        "name_uk": "Kivi",
+        "parent": 122,
+        "image": "",
+        "created_at": "2025-04-12T08:12:44.255Z",
+        "order": 0,
+        "slug": "kivi",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 139,
+    "fields": {
+        "name": "Приставки Smart TV",
+        "name_en": "Smart TV set-top boxes",
+        "name_uk": "Приставки Smart TV",
+        "parent": 123,
+        "image": "",
+        "created_at": "2025-04-12T08:13:20.467Z",
+        "order": 0,
+        "slug": "pristavki-smart-tv",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 140,
+    "fields": {
+        "name": "Кронштейн для ТВ",
+        "name_en": "Bracket for TV",
+        "name_uk": "Кронштейн для ТВ",
+        "parent": 123,
+        "image": "",
+        "created_at": "2025-04-12T08:13:44.842Z",
+        "order": 0,
+        "slug": "kronshtejn-dlya-tv",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 141,
+    "fields": {
+        "name": "Тумби",
+        "name_en": "Nightstand",
+        "name_uk": "Тумби",
+        "parent": 123,
+        "image": "",
+        "created_at": "2025-04-12T08:14:17.208Z",
+        "order": 0,
+        "slug": "tumbi",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 142,
+    "fields": {
+        "name": "Т2-обладнання",
+        "name_en": "T2 equipment",
+        "name_uk": "Т2-обладнання",
+        "parent": 123,
+        "image": "",
+        "created_at": "2025-04-12T08:14:38.707Z",
+        "order": 0,
+        "slug": "t2-obladnannya",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 143,
+    "fields": {
+        "name": "ТВ-антени",
+        "name_en": "TV antennas",
+        "name_uk": "ТВ-антени",
+        "parent": 123,
+        "image": "",
+        "created_at": "2025-04-12T08:15:03.775Z",
+        "order": 0,
+        "slug": "tv-anteni",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 144,
+    "fields": {
+        "name": "Кабелі та перехідники",
+        "name_en": "Cables and adapters",
+        "name_uk": "Кабелі та перехідники",
+        "parent": 123,
+        "image": "",
+        "created_at": "2025-04-12T08:15:29.603Z",
+        "order": 0,
+        "slug": "kabeli-ta-perehidniki",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 145,
+    "fields": {
+        "name": "Проектори",
+        "name_en": "Projectors",
+        "name_uk": "Проектори",
+        "parent": 125,
+        "image": "",
+        "created_at": "2025-04-12T08:15:50.804Z",
+        "order": 0,
+        "slug": "proektori",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 146,
+    "fields": {
+        "name": "Проектори з WI-FI",
+        "name_en": "Projectors Wi-FI",
+        "name_uk": "Проектори з WI-FI",
+        "parent": 125,
+        "image": "",
+        "created_at": "2025-04-12T08:16:22.526Z",
+        "order": 0,
+        "slug": "proektori-z-wi-fi",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 147,
+    "fields": {
+        "name": "Проекційні екрани",
+        "name_en": "Projection screens",
+        "name_uk": "Проекційні екрани",
+        "parent": 125,
+        "image": "",
+        "created_at": "2025-04-12T08:16:44.380Z",
+        "order": 0,
+        "slug": "proekcijni-ekrani",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 148,
+    "fields": {
+        "name": "Кріплення для проекторів",
+        "name_en": "Projector mounts",
+        "name_uk": "Кріплення для проекторів",
+        "parent": 125,
+        "image": "",
+        "created_at": "2025-04-12T08:17:11.411Z",
+        "order": 0,
+        "slug": "kriplennya-dlya-proektoriv",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 149,
+    "fields": {
+        "name": "Саундбари",
+        "name_en": "Sound bars",
+        "name_uk": "Саундбари",
+        "parent": 126,
+        "image": "",
+        "created_at": "2025-04-12T08:17:34.260Z",
+        "order": 0,
+        "slug": "saundbari",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 150,
+    "fields": {
+        "name": "Акустичні системи",
+        "name_en": "Acoustic systems",
+        "name_uk": "Акустичні системи",
+        "parent": 126,
+        "image": "",
+        "created_at": "2025-04-12T08:17:52.910Z",
+        "order": 0,
+        "slug": "akustichni-sistemi",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 151,
+    "fields": {
+        "name": "Сабвуфери",
+        "name_en": "Subwoofers",
+        "name_uk": "Сабвуфери",
+        "parent": 126,
+        "image": "",
+        "created_at": "2025-04-12T08:18:17.297Z",
+        "order": 0,
+        "slug": "sabvuferi",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 152,
+    "fields": {
+        "name": "Мікрофони",
+        "name_en": "Microphones",
+        "name_uk": "Мікрофони",
+        "parent": 126,
+        "image": "",
+        "created_at": "2025-04-12T08:18:43.668Z",
+        "order": 0,
+        "slug": "mikrofoni",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 153,
+    "fields": {
+        "name": "PlayStation",
+        "name_en": "PlayStation",
+        "name_uk": "PlayStation",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:19:13.023Z",
+        "order": 0,
+        "slug": "playstation",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 154,
+    "fields": {
+        "name": "Microsoft Xbox Series S",
+        "name_en": "Microsoft Xbox Series S",
+        "name_uk": "Microsoft Xbox Series S",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:19:30.239Z",
+        "order": 0,
+        "slug": "microsoft-xbox-series-s",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 155,
+    "fields": {
+        "name": "Microsoft Xbox Series X",
+        "name_en": "Microsoft Xbox Series X",
+        "name_uk": "Microsoft Xbox Series X",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:19:42.925Z",
+        "order": 0,
+        "slug": "microsoft-xbox-series-x",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 156,
+    "fields": {
+        "name": "Nintendo Switch",
+        "name_en": "Nintendo Switch",
+        "name_uk": "Nintendo Switch",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:19:59.694Z",
+        "order": 0,
+        "slug": "nintendo-switch",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 157,
+    "fields": {
+        "name": "Ігрові маніпулятори",
+        "name_en": "Game controllers",
+        "name_uk": "Ігрові маніпулятори",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:20:22.219Z",
+        "order": 0,
+        "slug": "igrovi-manipulyatori",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 158,
+    "fields": {
+        "name": "Ігри",
+        "name_en": "Games",
+        "name_uk": "Ігри",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:20:37.157Z",
+        "order": 0,
+        "slug": "igri",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 159,
+    "fields": {
+        "name": "Цифрові ключі",
+        "name_en": "Digital keys",
+        "name_uk": "Цифрові ключі",
+        "parent": 127,
+        "image": "",
+        "created_at": "2025-04-12T08:20:57.720Z",
+        "order": 0,
+        "slug": "cifrovi-klyuchi",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 160,
+    "fields": {
+        "name": "GoPro",
+        "name_en": "GoPro",
+        "name_uk": "GoPro",
+        "parent": 128,
+        "image": "",
+        "created_at": "2025-04-12T08:21:20.293Z",
+        "order": 0,
+        "slug": "gopro",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 161,
+    "fields": {
+        "name": "Аксесуари-3811",
+        "name_en": "Accessories",
+        "name_uk": "Аксесуари-3811",
+        "parent": 128,
+        "image": "",
+        "created_at": "2025-04-12T08:21:38.196Z",
+        "order": 0,
+        "slug": "aksesuari-3811",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 162,
+    "fields": {
+        "name": "Гітари",
+        "name_en": "Guitars",
+        "name_uk": "Гітари",
+        "parent": 129,
+        "image": "",
+        "created_at": "2025-04-12T08:21:55.478Z",
+        "order": 0,
+        "slug": "gitari",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 163,
+    "fields": {
+        "name": "Гітарне обладнання",
+        "name_en": "Guitar equipment",
+        "name_uk": "Гітарне обладнання",
+        "parent": 129,
+        "image": "",
+        "created_at": "2025-04-12T08:22:13.962Z",
+        "order": 0,
+        "slug": "gitarne-obladnannya",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 164,
+    "fields": {
+        "name": "Клавішні інструменти",
+        "name_en": "Keyboard instruments",
+        "name_uk": "Клавішні інструменти",
+        "parent": 129,
+        "image": "",
+        "created_at": "2025-04-12T08:22:36.785Z",
+        "order": 0,
+        "slug": "klavishni-instrumenti",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 165,
+    "fields": {
+        "name": "Духові інструменти",
+        "name_en": "Wind instruments",
+        "name_uk": "Духові інструменти",
+        "parent": 129,
+        "image": "",
+        "created_at": "2025-04-12T08:22:58.504Z",
+        "order": 0,
+        "slug": "duhovi-instrumenti",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 166,
+    "fields": {
+        "name": "Ударні інструменти",
+        "name_en": "Percussion instruments",
+        "name_uk": "Ударні інструменти",
+        "parent": 129,
+        "image": "",
+        "created_at": "2025-04-12T08:23:29.175Z",
+        "order": 0,
+        "slug": "udarni-instrumenti",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 167,
+    "fields": {
+        "name": "Фотоапарати",
+        "name_en": "Cameras",
+        "name_uk": "Фотоапарати",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:30:46.097Z",
+        "order": 0,
+        "slug": "fotoaparati",
+        "lft": 89,
+        "rght": 90,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 168,
+    "fields": {
+        "name": "Об'єктиви",
+        "name_en": "Objectives",
+        "name_uk": "Об'єктиви",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:31:04.655Z",
+        "order": 0,
+        "slug": "obyektivi",
+        "lft": 91,
+        "rght": 92,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 169,
+    "fields": {
+        "name": "Студійне обладнання",
+        "name_en": "Studio equipment",
+        "name_uk": "Студійне обладнання",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:31:20.752Z",
+        "order": 0,
+        "slug": "studijne-obladnannya",
+        "lft": 93,
+        "rght": 94,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 170,
+    "fields": {
+        "name": "Миттєвий друк",
+        "name_en": "Instant printing",
+        "name_uk": "Миттєвий друк",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:31:50.602Z",
+        "order": 0,
+        "slug": "mittyevij-druk",
+        "lft": 95,
+        "rght": 96,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 171,
+    "fields": {
+        "name": "Сумки і рюкзаки",
+        "name_en": "Bags and backpacks",
+        "name_uk": "Сумки і рюкзаки",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:32:07.847Z",
+        "order": 0,
+        "slug": "sumki-i-ryukzaki",
+        "lft": 97,
+        "rght": 98,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 172,
+    "fields": {
+        "name": "Штативи",
+        "name_en": "Tripods",
+        "name_uk": "Штативи",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:32:28.386Z",
+        "order": 0,
+        "slug": "shtativi",
+        "lft": 99,
+        "rght": 100,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 173,
+    "fields": {
+        "name": "Стедіками",
+        "name_en": "Stedics",
+        "name_uk": "Стедіками",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:32:45.683Z",
+        "order": 0,
+        "slug": "stedikami",
+        "lft": 101,
+        "rght": 102,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 174,
+    "fields": {
+        "name": "Кільцеве світло",
+        "name_en": "Ring light",
+        "name_uk": "Кільцеве світло",
+        "parent": 130,
+        "image": "",
+        "created_at": "2025-04-12T08:33:04.930Z",
+        "order": 0,
+        "slug": "kilceve-svitlo",
+        "lft": 103,
+        "rght": 104,
+        "tree_id": 4,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 175,
+    "fields": {
+        "name": "Ігрові ноутбуки",
+        "name_en": "Gaming laptops",
+        "name_uk": "Ігрові ноутбуки",
+        "parent": 3,
+        "image": "category_images/laptop_0ytXQ9z.svg",
+        "created_at": "2025-04-12T08:46:02.690Z",
+        "order": 0,
+        "slug": "igrovi-noutbuki",
+        "lft": 2,
+        "rght": 15,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 176,
+    "fields": {
+        "name": "Ігрові монітори",
+        "name_en": "Gaming monitors",
+        "name_uk": "Ігрові монітори",
+        "parent": 3,
+        "image": "category_images/monitor_0huxXaC.svg",
+        "created_at": "2025-04-12T08:46:41.678Z",
+        "order": 0,
+        "slug": "igrovi-monitori",
+        "lft": 16,
+        "rght": 27,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 177,
+    "fields": {
+        "name": "Ігрові ПК",
+        "name_en": "Gaming PCs",
+        "name_uk": "Ігрові ПК",
+        "parent": 3,
+        "image": "category_images/pc.svg",
+        "created_at": "2025-04-12T08:47:10.348Z",
+        "order": 0,
+        "slug": "igrovi-pk",
+        "lft": 28,
+        "rght": 39,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 178,
+    "fields": {
+        "name": "Крісла для геймерів",
+        "name_en": "Gaming chairs",
+        "name_uk": "Крісла для геймерів",
+        "parent": 3,
+        "image": "category_images/gaming-chair.svg",
+        "created_at": "2025-04-12T08:47:33.336Z",
+        "order": 0,
+        "slug": "krisla-dlya-gejmeriv",
+        "lft": 40,
+        "rght": 41,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 179,
+    "fields": {
+        "name": "Аксесуари до ігрових ноутбуків і ПК",
+        "name_en": "Accessories for gaming laptops and PCs",
+        "name_uk": "Аксесуари до ігрових ноутбуків і ПК",
+        "parent": 3,
+        "image": "category_images/accessories_NRMef88.svg",
+        "created_at": "2025-04-12T08:48:03.764Z",
+        "order": 0,
+        "slug": "aksesuari-do-igrovih-noutbukiv-i-pk",
+        "lft": 42,
+        "rght": 59,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 180,
+    "fields": {
+        "name": "Ігрові консолі",
+        "name_en": "Game consoles",
+        "name_uk": "Ігрові консолі",
+        "parent": 3,
+        "image": "category_images/game-console.svg",
+        "created_at": "2025-04-12T08:48:26.888Z",
+        "order": 0,
+        "slug": "igrovi-konsoli",
+        "lft": 60,
+        "rght": 69,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 181,
+    "fields": {
+        "name": "Джойстики та маніпулятори",
+        "name_en": "Joysticks and manipulators",
+        "name_uk": "Джойстики та маніпулятори",
+        "parent": 3,
+        "image": "category_images/gamepad_LeAVBgK.svg",
+        "created_at": "2025-04-12T08:48:51.681Z",
+        "order": 0,
+        "slug": "dzhojstiki-ta-manipulyatori",
+        "lft": 70,
+        "rght": 75,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 182,
+    "fields": {
+        "name": "Комплектуючі для пк та ноутбуків",
+        "name_en": "Accessories for PCs and laptops",
+        "name_uk": "Комплектуючі для пк та ноутбуків",
+        "parent": 3,
+        "image": "category_images/video-card.svg",
+        "created_at": "2025-04-12T08:49:22.286Z",
+        "order": 0,
+        "slug": "komplektuyuchi-dlya-pk-ta-noutbukiv",
+        "lft": 76,
+        "rght": 95,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 183,
+    "fields": {
+        "name": "Ігрові смартфони",
+        "name_en": "Gaming smartphones",
+        "name_uk": "Ігрові смартфони",
+        "parent": 3,
+        "image": "category_images/smartphone.svg",
+        "created_at": "2025-04-12T08:49:46.311Z",
+        "order": 0,
+        "slug": "igrovi-smartfoni",
+        "lft": 96,
+        "rght": 103,
+        "tree_id": 3,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 184,
+    "fields": {
+        "name": "Asus",
+        "name_en": "Asus",
+        "name_uk": "Asus",
+        "parent": 175,
+        "image": "",
+        "created_at": "2025-04-12T08:51:32.735Z",
+        "order": 0,
+        "slug": "asus",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 185,
+    "fields": {
+        "name": "Lenovo",
+        "name_en": "Lenovo",
+        "name_uk": "Lenovo",
+        "parent": 175,
+        "image": "",
+        "created_at": "2025-04-12T08:51:54.092Z",
+        "order": 0,
+        "slug": "lenovo-38282",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 186,
+    "fields": {
+        "name": "Acer",
+        "name_en": "Acer",
+        "name_uk": "Acer",
+        "parent": 175,
+        "image": "",
+        "created_at": "2025-04-12T08:52:15.081Z",
+        "order": 0,
+        "slug": "acer",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 187,
+    "fields": {
+        "name": "HP",
+        "name_en": "HP",
+        "name_uk": "HP",
+        "parent": 175,
+        "image": "",
+        "created_at": "2025-04-12T08:52:30.857Z",
+        "order": 0,
+        "slug": "hp",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 188,
+    "fields": {
+        "name": "Dream Machines",
+        "name_en": "Dream Machines",
+        "name_uk": "Dream Machines",
+        "parent": 175,
+        "image": "",
+        "created_at": "2025-04-12T08:52:56.103Z",
+        "order": 0,
+        "slug": "dream-machines",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 189,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 175,
+        "image": "",
+        "created_at": "2025-04-12T08:53:32.599Z",
+        "order": 0,
+        "slug": "xiaomi-92922",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 190,
+    "fields": {
+        "name": "Ігрові навушники",
+        "name_en": "Gaming headphones",
+        "name_uk": "Ігрові навушники",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:54:06.257Z",
+        "order": 0,
+        "slug": "igrovi-navushniki",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 191,
+    "fields": {
+        "name": "Ігрові мишки",
+        "name_en": "Gaming mice",
+        "name_uk": "Ігрові мишки",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:54:23.986Z",
+        "order": 0,
+        "slug": "igrovi-mishki",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 192,
+    "fields": {
+        "name": "Ігрові клавіатури",
+        "name_en": "Gaming keyboards",
+        "name_uk": "Ігрові клавіатури",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:54:49.731Z",
+        "order": 0,
+        "slug": "igrovi-klaviaturi",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 193,
+    "fields": {
+        "name": "Мікрофони",
+        "name_en": "Microphones",
+        "name_uk": "Мікрофони",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:55:16.727Z",
+        "order": 0,
+        "slug": "mikrofoni-83332",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 194,
+    "fields": {
+        "name": "Килимки",
+        "name_en": "Rugs",
+        "name_uk": "Килимки",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:55:35.830Z",
+        "order": 0,
+        "slug": "kilimki",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 195,
+    "fields": {
+        "name": "Колонки для ПК",
+        "name_en": "Speakers for PC",
+        "name_uk": "Колонки для ПК",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:55:59.288Z",
+        "order": 0,
+        "slug": "kolonki-dlya-pk",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 196,
+    "fields": {
+        "name": "Веб-камери",
+        "name_en": "Web cameras",
+        "name_uk": "Веб-камери",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:56:24.663Z",
+        "order": 0,
+        "slug": "veb-kameri",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 197,
+    "fields": {
+        "name": "Підставки для ноутбуків",
+        "name_en": "Laptop stands",
+        "name_uk": "Підставки для ноутбуків",
+        "parent": 179,
+        "image": "",
+        "created_at": "2025-04-12T08:56:51.619Z",
+        "order": 0,
+        "slug": "pidstavki-dlya-noutbukiv",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 198,
+    "fields": {
+        "name": "PlayStation",
+        "name_en": "PlayStation",
+        "name_uk": "PlayStation",
+        "parent": 180,
+        "image": "",
+        "created_at": "2025-04-12T08:57:12.133Z",
+        "order": 0,
+        "slug": "playstation-4822",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 199,
+    "fields": {
+        "name": "Xbox",
+        "name_en": "Xbox",
+        "name_uk": "Xbox",
+        "parent": 180,
+        "image": "",
+        "created_at": "2025-04-12T08:57:25.464Z",
+        "order": 0,
+        "slug": "xbox",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 200,
+    "fields": {
+        "name": "Nintendo Switch",
+        "name_en": "Nintendo Switch",
+        "name_uk": "Nintendo Switch",
+        "parent": 180,
+        "image": "",
+        "created_at": "2025-04-12T08:57:44.511Z",
+        "order": 0,
+        "slug": "nintendo-switch-011",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 201,
+    "fields": {
+        "name": "Steam Deck",
+        "name_en": "Steam Deck",
+        "name_uk": "Steam Deck",
+        "parent": 180,
+        "image": "",
+        "created_at": "2025-04-12T08:58:02.616Z",
+        "order": 0,
+        "slug": "steam-deck",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 202,
+    "fields": {
+        "name": "Відеокарти",
+        "name_en": "Video cards",
+        "name_uk": "Відеокарти",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T08:58:41.905Z",
+        "order": 0,
+        "slug": "videokarti",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 203,
+    "fields": {
+        "name": "Оперативна пам'ять",
+        "name_en": "RAM",
+        "name_uk": "Оперативна пам'ять",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T08:59:05.203Z",
+        "order": 0,
+        "slug": "operativna-pamyat",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 204,
+    "fields": {
+        "name": "Процесори",
+        "name_en": "Processors",
+        "name_uk": "Процесори",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T08:59:27.740Z",
+        "order": 0,
+        "slug": "procesori",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 205,
+    "fields": {
+        "name": "Материнські плати",
+        "name_en": "Motherboards",
+        "name_uk": "Материнські плати",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T09:00:09.776Z",
+        "order": 0,
+        "slug": "materinski-plati",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 206,
+    "fields": {
+        "name": "Накопичувачі інформації",
+        "name_en": "Information storage devices",
+        "name_uk": "Накопичувачі інформації",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T09:00:32.272Z",
+        "order": 0,
+        "slug": "nakopichuvachi-informaciyi",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 207,
+    "fields": {
+        "name": "Корпуси для ПК",
+        "name_en": "Cases for PCs",
+        "name_uk": "Корпуси для ПК",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T09:00:50.168Z",
+        "order": 0,
+        "slug": "korpusi-dlya-pk",
+        "lft": 87,
+        "rght": 88,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 208,
+    "fields": {
+        "name": "Блоки живлення для ПК",
+        "name_en": "PC power supplies",
+        "name_uk": "Блоки живлення для ПК",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T09:01:17.303Z",
+        "order": 0,
+        "slug": "bloki-zhivlennya-dlya-pk",
+        "lft": 89,
+        "rght": 90,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 209,
+    "fields": {
+        "name": "Системи охолодження",
+        "name_en": "Cooling systems",
+        "name_uk": "Системи охолодження",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T09:01:36.104Z",
+        "order": 0,
+        "slug": "sistemi-oholodzhennya",
+        "lft": 91,
+        "rght": 92,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 210,
+    "fields": {
+        "name": "Комплектуючі для ноутбуків",
+        "name_en": "Laptop accessories",
+        "name_uk": "Комплектуючі для ноутбуків",
+        "parent": 182,
+        "image": "",
+        "created_at": "2025-04-12T09:02:00.023Z",
+        "order": 0,
+        "slug": "komplektuyuchi-dlya-noutbukiv",
+        "lft": 93,
+        "rght": 94,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 211,
+    "fields": {
+        "name": "Redmagic",
+        "name_en": "Redmagic",
+        "name_uk": "Redmagic",
+        "parent": 183,
+        "image": "",
+        "created_at": "2025-04-12T09:02:20.666Z",
+        "order": 0,
+        "slug": "redmagic-832",
+        "lft": 97,
+        "rght": 98,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 212,
+    "fields": {
+        "name": "Nubia",
+        "name_en": "Nubia",
+        "name_uk": "Nubia",
+        "parent": 183,
+        "image": "",
+        "created_at": "2025-04-12T09:02:34.164Z",
+        "order": 0,
+        "slug": "nubia",
+        "lft": 99,
+        "rght": 100,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 213,
+    "fields": {
+        "name": "Asus ROG",
+        "name_en": "Asus ROG",
+        "name_uk": "Asus ROG",
+        "parent": 183,
+        "image": "",
+        "created_at": "2025-04-12T09:02:49.729Z",
+        "order": 0,
+        "slug": "asus-rog",
+        "lft": 101,
+        "rght": 102,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 214,
+    "fields": {
+        "name": "PlayStation Dualshock",
+        "name_en": "PlayStation Dualshock",
+        "name_uk": "PlayStation Dualshock",
+        "parent": 181,
+        "image": "",
+        "created_at": "2025-04-12T09:04:17.120Z",
+        "order": 0,
+        "slug": "playstation-dualshock",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 215,
+    "fields": {
+        "name": "Xbox controller",
+        "name_en": "Xbox controller",
+        "name_uk": "Xbox controller",
+        "parent": 181,
+        "image": "",
+        "created_at": "2025-04-12T09:04:35.981Z",
+        "order": 0,
+        "slug": "xbox-controller",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 216,
+    "fields": {
+        "name": "Asus",
+        "name_en": "Asus",
+        "name_uk": "Asus",
+        "parent": 176,
+        "image": "",
+        "created_at": "2025-04-12T09:06:04.809Z",
+        "order": 0,
+        "slug": "asus-9822",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 217,
+    "fields": {
+        "name": "MSI",
+        "name_en": "MSI",
+        "name_uk": "MSI",
+        "parent": 176,
+        "image": "",
+        "created_at": "2025-04-12T09:06:16.374Z",
+        "order": 0,
+        "slug": "msi",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 218,
+    "fields": {
+        "name": "Acer Predator",
+        "name_en": "Acer Predator",
+        "name_uk": "Acer Predator",
+        "parent": 176,
+        "image": "",
+        "created_at": "2025-04-12T09:06:38.139Z",
+        "order": 0,
+        "slug": "acer-predator",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 219,
+    "fields": {
+        "name": "LG",
+        "name_en": "LG",
+        "name_uk": "LG",
+        "parent": 176,
+        "image": "",
+        "created_at": "2025-04-12T09:06:57.887Z",
+        "order": 0,
+        "slug": "lg-39292",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 220,
+    "fields": {
+        "name": "Samsung Odyssey",
+        "name_en": "Samsung Odyssey",
+        "name_uk": "Samsung Odyssey",
+        "parent": 176,
+        "image": "",
+        "created_at": "2025-04-12T09:07:15.543Z",
+        "order": 0,
+        "slug": "samsung-odyssey",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 221,
+    "fields": {
+        "name": "Artline",
+        "name_en": "Artline",
+        "name_uk": "Artline",
+        "parent": 177,
+        "image": "",
+        "created_at": "2025-04-12T09:07:51.472Z",
+        "order": 0,
+        "slug": "artline",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 222,
+    "fields": {
+        "name": "Impression",
+        "name_en": "Impression",
+        "name_uk": "Impression",
+        "parent": 177,
+        "image": "",
+        "created_at": "2025-04-12T09:08:08.528Z",
+        "order": 0,
+        "slug": "impression",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 223,
+    "fields": {
+        "name": "QUBE",
+        "name_en": "QUBE",
+        "name_uk": "QUBE",
+        "parent": 177,
+        "image": "",
+        "created_at": "2025-04-12T09:08:26.444Z",
+        "order": 0,
+        "slug": "qube",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 224,
+    "fields": {
+        "name": "2E",
+        "name_en": "2E",
+        "name_uk": "2E",
+        "parent": 177,
+        "image": "",
+        "created_at": "2025-04-12T09:08:42.465Z",
+        "order": 0,
+        "slug": "2e",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 225,
+    "fields": {
+        "name": "Asus ROG",
+        "name_en": "Asus ROG",
+        "name_uk": "Asus ROG",
+        "parent": 177,
+        "image": "",
+        "created_at": "2025-04-12T09:09:05.157Z",
+        "order": 0,
+        "slug": "asus-rog-92122",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 3,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 226,
+    "fields": {
+        "name": "Смарт годинники Apple",
+        "name_en": "Smart watches Apple",
+        "name_uk": "Смарт годинники Apple",
+        "parent": 5,
+        "image": "category_images/smartwatch-apple.svg",
+        "created_at": "2025-04-12T10:17:39.246Z",
+        "order": 0,
+        "slug": "smart-godinniki-apple",
+        "lft": 2,
+        "rght": 11,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 227,
+    "fields": {
+        "name": "Смарт годинники Xiaomi",
+        "name_en": "Smart watches Xiaomi",
+        "name_uk": "Смарт годинники Xiaomi",
+        "parent": 5,
+        "image": "category_images/smartwatch-xiaomi.svg",
+        "created_at": "2025-04-12T10:18:07.594Z",
+        "order": 0,
+        "slug": "smart-godinniki-xiaomi",
+        "lft": 12,
+        "rght": 19,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 228,
+    "fields": {
+        "name": "Смарт годинники Samsung",
+        "name_en": "Smart watches Samsung",
+        "name_uk": "Смарт годинники Samsung",
+        "parent": 5,
+        "image": "category_images/smartwatch-samsung.svg",
+        "created_at": "2025-04-12T10:18:34.625Z",
+        "order": 0,
+        "slug": "smart-godinniki-samsung",
+        "lft": 20,
+        "rght": 29,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 229,
+    "fields": {
+        "name": "Фітнес трекери",
+        "name_en": "Fitness trackers",
+        "name_uk": "Фітнес трекери",
+        "parent": 5,
+        "image": "category_images/fitness-tracker.svg",
+        "created_at": "2025-04-12T10:18:59.414Z",
+        "order": 0,
+        "slug": "fitnes-trekeri",
+        "lft": 30,
+        "rght": 37,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 230,
+    "fields": {
+        "name": "Смарт ваги",
+        "name_en": "Smart scales",
+        "name_uk": "Смарт ваги",
+        "parent": 5,
+        "image": "category_images/smart-scales.svg",
+        "created_at": "2025-04-12T10:19:19.505Z",
+        "order": 0,
+        "slug": "smart-vagi",
+        "lft": 38,
+        "rght": 39,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 231,
+    "fields": {
+        "name": "Розумне освітлення",
+        "name_en": "Smart lighting",
+        "name_uk": "Розумне освітлення",
+        "parent": 5,
+        "image": "category_images/smart-lighting.svg",
+        "created_at": "2025-04-12T10:19:41.141Z",
+        "order": 0,
+        "slug": "rozumne-osvitlennya",
+        "lft": 40,
+        "rght": 41,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 232,
+    "fields": {
+        "name": "Розумний будинок",
+        "name_en": "Smart home",
+        "name_uk": "Розумний будинок",
+        "parent": 5,
+        "image": "category_images/smart-home.svg",
+        "created_at": "2025-04-12T10:20:01.960Z",
+        "order": 0,
+        "slug": "rozumnij-budinok",
+        "lft": 42,
+        "rght": 61,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 233,
+    "fields": {
+        "name": "Квадрокоптери",
+        "name_en": "Quadcopters",
+        "name_uk": "Квадрокоптери",
+        "parent": 5,
+        "image": "category_images/drone.svg",
+        "created_at": "2025-04-12T10:20:30.798Z",
+        "order": 0,
+        "slug": "kvadrokopteri",
+        "lft": 62,
+        "rght": 63,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 234,
+    "fields": {
+        "name": "Електротранспорт",
+        "name_en": "Electric transport",
+        "name_uk": "Електротранспорт",
+        "parent": 5,
+        "image": "category_images/bicycle-electric.svg",
+        "created_at": "2025-04-12T10:20:51.254Z",
+        "order": 0,
+        "slug": "elektrotransport",
+        "lft": 64,
+        "rght": 79,
+        "tree_id": 5,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 235,
+    "fields": {
+        "name": "Apple Watch Ultra 2",
+        "name_en": "Apple Watch Ultra 2",
+        "name_uk": "Apple Watch Ultra 2",
+        "parent": 226,
+        "image": "",
+        "created_at": "2025-04-12T10:21:28.756Z",
+        "order": 0,
+        "slug": "apple-watch-ultra-2",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 236,
+    "fields": {
+        "name": "Apple Watch Series 10",
+        "name_en": "Apple Watch Series 10",
+        "name_uk": "Apple Watch Series 10",
+        "parent": 226,
+        "image": "",
+        "created_at": "2025-04-12T10:21:45.670Z",
+        "order": 0,
+        "slug": "apple-watch-series-10",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 237,
+    "fields": {
+        "name": "Apple Watch SE2",
+        "name_en": "Apple Watch SE2",
+        "name_uk": "Apple Watch SE2",
+        "parent": 226,
+        "image": "",
+        "created_at": "2025-04-12T10:22:02.262Z",
+        "order": 0,
+        "slug": "apple-watch-se2",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 238,
+    "fields": {
+        "name": "Аксесуари для Apple Watch",
+        "name_en": "Accessories for Apple Watch",
+        "name_uk": "Аксесуари для Apple Watch",
+        "parent": 226,
+        "image": "",
+        "created_at": "2025-04-12T10:22:31.902Z",
+        "order": 0,
+        "slug": "aksesuari-dlya-apple-watch",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 239,
+    "fields": {
+        "name": "Xiaomi Watch",
+        "name_en": "Xiaomi Watch",
+        "name_uk": "Xiaomi Watch",
+        "parent": 227,
+        "image": "",
+        "created_at": "2025-04-12T10:22:45.159Z",
+        "order": 0,
+        "slug": "xiaomi-watch",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 240,
+    "fields": {
+        "name": "Redmi watch",
+        "name_en": "Redmi Watch",
+        "name_uk": "Redmi watch",
+        "parent": 227,
+        "image": "",
+        "created_at": "2025-04-12T10:22:59.958Z",
+        "order": 0,
+        "slug": "redmi-watch",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 241,
+    "fields": {
+        "name": "Аксесуари для Xiaomi Watch",
+        "name_en": "Accessories for Xiaomi Watch",
+        "name_uk": "Аксесуари для Xiaomi Watch",
+        "parent": 227,
+        "image": "",
+        "created_at": "2025-04-12T10:23:29.820Z",
+        "order": 0,
+        "slug": "aksesuari-dlya-xiaomi-watch",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 242,
+    "fields": {
+        "name": "Samsung Watch Ultra",
+        "name_en": "Samsung Watch Ultra",
+        "name_uk": "Samsung Watch Ultra",
+        "parent": 228,
+        "image": "",
+        "created_at": "2025-04-12T10:23:44.882Z",
+        "order": 0,
+        "slug": "samsung-watch-ultra",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 243,
+    "fields": {
+        "name": "Samsung Watch 7",
+        "name_en": "Samsung Watch 7",
+        "name_uk": "Samsung Watch 7",
+        "parent": 228,
+        "image": "",
+        "created_at": "2025-04-12T10:24:01.950Z",
+        "order": 0,
+        "slug": "samsung-watch-7",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 244,
+    "fields": {
+        "name": "Samsung Watch 6 Classic",
+        "name_en": "Samsung Watch 6 Classic",
+        "name_uk": "Samsung Watch 6 Classic",
+        "parent": 228,
+        "image": "",
+        "created_at": "2025-04-12T10:24:18.732Z",
+        "order": 0,
+        "slug": "samsung-watch-6-classic",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 245,
+    "fields": {
+        "name": "Аксесуари для Samsung",
+        "name_en": "Accessories for Samsung",
+        "name_uk": "Аксесуари для Samsung",
+        "parent": 228,
+        "image": "",
+        "created_at": "2025-04-12T10:24:37.362Z",
+        "order": 0,
+        "slug": "aksesuari-dlya-samsung",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 246,
+    "fields": {
+        "name": "Фітнес трекери Xiaomi",
+        "name_en": "Fitness trackers Xiaomi",
+        "name_uk": "Фітнес трекери Xiaomi",
+        "parent": 229,
+        "image": "",
+        "created_at": "2025-04-12T10:25:13.266Z",
+        "order": 0,
+        "slug": "fitnes-trekeri-xiaomi",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 247,
+    "fields": {
+        "name": "Фітнес трекери Samsung",
+        "name_en": "Fitness trackers Samsung",
+        "name_uk": "Фітнес трекери Samsung",
+        "parent": 229,
+        "image": "",
+        "created_at": "2025-04-12T10:25:34.125Z",
+        "order": 0,
+        "slug": "fitnes-trekeri-samsung",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 248,
+    "fields": {
+        "name": "Аксесуари для фітнес трекерів",
+        "name_en": "Accessories for fitness trackers",
+        "name_uk": "Аксесуари для фітнес трекерів",
+        "parent": 229,
+        "image": "",
+        "created_at": "2025-04-12T10:26:02.855Z",
+        "order": 0,
+        "slug": "aksesuari-dlya-fitnes-trekeriv",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 249,
+    "fields": {
+        "name": "IP-камери",
+        "name_en": "IP-camera",
+        "name_uk": "IP-камери",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:26:32.078Z",
+        "order": 0,
+        "slug": "ip-kameri",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 250,
+    "fields": {
+        "name": "IP-камери вуличні",
+        "name_en": "street IP-cameras",
+        "name_uk": "IP-камери вуличні",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:27:07.201Z",
+        "order": 0,
+        "slug": "ip-kameri-vulichni",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 251,
+    "fields": {
+        "name": "Датчики контроллери",
+        "name_en": "Sensors and controllers",
+        "name_uk": "Датчики контроллери",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:27:32.101Z",
+        "order": 0,
+        "slug": "datchiki-kontrolleri",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 252,
+    "fields": {
+        "name": "Розумні дверні замки",
+        "name_en": "Smart door locks",
+        "name_uk": "Розумні дверні замки",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:27:53.901Z",
+        "order": 0,
+        "slug": "rozumni-dverni-zamki",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 253,
+    "fields": {
+        "name": "Розумні розетки",
+        "name_en": "Smart sockets",
+        "name_uk": "Розумні розетки",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:28:15.076Z",
+        "order": 0,
+        "slug": "rozumni-rozetki",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 254,
+    "fields": {
+        "name": "Дзеркала Mackeup",
+        "name_en": "Mirrors Maceup",
+        "name_uk": "Дзеркала Mackeup",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:28:50.831Z",
+        "order": 0,
+        "slug": "dzerkala-mackeup",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 255,
+    "fields": {
+        "name": "Портативні принтери",
+        "name_en": "Portable printers",
+        "name_uk": "Портативні принтери",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:29:10.557Z",
+        "order": 0,
+        "slug": "portativni-printeri",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 256,
+    "fields": {
+        "name": "Диспенсори рідкого мила",
+        "name_en": "Liquid soap dispensers",
+        "name_uk": "Диспенсори рідкого мила",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:29:35.475Z",
+        "order": 0,
+        "slug": "dispensori-ridkogo-mila",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 257,
+    "fields": {
+        "name": "Комп'ютерні окуляри",
+        "name_en": "Computer glasses",
+        "name_uk": "Комп'ютерні окуляри",
+        "parent": 232,
+        "image": "",
+        "created_at": "2025-04-12T10:29:51.065Z",
+        "order": 0,
+        "slug": "kompyuterni-okulyari",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 258,
+    "fields": {
+        "name": "Електросамокати",
+        "name_en": "Electric scooters",
+        "name_uk": "Електросамокати",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:30:11.993Z",
+        "order": 0,
+        "slug": "elektrosamokati",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 259,
+    "fields": {
+        "name": "Електровелосипеди",
+        "name_en": "Electric bicycles",
+        "name_uk": "Електровелосипеди",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:30:28.430Z",
+        "order": 0,
+        "slug": "elektrovelosipedi",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 260,
+    "fields": {
+        "name": "Дрифт-карти",
+        "name_en": "Drift cards",
+        "name_uk": "Дрифт-карти",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:30:44.606Z",
+        "order": 0,
+        "slug": "drift-karti",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 261,
+    "fields": {
+        "name": "Гіроскутери",
+        "name_en": "Gyro scooters",
+        "name_uk": "Гіроскутери",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:31:00.318Z",
+        "order": 0,
+        "slug": "giroskuteri",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 262,
+    "fields": {
+        "name": "Гіроборди",
+        "name_en": "Gyroboards",
+        "name_uk": "Гіроборди",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:31:15.619Z",
+        "order": 0,
+        "slug": "girobordi",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 263,
+    "fields": {
+        "name": "Дитячі електромобілі",
+        "name_en": "Children's electric cars",
+        "name_uk": "Дитячі електромобілі",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:31:33.462Z",
+        "order": 0,
+        "slug": "dityachi-elektromobili",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 264,
+    "fields": {
+        "name": "Захисне екіпірування",
+        "name_en": "Protective equipment",
+        "name_uk": "Захисне екіпірування",
+        "parent": 234,
+        "image": "",
+        "created_at": "2025-04-12T10:31:48.938Z",
+        "order": 0,
+        "slug": "zahisne-ekipiruvannya",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 5,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 265,
+    "fields": {
+        "name": "Навушники по типу",
+        "name_en": "Headphones by type",
+        "name_uk": "Навушники по типу",
+        "parent": 6,
+        "image": "category_images/headphones-type.svg",
+        "created_at": "2025-04-12T14:04:03.441Z",
+        "order": 0,
+        "slug": "navushniki-po-tipu",
+        "lft": 2,
+        "rght": 21,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 266,
+    "fields": {
+        "name": "Навушники по брендам",
+        "name_en": "Headphones by brand",
+        "name_uk": "Навушники по брендам",
+        "parent": 6,
+        "image": "category_images/hd-brand.svg",
+        "created_at": "2025-04-12T14:04:27.351Z",
+        "order": 0,
+        "slug": "navushniki-po-brendam",
+        "lft": 22,
+        "rght": 45,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 267,
+    "fields": {
+        "name": "Портативні колонки",
+        "name_en": "Portable speakers",
+        "name_uk": "Портативні колонки",
+        "parent": 6,
+        "image": "category_images/kolonki.svg",
+        "created_at": "2025-04-12T14:04:51.946Z",
+        "order": 0,
+        "slug": "portativni-kolonki",
+        "lft": 46,
+        "rght": 57,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 268,
+    "fields": {
+        "name": "Музичні інструменти",
+        "name_en": "Musical instruments",
+        "name_uk": "Музичні інструменти",
+        "parent": 6,
+        "image": "category_images/music-instruments-concert-svgrepo-com.svg",
+        "created_at": "2025-04-12T14:05:45.891Z",
+        "order": 0,
+        "slug": "muzichni-instrumenti-822",
+        "lft": 58,
+        "rght": 65,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 269,
+    "fields": {
+        "name": "Аксесуари для навушників",
+        "name_en": "Headphone accessories",
+        "name_uk": "Аксесуари для навушників",
+        "parent": 6,
+        "image": "category_images/cable-jack-svgrepo-com.svg",
+        "created_at": "2025-04-12T14:06:30.236Z",
+        "order": 0,
+        "slug": "aksesuari-dlya-navushnikiv",
+        "lft": 66,
+        "rght": 71,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 270,
+    "fields": {
+        "name": "Стаціонарні колонки",
+        "name_en": "Stationary speakers",
+        "name_uk": "Стаціонарні колонки",
+        "parent": 6,
+        "image": "category_images/speaker-svgrepo-com.svg",
+        "created_at": "2025-04-12T14:06:55.172Z",
+        "order": 0,
+        "slug": "stacionarni-kolonki",
+        "lft": 72,
+        "rght": 79,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 271,
+    "fields": {
+        "name": "Саундбари",
+        "name_en": "Sound bars",
+        "name_uk": "Саундбари",
+        "parent": 6,
+        "image": "category_images/sound-wafe-multimedia-svgrepo-com.svg",
+        "created_at": "2025-04-12T14:07:18.599Z",
+        "order": 0,
+        "slug": "saundbari-89383",
+        "lft": 80,
+        "rght": 87,
+        "tree_id": 6,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 272,
+    "fields": {
+        "name": "True Wireless Stereo",
+        "name_en": "True Wireless Stereo",
+        "name_uk": "True Wireless Stereo",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:08:14.442Z",
+        "order": 0,
+        "slug": "true-wireless-stereo",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 273,
+    "fields": {
+        "name": "Бездротові",
+        "name_en": "Wireless",
+        "name_uk": "Бездротові",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:08:47.505Z",
+        "order": 0,
+        "slug": "bezdrotovi",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 274,
+    "fields": {
+        "name": "Дротові",
+        "name_en": "Wired",
+        "name_uk": "Дротові",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:09:03.469Z",
+        "order": 0,
+        "slug": "drotovi",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 275,
+    "fields": {
+        "name": "Накладні",
+        "name_en": "Invoices",
+        "name_uk": "Накладні",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:09:18.421Z",
+        "order": 0,
+        "slug": "nakladni",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 276,
+    "fields": {
+        "name": "Вакуумні",
+        "name_en": "Vacuum",
+        "name_uk": "Вакуумні",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:09:34.224Z",
+        "order": 0,
+        "slug": "vakuumni",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 277,
+    "fields": {
+        "name": "Вкладиші",
+        "name_en": "Insert",
+        "name_uk": "Вкладиші",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:09:47.526Z",
+        "order": 0,
+        "slug": "vkladishi",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 278,
+    "fields": {
+        "name": "Ігрові",
+        "name_en": "Gaming",
+        "name_uk": "Ігрові",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:10:01.065Z",
+        "order": 0,
+        "slug": "igrovi",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 279,
+    "fields": {
+        "name": "Спортивні",
+        "name_en": "Sports",
+        "name_uk": "Спортивні",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:10:15.439Z",
+        "order": 0,
+        "slug": "sportivni",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 280,
+    "fields": {
+        "name": "З шумозаглушенням",
+        "name_en": "With noise reduction",
+        "name_uk": "З шумозаглушенням",
+        "parent": 265,
+        "image": "",
+        "created_at": "2025-04-12T14:10:35.628Z",
+        "order": 0,
+        "slug": "z-shumozaglushennyam",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 281,
+    "fields": {
+        "name": "JBL",
+        "name_en": "JBL",
+        "name_uk": "JBL",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:10:51.343Z",
+        "order": 0,
+        "slug": "jbl",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 282,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:10:56.735Z",
+        "order": 0,
+        "slug": "xiaomi-28181",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 283,
+    "fields": {
+        "name": "Apple",
+        "name_en": "Apple",
+        "name_uk": "Apple",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:11:27.604Z",
+        "order": 0,
+        "slug": "apple-01182",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 284,
+    "fields": {
+        "name": "Samsung",
+        "name_en": "Samsung",
+        "name_uk": "Samsung",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:11:42.874Z",
+        "order": 0,
+        "slug": "samsung-289832",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 285,
+    "fields": {
+        "name": "OPPO",
+        "name_en": "OPPO",
+        "name_uk": "OPPO",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:11:57.751Z",
+        "order": 0,
+        "slug": "oppo",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 286,
+    "fields": {
+        "name": "Sony",
+        "name_en": "Sony",
+        "name_uk": "Sony",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:12:11.673Z",
+        "order": 0,
+        "slug": "sony-9322",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 287,
+    "fields": {
+        "name": "Nothing",
+        "name_en": "Nothing",
+        "name_uk": "Nothing",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:12:28.669Z",
+        "order": 0,
+        "slug": "nothing",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 288,
+    "fields": {
+        "name": "hator",
+        "name_en": "Hator",
+        "name_uk": "hator",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:12:44.212Z",
+        "order": 0,
+        "slug": "hator",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 289,
+    "fields": {
+        "name": "Logitech",
+        "name_en": "Logitech",
+        "name_uk": "Logitech",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:12:59.655Z",
+        "order": 0,
+        "slug": "logitech",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 290,
+    "fields": {
+        "name": "Marshall",
+        "name_en": "Marshall",
+        "name_uk": "Marshall",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:13:14.787Z",
+        "order": 0,
+        "slug": "marshall",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 291,
+    "fields": {
+        "name": "Razer",
+        "name_en": "Razer",
+        "name_uk": "Razer",
+        "parent": 266,
+        "image": "",
+        "created_at": "2025-04-12T14:13:26.308Z",
+        "order": 0,
+        "slug": "razer",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 292,
+    "fields": {
+        "name": "JBL",
+        "name_en": "JBL",
+        "name_uk": "JBL",
+        "parent": 267,
+        "image": "",
+        "created_at": "2025-04-12T14:13:43.128Z",
+        "order": 0,
+        "slug": "jbl-92833",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 293,
+    "fields": {
+        "name": "Marshall",
+        "name_en": "Marshall",
+        "name_uk": "Marshall",
+        "parent": 267,
+        "image": "",
+        "created_at": "2025-04-12T14:14:02.209Z",
+        "order": 0,
+        "slug": "marshall-3920",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 294,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 267,
+        "image": "",
+        "created_at": "2025-04-12T14:14:16.089Z",
+        "order": 0,
+        "slug": "xiaomi-038822",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 295,
+    "fields": {
+        "name": "Bang & Olufsen",
+        "name_en": "Bang & Olufsen",
+        "name_uk": "Bang & Olufsen",
+        "parent": 267,
+        "image": "",
+        "created_at": "2025-04-12T14:14:33.152Z",
+        "order": 0,
+        "slug": "bang-olufsen",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 296,
+    "fields": {
+        "name": "Harman Kardon",
+        "name_en": "Harman Kardon",
+        "name_uk": "Harman Kardon",
+        "parent": 267,
+        "image": "",
+        "created_at": "2025-04-12T14:14:56.025Z",
+        "order": 0,
+        "slug": "harman-kardon",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 297,
+    "fields": {
+        "name": "Амбрушюри",
+        "name_en": "Ear cushions",
+        "name_uk": "Амбрушюри",
+        "parent": 269,
+        "image": "",
+        "created_at": "2025-04-12T14:15:36.810Z",
+        "order": 0,
+        "slug": "ambrushyuri",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 298,
+    "fields": {
+        "name": "Чохли",
+        "name_en": "Covers",
+        "name_uk": "Чохли",
+        "parent": 269,
+        "image": "",
+        "created_at": "2025-04-12T14:15:48.682Z",
+        "order": 0,
+        "slug": "chohli",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 299,
+    "fields": {
+        "name": "Гітари",
+        "name_en": "Guitars",
+        "name_uk": "Гітари",
+        "parent": 268,
+        "image": "",
+        "created_at": "2025-04-12T14:16:05.008Z",
+        "order": 0,
+        "slug": "gitari-02822",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 300,
+    "fields": {
+        "name": "Клавішні інструменти",
+        "name_en": "Keyboard instruments",
+        "name_uk": "Клавішні інструменти",
+        "parent": 268,
+        "image": "",
+        "created_at": "2025-04-12T14:16:23.240Z",
+        "order": 0,
+        "slug": "klavishni-instrumenti-02822",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 301,
+    "fields": {
+        "name": "Ударні інструменти",
+        "name_en": "Percussion instruments",
+        "name_uk": "Ударні інструменти",
+        "parent": 268,
+        "image": "",
+        "created_at": "2025-04-12T14:16:43.292Z",
+        "order": 0,
+        "slug": "udarni-instrumenti-09111",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 302,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 270,
+        "image": "",
+        "created_at": "2025-04-12T14:17:03.352Z",
+        "order": 0,
+        "slug": "xiaomi-922222",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 303,
+    "fields": {
+        "name": "Bang & Olufsen",
+        "name_en": "Bang & Olufsen",
+        "name_uk": "Bang & Olufsen",
+        "parent": 270,
+        "image": "",
+        "created_at": "2025-04-12T14:17:14.708Z",
+        "order": 0,
+        "slug": "bang-olufsen-02",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 304,
+    "fields": {
+        "name": "JBL",
+        "name_en": "JBL",
+        "name_uk": "JBL",
+        "parent": 270,
+        "image": "",
+        "created_at": "2025-04-12T14:17:31.947Z",
+        "order": 0,
+        "slug": "jbl-0232",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 305,
+    "fields": {
+        "name": "JBL",
+        "name_en": "JBL",
+        "name_uk": "JBL",
+        "parent": 271,
+        "image": "",
+        "created_at": "2025-04-12T14:17:51.462Z",
+        "order": 0,
+        "slug": "jbl-1",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 306,
+    "fields": {
+        "name": "Samsung",
+        "name_en": "Samsung",
+        "name_uk": "Samsung",
+        "parent": 271,
+        "image": "",
+        "created_at": "2025-04-12T14:18:05.735Z",
+        "order": 0,
+        "slug": "samsung-0",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 307,
+    "fields": {
+        "name": "Bang & Olufsen",
+        "name_en": "Bang & Olufsen",
+        "name_uk": "Bang & Olufsen",
+        "parent": 271,
+        "image": "",
+        "created_at": "2025-04-12T14:18:22.983Z",
+        "order": 0,
+        "slug": "bang-olufsen-0100",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 6,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 308,
+    "fields": {
+        "name": "Для кухні",
+        "name_en": "For the kitchen",
+        "name_uk": "Для кухні",
+        "parent": 7,
+        "image": "category_images/kitchen.svg",
+        "created_at": "2025-04-13T08:07:15.223Z",
+        "order": 0,
+        "slug": "dlya-kuhni",
+        "lft": 2,
+        "rght": 19,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 309,
+    "fields": {
+        "name": "Велика техніка",
+        "name_en": "Great equipment",
+        "name_uk": "Велика техніка",
+        "parent": 7,
+        "image": "category_images/refrigerator.svg",
+        "created_at": "2025-04-13T08:07:39.367Z",
+        "order": 0,
+        "slug": "velika-tehnika",
+        "lft": 20,
+        "rght": 33,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 310,
+    "fields": {
+        "name": "Світ кави",
+        "name_en": "The world of coffee",
+        "name_uk": "Світ кави",
+        "parent": 7,
+        "image": "category_images/coffee-machine.svg",
+        "created_at": "2025-04-13T08:07:55.943Z",
+        "order": 0,
+        "slug": "svit-kavi",
+        "lft": 34,
+        "rght": 39,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 311,
+    "fields": {
+        "name": "Для дому",
+        "name_en": "For home",
+        "name_uk": "Для дому",
+        "parent": 7,
+        "image": "category_images/vacuum-cleaner.svg",
+        "created_at": "2025-04-13T08:08:16.258Z",
+        "order": 0,
+        "slug": "dlya-domu",
+        "lft": 40,
+        "rght": 55,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 312,
+    "fields": {
+        "name": "Кліматична техніка",
+        "name_en": "Climate technology",
+        "name_uk": "Кліматична техніка",
+        "parent": 7,
+        "image": "category_images/air-conditioning-ind.svg",
+        "created_at": "2025-04-13T08:08:37.005Z",
+        "order": 0,
+        "slug": "klimatichna-tehnika",
+        "lft": 56,
+        "rght": 75,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 313,
+    "fields": {
+        "name": "Вбудована техніка",
+        "name_en": "Built-in equipment",
+        "name_uk": "Вбудована техніка",
+        "parent": 7,
+        "image": "category_images/microwave-oven.svg",
+        "created_at": "2025-04-13T08:09:16.858Z",
+        "order": 0,
+        "slug": "vbudovana-tehnika",
+        "lft": 76,
+        "rght": 89,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 314,
+    "fields": {
+        "name": "Персональний догляд",
+        "name_en": "Personal care",
+        "name_uk": "Персональний догляд",
+        "parent": 7,
+        "image": "category_images/hair-dryer.svg",
+        "created_at": "2025-04-13T08:09:37.164Z",
+        "order": 0,
+        "slug": "personalnij-doglyad",
+        "lft": 90,
+        "rght": 109,
+        "tree_id": 7,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 315,
+    "fields": {
+        "name": "Мультиварки",
+        "name_en": "Multicookers",
+        "name_uk": "Мультиварки",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:09:58.738Z",
+        "order": 0,
+        "slug": "multivarki",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 316,
+    "fields": {
+        "name": "Мікрохвильові печі",
+        "name_en": "Microwave ovens",
+        "name_uk": "Мікрохвильові печі",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:10:19.385Z",
+        "order": 0,
+        "slug": "mikrohvilovi-pechi",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 317,
+    "fields": {
+        "name": "Мультипечі",
+        "name_en": "Multi ovens",
+        "name_uk": "Мультипечі",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:10:38.635Z",
+        "order": 0,
+        "slug": "multipechi",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 318,
+    "fields": {
+        "name": "Грилі і раклетниці",
+        "name_en": "Grills and raclettes",
+        "name_uk": "Грилі і раклетниці",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:11:03.524Z",
+        "order": 0,
+        "slug": "grili-i-rakletnici",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 319,
+    "fields": {
+        "name": "Електрочайники",
+        "name_en": "Electric kettles",
+        "name_uk": "Електрочайники",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:11:19.263Z",
+        "order": 0,
+        "slug": "elektrochajniki",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 320,
+    "fields": {
+        "name": "Блендери",
+        "name_en": "Blenders",
+        "name_uk": "Блендери",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:11:33.901Z",
+        "order": 0,
+        "slug": "blenderi",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 321,
+    "fields": {
+        "name": "М'ясорубки",
+        "name_en": "Meat grinders",
+        "name_uk": "М'ясорубки",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:11:47.631Z",
+        "order": 0,
+        "slug": "myasorubki",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 322,
+    "fields": {
+        "name": "Кухонні комбайни і машини",
+        "name_en": "Food processors and machines",
+        "name_uk": "Кухонні комбайни і машини",
+        "parent": 308,
+        "image": "",
+        "created_at": "2025-04-13T08:12:08.931Z",
+        "order": 0,
+        "slug": "kuhonni-kombajni-i-mashini",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 323,
+    "fields": {
+        "name": "Холодильники",
+        "name_en": "Refrigerators",
+        "name_uk": "Холодильники",
+        "parent": 309,
+        "image": "",
+        "created_at": "2025-04-13T08:12:23.031Z",
+        "order": 0,
+        "slug": "holodilniki",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 324,
+    "fields": {
+        "name": "Пральні машини",
+        "name_en": "Washing machines",
+        "name_uk": "Пральні машини",
+        "parent": 309,
+        "image": "",
+        "created_at": "2025-04-13T08:12:35.798Z",
+        "order": 0,
+        "slug": "pralni-mashini",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 325,
+    "fields": {
+        "name": "Сушильні машини",
+        "name_en": "Drying machines",
+        "name_uk": "Сушильні машини",
+        "parent": 309,
+        "image": "",
+        "created_at": "2025-04-13T08:12:50.261Z",
+        "order": 0,
+        "slug": "sushilni-mashini",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 326,
+    "fields": {
+        "name": "Духові шафи",
+        "name_en": "Oven cabinets",
+        "name_uk": "Духові шафи",
+        "parent": 309,
+        "image": "",
+        "created_at": "2025-04-13T08:13:04.556Z",
+        "order": 0,
+        "slug": "duhovi-shafi",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 327,
+    "fields": {
+        "name": "Плити",
+        "name_en": "slabs",
+        "name_uk": "Плити",
+        "parent": 309,
+        "image": "",
+        "created_at": "2025-04-13T08:13:19.023Z",
+        "order": 0,
+        "slug": "pliti",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 328,
+    "fields": {
+        "name": "Морозильні камери",
+        "name_en": "Freezers",
+        "name_uk": "Морозильні камери",
+        "parent": 309,
+        "image": "",
+        "created_at": "2025-04-13T08:13:36.691Z",
+        "order": 0,
+        "slug": "morozilni-kameri",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 329,
+    "fields": {
+        "name": "Кавові машини",
+        "name_en": "Coffee machines",
+        "name_uk": "Кавові машини",
+        "parent": 310,
+        "image": "",
+        "created_at": "2025-04-13T08:13:56.973Z",
+        "order": 0,
+        "slug": "kavovi-mashini",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 330,
+    "fields": {
+        "name": "Кавоварки",
+        "name_en": "Coffee machines",
+        "name_uk": "Кавоварки",
+        "parent": 310,
+        "image": "",
+        "created_at": "2025-04-13T08:14:09.690Z",
+        "order": 0,
+        "slug": "kavovarki",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 331,
+    "fields": {
+        "name": "Роботи пилососи",
+        "name_en": "Robot vacuum cleaners",
+        "name_uk": "Роботи пилососи",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:14:29.575Z",
+        "order": 0,
+        "slug": "roboti-pilososi",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 332,
+    "fields": {
+        "name": "Вертикальні пилососи",
+        "name_en": "Upright vacuum cleaners",
+        "name_uk": "Вертикальні пилососи",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:14:44.898Z",
+        "order": 0,
+        "slug": "vertikalni-pilososi",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 333,
+    "fields": {
+        "name": "Пилососи",
+        "name_en": "Vacuum cleaners",
+        "name_uk": "Пилососи",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:14:57.505Z",
+        "order": 0,
+        "slug": "pilososi",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 334,
+    "fields": {
+        "name": "Миючі пилососи",
+        "name_en": "Washing vacuum cleaners",
+        "name_uk": "Миючі пилососи",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:15:12.512Z",
+        "order": 0,
+        "slug": "miyuchi-pilososi",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 335,
+    "fields": {
+        "name": "Праски",
+        "name_en": "Irons",
+        "name_uk": "Праски",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:15:26.604Z",
+        "order": 0,
+        "slug": "praski",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 336,
+    "fields": {
+        "name": "Відпарювачі",
+        "name_en": "Vaporizers",
+        "name_uk": "Відпарювачі",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:15:40.484Z",
+        "order": 0,
+        "slug": "vidparyuvachi",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 337,
+    "fields": {
+        "name": "Парогенератори",
+        "name_en": "Steam generators",
+        "name_uk": "Парогенератори",
+        "parent": 311,
+        "image": "",
+        "created_at": "2025-04-13T08:16:01.055Z",
+        "order": 0,
+        "slug": "parogeneratori",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 338,
+    "fields": {
+        "name": "Кондиціонери",
+        "name_en": "Air conditioners",
+        "name_uk": "Кондиціонери",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:16:16.108Z",
+        "order": 0,
+        "slug": "kondicioneri",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 339,
+    "fields": {
+        "name": "Бойлери",
+        "name_en": "Boilers",
+        "name_uk": "Бойлери",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:16:53.187Z",
+        "order": 0,
+        "slug": "bojleri",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 340,
+    "fields": {
+        "name": "Зволожувачі повітря",
+        "name_en": "Air humidifiers",
+        "name_uk": "Зволожувачі повітря",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:17:07.471Z",
+        "order": 0,
+        "slug": "zvolozhuvachi-povitrya",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 341,
+    "fields": {
+        "name": "Очищувачі повітра",
+        "name_en": "Air purifiers",
+        "name_uk": "Очищувачі повітра",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:17:21.014Z",
+        "order": 0,
+        "slug": "ochishuvachi-povitra",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 342,
+    "fields": {
+        "name": "Осушувачі повітря",
+        "name_en": "Air dehumidifiers",
+        "name_uk": "Осушувачі повітря",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:17:43.722Z",
+        "order": 0,
+        "slug": "osushuvachi-povitrya",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 343,
+    "fields": {
+        "name": "Вентилятори",
+        "name_en": "Fans",
+        "name_uk": "Вентилятори",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:18:09.992Z",
+        "order": 0,
+        "slug": "ventilyatori",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 344,
+    "fields": {
+        "name": "Газові котли",
+        "name_en": "Gas boilers",
+        "name_uk": "Газові котли",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:18:24.369Z",
+        "order": 0,
+        "slug": "gazovi-kotli",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 345,
+    "fields": {
+        "name": "Конвектори",
+        "name_en": "Convectors",
+        "name_uk": "Конвектори",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:18:43.088Z",
+        "order": 0,
+        "slug": "konvektori",
+        "lft": 71,
+        "rght": 72,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 346,
+    "fields": {
+        "name": "Тепловентилятори",
+        "name_en": "Fan heaters",
+        "name_uk": "Тепловентилятори",
+        "parent": 312,
+        "image": "",
+        "created_at": "2025-04-13T08:19:00.076Z",
+        "order": 0,
+        "slug": "teploventilyatori",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 347,
+    "fields": {
+        "name": "Духові шафи",
+        "name_en": "Oven cabinets",
+        "name_uk": "Духові шафи",
+        "parent": 313,
+        "image": "",
+        "created_at": "2025-04-13T08:19:25.518Z",
+        "order": 0,
+        "slug": "duhovi-shafi-0222",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 348,
+    "fields": {
+        "name": "Варильні поверхні",
+        "name_en": "Cooking surfaces",
+        "name_uk": "Варильні поверхні",
+        "parent": 313,
+        "image": "",
+        "created_at": "2025-04-13T08:19:40.367Z",
+        "order": 0,
+        "slug": "varilni-poverhni",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 349,
+    "fields": {
+        "name": "Кухонні витяжки",
+        "name_en": "Kitchen hoods",
+        "name_uk": "Кухонні витяжки",
+        "parent": 313,
+        "image": "",
+        "created_at": "2025-04-13T08:19:55.263Z",
+        "order": 0,
+        "slug": "kuhonni-vityazhki",
+        "lft": 81,
+        "rght": 82,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 350,
+    "fields": {
+        "name": "Посудомийні машини",
+        "name_en": "Dishwashers",
+        "name_uk": "Посудомийні машини",
+        "parent": 313,
+        "image": "",
+        "created_at": "2025-04-13T08:20:10.363Z",
+        "order": 0,
+        "slug": "posudomijni-mashini",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 351,
+    "fields": {
+        "name": "Холодильники",
+        "name_en": "Refrigerators",
+        "name_uk": "Холодильники",
+        "parent": 313,
+        "image": "",
+        "created_at": "2025-04-13T08:20:25.487Z",
+        "order": 0,
+        "slug": "holodilniki-022",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 352,
+    "fields": {
+        "name": "Мікрохвильові печі",
+        "name_en": "Microwave ovens",
+        "name_uk": "Мікрохвильові печі",
+        "parent": 313,
+        "image": "",
+        "created_at": "2025-04-13T08:20:43.205Z",
+        "order": 0,
+        "slug": "mikrohvilovi-pechi-0",
+        "lft": 87,
+        "rght": 88,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 353,
+    "fields": {
+        "name": "Зубні щітки",
+        "name_en": "Toothbrushes",
+        "name_uk": "Зубні щітки",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:21:03.291Z",
+        "order": 0,
+        "slug": "zubni-shitki",
+        "lft": 91,
+        "rght": 92,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 354,
+    "fields": {
+        "name": "Іригатори",
+        "name_en": "Irrigators",
+        "name_uk": "Іригатори",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:21:20.885Z",
+        "order": 0,
+        "slug": "irigatori",
+        "lft": 93,
+        "rght": 94,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 355,
+    "fields": {
+        "name": "Для підстригання волосся",
+        "name_en": "For hair cutting",
+        "name_uk": "Для підстригання волосся",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:21:36.710Z",
+        "order": 0,
+        "slug": "dlya-pidstrigannya-volossya",
+        "lft": 95,
+        "rght": 96,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 356,
+    "fields": {
+        "name": "Фени",
+        "name_en": "Hair dryers",
+        "name_uk": "Фени",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:21:47.708Z",
+        "order": 0,
+        "slug": "feni",
+        "lft": 97,
+        "rght": 98,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 357,
+    "fields": {
+        "name": "Для укладки волосся",
+        "name_en": "For styling hair",
+        "name_uk": "Для укладки волосся",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:22:02.544Z",
+        "order": 0,
+        "slug": "dlya-ukladki-volossya",
+        "lft": 99,
+        "rght": 100,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 358,
+    "fields": {
+        "name": "Епілятори",
+        "name_en": "Epilators",
+        "name_uk": "Епілятори",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:22:16.040Z",
+        "order": 0,
+        "slug": "epilyatori",
+        "lft": 101,
+        "rght": 102,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 359,
+    "fields": {
+        "name": "Фотоепілятори",
+        "name_en": "Photoepilators",
+        "name_uk": "Фотоепілятори",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:22:28.583Z",
+        "order": 0,
+        "slug": "fotoepilyatori",
+        "lft": 103,
+        "rght": 104,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 360,
+    "fields": {
+        "name": "Електробритви",
+        "name_en": "Electric shavers",
+        "name_uk": "Електробритви",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:22:48.254Z",
+        "order": 0,
+        "slug": "elektrobritvi",
+        "lft": 105,
+        "rght": 106,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 361,
+    "fields": {
+        "name": "Підлогові ваги",
+        "name_en": "Floor scales",
+        "name_uk": "Підлогові ваги",
+        "parent": 314,
+        "image": "",
+        "created_at": "2025-04-13T08:23:07.573Z",
+        "order": 0,
+        "slug": "pidlogovi-vagi",
+        "lft": 107,
+        "rght": 108,
+        "tree_id": 7,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 362,
+    "fields": {
+        "name": "Велотовари",
+        "name_en": "Bicycle goods",
+        "name_uk": "Велотовари",
+        "parent": 8,
+        "image": "category_images/bicycle-biking.svg",
+        "created_at": "2025-04-13T08:53:27.085Z",
+        "order": 0,
+        "slug": "velotovari",
+        "lft": 2,
+        "rght": 21,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 363,
+    "fields": {
+        "name": "Рації",
+        "name_en": "Walkie-talkies",
+        "name_uk": "Рації",
+        "parent": 8,
+        "image": "category_images/рація.svg",
+        "created_at": "2025-04-13T08:53:56.567Z",
+        "order": 0,
+        "slug": "raciyi",
+        "lft": 22,
+        "rght": 31,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 364,
+    "fields": {
+        "name": "Тренажери",
+        "name_en": "Trainers",
+        "name_uk": "Тренажери",
+        "parent": 8,
+        "image": "category_images/cross-trainer.svg",
+        "created_at": "2025-04-13T08:54:25.043Z",
+        "order": 0,
+        "slug": "trenazheri",
+        "lft": 32,
+        "rght": 47,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 365,
+    "fields": {
+        "name": "Спортивний інвентар",
+        "name_en": "Sports equipment",
+        "name_uk": "Спортивний інвентар",
+        "parent": 8,
+        "image": "category_images/dumbbell.svg",
+        "created_at": "2025-04-13T08:54:43.228Z",
+        "order": 0,
+        "slug": "sportivnij-inventar",
+        "lft": 48,
+        "rght": 61,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 366,
+    "fields": {
+        "name": "Масажне обладнання",
+        "name_en": "Massage equipment",
+        "name_uk": "Масажне обладнання",
+        "parent": 8,
+        "image": "category_images/massage-person.svg",
+        "created_at": "2025-04-13T08:55:07.762Z",
+        "order": 0,
+        "slug": "masazhne-obladnannya",
+        "lft": 62,
+        "rght": 71,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 367,
+    "fields": {
+        "name": "Здоров'я та догляд",
+        "name_en": "Health and care",
+        "name_uk": "Здоров'я та догляд",
+        "parent": 8,
+        "image": "category_images/health-svgrepo-com.svg",
+        "created_at": "2025-04-13T08:55:30.105Z",
+        "order": 0,
+        "slug": "zdorovya-ta-doglyad",
+        "lft": 72,
+        "rght": 81,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 368,
+    "fields": {
+        "name": "Зимовий спорт",
+        "name_en": "Winter sports",
+        "name_uk": "Зимовий спорт",
+        "parent": 8,
+        "image": "category_images/зимовий-спорт.svg",
+        "created_at": "2025-04-13T08:55:48.487Z",
+        "order": 0,
+        "slug": "zimovij-sport",
+        "lft": 82,
+        "rght": 93,
+        "tree_id": 8,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 369,
+    "fields": {
+        "name": "Велосипеди",
+        "name_en": "Bicycles",
+        "name_uk": "Велосипеди",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:57:34.311Z",
+        "order": 0,
+        "slug": "velosipedi",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 370,
+    "fields": {
+        "name": "Дитячі велосипеди",
+        "name_en": "Children's bicycles",
+        "name_uk": "Дитячі велосипеди",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:57:49.271Z",
+        "order": 0,
+        "slug": "dityachi-velosipedi",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 371,
+    "fields": {
+        "name": "Електровелосипеди",
+        "name_en": "Electric bicycles",
+        "name_uk": "Електровелосипеди",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:58:09.060Z",
+        "order": 0,
+        "slug": "elektrovelosipedi-011",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 372,
+    "fields": {
+        "name": "Велоінструмент",
+        "name_en": "Bicycle tools",
+        "name_uk": "Велоінструмент",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:58:23.018Z",
+        "order": 0,
+        "slug": "veloinstrument",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 373,
+    "fields": {
+        "name": "Велосипедні замки",
+        "name_en": "Bicycle locks",
+        "name_uk": "Велосипедні замки",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:58:37.680Z",
+        "order": 0,
+        "slug": "velosipedni-zamki",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 374,
+    "fields": {
+        "name": "Покришки",
+        "name_en": "Tires",
+        "name_uk": "Покришки",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:58:51.592Z",
+        "order": 0,
+        "slug": "pokrishki",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 375,
+    "fields": {
+        "name": "Велонасоси",
+        "name_en": "Bicycle pumps",
+        "name_uk": "Велонасоси",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:59:04.740Z",
+        "order": 0,
+        "slug": "velonasosi",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 376,
+    "fields": {
+        "name": "Велосипедні крісла",
+        "name_en": "Bicycle seats",
+        "name_uk": "Велосипедні крісла",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:59:19.550Z",
+        "order": 0,
+        "slug": "velosipedni-krisla",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 377,
+    "fields": {
+        "name": "Велофари",
+        "name_en": "Bicycle lights",
+        "name_uk": "Велофари",
+        "parent": 362,
+        "image": "",
+        "created_at": "2025-04-13T08:59:31.958Z",
+        "order": 0,
+        "slug": "velofari",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 378,
+    "fields": {
+        "name": "Motorola",
+        "name_en": "Motorola",
+        "name_uk": "Motorola",
+        "parent": 363,
+        "image": "",
+        "created_at": "2025-04-13T08:59:51.760Z",
+        "order": 0,
+        "slug": "motorola-10",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 379,
+    "fields": {
+        "name": "Baofeng",
+        "name_en": "Baofeng",
+        "name_uk": "Baofeng",
+        "parent": 363,
+        "image": "",
+        "created_at": "2025-04-13T09:00:11.197Z",
+        "order": 0,
+        "slug": "baofeng",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 380,
+    "fields": {
+        "name": "Caltta",
+        "name_en": "Caltta",
+        "name_uk": "Caltta",
+        "parent": 363,
+        "image": "",
+        "created_at": "2025-04-13T09:16:51.995Z",
+        "order": 0,
+        "slug": "caltta",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 381,
+    "fields": {
+        "name": "BBTALKIN",
+        "name_en": "BBTALKIN",
+        "name_uk": "BBTALKIN",
+        "parent": 363,
+        "image": "",
+        "created_at": "2025-04-13T09:17:05.690Z",
+        "order": 0,
+        "slug": "bbtalkin",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 382,
+    "fields": {
+        "name": "Бігові доріжки",
+        "name_en": "Treadmills",
+        "name_uk": "Бігові доріжки",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:17:23.097Z",
+        "order": 0,
+        "slug": "bigovi-dorizhki",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 383,
+    "fields": {
+        "name": "Орбітреки",
+        "name_en": "Orbitreks",
+        "name_uk": "Орбітреки",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:17:39.126Z",
+        "order": 0,
+        "slug": "orbitreki",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 384,
+    "fields": {
+        "name": "Велотренажери",
+        "name_en": "Exercise bikes",
+        "name_uk": "Велотренажери",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:17:56.928Z",
+        "order": 0,
+        "slug": "velotrenazheri-011111",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 385,
+    "fields": {
+        "name": "Степери",
+        "name_en": "Steppers",
+        "name_uk": "Степери",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:18:10.044Z",
+        "order": 0,
+        "slug": "steperi",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 386,
+    "fields": {
+        "name": "Шведські стінки",
+        "name_en": "Swedish walls",
+        "name_uk": "Шведські стінки",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:18:24.368Z",
+        "order": 0,
+        "slug": "shvedski-stinki",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 387,
+    "fields": {
+        "name": "Інверсійні столи",
+        "name_en": "Inversion tables",
+        "name_uk": "Інверсійні столи",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:18:43.715Z",
+        "order": 0,
+        "slug": "inversijni-stoli",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 388,
+    "fields": {
+        "name": "Гребні тренажери",
+        "name_en": "Rowing machines",
+        "name_uk": "Гребні тренажери",
+        "parent": 364,
+        "image": "",
+        "created_at": "2025-04-13T09:18:59.487Z",
+        "order": 0,
+        "slug": "grebni-trenazheri",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 389,
+    "fields": {
+        "name": "Гантелі",
+        "name_en": "Dumbbells",
+        "name_uk": "Гантелі",
+        "parent": 365,
+        "image": "",
+        "created_at": "2025-04-13T09:19:17.351Z",
+        "order": 0,
+        "slug": "ganteli",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 390,
+    "fields": {
+        "name": "Мати й килимки",
+        "name_en": "Mats and rugs",
+        "name_uk": "Мати й килимки",
+        "parent": 365,
+        "image": "",
+        "created_at": "2025-04-13T09:19:32.515Z",
+        "order": 0,
+        "slug": "mati-j-kilimki",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 391,
+    "fields": {
+        "name": "Перекладини",
+        "name_en": "Crossbars",
+        "name_uk": "Перекладини",
+        "parent": 365,
+        "image": "",
+        "created_at": "2025-04-13T09:19:46.158Z",
+        "order": 0,
+        "slug": "perekladini",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 392,
+    "fields": {
+        "name": "Штанги",
+        "name_en": "Barbells",
+        "name_uk": "Штанги",
+        "parent": 365,
+        "image": "",
+        "created_at": "2025-04-13T09:19:57.156Z",
+        "order": 0,
+        "slug": "shtangi",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 393,
+    "fields": {
+        "name": "Масажні валики",
+        "name_en": "Massage rollers",
+        "name_uk": "Масажні валики",
+        "parent": 365,
+        "image": "",
+        "created_at": "2025-04-13T09:20:10.168Z",
+        "order": 0,
+        "slug": "masazhni-valiki",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 394,
+    "fields": {
+        "name": "М'ячі",
+        "name_en": "Balls",
+        "name_uk": "М'ячі",
+        "parent": 365,
+        "image": "",
+        "created_at": "2025-04-13T09:20:44.593Z",
+        "order": 0,
+        "slug": "myachi",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 395,
+    "fields": {
+        "name": "Масажери",
+        "name_en": "Massagers",
+        "name_uk": "Масажери",
+        "parent": 366,
+        "image": "",
+        "created_at": "2025-04-13T09:20:56.630Z",
+        "order": 0,
+        "slug": "masazheri",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 396,
+    "fields": {
+        "name": "Масажні столи",
+        "name_en": "Massage tables",
+        "name_uk": "Масажні столи",
+        "parent": 366,
+        "image": "",
+        "created_at": "2025-04-13T09:21:18.195Z",
+        "order": 0,
+        "slug": "masazhni-stoli",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 397,
+    "fields": {
+        "name": "Масажні крісла",
+        "name_en": "Massage chairs",
+        "name_uk": "Масажні крісла",
+        "parent": 366,
+        "image": "",
+        "created_at": "2025-04-13T09:21:29.959Z",
+        "order": 0,
+        "slug": "masazhni-krisla",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 398,
+    "fields": {
+        "name": "Масажні килими",
+        "name_en": "Massage carpets",
+        "name_uk": "Масажні килими",
+        "parent": 366,
+        "image": "",
+        "created_at": "2025-04-13T09:21:45.764Z",
+        "order": 0,
+        "slug": "masazhni-kilimi",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 399,
+    "fields": {
+        "name": "Медичні термометри",
+        "name_en": "Medical thermometers",
+        "name_uk": "Медичні термометри",
+        "parent": 367,
+        "image": "",
+        "created_at": "2025-04-13T09:22:00.292Z",
+        "order": 0,
+        "slug": "medichni-termometri",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 400,
+    "fields": {
+        "name": "Пульсоксиметри",
+        "name_en": "Pulse oximeters",
+        "name_uk": "Пульсоксиметри",
+        "parent": 367,
+        "image": "",
+        "created_at": "2025-04-13T09:22:18.413Z",
+        "order": 0,
+        "slug": "pulsoksimetri",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 401,
+    "fields": {
+        "name": "Глюкометри",
+        "name_en": "Glucometers",
+        "name_uk": "Глюкометри",
+        "parent": 367,
+        "image": "",
+        "created_at": "2025-04-13T09:22:30.380Z",
+        "order": 0,
+        "slug": "glyukometri",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 402,
+    "fields": {
+        "name": "Тонометри",
+        "name_en": "Tonometers",
+        "name_uk": "Тонометри",
+        "parent": 367,
+        "image": "",
+        "created_at": "2025-04-13T09:22:41.897Z",
+        "order": 0,
+        "slug": "tonometri",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 403,
+    "fields": {
+        "name": "Гірськолижні шоломи",
+        "name_en": "Ski helmets",
+        "name_uk": "Гірськолижні шоломи",
+        "parent": 368,
+        "image": "",
+        "created_at": "2025-04-13T09:23:01.057Z",
+        "order": 0,
+        "slug": "girskolizhni-sholomi",
+        "lft": 83,
+        "rght": 84,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 404,
+    "fields": {
+        "name": "Лижні маски",
+        "name_en": "Ski masks",
+        "name_uk": "Лижні маски",
+        "parent": 368,
+        "image": "",
+        "created_at": "2025-04-13T09:23:12.130Z",
+        "order": 0,
+        "slug": "lizhni-maski",
+        "lft": 85,
+        "rght": 86,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 405,
+    "fields": {
+        "name": "Сноуборди",
+        "name_en": "Snowboards",
+        "name_uk": "Сноуборди",
+        "parent": 368,
+        "image": "",
+        "created_at": "2025-04-13T09:23:24.058Z",
+        "order": 0,
+        "slug": "snoubordi",
+        "lft": 87,
+        "rght": 88,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 406,
+    "fields": {
+        "name": "Санки",
+        "name_en": "Sledge",
+        "name_uk": "Санки",
+        "parent": 368,
+        "image": "",
+        "created_at": "2025-04-13T09:23:35.146Z",
+        "order": 0,
+        "slug": "sanki",
+        "lft": 89,
+        "rght": 90,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 407,
+    "fields": {
+        "name": "Ковзани",
+        "name_en": "Skates",
+        "name_uk": "Ковзани",
+        "parent": 368,
+        "image": "",
+        "created_at": "2025-04-13T09:23:58.578Z",
+        "order": 0,
+        "slug": "kovzani",
+        "lft": 91,
+        "rght": 92,
+        "tree_id": 8,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 408,
+    "fields": {
+        "name": "Електротранспорт",
+        "name_en": "Electric transport",
+        "name_uk": "Електротранспорт",
+        "parent": 9,
+        "image": "category_images/електротранспорт.svg",
+        "created_at": "2025-04-13T09:33:54.037Z",
+        "order": 0,
+        "slug": "elektrotransport-01111",
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 409,
+    "fields": {
+        "name": "Електросамокати",
+        "name_en": "Electric scooters",
+        "name_uk": "Електросамокати",
+        "parent": 9,
+        "image": "category_images/електросамокат.svg",
+        "created_at": "2025-04-13T09:34:28.617Z",
+        "order": 0,
+        "slug": "elektrosamokati-82",
+        "lft": 4,
+        "rght": 27,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 410,
+    "fields": {
+        "name": "Електромобілі",
+        "name_en": "Electric vehicles",
+        "name_uk": "Електромобілі",
+        "parent": 9,
+        "image": "category_images/електромобілі.svg",
+        "created_at": "2025-04-13T09:34:58.677Z",
+        "order": 0,
+        "slug": "elektromobili",
+        "lft": 28,
+        "rght": 33,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 411,
+    "fields": {
+        "name": "Електро велосипеди",
+        "name_en": "Electric bicycles",
+        "name_uk": "Електро велосипеди",
+        "parent": 9,
+        "image": "category_images/електровелосипеди.svg",
+        "created_at": "2025-04-13T09:35:27.873Z",
+        "order": 0,
+        "slug": "elektro-velosipedi-0544",
+        "lft": 34,
+        "rght": 45,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 412,
+    "fields": {
+        "name": "Електроскутери",
+        "name_en": "Electric scooters",
+        "name_uk": "Електроскутери",
+        "parent": 9,
+        "image": "category_images/електроскутери.svg",
+        "created_at": "2025-04-13T09:35:46.790Z",
+        "order": 0,
+        "slug": "elektroskuteri",
+        "lft": 46,
+        "rght": 51,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 413,
+    "fields": {
+        "name": "Велосипеди",
+        "name_en": "Bicycles",
+        "name_uk": "Велосипеди",
+        "parent": 9,
+        "image": "category_images/велосипед.svg",
+        "created_at": "2025-04-13T09:36:11.479Z",
+        "order": 0,
+        "slug": "velosipedi-1011000",
+        "lft": 52,
+        "rght": 61,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 414,
+    "fields": {
+        "name": "Аксесуари до велосипедів",
+        "name_en": "Accessories for bicycles",
+        "name_uk": "Аксесуари до велосипедів",
+        "parent": 9,
+        "image": "category_images/аксесуари_до_велосипеда.svg",
+        "created_at": "2025-04-13T09:36:33.077Z",
+        "order": 0,
+        "slug": "aksesuari-do-velosipediv",
+        "lft": 62,
+        "rght": 71,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 415,
+    "fields": {
+        "name": "Захисне екіпірування",
+        "name_en": "Protective equipment",
+        "name_uk": "Захисне екіпірування",
+        "parent": 9,
+        "image": "category_images/захисне_екіпірування.svg",
+        "created_at": "2025-04-13T09:37:03.235Z",
+        "order": 0,
+        "slug": "zahisne-ekipiruvannya-822",
+        "lft": 72,
+        "rght": 77,
+        "tree_id": 9,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 416,
+    "fields": {
+        "name": "Xiaomi",
+        "name_en": "Xiaomi",
+        "name_uk": "Xiaomi",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:38:00.777Z",
+        "order": 0,
+        "slug": "xiaomi-299",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 417,
+    "fields": {
+        "name": "Ninebot",
+        "name_en": "Ninebot",
+        "name_uk": "Ninebot",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:38:12.914Z",
+        "order": 0,
+        "slug": "ninebot",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 418,
+    "fields": {
+        "name": "OKAI",
+        "name_en": "OKAI",
+        "name_uk": "OKAI",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:38:22.691Z",
+        "order": 0,
+        "slug": "okai",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 419,
+    "fields": {
+        "name": "Proove",
+        "name_en": "Proove",
+        "name_uk": "Proove",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:38:34.134Z",
+        "order": 0,
+        "slug": "proove",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 420,
+    "fields": {
+        "name": "Kaabo",
+        "name_en": "Kaabo",
+        "name_uk": "Kaabo",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:38:48.052Z",
+        "order": 0,
+        "slug": "kaabo",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 421,
+    "fields": {
+        "name": "Kugoo",
+        "name_en": "Kugoo",
+        "name_uk": "Kugoo",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:39:00.365Z",
+        "order": 0,
+        "slug": "kugoo",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 422,
+    "fields": {
+        "name": "Navee",
+        "name_en": "Navee",
+        "name_uk": "Navee",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:39:10.042Z",
+        "order": 0,
+        "slug": "navee",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 423,
+    "fields": {
+        "name": "Acer",
+        "name_en": "Acer",
+        "name_uk": "Acer",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:39:23.038Z",
+        "order": 0,
+        "slug": "acer-202020",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 424,
+    "fields": {
+        "name": "Дитячий",
+        "name_en": "Children's",
+        "name_uk": "Дитячий",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:39:40.325Z",
+        "order": 0,
+        "slug": "dityachij",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 425,
+    "fields": {
+        "name": "Дорослий",
+        "name_en": "Adult",
+        "name_uk": "Дорослий",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:39:53.785Z",
+        "order": 0,
+        "slug": "doroslij",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 426,
+    "fields": {
+        "name": "З амортизатором",
+        "name_en": "With shock absorber",
+        "name_uk": "З амортизатором",
+        "parent": 409,
+        "image": "",
+        "created_at": "2025-04-13T09:40:16.994Z",
+        "order": 0,
+        "slug": "z-amortizatorom",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 427,
+    "fields": {
+        "name": "Електромобілі Xiaomi",
+        "name_en": "Xiaomi electric cars",
+        "name_uk": "Електромобілі Xiaomi",
+        "parent": 410,
+        "image": "",
+        "created_at": "2025-04-13T09:40:43.243Z",
+        "order": 0,
+        "slug": "elektromobili-xiaomi",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 428,
+    "fields": {
+        "name": "Інші електромобілі",
+        "name_en": "Other electric vehicles",
+        "name_uk": "Інші електромобілі",
+        "parent": 410,
+        "image": "",
+        "created_at": "2025-04-13T09:41:09.047Z",
+        "order": 0,
+        "slug": "inshi-elektromobili",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 429,
+    "fields": {
+        "name": "Для дорослих",
+        "name_en": "For adults",
+        "name_uk": "Для дорослих",
+        "parent": 411,
+        "image": "",
+        "created_at": "2025-04-13T09:41:25.964Z",
+        "order": 0,
+        "slug": "dlya-doroslih",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 430,
+    "fields": {
+        "name": "Для дітей",
+        "name_en": "For children",
+        "name_uk": "Для дітей",
+        "parent": 411,
+        "image": "",
+        "created_at": "2025-04-13T09:41:39.896Z",
+        "order": 0,
+        "slug": "dlya-ditej",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 431,
+    "fields": {
+        "name": "Фетбайк",
+        "name_en": "Fatbike",
+        "name_uk": "Фетбайк",
+        "parent": 411,
+        "image": "",
+        "created_at": "2025-04-13T09:41:53.657Z",
+        "order": 0,
+        "slug": "fetbajk",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 432,
+    "fields": {
+        "name": "Електровелосипеди Fildo",
+        "name_en": "Electric bicycle Fildo",
+        "name_uk": "Електровелосипеди Fildo",
+        "parent": 411,
+        "image": "",
+        "created_at": "2025-04-13T09:42:14.811Z",
+        "order": 0,
+        "slug": "elektrovelosipedi-fildo",
+        "lft": 41,
+        "rght": 42,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 433,
+    "fields": {
+        "name": "Електровелосипеди HIMO",
+        "name_en": "HIMO electric bicycles",
+        "name_uk": "Електровелосипеди HIMO",
+        "parent": 411,
+        "image": "",
+        "created_at": "2025-04-13T09:42:34.903Z",
+        "order": 0,
+        "slug": "elektrovelosipedi-himo",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 434,
+    "fields": {
+        "name": "Для дорослих",
+        "name_en": "For adults",
+        "name_uk": "Для дорослих",
+        "parent": 412,
+        "image": "",
+        "created_at": "2025-04-13T09:42:56.555Z",
+        "order": 0,
+        "slug": "dlya-doroslih-00",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 435,
+    "fields": {
+        "name": "Для дітей",
+        "name_en": "For children",
+        "name_uk": "Для дітей",
+        "parent": 412,
+        "image": "",
+        "created_at": "2025-04-13T09:43:38.929Z",
+        "order": 0,
+        "slug": "dlya-ditej-012",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 436,
+    "fields": {
+        "name": "МТВ \\ гірський",
+        "name_en": "MTV \\ mountain",
+        "name_uk": "МТВ \\ гірський",
+        "parent": 413,
+        "image": "",
+        "created_at": "2025-04-13T09:44:16.046Z",
+        "order": 0,
+        "slug": "mtv-girskij",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 437,
+    "fields": {
+        "name": "Міський",
+        "name_en": "Urban",
+        "name_uk": "Міський",
+        "parent": 413,
+        "image": "",
+        "created_at": "2025-04-13T09:44:29.875Z",
+        "order": 0,
+        "slug": "miskij",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 438,
+    "fields": {
+        "name": "Дитячий",
+        "name_en": "Children's",
+        "name_uk": "Дитячий",
+        "parent": 413,
+        "image": "",
+        "created_at": "2025-04-13T09:44:45.915Z",
+        "order": 0,
+        "slug": "dityachij-0",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 439,
+    "fields": {
+        "name": "Екстремальний \\ BMX",
+        "name_en": "Extreme \\ BMX",
+        "name_uk": "Екстремальний \\ BMX",
+        "parent": 413,
+        "image": "",
+        "created_at": "2025-04-13T09:45:05.263Z",
+        "order": 0,
+        "slug": "ekstremalnij-bmx",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 440,
+    "fields": {
+        "name": "Портативні компремори",
+        "name_en": "Portable compressors",
+        "name_uk": "Портативні компремори",
+        "parent": 414,
+        "image": "",
+        "created_at": "2025-04-13T09:45:22.378Z",
+        "order": 0,
+        "slug": "portativni-kompremori",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 441,
+    "fields": {
+        "name": "Велонасоси",
+        "name_en": "Bicycle pumps",
+        "name_uk": "Велонасоси",
+        "parent": 414,
+        "image": "",
+        "created_at": "2025-04-13T09:45:43.210Z",
+        "order": 0,
+        "slug": "velonasosi-011",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 442,
+    "fields": {
+        "name": "Велозамки",
+        "name_en": "Bicycle locks",
+        "name_uk": "Велозамки",
+        "parent": 414,
+        "image": "",
+        "created_at": "2025-04-13T09:45:57.131Z",
+        "order": 0,
+        "slug": "velozamki-11",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 443,
+    "fields": {
+        "name": "Велофари",
+        "name_en": "Bicycle lights",
+        "name_uk": "Велофари",
+        "parent": 414,
+        "image": "",
+        "created_at": "2025-04-13T09:46:13.466Z",
+        "order": 0,
+        "slug": "velofari-473",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 444,
+    "fields": {
+        "name": "Велосипедні шоломи",
+        "name_en": "Bicycle helmets",
+        "name_uk": "Велосипедні шоломи",
+        "parent": 415,
+        "image": "",
+        "created_at": "2025-04-13T09:46:29.955Z",
+        "order": 0,
+        "slug": "velosipedni-sholomi",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 445,
+    "fields": {
+        "name": "Комплекти захисного екіпірування",
+        "name_en": "Sets of protective equipment",
+        "name_uk": "Комплекти захисного екіпірування",
+        "parent": 415,
+        "image": "",
+        "created_at": "2025-04-13T09:46:49.388Z",
+        "order": 0,
+        "slug": "komplekti-zahisnogo-ekipiruvannya",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 9,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 446,
+    "fields": {
+        "name": "Жіноче взуття",
+        "name_en": "Women's shoes",
+        "name_uk": "Жіноче взуття",
+        "parent": 10,
+        "image": "category_images/жіноче_взуття.svg",
+        "created_at": "2025-04-13T10:04:18.932Z",
+        "order": 0,
+        "slug": "zhinoche-vzuttya",
+        "lft": 2,
+        "rght": 11,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 447,
+    "fields": {
+        "name": "Жіночий одяг",
+        "name_en": "Women's clothing",
+        "name_uk": "Жіночий одяг",
+        "parent": 10,
+        "image": "category_images/жіночий_одяг.svg",
+        "created_at": "2025-04-13T10:04:35.952Z",
+        "order": 0,
+        "slug": "zhinochij-odyag",
+        "lft": 12,
+        "rght": 25,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 448,
+    "fields": {
+        "name": "Жіночі аксесуари",
+        "name_en": "Women's accessories",
+        "name_uk": "Жіночі аксесуари",
+        "parent": 10,
+        "image": "category_images/жіночі_аксесуари.svg",
+        "created_at": "2025-04-13T10:04:58.117Z",
+        "order": 0,
+        "slug": "zhinochi-aksesuari",
+        "lft": 26,
+        "rght": 33,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 449,
+    "fields": {
+        "name": "Чоловіче взуття",
+        "name_en": "Men's shoes",
+        "name_uk": "Чоловіче взуття",
+        "parent": 10,
+        "image": "category_images/чоловіче_взуття.svg",
+        "created_at": "2025-04-13T10:05:24.361Z",
+        "order": 0,
+        "slug": "choloviche-vzuttya",
+        "lft": 34,
+        "rght": 41,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 450,
+    "fields": {
+        "name": "Чоловічий одяг",
+        "name_en": "Men's clothing",
+        "name_uk": "Чоловічий одяг",
+        "parent": 10,
+        "image": "category_images/чоловічий_одяг.svg",
+        "created_at": "2025-04-13T10:05:45.403Z",
+        "order": 0,
+        "slug": "cholovichij-odyag",
+        "lft": 42,
+        "rght": 53,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 451,
+    "fields": {
+        "name": "Чоловічі аксесуари",
+        "name_en": "Men's accessories",
+        "name_uk": "Чоловічі аксесуари",
+        "parent": 10,
+        "image": "category_images/чоловічі_аксесуари.svg",
+        "created_at": "2025-04-13T10:06:05.011Z",
+        "order": 0,
+        "slug": "cholovichi-aksesuari",
+        "lft": 54,
+        "rght": 61,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 452,
+    "fields": {
+        "name": "Дитяче взуття",
+        "name_en": "Children's shoes",
+        "name_uk": "Дитяче взуття",
+        "parent": 10,
+        "image": "category_images/дитяче_взуття.svg",
+        "created_at": "2025-04-13T10:06:24.362Z",
+        "order": 0,
+        "slug": "dityache-vzuttya",
+        "lft": 62,
+        "rght": 71,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 453,
+    "fields": {
+        "name": "Дитячий одяг",
+        "name_en": "Children's clothing",
+        "name_uk": "Дитячий одяг",
+        "parent": 10,
+        "image": "category_images/дитчий_одяг.svg",
+        "created_at": "2025-04-13T10:06:38.523Z",
+        "order": 0,
+        "slug": "dityachij-odyag",
+        "lft": 72,
+        "rght": 81,
+        "tree_id": 10,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 454,
+    "fields": {
+        "name": "Кросівки",
+        "name_en": "Sneakers",
+        "name_uk": "Кросівки",
+        "parent": 446,
+        "image": "",
+        "created_at": "2025-04-13T10:08:28.766Z",
+        "order": 0,
+        "slug": "krosivki",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 455,
+    "fields": {
+        "name": "Кеди",
+        "name_en": "Shoes",
+        "name_uk": "Кеди",
+        "parent": 446,
+        "image": "",
+        "created_at": "2025-04-13T10:08:42.458Z",
+        "order": 0,
+        "slug": "kedi",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 456,
+    "fields": {
+        "name": "Туфлі",
+        "name_en": "Footwear",
+        "name_uk": "Туфлі",
+        "parent": 446,
+        "image": "",
+        "created_at": "2025-04-13T10:08:59.050Z",
+        "order": 0,
+        "slug": "tufli",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 457,
+    "fields": {
+        "name": "Черевики",
+        "name_en": "Boots",
+        "name_uk": "Черевики",
+        "parent": 446,
+        "image": "",
+        "created_at": "2025-04-13T10:09:09.671Z",
+        "order": 0,
+        "slug": "chereviki",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 458,
+    "fields": {
+        "name": "Куртки",
+        "name_en": "Jackets",
+        "name_uk": "Куртки",
+        "parent": 447,
+        "image": "",
+        "created_at": "2025-04-13T10:09:26.352Z",
+        "order": 0,
+        "slug": "kurtki",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 459,
+    "fields": {
+        "name": "Костюми",
+        "name_en": "Costumes",
+        "name_uk": "Костюми",
+        "parent": 447,
+        "image": "",
+        "created_at": "2025-04-13T10:09:38.698Z",
+        "order": 0,
+        "slug": "kostyumi",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 460,
+    "fields": {
+        "name": "Футболки",
+        "name_en": "T-shirts",
+        "name_uk": "Футболки",
+        "parent": 447,
+        "image": "",
+        "created_at": "2025-04-13T10:09:52.473Z",
+        "order": 0,
+        "slug": "futbolki",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 461,
+    "fields": {
+        "name": "Сукні",
+        "name_en": "Dresses",
+        "name_uk": "Сукні",
+        "parent": 447,
+        "image": "",
+        "created_at": "2025-04-13T10:10:04.629Z",
+        "order": 0,
+        "slug": "sukni",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 462,
+    "fields": {
+        "name": "Сорочки",
+        "name_en": "Shirts",
+        "name_uk": "Сорочки",
+        "parent": 447,
+        "image": "",
+        "created_at": "2025-04-13T10:10:17.741Z",
+        "order": 0,
+        "slug": "sorochki",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 463,
+    "fields": {
+        "name": "Джинси",
+        "name_en": "Jeans",
+        "name_uk": "Джинси",
+        "parent": 447,
+        "image": "",
+        "created_at": "2025-04-13T10:10:30.174Z",
+        "order": 0,
+        "slug": "dzhinsi",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 464,
+    "fields": {
+        "name": "Сумки",
+        "name_en": "Handbags",
+        "name_uk": "Сумки",
+        "parent": 448,
+        "image": "",
+        "created_at": "2025-04-13T10:10:51.765Z",
+        "order": 0,
+        "slug": "sumki",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 465,
+    "fields": {
+        "name": "Гаманці",
+        "name_en": "Wallets",
+        "name_uk": "Гаманці",
+        "parent": 448,
+        "image": "",
+        "created_at": "2025-04-13T10:11:12.961Z",
+        "order": 0,
+        "slug": "gamanci",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 466,
+    "fields": {
+        "name": "Кепки",
+        "name_en": "Caps",
+        "name_uk": "Кепки",
+        "parent": 448,
+        "image": "",
+        "created_at": "2025-04-13T10:11:25.403Z",
+        "order": 0,
+        "slug": "kepki",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 467,
+    "fields": {
+        "name": "Кросівки",
+        "name_en": "Running shoes",
+        "name_uk": "Кросівки",
+        "parent": 449,
+        "image": "",
+        "created_at": "2025-04-13T10:11:44.784Z",
+        "order": 0,
+        "slug": "krosivki-1010",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 468,
+    "fields": {
+        "name": "Кеди",
+        "name_en": "Sneakers",
+        "name_uk": "Кеди",
+        "parent": 449,
+        "image": "",
+        "created_at": "2025-04-13T10:12:04.217Z",
+        "order": 0,
+        "slug": "kedi-192",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 469,
+    "fields": {
+        "name": "Черевики",
+        "name_en": "Boots",
+        "name_uk": "Черевики",
+        "parent": 449,
+        "image": "",
+        "created_at": "2025-04-13T10:12:18.257Z",
+        "order": 0,
+        "slug": "chereviki-1823",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 470,
+    "fields": {
+        "name": "Спортивні костюми",
+        "name_en": "Sports suits",
+        "name_uk": "Спортивні костюми",
+        "parent": 450,
+        "image": "",
+        "created_at": "2025-04-13T10:12:32.040Z",
+        "order": 0,
+        "slug": "sportivni-kostyumi",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 471,
+    "fields": {
+        "name": "Толстовки",
+        "name_en": "Hoodies",
+        "name_uk": "Толстовки",
+        "parent": 450,
+        "image": "",
+        "created_at": "2025-04-13T10:12:45.414Z",
+        "order": 0,
+        "slug": "tolstovki",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 472,
+    "fields": {
+        "name": "Футболки",
+        "name_en": "T-shirts",
+        "name_uk": "Футболки",
+        "parent": 450,
+        "image": "",
+        "created_at": "2025-04-13T10:13:01.586Z",
+        "order": 0,
+        "slug": "futbolki-231892",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 473,
+    "fields": {
+        "name": "Джинси",
+        "name_en": "Jeans",
+        "name_uk": "Джинси",
+        "parent": 450,
+        "image": "",
+        "created_at": "2025-04-13T10:13:19.411Z",
+        "order": 0,
+        "slug": "dzhinsi-822",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 474,
+    "fields": {
+        "name": "Куртки",
+        "name_en": "Jackets",
+        "name_uk": "Куртки",
+        "parent": 450,
+        "image": "",
+        "created_at": "2025-04-13T10:13:35.058Z",
+        "order": 0,
+        "slug": "kurtki-871",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 475,
+    "fields": {
+        "name": "Сумки",
+        "name_en": "Bags",
+        "name_uk": "Сумки",
+        "parent": 451,
+        "image": "",
+        "created_at": "2025-04-13T10:13:55.299Z",
+        "order": 0,
+        "slug": "sumki-121",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 476,
+    "fields": {
+        "name": "Кепки",
+        "name_en": "Caps",
+        "name_uk": "Кепки",
+        "parent": 451,
+        "image": "",
+        "created_at": "2025-04-13T10:14:08.258Z",
+        "order": 0,
+        "slug": "kepki-1892",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 477,
+    "fields": {
+        "name": "Ремені та пояси",
+        "name_en": "Belts and belts",
+        "name_uk": "Ремені та пояси",
+        "parent": 451,
+        "image": "",
+        "created_at": "2025-04-13T10:14:21.503Z",
+        "order": 0,
+        "slug": "remeni-ta-poyasi",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 478,
+    "fields": {
+        "name": "Кросівки",
+        "name_en": "Trainers",
+        "name_uk": "Кросівки",
+        "parent": 452,
+        "image": "",
+        "created_at": "2025-04-13T10:14:47.877Z",
+        "order": 0,
+        "slug": "krosivki-28476",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 479,
+    "fields": {
+        "name": "Сліпони",
+        "name_en": "Slips",
+        "name_uk": "Сліпони",
+        "parent": 452,
+        "image": "",
+        "created_at": "2025-04-13T10:15:01.385Z",
+        "order": 0,
+        "slug": "sliponi",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 480,
+    "fields": {
+        "name": "Туфлі",
+        "name_en": "Footwear",
+        "name_uk": "Туфлі",
+        "parent": 452,
+        "image": "",
+        "created_at": "2025-04-13T10:15:16.653Z",
+        "order": 0,
+        "slug": "tufli-84357",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 481,
+    "fields": {
+        "name": "Черевики",
+        "name_en": "Boots",
+        "name_uk": "Черевики",
+        "parent": 452,
+        "image": "",
+        "created_at": "2025-04-13T10:15:33.768Z",
+        "order": 0,
+        "slug": "chereviki-1282",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 482,
+    "fields": {
+        "name": "Худі",
+        "name_en": "Hoodie",
+        "name_uk": "Худі",
+        "parent": 453,
+        "image": "",
+        "created_at": "2025-04-13T10:15:51.433Z",
+        "order": 0,
+        "slug": "hudi-3733",
+        "lft": 73,
+        "rght": 74,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 483,
+    "fields": {
+        "name": "Куртки",
+        "name_en": "Jackets",
+        "name_uk": "Куртки",
+        "parent": 453,
+        "image": "",
+        "created_at": "2025-04-13T10:16:05.302Z",
+        "order": 0,
+        "slug": "kurtki-282",
+        "lft": 75,
+        "rght": 76,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 484,
+    "fields": {
+        "name": "Джинси",
+        "name_en": "Jeans",
+        "name_uk": "Джинси",
+        "parent": 453,
+        "image": "",
+        "created_at": "2025-04-13T10:16:20.152Z",
+        "order": 0,
+        "slug": "dzhinsi-1812",
+        "lft": 77,
+        "rght": 78,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 485,
+    "fields": {
+        "name": "Спортивні костюми",
+        "name_en": "Sports suits",
+        "name_uk": "Спортивні костюми",
+        "parent": 453,
+        "image": "",
+        "created_at": "2025-04-13T10:16:38.725Z",
+        "order": 0,
+        "slug": "sportivni-kostyumi-373",
+        "lft": 79,
+        "rght": 80,
+        "tree_id": 10,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 486,
+    "fields": {
+        "name": "Туризм",
+        "name_en": "Tourism",
+        "name_uk": "Туризм",
+        "parent": 11,
+        "image": "category_images/туризм.svg",
+        "created_at": "2025-04-13T10:26:26.787Z",
+        "order": 0,
+        "slug": "turizm",
+        "lft": 2,
+        "rght": 17,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 487,
+    "fields": {
+        "name": "Ліхтарі і аксесуари",
+        "name_en": "Lights and accessories",
+        "name_uk": "Ліхтарі і аксесуари",
+        "parent": 11,
+        "image": "category_images/ліхтар.svg",
+        "created_at": "2025-04-13T10:26:48.434Z",
+        "order": 0,
+        "slug": "lihtari-i-aksesuari",
+        "lft": 18,
+        "rght": 23,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 488,
+    "fields": {
+        "name": "Оптичні прилади",
+        "name_en": "Optical devices",
+        "name_uk": "Оптичні прилади",
+        "parent": 11,
+        "image": "category_images/оптичні_прилади.svg",
+        "created_at": "2025-04-13T10:27:09.636Z",
+        "order": 0,
+        "slug": "optichni-priladi",
+        "lft": 24,
+        "rght": 33,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 489,
+    "fields": {
+        "name": "Металошукачі",
+        "name_en": "Metal detectors",
+        "name_uk": "Металошукачі",
+        "parent": 11,
+        "image": "category_images/металошукач.svg",
+        "created_at": "2025-04-13T10:27:28.994Z",
+        "order": 0,
+        "slug": "metaloshukachi",
+        "lft": 34,
+        "rght": 41,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 490,
+    "fields": {
+        "name": "Човни і двигуни",
+        "name_en": "Boats and engines",
+        "name_uk": "Човни і двигуни",
+        "parent": 11,
+        "image": "category_images/човен.svg",
+        "created_at": "2025-04-13T10:28:02.804Z",
+        "order": 0,
+        "slug": "chovni-i-dviguni",
+        "lft": 42,
+        "rght": 47,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 491,
+    "fields": {
+        "name": "Риболовля",
+        "name_en": "Fishing",
+        "name_uk": "Риболовля",
+        "parent": 11,
+        "image": "category_images/риболовля.svg",
+        "created_at": "2025-04-13T10:28:14.880Z",
+        "order": 0,
+        "slug": "ribolovlya",
+        "lft": 48,
+        "rght": 57,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 492,
+    "fields": {
+        "name": "Метеоприлади",
+        "name_en": "Meteorological devices",
+        "name_uk": "Метеоприлади",
+        "parent": 11,
+        "image": "category_images/метеоприлади.svg",
+        "created_at": "2025-04-13T10:28:58.712Z",
+        "order": 0,
+        "slug": "meteopriladi",
+        "lft": 58,
+        "rght": 65,
+        "tree_id": 11,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 493,
+    "fields": {
+        "name": "Намети",
+        "name_en": "Tents",
+        "name_uk": "Намети",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:29:14.606Z",
+        "order": 0,
+        "slug": "nameti",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 494,
+    "fields": {
+        "name": "Спальні мішки",
+        "name_en": "Sleeping bags",
+        "name_uk": "Спальні мішки",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:29:32.201Z",
+        "order": 0,
+        "slug": "spalni-mishki",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 495,
+    "fields": {
+        "name": "Туристичні килимки",
+        "name_en": "Travel mats",
+        "name_uk": "Туристичні килимки",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:29:44.699Z",
+        "order": 0,
+        "slug": "turistichni-kilimki",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 496,
+    "fields": {
+        "name": "Туристичні пальники",
+        "name_en": "Travel burners",
+        "name_uk": "Туристичні пальники",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:29:58.839Z",
+        "order": 0,
+        "slug": "turistichni-palniki",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 497,
+    "fields": {
+        "name": "Туристичний посуд",
+        "name_en": "Travel tableware",
+        "name_uk": "Туристичний посуд",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:30:15.786Z",
+        "order": 0,
+        "slug": "turistichnij-posud",
+        "lft": 11,
+        "rght": 12,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 498,
+    "fields": {
+        "name": "Туристичні ножі",
+        "name_en": "Travel knives",
+        "name_uk": "Туристичні ножі",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:30:30.624Z",
+        "order": 0,
+        "slug": "turistichni-nozhi",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 499,
+    "fields": {
+        "name": "Термоси",
+        "name_en": "Thermoses",
+        "name_uk": "Термоси",
+        "parent": 486,
+        "image": "",
+        "created_at": "2025-04-13T10:30:44.663Z",
+        "order": 0,
+        "slug": "termosi",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 500,
+    "fields": {
+        "name": "Ліхтарі",
+        "name_en": "Flashlights",
+        "name_uk": "Ліхтарі",
+        "parent": 487,
+        "image": "",
+        "created_at": "2025-04-13T10:31:07.085Z",
+        "order": 0,
+        "slug": "lihtari",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 501,
+    "fields": {
+        "name": "Зарядні пристрої",
+        "name_en": "Chargers",
+        "name_uk": "Зарядні пристрої",
+        "parent": 487,
+        "image": "",
+        "created_at": "2025-04-13T10:31:21.192Z",
+        "order": 0,
+        "slug": "zaryadni-pristroyi",
+        "lft": 21,
+        "rght": 22,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 502,
+    "fields": {
+        "name": "Телескопи",
+        "name_en": "Telescopes",
+        "name_uk": "Телескопи",
+        "parent": 488,
+        "image": "",
+        "created_at": "2025-04-13T10:31:52.470Z",
+        "order": 0,
+        "slug": "teleskopi",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 503,
+    "fields": {
+        "name": "Біноклі",
+        "name_en": "Binoculars",
+        "name_uk": "Біноклі",
+        "parent": 488,
+        "image": "",
+        "created_at": "2025-04-13T10:32:02.031Z",
+        "order": 0,
+        "slug": "binokli",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 504,
+    "fields": {
+        "name": "Мікроскопи",
+        "name_en": "Microscopes",
+        "name_uk": "Мікроскопи",
+        "parent": 488,
+        "image": "",
+        "created_at": "2025-04-13T10:32:13.606Z",
+        "order": 0,
+        "slug": "mikroskopi",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 505,
+    "fields": {
+        "name": "Підзорні труби",
+        "name_en": "Spyglasses",
+        "name_uk": "Підзорні труби",
+        "parent": 488,
+        "image": "",
+        "created_at": "2025-04-13T10:32:24.778Z",
+        "order": 0,
+        "slug": "pidzorni-trubi",
+        "lft": 31,
+        "rght": 32,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 506,
+    "fields": {
+        "name": "Початкові",
+        "name_en": "Initial",
+        "name_uk": "Початкові",
+        "parent": 489,
+        "image": "",
+        "created_at": "2025-04-13T10:32:52.388Z",
+        "order": 0,
+        "slug": "pochatkovi",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 507,
+    "fields": {
+        "name": "Середні",
+        "name_en": "Intermediate",
+        "name_uk": "Середні",
+        "parent": 489,
+        "image": "",
+        "created_at": "2025-04-13T10:33:02.630Z",
+        "order": 0,
+        "slug": "seredni",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 508,
+    "fields": {
+        "name": "Професійні",
+        "name_en": "Professional",
+        "name_uk": "Професійні",
+        "parent": 489,
+        "image": "",
+        "created_at": "2025-04-13T10:33:12.003Z",
+        "order": 0,
+        "slug": "profesijni",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 509,
+    "fields": {
+        "name": "Човни",
+        "name_en": "Boats",
+        "name_uk": "Човни",
+        "parent": 490,
+        "image": "",
+        "created_at": "2025-04-13T10:33:43.880Z",
+        "order": 0,
+        "slug": "chovni",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 510,
+    "fields": {
+        "name": "Човнові мотори",
+        "name_en": "Boat motors",
+        "name_uk": "Човнові мотори",
+        "parent": 490,
+        "image": "",
+        "created_at": "2025-04-13T10:33:52.860Z",
+        "order": 0,
+        "slug": "chovnovi-motori",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 511,
+    "fields": {
+        "name": "Ехолоти",
+        "name_en": "Sounders",
+        "name_uk": "Ехолоти",
+        "parent": 491,
+        "image": "",
+        "created_at": "2025-04-13T10:34:34.334Z",
+        "order": 0,
+        "slug": "eholoti",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 512,
+    "fields": {
+        "name": "Вудилища",
+        "name_en": "Fishing rods",
+        "name_uk": "Вудилища",
+        "parent": 491,
+        "image": "",
+        "created_at": "2025-04-13T10:34:45.945Z",
+        "order": 0,
+        "slug": "vudilisha",
+        "lft": 51,
+        "rght": 52,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 513,
+    "fields": {
+        "name": "Котушки",
+        "name_en": "Reels",
+        "name_uk": "Котушки",
+        "parent": 491,
+        "image": "",
+        "created_at": "2025-04-13T10:34:58.910Z",
+        "order": 0,
+        "slug": "kotushki",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 514,
+    "fields": {
+        "name": "Кораблики для підгодування",
+        "name_en": "Boats for feeding",
+        "name_uk": "Кораблики для підгодування",
+        "parent": 491,
+        "image": "",
+        "created_at": "2025-04-13T10:35:09.588Z",
+        "order": 0,
+        "slug": "korabliki-dlya-pidgoduvannya",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 515,
+    "fields": {
+        "name": "Метеостанції",
+        "name_en": "Weather stations",
+        "name_uk": "Метеостанції",
+        "parent": 492,
+        "image": "",
+        "created_at": "2025-04-13T10:35:48.953Z",
+        "order": 0,
+        "slug": "meteostanciyi",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 516,
+    "fields": {
+        "name": "Термометри та гідрометри",
+        "name_en": "Thermometers and hydrometers",
+        "name_uk": "Термометри та гідрометри",
+        "parent": 492,
+        "image": "",
+        "created_at": "2025-04-13T10:36:00.841Z",
+        "order": 0,
+        "slug": "termometri-ta-gidrometri",
+        "lft": 61,
+        "rght": 62,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 517,
+    "fields": {
+        "name": "Барометри",
+        "name_en": "Barometers",
+        "name_uk": "Барометри",
+        "parent": 492,
+        "image": "",
+        "created_at": "2025-04-13T10:36:09.249Z",
+        "order": 0,
+        "slug": "barometri",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 11,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 518,
+    "fields": {
+        "name": "Електроінструмент",
+        "name_en": "Power tools",
+        "name_uk": "Електроінструмент",
+        "parent": 12,
+        "image": "category_images/електроінструмент.svg",
+        "created_at": "2025-04-13T10:41:43.065Z",
+        "order": 0,
+        "slug": "elektroinstrument",
+        "lft": 2,
+        "rght": 11,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 519,
+    "fields": {
+        "name": "Зварювальне обладнання",
+        "name_en": "Welding equipment",
+        "name_uk": "Зварювальне обладнання",
+        "parent": 12,
+        "image": "category_images/зварювальне_обладнання.svg",
+        "created_at": "2025-04-13T10:42:00.442Z",
+        "order": 0,
+        "slug": "zvaryuvalne-obladnannya",
+        "lft": 12,
+        "rght": 21,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 520,
+    "fields": {
+        "name": "Обладнання",
+        "name_en": "Equipment",
+        "name_uk": "Обладнання",
+        "parent": 12,
+        "image": "category_images/обладнання.svg",
+        "created_at": "2025-04-13T10:42:18.317Z",
+        "order": 0,
+        "slug": "obladnannya",
+        "lft": 22,
+        "rght": 31,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 521,
+    "fields": {
+        "name": "Верстати",
+        "name_en": "Machine tools",
+        "name_uk": "Верстати",
+        "parent": 12,
+        "image": "category_images/верстати.svg",
+        "created_at": "2025-04-13T10:42:35.537Z",
+        "order": 0,
+        "slug": "verstati",
+        "lft": 32,
+        "rght": 41,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 522,
+    "fields": {
+        "name": "Вимірювальний інструмент",
+        "name_en": "Measuring tool",
+        "name_uk": "Вимірювальний інструмент",
+        "parent": 12,
+        "image": "category_images/вимірювальний_інстурмент.svg",
+        "created_at": "2025-04-13T10:42:56.637Z",
+        "order": 0,
+        "slug": "vimiryuvalnij-instrument",
+        "lft": 42,
+        "rght": 51,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 523,
+    "fields": {
+        "name": "Генератори",
+        "name_en": "Generators",
+        "name_uk": "Генератори",
+        "parent": 12,
+        "image": "category_images/генератор.svg",
+        "created_at": "2025-04-13T10:43:15.062Z",
+        "order": 0,
+        "slug": "generatori",
+        "lft": 52,
+        "rght": 61,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 524,
+    "fields": {
+        "name": "Сантехніка",
+        "name_en": "Plumbing",
+        "name_uk": "Сантехніка",
+        "parent": 12,
+        "image": "category_images/сантехніка.svg",
+        "created_at": "2025-04-13T10:43:32.796Z",
+        "order": 0,
+        "slug": "santehnika",
+        "lft": 62,
+        "rght": 71,
+        "tree_id": 12,
+        "level": 1
+    }
+},
+{
+    "model": "product.category",
+    "pk": 525,
+    "fields": {
+        "name": "Шурупокрут",
+        "name_en": "Screwdriver",
+        "name_uk": "Шурупокрут",
+        "parent": 518,
+        "image": "",
+        "created_at": "2025-04-13T10:43:58.367Z",
+        "order": 0,
+        "slug": "shurupokrut",
+        "lft": 3,
+        "rght": 4,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 526,
+    "fields": {
+        "name": "Дрилі",
+        "name_en": "Drills",
+        "name_uk": "Дрилі",
+        "parent": 518,
+        "image": "",
+        "created_at": "2025-04-13T10:44:24.040Z",
+        "order": 0,
+        "slug": "drili",
+        "lft": 5,
+        "rght": 6,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 527,
+    "fields": {
+        "name": "Болгарки",
+        "name_en": "Grinders",
+        "name_uk": "Болгарки",
+        "parent": 518,
+        "image": "",
+        "created_at": "2025-04-13T10:44:33.601Z",
+        "order": 0,
+        "slug": "bolgarki",
+        "lft": 7,
+        "rght": 8,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 528,
+    "fields": {
+        "name": "Перфоратори",
+        "name_en": "Perforators",
+        "name_uk": "Перфоратори",
+        "parent": 518,
+        "image": "",
+        "created_at": "2025-04-13T10:44:42.486Z",
+        "order": 0,
+        "slug": "perforatori",
+        "lft": 9,
+        "rght": 10,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 529,
+    "fields": {
+        "name": "Зварювальні інвертори",
+        "name_en": "Welding inverters",
+        "name_uk": "Зварювальні інвертори",
+        "parent": 519,
+        "image": "",
+        "created_at": "2025-04-13T10:45:00.446Z",
+        "order": 0,
+        "slug": "zvaryuvalni-invertori",
+        "lft": 13,
+        "rght": 14,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 530,
+    "fields": {
+        "name": "Зварювальні напівавтомати",
+        "name_en": "Semi-automatic welding machines",
+        "name_uk": "Зварювальні напівавтомати",
+        "parent": 519,
+        "image": "",
+        "created_at": "2025-04-13T10:45:16.520Z",
+        "order": 0,
+        "slug": "zvaryuvalni-napivavtomati",
+        "lft": 15,
+        "rght": 16,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 531,
+    "fields": {
+        "name": "Плазморізи",
+        "name_en": "Plasma cutters",
+        "name_uk": "Плазморізи",
+        "parent": 519,
+        "image": "",
+        "created_at": "2025-04-13T10:45:36.977Z",
+        "order": 0,
+        "slug": "plazmorizi",
+        "lft": 17,
+        "rght": 18,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 532,
+    "fields": {
+        "name": "Зварювальні маски",
+        "name_en": "Welding masks",
+        "name_uk": "Зварювальні маски",
+        "parent": 519,
+        "image": "",
+        "created_at": "2025-04-13T10:45:50.703Z",
+        "order": 0,
+        "slug": "zvaryuvalni-maski",
+        "lft": 19,
+        "rght": 20,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 533,
+    "fields": {
+        "name": "Теплові гармати",
+        "name_en": "Heat guns",
+        "name_uk": "Теплові гармати",
+        "parent": 520,
+        "image": "",
+        "created_at": "2025-04-13T10:46:03.927Z",
+        "order": 0,
+        "slug": "teplovi-garmati",
+        "lft": 23,
+        "rght": 24,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 534,
+    "fields": {
+        "name": "Будівельні пилососи",
+        "name_en": "Construction vacuum cleaners",
+        "name_uk": "Будівельні пилососи",
+        "parent": 520,
+        "image": "",
+        "created_at": "2025-04-13T10:46:18.545Z",
+        "order": 0,
+        "slug": "budivelni-pilososi",
+        "lft": 25,
+        "rght": 26,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 535,
+    "fields": {
+        "name": "Генератори",
+        "name_en": "Generators",
+        "name_uk": "Генератори",
+        "parent": 520,
+        "image": "",
+        "created_at": "2025-04-13T10:46:35.036Z",
+        "order": 0,
+        "slug": "generatori-238",
+        "lft": 27,
+        "rght": 28,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 536,
+    "fields": {
+        "name": "Мережеві фільтри та подовжувачі",
+        "name_en": "Surge protectors and power strips",
+        "name_uk": "Мережеві фільтри та подовжувачі",
+        "parent": 520,
+        "image": "",
+        "created_at": "2025-04-13T10:46:54.169Z",
+        "order": 0,
+        "slug": "merezhevi-filtri-ta-podovzhuvachi",
+        "lft": 29,
+        "rght": 30,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 537,
+    "fields": {
+        "name": "Фугувально-рейсмусові верстати",
+        "name_en": "Fluting and slitting machines",
+        "name_uk": "Фугувально-рейсмусові верстати",
+        "parent": 521,
+        "image": "",
+        "created_at": "2025-04-13T10:47:15.416Z",
+        "order": 0,
+        "slug": "fuguvalno-rejsmusovi-verstati",
+        "lft": 33,
+        "rght": 34,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 538,
+    "fields": {
+        "name": "Циркулярні верстати",
+        "name_en": "Circular machines",
+        "name_uk": "Циркулярні верстати",
+        "parent": 521,
+        "image": "",
+        "created_at": "2025-04-13T10:47:29.557Z",
+        "order": 0,
+        "slug": "cirkulyarni-verstati",
+        "lft": 35,
+        "rght": 36,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 539,
+    "fields": {
+        "name": "Точильні верстати",
+        "name_en": "Grinding machines",
+        "name_uk": "Точильні верстати",
+        "parent": 521,
+        "image": "",
+        "created_at": "2025-04-13T10:47:44.493Z",
+        "order": 0,
+        "slug": "tochilni-verstati",
+        "lft": 37,
+        "rght": 38,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 540,
+    "fields": {
+        "name": "Свердлильні верстати",
+        "name_en": "Drilling machines",
+        "name_uk": "Свердлильні верстати",
+        "parent": 521,
+        "image": "",
+        "created_at": "2025-04-13T10:48:00.880Z",
+        "order": 0,
+        "slug": "sverdlilni-verstati",
+        "lft": 39,
+        "rght": 40,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 541,
+    "fields": {
+        "name": "Лазерні рівні та нівеліри",
+        "name_en": "Laser levels and levels",
+        "name_uk": "Лазерні рівні та нівеліри",
+        "parent": 522,
+        "image": "",
+        "created_at": "2025-04-13T10:48:27.109Z",
+        "order": 0,
+        "slug": "lazerni-rivni-ta-niveliri",
+        "lft": 43,
+        "rght": 44,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 542,
+    "fields": {
+        "name": "Детектори проводки",
+        "name_en": "Wiring detectors",
+        "name_uk": "Детектори проводки",
+        "parent": 522,
+        "image": "",
+        "created_at": "2025-04-13T10:48:44.834Z",
+        "order": 0,
+        "slug": "detektori-provodki",
+        "lft": 45,
+        "rght": 46,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 543,
+    "fields": {
+        "name": "Рівні",
+        "name_en": "Levels",
+        "name_uk": "Рівні",
+        "parent": 522,
+        "image": "",
+        "created_at": "2025-04-13T10:48:57.987Z",
+        "order": 0,
+        "slug": "rivni",
+        "lft": 47,
+        "rght": 48,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 544,
+    "fields": {
+        "name": "Рулетки",
+        "name_en": "Roulettes",
+        "name_uk": "Рулетки",
+        "parent": 522,
+        "image": "",
+        "created_at": "2025-04-13T10:49:08.422Z",
+        "order": 0,
+        "slug": "ruletki",
+        "lft": 49,
+        "rght": 50,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 545,
+    "fields": {
+        "name": "Бензиновий",
+        "name_en": "Gasoline",
+        "name_uk": "Бензиновий",
+        "parent": 523,
+        "image": "",
+        "created_at": "2025-04-13T10:49:21.968Z",
+        "order": 0,
+        "slug": "benzinovij",
+        "lft": 53,
+        "rght": 54,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 546,
+    "fields": {
+        "name": "Газ\\бензин",
+        "name_en": "Gas\\petrol",
+        "name_uk": "Газ\\бензин",
+        "parent": 523,
+        "image": "",
+        "created_at": "2025-04-13T10:49:47.148Z",
+        "order": 0,
+        "slug": "gazbenzin",
+        "lft": 55,
+        "rght": 56,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 547,
+    "fields": {
+        "name": "Інверторний",
+        "name_en": "Inverter",
+        "name_uk": "Інверторний",
+        "parent": 523,
+        "image": "",
+        "created_at": "2025-04-13T10:50:02.842Z",
+        "order": 0,
+        "slug": "invertornij",
+        "lft": 57,
+        "rght": 58,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 548,
+    "fields": {
+        "name": "Дизельний",
+        "name_en": "Diesel",
+        "name_uk": "Дизельний",
+        "parent": 523,
+        "image": "",
+        "created_at": "2025-04-13T10:50:14.058Z",
+        "order": 0,
+        "slug": "dizelnij",
+        "lft": 59,
+        "rght": 60,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 549,
+    "fields": {
+        "name": "Змішувачі",
+        "name_en": "Faucets",
+        "name_uk": "Змішувачі",
+        "parent": 524,
+        "image": "",
+        "created_at": "2025-04-13T10:50:27.789Z",
+        "order": 0,
+        "slug": "zmishuvachi",
+        "lft": 63,
+        "rght": 64,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 550,
+    "fields": {
+        "name": "Душові гарнітури",
+        "name_en": "Shower sets",
+        "name_uk": "Душові гарнітури",
+        "parent": 524,
+        "image": "",
+        "created_at": "2025-04-13T10:50:43.771Z",
+        "order": 0,
+        "slug": "dushovi-garnituri",
+        "lft": 65,
+        "rght": 66,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 551,
+    "fields": {
+        "name": "Витяжні вентилятори",
+        "name_en": "Exhaust fans",
+        "name_uk": "Витяжні вентилятори",
+        "parent": 524,
+        "image": "",
+        "created_at": "2025-04-13T10:50:58.456Z",
+        "order": 0,
+        "slug": "vityazhni-ventilyatori",
+        "lft": 67,
+        "rght": 68,
+        "tree_id": 12,
+        "level": 2
+    }
+},
+{
+    "model": "product.category",
+    "pk": 552,
+    "fields": {
+        "name": "Подрібнювачі харчових відходів",
+        "name_en": "Food waste shredders",
+        "name_uk": "Подрібнювачі харчових відходів",
+        "parent": 524,
+        "image": "",
+        "created_at": "2025-04-13T10:51:25.386Z",
+        "order": 0,
+        "slug": "podribnyuvachi-harchovih-vidhodiv",
+        "lft": 69,
+        "rght": 70,
+        "tree_id": 12,
         "level": 2
     }
 }
