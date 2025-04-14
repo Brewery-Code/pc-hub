@@ -1,15 +1,20 @@
-from functools import partial
+from django.conf import settings
+from django.middleware import csrf
 from rest_framework import status
 from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializers import CustomUserRegistrationSerializer, CustomUserSerializer
-from rest_framework.decorators import permission_classes
-from cart.models import Cart, CartItem
-from django.conf import settings
-from django.middleware import csrf
+from rest_framework_simplejwt.exceptions import InvalidToken, TokenError
+from rest_framework_simplejwt.serializers import (
+    TokenObtainPairSerializer,
+    TokenRefreshSerializer,
+)
 from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenObtainPairView
+
+from .serializers import CustomUserRegistrationSerializer, CustomUserSerializer
+from cart.models import Cart, CartItem
 
 
 class RegisterCustomUserView(APIView):
@@ -91,14 +96,30 @@ class RefreshTokenView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
+        serializer = TokenRefreshSerializer(data={"refresh": refresh_token})
+
         try:
-            refresh = RefreshToken(refresh_token)
-            access_token = str(refresh.access_token)
-            return Response({"access": access_token}, status=status.HTTP_200_OK)
-        except Exception:
-            return Response(
-                {"error": "Invalid refresh token"}, status=status.HTTP_401_UNAUTHORIZED
-            )
+            serializer.is_valid(raise_exception=True)
+        except InvalidToken as e:
+            print("InvalidToken:", e)
+            return Response({"error": "Invalid refresh token"}, status=401)
+
+        data = serializer.validated_data
+        access = data["access"]
+        new_refresh = data.get("refresh", refresh_token)
+
+        response = Response({"access": access}, status=200)
+
+        response.set_cookie(
+            key="refresh_token",
+            value=new_refresh,
+            expires=settings.SIMPLE_JWT["REFRESH_TOKEN_LIFETIME"],
+            secure=settings.SIMPLE_JWT["AUTH_COOKIE_SECURE"],
+            httponly=True,
+            samesite=settings.SIMPLE_JWT["AUTH_COOKIE_SAMESITE"],
+        )
+
+        return response
 
 
 class CustomUserView(APIView):
@@ -199,3 +220,46 @@ class CustomUserView(APIView):
             {"message": "User account deleted successfully"},
             status=status.HTTP_204_NO_CONTENT,
         )
+
+
+class LoginView(TokenObtainPairView):
+    """APIView для авторизації користувача.
+
+    Дозволені операції та HTTP-методи:
+        - (POST /users/login/): авторизація користувача
+
+    Параметри запиту: (В тілі)
+        - email (str): Електронна адреса існуючого користувача.
+        - password (str): Пароль існуючого користувача.
+
+    Доступ:
+        - Доступний для всіх користувачів (AllowAny).
+    """
+
+    permission_classes = [AllowAny]
+    serializer_class = TokenObtainPairSerializer
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+
+        try:
+            serializer.is_valid(raise_exception=True)
+        except Exception as e:
+            return Response({"error": "Invalid credentials"}, status=401)
+
+        data = serializer.validated_data
+        access = data["access"]
+        refresh = data["refresh"]
+
+        response = Response({"access": access}, status=status.HTTP_200_OK)
+
+        response.set_cookie(
+            key="refresh_token",
+            value=refresh,
+            expires=settings.SIMPLE_JWT["REFRESH_TOKEN_LIFETIME"],
+            secure=settings.SIMPLE_JWT["AUTH_COOKIE_SECURE"],
+            httponly=True,
+            samesite=settings.SIMPLE_JWT["AUTH_COOKIE_SAMESITE"],
+        )
+
+        return response
