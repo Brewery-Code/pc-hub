@@ -175,7 +175,7 @@ class CategoryAttributeAdmin(admin.ModelAdmin):
     form = CategoryAttributeAdminForm
     autocomplete_fields = ["attribute"]
 
-    list_display = ("display_categories", "attribute", "is_filterable")
+    list_display = ("attribute", "is_filterable")
     list_filter = ("attribute", "category")
     search_fields = ("attribute__name", "category__name")
 
