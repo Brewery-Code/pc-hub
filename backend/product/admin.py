@@ -8,6 +8,27 @@ from django.urls import reverse
 from django import forms
 
 
+class CategoryChoiceField(forms.ModelMultipleChoiceField):
+    def label_from_instance(self, obj):
+        hierarchy = []
+        category = obj
+        while category:
+            hierarchy.append(category.name)
+            category = category.parent
+        return " → ".join(reversed(hierarchy))
+
+
+class CategoryAttributeAdminForm(forms.ModelForm):
+    category = CategoryChoiceField(
+        queryset=Category.objects.all(),
+        widget=admin.widgets.FilteredSelectMultiple("Категорії", is_stacked=False),
+    )
+
+    class Meta:
+        model = CategoryAttribute
+        fields = "__all__"
+
+
 # Кастомна форма для інлайну ProductCategoryInline
 class ProductCategoryInlineForm(forms.ModelForm):
     class Meta:
@@ -151,14 +172,16 @@ class ProductAttributeAdmin(admin.ModelAdmin):
 class CategoryAttributeAdmin(admin.ModelAdmin):
     """Адмін-інтерфейс для атрибутів категорії"""
 
+    form = CategoryAttributeAdminForm
+    autocomplete_fields = ["attribute"]
+
     list_display = ("display_categories", "attribute", "is_filterable")
     list_filter = ("attribute", "category")
     search_fields = ("attribute__name", "category__name")
 
+    @admin.display(description="Категорії")
     def display_categories(self, obj):
         return ", ".join([category.name for category in obj.category.all()])
-
-    display_categories.short_description = "Категорії"
 
 
 @admin.register(ProductImage)
