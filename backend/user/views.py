@@ -153,7 +153,9 @@ class CustomUserView(APIView):
                 "name": user.name,
                 "surname": user.surname,
                 "phone": user.phone,
-                "photo": user.photo.url if user.photo else None,
+                "photo": (
+                    request.build_absolute_uri(user.photo.url) if user.photo else None
+                ),
             },
             status=status.HTTP_200_OK,
         )
