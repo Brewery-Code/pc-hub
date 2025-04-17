@@ -44,6 +44,8 @@ interface IUser {
   name: string;
   surname: string;
   email: string;
+  phone: number | null;
+  photo: string;
   cart: ICart;
 }
 

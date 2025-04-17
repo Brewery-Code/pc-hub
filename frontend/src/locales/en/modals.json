@@ -5,7 +5,13 @@
     "catalog": "Product catalog",
     "cart": "Cart",
     "comparison": "Comparison",
-    "likes": "Likes"
+    "likes": "Likes",
+    "signOut": "Sign out",
+    "orderHistory": "Order history",
+    "liked": "Liked",
+    "viewed": "Viewed products",
+    "myReviews": "My reviews",
+    "profile": "Profile"
   },
   "signIn": {
     "title": "Sign in",

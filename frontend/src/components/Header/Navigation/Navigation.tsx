@@ -1,13 +1,19 @@
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import clsx from "clsx";
+import { RootState } from "../../../store/store";
+import { useAuth } from "../../../hooks";
 import { BurgerMenu } from "./BurgerMenu";
 import { NavigationLink } from "./NavigationLink";
+import { UIChangeLanguage } from "../../UI";
 import { LogoIcon, PhoneIcon, ProfileIcon } from "../../../assets/icons";
 import styles from "./Navigation.module.css";
-import { UIChangeLanguage } from "../../UI";
-import clsx from "clsx";
-import { Link } from "react-router-dom";
 
 function Navigation() {
+  const { isAuth } = useAuth();
+  const { photo } = useSelector((state: RootState) => state.user);
+
   const { t } = useTranslation<string>("components");
 
   return (
@@ -34,9 +40,16 @@ function Navigation() {
           <UIChangeLanguage
             className={clsx("only-desktop", styles.navigation__language)}
           />
-          <ProfileIcon
-            className={clsx("only-desktop", styles.navigation__profile)}
-          />
+          {!isAuth ? (
+            <ProfileIcon
+              className={clsx("only-desktop", styles.navigation__profile)}
+            />
+          ) : (
+            <img
+              className={clsx(styles.navigation__profile, "only-desktop")}
+              src={photo}
+            />
+          )}
         </div>
       </div>
     </nav>

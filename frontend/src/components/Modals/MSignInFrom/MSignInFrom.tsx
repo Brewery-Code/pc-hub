@@ -1,18 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { createPortal } from "react-dom";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../store/store";
 import { SignFormState } from "../../../store/types";
+import { useAppDispatch } from "../../../store/store";
+import { loginUser } from "../../../store/user/user.slice";
 import { UIButton, UICross, UIInputField, UIModalBody } from "../../UI";
-import {
-  FacebookIcon,
-  GoogleIcon,
-  PasswordVisibilityIcon,
-} from "../../../assets/icons";
+import { FacebookIcon, GoogleIcon, EyeIcon } from "../../../assets/icons";
 import styles from "./MSignInFrom.module.css";
-import { fetchUserInfo, loginUser } from "../../../store/user/user.slice";
 
 interface MRegisterFormProps {
   isFormOpen: SignFormState;
@@ -23,14 +18,7 @@ export default function MSignInForm({
   isFormOpen,
   handleForm,
 }: MRegisterFormProps) {
-  const { access } = useSelector((state: RootState) => state.user);
-  useEffect(() => {
-    if (access != null) {
-      handleForm(SignFormState.None);
-      dispatch(fetchUserInfo({ access: access }));
-    }
-  }, [access]);
-
+  const dispatch = useAppDispatch();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -41,7 +29,6 @@ export default function MSignInForm({
     false,
   );
 
-  const dispatch = useAppDispatch();
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -116,7 +103,7 @@ export default function MSignInForm({
                 setFormData({ ...formData, password: e.target.value })
               }
             />
-            <PasswordVisibilityIcon
+            <EyeIcon
               className={clsx(
                 styles.modal__passwordVisibility,
                 isPasswordVisible && styles.modal__passwordVisibility_active,

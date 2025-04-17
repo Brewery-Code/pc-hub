@@ -8,11 +8,7 @@ import { RootState, useAppDispatch } from "../../../store/store";
 import { registerUser } from "../../../store/user/user.slice";
 import { SignFormState } from "../../../store/types";
 import { UIButton, UICross, UIInputField, UIModalBody } from "../../UI";
-import {
-  FacebookIcon,
-  GoogleIcon,
-  PasswordVisibilityIcon,
-} from "../../../assets/icons";
+import { FacebookIcon, GoogleIcon, EyeIcon } from "../../../assets/icons";
 import styles from "./MRegisterFrom.module.css";
 
 interface MRegisterFormProps {
@@ -146,7 +142,7 @@ function MRegisterForm({ isFormOpen, handleForm }: MRegisterFormProps) {
                 setFormData({ ...formData, password: e.target.value })
               }
             />
-            <PasswordVisibilityIcon
+            <EyeIcon
               className={clsx(
                 styles.modal__passwordVisibility,
                 isPasswordVisible && styles.modal__passwordVisibility_active,

@@ -45,4 +45,4 @@ export { default as MonobankIcon } from "./MonobankIcon";
 export { default as OschadbankIcon } from "./OschadbankIcon";
 export { default as ArrowThin } from "./ArrowThin";
 export { default as GoogleIcon } from "./GoogleIcon";
-export { default as PasswordVisibilityIcon } from "./PasswordVisibilityIcon";
+export { default as EyeIcon } from "./EyeIcon";
