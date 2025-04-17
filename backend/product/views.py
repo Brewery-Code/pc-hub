@@ -147,7 +147,7 @@ class ProductDetailView(APIView):
         else:
             product = get_object_or_404(Product, slug=identifier)
 
-        serializer = ProductDetailSerializer(product)
+        serializer = ProductDetailSerializer(product, context={"request": request})
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def get_queryset(self):
