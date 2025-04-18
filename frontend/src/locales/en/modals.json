@@ -5,14 +5,20 @@
     "catalog": "Product catalog",
     "cart": "Cart",
     "comparison": "Comparison",
-    "likes": "Likes"
+    "likes": "Likes",
+    "signOut": "Sign out",
+    "orderHistory": "Order history",
+    "liked": "Liked",
+    "viewed": "Viewed products",
+    "myReviews": "My reviews",
+    "profile": "Profile"
   },
   "signIn": {
     "title": "Sign in",
     "inputEmail": "Your email",
     "inputPassword": "Password",
     "forgotPassword": "Forgot password",
-    "signIn": "SignIn",
+    "signIn": "Sign In",
     "otherSignInWays": "Or log in using",
     "notRegister": "You don't have an account.",
     "register": "Sign up",

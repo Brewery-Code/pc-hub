@@ -1,12 +1,6 @@
 import ISVGIconProps from "./ISVGIconProps";
 
-function PasswordVisibilityIcon({
-  className,
-  width,
-  height,
-  stroke,
-  onClick,
-}: ISVGIconProps) {
+function EyeIcon({ className, width, height, stroke, onClick }: ISVGIconProps) {
   return (
     <svg
       className={className}
@@ -25,6 +19,7 @@ function PasswordVisibilityIcon({
         strokeOpacity="1.000000"
         strokeWidth="1.500000"
         strokeLinejoin="round"
+        fill="none"
       />
       <path
         id="vector"
@@ -33,9 +28,10 @@ function PasswordVisibilityIcon({
         strokeOpacity="1.000000"
         strokeWidth="1.500000"
         strokeLinejoin="round"
+        fill="none"
       />
     </svg>
   );
 }
 
-export default PasswordVisibilityIcon;
+export default EyeIcon;

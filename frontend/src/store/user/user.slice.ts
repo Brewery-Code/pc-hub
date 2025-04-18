@@ -17,6 +17,7 @@ const registerUser = createAsyncThunk(
       `${import.meta.env.VITE_API_BASE_URL}/users/register/`,
       {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
           "Accept-Language": i18n.language,
@@ -40,6 +41,7 @@ const loginUser = createAsyncThunk(
       `${import.meta.env.VITE_API_BASE_URL}/users/login/`,
       {
         method: "POST",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
@@ -75,6 +77,7 @@ const fetchUserInfo = createAsyncThunk(
       `${import.meta.env.VITE_API_BASE_URL}/users/me/`,
       {
         method: "GET",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
           Authorization: access ? `Bearer ${access}` : "",
@@ -94,6 +97,7 @@ const fetchUserInfo = createAsyncThunk(
           `${import.meta.env.VITE_API_BASE_URL}/users/me/`,
           {
             method: "GET",
+            credentials: "include",
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${newAccess}`,
@@ -118,6 +122,7 @@ const fetchCart = createAsyncThunk(
   async ({ access }: { access?: string }, { dispatch }) => {
     const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart/`, {
       method: "GET",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
         Authorization: access ? `Bearer ${access}` : "",
@@ -136,6 +141,7 @@ const fetchCart = createAsyncThunk(
           `${import.meta.env.VITE_API_BASE_URL}/cart/`,
           {
             method: "GET",
+            credentials: "include",
             headers: {
               "Content-Type": "application/json",
               Authorization: `Bearer ${newAccess}`,
@@ -215,6 +221,8 @@ const initialState: IUser = {
   name: "",
   surname: "",
   email: "",
+  phone: null,
+  photo: "",
   cart: {
     cart_id: 0,
     items: [],
@@ -225,7 +233,9 @@ const initialState: IUser = {
 const userSlice = createSlice({
   name: "user",
   initialState,
-  reducers: {},
+  reducers: {
+    signOutUser: () => initialState,
+  },
   extraReducers: (builder) => {
     builder
       //----------Register User----------//
@@ -251,7 +261,6 @@ const userSlice = createSlice({
         state.status = "pending";
       })
       .addCase(loginUser.fulfilled, (state, action) => {
-        console.log(action.payload);
         if (action.payload.access) {
           state.status = "succeeded";
           state.access = action.payload.access;
@@ -280,7 +289,12 @@ const userSlice = createSlice({
         state.status = "pending";
       })
       .addCase(fetchUserInfo.fulfilled, (state, action) => {
-        console.log(action.payload);
+        state.status = "succeeded";
+        state.name = action.payload.name;
+        state.surname = action.payload.surname;
+        state.email = action.payload.email;
+        state.phone = action.payload.phone;
+        state.photo = action.payload.photo;
       })
       .addCase(fetchUserInfo.rejected, (state, action) => {
         state.status = "failed";
@@ -307,12 +321,13 @@ const userSlice = createSlice({
       });
   },
 });
+export const { signOutUser } = userSlice.actions;
 
 export {
   userSlice,
   registerUser,
   loginUser,
   refreshToken,
-  fetchCart,
   fetchUserInfo,
+  fetchCart,
 };
