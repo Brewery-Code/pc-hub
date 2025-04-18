@@ -10385,6 +10385,257 @@
     }
 },
 {
+    "model": "product.product",
+    "pk": 2,
+    "fields": {
+        "name": "Комп'ютер COBRA Advanced (I14F.16.S4.165.12991) Intel Core i5 10400F / H470M / 16GB DDR4 / ASUS RTX 3050 8GB Dual OC / SSD 480GB / AeroCool Hexform-G / 600W",
+        "name_en": "COBRA Advanced Computer (I14F.16.S4.165.12991) Intel Core i5 10400F / H470M / 16GB DDR4 / ASUS RTX 3050 8GB Dual OC / 480GB SSD / AeroCool Hexform-G / 600W",
+        "name_uk": "Комп'ютер COBRA Advanced (I14F.16.S4.165.12991) Intel Core i5 10400F / H470M / 16GB DDR4 / ASUS RTX 3050 8GB Dual OC / SSD 480GB / AeroCool Hexform-G / 600W",
+        "slug": "cobra-advanced-i14f16s416512991-intel-core-i5-10400f-h470m-16gb-ddr4-asus-rtx-3050-8gb-dual-oc-ssd-480gb-aerocool-hexform-g-600w",
+        "description": "COBRA Advanced (I14F.16.S4.165.12991) — це потужний ігровий комп’ютер, який забезпечує чудову продуктивність у сучасних іграх та ресурсоємних додатках.\r\n\r\nОснащений процесором Intel Core i5 10400F у поєднанні з 16 ГБ оперативної пам’яті DDR4, цей ПК легко справляється з багатозадачністю. Відеокарта ASUS GeForce RTX 3050 8GB Dual OC дозволяє насолоджуватися високою якістю графіки та підтримує технології трасування променів.\r\n\r\nШвидкий твердотільний накопичувач на 480 ГБ гарантує миттєве завантаження системи та програм. Материнська плата на чіпсеті H470M забезпечує надійну основу для стабільної роботи.\r\n\r\nКорпус AeroCool Hexform-G має стильний дизайн та хорошу вентиляцію, а блок живлення на 600 Вт забезпечує стабільну роботу всіх компонентів.\r\n\r\nЦей ПК — ідеальне рішення для геймерів та користувачів, яким потрібна висока продуктивність.",
+        "description_en": "COBRA Advanced (I14F.16.S4.165.12991) is a powerful gaming PC designed to deliver excellent performance in modern games and demanding applications.\r\n\r\nEquipped with an Intel Core i5 10400F processor and 16GB of DDR4 RAM, this computer handles multitasking with ease. The ASUS GeForce RTX 3050 8GB Dual OC graphics card ensures high-quality visuals and supports ray tracing technologies.\r\n\r\nA fast 480GB SSD provides quick system boot and fast application loading. The H470M chipset motherboard offers a stable and reliable foundation.\r\n\r\nThe AeroCool Hexform-G case features a stylish design and efficient airflow, while the 600W power supply ensures stable operation of all components.\r\n\r\nThis PC is a perfect choice for gamers and users seeking high performance.",
+        "description_uk": "COBRA Advanced (I14F.16.S4.165.12991) — це потужний ігровий комп’ютер, який забезпечує чудову продуктивність у сучасних іграх та ресурсоємних додатках.\r\n\r\nОснащений процесором Intel Core i5 10400F у поєднанні з 16 ГБ оперативної пам’яті DDR4, цей ПК легко справляється з багатозадачністю. Відеокарта ASUS GeForce RTX 3050 8GB Dual OC дозволяє насолоджуватися високою якістю графіки та підтримує технології трасування променів.\r\n\r\nШвидкий твердотільний накопичувач на 480 ГБ гарантує миттєве завантаження системи та програм. Материнська плата на чіпсеті H470M забезпечує надійну основу для стабільної роботи.\r\n\r\nКорпус AeroCool Hexform-G має стильний дизайн та хорошу вентиляцію, а блок живлення на 600 Вт забезпечує стабільну роботу всіх компонентів.\r\n\r\nЦей ПК — ідеальне рішення для геймерів та користувачів, яким потрібна висока продуктивність.",
+        "price": 26999.0,
+        "stock_quantity": 12,
+        "discounted_price": 25499,
+        "rating": 0.0,
+        "created_at": "2025-04-18T08:14:44.264Z",
+        "updated_at": "2025-04-18T08:14:44.264Z",
+        "brand": 6,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 3,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming X49 (X49v26) AMD Ryzen 5 5600 / RAM 16ГБ / SSD 1 ТБ / nVidia GeForce RTX 3060 12ГБ",
+        "name_en": "ARTLINE Gaming X49 (X49v26) AMD Ryzen 5 5600 / 16GB RAM / 1TB SSD / nVidia GeForce RTX 3060 12GB",
+        "name_uk": "Комп'ютер ARTLINE Gaming X49 (X49v26) AMD Ryzen 5 5600 / RAM 16ГБ / SSD 1 ТБ / nVidia GeForce RTX 3060 12ГБ",
+        "slug": "artline-gaming-x49-x49v26-amd-ryzen-5-5600-ram-16-ssd-1-nvidia-geforce-rtx-3060-12",
+        "description": "ARTLINE Gaming X49 (X49v26) — ідеальний вибір для геймерів та професіоналів, що працюють з важкими програмами та графікою. Оснащений потужним процесором AMD Ryzen 5 5600, він забезпечує відмінну продуктивність для будь-яких задач.\r\n\r\nЗ 16 ГБ оперативної пам’яті ви зможете без проблем працювати з кількома додатками одночасно, а 1 ТБ SSD забезпечить миттєве завантаження операційної системи та програм.\r\n\r\nВідеокарта nVidia GeForce RTX 3060 12 ГБ дозволяє насолоджуватись високоякісною графікою в іграх та підтримує новітні технології, такі як трасування променів. Це робить ПК відмінним вибором для геймерів, відеоредакторів та тих, хто працює з 3D-графікою.\r\n\r\nКорпус і компоненти комп’ютера зібрані для максимальної ефективності та довговічності, що робить його чудовим вибором для активного використання.",
+        "description_en": "ARTLINE Gaming X49 (X49v26) is the perfect choice for gamers and professionals working with heavy applications and graphics. Equipped with the powerful AMD Ryzen 5 5600 processor, it offers excellent performance for all kinds of tasks.\r\n\r\nWith 16GB of RAM, you can run multiple applications simultaneously without any issues, while the 1TB SSD ensures instant loading of the operating system and programs.\r\n\r\nThe nVidia GeForce RTX 3060 12GB graphics card allows for high-quality gaming visuals and supports the latest technologies like ray tracing. This makes the PC a great option for gamers, video editors, and those working with 3D graphics.\r\n\r\nThe computer's case and components are designed for maximum efficiency and durability, making it an excellent choice for intensive use.",
+        "description_uk": "ARTLINE Gaming X49 (X49v26) — ідеальний вибір для геймерів та професіоналів, що працюють з важкими програмами та графікою. Оснащений потужним процесором AMD Ryzen 5 5600, він забезпечує відмінну продуктивність для будь-яких задач.\r\n\r\nЗ 16 ГБ оперативної пам’яті ви зможете без проблем працювати з кількома додатками одночасно, а 1 ТБ SSD забезпечить миттєве завантаження операційної системи та програм.\r\n\r\nВідеокарта nVidia GeForce RTX 3060 12 ГБ дозволяє насолоджуватись високоякісною графікою в іграх та підтримує новітні технології, такі як трасування променів. Це робить ПК відмінним вибором для геймерів, відеоредакторів та тих, хто працює з 3D-графікою.\r\n\r\nКорпус і компоненти комп’ютера зібрані для максимальної ефективності та довговічності, що робить його чудовим вибором для активного використання.",
+        "price": 31800.0,
+        "stock_quantity": 12,
+        "discounted_price": 30999,
+        "rating": 0.0,
+        "created_at": "2025-04-18T08:50:51.231Z",
+        "updated_at": "2025-04-18T08:50:51.231Z",
+        "brand": 6,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 4,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming X47WHITE (X47WHITEv62)",
+        "name_en": "ARTLINE Gaming X47WHITE (X47WHITEv62)",
+        "name_uk": "Комп'ютер ARTLINE Gaming X47WHITE (X47WHITEv62)",
+        "slug": "artline-gaming-x47white-x47whitev62",
+        "description": "Комп'ютер ARTLINE Gaming X47WHITE (X47WHITEv62) є стильною і високопродуктивною ігровою системою, створеною для тих, хто цінує не тільки потужність, але й естетику. З його стильним білим корпусом та унікальною системою охолодження Tower White, цей комп'ютер стане не лише чудовим робочим інструментом, але й гарним елементом вашого робочого простору.\r\n\r\nВ основі системи лежить 6-ядерний процесор AMD Ryzen 5 7500F з базовою частотою 3.7 ГГц та можливістю розгону до 5.0 ГГц, що дозволяє цьому процесору ефективно справлятися з різноманітними завданнями. Незалежно від того, чи хочете ви грати в найвибагливіші ігри або працювати з мультимедійними проєктами, цей процесор забезпечить відмінну продуктивність та швидку обробку даних.\r\n\r\nСистема охолодження Tower White забезпечує ефективне відведення тепла, підтримуючи стабільну роботу за інтенсивних навантажень. Біле підсвічування вентиляторів та корпусу додає не тільки функціональності, але й створює привабливий візуальний ефект, створюючи атмосферу для повноцінного ігрового процесу.\r\n\r\nКомп'ютер оснащений 32 ГБ оперативної пам'яті DDR5-5200, що забезпечує відмінну швидкість роботи та більшу пропускну здатність. Це дозволяє працювати з ресурсомісткими додатками, запускати безліч завдань одночасно і насолоджуватися іграми без затримок або зависань. Така пам'ять підходить як для ігор, так і для професійної роботи з графікою, відео чи моделюванням.\r\n\r\nДля зберігання даних використовується SSD на 1 ТБ з інтерфейсом NVMe, що значно прискорює завантаження операційної системи, ігор та програм. Завдяки цьому диску доступ до даних і файлів буде швидким, а сам пристрій забезпечить швидкі та стабільні робочі процеси.\r\n\r\nВідеокарта GeForce RTX 4060 з 8 ГБ відеопам'яті GDDR6 забезпечує чудову графіку у сучасних іграх. З її допомогою можна насолоджуватися плавним ігровим процесом з високою частотою кадрів та реалістичною графікою завдяки підтримці трасування променів та інших технологій NVIDIA. Вона також ідеально підходить для роботи з графічними та відеоредакторами, надаючи необхідну продуктивність для професіоналів.\r\n\r\nКомп'ютер ARTLINE Gaming X47WHITE (X47WHITEv62) - це відмінне рішення для тих, хто хоче отримати не тільки потужний та стабільний ПК для ігор та роботи, але й стильний комп'ютер, який радуватиме око та відмінно впишеться у будь-який інтер'єр. З цим комп'ютером ви отримаєте неймовірну продуктивність, плавний ігровий процес та чудовий візуальний досвід.",
+        "description_en": "The ARTLINE Gaming X47WHITE (X47WHITEv62) is a stylish and high-performance gaming system designed for those who value not only power but also aesthetics. With its sleek white case and unique Tower White cooling system, this computer will not only be an excellent working tool but also a beautiful element of your workspace.\r\n\r\nAt the heart of the system is the 6-core AMD Ryzen 5 7500F processor, with a base frequency of 3.7 GHz and the ability to boost up to 5.0 GHz, allowing the processor to handle various tasks effectively. Whether you're playing the most demanding games or working on multimedia projects, this processor ensures excellent performance and fast data processing.\r\n\r\nThe Tower White cooling system provides effective heat dissipation, maintaining stable performance under heavy loads. The white lighting of the fans and case not only adds functionality but also creates an attractive visual effect, enhancing the atmosphere for a full-fledged gaming experience.\r\n\r\nThe computer is equipped with 32 GB of DDR5-5200 RAM, providing excellent speed and greater bandwidth. This allows you to work with resource-intensive applications, run multiple tasks simultaneously, and enjoy games without lag or stuttering. Such memory is ideal for both gaming and professional work with graphics, video, or modeling.\r\n\r\nFor data storage, the system uses a 1 TB NVMe SSD, which significantly accelerates the loading of the operating system, games, and programs. Thanks to this drive, data and file access will be fast, and the device will ensure quick and stable workflows.\r\n\r\nThe GeForce RTX 4060 graphics card with 8 GB of GDDR6 video memory provides excellent graphics in modern games. It enables smooth gameplay with high frame rates and realistic graphics thanks to ray tracing support and other NVIDIA technologies. It is also perfect for working with graphic and video editors, providing the necessary performance for professionals.\r\n\r\nThe ARTLINE Gaming X47WHITE (X47WHITEv62) computer is an excellent choice for those who want not only a powerful and stable gaming and work PC but also a stylish computer that will please the eye and seamlessly fit into any interior. With this computer, you'll get incredible performance, smooth gameplay, and a fantastic visual experience.",
+        "description_uk": "Комп'ютер ARTLINE Gaming X47WHITE (X47WHITEv62) є стильною і високопродуктивною ігровою системою, створеною для тих, хто цінує не тільки потужність, але й естетику. З його стильним білим корпусом та унікальною системою охолодження Tower White, цей комп'ютер стане не лише чудовим робочим інструментом, але й гарним елементом вашого робочого простору.\r\n\r\nВ основі системи лежить 6-ядерний процесор AMD Ryzen 5 7500F з базовою частотою 3.7 ГГц та можливістю розгону до 5.0 ГГц, що дозволяє цьому процесору ефективно справлятися з різноманітними завданнями. Незалежно від того, чи хочете ви грати в найвибагливіші ігри або працювати з мультимедійними проєктами, цей процесор забезпечить відмінну продуктивність та швидку обробку даних.\r\n\r\nСистема охолодження Tower White забезпечує ефективне відведення тепла, підтримуючи стабільну роботу за інтенсивних навантажень. Біле підсвічування вентиляторів та корпусу додає не тільки функціональності, але й створює привабливий візуальний ефект, створюючи атмосферу для повноцінного ігрового процесу.\r\n\r\nКомп'ютер оснащений 32 ГБ оперативної пам'яті DDR5-5200, що забезпечує відмінну швидкість роботи та більшу пропускну здатність. Це дозволяє працювати з ресурсомісткими додатками, запускати безліч завдань одночасно і насолоджуватися іграми без затримок або зависань. Така пам'ять підходить як для ігор, так і для професійної роботи з графікою, відео чи моделюванням.\r\n\r\nДля зберігання даних використовується SSD на 1 ТБ з інтерфейсом NVMe, що значно прискорює завантаження операційної системи, ігор та програм. Завдяки цьому диску доступ до даних і файлів буде швидким, а сам пристрій забезпечить швидкі та стабільні робочі процеси.\r\n\r\nВідеокарта GeForce RTX 4060 з 8 ГБ відеопам'яті GDDR6 забезпечує чудову графіку у сучасних іграх. З її допомогою можна насолоджуватися плавним ігровим процесом з високою частотою кадрів та реалістичною графікою завдяки підтримці трасування променів та інших технологій NVIDIA. Вона також ідеально підходить для роботи з графічними та відеоредакторами, надаючи необхідну продуктивність для професіоналів.\r\n\r\nКомп'ютер ARTLINE Gaming X47WHITE (X47WHITEv62) - це відмінне рішення для тих, хто хоче отримати не тільки потужний та стабільний ПК для ігор та роботи, але й стильний комп'ютер, який радуватиме око та відмінно впишеться у будь-який інтер'єр. З цим комп'ютером ви отримаєте неймовірну продуктивність, плавний ігровий процес та чудовий візуальний досвід.",
+        "price": 43428.0,
+        "stock_quantity": 3,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-18T09:04:28.423Z",
+        "updated_at": "2025-04-18T09:04:28.423Z",
+        "brand": 4,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 5,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming X35 (X35v56)",
+        "name_en": "ARTLINE Gaming X35 (X35v56)",
+        "name_uk": "Комп'ютер ARTLINE Gaming X35 (X35v56)",
+        "slug": "artline-gaming-x35-x35v56",
+        "description": "Комп'ютер ARTLINE Gaming X35 (X35v56) - це потужний і сучасний ігровий комп'ютер, який дасть вам змогу насолоджуватися улюбленими іграми на високих налаштуваннях графіки. Він оснащений 10-ядерним процесором Intel Core i5-14400F, який може працювати на частоті до 4.7 ГГц, і 32 ГБ оперативної пам'яті DDR5-4800, яка забезпечує високу швидкість і багатофункціональність. Для зберігання даних є чудовий твердотільний накопичувач NVMe SSD на 1 ТБ, який гарантує швидке завантаження ігор і додатків. Графічна карта GeForce RTX 4060 Ti з 8 ГБ відеопам'яті дає змогу грати в найновіші ігри з чудовими графіками. Материнська плата PRIME H610M-K підтримує всі необхідні інтерфейси та роз'єми для під'єднання різних пристроїв. Корпус QUBE NEPTUNE має гарне підсвічування і відмінну вентиляцію, а блок живлення 600W забезпечує стабільну роботу системи. Гарантійний термін становить 38 місяців, що свідчить про високу якість і надійність продукту.",
+        "description_en": "The ARTLINE Gaming X35 (X35v56) is a powerful and modern gaming computer that allows you to enjoy your favorite games at high graphics settings. It is equipped with a 10-core Intel Core i5-14400F processor, capable of reaching speeds up to 4.7 GHz, and 32GB of DDR5-4800 RAM, which provides high speed and multitasking capabilities.\r\n\r\nFor data storage, it features a 1TB NVMe SSD, ensuring fast loading of games and applications. The GeForce RTX 4060 Ti graphics card with 8GB of video memory enables smooth gameplay in the latest titles with stunning visuals.\r\n\r\nThe PRIME H610M-K motherboard supports all the necessary interfaces and ports for connecting various devices. The QUBE NEPTUNE case offers attractive lighting and excellent ventilation, while the 600W power supply ensures stable system operation.\r\n\r\nThe 38-month warranty highlights the high quality and reliability of this product.",
+        "description_uk": "Комп'ютер ARTLINE Gaming X35 (X35v56) - це потужний і сучасний ігровий комп'ютер, який дасть вам змогу насолоджуватися улюбленими іграми на високих налаштуваннях графіки. Він оснащений 10-ядерним процесором Intel Core i5-14400F, який може працювати на частоті до 4.7 ГГц, і 32 ГБ оперативної пам'яті DDR5-4800, яка забезпечує високу швидкість і багатофункціональність. Для зберігання даних є чудовий твердотільний накопичувач NVMe SSD на 1 ТБ, який гарантує швидке завантаження ігор і додатків. Графічна карта GeForce RTX 4060 Ti з 8 ГБ відеопам'яті дає змогу грати в найновіші ігри з чудовими графіками. Материнська плата PRIME H610M-K підтримує всі необхідні інтерфейси та роз'єми для під'єднання різних пристроїв. Корпус QUBE NEPTUNE має гарне підсвічування і відмінну вентиляцію, а блок живлення 600W забезпечує стабільну роботу системи. Гарантійний термін становить 38 місяців, що свідчить про високу якість і надійність продукту.",
+        "price": 48680.0,
+        "stock_quantity": 40,
+        "discounted_price": 45780,
+        "rating": 0.0,
+        "created_at": "2025-04-18T09:14:03.796Z",
+        "updated_at": "2025-04-18T09:14:03.797Z",
+        "brand": 4,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 6,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming D31 White (D31Whitev39)",
+        "name_en": "ARTLINE Gaming D31 White (D31Whitev39)",
+        "name_uk": "Комп'ютер ARTLINE Gaming D31 White (D31Whitev39)",
+        "slug": "artline-gaming-d31-white-d31whitev39",
+        "description": "Комп'ютер ARTLINE Gaming D31Whitev39 - потужний ігровий пристрій, створений виробником ARTLINE. Гарантія на цей комп'ютер становить 38 місяців. Чорний колір надає йому стильного та сучасного вигляду.\r\n\r\nЦей комп'ютер призначений спеціально для ігор.\r\n\r\nУ його оснащенні ви знайдете процесор AMD Ryzen 7 5700X з частотою 3.4-4.6 ГГц і 8 ядрами. Для ефективного охолодження процесора встановлено WaterCooler 240mm Basic. Оперативної пам'яті встановлено 32 ГБ DDR4-3600 Gaming, а накопичувач - 1 ТБ NVMe SSD.\r\n\r\nМатеринська плата PRIME B550M-A забезпечує надійну роботу системи. Графічні завдання виконуються на GeForce RTX 4060 Ti з 16 ГБ відеопам'яті. Комп'ютер встановлений у стильному корпусі Jonsbo D31 White ARGB і оснащений блоком живлення потужністю 750 Вт 80+ Bronze.\r\n\r\nСеред особливостей цього комп'ютера - вентилятори з RGB-підсвічуванням, додатковий мультимедійний екран 7\", вентиляційна сітка на верхній і передній панелях, загартоване скло 4 мм на бічній панелі та система водяного охолодження",
+        "description_en": "The ARTLINE Gaming D31Whitev39 is a powerful gaming device created by ARTLINE. It comes with a 38-month warranty. The black color gives it a stylish and modern look.\r\n\r\nThis computer is specifically designed for gaming.\r\n\r\nIt is equipped with an AMD Ryzen 7 5700X processor with a frequency of 3.4-4.6 GHz and 8 cores. For effective cooling, the system includes a WaterCooler 240mm Basic. The computer has 32GB of DDR4-3600 Gaming RAM and a 1TB NVMe SSD for storage.\r\n\r\nThe PRIME B550M-A motherboard ensures reliable system performance. Graphics tasks are handled by the GeForce RTX 4060 Ti with 16GB of video memory. The system is housed in a stylish Jonsbo D31 White ARGB case and powered by a 750W 80+ Bronze power supply.\r\n\r\nSome of the features of this computer include RGB lighting fans, an additional 7\" multimedia screen, ventilation grids on the top and front panels, 4mm tempered glass on the side panel, and a water cooling system.",
+        "description_uk": "Комп'ютер ARTLINE Gaming D31Whitev39 - потужний ігровий пристрій, створений виробником ARTLINE. Гарантія на цей комп'ютер становить 38 місяців. Чорний колір надає йому стильного та сучасного вигляду.\r\n\r\nЦей комп'ютер призначений спеціально для ігор.\r\n\r\nУ його оснащенні ви знайдете процесор AMD Ryzen 7 5700X з частотою 3.4-4.6 ГГц і 8 ядрами. Для ефективного охолодження процесора встановлено WaterCooler 240mm Basic. Оперативної пам'яті встановлено 32 ГБ DDR4-3600 Gaming, а накопичувач - 1 ТБ NVMe SSD.\r\n\r\nМатеринська плата PRIME B550M-A забезпечує надійну роботу системи. Графічні завдання виконуються на GeForce RTX 4060 Ti з 16 ГБ відеопам'яті. Комп'ютер встановлений у стильному корпусі Jonsbo D31 White ARGB і оснащений блоком живлення потужністю 750 Вт 80+ Bronze.\r\n\r\nСеред особливостей цього комп'ютера - вентилятори з RGB-підсвічуванням, додатковий мультимедійний екран 7\", вентиляційна сітка на верхній і передній панелях, загартоване скло 4 мм на бічній панелі та система водяного охолодження",
+        "price": 52398.0,
+        "stock_quantity": 2,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-18T10:29:21.164Z",
+        "updated_at": "2025-04-18T10:29:21.164Z",
+        "brand": 4,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 7,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming X37 (X37v51) Intel Core i5-12400F / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 4060 Ti 16ГБ",
+        "name_en": "ARTLINE Gaming X37 (X37v51) Intel Core i5-12400F / 32GB RAM / 1TB SSD / nVidia GeForce RTX 4060 Ti 16GB",
+        "name_uk": "Комп'ютер ARTLINE Gaming X37 (X37v51) Intel Core i5-12400F / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 4060 Ti 16ГБ",
+        "slug": "artline-gaming-x37-x37v51-intel-core-i5-12400f-ram-32-ssd-1-nvidia-geforce-rtx-4060-ti-16",
+        "description": "Комп'ютер ARTLINE Gaming X37v51 - це компактна та потужна машина для геймерів і професіоналів, яка постачається без операційної системи. Він оснащений процесором Intel Core i5-12400F покоління Alder Lake, що має 6 ядер і 12 потоків, і забезпечує високу продуктивність в іграх і додатках. Для охолодження процесора використовується процесорний кулер QB-OL2000GT, який має низький рівень шуму та довговічність. Відеокарта GeForce RTX 4060 Ti від Nvidia - це новинка на ринку графічних прискорювачів, яка підтримує технології трасування променів, DLSS і Reflex. Вона має 16 ГБ відеопам'яті та високу швидкість роботи. Оперативна пам'ять DDR4-3200 об'ємом 32 ГБ забезпечує швидку роботу системи та багатозадачність. Для зберігання даних використовується SSD зі швидкісним інтерфейсом NVMe об'ємом 1 ТБ, який володіє високою швидкістю читання і запису. Материнська палата Asus PRIME H610M-K D4 підтримує всі необхідні інтерфейси та роз'єми для підключення периферійних пристроїв. Компактний корпус QUBE NEPTUNE Mini має сучасний дизайн зі скляною панеллю та фільтром для пилу, який захищає компоненти від забруднення. Блок живлення 600 Вт 80+ Bronze забезпечує стабільне електроживлення всім компонентам. Охолодження корпусу складається з двох 160мм RGB-вентиляторів на передній панелі й одного 120мм RGB-вентилятора на задній панелі, які створюють ефектне підсвічування і підтримують оптимальну температуру всередині корпусу. Керування LED-підсвіткою вентиляторів здійснюється за допомогою спеціального контролера. Комп'ютер ARTLINE Gaming X37v51 - це чудовий вибір для тих, хто хоче насолоджуватися іграми та роботою на високому рівні.",
+        "description_en": "The ARTLINE Gaming X37v51 is a compact and powerful machine for gamers and professionals, delivered without an operating system. It is equipped with the Intel Core i5-12400F processor from the Alder Lake generation, featuring 6 cores and 12 threads, providing high performance for both gaming and applications. For cooling, the system uses the QB-OL2000GT CPU cooler, which is known for its low noise level and durability.\r\n\r\nThe GeForce RTX 4060 Ti graphics card from Nvidia is a new addition to the market of graphic accelerators, supporting technologies like ray tracing, DLSS, and Reflex. It has 16GB of video memory and offers excellent performance. The system is equipped with 32GB of DDR4-3200 RAM, ensuring fast operation and multitasking capabilities. For data storage, a 1TB NVMe SSD is used, offering high read and write speeds.\r\n\r\nThe Asus PRIME H610M-K D4 motherboard supports all necessary interfaces and ports for peripheral devices. The compact QUBE NEPTUNE Mini case features a modern design with a glass panel and a dust filter to protect components from contamination. The 600W 80+ Bronze power supply provides stable power to all components. The case cooling consists of two 160mm RGB fans on the front panel and one 120mm RGB fan on the rear panel, which create impressive lighting effects and maintain an optimal temperature inside the case. The LED lighting of the fans is controlled via a special controller.\r\n\r\nThe ARTLINE Gaming X37v51 computer is an excellent choice for those who want to enjoy gaming and work at a high level.",
+        "description_uk": "Комп'ютер ARTLINE Gaming X37v51 - це компактна та потужна машина для геймерів і професіоналів, яка постачається без операційної системи. Він оснащений процесором Intel Core i5-12400F покоління Alder Lake, що має 6 ядер і 12 потоків, і забезпечує високу продуктивність в іграх і додатках. Для охолодження процесора використовується процесорний кулер QB-OL2000GT, який має низький рівень шуму та довговічність. Відеокарта GeForce RTX 4060 Ti від Nvidia - це новинка на ринку графічних прискорювачів, яка підтримує технології трасування променів, DLSS і Reflex. Вона має 16 ГБ відеопам'яті та високу швидкість роботи. Оперативна пам'ять DDR4-3200 об'ємом 32 ГБ забезпечує швидку роботу системи та багатозадачність. Для зберігання даних використовується SSD зі швидкісним інтерфейсом NVMe об'ємом 1 ТБ, який володіє високою швидкістю читання і запису. Материнська палата Asus PRIME H610M-K D4 підтримує всі необхідні інтерфейси та роз'єми для підключення периферійних пристроїв. Компактний корпус QUBE NEPTUNE Mini має сучасний дизайн зі скляною панеллю та фільтром для пилу, який захищає компоненти від забруднення. Блок живлення 600 Вт 80+ Bronze забезпечує стабільне електроживлення всім компонентам. Охолодження корпусу складається з двох 160мм RGB-вентиляторів на передній панелі й одного 120мм RGB-вентилятора на задній панелі, які створюють ефектне підсвічування і підтримують оптимальну температуру всередині корпусу. Керування LED-підсвіткою вентиляторів здійснюється за допомогою спеціального контролера. Комп'ютер ARTLINE Gaming X37v51 - це чудовий вибір для тих, хто хоче насолоджуватися іграми та роботою на високому рівні.",
+        "price": 47199.0,
+        "stock_quantity": 0,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-18T10:36:39.274Z",
+        "updated_at": "2025-04-18T10:36:39.274Z",
+        "brand": 4,
+        "warranty": 6,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 8,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming X43WHITE (X43WHITEv44)",
+        "name_en": "ARTLINE Gaming X43WHITE (X43WHITEv44)",
+        "name_uk": "Комп'ютер ARTLINE Gaming X43WHITE (X43WHITEv44)",
+        "slug": "artline-gaming-x43white-x43whitev44",
+        "description": "Комп'ютер ARTLINE Gaming X43WHITE (X43WHITEv44) - це потужний і сучасний ігровий комп'ютер, який дасть вам змогу насолоджуватися улюбленими іграми на високих налаштуваннях графіки. Він оснащений 6-ядерним процесором AMD Ryzen 5 5500, який може працювати на частоті до 4.2 ГГц, і 16 ГБ оперативної пам'яті DDR4-2666, яка забезпечує високу швидкість і багатофункціональність. Для зберігання даних є чудовий твердотільний накопичувач NVMe SSD на 1 ТБ, який гарантує швидке завантаження ігор і додатків. Графічна карта GeForce RTX 3050 з 6 ГБ відеопам'яті дає змогу грати в найновіші ігри з чудовими графіками. Материнська плата PRIME A320M-K підтримує всі необхідні інтерфейси та роз'єми для під'єднання різних пристроїв. Корпус QUBE REEF White має гарне підсвічування і відмінну вентиляцію, а блок живлення 500W забезпечує стабільну роботу системи. Гарантійний термін становить 38 місяців, що свідчить про високу якість і надійність продукту.",
+        "description_en": "The ARTLINE Gaming X43WHITE (X43WHITEv44) is a powerful and modern gaming computer that allows you to enjoy your favorite games at high graphics settings. It is equipped with a 6-core AMD Ryzen 5 5500 processor, capable of running at speeds up to 4.2 GHz, and 16GB of DDR4-2666 RAM, ensuring high speed and multitasking capabilities.\r\n\r\nFor data storage, it features a 1TB NVMe SSD, guaranteeing fast loading of games and applications. The GeForce RTX 3050 graphics card with 6GB of video memory enables smooth gameplay with excellent graphics in the latest games.\r\n\r\nThe PRIME A320M-K motherboard supports all necessary interfaces and ports for connecting various devices. The QUBE REEF White case offers attractive lighting and excellent ventilation, while the 500W power supply ensures stable system operation.\r\n\r\nThe 38-month warranty highlights the high quality and reliability of the product.",
+        "description_uk": "Комп'ютер ARTLINE Gaming X43WHITE (X43WHITEv44) - це потужний і сучасний ігровий комп'ютер, який дасть вам змогу насолоджуватися улюбленими іграми на високих налаштуваннях графіки. Він оснащений 6-ядерним процесором AMD Ryzen 5 5500, який може працювати на частоті до 4.2 ГГц, і 16 ГБ оперативної пам'яті DDR4-2666, яка забезпечує високу швидкість і багатофункціональність. Для зберігання даних є чудовий твердотільний накопичувач NVMe SSD на 1 ТБ, який гарантує швидке завантаження ігор і додатків. Графічна карта GeForce RTX 3050 з 6 ГБ відеопам'яті дає змогу грати в найновіші ігри з чудовими графіками. Материнська плата PRIME A320M-K підтримує всі необхідні інтерфейси та роз'єми для під'єднання різних пристроїв. Корпус QUBE REEF White має гарне підсвічування і відмінну вентиляцію, а блок живлення 500W забезпечує стабільну роботу системи. Гарантійний термін становить 38 місяців, що свідчить про високу якість і надійність продукту.",
+        "price": 24780.0,
+        "stock_quantity": 12,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-18T10:45:07.687Z",
+        "updated_at": "2025-04-18T10:45:07.687Z",
+        "brand": 4,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 9,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Overlord GIGA Windows 11 Pro (GIGAv61Win)",
+        "name_en": "ARTLINE Overlord GIGA Windows 11 Pro (GIGAv61Win)",
+        "name_uk": "Комп'ютер ARTLINE Overlord GIGA Windows 11 Pro (GIGAv61Win)",
+        "slug": "artline-overlord-giga-windows-11-pro-gigav61win",
+        "description": "Комп'ютер ARTLINE Overlord GIGA Windows 11 Pro (GIGAv61Win) - це потужний ігровий ПК із водяним охолодженням, створений спільно з компанією Gigabyte.\r\n\r\nЦей комп'ютер має ексклюзивний дизайн корпусу в стилі комп'ютерної гри God of War, виконаний з алюмінію і загартованого скла.\r\n\r\nКорпус оснащений вентиляторами з RGB-підсвічуванням і пиловими фільтрами на верхній і нижній панелях.\r\n\r\nКомп'ютер працює на 24-ядерному процесорі Intel Core i9-14900KF із частотою від 3.2 до 6.0 ГГц, який охолоджується системою Premium 240mm WaterCooler Black.\r\n\r\nОперативна пам'ять становить 64 ГБ типу DDR5-6000 Gaming, а накопичувачі - 1 ТБ NVMe Gen4 Basic і 2 ТБ HDD.\r\n\r\nМатеринська плата Z790 GAMING X AX підтримує чіпсет Intel Z790 і відеокарту GeForce RTX 4080 SUPER із 16 ГБ відеопам'яті.\r\n\r\nБлок живлення має потужність 850 Вт і сертифікат 80+ Gold. Бездротовий зв'язок забезпечується модулями Wi-Fi 802.11ac/ax і Bluetooth 5.3.\r\n\r\nОпераційна система - Windows 11 Pro.\r\n\r\nХарактеристики",
+        "description_en": "The ARTLINE Overlord GIGA Windows 11 Pro (GIGAv61Win) is a powerful gaming PC with water cooling, created in collaboration with Gigabyte.\r\n\r\nThis computer features an exclusive design inspired by the God of War video game, made from aluminum and tempered glass.\r\n\r\nThe case is equipped with RGB lighting fans and dust filters on the top and bottom panels.\r\n\r\nThe computer runs on a 24-core Intel Core i9-14900KF processor with a frequency ranging from 3.2 to 6.0 GHz, cooled by the Premium 240mm WaterCooler Black system.\r\n\r\nThe system is equipped with 64GB of DDR5-6000 Gaming RAM, and storage includes a 1TB NVMe Gen4 Basic SSD and a 2TB HDD.\r\n\r\nThe Z790 GAMING X AX motherboard supports the Intel Z790 chipset and is paired with a GeForce RTX 4080 SUPER graphics card with 16GB of video memory.\r\n\r\nThe 850W power supply has an 80+ Gold certification, and wireless connectivity is provided by Wi-Fi 802.11ac/ax and Bluetooth 5.3 modules.\r\n\r\nThe operating system is Windows 11 Pro.",
+        "description_uk": "Комп'ютер ARTLINE Overlord GIGA Windows 11 Pro (GIGAv61Win) - це потужний ігровий ПК із водяним охолодженням, створений спільно з компанією Gigabyte.\r\n\r\nЦей комп'ютер має ексклюзивний дизайн корпусу в стилі комп'ютерної гри God of War, виконаний з алюмінію і загартованого скла.\r\n\r\nКорпус оснащений вентиляторами з RGB-підсвічуванням і пиловими фільтрами на верхній і нижній панелях.\r\n\r\nКомп'ютер працює на 24-ядерному процесорі Intel Core i9-14900KF із частотою від 3.2 до 6.0 ГГц, який охолоджується системою Premium 240mm WaterCooler Black.\r\n\r\nОперативна пам'ять становить 64 ГБ типу DDR5-6000 Gaming, а накопичувачі - 1 ТБ NVMe Gen4 Basic і 2 ТБ HDD.\r\n\r\nМатеринська плата Z790 GAMING X AX підтримує чіпсет Intel Z790 і відеокарту GeForce RTX 4080 SUPER із 16 ГБ відеопам'яті.\r\n\r\nБлок живлення має потужність 850 Вт і сертифікат 80+ Gold. Бездротовий зв'язок забезпечується модулями Wi-Fi 802.11ac/ax і Bluetooth 5.3.\r\n\r\nОпераційна система - Windows 11 Pro.\r\n\r\nХарактеристики",
+        "price": 142758.0,
+        "stock_quantity": 2,
+        "discounted_price": 137999,
+        "rating": 0.0,
+        "created_at": "2025-04-18T11:04:41.608Z",
+        "updated_at": "2025-04-18T11:04:41.608Z",
+        "brand": 4,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 10,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming X77 Windows 11 Home (X77v118Win)",
+        "name_en": "ARTLINE Gaming X77 Windows 11 Home (X77v118Win)",
+        "name_uk": "Комп'ютер ARTLINE Gaming X77 Windows 11 Home (X77v118Win)",
+        "slug": "artline-gaming-x77-windows-11-home-x77v118win",
+        "description": "Ігровий комп'ютер ARTLINE Gaming X77 (X77v118Win) поєднує в собі високу продуктивність і стильний дизайн. Оснащений 20-ядерним процесором Intel Core i7-14700F з тактовою частотою від 2.1 до 5.4 ГГц, він забезпечує відмінну багатозадачність і швидкість роботи. 32 ГБ оперативної пам'яті DDR5-6000 гарантують швидку і стабільну роботу системи. Відеокарта NVIDIA GeForce RTX 5070 Ti з 16 ГБ відеопам'яті забезпечує якісну графіку в сучасних іграх. 1 ТБ SSD M.2 NVMe забезпечує швидкий доступ до даних і скорочує час завантаження застосунків. Корпус QUBE WIZARD з RGB-підсвічуванням і загартованим склом на бічній панелі надає комп'ютеру сучасного та стильного вигляду. Система охолодження містить два 160-мм R ГБ LED вентилятори спереду, один 120-мм R ГБ LED вентилятор ззаду і два 120-мм R ГБ LED вентилятори зверху для охолодження системи, забезпечуючи ефективне тепловідведення. Блок живлення потужністю 750 Вт із сертифікацією 80+ Bronze забезпечує стабільну роботу всіх компонентів. Комп'ютер постачається з попередньо встановленою операційною системою Windows 11 Home і комплектується кабелем живлення. Розміри системного блока: 490x210x442 мм; вага: 10 кг. Колір корпусу: чорний. У комплект входять ПК, технічний паспорт і кабель живлення.",
+        "description_en": "The ARTLINE Gaming X77 (X77v118Win) gaming computer combines high performance and stylish design. Equipped with a 20-core Intel Core i7-14700F processor with a clock speed ranging from 2.1 to 5.4 GHz, it delivers excellent multitasking and fast operation. 32GB of DDR5-6000 RAM ensure fast and stable system performance. The NVIDIA GeForce RTX 5070 Ti graphics card with 16GB of video memory provides high-quality graphics in modern games. The 1TB SSD M.2 NVMe offers fast data access and reduces application loading times.\r\n\r\nThe QUBE WIZARD case with RGB lighting and tempered glass on the side panel gives the computer a modern and stylish appearance. The cooling system includes two 160mm RGB LED fans in the front, one 120mm RGB LED fan at the rear, and two 120mm RGB LED fans on the top to ensure effective heat dissipation.\r\n\r\nThe 750W power supply with 80+ Bronze certification ensures stable operation of all components. The computer comes pre-installed with Windows 11 Home and includes a power cable.\r\n\r\nCase dimensions: 490x210x442 mm; weight: 10 kg. Case color: black. The package includes the PC, technical passport, and power cable.",
+        "description_uk": "Ігровий комп'ютер ARTLINE Gaming X77 (X77v118Win) поєднує в собі високу продуктивність і стильний дизайн. Оснащений 20-ядерним процесором Intel Core i7-14700F з тактовою частотою від 2.1 до 5.4 ГГц, він забезпечує відмінну багатозадачність і швидкість роботи. 32 ГБ оперативної пам'яті DDR5-6000 гарантують швидку і стабільну роботу системи. Відеокарта NVIDIA GeForce RTX 5070 Ti з 16 ГБ відеопам'яті забезпечує якісну графіку в сучасних іграх. 1 ТБ SSD M.2 NVMe забезпечує швидкий доступ до даних і скорочує час завантаження застосунків. Корпус QUBE WIZARD з RGB-підсвічуванням і загартованим склом на бічній панелі надає комп'ютеру сучасного та стильного вигляду. Система охолодження містить два 160-мм R ГБ LED вентилятори спереду, один 120-мм R ГБ LED вентилятор ззаду і два 120-мм R ГБ LED вентилятори зверху для охолодження системи, забезпечуючи ефективне тепловідведення. Блок живлення потужністю 750 Вт із сертифікацією 80+ Bronze забезпечує стабільну роботу всіх компонентів. Комп'ютер постачається з попередньо встановленою операційною системою Windows 11 Home і комплектується кабелем живлення. Розміри системного блока: 490x210x442 мм; вага: 10 кг. Колір корпусу: чорний. У комплект входять ПК, технічний паспорт і кабель живлення.",
+        "price": 92946.0,
+        "stock_quantity": 5,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-18T11:11:30.505Z",
+        "updated_at": "2025-04-18T11:11:30.505Z",
+        "brand": 4,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
     "model": "product.productcategory",
     "pk": 1,
     "fields": {
@@ -10398,6 +10649,190 @@
     "fields": {
         "product": 1,
         "category": 221
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 3,
+    "fields": {
+        "product": 2,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 4,
+    "fields": {
+        "product": 2,
+        "category": 71
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 5,
+    "fields": {
+        "product": 2,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 6,
+    "fields": {
+        "product": 3,
+        "category": 64
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 7,
+    "fields": {
+        "product": 3,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 8,
+    "fields": {
+        "product": 3,
+        "category": 101
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 9,
+    "fields": {
+        "product": 3,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 10,
+    "fields": {
+        "product": 4,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 11,
+    "fields": {
+        "product": 4,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 12,
+    "fields": {
+        "product": 4,
+        "category": 221
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 13,
+    "fields": {
+        "product": 5,
+        "category": 101
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 14,
+    "fields": {
+        "product": 5,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 15,
+    "fields": {
+        "product": 5,
+        "category": 221
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 16,
+    "fields": {
+        "product": 6,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 17,
+    "fields": {
+        "product": 6,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 18,
+    "fields": {
+        "product": 7,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 19,
+    "fields": {
+        "product": 7,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 20,
+    "fields": {
+        "product": 8,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 21,
+    "fields": {
+        "product": 8,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 22,
+    "fields": {
+        "product": 9,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 23,
+    "fields": {
+        "product": 9,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 24,
+    "fields": {
+        "product": 10,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 25,
+    "fields": {
+        "product": 10,
+        "category": 177
     }
 },
 {
@@ -10983,6 +11418,2085 @@
         "product": 1,
         "attribute": 34,
         "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 32,
+    "fields": {
+        "product": 2,
+        "attribute": 2,
+        "value": "Intel Core i5-10400F (2.9 - 4.3 ГГц) / RAM 16 ГБ / SSD 480 ГБ / nVidia GeForce RTX 3050, 8 ГБ / без ОД / LAN / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 33,
+    "fields": {
+        "product": 2,
+        "attribute": 3,
+        "value": "GeForce RTX 3050"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 34,
+    "fields": {
+        "product": 2,
+        "attribute": 4,
+        "value": "Intel Core i5-10400F (2.9 – 4.3 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 35,
+    "fields": {
+        "product": 2,
+        "attribute": 5,
+        "value": "Intel H410"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 36,
+    "fields": {
+        "product": 2,
+        "attribute": 6,
+        "value": "16GB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 37,
+    "fields": {
+        "product": 2,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n1 x USB 3.0\r\n1 x USB 2.0\r\n2 x Audio\r\n\r\nНа задній панелі (материнська плата):\r\n1 x PS/2 комбінований порт для клавіатури/миші\r\n2 x USB 2.0 порту\r\n3 x USB 3.0 порту\r\n\r\nНа задній панелі ( відеокарта):\r\n1 х HDMI порт\r\n1 х Display Port\r\n1 x DVI порт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 38,
+    "fields": {
+        "product": 2,
+        "attribute": 8,
+        "value": "600 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 39,
+    "fields": {
+        "product": 2,
+        "attribute": 10,
+        "value": "Охолодження ЦП: BOX\r\nОхолодження корпусу: 3 х 120 мм кулера\r\nЗ підтримкою системи водяного охолодження"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 40,
+    "fields": {
+        "product": 2,
+        "attribute": 11,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 41,
+    "fields": {
+        "product": 2,
+        "attribute": 12,
+        "value": "190 x 355 x 325 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 42,
+    "fields": {
+        "product": 2,
+        "attribute": 13,
+        "value": "12.5 кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 43,
+    "fields": {
+        "product": 2,
+        "attribute": 14,
+        "value": "ПК\r\nКабель живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 44,
+    "fields": {
+        "product": 2,
+        "attribute": 20,
+        "value": "Desktop"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 45,
+    "fields": {
+        "product": 2,
+        "attribute": 15,
+        "value": "Процесор -- Intel Core i5 10400F\r\nКулер процесорный -- ID-Cooling SE-214-XT\r\nМатеринська плата -- ASRock H470M-HVS R2.0 Socket 1200\r\nМодуль пам'яті -- 16GB/2666 DDR4 Prologix (PRO16GB2666D4)\r\nВідеокарта -- ASUS RTX 3050 8GB GDDR6 Dual OC V2 (DUAL-RTX3050-O8G-V2)\r\nНакопичувач SSD -- 480GB Prologix S320 2.5\" SATAIII TLC (PRO480GS320)\r\nКорпус -- AeroCool Hexform-G-BK-v2 (ACCS-PV38033.11) Black\r\nБлок живлення -- AeroCool VX Plus 600 (ACPN-VS60NEY.11) 600W"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 46,
+    "fields": {
+        "product": 2,
+        "attribute": 17,
+        "value": "8GB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 47,
+    "fields": {
+        "product": 2,
+        "attribute": 19,
+        "value": "6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 48,
+    "fields": {
+        "product": 2,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 49,
+    "fields": {
+        "product": 2,
+        "attribute": 16,
+        "value": "480 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 50,
+    "fields": {
+        "product": 2,
+        "attribute": 23,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 51,
+    "fields": {
+        "product": 2,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 52,
+    "fields": {
+        "product": 2,
+        "attribute": 24,
+        "value": "Немає"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 53,
+    "fields": {
+        "product": 2,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 54,
+    "fields": {
+        "product": 2,
+        "attribute": 25,
+        "value": "Без бездротового під'єднання"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 55,
+    "fields": {
+        "product": 2,
+        "attribute": 27,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 56,
+    "fields": {
+        "product": 2,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 57,
+    "fields": {
+        "product": 2,
+        "attribute": 29,
+        "value": "2.9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 58,
+    "fields": {
+        "product": 2,
+        "attribute": 30,
+        "value": "Без можливості кріплення VESA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 59,
+    "fields": {
+        "product": 2,
+        "attribute": 31,
+        "value": "З підсвіткою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 60,
+    "fields": {
+        "product": 2,
+        "attribute": 32,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 61,
+    "fields": {
+        "product": 2,
+        "attribute": 33,
+        "value": "3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 62,
+    "fields": {
+        "product": 2,
+        "attribute": 34,
+        "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 63,
+    "fields": {
+        "product": 3,
+        "attribute": 2,
+        "value": "AMD Ryzen 5 5600 (3.5 - 4.4 ГГц) / RAM 16 ГБ / SSD 1 ТБ / nVidia GeForce RTX 3060, 12 ГБ / LAN / Без ОД / Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 64,
+    "fields": {
+        "product": 3,
+        "attribute": 3,
+        "value": "GeForce RTX 3060"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 65,
+    "fields": {
+        "product": 3,
+        "attribute": 4,
+        "value": "AMD Ryzen 5 5600 (3.5 - 4.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 66,
+    "fields": {
+        "product": 3,
+        "attribute": 5,
+        "value": "AMD A320"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 67,
+    "fields": {
+        "product": 3,
+        "attribute": 6,
+        "value": "16GB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 68,
+    "fields": {
+        "product": 3,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n\r\n1 x USB 3.0\r\n2 x USB 2.0\r\nВхід для мікрофону\r\nВихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n\r\n1 x PS/2 keyboard (purple)\r\n1 x PS/2 mouse (green)\r\n1 x D-Sub\r\n1 x HDMI\r\n1 x Realtek 1Gb Ethernet port\r\n4 x USB 3.1 Gen 1 ports (Type-A)\r\n2 x USB 2.0 ports (Type-A)\r\n3 x Audio jacks\r\n\r\nНа задній панелі (відеокарта):\r\n\r\n2 x HDMI 2.1\r\n2 x DisplayPort 1.4a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 69,
+    "fields": {
+        "product": 3,
+        "attribute": 8,
+        "value": "600 ВТ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 70,
+    "fields": {
+        "product": 3,
+        "attribute": 10,
+        "value": "Tower ARGB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 71,
+    "fields": {
+        "product": 3,
+        "attribute": 11,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 72,
+    "fields": {
+        "product": 3,
+        "attribute": 12,
+        "value": "450 x 192 x 410 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 73,
+    "fields": {
+        "product": 3,
+        "attribute": 13,
+        "value": "10 кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 74,
+    "fields": {
+        "product": 3,
+        "attribute": 14,
+        "value": "ПК.\r\nТехпаспорт.\r\nКабель живлення.\r\nУпакування."
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 75,
+    "fields": {
+        "product": 3,
+        "attribute": 20,
+        "value": "Desktop"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 76,
+    "fields": {
+        "product": 3,
+        "attribute": 15,
+        "value": "Вентилятори з RGB підсвічуванням.\r\nЗагартоване скло 4 мм на бічній панелі.\r\nПиловий фільтр на верхній панелі.\r\nВисокопродуктивний SSD стандарт NVME.\r\nЕфективний повітряний кулер на процесорі."
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 77,
+    "fields": {
+        "product": 3,
+        "attribute": 17,
+        "value": "12 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 78,
+    "fields": {
+        "product": 3,
+        "attribute": 19,
+        "value": "6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 79,
+    "fields": {
+        "product": 3,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 80,
+    "fields": {
+        "product": 3,
+        "attribute": 16,
+        "value": "1TB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 81,
+    "fields": {
+        "product": 3,
+        "attribute": 23,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 82,
+    "fields": {
+        "product": 3,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 83,
+    "fields": {
+        "product": 3,
+        "attribute": 24,
+        "value": "Немає"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 84,
+    "fields": {
+        "product": 3,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 85,
+    "fields": {
+        "product": 3,
+        "attribute": 25,
+        "value": "Без бездротового під'єднання"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 86,
+    "fields": {
+        "product": 3,
+        "attribute": 27,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 87,
+    "fields": {
+        "product": 3,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 88,
+    "fields": {
+        "product": 3,
+        "attribute": 29,
+        "value": "3.5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 89,
+    "fields": {
+        "product": 3,
+        "attribute": 30,
+        "value": "Без можливості кріплення VESA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 90,
+    "fields": {
+        "product": 3,
+        "attribute": 31,
+        "value": "З підсвіткою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 91,
+    "fields": {
+        "product": 3,
+        "attribute": 32,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 92,
+    "fields": {
+        "product": 3,
+        "attribute": 33,
+        "value": "4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 93,
+    "fields": {
+        "product": 3,
+        "attribute": 34,
+        "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 94,
+    "fields": {
+        "product": 4,
+        "attribute": 2,
+        "value": "AMD Ryzen 5 7500F (3.7 - 5.0 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 4060 8 ГБ / 550 Вт / LAN / без ОД / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 95,
+    "fields": {
+        "product": 4,
+        "attribute": 3,
+        "value": "GeForce RTX 4060"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 96,
+    "fields": {
+        "product": 4,
+        "attribute": 4,
+        "value": "AMD Ryzen 5 7500F (3.7 - 5.0 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 97,
+    "fields": {
+        "product": 4,
+        "attribute": 5,
+        "value": "AMD B650"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 98,
+    "fields": {
+        "product": 4,
+        "attribute": 6,
+        "value": "32GB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 99,
+    "fields": {
+        "product": 4,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n\r\n1 x USB 3.0\r\n\r\n2 x USB 2.0\r\n\r\nВхід для мікрофона\r\n\r\nВихід на навушники\r\n\r\n \r\n\r\nНа задній панелі (материнська плата):\r\n\r\n1 x Кнопка BIOS FlashBack\r\n\r\n1 x DisplayPort 1.4\r\n\r\n1 x HDMI\r\n\r\n1 x LAN (RJ-45)\r\n\r\n1 x USB 3.2 Gen 1 (Type-C)\r\n\r\n2 x USB 3.2 Gen 1 (Type-A)\r\n\r\n4 x USB 2.0 (Type-A)\r\n\r\n3 x Аудіороз'єми\r\n\r\n \r\n\r\nНа задній панелі (відеокарта):\r\n\r\n2 x HDMI\r\n\r\n2 x DisplayPort"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 100,
+    "fields": {
+        "product": 4,
+        "attribute": 8,
+        "value": "550 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 101,
+    "fields": {
+        "product": 4,
+        "attribute": 10,
+        "value": "Охолодження ЦП: Tower White\r\nОхолодження корпусу (встановлено): 4 вентилятори"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 102,
+    "fields": {
+        "product": 4,
+        "attribute": 11,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 103,
+    "fields": {
+        "product": 4,
+        "attribute": 12,
+        "value": "470 x 200 x 350 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 104,
+    "fields": {
+        "product": 4,
+        "attribute": 13,
+        "value": "11 кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 105,
+    "fields": {
+        "product": 4,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 106,
+    "fields": {
+        "product": 4,
+        "attribute": 20,
+        "value": "Desktop"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 107,
+    "fields": {
+        "product": 4,
+        "attribute": 15,
+        "value": "Вентилятори з адресним RGB підсвічуванням\r\nКерування LED-підсвічуванням вентиляторів\r\nЗагартоване скло 4 мм на бічній панелі\r\nПиловий фільтр на верхній і передній панелях\r\nВисокопродуктивний SSD стандарту NVME\r\nБлок живлення з сертифікацією 80+ Bronze\r\nЕфективний повітряний кулер на процесорі"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 108,
+    "fields": {
+        "product": 4,
+        "attribute": 17,
+        "value": "8ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 109,
+    "fields": {
+        "product": 4,
+        "attribute": 19,
+        "value": "6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 110,
+    "fields": {
+        "product": 4,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 111,
+    "fields": {
+        "product": 4,
+        "attribute": 16,
+        "value": "1TB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 112,
+    "fields": {
+        "product": 4,
+        "attribute": 23,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 113,
+    "fields": {
+        "product": 4,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 114,
+    "fields": {
+        "product": 4,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 115,
+    "fields": {
+        "product": 4,
+        "attribute": 27,
+        "value": "Білий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 116,
+    "fields": {
+        "product": 4,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 117,
+    "fields": {
+        "product": 4,
+        "attribute": 29,
+        "value": "3.7"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 118,
+    "fields": {
+        "product": 4,
+        "attribute": 32,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 119,
+    "fields": {
+        "product": 4,
+        "attribute": 34,
+        "value": "2500 Мбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 120,
+    "fields": {
+        "product": 5,
+        "attribute": 2,
+        "value": "Intel Core i5-14400F (2.5 - 4.7 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 4060 Ti, 8 ГБ / LAN / без ОД / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 121,
+    "fields": {
+        "product": 5,
+        "attribute": 3,
+        "value": "GeForce RTX 4060 Ti"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 122,
+    "fields": {
+        "product": 5,
+        "attribute": 4,
+        "value": "Intel Core i5-14400F (2.5 - 4.7 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 123,
+    "fields": {
+        "product": 5,
+        "attribute": 5,
+        "value": "Intel H610"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 124,
+    "fields": {
+        "product": 5,
+        "attribute": 6,
+        "value": "32GB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 125,
+    "fields": {
+        "product": 5,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n\r\n1 x USB 3.0\r\n1 x USB 2.0\r\nВхід для мікрофону\r\nВихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n\r\n1 х PS/2 комбінований порт для клавіатури та мишки\r\n1 x D-Sub\r\n1 x HDMI\r\n1 x LAN (RJ-45)\r\n2 x USB 3.2 Gen 1 ports (Type-A)\r\n4 x USB 2.0 ports (Type-A)\r\n3 x аудіо роз’єми\r\n\r\nНа задній панелі (відеокарта):\r\n\r\n1 x HDMI 2.1\r\n3 x DisplayPort 1.4a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 126,
+    "fields": {
+        "product": 5,
+        "attribute": 8,
+        "value": "600 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 127,
+    "fields": {
+        "product": 5,
+        "attribute": 9,
+        "value": "ЦП:"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 128,
+    "fields": {
+        "product": 5,
+        "attribute": 10,
+        "value": "ЦП: Tower ARGB\r\nКорпус: 3 вентилятори"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 129,
+    "fields": {
+        "product": 5,
+        "attribute": 12,
+        "value": "370 x 210 x 480 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 130,
+    "fields": {
+        "product": 5,
+        "attribute": 13,
+        "value": "10Кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 131,
+    "fields": {
+        "product": 5,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 132,
+    "fields": {
+        "product": 5,
+        "attribute": 20,
+        "value": "Desktop"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 133,
+    "fields": {
+        "product": 5,
+        "attribute": 15,
+        "value": "Вентилятори з RGB підсвічуванням\r\nВисокопродуктивний SSD стандарту NVME\r\nЗагартоване скло 4 мм на бічній панелі\r\nПиловий фільтр на верхній панелі\r\nУправління LED-підсвічуванням вентиляторів\r\nЕфективний повітряний кулер на процесорі"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 134,
+    "fields": {
+        "product": 5,
+        "attribute": 17,
+        "value": "8 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 135,
+    "fields": {
+        "product": 5,
+        "attribute": 19,
+        "value": "10"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 136,
+    "fields": {
+        "product": 5,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 137,
+    "fields": {
+        "product": 5,
+        "attribute": 16,
+        "value": "1Тб"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 138,
+    "fields": {
+        "product": 5,
+        "attribute": 23,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 139,
+    "fields": {
+        "product": 5,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 140,
+    "fields": {
+        "product": 5,
+        "attribute": 24,
+        "value": "Немає"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 141,
+    "fields": {
+        "product": 5,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 142,
+    "fields": {
+        "product": 5,
+        "attribute": 25,
+        "value": "Без бездротового під'єднання"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 143,
+    "fields": {
+        "product": 5,
+        "attribute": 27,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 144,
+    "fields": {
+        "product": 5,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 145,
+    "fields": {
+        "product": 5,
+        "attribute": 29,
+        "value": "2.5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 146,
+    "fields": {
+        "product": 5,
+        "attribute": 30,
+        "value": "Без можливості кріплення VESA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 147,
+    "fields": {
+        "product": 5,
+        "attribute": 31,
+        "value": "З підсвіткою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 148,
+    "fields": {
+        "product": 5,
+        "attribute": 32,
+        "value": "Україна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 149,
+    "fields": {
+        "product": 5,
+        "attribute": 33,
+        "value": "3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 150,
+    "fields": {
+        "product": 5,
+        "attribute": 34,
+        "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 151,
+    "fields": {
+        "product": 6,
+        "attribute": 2,
+        "value": "AMD Ryzen 7 5700X (3.4 - 4.6 ГГц) / RAM 32 ГБ / SSD 1 ТБ / NVIDIA GeForce RTX 4060 Ti, 16 ГБ / без ОД / LAN / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 152,
+    "fields": {
+        "product": 6,
+        "attribute": 3,
+        "value": "GeForce RTX 4060 Ti"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 153,
+    "fields": {
+        "product": 6,
+        "attribute": 4,
+        "value": "AMD Ryzen 7 5700X (3.4 - 4.6 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 154,
+    "fields": {
+        "product": 6,
+        "attribute": 5,
+        "value": "AMD B550"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 155,
+    "fields": {
+        "product": 6,
+        "attribute": 6,
+        "value": "32ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 156,
+    "fields": {
+        "product": 6,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n1 x USB 3.0\r\n1 x USB Type-C\r\nВхід для мікрофона/Вихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n1 x PS/2 keyboard/mouse combo port\r\n1 x DVI-D\r\n1 x D-Sub\r\n1 x HDMI\r\n1 x Realtek 1Gb Ethernet port\r\n2 x USB 3.2 Gen 2 ports (Type-A)\r\n4 x USB 3.2 Gen 1 ports (Type-A)\r\n3 x Audio jacks\r\n\r\nНа задній панелі (відеокарта):\r\n2 x HDMI 2.1\r\n2 x DisplayPort 1.4a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 157,
+    "fields": {
+        "product": 6,
+        "attribute": 8,
+        "value": "750ВТ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 158,
+    "fields": {
+        "product": 6,
+        "attribute": 9,
+        "value": "Вхід для мікрофона/Вихід на навушники\r\n3 аудіопорти"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 159,
+    "fields": {
+        "product": 6,
+        "attribute": 10,
+        "value": "WaterCooler 240mm Basic"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 160,
+    "fields": {
+        "product": 6,
+        "attribute": 11,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 161,
+    "fields": {
+        "product": 6,
+        "attribute": 12,
+        "value": "363 x 205 x 452 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 162,
+    "fields": {
+        "product": 6,
+        "attribute": 13,
+        "value": "8 кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 163,
+    "fields": {
+        "product": 6,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 164,
+    "fields": {
+        "product": 6,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 165,
+    "fields": {
+        "product": 6,
+        "attribute": 20,
+        "value": "Desktop"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 166,
+    "fields": {
+        "product": 6,
+        "attribute": 15,
+        "value": "Вентилятори з RGB-підсвіткою\r\nДодатковий мультимедійний екран 7\"\r\nВентиляційна сітка на верхній і передній панелях\r\nЗагартоване скло 4 мм на бічній панелі\r\nВисокопродуктивний SSD стандарту NVME\r\nБлок живлення із сертифікацією 80+ Bronze\r\nСистема водяного охолодження процесора"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 167,
+    "fields": {
+        "product": 6,
+        "attribute": 17,
+        "value": "16ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 168,
+    "fields": {
+        "product": 6,
+        "attribute": 19,
+        "value": "8"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 169,
+    "fields": {
+        "product": 6,
+        "attribute": 16,
+        "value": "1ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 170,
+    "fields": {
+        "product": 6,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 171,
+    "fields": {
+        "product": 6,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 172,
+    "fields": {
+        "product": 6,
+        "attribute": 29,
+        "value": "3.4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 173,
+    "fields": {
+        "product": 6,
+        "attribute": 34,
+        "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 174,
+    "fields": {
+        "product": 7,
+        "attribute": 2,
+        "value": "Intel Core i5-12400F (2.5 - 4.4 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 4060 Ti, 16 ГБ / LAN / Без ОД / Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 175,
+    "fields": {
+        "product": 7,
+        "attribute": 3,
+        "value": "GeForce RTX 4060 Ti"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 176,
+    "fields": {
+        "product": 7,
+        "attribute": 4,
+        "value": "Intel Core i5-12400F (2.5 – 4.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 177,
+    "fields": {
+        "product": 7,
+        "attribute": 6,
+        "value": "32 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 178,
+    "fields": {
+        "product": 7,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n1 x USB 3.0\r\n2 x USB 2.0\r\nВхід для мікрофона\r\nВихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n1 x PS/2 keyboard/mouse combo port\r\n1 x D-Sub\r\n1 x HDMI\r\n1 x Realtek 1Gb Ethernet port\r\n2 x USB 3.2 Gen 1 ports (Type-A)\r\n4 x порти USB 2.0 (Type-A)\r\n3 x Audio jacks\r\n\r\nНа задній панелі (відеокарта):\r\n2 x HDMI 2.1\r\n2 x DisplayPort 1.4a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 179,
+    "fields": {
+        "product": 7,
+        "attribute": 8,
+        "value": "600 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 180,
+    "fields": {
+        "product": 7,
+        "attribute": 9,
+        "value": "Вхід для мікрофона\r\nВихід на навушники\r\n3 аудіопорти"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 181,
+    "fields": {
+        "product": 7,
+        "attribute": 10,
+        "value": "QB-OL2000GT"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 182,
+    "fields": {
+        "product": 7,
+        "attribute": 12,
+        "value": "370 x 210 x 420 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 183,
+    "fields": {
+        "product": 7,
+        "attribute": 13,
+        "value": "10 кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 184,
+    "fields": {
+        "product": 7,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 185,
+    "fields": {
+        "product": 7,
+        "attribute": 15,
+        "value": "Вентилятори з RGB-підсвіткою.\r\nКерування LED-підсвіткою вентиляторів.\r\nЗагартоване скло 4 мм на бічній панелі.\r\nПиловий фільтр на верхній панелі.\r\nВисокопродуктивний SSD стандарту NVME.\r\nБлок живлення із сертифікацією 80+ Bronze.\r\nНадефективний повітряний кулер на процесорі."
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 186,
+    "fields": {
+        "product": 7,
+        "attribute": 17,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 187,
+    "fields": {
+        "product": 7,
+        "attribute": 19,
+        "value": "6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 188,
+    "fields": {
+        "product": 7,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 189,
+    "fields": {
+        "product": 7,
+        "attribute": 16,
+        "value": "1ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 190,
+    "fields": {
+        "product": 7,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 191,
+    "fields": {
+        "product": 7,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 192,
+    "fields": {
+        "product": 7,
+        "attribute": 27,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 193,
+    "fields": {
+        "product": 7,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 194,
+    "fields": {
+        "product": 7,
+        "attribute": 29,
+        "value": "2.5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 195,
+    "fields": {
+        "product": 7,
+        "attribute": 33,
+        "value": "3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 196,
+    "fields": {
+        "product": 7,
+        "attribute": 34,
+        "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 197,
+    "fields": {
+        "product": 8,
+        "attribute": 2,
+        "value": "AMD Ryzen 5 5500 (3.6 - 4.2 ГГц) / RAM 16 ГБ / SSD 1 ТБ / nVidia GeForce RTX 3050, 6 ГБ / LAN / без ОД / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 198,
+    "fields": {
+        "product": 8,
+        "attribute": 3,
+        "value": "GeForce RTX 3050"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 199,
+    "fields": {
+        "product": 8,
+        "attribute": 4,
+        "value": "AMD Ryzen 5 5500 (3.6 - 4.2 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 200,
+    "fields": {
+        "product": 8,
+        "attribute": 5,
+        "value": "AMD A320"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 201,
+    "fields": {
+        "product": 8,
+        "attribute": 6,
+        "value": "16ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 202,
+    "fields": {
+        "product": 8,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n\r\n1 x USB 3.0\r\n2 x USB 2.0\r\nВхід для мікрофону\r\nВихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n\r\n1 х PS/2 порт для клавіатури\r\n1 х PS/2 порт для мишки\r\n1 x D-Sub\r\n1 x HDMI\r\n1 x LAN (RJ-45)\r\n4 x USB 3.1 Gen 1 ports (Type-A)\r\n2 x USB 2.0 ports (Type-A)\r\n3 x аудіо роз’єми\r\n\r\nНа задній панелі (відеокарта):\r\n\r\n1 x HDMI 2.1\r\n3 x DisplayPort 1.4a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 203,
+    "fields": {
+        "product": 8,
+        "attribute": 8,
+        "value": "500 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 204,
+    "fields": {
+        "product": 8,
+        "attribute": 12,
+        "value": "375 x 270 x 340 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 205,
+    "fields": {
+        "product": 8,
+        "attribute": 13,
+        "value": "10кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 206,
+    "fields": {
+        "product": 8,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 207,
+    "fields": {
+        "product": 8,
+        "attribute": 15,
+        "value": "Вентилятори з підсвічуванням RGB\r\nЗагартоване скло 4 мм на передній і бічній панелях\r\nПиловий фільтр на верхній панелі\r\nВисокопродуктивний SSD стандарту NVME\r\nЕфективний повітряний кулер на процесорі"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 208,
+    "fields": {
+        "product": 8,
+        "attribute": 17,
+        "value": "6 Гб"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 209,
+    "fields": {
+        "product": 8,
+        "attribute": 19,
+        "value": "6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 210,
+    "fields": {
+        "product": 8,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 211,
+    "fields": {
+        "product": 8,
+        "attribute": 16,
+        "value": "1 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 212,
+    "fields": {
+        "product": 8,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 213,
+    "fields": {
+        "product": 8,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 214,
+    "fields": {
+        "product": 8,
+        "attribute": 27,
+        "value": "Білий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 215,
+    "fields": {
+        "product": 8,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 216,
+    "fields": {
+        "product": 8,
+        "attribute": 29,
+        "value": "3.6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 217,
+    "fields": {
+        "product": 8,
+        "attribute": 31,
+        "value": "З підсвіткою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 218,
+    "fields": {
+        "product": 8,
+        "attribute": 34,
+        "value": "1 Гбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 219,
+    "fields": {
+        "product": 9,
+        "attribute": 2,
+        "value": "Intel Core i9-14900KF (3.2 - 6.0 ГГц) / RAM 64 ГБ / HDD 2 ТБ + SSD 1 ТБ / nVidia GeForce RTX 4080 Super, 16 ГБ / Без ОД / LAN / Wi-fi / Bluetooth / Windows 11 Professional"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 220,
+    "fields": {
+        "product": 9,
+        "attribute": 3,
+        "value": "GeForce RTX 4080 Super"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 221,
+    "fields": {
+        "product": 9,
+        "attribute": 4,
+        "value": "Intel Core i9-14900KF (3.2 - 6.0 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 222,
+    "fields": {
+        "product": 9,
+        "attribute": 5,
+        "value": "Intel Z790"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 223,
+    "fields": {
+        "product": 9,
+        "attribute": 6,
+        "value": "64 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 224,
+    "fields": {
+        "product": 9,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n2 x USB 3.0\r\nВхід для мікрофона\r\nВихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n1 x PS/2 комбінований порт для клавіатури/миші\r\n2 x USB 3.2 Gen 2 Type-A\r\n1 x USB 3.2 Gen 2x2 Type-C\r\n3 x USB 3.2 Gen 1 Type-A\r\n4 x USB 2.0 Type-A\r\n1 x оптичний вихід S/PDIF\r\n1 x DisplayPorts\r\n1 x HDMI\r\n1 x D-Sub (VGA)\r\n1 x LAN (RJ-45)\r\n2 x Wi-Fi SMA (2T2R) роз'єми\r\n3 x аудіо роз'єми\r\n\r\nНа задній панелі (відеокарта):\r\n1 x HDMI 2.1\r\n3 x DisplayPort 1.4a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 225,
+    "fields": {
+        "product": 9,
+        "attribute": 8,
+        "value": "850 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 226,
+    "fields": {
+        "product": 9,
+        "attribute": 10,
+        "value": "EKWB WaterCooler 240mm"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 227,
+    "fields": {
+        "product": 9,
+        "attribute": 12,
+        "value": "440 x 219 x 418 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 228,
+    "fields": {
+        "product": 9,
+        "attribute": 13,
+        "value": "8 кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 229,
+    "fields": {
+        "product": 9,
+        "attribute": 14,
+        "value": "ПК\r\nКабель живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 230,
+    "fields": {
+        "product": 9,
+        "attribute": 15,
+        "value": "Ексклюзивний принт корпусу\r\nКорпус з алюмінію та панелями із загартованого скла\r\nВентилятори з RGB-підсвіткою\r\nБлок живлення із сертифікацією 80+ Gold\r\nВисокопродуктивний SSD стандарту NVME\r\nСистема водяного охолодження процесора\r\nПиловий фільтр на верхній і нижній панелях\r\nМодуль бездротового зв'язку Wi-Fi 802.11ax"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 231,
+    "fields": {
+        "product": 9,
+        "attribute": 17,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 232,
+    "fields": {
+        "product": 9,
+        "attribute": 19,
+        "value": "24"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 233,
+    "fields": {
+        "product": 9,
+        "attribute": 21,
+        "value": "Windows 11 Professional"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 234,
+    "fields": {
+        "product": 9,
+        "attribute": 16,
+        "value": "1 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 235,
+    "fields": {
+        "product": 9,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 236,
+    "fields": {
+        "product": 9,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 237,
+    "fields": {
+        "product": 9,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 238,
+    "fields": {
+        "product": 9,
+        "attribute": 29,
+        "value": "3.2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 239,
+    "fields": {
+        "product": 9,
+        "attribute": 33,
+        "value": "4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 240,
+    "fields": {
+        "product": 9,
+        "attribute": 34,
+        "value": "2500 Мбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 241,
+    "fields": {
+        "product": 10,
+        "attribute": 2,
+        "value": "Intel Core i7-14700F (2.1 - 5.4 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 5070 Ti 16 ГБ / 750 Вт / LAN / без ОД / Windows 11 Home"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 242,
+    "fields": {
+        "product": 10,
+        "attribute": 3,
+        "value": "GeForce RTX 5070 Ti"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 243,
+    "fields": {
+        "product": 10,
+        "attribute": 4,
+        "value": "Intel Core i7-14700F (2.1 - 5.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 244,
+    "fields": {
+        "product": 10,
+        "attribute": 5,
+        "value": "Intel B760"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 245,
+    "fields": {
+        "product": 10,
+        "attribute": 6,
+        "value": "32 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 246,
+    "fields": {
+        "product": 10,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n1 x USB 3.0\r\n2 x USB 2.0\r\nВхід для мікрофона\r\nВихід на навушники\r\nНа задній панелі (материнська плата):\r\n1 x PS/2 комбінований порт для клавіатури та миші\r\n2 x HDMI\r\n1 x DisplayPort\r\n1 x LAN (RJ45)\r\n2 x USB 3.2 Gen 2 (Type-A)\r\n4 x USB 2.0 (Type-A)\r\n3 x Аудіороз'єми\r\nНа задній панелі (відеокарта):\r\n1 x HDMI 2.1b\r\n3 x DisplayPort 2.1a"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 247,
+    "fields": {
+        "product": 10,
+        "attribute": 8,
+        "value": "750 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 248,
+    "fields": {
+        "product": 10,
+        "attribute": 10,
+        "value": "Охолодження ЦП: 240mm WaterCooler"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 249,
+    "fields": {
+        "product": 10,
+        "attribute": 12,
+        "value": "490 x 210 x 442 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 250,
+    "fields": {
+        "product": 10,
+        "attribute": 13,
+        "value": "10кт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 251,
+    "fields": {
+        "product": 10,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 252,
+    "fields": {
+        "product": 10,
+        "attribute": 15,
+        "value": "Вентилятори з RGB-підсвіткою.\r\nКерування LED-підсвіткою вентиляторів.\r\nЗагартоване скло 4 мм на бічній панелі.\r\nБлок живлення із сертифікацією 80+ Bronze.\r\nПиловий фільтр на верхній панелі.\r\nВисокопродуктивний SSD стандарту NVME.\r\nСистема водяного охолодження процесора"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 253,
+    "fields": {
+        "product": 10,
+        "attribute": 17,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 254,
+    "fields": {
+        "product": 10,
+        "attribute": 19,
+        "value": "20"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 255,
+    "fields": {
+        "product": 10,
+        "attribute": 21,
+        "value": "Windows 11 Home"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 256,
+    "fields": {
+        "product": 10,
+        "attribute": 16,
+        "value": "1 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 257,
+    "fields": {
+        "product": 10,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 258,
+    "fields": {
+        "product": 10,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 259,
+    "fields": {
+        "product": 10,
+        "attribute": 27,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 260,
+    "fields": {
+        "product": 10,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 261,
+    "fields": {
+        "product": 10,
+        "attribute": 29,
+        "value": "2.1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 262,
+    "fields": {
+        "product": 10,
+        "attribute": 34,
+        "value": "2500 Мбіт/сек"
     }
 },
 {
@@ -11791,6 +14305,951 @@
     "fields": {
         "product": 1,
         "image": "product_images/2025/04/17/11.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 12,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 13,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_Inx3fy1.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 14,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_yfZqaft.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 15,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_ggnXNq8.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 16,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_G7XpgAa.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 17,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_EcQUOwF.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 18,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_aZKIByg.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 19,
+    "fields": {
+        "product": 2,
+        "image": "product_images/04/18/files/product-2025-04-18_11-14-44_lWHr3H9.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 20,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 21,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_PIg2Z6L.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 22,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_BHDJFIT.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 23,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_YQhm2Np.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 24,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_SdCEUTe.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 25,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_bkVljan.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 26,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_s9o68dp.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 27,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_REHiwgH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 28,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_MGeu0Ys.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 29,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_0HjHhus.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 30,
+    "fields": {
+        "product": 3,
+        "image": "product_images/04/18/files/product-2025-04-18_11-50-51_Vw3KGJQ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 31,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 32,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_o3W6j9O.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 33,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_etMEwIU.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 34,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_1nalvoi.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 35,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_hJfFUbP.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 36,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_FFjb8Sw.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 37,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_ikEUHd5.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 38,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_QbF3Wik.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 39,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_jDBwHwt.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 40,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_AeaLKc8.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 41,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_GTMS2oT.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 42,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_XYqraoC.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 43,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_6uNGxuO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 44,
+    "fields": {
+        "product": 4,
+        "image": "product_images/04/18/files/product-2025-04-18_12-04-28_Lh0omdP.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 45,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 46,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_GInyj3U.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 47,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_IoGLDEg.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 48,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_tBgREAp.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 49,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_2o6K29M.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 50,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_8DbC5TW.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 51,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_CrFnAzO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 52,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_ESwxmSq.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 53,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_e3tPVRm.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 54,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_N4g7slp.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 55,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_BZjCFYI.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 56,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_Nd0UPgO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 57,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_gAG7TVl.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 58,
+    "fields": {
+        "product": 5,
+        "image": "product_images/04/18/files/product-2025-04-18_12-14-03_inDLUWk.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 59,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 60,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_WPbZizq.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 61,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_Wma9nhi.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 62,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_iJvqM1o.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 63,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_zi8jTko.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 64,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_UurSnAa.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 65,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_hw5fwYe.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 66,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_YqHE85G.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 67,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_JfZmDB2.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 68,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_n2uQO4w.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 69,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_jyBaClT.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 70,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_fcqtg0X.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 71,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_hab28ZW.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 72,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_MgG4hbK.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 73,
+    "fields": {
+        "product": 6,
+        "image": "product_images/04/18/files/product-2025-04-18_13-29-21_r9Ao8Rq.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 74,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 75,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_kgcGGUn.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 76,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_gkudWQH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 77,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_uRa7I2l.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 78,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_m60OGJy.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 79,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_ZcaQM2n.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 80,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_pwpDt5f.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 81,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_wMxU0Yi.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 82,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_L4EUIrM.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 83,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_NnLo8VK.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 84,
+    "fields": {
+        "product": 7,
+        "image": "product_images/04/18/files/product-2025-04-18_13-36-39_2MZeeLK.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 85,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 86,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_2pGiBjy.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 87,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_WJA6NZv.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 88,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_NJJ2Gyv.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 89,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_NuxPmk4.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 90,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_NZejjMP.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 91,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_7V8C49a.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 92,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_jA7F3hu.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 93,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_WVRwyzs.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 94,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_fcyCSy9.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 95,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_NxsQUdJ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 96,
+    "fields": {
+        "product": 8,
+        "image": "product_images/04/18/files/product-2025-04-18_13-45-07_KeWZKYl.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 97,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 98,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_gfV61Kq.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 99,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_8wTmwtu.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 100,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_u7bb21e.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 101,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_OqsnqQN.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 102,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_dki7aTG.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 103,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_f4uNvBX.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 104,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_9SPxpCM.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 105,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_5rIDrPZ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 106,
+    "fields": {
+        "product": 9,
+        "image": "product_images/04/18/files/product-2025-04-18_14-04-41_JMEnwGp.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 107,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 108,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_5IQqa47.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 109,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_uMTTXW1.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 110,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_Dp9UHg4.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 111,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_F9QQczH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 112,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_YLU9j7Q.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 113,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_m2PbjmL.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 114,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_cvohXoo.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 115,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_CCyVOqK.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 116,
+    "fields": {
+        "product": 10,
+        "image": "product_images/04/18/files/product-2025-04-18_14-11-30_c4o69UA.webp",
         "is_main": false
     }
 },

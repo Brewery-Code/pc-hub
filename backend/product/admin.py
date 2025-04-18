@@ -37,9 +37,7 @@ class ProductCategoryInlineForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields["category"].queryset = Category.objects.filter(
-            children__isnull=True
-        )
+        self.fields["category"].queryset = Category.objects.all()
 
 
 # Інлайн для категорій товару через проміжну модель із autocomplete
@@ -131,9 +129,21 @@ class ProductAdmin(TranslationAdmin):
     inlines = [ProductCategoryInline, ProductAttributeInline, ProductImageInline]
     autocomplete_fields = ["brand"]
 
-    @admin.display(description="Категорії")
-    def display_categories(self, obj) -> str:
-        return ", ".join([category.name for category in obj.category.all()])
+    @admin.display(description="Ієрархія категорій")
+    def display_categories(self, obj):
+        hierarchies = []
+        for category in obj.category.all():
+            hierarchy = []
+            current = category
+            while current:
+                url = reverse(
+                    f"admin:{current._meta.app_label}_{current._meta.model_name}_change",
+                    args=[current.pk],
+                )
+                hierarchy.append(f'<a href="{url}">{current.name}</a>')
+                current = current.parent
+            hierarchies.append(" → ".join(reversed(hierarchy)))
+        return format_html("<br>".join(hierarchies))
 
 
 @admin.register(ProductCategory)
