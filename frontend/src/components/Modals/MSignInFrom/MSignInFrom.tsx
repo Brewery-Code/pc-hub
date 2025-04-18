@@ -128,7 +128,7 @@ export default function MSignInForm({
             style="filled"
             type="submit"
           >
-            {t("signIn.register")}
+            {t("signIn.signIn")}
           </UIButton>
         </form>
         <div className={styles.modal__row}>

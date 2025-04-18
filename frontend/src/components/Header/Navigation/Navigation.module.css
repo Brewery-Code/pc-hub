@@ -24,6 +24,10 @@
   line-height: 120%;
 }
 
+img.navigation__profile {
+  border-radius: 50%;
+}
+
 .navigation__profile {
   width: 24px;
   height: 24px;
