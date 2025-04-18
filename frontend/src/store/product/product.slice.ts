@@ -37,6 +37,7 @@ const initialState: IProductState = {
     discounted_price: 0,
     rating: 0,
     attributes: [],
+    main_image: "",
     images: [],
     is_new: false,
     is_stock: false,

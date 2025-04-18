@@ -52,7 +52,8 @@
     "new": "New",
     "reviews": "Reviews",
     "uah": "UAH",
-    "buy": "Buy"
+    "buy": "Buy",
+    "productCode": "Product code"
   },
   "productNavigation": {
     "all": "See all products",

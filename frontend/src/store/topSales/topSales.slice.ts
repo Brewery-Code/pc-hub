@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
+import { IProduct } from "../types";
 
 const fetchTopSales = createAsyncThunk("topSales/fetchTopSales", async () => {
   const response = await fetch(
@@ -14,18 +15,6 @@ const fetchTopSales = createAsyncThunk("topSales/fetchTopSales", async () => {
   const products = await response.json();
   return products.results;
 });
-
-interface IProduct {
-  id: number;
-  slug: string;
-  name: string;
-  price: number;
-  discounted_price: number;
-  rating: number;
-  main_image: string;
-  is_new: boolean;
-  description: string;
-}
 
 interface ITopSalesState {
   products: IProduct[];

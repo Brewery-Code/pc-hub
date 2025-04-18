@@ -23,6 +23,7 @@ interface IProduct {
   discounted_price: number;
   rating: number;
   attributes: IAttribute[];
+  main_image?: string;
   images: IImages[];
   is_new: boolean;
   is_stock: boolean;

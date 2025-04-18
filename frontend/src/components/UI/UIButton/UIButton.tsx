@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import clsx from "clsx";
 import styles from "./UIButton.module.css";
-import { useNavigate } from "react-router-dom";
 
 type UIButtonProps = {
   children?: ReactNode;
@@ -12,7 +11,7 @@ type UIButtonProps = {
   width?: boolean;
   link?: string;
   onClick?: () => void;
-  type: "submit";
+  type?: "submit";
 };
 
 function UIButton({

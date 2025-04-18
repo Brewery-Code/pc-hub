@@ -8,7 +8,7 @@ interface IUIProductListProps {
   className?: string;
   style?: React.CSSProperties;
   childClassName?: string;
-  childType?: "common" | "dark";
+  childType?: "light" | "dark";
   isListOpen?: boolean;
 }
 
@@ -30,7 +30,7 @@ function UIProductList({
           key={item.id}
           product={item}
           className={childClassName}
-          type={childType}
+          color={childType}
         />
       ))}
     </div>
