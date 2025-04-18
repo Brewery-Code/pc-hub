@@ -10,8 +10,18 @@ import random
 import string
 
 from orders.models import DeliveryOption
-from user.models import CustomUser
-from django.core.validators import MinValueValidator, MaxValueValidator
+import os
+from datetime import datetime
+
+
+def product_image_upload_path(instance, filename):
+    now = datetime.now()
+    day = now.strftime("%d")
+    month = now.strftime("%m")
+    timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
+    extension = os.path.splitext(filename)[1]
+    new_filename = f"product-{timestamp}{extension}"
+    return f"product_images/{month}/{day}/files/{new_filename}"
 
 
 class Category(MPTTModel):
@@ -266,7 +276,7 @@ class ProductImage(models.Model):
 
     product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name="Товар")
     image = models.ImageField(
-        upload_to="product_images/%Y/%m/%d/", verbose_name="Фото товару"
+        upload_to=product_image_upload_path, verbose_name="Фото товару"
     )
     is_main = models.BooleanField(default=False, verbose_name="Основне фото")
 
