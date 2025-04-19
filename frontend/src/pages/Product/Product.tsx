@@ -10,19 +10,24 @@ import AllInfo from "./AllInfo/AllInfo";
 import Characteristics from "./Characteristics/Characteristics";
 import Reviews from "./Reviews/Reviews";
 import Credit from "./Credit/Credit";
+import { addToCart } from "../../store/user/user.slice";
 
 function Product() {
   const location = useLocation();
   const state = location.state;
   const id = state.id.toString();
   const dispatch = useAppDispatch();
-  const { status, product } = useSelector((state: RootState) => state.product);
+  const { product } = useSelector((state: RootState) => state.product);
+  const { access } = useSelector((state: RootState) => state.user);
+
   useEffect(() => {
-    if (status === "idle") {
-      console.log(id);
-      if (id) dispatch(fetchProduct(id));
-    }
-  }, [dispatch, status, id]);
+    if (id) dispatch(fetchProduct(id));
+  }, [dispatch, id]);
+
+  const addProductToCart = () => {
+    if (access) dispatch(addToCart({ access: access, product_id: product.id }));
+    else dispatch(addToCart({ product_id: product.id }));
+  };
 
   const [activeSection, setActiveSection] = useState("AllProducts");
   const handleSection = (section: string) => () => setActiveSection(section);
@@ -43,13 +48,21 @@ function Product() {
               className={styles.product__body}
               product={product}
               handleSection={handleSection}
+              addProductToCart={addProductToCart}
             />
           )}
           {activeSection === "Characteristics" && (
-            <Characteristics product={product} />
+            <Characteristics
+              product={product}
+              addProductToCart={addProductToCart}
+            />
           )}
-          {activeSection === "Reviews" && <Reviews product={product} />}
-          {activeSection === "Credit" && <Credit product={product} />}
+          {activeSection === "Reviews" && (
+            <Reviews product={product} addProductToCart={addProductToCart} />
+          )}
+          {activeSection === "Credit" && (
+            <Credit product={product} addProductToCart={addProductToCart} />
+          )}
         </div>
       </div>
     </div>

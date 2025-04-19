@@ -1,6 +1,30 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
-import { IUser } from "../types";
+import { ICart, ICartProduct, IProduct, IUser } from "../types";
+
+const authorizedRequest = async (
+  url: string,
+  options: RequestInit,
+  dispatch: any,
+) => {
+  const response = await fetch(url, { ...options });
+  if (response.ok) return await response.json();
+  else if (response.status === 401 && dispatch) {
+    const refreshResult = await dispatch(refreshToken());
+    if (refreshToken.fulfilled.match(refreshResult)) {
+      const newAccess = refreshResult.payload.access;
+      const retryResponse = await fetch(url, {
+        ...options,
+        headers: {
+          ...(options.headers || {}),
+          Authorization: `Bearer ${newAccess}`,
+        },
+      });
+      if (retryResponse.ok) return await retryResponse.json();
+      else return retryResponse.status;
+    }
+  }
+};
 
 const registerUser = createAsyncThunk(
   "user/registerUser",
@@ -29,7 +53,6 @@ const registerUser = createAsyncThunk(
         }),
       },
     );
-
     return await response.json();
   },
 );
@@ -66,14 +89,13 @@ const refreshToken = createAsyncThunk("user/refreshToken", async () => {
       },
     },
   );
-
   return await response.json();
 });
 
 const fetchUserInfo = createAsyncThunk(
   "user/fetchUserInfo",
-  async ({ access }: { access?: string }, { dispatch }) => {
-    const response = await fetch(
+  async ({ access }: { access?: string | null }, { dispatch }) => {
+    return await authorizedRequest(
       `${import.meta.env.VITE_API_BASE_URL}/users/me/`,
       {
         method: "GET",
@@ -83,81 +105,26 @@ const fetchUserInfo = createAsyncThunk(
           Authorization: access ? `Bearer ${access}` : "",
         },
       },
+      dispatch,
     );
-    if (response.ok) {
-      return await response.json();
-    } else if (response.status === 401) {
-      console.log("test");
-      const refreshResponse = await dispatch(refreshToken());
-
-      if (refreshToken.fulfilled.match(refreshResponse)) {
-        const newAccess = refreshResponse.payload.access;
-
-        const response = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/users/me/`,
-          {
-            method: "GET",
-            credentials: "include",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${newAccess}`,
-            },
-          },
-        );
-
-        if (response.ok) {
-          return await response.json();
-        } else {
-          return response.status;
-        }
-      }
-    } else {
-      return await response.json();
-    }
   },
 );
 
 const fetchCart = createAsyncThunk(
   "user/fetchCart",
-  async ({ access }: { access?: string }, { dispatch }) => {
-    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart/`, {
-      method: "GET",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: access ? `Bearer ${access}` : "",
+  async ({ access }: { access?: string | null }, { dispatch }) => {
+    return await authorizedRequest(
+      `${import.meta.env.VITE_API_BASE_URL}/cart/`,
+      {
+        method: "GET",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: access ? `Bearer ${access}` : "",
+        },
       },
-    });
-
-    if (response.ok) {
-      return await response.json();
-    } else if (response.status === 401) {
-      const refreshResponse = await dispatch(refreshToken());
-
-      if (refreshToken.fulfilled.match(refreshResponse)) {
-        const newAccess = refreshResponse.payload.access;
-
-        const response = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/cart/`,
-          {
-            method: "GET",
-            credentials: "include",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${newAccess}`,
-            },
-          },
-        );
-
-        if (response.ok) {
-          return await response.json();
-        } else {
-          return response.status;
-        }
-      }
-    } else {
-      return response.status;
-    }
+      dispatch,
+    );
   },
 );
 
@@ -167,50 +134,57 @@ const addToCart = createAsyncThunk(
     {
       access,
       product_id,
+      quantity = 1,
+    }: {
+      access?: string | null;
+      product_id: string;
+      quantity?: number;
+    },
+    { dispatch },
+  ) => {
+    return await authorizedRequest(
+      `${import.meta.env.VITE_API_BASE_URL}/cart/`,
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: access ? `Bearer ${access}` : "",
+        },
+        body: JSON.stringify({ product_id, quantity }),
+      },
+      dispatch,
+    );
+  },
+);
+
+const changeCartQuantity = createAsyncThunk(
+  "user/changeCartQuantity",
+  async (
+    {
+      access,
+      product_id,
       quantity,
     }: {
-      access: string;
-      product_id: number;
+      access?: string | null;
+      product_id: string;
       quantity: number;
     },
     { dispatch },
   ) => {
-    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/cart/`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: access ? `Bearer ${access}` : "",
+    return await authorizedRequest(
+      `${import.meta.env.VITE_API_BASE_URL}/cart/${product_id}/`,
+      {
+        method: "PUT",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: access ? `Bearer ${access}` : "",
+        },
+        body: JSON.stringify({ quantity }),
       },
-    });
-
-    if (response.ok) {
-      return await response.json();
-    } else if (response.status === 401) {
-      const refreshResponse = await dispatch(refreshToken());
-
-      if (refreshToken.fulfilled.match(refreshResponse)) {
-        const newAccess = refreshResponse.payload.access;
-
-        const response = await fetch(
-          `${import.meta.env.VITE_API_BASE_URL}/cart/`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: `Bearer ${newAccess}`,
-            },
-          },
-        );
-
-        if (response.ok) {
-          return await response.json();
-        } else {
-          return response.status;
-        }
-      }
-    } else {
-      return response.status;
-    }
+      dispatch,
+    );
   },
 );
 
@@ -226,6 +200,7 @@ const initialState: IUser = {
   cart: {
     cart_id: 0,
     items: [],
+    quantity: 0,
     total_price: 0,
   },
 };
@@ -300,22 +275,39 @@ const userSlice = createSlice({
         state.status = "failed";
         state.error = action.error.message ?? "Unknown error";
       })
-
       //----------Get User Cart----------//
       .addCase(fetchCart.pending, (state) => {
         state.status = "pending";
       })
       .addCase(fetchCart.fulfilled, (state, action) => {
-        if (action.payload === Number) {
-          state.error = action.payload;
-          state.status = "failed";
-        } else {
-          console.log(action.payload);
-          state.status = "succeeded";
-          state.cart = action.payload;
-        }
+        state.cart = action.payload;
+        const sortedCart: ICartProduct[] = [...action.payload.items].sort(
+          (a, b) => a.id - b.id,
+        );
+
+        const quantity = sortedCart.reduce(
+          (sum, item) => sum + item.quantity,
+          0,
+        );
+
+        state.status = "succeeded";
+        state.cart.cart_id = action.payload.cart_id;
+        state.cart.total_price = action.payload.total_price;
+        state.cart.items = sortedCart;
+        state.cart.quantity = quantity;
       })
       .addCase(fetchCart.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message ?? "Unknown error";
+      })
+      //----------Get User Cart----------//
+      .addCase(changeCartQuantity.pending, (state) => {
+        state.status = "pending";
+      })
+      .addCase(changeCartQuantity.fulfilled, (state) => {
+        state.status = "succeeded";
+      })
+      .addCase(changeCartQuantity.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message ?? "Unknown error";
       });
@@ -330,4 +322,6 @@ export {
   refreshToken,
   fetchUserInfo,
   fetchCart,
+  addToCart,
+  changeCartQuantity,
 };

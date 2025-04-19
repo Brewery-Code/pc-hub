@@ -10,7 +10,7 @@ type UIButtonProps = {
   size?: "m" | "s";
   width?: boolean;
   link?: string;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   type?: "submit";
 };
 

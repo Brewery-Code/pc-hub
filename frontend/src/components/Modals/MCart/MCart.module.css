@@ -1,0 +1,127 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__body {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 1064px;
+  height: 90%;
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.modal__head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__title {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 133%;
+  font-weight: 600;
+}
+
+.modal__cross::before,
+.modal__cross::after {
+  background-color: var(--accent-red);
+}
+
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 70px 1fr 0.3fr 0.3fr auto;
+  grid-auto-rows: 70px;
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  padding: 12px;
+  border-top: 1px solid var(--grey-scale-10);
+}
+
+.product:last-of-type {
+  border-bottom: 1px solid var(--grey-scale-10);
+}
+
+.product__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product__name {
+  width: 100%;
+  height: 52px;
+  color: var(--dark-grey);
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.quantity__add,
+.quantity__subtract {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background-color: var(--grey-scale-10);
+  border-radius: 50%;
+}
+
+.quantity__subtract::before,
+.quantity__add::after,
+.quantity__add::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 14px;
+  height: 1px;
+  background-color: var(--action-secondary);
+}
+
+.quantity__add::after {
+  transform: translate(-50%) rotate(90deg);
+}
+
+.quantity__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 38px;
+  border: 1px solid var(--grey-scale-10);
+  border-radius: 4px;
+}
+
+.modal__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 32px;
+}
+
+.modal__price {
+  margin-left: auto;
+}
+
+.modal__continueButton,
+.modal__oderButton {
+  padding: 9px 12px;
+  font-size: 12px;
+  line-height: 100%;
+}

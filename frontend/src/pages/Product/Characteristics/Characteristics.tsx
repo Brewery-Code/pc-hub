@@ -5,9 +5,10 @@ import ProductSmall from "../ProductSmall/ProductSmall";
 
 interface ICharacteristicsProps {
   product: IProduct;
+  addProductToCart: () => void;
 }
 
-function Characteristics({ product }: ICharacteristicsProps) {
+function Characteristics({ product, addProductToCart }: ICharacteristicsProps) {
   const { t } = useTranslation("product");
   return (
     <div className={styles.characteristics}>
@@ -24,7 +25,11 @@ function Characteristics({ product }: ICharacteristicsProps) {
           ))}
         </ul>
       </div>
-      <ProductSmall product={product} className={"only-desktop"} />
+      <ProductSmall
+        product={product}
+        className={"only-desktop"}
+        addProductToCart={addProductToCart}
+      />
       <div className={styles.product__warning}>
         {t("characteristicsSection.warning")}
       </div>

@@ -12,9 +12,14 @@ import clsx from "clsx";
 interface IProductSmallProps {
   product: IProduct;
   className?: string;
+  addProductToCart: () => void;
 }
 
-function ProductSmall({ product, className }: IProductSmallProps) {
+function ProductSmall({
+  product,
+  className,
+  addProductToCart,
+}: IProductSmallProps) {
   const { t } = useTranslation("product");
 
   return (
@@ -45,7 +50,12 @@ function ProductSmall({ product, className }: IProductSmallProps) {
           <LikeIcon className={styles["product__like-icon"]} />
         </div>
       </div>
-      <UIButton color="primary" style="filled" className={styles.product__buy}>
+      <UIButton
+        color="primary"
+        style="filled"
+        className={styles.product__buy}
+        onClick={addProductToCart}
+      >
         {t("buy.buyCommon")}
       </UIButton>
       <UIButton

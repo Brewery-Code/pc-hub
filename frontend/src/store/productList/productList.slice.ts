@@ -66,7 +66,6 @@ const productListSlice = createSlice({
         state.status = "succeeded";
         state.totalItems = action.payload.data.total__items;
         state.totalPages = action.payload.data.total_pages;
-        console.log(action.payload);
         if (
           state.category == action.payload.category &&
           action.payload.lengthInt > state.length

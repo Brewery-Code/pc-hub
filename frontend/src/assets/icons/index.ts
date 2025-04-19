@@ -48,3 +48,4 @@ export { default as GoogleIcon } from "./GoogleIcon";
 export { default as EyeIcon } from "./EyeIcon";
 export { default as GridViewIcon } from "./GridViewIcon";
 export { default as RowViewIcon } from "./RowViewIcon";
+export { default as BasketIcon } from "./BasketIcon";

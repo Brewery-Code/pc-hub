@@ -9,9 +9,10 @@ import clsx from "clsx";
 
 interface IReviewsProps {
   product: IProduct;
+  addProductToCart: () => void;
 }
 
-function Reviews({ product }: IReviewsProps) {
+function Reviews({ product, addProductToCart }: IReviewsProps) {
   const { t } = useTranslation("product");
 
   return (
@@ -85,12 +86,17 @@ function Reviews({ product }: IReviewsProps) {
           </li>
           <li className={styles.review}>
             <img
-              className={styles.review__icon}
+              className={clsx(styles.review__icon, "only-desktop")}
               src={reviewerIcon}
               alt="reviewerIcon"
             />
             <div className={styles.review__body}>
               <div className={styles.review__head}>
+                <img
+                  className={clsx(styles.review__icon, "only-mobile")}
+                  src={reviewerIcon}
+                  alt="reviewerIcon"
+                />
                 <div className={styles.review__name}>Сергійко</div>
                 <div className={styles["review__is-bought"]}>
                   <CartIcon className={styles["review__cart-icon"]} />
@@ -132,7 +138,11 @@ function Reviews({ product }: IReviewsProps) {
           </li>
         </ul>
       </div>
-      <ProductSmall product={product} className="only-desktop" />
+      <ProductSmall
+        product={product}
+        className="only-desktop"
+        addProductToCart={addProductToCart}
+      />
     </div>
   );
 }

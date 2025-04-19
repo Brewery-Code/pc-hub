@@ -9,3 +9,4 @@ export { default as UICross } from "./UICross/UICross";
 export { default as UIBreadcrumbs } from "./UIBreadcrumbs/UIBreadcrumbs";
 export { default as UIPaginator } from "./UIPaginator/UIPaginator";
 export { default as UIRatingStars } from "./UIRatingStars/UIRatingStars";
+export { default as UIProductPrice } from "./UIProductPrice/UIProductPrice";

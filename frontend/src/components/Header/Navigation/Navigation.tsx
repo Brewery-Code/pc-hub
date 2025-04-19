@@ -29,7 +29,7 @@ function Navigation() {
             <NavigationLink>{t("header.secondHand")}</NavigationLink>
             <NavigationLink>{t("header.contacts")}</NavigationLink>
           </ul>
-          <Link to="/home">
+          <Link to="">
             <LogoIcon
               className={clsx("only-mobile", styles.navigation__logo)}
             />

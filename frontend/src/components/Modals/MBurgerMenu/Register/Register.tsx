@@ -15,11 +15,7 @@ import MSignInFrom from "../../MSignInFrom/MSignInFrom";
 import { SignFormState } from "../../../../store/types";
 import { useAuth } from "../../../../hooks";
 import { RootState, useAppDispatch } from "../../../../store/store";
-import {
-  fetchUserInfo,
-  refreshToken,
-  signOutUser,
-} from "../../../../store/user/user.slice";
+import { signOutUser } from "../../../../store/user/user.slice";
 import { useSelector } from "react-redux";
 
 interface IRegisterProps {
@@ -27,7 +23,7 @@ interface IRegisterProps {
 }
 
 export default function Register({ className }: IRegisterProps) {
-  const { access, email } = useSelector((state: RootState) => state.user);
+  const { email } = useSelector((state: RootState) => state.user);
   const { isAuth } = useAuth();
   const dispatch = useAppDispatch();
   const { t } = useTranslation("modals");
@@ -39,11 +35,8 @@ export default function Register({ className }: IRegisterProps) {
   );
 
   useEffect(() => {
-    if (access) {
+    if (isAuth) {
       closeForms();
-      dispatch(fetchUserInfo({ access }));
-    } else {
-      dispatch(refreshToken());
     }
   }, [isAuth]);
 

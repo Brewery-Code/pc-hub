@@ -26,9 +26,15 @@ interface IAllInfoProps {
   product: IProduct;
   className?: string;
   handleSection: (section: string) => () => void;
+  addProductToCart: () => void;
 }
 
-function AllInfo({ className, product, handleSection }: IAllInfoProps) {
+function AllInfo({
+  className,
+  product,
+  handleSection,
+  addProductToCart,
+}: IAllInfoProps) {
   const { t } = useTranslation("product");
 
   const imagesViewportRef = useRef<HTMLDivElement>(null);
@@ -272,6 +278,7 @@ function AllInfo({ className, product, handleSection }: IAllInfoProps) {
             <span className={styles.buy__currency}>{t("buy.uah")}.</span>
           </div>
           <UIButton
+            onClick={addProductToCart}
             color="primary"
             style="filled"
             className={styles.buy__common}

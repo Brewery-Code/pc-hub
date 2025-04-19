@@ -28,4 +28,4 @@ type RootState = ReturnType<typeof store.getState>;
 type AppDispatch = typeof store.dispatch;
 const useAppDispatch: () => AppDispatch = useDispatch;
 
-export { store, type RootState, useAppDispatch };
+export { store, type RootState, useAppDispatch, type AppDispatch };

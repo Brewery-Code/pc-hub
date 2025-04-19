@@ -32,9 +32,18 @@ interface IProduct {
   delivery_options: IDelivery_options[];
 }
 
+interface ICartProduct {
+  id: string;
+  name: string;
+  price: number;
+  discounted_price: number;
+  quantity: number;
+}
+
 interface ICart {
   cart_id: number;
-  items: IProduct[];
+  items: ICartProduct[];
+  quantity: number;
   total_price: number;
 }
 
@@ -56,4 +65,10 @@ enum SignFormState {
   None = "None",
 }
 
-export { type IProduct, type IUser, SignFormState };
+export {
+  type IProduct,
+  type IUser,
+  SignFormState,
+  type ICart,
+  type ICartProduct,
+};

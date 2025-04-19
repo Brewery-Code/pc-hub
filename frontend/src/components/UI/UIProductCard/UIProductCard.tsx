@@ -1,9 +1,9 @@
-import { useTranslation } from "react-i18next";
 import { IProduct } from "../../../store/topSales/topSales.slice";
-import styles from "./UIProductCard.module.css";
 import RowCard from "./RowCard/RowCard";
 import GridCard from "./GridCard/GridCard";
-import clsx from "clsx";
+import { useSelector } from "react-redux";
+import { RootState, useAppDispatch } from "../../../store/store";
+import { addToCart, fetchCart } from "../../../store/user/user.slice";
 
 interface IUIProductCardProps {
   product: IProduct;
@@ -19,72 +19,29 @@ function UIProductCard({
   type = "grid",
   color = "light",
 }: IUIProductCardProps) {
-  const { t } = useTranslation("components");
-
-  const price = () => {
-    if (product.discounted_price != 0) {
-      return (
-        <div className={styles.discount}>
-          <div
-            className={clsx(
-              styles.discount__commonPrice,
-              type === "row" && styles.discount__commonPrice_row,
-            )}
-          >
-            {product.price}
-            <span
-              className={clsx(
-                styles.discount__commonPriceUah,
-                type === "row" && styles.discount__commonPriceUah_row,
-              )}
-            >
-              {t("productCard.uah")}
-            </span>
-          </div>
-          <div
-            className={clsx(
-              styles.discount__price,
-              type === "row" && styles.discount__price_row,
-            )}
-          >
-            {product.discounted_price}
-            <span
-              className={clsx(
-                styles.discount__priceUah,
-                styles.discount__priceUah_row,
-              )}
-            >
-              {t("productCard.uah")}
-            </span>
-          </div>
-        </div>
-      );
-    } else {
-      return (
-        <div className={styles.price}>
-          {product.price}
-          <span className={styles.price__uah}>{t("productCard.uah")}</span>
-        </div>
-      );
-    }
+  const { access } = useSelector((state: RootState) => state.user);
+  const dispatch = useAppDispatch();
+  const addProductToCart = async () => {
+    await dispatch(addToCart({ access, product_id: product.id }));
+    dispatch(fetchCart({ access }));
   };
 
   if (type === "grid") {
     return (
       <GridCard
-        price={price}
         product={product}
         className={className}
         color={color}
+        addProductToCart={addProductToCart}
       />
     );
   } else if (type === "row") {
     return (
       <RowCard
-        price={price}
         product={product}
         className={className}
         color={color}
+        addProductToCart={addProductToCart}
       />
     );
   }

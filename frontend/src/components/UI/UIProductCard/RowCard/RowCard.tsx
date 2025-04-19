@@ -6,13 +6,14 @@ import { useTranslation } from "react-i18next";
 import UIRatingStars from "../../UIRatingStars/UIRatingStars";
 import { CartIcon, ComparisonIcon, LikeIcon } from "../../../../assets/icons";
 import UIButton from "../../UIButton/UIButton";
+import UIProductPrice from "../../UIProductPrice/UIProductPrice";
 
 interface ICardProps {
   product: IProduct;
   className?: string;
   color?: "light" | "dark";
   key?: string | number;
-  price: () => JSX.Element;
+  addProductToCart: () => void;
 }
 
 export default function RowCard({
@@ -20,7 +21,7 @@ export default function RowCard({
   className,
   color,
   key,
-  price,
+  addProductToCart,
 }: ICardProps) {
   const { t } = useTranslation("components");
   return (
@@ -71,9 +72,18 @@ export default function RowCard({
           <div className={styles.card__description}>{product.description}</div>
         </div>
         <div className={styles.right}>
-          {price()}
+          <UIProductPrice
+            price={product.price}
+            discount_price={product.discounted_price}
+            size="l"
+          />
           <UIButton
             className={styles.right__button}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              addProductToCart();
+            }}
             color="primary"
             style="filled"
           >

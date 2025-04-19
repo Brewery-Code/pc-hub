@@ -42,5 +42,11 @@
     "onlyLetters": "The name must consist only of letters.",
     "passwordShort": "Password must contain at least 8 characters",
     "passwordOnlySymbols": "Password must contain only latin characters"
+  },
+  "curt": {
+    "title": "Cart",
+    "continue": "Continue shopping",
+    "order": "Make an order",
+    "uah": "uah"
   }
 }
