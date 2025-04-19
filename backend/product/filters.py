@@ -19,7 +19,7 @@ class ProductFilter(django_filters.FilterSet):
         try:
             category = Category.objects.get(slug=value)
             subcategories = category.get_descendants(include_self=True)
-            return queryset.filter(category__in=subcategories)
+            return queryset.filter(category__in=subcategories).distinct()
         except Category.DoesNotExist:
             return queryset.none()
 
