@@ -113,7 +113,6 @@ class CartViewSet(ViewSet):
                 "total_price": total_price,
                 "items": items,
             }
-
         return Response(response_data, status=status.HTTP_200_OK)
 
     def create(self, request) -> Response:
