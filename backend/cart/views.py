@@ -76,11 +76,11 @@ class CartViewSet(ViewSet):
 
             items = [
                 {
-                    "product_id": item.product.id,
-                    "product_name": item.product.name,
+                    "id": item.product.id,
+                    "name": item.product.name,
                     "quantity": item.quantity,
                     "price": item.price,
-                    "main_image_url": get_main_image_url(request, item.product),
+                    "main_image": get_main_image_url(request, item.product),
                 }
                 for item in cart_items
             ]
@@ -98,11 +98,11 @@ class CartViewSet(ViewSet):
                     product = Product.objects.get(pk=int(product_id_str))
                     items.append(
                         {
-                            "product_id": product.id,
-                            "product_name": product.name,
+                            "id": product.id,
+                            "name": product.name,
                             "quantity": data["quantity"],
                             "price": data["price"],
-                            "main_image_url": get_main_image_url(request, product),
+                            "main_image": get_main_image_url(request, product),
                         }
                     )
                     total_price += data["price"] * data["quantity"]
