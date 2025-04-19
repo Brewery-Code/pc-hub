@@ -33,7 +33,7 @@ export default function MCart({ isCartOpen, toggleCart }: IMCartProps) {
     >
       <div className={styles.modal__body}>
         <div className={styles.modal__head}>
-          <h6 className={styles.modal__title}>{t("curt.title")}</h6>
+          <h6 className={styles.modal__title}>{t("cart.title")}</h6>
           <UICross className={styles.modal__cross} closeMenu={toggleCart} />
         </div>
         <ul className={styles.modal__list}>
@@ -61,8 +61,11 @@ export default function MCart({ isCartOpen, toggleCart }: IMCartProps) {
               <div className={styles.product__price}>
                 {
                   <UIProductPrice
-                    price={product.price}
-                    discount_price={product.discounted_price}
+                    price={product.price * product.quantity}
+                    discount_price={
+                      product.discounted_price &&
+                      product.discounted_price * product.quantity
+                    }
                   />
                 }
               </div>
@@ -78,9 +81,10 @@ export default function MCart({ isCartOpen, toggleCart }: IMCartProps) {
             style="outline"
             className={styles.modal__continueButton}
           >
-            {t("curt.continue")}
+            {t("cart.continue")}
           </UIButton>
           <div className={styles.modal__price}>
+            <div className={styles.modal__sum}>{t("cart.sum")}</div>
             <UIProductPrice price={cart.total_price} />
           </div>
           <UIButton
@@ -88,7 +92,7 @@ export default function MCart({ isCartOpen, toggleCart }: IMCartProps) {
             style="filled"
             className={styles.modal__oderButton}
           >
-            {t("curt.order")}
+            {t("cart.order")}
           </UIButton>
         </div>
       </div>

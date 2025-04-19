@@ -300,7 +300,7 @@ const userSlice = createSlice({
         state.status = "failed";
         state.error = action.error.message ?? "Unknown error";
       })
-      //----------Get User Cart----------//
+      //----------Change Cart Quantity----------//
       .addCase(changeCartQuantity.pending, (state) => {
         state.status = "pending";
       })

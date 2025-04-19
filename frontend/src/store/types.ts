@@ -37,6 +37,7 @@ interface ICartProduct {
   name: string;
   price: number;
   discounted_price: number;
+  main_image: string;
   quantity: number;
 }
 
