@@ -10400,7 +10400,7 @@
         "discounted_price": 25499,
         "rating": 0.0,
         "created_at": "2025-04-18T08:14:44.264Z",
-        "updated_at": "2025-04-18T08:14:44.264Z",
+        "updated_at": "2025-04-19T06:38:52.165Z",
         "brand": 6,
         "warranty": 12,
         "delivery_options": [
@@ -10636,6 +10636,258 @@
     }
 },
 {
+    "model": "product.product",
+    "pk": 11,
+    "fields": {
+        "name": "Комп'ютер ARTLINE Gaming STLKR (STLKRv23)",
+        "name_en": "ARTLINE Gaming STLKR Computer (STLKRv23)",
+        "name_uk": "Комп'ютер ARTLINE Gaming STLKR (STLKRv23)",
+        "slug": "artline-gaming-stlkr-stlkrv23",
+        "description": "Комп'ютер ARTLINE Gaming STLKR (STLKRv23) - це потужне рішення для геймерів і ентузіастів, що поєднує в собі високу продуктивність і стильний дизайн. Оснащений 6-ядерним процесором AMD Ryzen 5 7500F із частотою до 5.0GHz і відеокартою GeForce RTX 4060 8GB, він забезпечує плавний ігровий процес і чудову графіку. 32GB DDR5-6000 оперативної пам'яті та SSD на 1TB M.2 NVMe гарантують швидке завантаження та чуйність системи. Водяне охолодження процесора з радіатором 240mm і корпус QUBE STALKER MAX з RGB-підсвічуванням і загартованим склом забезпечують стабільну роботу і привабливий зовнішній вигляд. Блок живлення на 550W із сертифікацією 80+ Bronze доповнює цей потужний ігровий ПК із продуманим до дрібниць дизайном.",
+        "description_en": "The ARTLINE Gaming STLKR Computer (STLKRv23) is a powerful solution for gamers and enthusiasts, combining high performance with stylish design. Equipped with a 6-core AMD Ryzen 5 7500F processor running up to 5.0GHz and a GeForce RTX 4060 8GB graphics card, it delivers smooth gameplay and stunning visuals. With 32GB of DDR5-6000 RAM and a 1TB M.2 NVMe SSD, it ensures fast loading times and responsive system performance. The CPU is cooled by a 240mm radiator liquid cooling system, and the QUBE STALKER MAX case with RGB lighting and tempered glass provides both stable operation and an attractive appearance. A 550W power supply with 80+ Bronze certification completes this powerful gaming PC, which boasts a thoughtfully designed build.",
+        "description_uk": "Комп'ютер ARTLINE Gaming STLKR (STLKRv23) - це потужне рішення для геймерів і ентузіастів, що поєднує в собі високу продуктивність і стильний дизайн. Оснащений 6-ядерним процесором AMD Ryzen 5 7500F із частотою до 5.0GHz і відеокартою GeForce RTX 4060 8GB, він забезпечує плавний ігровий процес і чудову графіку. 32GB DDR5-6000 оперативної пам'яті та SSD на 1TB M.2 NVMe гарантують швидке завантаження та чуйність системи. Водяне охолодження процесора з радіатором 240mm і корпус QUBE STALKER MAX з RGB-підсвічуванням і загартованим склом забезпечують стабільну роботу і привабливий зовнішній вигляд. Блок живлення на 550W із сертифікацією 80+ Bronze доповнює цей потужний ігровий ПК із продуманим до дрібниць дизайном.",
+        "price": 47880.0,
+        "stock_quantity": 1,
+        "discounted_price": 44999,
+        "rating": 0.0,
+        "created_at": "2025-04-19T06:33:11.986Z",
+        "updated_at": "2025-04-19T06:33:11.986Z",
+        "brand": 4,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 12,
+    "fields": {
+        "name": "Ноутбук ASUS TUF Gaming A15 FA506NCR-HN006 (90NR0JV7-M002L0) Graphite Black / 15.6\" IPS 144 Гц / AMD Ryzen 7 7435HS / RAM 16 ГБ / SSD 512 ГБ / RTX 3050, 4 ГБ",
+        "name_en": "Laptop ASUS TUF Gaming A15 FA506NCR-HN006 (90NR0JV7-M002L0) Graphite Black / 15.6\" IPS 144Hz / AMD Ryzen 7 7435HS / 16GB RAM / 512GB SSD / RTX 3050, 4GB",
+        "name_uk": "Ноутбук ASUS TUF Gaming A15 FA506NCR-HN006 (90NR0JV7-M002L0) Graphite Black / 15.6\" IPS 144 Гц / AMD Ryzen 7 7435HS / RAM 16 ГБ / SSD 512 ГБ / RTX 3050, 4 ГБ",
+        "slug": "asus-tuf-gaming-a15-fa506ncr-hn006-90nr0jv7-m002l0-graphite-black-156-ips-144-amd-ryzen-7-7435hs-ram-16-ssd-512-rtx-3050-4",
+        "description": "Безперечний чемпіон арени\r\nНоутбук TUF Gaming A15 – це ваш надійний союзник у світі геймінгу, здатний здобути перемогу в кожній битві. Його арсенал із могутньою відеокартою GeForce RTX гарантує бездоганну графіку на екрані з високою частотою оновлення. Потужний процесор AMD Ryzen забезпечує блискавичну реакцію на кожну вашу команду, а передова система охолодження зберігає холоднокровність навіть під час найгарячіших геймерських сутичок.",
+        "description_en": "Undisputed Champion of the Arena\r\nThe TUF Gaming A15 laptop is your reliable ally in the world of gaming, ready to claim victory in every battle. Its arsenal, equipped with a powerful GeForce RTX graphics card, ensures flawless visuals on a high refresh rate display. The powerful AMD Ryzen processor delivers lightning-fast responsiveness to your every command, while the advanced cooling system keeps its cool even during the most intense gaming clashes.",
+        "description_uk": "Безперечний чемпіон арени\r\nНоутбук TUF Gaming A15 – це ваш надійний союзник у світі геймінгу, здатний здобути перемогу в кожній битві. Його арсенал із могутньою відеокартою GeForce RTX гарантує бездоганну графіку на екрані з високою частотою оновлення. Потужний процесор AMD Ryzen забезпечує блискавичну реакцію на кожну вашу команду, а передова система охолодження зберігає холоднокровність навіть під час найгарячіших геймерських сутичок.",
+        "price": 44999.0,
+        "stock_quantity": 3,
+        "discounted_price": 36999,
+        "rating": 0.0,
+        "created_at": "2025-04-19T06:55:50.219Z",
+        "updated_at": "2025-04-19T06:55:50.219Z",
+        "brand": 5,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 13,
+    "fields": {
+        "name": "Ноутбук Acer Aspire 3 A315-59-51ST (NX.K6SEU.00M) Pure Silver / 15.6\" IPS Full HD / Intel Core i5-1235U / RAM 16 ГБ / SSD 512 ГБ /",
+        "name_en": "Laptop Acer Aspire 3 A315-59-51ST (NX.K6SEU.00M) Pure Silver / 15.6\" IPS Full HD / Intel Core i5-1235U / 16GB RAM / 512GB SSD",
+        "name_uk": "Ноутбук Acer Aspire 3 A315-59-51ST (NX.K6SEU.00M) Pure Silver / 15.6\" IPS Full HD / Intel Core i5-1235U / RAM 16 ГБ / SSD 512 ГБ /",
+        "slug": "acer-aspire-3-a315-59-51st-nxk6seu00m-pure-silver-156-ips-full-hd-intel-core-i5-1235u-ram-16-ssd-512",
+        "description": "Готовий до роботи\r\nНоутбук Aspire 3 із сучасним процесором Intel Core i5-1235U підходить для будь-яких завдань, забезпечуючи високу продуктивність. Вбудована графіка Intel Iris Xe Graphics дозволяє запускати невимогливі ігри.",
+        "description_en": "Ready to Work\r\nThe Aspire 3 laptop, powered by a modern Intel Core i5-1235U processor, is perfect for a wide range of tasks, delivering high performance. The integrated Intel Iris Xe Graphics allows you to run light games with ease.",
+        "description_uk": "Готовий до роботи\r\nНоутбук Aspire 3 із сучасним процесором Intel Core i5-1235U підходить для будь-яких завдань, забезпечуючи високу продуктивність. Вбудована графіка Intel Iris Xe Graphics дозволяє запускати невимогливі ігри.",
+        "price": 25999.0,
+        "stock_quantity": 0,
+        "discounted_price": 19999,
+        "rating": 0.0,
+        "created_at": "2025-04-19T07:37:45.938Z",
+        "updated_at": "2025-04-19T07:37:45.938Z",
+        "brand": 1,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 14,
+    "fields": {
+        "name": "Ноутбук Apple MacBook Air 13\" M1 8/256GB 2020 (MGN63) Space Gray",
+        "name_en": "Laptop Apple MacBook Air 13\" M1 8/256GB 2020 (MGN63) Space Gray",
+        "name_uk": "Ноутбук Apple MacBook Air 13\" M1 8/256GB 2020 (MGN63) Space Gray",
+        "slug": "apple-macbook-air-13-m1-8256gb-2020-mgn63-space-gray",
+        "description": "Відкриває можливості нового рівня у додатках та іграх зі складною графікою, використовуючи всю міць 8‑ядерного графічного процесора. І прискорює операції машинного навчання, застосовуючи 16-ядерну систему Neural Engine. Все відбувається безшумно, тому що це ноутбук без вентилятора. І він працює без підзарядки до 18 годин безперервно.",
+        "description_en": "Unlocks a new level of performance in graphics-intensive apps and games by harnessing the full power of the 8-core GPU. It also accelerates machine learning tasks using the 16-core Neural Engine. Everything runs silently, thanks to its fanless design. And it delivers up to 18 hours of battery life on a single charge.",
+        "description_uk": "Відкриває можливості нового рівня у додатках та іграх зі складною графікою, використовуючи всю міць 8‑ядерного графічного процесора. І прискорює операції машинного навчання, застосовуючи 16-ядерну систему Neural Engine. Все відбувається безшумно, тому що це ноутбук без вентилятора. І він працює без підзарядки до 18 годин безперервно.",
+        "price": 43499.0,
+        "stock_quantity": 3,
+        "discounted_price": 34499,
+        "rating": 0.0,
+        "created_at": "2025-04-19T07:51:09.408Z",
+        "updated_at": "2025-04-19T07:51:09.408Z",
+        "brand": 3,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 15,
+    "fields": {
+        "name": "Ноутбук ASUS ROG Zephyrus G16 (2025) GU605CW-QR148X (90NR0LX5-M00890) Eclipse Gray + фірмовий чохол та мишка",
+        "name_en": "Laptop ASUS ROG Zephyrus G16 (2025) GU605CW-QR148X (90NR0LX5-M00890) Eclipse Gray + branded sleeve and mouse",
+        "name_uk": "Ноутбук ASUS ROG Zephyrus G16 (2025) GU605CW-QR148X (90NR0LX5-M00890) Eclipse Gray + фірмовий чохол та мишка",
+        "slug": "asus-rog-zephyrus-g16-2025-gu605cw-qr148x-90nr0lx5-m00890-eclipse-gray",
+        "description": "Екран 16\" OLED (2560x1600) WQXGA 240 Гц, глянцевий / Intel Core Ultra 9 285H (1.0 - 5.4 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 5080, 16 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Pro / 1.95 кг / сірий / чохол + миша",
+        "description_en": "16\" OLED (2560x1600) WQXGA 240Hz Glossy Display / Intel Core Ultra 9 285H (1.0 - 5.4 GHz) / 32GB RAM / 1TB SSD / NVIDIA GeForce RTX 5080, 16GB / No Optical Drive / Wi-Fi / Bluetooth / Webcam / Windows 11 Pro / 1.95 kg / Gray / Includes Sleeve + Mouse",
+        "description_uk": "Екран 16\" OLED (2560x1600) WQXGA 240 Гц, глянцевий / Intel Core Ultra 9 285H (1.0 - 5.4 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 5080, 16 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Pro / 1.95 кг / сірий / чохол + миша",
+        "price": 199999.0,
+        "stock_quantity": 4,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-19T08:00:08.940Z",
+        "updated_at": "2025-04-19T08:13:26.857Z",
+        "brand": 5,
+        "warranty": 36,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 16,
+    "fields": {
+        "name": "Ноутбук ASUS ROG Zephyrus G16 (2025) GU605CX-QR122X (90NR0M65-M00670) Eclipse Gray + фірмовий чохол та миша / 16\" OLED WQXGA 240 Гц / Intel Core Ultra 9 285H / RAM 64 ГБ / SSD 2 ТБ / nVidia GeForce RTX 5090, 24 ГБ",
+        "name_en": "Laptop ASUS ROG Zephyrus G16 (2025) GU605CX-QR122X (90NR0M65-M00670) Eclipse Gray + branded sleeve and mouse / 16\" OLED WQXGA 240Hz / Intel Core Ultra 9 285H / 64GB RAM / 2TB SSD / NVIDIA GeForce RTX 5090, 24GB",
+        "name_uk": "Ноутбук ASUS ROG Zephyrus G16 (2025) GU605CX-QR122X (90NR0M65-M00670) Eclipse Gray + фірмовий чохол та миша / 16\" OLED WQXGA 240 Гц / Intel Core Ultra 9 285H / RAM 64 ГБ / SSD 2 ТБ / nVidia GeForce RTX 5090, 24 ГБ",
+        "slug": "asus-rog-zephyrus-g16-2025-gu605cx-qr122x-oled-i9-285h-64gb-2tb-rtx5090",
+        "description": "Екран 16\" OLED (2560x1600) WQXGA 240 Гц, глянцевий / Intel Core Ultra 9 285H (1.0 - 5.4 ГГц) / RAM 64 ГБ / SSD 2 ТБ / nVidia GeForce RTX 5090, 24 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Pro / 1.95 кг / сірий / чохол + миша",
+        "description_en": "16\" OLED (2560x1600) WQXGA 240Hz Glossy Display / Intel Core Ultra 9 285H (1.0 - 5.4 GHz) / 64GB RAM / 2TB SSD / NVIDIA GeForce RTX 5090, 24GB / No Optical Drive / Wi-Fi / Bluetooth / Webcam / Windows 11 Pro / 1.95 kg / Gray / Includes Sleeve + Mouse",
+        "description_uk": "Екран 16\" OLED (2560x1600) WQXGA 240 Гц, глянцевий / Intel Core Ultra 9 285H (1.0 - 5.4 ГГц) / RAM 64 ГБ / SSD 2 ТБ / nVidia GeForce RTX 5090, 24 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Pro / 1.95 кг / сірий / чохол + миша",
+        "price": 271999.0,
+        "stock_quantity": 7,
+        "discounted_price": 0,
+        "rating": 0.0,
+        "created_at": "2025-04-19T08:10:46.291Z",
+        "updated_at": "2025-04-19T08:10:46.291Z",
+        "brand": 5,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 17,
+    "fields": {
+        "name": "Ноутбук HP Laptop 15s-eq2076ua (B22CDEA) Natural Silver / 15.6” IPS Full HD / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / Windows 11 Home",
+        "name_en": "Laptop HP 15s-eq2076ua (B22CDEA) Natural Silver / 15.6” IPS Full HD / AMD Ryzen 5 5500U / 16GB RAM / 512GB SSD / Windows 11 Home",
+        "name_uk": "Ноутбук HP Laptop 15s-eq2076ua (B22CDEA) Natural Silver / 15.6” IPS Full HD / AMD Ryzen 5 5500U / RAM 16 ГБ / SSD 512 ГБ / Windows 11 Home",
+        "slug": "hp-laptop-15s-eq2076ua-b22cdea-natural-silver-156-ips-full-hd-amd-ryzen-5-5500u-ram-16-ssd-512-windows-11-home",
+        "description": "Ноутбук HP Laptop – повнофункціональний ноутбук, оснащений усіма необхідними функціями для вирішення різних завдань та роз'ємами для швидкого підключення додаткових пристроїв. HP Laptop відрізняється вигідною ціною і дозволяє залишатися на зв'язку. Міцний корпус ноутбука надійно захищає його від пошкоджень під час перенесення.\r\n\r\nМобільний та надійний\r\n\r\nБудьте впевнені, що HP Laptop здатний виконувати термінові завдання на ходу. Міцний корпус забезпечує надійний захист ноутбука та надає йому ділового зовнішнього вигляду.\r\n\r\nУсі необхідні роз'єми та слоти\r\n\r\nШвидке підключення до периферійних пристроїв в офісі або вдома за допомогою традиційних роз'ємів USB та HDMI. Ноутбук HP Laptop має слот для карт пам'яті SD. З його допомогою можна зручно переносити дані та зберігати їх резервні копії.\r\n\r\nШирокі можливості підключення\r\n\r\nОцініть високу швидкість передачі даних завдяки комбінованому модулю з підтримкою Bluetooth 4.2 та бездротовою мережею 802.11ac.",
+        "description_en": "HP Laptop – a fully functional laptop equipped with all the necessary features to handle various tasks and ports for quick connection of additional devices. The HP Laptop stands out with its affordable price and allows you to stay connected. The durable body of the laptop reliably protects it from damage during transport.\r\n\r\nMobile and Reliable\r\n\r\nRest assured that the HP Laptop can handle urgent tasks on the go. Its sturdy casing ensures reliable protection and gives it a professional look.\r\n\r\nAll the Necessary Ports and Slots\r\n\r\nQuickly connect to peripheral devices at the office or at home using traditional USB and HDMI ports. The HP Laptop also features an SD card slot for convenient data transfer and backup storage.\r\n\r\nWide Connectivity Options\r\n\r\nEnjoy high-speed data transfer thanks to the combined module with Bluetooth 4.2 support and wireless network 802.11ac.",
+        "description_uk": "Ноутбук HP Laptop – повнофункціональний ноутбук, оснащений усіма необхідними функціями для вирішення різних завдань та роз'ємами для швидкого підключення додаткових пристроїв. HP Laptop відрізняється вигідною ціною і дозволяє залишатися на зв'язку. Міцний корпус ноутбука надійно захищає його від пошкоджень під час перенесення.\r\n\r\nМобільний та надійний\r\n\r\nБудьте впевнені, що HP Laptop здатний виконувати термінові завдання на ходу. Міцний корпус забезпечує надійний захист ноутбука та надає йому ділового зовнішнього вигляду.\r\n\r\nУсі необхідні роз'єми та слоти\r\n\r\nШвидке підключення до периферійних пристроїв в офісі або вдома за допомогою традиційних роз'ємів USB та HDMI. Ноутбук HP Laptop має слот для карт пам'яті SD. З його допомогою можна зручно переносити дані та зберігати їх резервні копії.\r\n\r\nШирокі можливості підключення\r\n\r\nОцініть високу швидкість передачі даних завдяки комбінованому модулю з підтримкою Bluetooth 4.2 та бездротовою мережею 802.11ac.",
+        "price": 29999.0,
+        "stock_quantity": 1,
+        "discounted_price": 22999,
+        "rating": 0.0,
+        "created_at": "2025-04-19T08:22:42.892Z",
+        "updated_at": "2025-04-19T08:22:42.892Z",
+        "brand": 8,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 18,
+    "fields": {
+        "name": "Ноутбук Apple MacBook Air 13.6\" M4 16/256GB 2025 (MC6T4UA/A) Sky Blue",
+        "name_en": "Laptop Apple MacBook Air 13.6\" M4 16/256GB 2025 (MC6T4UA/A) Sky Blue",
+        "name_uk": "Ноутбук Apple MacBook Air 13.6\" M4 16/256GB 2025 (MC6T4UA/A) Sky Blue",
+        "slug": "apple-macbook-air-136-m4-16256gb-2025-mc6t4uaa-sky-blue",
+        "description": "MacBook Air дюймів із чипом M4 дає змогу легко справлятися з роботою та іграми — все просто літатиме. Великий дисплей Liquid Retina, до 18 годин роботи від акумулятора, неймовірно легкий й тонкий корпус — цей ноутбук створений для тривалої роботи звідусіль.",
+        "description_en": "The MacBook Air with the M4 chip effortlessly handles work and gaming — everything will run smoothly. The large Liquid Retina display, up to 18 hours of battery life, and an incredibly lightweight and slim body make this laptop perfect for long-lasting productivity from anywhere.",
+        "description_uk": "MacBook Air дюймів із чипом M4 дає змогу легко справлятися з роботою та іграми — все просто літатиме. Великий дисплей Liquid Retina, до 18 годин роботи від акумулятора, неймовірно легкий й тонкий корпус — цей ноутбук створений для тривалої роботи звідусіль.",
+        "price": 61999.0,
+        "stock_quantity": 1,
+        "discounted_price": 54999,
+        "rating": 0.0,
+        "created_at": "2025-04-19T08:45:14.873Z",
+        "updated_at": "2025-04-19T08:45:14.873Z",
+        "brand": 3,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 19,
+    "fields": {
+        "name": "Ноутбук Lenovo LOQ 15IAX9 (83GS00EURA) Luna Grey / 15.6\" IPS Full HD 144 Гц / Intel Core i5-12450HX / RAM 16 ГБ / SSD 1 ТБ / nVidia GeForce RTX 3050, 6 ГБ",
+        "name_en": "Laptop Lenovo LOQ 15IAX9 (83GS00EURA) Luna Grey 15.6\" IPS Full HD 144Hz / Intel Core i5-12450HX / 16GB RAM / 1TB SSD / NVIDIA GeForce RTX 3050, 6GB",
+        "name_uk": "Ноутбук Lenovo LOQ 15IAX9 (83GS00EURA) Luna Grey / 15.6\" IPS Full HD 144 Гц / Intel Core i5-12450HX / RAM 16 ГБ / SSD 1 ТБ / nVidia GeForce RTX 3050, 6 ГБ",
+        "slug": "lenovo-loq-15iax9-83gs00eura-luna-grey-156-ips-full-hd-144-intel-core-i5-12450hx-ram-16-ssd-1-nvidia-geforce-rtx-3050-6",
+        "description": "Ноутбук Lenovo LOQ 15IAX9 втілює уявлення про захопливий ігровий ПК, який вирізняється доступною ціною.\r\nЖодних зайвих опцій, натомість повний комплект справді необхідних компонентів, що підтримують інтенсивний ігровий або навчальний процес.\r\nЦей ноутбук обладнано графічним процесором NVIDIA GeForce RTX та процесором Intel Core 12-го покоління. Він дивовижним чином поєднує у собі ігрову продуктивність і доступність. Пристрій оснащено великим об’ємом пам’яті та містким накопичувачем, а також передбачено можливості апгрейду. За ефективне охолодження відповідає новітня система зі спеціальною камерою Hyper Chamber. Міцність і довговічність ноутбука та здатність витримувати щоденні виклики використання підтверджено за стандартами MIL-STD 810H. І все це розміщено у тонкому портативному корпусі.\r\nОціни потужні можливості, що забезпечують захопливий ігровий досвід!",
+        "description_en": "The Lenovo LOQ 15IAX9 laptop embodies the concept of an exciting gaming PC with an affordable price. No unnecessary extras, just a complete set of truly essential components that support intensive gaming or learning sessions.\r\n\r\nThis laptop is equipped with an NVIDIA GeForce RTX graphics card and a 12th generation Intel Core processor. It combines gaming performance and affordability in an amazing way. The device features a large amount of memory and a spacious storage drive, with upgrade options available. Effective cooling is provided by the latest system with a special Hyper Chamber. The laptop's durability and ability to withstand the daily challenges of use are confirmed by MIL-STD 810H standards. And all of this is housed in a slim, portable body.\r\n\r\nExperience the powerful capabilities that deliver an immersive gaming experience!",
+        "description_uk": "Ноутбук Lenovo LOQ 15IAX9 втілює уявлення про захопливий ігровий ПК, який вирізняється доступною ціною.\r\nЖодних зайвих опцій, натомість повний комплект справді необхідних компонентів, що підтримують інтенсивний ігровий або навчальний процес.\r\nЦей ноутбук обладнано графічним процесором NVIDIA GeForce RTX та процесором Intel Core 12-го покоління. Він дивовижним чином поєднує у собі ігрову продуктивність і доступність. Пристрій оснащено великим об’ємом пам’яті та містким накопичувачем, а також передбачено можливості апгрейду. За ефективне охолодження відповідає новітня система зі спеціальною камерою Hyper Chamber. Міцність і довговічність ноутбука та здатність витримувати щоденні виклики використання підтверджено за стандартами MIL-STD 810H. І все це розміщено у тонкому портативному корпусі.\r\nОціни потужні можливості, що забезпечують захопливий ігровий досвід!",
+        "price": 46999.0,
+        "stock_quantity": 0,
+        "discounted_price": 38499,
+        "rating": 0.0,
+        "created_at": "2025-04-19T08:56:21.895Z",
+        "updated_at": "2025-04-19T08:56:21.895Z",
+        "brand": 10,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
     "model": "product.productcategory",
     "pk": 1,
     "fields": {
@@ -10672,7 +10924,7 @@
     "pk": 5,
     "fields": {
         "product": 2,
-        "category": 104
+        "category": 177
     }
 },
 {
@@ -10833,6 +11085,174 @@
     "fields": {
         "product": 10,
         "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 26,
+    "fields": {
+        "product": 11,
+        "category": 100
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 27,
+    "fields": {
+        "product": 11,
+        "category": 177
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 28,
+    "fields": {
+        "product": 12,
+        "category": 67
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 29,
+    "fields": {
+        "product": 12,
+        "category": 175
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 30,
+    "fields": {
+        "product": 13,
+        "category": 68
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 31,
+    "fields": {
+        "product": 13,
+        "category": 186
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 32,
+    "fields": {
+        "product": 14,
+        "category": 69
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 33,
+    "fields": {
+        "product": 14,
+        "category": 68
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 34,
+    "fields": {
+        "product": 15,
+        "category": 67
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 35,
+    "fields": {
+        "product": 15,
+        "category": 175
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 36,
+    "fields": {
+        "product": 16,
+        "category": 67
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 37,
+    "fields": {
+        "product": 16,
+        "category": 184
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 38,
+    "fields": {
+        "product": 16,
+        "category": 225
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 39,
+    "fields": {
+        "product": 17,
+        "category": 68
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 40,
+    "fields": {
+        "product": 17,
+        "category": 69
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 41,
+    "fields": {
+        "product": 17,
+        "category": 187
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 42,
+    "fields": {
+        "product": 18,
+        "category": 69
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 43,
+    "fields": {
+        "product": 18,
+        "category": 68
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 44,
+    "fields": {
+        "product": 19,
+        "category": 67
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 45,
+    "fields": {
+        "product": 19,
+        "category": 69
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 46,
+    "fields": {
+        "product": 19,
+        "category": 84
     }
 },
 {
@@ -11139,6 +11559,150 @@
         "name": "Сертифікат потужності блока живлення",
         "name_en": "Power supply power certificate",
         "name_uk": "Сертифікат потужності блока живлення"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 36,
+    "fields": {
+        "name": "Діагональ екрану",
+        "name_en": "Screen diagonal",
+        "name_uk": "Діагональ екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 37,
+    "fields": {
+        "name": "Частота оновлення екрану",
+        "name_en": "Screen refresh rate",
+        "name_uk": "Частота оновлення екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 38,
+    "fields": {
+        "name": "Тип екрану",
+        "name_en": "Screen type",
+        "name_uk": "Тип екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 39,
+    "fields": {
+        "name": "Роздільна здатність",
+        "name_en": "Resolution",
+        "name_uk": "Роздільна здатність"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 40,
+    "fields": {
+        "name": "Покриття екрану",
+        "name_en": "Screen coverage",
+        "name_uk": "Покриття екрану"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 41,
+    "fields": {
+        "name": "Покоління процесора",
+        "name_en": "Processor generation",
+        "name_uk": "Покоління процесора"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 42,
+    "fields": {
+        "name": "Стандарт інтерфейсу SSD M.2",
+        "name_en": "SSD M.2 interface standard",
+        "name_uk": "Стандарт інтерфейсу SSD M.2"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 43,
+    "fields": {
+        "name": "Інтегрована відеокарта",
+        "name_en": "Integrated graphics card",
+        "name_uk": "Інтегрована відеокарта"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 44,
+    "fields": {
+        "name": "Ємність акумулятора, Вт год",
+        "name_en": "Battery capacity, Wh",
+        "name_uk": "Ємність акумулятора, Вт год"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 45,
+    "fields": {
+        "name": "USB порти",
+        "name_en": "USB ports",
+        "name_uk": "USB порти"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 46,
+    "fields": {
+        "name": "Відеороз'єми",
+        "name_en": "Video connectors",
+        "name_uk": "Відеороз'єми"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 47,
+    "fields": {
+        "name": "Дискретна відеокарта",
+        "name_en": "Discrete graphics card",
+        "name_uk": "Дискретна відеокарта"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 48,
+    "fields": {
+        "name": "Тип накопичувача",
+        "name_en": "Drive type",
+        "name_uk": "Тип накопичувача"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 49,
+    "fields": {
+        "name": "Мережеві адаптери",
+        "name_en": "Network adapters",
+        "name_uk": "Мережеві адаптери"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 50,
+    "fields": {
+        "name": "Характеристики батареї",
+        "name_en": "Battery characteristics",
+        "name_uk": "Характеристики батареї"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 51,
+    "fields": {
+        "name": "Звукова система",
+        "name_en": "Sound system",
+        "name_uk": "Звукова система"
     }
 },
 {
@@ -13500,6 +14064,2148 @@
     }
 },
 {
+    "model": "product.productattribute",
+    "pk": 263,
+    "fields": {
+        "product": 11,
+        "attribute": 2,
+        "value": "AMD Ryzen 5 7500F (3.7 - 5.0 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 4060 8 ГБ / 550 Вт / LAN / без ОД / без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 264,
+    "fields": {
+        "product": 11,
+        "attribute": 3,
+        "value": "GeForce RTX 4060"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 265,
+    "fields": {
+        "product": 11,
+        "attribute": 4,
+        "value": "AMD Ryzen 5 7500F (3.7 - 5.0 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 266,
+    "fields": {
+        "product": 11,
+        "attribute": 5,
+        "value": "AMD B650"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 267,
+    "fields": {
+        "product": 11,
+        "attribute": 6,
+        "value": "32 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 268,
+    "fields": {
+        "product": 11,
+        "attribute": 7,
+        "value": "На передній панелі:\r\n\r\n1 x USB 3.0\r\n\r\n2 x USB 2.0\r\n\r\nВхід для мікрофона\r\n\r\nВихід на навушники\r\n\r\nНа задній панелі (материнська плата):\r\n\r\n1 x PS/2 комбінований порт для клавіатури та миші\r\n\r\n1 x HDMI\r\n\r\n2 x DisplayPorts\r\n\r\n1 x LAN (RJ-45)\r\n\r\n3 x USB 3.2 Gen 1 (Type-A)\r\n\r\n1 x USB 3.2 Gen 1 (Type-C)\r\n\r\n2 x USB 2.0 (Type-A)\r\n\r\n3 x Аудіороз'єми\r\n\r\nНа задній панелі (відеокарта):\r\n\r\n2 x HDMI\r\n\r\n2 x DisplayPort"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 269,
+    "fields": {
+        "product": 11,
+        "attribute": 8,
+        "value": "550 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 270,
+    "fields": {
+        "product": 11,
+        "attribute": 10,
+        "value": "Охолодження ЦП: 240mm WaterCooler Black\r\nОхолодження корпусу (встановлено): 4 вентилятори"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 271,
+    "fields": {
+        "product": 11,
+        "attribute": 12,
+        "value": "555 x 245 x 685 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 272,
+    "fields": {
+        "product": 11,
+        "attribute": 13,
+        "value": "14кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 273,
+    "fields": {
+        "product": 11,
+        "attribute": 14,
+        "value": "ПК\r\nТехпаспорт\r\nКабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 274,
+    "fields": {
+        "product": 11,
+        "attribute": 15,
+        "value": "Вентилятори з RGB підсвічуванням\r\nОригінальний дизайн корпусу\r\nСистема водяного охолодження процесора\r\nЗагартоване скло 4 мм на бічних панелях\r\nБлок живлення із сертифікацією 80+ Bronze\r\nВисокопродуктивний SSD стандарту NVME"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 275,
+    "fields": {
+        "product": 11,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 276,
+    "fields": {
+        "product": 11,
+        "attribute": 17,
+        "value": "8 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 277,
+    "fields": {
+        "product": 11,
+        "attribute": 19,
+        "value": "6"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 278,
+    "fields": {
+        "product": 11,
+        "attribute": 16,
+        "value": "1 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 279,
+    "fields": {
+        "product": 11,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 280,
+    "fields": {
+        "product": 11,
+        "attribute": 27,
+        "value": "Чорний з жовтогарячим"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 281,
+    "fields": {
+        "product": 11,
+        "attribute": 28,
+        "value": "NVIDIA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 282,
+    "fields": {
+        "product": 11,
+        "attribute": 29,
+        "value": "3.7"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 283,
+    "fields": {
+        "product": 11,
+        "attribute": 34,
+        "value": "2500 Мбіт/сек"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 284,
+    "fields": {
+        "product": 12,
+        "attribute": 36,
+        "value": "15.6\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 285,
+    "fields": {
+        "product": 12,
+        "attribute": 37,
+        "value": "144 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 286,
+    "fields": {
+        "product": 12,
+        "attribute": 38,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 287,
+    "fields": {
+        "product": 12,
+        "attribute": 39,
+        "value": "1920x1080"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 288,
+    "fields": {
+        "product": 12,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 289,
+    "fields": {
+        "product": 12,
+        "attribute": 4,
+        "value": "AMD Ryzen 7 7435HS (3.1 - 4.5 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 290,
+    "fields": {
+        "product": 12,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 291,
+    "fields": {
+        "product": 12,
+        "attribute": 41,
+        "value": "Zen 3+"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 292,
+    "fields": {
+        "product": 12,
+        "attribute": 6,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 293,
+    "fields": {
+        "product": 12,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 294,
+    "fields": {
+        "product": 12,
+        "attribute": 16,
+        "value": "512 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 295,
+    "fields": {
+        "product": 12,
+        "attribute": 42,
+        "value": "PCI Express 4.0 x4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 296,
+    "fields": {
+        "product": 12,
+        "attribute": 48,
+        "value": "SSD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 297,
+    "fields": {
+        "product": 12,
+        "attribute": 28,
+        "value": "Nvidia"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 298,
+    "fields": {
+        "product": 12,
+        "attribute": 47,
+        "value": "GeForce RTX 3050"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 299,
+    "fields": {
+        "product": 12,
+        "attribute": 17,
+        "value": "4 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 300,
+    "fields": {
+        "product": 12,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 301,
+    "fields": {
+        "product": 12,
+        "attribute": 13,
+        "value": "2.3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 302,
+    "fields": {
+        "product": 12,
+        "attribute": 44,
+        "value": "48"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 303,
+    "fields": {
+        "product": 12,
+        "attribute": 27,
+        "value": "Чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 304,
+    "fields": {
+        "product": 12,
+        "attribute": 49,
+        "value": "Wi-Fi 802.11ax\r\nBluetooth 5.3\r\nGigabit Ethernet"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 305,
+    "fields": {
+        "product": 12,
+        "attribute": 45,
+        "value": "1 x USB 3.1/3.2 Gen2 Type-C\r\n3 x USB 3.1/3.2 Gen1 Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 306,
+    "fields": {
+        "product": 12,
+        "attribute": 46,
+        "value": "1 x HDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 307,
+    "fields": {
+        "product": 12,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 308,
+    "fields": {
+        "product": 12,
+        "attribute": 2,
+        "value": "Екран 15.6\" IPS (1920x1080) Full HD 144 Гц, матовий / AMD Ryzen 7 7435HS (3.1 - 4.5 ГГц) / RAM 16 ГБ / SSD 512 ГБ / NVIDIA GeForce RTX 3050, 4 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / без ОС / 2.3 кг / чорний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 309,
+    "fields": {
+        "product": 12,
+        "attribute": 23,
+        "value": "Китай"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 310,
+    "fields": {
+        "product": 12,
+        "attribute": 31,
+        "value": "З Українською розкладкою\r\nЗ підсвіткою клавіатури"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 311,
+    "fields": {
+        "product": 12,
+        "attribute": 20,
+        "value": "Ноутбуки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 312,
+    "fields": {
+        "product": 12,
+        "attribute": 14,
+        "value": "Ноутбук\r\nАдаптер живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 313,
+    "fields": {
+        "product": 13,
+        "attribute": 36,
+        "value": "15.6\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 314,
+    "fields": {
+        "product": 13,
+        "attribute": 37,
+        "value": "60 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 315,
+    "fields": {
+        "product": 13,
+        "attribute": 38,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 316,
+    "fields": {
+        "product": 13,
+        "attribute": 39,
+        "value": "1920x1080"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 317,
+    "fields": {
+        "product": 13,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 318,
+    "fields": {
+        "product": 13,
+        "attribute": 4,
+        "value": "Intel Core i5-1235U (0.9 - 4.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 319,
+    "fields": {
+        "product": 13,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 320,
+    "fields": {
+        "product": 13,
+        "attribute": 41,
+        "value": "12-е Alder Lake"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 321,
+    "fields": {
+        "product": 13,
+        "attribute": 6,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 322,
+    "fields": {
+        "product": 13,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 323,
+    "fields": {
+        "product": 13,
+        "attribute": 16,
+        "value": "512 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 324,
+    "fields": {
+        "product": 13,
+        "attribute": 42,
+        "value": "PCI Express 3.0"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 325,
+    "fields": {
+        "product": 13,
+        "attribute": 48,
+        "value": "SSD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 326,
+    "fields": {
+        "product": 13,
+        "attribute": 28,
+        "value": "Intel"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 327,
+    "fields": {
+        "product": 13,
+        "attribute": 26,
+        "value": "Інтегрована"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 328,
+    "fields": {
+        "product": 13,
+        "attribute": 43,
+        "value": "Iris Xe Graphics"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 329,
+    "fields": {
+        "product": 13,
+        "attribute": 13,
+        "value": "1.78"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 330,
+    "fields": {
+        "product": 13,
+        "attribute": 44,
+        "value": "50"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 331,
+    "fields": {
+        "product": 13,
+        "attribute": 27,
+        "value": "Сріблястий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 332,
+    "fields": {
+        "product": 13,
+        "attribute": 49,
+        "value": "Wi-Fi 802.11 a/b/g/n/ac\r\nBluetooth 5.0"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 333,
+    "fields": {
+        "product": 13,
+        "attribute": 45,
+        "value": "3 x USB 3.1/3.2 Gen1 Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 334,
+    "fields": {
+        "product": 13,
+        "attribute": 46,
+        "value": "1 x HDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 335,
+    "fields": {
+        "product": 13,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 336,
+    "fields": {
+        "product": 13,
+        "attribute": 2,
+        "value": "Екран 15.6\" IPS (1920x1080) Full HD, матовий / Intel Core i5-1235U (0.9 - 4.4 ГГц) / RAM 16 ГБ / SSD 512 ГБ / Intel Iris Xe Graphics / без ОД / Wi-Fi / Bluetooth / веб-камера / без ОС / 1.78 кг / сріблястий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 337,
+    "fields": {
+        "product": 13,
+        "attribute": 23,
+        "value": "Китай"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 338,
+    "fields": {
+        "product": 13,
+        "attribute": 31,
+        "value": "З Українською розкладкою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 339,
+    "fields": {
+        "product": 13,
+        "attribute": 20,
+        "value": "Ноутбуки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 340,
+    "fields": {
+        "product": 13,
+        "attribute": 15,
+        "value": "Веб-камера\r\nВбудований мікрофон\r\nВбудовані динаміки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 341,
+    "fields": {
+        "product": 13,
+        "attribute": 14,
+        "value": "Ноутбук\r\nАдаптер живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 342,
+    "fields": {
+        "product": 14,
+        "attribute": 36,
+        "value": "13.3\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 343,
+    "fields": {
+        "product": 14,
+        "attribute": 37,
+        "value": "60 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 344,
+    "fields": {
+        "product": 14,
+        "attribute": 38,
+        "value": "Retina"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 345,
+    "fields": {
+        "product": 14,
+        "attribute": 39,
+        "value": "2560x1600"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 346,
+    "fields": {
+        "product": 14,
+        "attribute": 40,
+        "value": "Глянцеве"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 347,
+    "fields": {
+        "product": 14,
+        "attribute": 4,
+        "value": "Apple M1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 348,
+    "fields": {
+        "product": 14,
+        "attribute": 21,
+        "value": "macOS Big Sur"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 349,
+    "fields": {
+        "product": 14,
+        "attribute": 6,
+        "value": "8 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 350,
+    "fields": {
+        "product": 14,
+        "attribute": 16,
+        "value": "256 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 351,
+    "fields": {
+        "product": 14,
+        "attribute": 48,
+        "value": "SSD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 352,
+    "fields": {
+        "product": 14,
+        "attribute": 28,
+        "value": "Apple"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 353,
+    "fields": {
+        "product": 14,
+        "attribute": 26,
+        "value": "Інтегрована"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 354,
+    "fields": {
+        "product": 14,
+        "attribute": 13,
+        "value": "1.29"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 355,
+    "fields": {
+        "product": 14,
+        "attribute": 44,
+        "value": "49.9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 356,
+    "fields": {
+        "product": 14,
+        "attribute": 27,
+        "value": "Сірий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 357,
+    "fields": {
+        "product": 14,
+        "attribute": 50,
+        "value": "До 15 годин роботи в інтернеті через бездротову мережу\r\nДо 18 годин під час відтворення фільмів з програми Apple TV\r\nВбудований літій-полімерний акумулятор ємністю 49,9 Вт*год"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 358,
+    "fields": {
+        "product": 14,
+        "attribute": 49,
+        "value": "Wi‑Fi\r\nПід'єднання до мереж Wi-Fi 6 (802.11ax)\r\nСумісність зі стандартами IEEE 802.11a/b/g/n/ac\r\n\r\nBluetooth\r\nБездротова технологія Bluetooth 5.0"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 359,
+    "fields": {
+        "product": 14,
+        "attribute": 45,
+        "value": "2 x Thunderbolt 3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 360,
+    "fields": {
+        "product": 14,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 361,
+    "fields": {
+        "product": 14,
+        "attribute": 2,
+        "value": "Екран 13.3\" Retina (2560x1600) WQXGA, глянсовий / Apple M1 / RAM 8 ГБ / SSD 256 ГБ / Apple M1 Graphics / Wi-Fi / Bluetooth / macOS Big Sur / 1.29 кг / сірий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 362,
+    "fields": {
+        "product": 14,
+        "attribute": 20,
+        "value": "Ноутбуки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 363,
+    "fields": {
+        "product": 14,
+        "attribute": 15,
+        "value": "HD-камера FaceTime 720p\r\nТехнологія True Tone\r\nSSD-накопичувач PCIe\r\nTouch ID\r\nСтереодинаміки\r\nШироке стерео\r\nПідтримка відтворення контенту у форматі Dolby Atmos\r\nСистема з трьох спрямованих мікрофонів\r\nКлавіатура Magic Keyboard з підсвіткою\r\nДатчик зовнішньої освітленості\r\nТрекпад Force Touch"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 364,
+    "fields": {
+        "product": 14,
+        "attribute": 14,
+        "value": "MacBook Air\r\nАдаптер живлення USB-C потужністю 30 Вт\r\nКабель USB-C для заряджання (2 м)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 365,
+    "fields": {
+        "product": 15,
+        "attribute": 36,
+        "value": "16\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 366,
+    "fields": {
+        "product": 15,
+        "attribute": 37,
+        "value": "240 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 367,
+    "fields": {
+        "product": 15,
+        "attribute": 38,
+        "value": "OLED"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 368,
+    "fields": {
+        "product": 15,
+        "attribute": 39,
+        "value": "2560x1600"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 369,
+    "fields": {
+        "product": 15,
+        "attribute": 40,
+        "value": "Глянцеве"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 370,
+    "fields": {
+        "product": 15,
+        "attribute": 4,
+        "value": "ntel Core Ultra 9 285H (1.0 - 5.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 371,
+    "fields": {
+        "product": 15,
+        "attribute": 21,
+        "value": "Windows 11 Professional"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 372,
+    "fields": {
+        "product": 15,
+        "attribute": 41,
+        "value": "15-е Arrow Lake"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 373,
+    "fields": {
+        "product": 15,
+        "attribute": 6,
+        "value": "32 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 374,
+    "fields": {
+        "product": 15,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 375,
+    "fields": {
+        "product": 15,
+        "attribute": 16,
+        "value": "1 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 376,
+    "fields": {
+        "product": 15,
+        "attribute": 42,
+        "value": "PCI Express 4.0 x4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 377,
+    "fields": {
+        "product": 15,
+        "attribute": 28,
+        "value": "Nvidia"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 378,
+    "fields": {
+        "product": 15,
+        "attribute": 47,
+        "value": "GeForce RTX 5080"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 379,
+    "fields": {
+        "product": 15,
+        "attribute": 17,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 380,
+    "fields": {
+        "product": 15,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 381,
+    "fields": {
+        "product": 15,
+        "attribute": 13,
+        "value": "1.95"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 382,
+    "fields": {
+        "product": 15,
+        "attribute": 44,
+        "value": "90"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 383,
+    "fields": {
+        "product": 15,
+        "attribute": 27,
+        "value": "Сірий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 384,
+    "fields": {
+        "product": 15,
+        "attribute": 51,
+        "value": "Технологія інтелектуального посилення\r\nТехнологія імерсивного звучання Dolby Atmos\r\nТехнологія інтелектуального шумозаглушення\r\nСертифікація Hi‑Res (для навушників)\r\n3 мікрофони в масиві\r\n4 динаміки (2 подвійні НЧ-динаміки) з технологією інтелектуального посилення, 2 ВЧ‑динаміки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 385,
+    "fields": {
+        "product": 15,
+        "attribute": 49,
+        "value": "Wi-Fi 802.11be (потрійний діапазон) 2*2\r\nBluetooth 5.4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 386,
+    "fields": {
+        "product": 15,
+        "attribute": 46,
+        "value": "1 x HDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 387,
+    "fields": {
+        "product": 15,
+        "attribute": 45,
+        "value": "1 x Thunderbolt\r\n1 x USB 3.1/3.2 Gen2 Type-C\r\n2 x USB 3.1/3.2 Gen2 Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 388,
+    "fields": {
+        "product": 15,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 389,
+    "fields": {
+        "product": 15,
+        "attribute": 2,
+        "value": "Екран 16\" OLED (2560x1600) WQXGA 240 Гц, глянцевий / Intel Core Ultra 9 285H (1.0 - 5.4 ГГц) / RAM 32 ГБ / SSD 1 ТБ / nVidia GeForce RTX 5080, 16 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Pro / 1.95 кг / сірий / чохол + миша"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 390,
+    "fields": {
+        "product": 15,
+        "attribute": 31,
+        "value": "З Українською розкладкою\r\nЗ підсвіткою клавіатури\r\nЗарядка від USB\r\nПорт Thunderbolt"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 391,
+    "fields": {
+        "product": 15,
+        "attribute": 20,
+        "value": "Ноутбуки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 392,
+    "fields": {
+        "product": 15,
+        "attribute": 15,
+        "value": "Нейронний процесор: Intel AI Boost NPU\r\nМембранна клавіатура з повноколірним (RGB) підсвічуванням, 1 зона\r\nЗахист паролем доступу до BIOS та завантаження операційної системи\r\nМодуль TPM (вбудоване програмне забезпечення TPM)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 393,
+    "fields": {
+        "product": 15,
+        "attribute": 14,
+        "value": "Ноутбук\r\nАдаптер живлення\r\nДокументація\r\nЧохол\r\nМиша"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 394,
+    "fields": {
+        "product": 16,
+        "attribute": 36,
+        "value": "16\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 395,
+    "fields": {
+        "product": 16,
+        "attribute": 37,
+        "value": "240 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 396,
+    "fields": {
+        "product": 16,
+        "attribute": 38,
+        "value": "OLED"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 397,
+    "fields": {
+        "product": 16,
+        "attribute": 39,
+        "value": "2560x1600"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 398,
+    "fields": {
+        "product": 16,
+        "attribute": 40,
+        "value": "Глянцеве"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 399,
+    "fields": {
+        "product": 16,
+        "attribute": 4,
+        "value": "Intel Core Ultra 9 285H (1.0 - 5.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 400,
+    "fields": {
+        "product": 16,
+        "attribute": 21,
+        "value": "Windows 11 Professional"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 401,
+    "fields": {
+        "product": 16,
+        "attribute": 41,
+        "value": "15-е Arrow Lake"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 402,
+    "fields": {
+        "product": 16,
+        "attribute": 6,
+        "value": "64 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 403,
+    "fields": {
+        "product": 16,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 404,
+    "fields": {
+        "product": 16,
+        "attribute": 16,
+        "value": "2 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 405,
+    "fields": {
+        "product": 16,
+        "attribute": 42,
+        "value": "PCI Express 4.0 x4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 406,
+    "fields": {
+        "product": 16,
+        "attribute": 48,
+        "value": "SSD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 407,
+    "fields": {
+        "product": 16,
+        "attribute": 28,
+        "value": "Nvidia"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 408,
+    "fields": {
+        "product": 16,
+        "attribute": 47,
+        "value": "GeForce RTX 5090"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 409,
+    "fields": {
+        "product": 16,
+        "attribute": 17,
+        "value": "24 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 410,
+    "fields": {
+        "product": 16,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 411,
+    "fields": {
+        "product": 16,
+        "attribute": 13,
+        "value": "1.95"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 412,
+    "fields": {
+        "product": 16,
+        "attribute": 44,
+        "value": "90"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 413,
+    "fields": {
+        "product": 16,
+        "attribute": 27,
+        "value": "Сірий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 414,
+    "fields": {
+        "product": 16,
+        "attribute": 51,
+        "value": "ехнологія інтелектуального посилення\r\nТехнологія імерсивного звучання Dolby Atmos\r\nТехнологія інтелектуального шумозаглушення\r\nСертифікація Hi‑Res (для навушників)\r\n3 мікрофони в масиві\r\n4 динаміки (2 подвійні НЧ-динаміки) з технологією інтелектуального посилення, 2 ВЧ‑динаміки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 415,
+    "fields": {
+        "product": 16,
+        "attribute": 49,
+        "value": "Wi-Fi 802.11be (потрійний діапазон) 2*2\r\nBluetooth 5.4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 416,
+    "fields": {
+        "product": 16,
+        "attribute": 45,
+        "value": "1 x Thunderbolt\r\n1 x USB 3.1/3.2 Gen2 Type-C\r\n2 x USB 3.1/3.2 Gen2 Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 417,
+    "fields": {
+        "product": 16,
+        "attribute": 46,
+        "value": "1 x HDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 418,
+    "fields": {
+        "product": 16,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 419,
+    "fields": {
+        "product": 16,
+        "attribute": 2,
+        "value": "Екран 16\" OLED (2560x1600) WQXGA 240 Гц, глянцевий / Intel Core Ultra 9 285H (1.0 - 5.4 ГГц) / RAM 64 ГБ / SSD 2 ТБ / nVidia GeForce RTX 5090, 24 ГБ / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Pro / 1.95 кг / сірий / чохол + миша"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 420,
+    "fields": {
+        "product": 16,
+        "attribute": 31,
+        "value": "З Українською розкладкою\r\nЗ підсвіткою клавіатури\r\nЗарядка від USB\r\nПорт Thunderbolt"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 421,
+    "fields": {
+        "product": 16,
+        "attribute": 20,
+        "value": "Ноутбуки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 422,
+    "fields": {
+        "product": 16,
+        "attribute": 15,
+        "value": "Нейронний процесор: Intel AI Boost NPU\r\nМембранна клавіатура з повнокольоровим (RGB) підсвічуванням, 1 зона\r\nЗахист паролем доступу до BIOS та завантаження операційної системи\r\nМодуль TPM (вбудоване програмне забезпечення TPM)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 423,
+    "fields": {
+        "product": 16,
+        "attribute": 14,
+        "value": "Ноутбук\r\nАдаптер живлення\r\nДокументація\r\nЧохол\r\nМиша"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 424,
+    "fields": {
+        "product": 17,
+        "attribute": 36,
+        "value": "15.6\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 425,
+    "fields": {
+        "product": 17,
+        "attribute": 37,
+        "value": "60 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 426,
+    "fields": {
+        "product": 17,
+        "attribute": 38,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 427,
+    "fields": {
+        "product": 17,
+        "attribute": 39,
+        "value": "1920x1080"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 428,
+    "fields": {
+        "product": 17,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 429,
+    "fields": {
+        "product": 17,
+        "attribute": 4,
+        "value": "AMD Ryzen 5 5500U (2.1 - 4.0 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 430,
+    "fields": {
+        "product": 17,
+        "attribute": 21,
+        "value": "Windows 11 Home"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 431,
+    "fields": {
+        "product": 17,
+        "attribute": 41,
+        "value": "Zen 2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 432,
+    "fields": {
+        "product": 17,
+        "attribute": 6,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 433,
+    "fields": {
+        "product": 17,
+        "attribute": 22,
+        "value": "DDR4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 434,
+    "fields": {
+        "product": 17,
+        "attribute": 16,
+        "value": "512 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 435,
+    "fields": {
+        "product": 17,
+        "attribute": 48,
+        "value": "SSD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 436,
+    "fields": {
+        "product": 17,
+        "attribute": 28,
+        "value": "AMD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 437,
+    "fields": {
+        "product": 17,
+        "attribute": 26,
+        "value": "Інтегрована"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 438,
+    "fields": {
+        "product": 17,
+        "attribute": 43,
+        "value": "Radeon Graphics"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 439,
+    "fields": {
+        "product": 17,
+        "attribute": 13,
+        "value": "1.69"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 440,
+    "fields": {
+        "product": 17,
+        "attribute": 44,
+        "value": "41"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 441,
+    "fields": {
+        "product": 17,
+        "attribute": 27,
+        "value": "Сріблястий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 442,
+    "fields": {
+        "product": 17,
+        "attribute": 51,
+        "value": "Два динаміки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 443,
+    "fields": {
+        "product": 17,
+        "attribute": 49,
+        "value": "Wi-Fi 802.11a/b/g/n/ac (1x1)\r\nBluetooth 4.2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 444,
+    "fields": {
+        "product": 17,
+        "attribute": 45,
+        "value": "1 x USB 3.1/3.2 Gen1 Type-C\r\n2 x USB 3.1/3.2 Gen1 Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 445,
+    "fields": {
+        "product": 17,
+        "attribute": 46,
+        "value": "1 x HDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 446,
+    "fields": {
+        "product": 17,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 447,
+    "fields": {
+        "product": 17,
+        "attribute": 2,
+        "value": "Екран 15.6\" IPS (1920x1080) Full HD, матовий / AMD Ryzen 5 5500U (2.1 - 4.0 ГГц) / RAM 16 ГБ / SSD 512 ГБ / AMD Radeon Graphics / без ОД / Wi-Fi / Bluetooth / веб-камера / Windows 11 Home / 1.69 кг / сріблястий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 448,
+    "fields": {
+        "product": 18,
+        "attribute": 36,
+        "value": "13.6\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 449,
+    "fields": {
+        "product": 18,
+        "attribute": 37,
+        "value": "60 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 450,
+    "fields": {
+        "product": 18,
+        "attribute": 38,
+        "value": "Liquid Retina"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 451,
+    "fields": {
+        "product": 18,
+        "attribute": 39,
+        "value": "2560x1664"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 452,
+    "fields": {
+        "product": 18,
+        "attribute": 40,
+        "value": "Глянцеве"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 453,
+    "fields": {
+        "product": 18,
+        "attribute": 4,
+        "value": "Apple M4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 454,
+    "fields": {
+        "product": 18,
+        "attribute": 21,
+        "value": "macOS Sequoia"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 455,
+    "fields": {
+        "product": 18,
+        "attribute": 6,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 456,
+    "fields": {
+        "product": 18,
+        "attribute": 16,
+        "value": "256 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 457,
+    "fields": {
+        "product": 18,
+        "attribute": 48,
+        "value": "SSD"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 458,
+    "fields": {
+        "product": 18,
+        "attribute": 28,
+        "value": "Apple"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 459,
+    "fields": {
+        "product": 18,
+        "attribute": 26,
+        "value": "Інтегрована"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 460,
+    "fields": {
+        "product": 18,
+        "attribute": 43,
+        "value": "M4 Graphics (8 ядер)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 461,
+    "fields": {
+        "product": 18,
+        "attribute": 13,
+        "value": "1.24"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 462,
+    "fields": {
+        "product": 18,
+        "attribute": 44,
+        "value": "53.8"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 463,
+    "fields": {
+        "product": 18,
+        "attribute": 27,
+        "value": "Блакитний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 464,
+    "fields": {
+        "product": 18,
+        "attribute": 51,
+        "value": "Аудіосистема з чотирма динаміками\r\nПідтримка просторового звуку під час відтворення музики або відео з Dolby Atmos на вбудованих динаміках\r\nПросторовий звук з динамічним відстеженням голови під час використання AirPods, AirPods Pro та AirPods Max\r\nТримікрофонні решітки з спрямованим формуванням променя\r\nРежими мікрофону «Голосова ізоляція» та «Широкий спектр»\r\nПокращена чіткість голосу при аудіо- та відеодзвінках"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 465,
+    "fields": {
+        "product": 18,
+        "attribute": 49,
+        "value": "Wi‑Fi\r\nПід'єднання до мереж Wi-Fi 6 (802.11ax)\r\nСумісність зі стандартами IEEE 802.11a/b/g/n/ac\r\n\r\nBluetooth\r\nБездротова технологія Bluetooth 5.3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 466,
+    "fields": {
+        "product": 18,
+        "attribute": 45,
+        "value": "2 x Thunderbolt 4 (USB4)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 467,
+    "fields": {
+        "product": 18,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 468,
+    "fields": {
+        "product": 18,
+        "attribute": 2,
+        "value": "Екран 13.6\" Liquid Retina (2560x1664), глянсовий / Apple M4 / RAM 16 ГБ / SSD 256 ГБ / Apple M4 Graphics (8 ядер) / Wi-Fi / Bluetooth / macOS Sequoia / 1.24 кг / блакитний"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 469,
+    "fields": {
+        "product": 18,
+        "attribute": 31,
+        "value": "Ідентифікація відбитка пальця\r\nЗ Українською розкладкою\r\nЗ підсвіткою клавіатури\r\nПорт Thunderbolt"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 470,
+    "fields": {
+        "product": 18,
+        "attribute": 20,
+        "value": "Ноутбуки"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 471,
+    "fields": {
+        "product": 18,
+        "attribute": 15,
+        "value": "HD-камера FaceTime HD 1080p\r\nТехнологія True Tone\r\nTouch ID\r\nСистема з трьох спрямованих мікрофонів\r\nКлавіатура Magic Keyboard з підсвічуванням\r\nДатчик зовнішньої освітленості\r\nТрекпад Force Touch"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 472,
+    "fields": {
+        "product": 18,
+        "attribute": 14,
+        "value": "MacBook Air\r\nАдаптер живлення USB-C потужністю 30 Вт\r\nКабель USB-C - MagSafe 3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 473,
+    "fields": {
+        "product": 19,
+        "attribute": 36,
+        "value": "15.6\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 474,
+    "fields": {
+        "product": 19,
+        "attribute": 37,
+        "value": "144 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 475,
+    "fields": {
+        "product": 19,
+        "attribute": 38,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 476,
+    "fields": {
+        "product": 19,
+        "attribute": 39,
+        "value": "1920x1080"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 477,
+    "fields": {
+        "product": 19,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 478,
+    "fields": {
+        "product": 19,
+        "attribute": 4,
+        "value": "Intel Core i5-12450HX (2.4 - 4.4 ГГц)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 479,
+    "fields": {
+        "product": 19,
+        "attribute": 21,
+        "value": "Без ОС"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 480,
+    "fields": {
+        "product": 19,
+        "attribute": 41,
+        "value": "12-е Alder Lake"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 481,
+    "fields": {
+        "product": 19,
+        "attribute": 6,
+        "value": "16 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 482,
+    "fields": {
+        "product": 19,
+        "attribute": 22,
+        "value": "DDR5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 483,
+    "fields": {
+        "product": 19,
+        "attribute": 16,
+        "value": "1 ТБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 484,
+    "fields": {
+        "product": 19,
+        "attribute": 42,
+        "value": "PCI Express 4.0 x4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 485,
+    "fields": {
+        "product": 19,
+        "attribute": 28,
+        "value": "Nvidia"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 486,
+    "fields": {
+        "product": 19,
+        "attribute": 47,
+        "value": "GeForce RTX 3050"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 487,
+    "fields": {
+        "product": 19,
+        "attribute": 17,
+        "value": "6 ГБ"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 488,
+    "fields": {
+        "product": 19,
+        "attribute": 26,
+        "value": "Дискретна"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 489,
+    "fields": {
+        "product": 19,
+        "attribute": 13,
+        "value": "2.38"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 490,
+    "fields": {
+        "product": 19,
+        "attribute": 44,
+        "value": "60"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 491,
+    "fields": {
+        "product": 19,
+        "attribute": 27,
+        "value": "Сірий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 492,
+    "fields": {
+        "product": 19,
+        "attribute": 51,
+        "value": "2 х 2 Вт\r\nNahimic Audio"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 493,
+    "fields": {
+        "product": 19,
+        "attribute": 49,
+        "value": "Wi-Fi 802.11ax\r\nBluetooth 5.2\r\nGigabit Ethernet"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 494,
+    "fields": {
+        "product": 19,
+        "attribute": 45,
+        "value": "1 x USB 3.1/3.2 Gen2 Type-C\r\n3 x USB 3.1/3.2 Gen1 Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 495,
+    "fields": {
+        "product": 19,
+        "attribute": 46,
+        "value": "1 x HDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 496,
+    "fields": {
+        "product": 19,
+        "attribute": 9,
+        "value": "3.5 мм (mini-Jack)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 497,
+    "fields": {
+        "product": 19,
+        "attribute": 2,
+        "value": "Екран 15.6\" IPS (1920x1080) Full HD 144 Гц, матовий / Intel Core i5-12450HX (2.4 - 4.4 ГГц) / RAM 16 ГБ / SSD 1 ТБ / nVidia GeForce RTX 3050, 6 ГБ / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / без ОС / 2.38 кг / сірий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 498,
+    "fields": {
+        "product": 19,
+        "attribute": 31,
+        "value": "З Українською розкладкою\r\nЗ підсвіткою клавіатури\r\nЗарядка від USB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 499,
+    "fields": {
+        "product": 19,
+        "attribute": 15,
+        "value": "TGP дискретної відеокарти: 95 Вт"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 500,
+    "fields": {
+        "product": 19,
+        "attribute": 14,
+        "value": "Ноутбук\r\nАдаптер живлення\r\nДокументація"
+    }
+},
+{
     "model": "product.categoryattribute",
     "pk": 2,
     "fields": {
@@ -15254,6 +17960,753 @@
     }
 },
 {
+    "model": "product.productimage",
+    "pk": 117,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 118,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_zU4zraG.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 119,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_vaJnrrl.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 120,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_ClOC03Q.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 121,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_gHuky4J.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 122,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_GCXkKn9.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 123,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_naRUnwO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 124,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_DtCelGR.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 125,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_z67csHn.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 126,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_qzmy7ne.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 127,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_nerlviw.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 128,
+    "fields": {
+        "product": 11,
+        "image": "product_images/04/19/files/product-2025-04-19_09-33-12_WFdGRyW.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 129,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 130,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_hcb0oK5.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 131,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_W2CgExf.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 132,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_MQScjbC.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 133,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_o2PEphc.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 134,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_TivmRCQ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 135,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_gqrTHEu.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 136,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_4avbxOf.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 137,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_MA4TSmF.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 138,
+    "fields": {
+        "product": 12,
+        "image": "product_images/04/19/files/product-2025-04-19_09-55-50_AaqT4km.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 139,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 140,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_DkvdNgb.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 141,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_h0bgJkW.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 142,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_KiKA3Zr.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 143,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_9jQrtAu.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 144,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_hUIP9JR.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 145,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_x5HTGsO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 146,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_Ny3eqMW.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 147,
+    "fields": {
+        "product": 13,
+        "image": "product_images/04/19/files/product-2025-04-19_10-37-45_XOF9RXn.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 148,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 149,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09_KEQyVjq.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 150,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09_5K34iSD.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 151,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09_fmhiNfR.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 152,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09_b4DOtbP.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 153,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09_lMLgOAR.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 154,
+    "fields": {
+        "product": 14,
+        "image": "product_images/04/19/files/product-2025-04-19_10-51-09_6qzqujh.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 162,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 163,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_rV6DsZw.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 164,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_OkgwWbJ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 165,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_BZcFp1O.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 166,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_f1u4Swl.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 167,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_pCCn5D1.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 168,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_8qamWvm.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 169,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_fm4hfE8.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 170,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_dhm5p8Q.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 171,
+    "fields": {
+        "product": 16,
+        "image": "product_images/04/19/files/product-2025-04-19_11-10-46_m6JUWLd.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 172,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 173,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_i248Yrd.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 174,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_i3zbqCd.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 175,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_iQq4PGg.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 176,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_qsChdAx.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 177,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_ZxfCazZ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 178,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_5yoTx1V.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 179,
+    "fields": {
+        "product": 15,
+        "image": "product_images/04/19/files/product-2025-04-19_11-13-26_6NGrr46.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 180,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 181,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_asxX2qU.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 182,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_zb18ggw.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 183,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_eq86wy2.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 184,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_3r44jYQ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 185,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_IW9Vohn.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 186,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_zqYOMU1.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 187,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_YLW7jhH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 188,
+    "fields": {
+        "product": 17,
+        "image": "product_images/04/19/files/product-2025-04-19_11-22-42_nEinX7N.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 189,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 190,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_yNLiRHH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 191,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_1FCz06m.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 192,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_AnnxNuB.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 193,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_EFQNmEP.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 194,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_dANfVoS.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 195,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_iK9b4VC.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 196,
+    "fields": {
+        "product": 18,
+        "image": "product_images/04/19/files/product-2025-04-19_11-45-14_xfMwiEo.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 197,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 198,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_gwIYcVc.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 199,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_lhVbq67.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 200,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_jZ3qzvo.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 201,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_Bcdb2n9.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 202,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_VcWRDWa.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 203,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_7vOi7wI.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 204,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_Nw8VnTw.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 205,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_CytCRfe.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 206,
+    "fields": {
+        "product": 19,
+        "image": "product_images/04/19/files/product-2025-04-19_11-56-21_Wo761Ja.webp",
+        "is_main": false
+    }
+},
+{
     "model": "user.customuser",
     "pk": 1,
     "fields": {
@@ -15264,7 +18717,7 @@
         "phone": null,
         "photo": "",
         "created_at": "2024-12-26T08:38:05.894Z",
-        "last_login": "2025-04-15T12:18:30.089Z",
+        "last_login": "2025-04-19T06:19:31.360Z",
         "is_active": true,
         "is_staff": true,
         "is_superuser": true,
