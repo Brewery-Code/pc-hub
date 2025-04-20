@@ -68,10 +68,20 @@
   fill: var(--action-secondary);
 }
 
+.product__like {
+  cursor: pointer;
+}
+
 .product__like-icon {
   width: 24px;
   margin-left: 8px;
-  fill: var(--action-secondary);
+  fill: none;
+  stroke: var(--action-secondary);
+}
+
+.product__like-icon_active {
+  fill: var(--accent-orange);
+  stroke: none;
 }
 
 .product__buy,

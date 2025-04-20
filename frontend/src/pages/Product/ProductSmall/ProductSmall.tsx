@@ -13,12 +13,16 @@ interface IProductSmallProps {
   product: IProduct;
   className?: string;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
 function ProductSmall({
   product,
   className,
   addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
 }: IProductSmallProps) {
   const { t } = useTranslation("product");
 
@@ -46,8 +50,13 @@ function ProductSmall({
         <div className={styles.product__comparison}>
           <ComparisonIcon className={styles["product__comparison-icon"]} />
         </div>
-        <div className={styles.product__like}>
-          <LikeIcon className={styles["product__like-icon"]} />
+        <div className={styles.product__like} onClick={toggleProductWishlist}>
+          <LikeIcon
+            className={clsx(
+              styles["product__like-icon"],
+              isProductLiked && styles["product__like-icon_active"],
+            )}
+          />
         </div>
       </div>
       <UIButton

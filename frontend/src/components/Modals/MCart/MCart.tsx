@@ -69,7 +69,10 @@ export default function MCart({ isCartOpen, toggleCart }: IMCartProps) {
                   />
                 }
               </div>
-              <button className={styles.product__delete}>
+              <button
+                className={styles.product__delete}
+                onClick={() => changeQuantity(product.id, -product.quantity)}
+              >
                 <BasketIcon />
               </button>
             </li>

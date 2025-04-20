@@ -27,6 +27,8 @@ interface IAllInfoProps {
   className?: string;
   handleSection: (section: string) => () => void;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
 function AllInfo({
@@ -34,6 +36,8 @@ function AllInfo({
   product,
   handleSection,
   addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
 }: IAllInfoProps) {
   const { t } = useTranslation("product");
 
@@ -248,8 +252,16 @@ function AllInfo({
           <div className={styles.head__comparison}>
             <ComparisonIcon className={styles["head__comparison-icon"]} />
           </div>
-          <div className={styles.head__like}>
-            <LikeIcon className={styles["head__like-icon"]} />
+          <div
+            className={clsx(styles.head__like)}
+            onClick={toggleProductWishlist}
+          >
+            <LikeIcon
+              className={clsx(
+                styles["head__like-icon"],
+                isProductLiked && styles["head__like-icon_active"],
+              )}
+            />
           </div>
         </div>
         <div

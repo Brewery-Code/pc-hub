@@ -15,6 +15,8 @@ import clsx from "clsx";
 interface ICreditProps {
   product: IProduct;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
 interface IBank {
@@ -28,7 +30,12 @@ interface IBank {
   icon: JSX.Element;
 }
 
-function Credit({ product, addProductToCart }: ICreditProps) {
+function Credit({
+  product,
+  addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
+}: ICreditProps) {
   const { t } = useTranslation("product");
 
   const [banksList, setBanksList] = useState<IBank[]>([
@@ -255,6 +262,8 @@ function Credit({ product, addProductToCart }: ICreditProps) {
         addProductToCart={addProductToCart}
         product={product}
         className={styles.credit__product}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
       />
     </div>
   );

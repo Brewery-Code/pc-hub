@@ -10,7 +10,12 @@ import AllInfo from "./AllInfo/AllInfo";
 import Characteristics from "./Characteristics/Characteristics";
 import Reviews from "./Reviews/Reviews";
 import Credit from "./Credit/Credit";
-import { addToCart } from "../../store/user/user.slice";
+import {
+  addToCart,
+  addToWishlist,
+  deleteFromWishlist,
+  fetchWishlist,
+} from "../../store/user/user.slice";
 
 function Product() {
   const location = useLocation();
@@ -18,7 +23,7 @@ function Product() {
   const id = state.id.toString();
   const dispatch = useAppDispatch();
   const { product } = useSelector((state: RootState) => state.product);
-  const { access } = useSelector((state: RootState) => state.user);
+  const { access, wishlist } = useSelector((state: RootState) => state.user);
 
   useEffect(() => {
     if (id) dispatch(fetchProduct(id));
@@ -27,6 +32,28 @@ function Product() {
   const addProductToCart = () => {
     if (access) dispatch(addToCart({ access: access, product_id: product.id }));
     else dispatch(addToCart({ product_id: product.id }));
+  };
+
+  const [isProductLiked, setIsProductLiked] = useState(false);
+  useEffect(() => {
+    setIsProductLiked(checkIsProductLiked());
+  }, [wishlist]);
+
+  const checkIsProductLiked = () => {
+    const productID = wishlist.items?.find((item) => item.id === product.id);
+    if (productID) return true;
+    else return false;
+  };
+
+  const toggleProductWishlist = async () => {
+    if (checkIsProductLiked()) {
+      await dispatch(deleteFromWishlist({ access, product_id: product.id }));
+      setIsProductLiked(false);
+    } else {
+      await dispatch(addToWishlist({ access, product_id: product.id }));
+      setIsProductLiked(true);
+    }
+    dispatch(fetchWishlist({ access }));
   };
 
   const [activeSection, setActiveSection] = useState("AllProducts");
@@ -49,19 +76,33 @@ function Product() {
               product={product}
               handleSection={handleSection}
               addProductToCart={addProductToCart}
+              toggleProductWishlist={toggleProductWishlist}
+              isProductLiked={isProductLiked}
             />
           )}
           {activeSection === "Characteristics" && (
             <Characteristics
               product={product}
               addProductToCart={addProductToCart}
+              toggleProductWishlist={toggleProductWishlist}
+              isProductLiked={isProductLiked}
             />
           )}
           {activeSection === "Reviews" && (
-            <Reviews product={product} addProductToCart={addProductToCart} />
+            <Reviews
+              product={product}
+              addProductToCart={addProductToCart}
+              toggleProductWishlist={toggleProductWishlist}
+              isProductLiked={isProductLiked}
+            />
           )}
           {activeSection === "Credit" && (
-            <Credit product={product} addProductToCart={addProductToCart} />
+            <Credit
+              product={product}
+              addProductToCart={addProductToCart}
+              toggleProductWishlist={toggleProductWishlist}
+              isProductLiked={isProductLiked}
+            />
           )}
         </div>
       </div>

@@ -45,11 +45,11 @@
   align-items: center;
 }
 
-.head__comparison:hover .head__comparison-icon,
+/* .head__comparison:hover .head__comparison-icon,
 .head__like:hover .head__like-icon {
   fill: var(--accent-orange);
   stroke: var(--accent-orange);
-}
+} */
 
 .head__comparison {
   margin-left: auto;
@@ -70,6 +70,12 @@
 
 .head__like-icon {
   width: 19px;
+  fill: none;
+}
+
+.head__like-icon_active {
+  stroke: var(--accent-orange);
+  fill: var(--accent-orange);
 }
 
 .card__img-container {

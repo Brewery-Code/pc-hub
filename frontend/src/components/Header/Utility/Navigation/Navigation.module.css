@@ -21,22 +21,25 @@
   height: 40px;
   fill: var(--dark);
   stroke: var(--dark);
-  transition:
-    fill 0.3s ease,
-    stroke 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.navigation__likeIcon {
+  width: 34px;
+  height: 34px;
+  fill: none;
 }
 
 .navigation__comparisonIcon:hover,
 .navigation__likeIcon:hover,
 .navigation__cartIcon:hover {
-  fill: var(--accent-orange);
-  stroke: var(--accent-orange);
+  transform: scale(1.1);
 }
 
 .navigation__comparison::before,
 .navigation__like::before,
 .navigation__cart::before {
-  /* content: attr(cart-count); */
+  z-index: 1;
   position: absolute;
   top: -8px;
   right: -5px;
@@ -53,7 +56,12 @@
   line-height: 100%;
 }
 
-.navigation__cartIcon_active::before {
+.navigation__like_active::before {
+  content: attr(wishlist-quantity);
+  display: flex;
+}
+
+.navigation__cart_active::before {
   content: attr(cart-quantity);
   display: flex;
 }

@@ -10,9 +10,16 @@ import clsx from "clsx";
 interface IReviewsProps {
   product: IProduct;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
-function Reviews({ product, addProductToCart }: IReviewsProps) {
+function Reviews({
+  product,
+  addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
+}: IReviewsProps) {
   const { t } = useTranslation("product");
 
   return (
@@ -142,6 +149,8 @@ function Reviews({ product, addProductToCart }: IReviewsProps) {
         product={product}
         className="only-desktop"
         addProductToCart={addProductToCart}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
       />
     </div>
   );

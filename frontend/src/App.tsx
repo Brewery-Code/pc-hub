@@ -5,7 +5,11 @@ import { RootState, useAppDispatch } from "./store/store";
 import { Header } from "./components";
 import { Main } from "./components";
 import { Footer } from "./components";
-import { fetchCart, fetchUserInfo } from "./store/user/user.slice";
+import {
+  fetchCart,
+  fetchUserInfo,
+  fetchWishlist,
+} from "./store/user/user.slice";
 
 function App() {
   const { access } = useSelector((state: RootState) => state.user);
@@ -16,6 +20,10 @@ function App() {
 
   useEffect(() => {
     dispatch(fetchCart({ access }));
+  }, [dispatch, access]);
+
+  useEffect(() => {
+    dispatch(fetchWishlist({ access }));
   }, [dispatch, access]);
 
   const location = useLocation();

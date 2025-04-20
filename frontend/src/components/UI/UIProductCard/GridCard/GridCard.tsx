@@ -13,6 +13,8 @@ interface ICardProps {
   color?: "light" | "dark";
   key?: string | number;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
 export default function GridCard({
@@ -20,6 +22,8 @@ export default function GridCard({
   className,
   color,
   addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
 }: ICardProps) {
   const { t } = useTranslation("components");
   return (
@@ -40,8 +44,20 @@ export default function GridCard({
         <button className={styles.head__comparison}>
           <ComparisonIcon className={styles["head__comparison-icon"]} />
         </button>
-        <button className={styles.head__like}>
-          <LikeIcon className={styles["head__like-icon"]} />
+        <button
+          className={styles.head__like}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleProductWishlist();
+          }}
+        >
+          <LikeIcon
+            className={clsx(
+              styles["head__like-icon"],
+              isProductLiked && styles["head__like-icon_active"],
+            )}
+          />
         </button>
       </div>
       <div className={styles["card__img-container"]}>

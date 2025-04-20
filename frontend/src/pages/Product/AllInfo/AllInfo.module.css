@@ -235,12 +235,22 @@
 
 .head__like {
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .head__comparison-icon,
 .head__like-icon {
   stroke: var(--action-secondary);
   fill: var(--action-secondary);
+}
+
+.head__like-icon {
+  fill: none;
+}
+
+.head__like-icon_active {
+  fill: var(--accent-orange);
+  stroke: none;
 }
 
 .head__comparison-icon {

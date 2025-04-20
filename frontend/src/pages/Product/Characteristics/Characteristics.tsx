@@ -6,9 +6,16 @@ import ProductSmall from "../ProductSmall/ProductSmall";
 interface ICharacteristicsProps {
   product: IProduct;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
-function Characteristics({ product, addProductToCart }: ICharacteristicsProps) {
+function Characteristics({
+  product,
+  addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
+}: ICharacteristicsProps) {
   const { t } = useTranslation("product");
   return (
     <div className={styles.characteristics}>
@@ -29,6 +36,8 @@ function Characteristics({ product, addProductToCart }: ICharacteristicsProps) {
         product={product}
         className={"only-desktop"}
         addProductToCart={addProductToCart}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
       />
       <div className={styles.product__warning}>
         {t("characteristicsSection.warning")}

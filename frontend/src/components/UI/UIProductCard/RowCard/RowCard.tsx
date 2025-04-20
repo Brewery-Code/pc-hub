@@ -14,6 +14,8 @@ interface ICardProps {
   color?: "light" | "dark";
   key?: string | number;
   addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
 }
 
 export default function RowCard({
@@ -22,6 +24,8 @@ export default function RowCard({
   color,
   key,
   addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
 }: ICardProps) {
   const { t } = useTranslation("components");
   return (
@@ -51,7 +55,18 @@ export default function RowCard({
           <ComparisonIcon
             className={clsx(styles.nav__comparisonIcon, "only-mobile")}
           />
-          <LikeIcon className={clsx(styles.nav__likeIcon, "only-mobile")} />
+          <LikeIcon
+            className={clsx(
+              styles.nav__likeIcon,
+              "only-mobile",
+              isProductLiked && styles.nav__likeIcon_active,
+            )}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              toggleProductWishlist();
+            }}
+          />
           <div className={styles.head__code}>
             {t("productCard.productCode")}: {product.id}
           </div>
@@ -67,7 +82,18 @@ export default function RowCard({
             <ComparisonIcon
               className={clsx(styles.nav__comparisonIcon, "only-desktop")}
             />
-            <LikeIcon className={clsx(styles.nav__likeIcon, "only-desktop")} />
+            <LikeIcon
+              className={clsx(
+                styles.nav__likeIcon,
+                "only-desktop",
+                isProductLiked && styles.nav__likeIcon_active,
+              )}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleProductWishlist();
+              }}
+            />
           </div>
           <div className={styles.card__description}>{product.description}</div>
         </div>

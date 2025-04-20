@@ -48,6 +48,22 @@ interface ICart {
   total_price: number;
 }
 
+interface IWishlistProduct {
+  id: string;
+  name: string;
+  description: string;
+  price: number;
+  discounted_price: number;
+  rating: number;
+  main_image?: string;
+  is_new: boolean;
+}
+
+interface IWishlist {
+  wishlist_id: number;
+  items: IWishlistProduct[];
+}
+
 interface IUser {
   status: "idle" | "pending" | "succeeded" | "failed";
   error: string | null;
@@ -58,6 +74,7 @@ interface IUser {
   phone: number | null;
   photo: string;
   cart: ICart;
+  wishlist: IWishlist;
 }
 
 enum SignFormState {

@@ -2,9 +2,8 @@ import clsx from "clsx";
 import { CartIcon, ComparisonIcon, LikeIcon } from "../../../../assets/icons";
 import styles from "./Navigation.module.css";
 import { useSelector } from "react-redux";
-import { RootState, useAppDispatch } from "../../../../store/store";
-import { useEffect, useState } from "react";
-import { fetchCart } from "../../../../store/user/user.slice";
+import { RootState } from "../../../../store/store";
+import { useState } from "react";
 import MCart from "../../../Modals/MCart/MCart";
 
 interface INavigationProps {
@@ -12,12 +11,7 @@ interface INavigationProps {
 }
 
 function Navigation({ isClassName }: INavigationProps) {
-  const { access, cart } = useSelector((state: RootState) => state.user);
-  const dispatch = useAppDispatch();
-  useEffect(() => {
-    dispatch(fetchCart({ access }));
-  }, [dispatch, access]);
-
+  const { cart, wishlist } = useSelector((state: RootState) => state.user);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const toggleCart = () => {
     setIsCartOpen((prev) => !prev);
@@ -28,13 +22,20 @@ function Navigation({ isClassName }: INavigationProps) {
       <div className={clsx(styles.navigation__comparison, "only-desktop")}>
         <ComparisonIcon className={styles.navigation__comparisonIcon} />
       </div>
-      <div className={clsx(styles.navigation__like, "only-desktop")}>
+      <div
+        className={clsx(
+          styles.navigation__like,
+          "only-desktop",
+          wishlist?.items?.length > 0 && styles.navigation__like_active,
+        )}
+        wishlist-quantity={wishlist?.items?.length}
+      >
         <LikeIcon className={styles.navigation__likeIcon} />
       </div>
       <div
         className={clsx(
           styles.navigation__cart,
-          cart.items.length > 0 && styles.navigation__cartIcon_active,
+          cart?.items?.length > 0 && styles.navigation__cart_active,
         )}
         onClick={toggleCart}
         cart-quantity={cart.quantity}

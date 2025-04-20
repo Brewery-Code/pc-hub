@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import i18n from "../../locales/i18n";
-import { ICart, ICartProduct, IProduct, IUser } from "../types";
+import { ICartProduct, IUser } from "../types";
 
 const authorizedRequest = async (
   url: string,
@@ -188,6 +188,67 @@ const changeCartQuantity = createAsyncThunk(
   },
 );
 
+const fetchWishlist = createAsyncThunk(
+  "user/fetchWishlist",
+  async ({ access }: { access?: string | null }, { dispatch }) => {
+    return await authorizedRequest(
+      `${import.meta.env.VITE_API_BASE_URL}/core/wishlist/`,
+      {
+        method: "GET",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: access ? `Bearer ${access}` : "",
+        },
+      },
+      dispatch,
+    );
+  },
+);
+
+const addToWishlist = createAsyncThunk(
+  "user/addToWishlist",
+  async (
+    { access, product_id }: { access?: string | null; product_id: string },
+    { dispatch },
+  ) => {
+    return await authorizedRequest(
+      `${import.meta.env.VITE_API_BASE_URL}/core/wishlist/`,
+      {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: access ? `Bearer ${access}` : "",
+        },
+        body: JSON.stringify({ product_id }),
+      },
+      dispatch,
+    );
+  },
+);
+
+const deleteFromWishlist = createAsyncThunk(
+  "user/deleteFromWishlist",
+  async (
+    { access, product_id }: { access?: string | null; product_id: string },
+    { dispatch },
+  ) => {
+    return await authorizedRequest(
+      `${import.meta.env.VITE_API_BASE_URL}/core/wishlist/${product_id}/`,
+      {
+        method: "DELETE",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: access ? `Bearer ${access}` : "",
+        },
+      },
+      dispatch,
+    );
+  },
+);
+
 const initialState: IUser = {
   status: "idle",
   error: null,
@@ -202,6 +263,10 @@ const initialState: IUser = {
     items: [],
     quantity: 0,
     total_price: 0,
+  },
+  wishlist: {
+    wishlist_id: 0,
+    items: [],
   },
 };
 
@@ -310,6 +375,41 @@ const userSlice = createSlice({
       .addCase(changeCartQuantity.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message ?? "Unknown error";
+      })
+      //----------Get User Wishlist----------//
+      .addCase(fetchWishlist.pending, (state) => {
+        state.status = "pending";
+      })
+      .addCase(fetchWishlist.fulfilled, (state, action) => {
+        state.status = "succeeded";
+        state.wishlist = action.payload;
+        console.log(action.payload);
+      })
+      .addCase(fetchWishlist.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message ?? "Unknown error";
+      })
+      //----------Add To The Wishlist----------//
+      .addCase(addToWishlist.pending, (state) => {
+        state.status = "pending";
+      })
+      .addCase(addToWishlist.fulfilled, (state, action) => {
+        state.status = "succeeded";
+      })
+      .addCase(addToWishlist.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message ?? "Unknown error";
+      })
+      //----------Delete From Wishlist----------//
+      .addCase(deleteFromWishlist.pending, (state) => {
+        state.status = "pending";
+      })
+      .addCase(deleteFromWishlist.fulfilled, (state, action) => {
+        state.status = "succeeded";
+      })
+      .addCase(deleteFromWishlist.rejected, (state, action) => {
+        state.status = "failed";
+        state.error = action.error.message ?? "Unknown error";
       });
   },
 });
@@ -324,4 +424,7 @@ export {
   fetchCart,
   addToCart,
   changeCartQuantity,
+  fetchWishlist,
+  addToWishlist,
+  deleteFromWishlist,
 };
