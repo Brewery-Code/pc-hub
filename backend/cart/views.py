@@ -80,6 +80,7 @@ class CartViewSet(ViewSet):
                     "name": item.product.name,
                     "quantity": item.quantity,
                     "price": item.price,
+                    "discounted_price": item.product.discounted_price,
                     "main_image": get_main_image_url(request, item.product),
                 }
                 for item in cart_items

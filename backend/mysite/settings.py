@@ -214,3 +214,4 @@ SWAGGER_SETTINGS = {
 
 # Sessions
 CART_SESSION_ID = "cart"
+WISHLIST_SESSION_ID = "wishlist"

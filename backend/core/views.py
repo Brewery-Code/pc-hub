@@ -1,3 +1,4 @@
+from django.conf import settings
 from rest_framework.generics import ListAPIView, get_object_or_404
 from rest_framework.viewsets import ViewSet
 from .models import *
@@ -7,6 +8,14 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import AllowAny
+
+
+def get_main_image_url(request, product):
+    """Повертає абсолютний URL головного зображення товару."""
+    main_image = product.productimage_set.filter(is_main=True).first()
+    if main_image and main_image.image:
+        return request.build_absolute_uri(main_image.image.url)
+    return None
 
 
 class PartnerApiView(ListAPIView):
@@ -132,17 +141,11 @@ class WishlistViewSet(ViewSet):
         """
         if request.user.is_authenticated:
             wishlist, _ = Wishlist.objects.get_or_create(user=request.user)
+            return wishlist
         else:
-            session_key = request.session.session_key
-            if not session_key:
-                request.session.create()
-                session_key = request.session.session_key
-
-            wishlist, _ = Wishlist.objects.get_or_create(session_id=session_key)
-
-        wishlist.last_accessed = now()
-        wishlist.save()
-        return wishlist
+            if settings.WISHLIST_SESSION_ID not in request.session:
+                request.session[settings.WISHLIST_SESSION_ID] = {}
+            return request.session[settings.WISHLIST_SESSION_ID]
 
     def list(self, request) -> Response:
         """
@@ -152,14 +155,49 @@ class WishlistViewSet(ViewSet):
             Response:
                 - 200 OK: Якщо список товарів повернено успішно.
         """
-        wishlist = self.get_wishlist(request)
-        wishlist_items = WishlistItem.objects.filter(wishlist=wishlist)
-        products = [item.product for item in wishlist_items]
+        if request.user.is_authenticated:
+            wishlist = self.get_wishlist(request)
+            wishlist_items = WishlistItem.objects.filter(wishlist=wishlist)
 
-        serializer = ProductWishlistSerializer(
-            products, many=True, context={"request": request}
-        )
-        return Response(serializer.data, status=status.HTTP_200_OK)
+            items = [
+                {
+                    "id": item.product.id,
+                    "name": item.product.name,
+                    "description": item.product.description,
+                    "price": item.product.price,
+                    "discounted_price": item.product.discounted_price,
+                    "rating": item.product.rating,
+                    "is_new": item.product.is_new(),
+                    "main_image": get_main_image_url(request, item.product),
+                }
+                for item in wishlist_items
+            ]
+            response_data = {"wishlist_id": wishlist.id, "items": items}
+        else:
+            session_wishlist = self.get_wishlist(request)
+            items = []
+            for product_id_str, data in session_wishlist.items():
+                try:
+                    product = Product.objects.get(pk=int(product_id_str))
+                    items.append(
+                        {
+                            "id": product.id,
+                            "name": product.name,
+                            "description": product.description,
+                            "price": product.price,
+                            "discounted_price": product.discounted_price,
+                            "rating": product.rating,
+                            "is_new": product.is_new(),
+                            "main_image": get_main_image_url(request, product),
+                        }
+                    )
+                except Product.DoesNotExist:
+                    continue
+            response_data = {
+                "wishlist_id": None,
+                "items": items,
+            }
+        return Response(response_data, status=status.HTTP_200_OK)
 
     def create(self, request) -> Response:
         """
@@ -175,27 +213,47 @@ class WishlistViewSet(ViewSet):
                 - 400 BAD REQUEST: Якщо не передано ID товару.
                 - 404 NOT FOUND: Якщо товар не знайдено.
         """
-        wishlist = self.get_wishlist(request)
         product_id = request.data.get("product_id")
-
         if not product_id:
             return Response(
                 {"error": "Product ID is required"}, status=status.HTTP_400_BAD_REQUEST
             )
 
-        product = get_object_or_404(Product, id=product_id)
-
-        wishlist_item, created = WishlistItem.objects.get_or_create(
-            wishlist=wishlist, product=product
-        )
-
-        if created:
+        try:
+            product = Product.objects.get(id=product_id)
+        except Product.DoesNotExist:
             return Response(
-                {"message": "Product added to wishlist"}, status=status.HTTP_201_CREATED
+                {"error": "Product not found"}, status=status.HTTP_404_NOT_FOUND
             )
+
+        wishlist = self.get_wishlist(request)
+
+        if request.user.is_authenticated:
+            wishlist_item, created = WishlistItem.objects.get_or_create(
+                wishlist=wishlist, product=product
+            )
+            if created:
+                return Response(
+                    {"message": "Product added to wishlist"},
+                    status=status.HTTP_201_CREATED,
+                )
+            else:
+                return Response(
+                    {"message": "Product is already in wishlist"},
+                    status=status.HTTP_200_OK,
+                )
         else:
+            product_key = str(product_id)
+            if product_key in wishlist:
+                return Response(
+                    {"message": "Product is already in wishlist"},
+                    status=status.HTTP_200_OK,
+                )
+            wishlist[product_key] = {}
+            request.session[settings.WISHLIST_SESSION_ID] = wishlist
             return Response(
-                {"message": "Product is already in wishlist"}, status=status.HTTP_200_OK
+                {"message": "Product added to wishlist"},
+                status=status.HTTP_201_CREATED,
             )
 
     def destroy(self, request, pk=None) -> Response:
@@ -211,17 +269,33 @@ class WishlistViewSet(ViewSet):
                 - 404 NOT FOUND: Якщо товар не знайдено у списку бажаного.
         """
         wishlist = self.get_wishlist(request)
-        product = get_object_or_404(Product, id=pk)
 
-        deleted, _ = WishlistItem.objects.filter(
-            wishlist=wishlist, product=product
-        ).delete()
-
-        if deleted:
-            return Response(
-                {"message": "Product removed from wishlist"}, status=status.HTTP_200_OK
-            )
-
-        return Response(
-            {"error": "Product not in wishlist"}, status=status.HTTP_404_NOT_FOUND
-        )
+        if request.user.is_authenticated:
+            try:
+                wishlist_item = WishlistItem.objects.get(
+                    wishlist=wishlist, product_id=pk
+                )
+                wishlist_item.delete()
+                return Response(
+                    {"message": "Product removed from wishlist"},
+                    status=status.HTTP_200_OK,
+                )
+            except WishlistItem.DoesNotExist:
+                return Response(
+                    {"error": "Product not in wishlist"},
+                    status=status.HTTP_404_NOT_FOUND,
+                )
+        else:
+            product_key = str(pk)
+            if product_key in wishlist:
+                del wishlist[product_key]
+                request.session[settings.WISHLIST_SESSION_ID] = wishlist
+                return Response(
+                    {"message": "Product removed from wishlist"},
+                    status=status.HTTP_200_OK,
+                )
+            else:
+                return Response(
+                    {"error": "Product not in wishlist"},
+                    status=status.HTTP_404_NOT_FOUND,
+                )
