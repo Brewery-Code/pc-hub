@@ -1,4 +1,3 @@
-import { IProduct } from "../../../store/topSales/topSales.slice";
 import RowCard from "./RowCard/RowCard";
 import GridCard from "./GridCard/GridCard";
 import { useSelector } from "react-redux";
@@ -11,9 +10,10 @@ import {
   fetchWishlist,
 } from "../../../store/user/user.slice";
 import { useEffect, useState } from "react";
+import { IWishlistProduct, IProduct } from "../../../store/types";
 
 interface IUIProductCardProps {
-  product: IProduct;
+  product: IProduct | IWishlistProduct;
   className?: string;
   type?: "grid" | "row";
   color?: "light" | "dark";

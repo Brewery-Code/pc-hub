@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IProduct } from "../../../../store/types";
+import { IProduct, IWishlistProduct } from "../../../../store/types";
 import clsx from "clsx";
 import styles from "./GridCard.module.css";
 import { CartIcon, ComparisonIcon, LikeIcon } from "../../../../assets/icons";
@@ -8,7 +8,7 @@ import UIButton from "../../UIButton/UIButton";
 import { useTranslation } from "react-i18next";
 import UIProductPrice from "../../UIProductPrice/UIProductPrice";
 interface ICardProps {
-  product: IProduct;
+  product: IProduct | IWishlistProduct;
   className?: string;
   color?: "light" | "dark";
   key?: string | number;
@@ -29,7 +29,7 @@ export default function GridCard({
   return (
     <Link
       key="1"
-      to={`/products/${product.slug}`}
+      to={`/products/${product.slug}/`}
       state={{ id: product.id }}
       className={clsx(
         styles.card,

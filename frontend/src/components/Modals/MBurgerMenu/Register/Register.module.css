@@ -75,6 +75,10 @@
     margin-top 0.3s ease;
 }
 
+.accordion__item:nth-child(2) .accordion__itemIcon {
+  fill: none;
+}
+
 .accordion__item {
   display: flex;
   justify-content: start;
@@ -86,7 +90,7 @@
   font-weight: 500;
 }
 
-.cart__icon {
+.accordion__itemIcon {
   width: 24px;
   height: 24px;
   stroke: var(--some-1);

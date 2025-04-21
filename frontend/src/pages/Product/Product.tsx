@@ -3,7 +3,7 @@ import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./Product.module.css";
 import { useEffect, useState } from "react";
 import { fetchProduct } from "../../store/product/product.slice";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
 import Head from "./Head/Head";
 import AllInfo from "./AllInfo/AllInfo";
@@ -17,6 +17,8 @@ import {
   fetchWishlist,
 } from "../../store/user/user.slice";
 
+function RenderSection({ nav }: { nav: string | null }) {}
+
 function Product() {
   const location = useLocation();
   const state = location.state;
@@ -24,6 +26,12 @@ function Product() {
   const dispatch = useAppDispatch();
   const { product } = useSelector((state: RootState) => state.product);
   const { access, wishlist } = useSelector((state: RootState) => state.user);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const nav = searchParams.get("nav");
+
+  useEffect(() => {
+    if (!nav) setSearchParams({ nav: "allInfo" });
+  }, []);
 
   useEffect(() => {
     if (id) dispatch(fetchProduct(id));
@@ -70,7 +78,8 @@ function Product() {
             handleSection={handleSection}
             activeSection={activeSection}
           />
-          {activeSection === "AllProducts" && (
+          <RenderSection />
+          {nav === "allInfo" && (
             <AllInfo
               className={styles.product__body}
               product={product}

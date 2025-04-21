@@ -1,0 +1,16 @@
+{
+  "nav": {
+    "history": "Order history",
+    "wishlist": "Wishlist",
+    "viewed": "Viewed products",
+    "reviews": "My reviews",
+    "profile": "Profile"
+  },
+  "wishlist": {
+    "title": "Wishlist",
+    "share": "Share in Facebook",
+    "copy": "Copy link",
+    "send": "Send to friend",
+    "empty": "Your list is still empty"
+  }
+}

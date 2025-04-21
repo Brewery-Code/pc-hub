@@ -34,6 +34,7 @@ interface IProduct {
 
 interface ICartProduct {
   id: string;
+  slug: string;
   name: string;
   price: number;
   discounted_price: number;
@@ -51,6 +52,7 @@ interface ICart {
 interface IWishlistProduct {
   id: string;
   name: string;
+  slug: string;
   description: string;
   price: number;
   discounted_price: number;
@@ -89,4 +91,6 @@ export {
   SignFormState,
   type ICart,
   type ICartProduct,
+  type IWishlist,
+  type IWishlistProduct,
 };

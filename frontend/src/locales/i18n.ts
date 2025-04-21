@@ -11,6 +11,8 @@ import enCatalog from "./en/catalog.json";
 import ukCatalog from "./uk/catalog.json";
 import enProduct from "./en/product.json";
 import ukProduct from "./uk/product.json";
+import enUser from "./en/user.json";
+import ukUser from "./uk/user.json";
 
 i18n
   .use(LanguageDetector)
@@ -23,6 +25,7 @@ i18n
         modals: enModals,
         catalog: enCatalog,
         product: enProduct,
+        user: enUser,
       },
       uk: {
         components: ukComponents,
@@ -30,6 +33,7 @@ i18n
         modals: ukModals,
         catalog: ukCatalog,
         product: ukProduct,
+        user: ukUser,
       },
     },
     detection: {

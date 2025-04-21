@@ -48,4 +48,4 @@ const topSalesSlice = createSlice({
   },
 });
 
-export { topSalesSlice, fetchTopSales, type IProduct };
+export { topSalesSlice, fetchTopSales };

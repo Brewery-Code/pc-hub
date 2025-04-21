@@ -17,6 +17,22 @@ import { useAuth } from "../../../../hooks";
 import { RootState, useAppDispatch } from "../../../../store/store";
 import { signOutUser } from "../../../../store/user/user.slice";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+
+const RenderAccordionItem = ({
+  Icon,
+  text,
+  link,
+}: {
+  Icon: React.ElementType;
+  text: string;
+  link: string;
+}) => (
+  <Link to={`${link}`} className={styles.accordion__item}>
+    <Icon className={styles.accordion__itemIcon} />
+    {text}
+  </Link>
+);
 
 interface IRegisterProps {
   className?: string;
@@ -44,13 +60,6 @@ export default function Register({ className }: IRegisterProps) {
 
   const openForm = (form: SignFormState) => setWhichFormIsOpen(form);
   const closeForms = () => setWhichFormIsOpen(SignFormState.None);
-
-  const renderAccordionItem = (Icon: React.ElementType, text: string) => (
-    <li className={styles.accordion__item}>
-      <Icon className={styles.cart__icon} />
-      {text}
-    </li>
-  );
 
   return (
     <div className={clsx(className, styles.register)}>
@@ -120,11 +129,31 @@ export default function Register({ className }: IRegisterProps) {
               marginTop: isAccordionOpen ? 12 : 0,
             }}
           >
-            {renderAccordionItem(CartIcon, t("burgerMenu.orderHistory"))}
-            {renderAccordionItem(LikeIcon, t("burgerMenu.liked"))}
-            {renderAccordionItem(EyeIcon, t("burgerMenu.viewed"))}
-            {renderAccordionItem(CommentIcon, t("burgerMenu.myReviews"))}
-            {renderAccordionItem(ProfileIcon, t("burgerMenu.profile"))}
+            <RenderAccordionItem
+              Icon={CartIcon}
+              text={t("burgerMenu.orderHistory")}
+              link={"/user/?nav=history"}
+            />
+            <RenderAccordionItem
+              Icon={LikeIcon}
+              text={t("burgerMenu.liked")}
+              link={"/user/?nav=wishlist"}
+            />
+            <RenderAccordionItem
+              Icon={EyeIcon}
+              text={t("burgerMenu.viewed")}
+              link={"/user/?nav=viewed"}
+            />
+            <RenderAccordionItem
+              Icon={CommentIcon}
+              text={t("burgerMenu.myReviews")}
+              link={"/user/?nav=reviews"}
+            />
+            <RenderAccordionItem
+              Icon={ProfileIcon}
+              text={t("burgerMenu.profile")}
+              link={"/user/?nav=profile"}
+            />
           </ul>
           <div className={styles.register__line}></div>
         </div>

@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "../../../../store/store";
 import { useState } from "react";
 import MCart from "../../../Modals/MCart/MCart";
+import { Link } from "react-router-dom";
 
 interface INavigationProps {
   isClassName?: string;
@@ -22,7 +23,8 @@ function Navigation({ isClassName }: INavigationProps) {
       <div className={clsx(styles.navigation__comparison, "only-desktop")}>
         <ComparisonIcon className={styles.navigation__comparisonIcon} />
       </div>
-      <div
+      <Link
+        to={"/user/?nav=wishlist"}
         className={clsx(
           styles.navigation__like,
           "only-desktop",
@@ -31,7 +33,7 @@ function Navigation({ isClassName }: INavigationProps) {
         wishlist-quantity={wishlist?.items?.length}
       >
         <LikeIcon className={styles.navigation__likeIcon} />
-      </div>
+      </Link>
       <div
         className={clsx(
           styles.navigation__cart,

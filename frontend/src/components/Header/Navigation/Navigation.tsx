@@ -10,10 +10,27 @@ import { UIChangeLanguage } from "../../UI";
 import { LogoIcon, PhoneIcon, ProfileIcon } from "../../../assets/icons";
 import styles from "./Navigation.module.css";
 
+function PrintProfileIcon({
+  isAuth,
+  photo,
+}: {
+  isAuth: boolean;
+  photo: string;
+}) {
+  return (
+    <Link to={"/user/?nav=profile"} className="only-desktop">
+      {!isAuth ? (
+        <ProfileIcon className={styles.navigation__profile} />
+      ) : (
+        <img className={styles.navigation__profile} src={photo} />
+      )}
+    </Link>
+  );
+}
+
 function Navigation() {
   const { isAuth } = useAuth();
   const { photo } = useSelector((state: RootState) => state.user);
-
   const { t } = useTranslation<string>("components");
 
   return (
@@ -29,7 +46,7 @@ function Navigation() {
             <NavigationLink>{t("header.secondHand")}</NavigationLink>
             <NavigationLink>{t("header.contacts")}</NavigationLink>
           </ul>
-          <Link to="">
+          <Link to="/">
             <LogoIcon
               className={clsx("only-mobile", styles.navigation__logo)}
             />
@@ -40,16 +57,7 @@ function Navigation() {
           <UIChangeLanguage
             className={clsx("only-desktop", styles.navigation__language)}
           />
-          {!isAuth ? (
-            <ProfileIcon
-              className={clsx("only-desktop", styles.navigation__profile)}
-            />
-          ) : (
-            <img
-              className={clsx(styles.navigation__profile, "only-desktop")}
-              src={photo}
-            />
-          )}
+          <PrintProfileIcon isAuth={isAuth} photo={photo} />
         </div>
       </div>
     </nav>

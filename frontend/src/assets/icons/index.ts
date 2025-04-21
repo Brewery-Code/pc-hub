@@ -49,3 +49,6 @@ export { default as EyeIcon } from "./EyeIcon";
 export { default as GridViewIcon } from "./GridViewIcon";
 export { default as RowViewIcon } from "./RowViewIcon";
 export { default as BasketIcon } from "./BasketIcon";
+export { default as LetterIcon } from "./LetterIcon";
+export { default as ShareIcon } from "./ShareIcon";
+export { default as CopyLinkIcon } from "./CopyLinkIcon";

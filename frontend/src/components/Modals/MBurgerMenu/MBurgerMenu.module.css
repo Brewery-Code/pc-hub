@@ -72,6 +72,10 @@
   stroke: var(--soft);
 }
 
+.menu__like-icon {
+  fill: none;
+}
+
 @media (max-width: 767.8px) {
   .menu {
     width: 274px;

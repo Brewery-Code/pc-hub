@@ -120,6 +120,7 @@ const fetchCart = createAsyncThunk(
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
+          "Accept-Language": i18n.language,
           Authorization: access ? `Bearer ${access}` : "",
         },
       },
@@ -198,6 +199,7 @@ const fetchWishlist = createAsyncThunk(
         credentials: "include",
         headers: {
           "Content-Type": "application/json",
+          "Accept-Language": i18n.language,
           Authorization: access ? `Bearer ${access}` : "",
         },
       },
@@ -381,9 +383,9 @@ const userSlice = createSlice({
         state.status = "pending";
       })
       .addCase(fetchWishlist.fulfilled, (state, action) => {
+        console.log(action.payload);
         state.status = "succeeded";
         state.wishlist = action.payload;
-        console.log(action.payload);
       })
       .addCase(fetchWishlist.rejected, (state, action) => {
         state.status = "failed";

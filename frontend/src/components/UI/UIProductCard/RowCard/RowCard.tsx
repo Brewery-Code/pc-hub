@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { IProduct } from "../../../../store/types";
+import { IProduct, IWishlistProduct } from "../../../../store/types";
 import styles from "./RowCard.module.css";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
@@ -9,7 +9,7 @@ import UIButton from "../../UIButton/UIButton";
 import UIProductPrice from "../../UIProductPrice/UIProductPrice";
 
 interface ICardProps {
-  product: IProduct;
+  product: IProduct | IWishlistProduct;
   className?: string;
   color?: "light" | "dark";
   key?: string | number;
@@ -30,8 +30,8 @@ export default function RowCard({
   const { t } = useTranslation("components");
   return (
     <Link
-      key="1"
-      to={`/products/${product.slug}`}
+      key={key}
+      to={`/products/${product.slug}/`}
       state={{ id: product.id }}
       className={clsx(
         styles.card,
