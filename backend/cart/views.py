@@ -78,6 +78,7 @@ class CartViewSet(ViewSet):
                 {
                     "id": item.product.id,
                     "name": item.product.name,
+                    "slug": item.product.slug,
                     "quantity": item.quantity,
                     "price": item.price,
                     "discounted_price": item.product.discounted_price,
@@ -101,8 +102,10 @@ class CartViewSet(ViewSet):
                         {
                             "id": product.id,
                             "name": product.name,
+                            "slug": product.product.slug,
                             "quantity": data["quantity"],
                             "price": data["price"],
+                            "discounted_price": product.discounted_price,
                             "main_image": get_main_image_url(request, product),
                         }
                     )

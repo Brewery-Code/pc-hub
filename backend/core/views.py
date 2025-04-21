@@ -163,6 +163,7 @@ class WishlistViewSet(ViewSet):
                 {
                     "id": item.product.id,
                     "name": item.product.name,
+                    "slug": item.product.slug,
                     "description": item.product.description,
                     "price": item.product.price,
                     "discounted_price": item.product.discounted_price,
@@ -183,6 +184,7 @@ class WishlistViewSet(ViewSet):
                         {
                             "id": product.id,
                             "name": product.name,
+                            "slug": product.slug,
                             "description": product.description,
                             "price": product.price,
                             "discounted_price": product.discounted_price,
