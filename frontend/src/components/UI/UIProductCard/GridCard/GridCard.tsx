@@ -29,7 +29,7 @@ export default function GridCard({
   return (
     <Link
       key="1"
-      to={`/products/${product.slug}/`}
+      to={`/products/${product.slug}/?nav=allInfo`}
       state={{ id: product.id }}
       className={clsx(
         styles.card,

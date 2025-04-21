@@ -31,7 +31,7 @@ export default function RowCard({
   return (
     <Link
       key={key}
-      to={`/products/${product.slug}/`}
+      to={`/products/${product.slug}/?nav=allInfo`}
       state={{ id: product.id }}
       className={clsx(
         styles.card,
