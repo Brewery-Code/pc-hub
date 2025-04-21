@@ -10,5 +10,4 @@ urlpatterns = [
     path("banners/", views.BannerView.as_view()),
     path("reviews/", views.ReviewAPIView.as_view(), name="reviews"),
     path("", include(router.urls)),
-    path("index/", views.index),
 ]
