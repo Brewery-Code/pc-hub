@@ -301,3 +301,7 @@ class WishlistViewSet(ViewSet):
                     {"error": "Product not in wishlist"},
                     status=status.HTTP_404_NOT_FOUND,
                 )
+
+
+def index(request):
+    return Response("Здарова голова")
