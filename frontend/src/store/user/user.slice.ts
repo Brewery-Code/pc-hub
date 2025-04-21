@@ -394,7 +394,7 @@ const userSlice = createSlice({
       .addCase(addToWishlist.pending, (state) => {
         state.status = "pending";
       })
-      .addCase(addToWishlist.fulfilled, (state, action) => {
+      .addCase(addToWishlist.fulfilled, (state) => {
         state.status = "succeeded";
       })
       .addCase(addToWishlist.rejected, (state, action) => {
@@ -405,7 +405,7 @@ const userSlice = createSlice({
       .addCase(deleteFromWishlist.pending, (state) => {
         state.status = "pending";
       })
-      .addCase(deleteFromWishlist.fulfilled, (state, action) => {
+      .addCase(deleteFromWishlist.fulfilled, (state) => {
         state.status = "succeeded";
       })
       .addCase(deleteFromWishlist.rejected, (state, action) => {

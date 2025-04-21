@@ -1,7 +1,7 @@
 import clsx from "clsx";
-import { IProduct } from "../../../store/topSales/topSales.slice";
 import UIProductCard from "../UIProductCard/UIProductCard";
 import styles from "./UIProductList.module.css";
+import { IProduct } from "../../../store/types";
 
 interface IUIProductListProps {
   list: IProduct[];

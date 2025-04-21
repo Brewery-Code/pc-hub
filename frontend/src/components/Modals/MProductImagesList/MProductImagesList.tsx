@@ -70,7 +70,7 @@ function MProductImagesList({
           </button>
         </div>
         <div className={styles.dots}>
-          {product.images.map((image, index) => (
+          {product.images.map((_, index) => (
             <div
               key={index}
               className={clsx(

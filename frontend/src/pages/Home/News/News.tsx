@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import newsImg from "../../../assets/img/gameZoneBackground.jpeg";
 import styles from "./News.module.css";
 import { ArrowCommon } from "../../../assets/icons";
 import { useSelector } from "react-redux";
