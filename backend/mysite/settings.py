@@ -194,6 +194,10 @@ SIMPLE_JWT = {
     "AUTH_COOKIE_PATH": "/",
     "AUTH_COOKIE_SAMESITE": "None",
 }
+SESSION_COOKIE_SECURE = True  # обов'язково, бо HTTPS
+SESSION_COOKIE_SAMESITE = "None"  # бо бек і фронт на різних доменах
+SESSION_COOKIE_HTTPONLY = True  # залишаєш, захищає від XSS
+
 
 # Languages
 LANGUAGES = [
