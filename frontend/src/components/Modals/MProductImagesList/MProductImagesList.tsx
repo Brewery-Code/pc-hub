@@ -1,11 +1,11 @@
 import { createPortal } from "react-dom";
 import { UIButton, UICross, UIModalBody } from "../../UI";
 import styles from "./MProductImagesList.module.css";
-import { IProduct } from "../../../store/product/product.slice";
 import { ArrowThin } from "../../../assets/icons";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
 import { TouchEventHandler } from "react";
+import { IProduct } from "../../../store/types";
 
 interface MProductImagesListProps {
   isModalOpen: boolean;
@@ -72,6 +72,7 @@ function MProductImagesList({
         <div className={styles.dots}>
           {product.images.map((image, index) => (
             <div
+              key={index}
               className={clsx(
                 styles.dots__item,
                 currentImg == index && styles.dots__item_active,

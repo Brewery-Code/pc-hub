@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import styles from "./AllInfo.module.css";
 import { useTranslation } from "react-i18next";
-import { IProduct } from "../../../store/product/product.slice";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowBold,
@@ -21,11 +20,13 @@ import {
 } from "../../../assets/icons";
 import { UIButton } from "../../../components/UI";
 import { MProductImagesList } from "../../../components/Modals";
+import { URLSearchParamsInit } from "react-router-dom";
+import { IProduct } from "../../../store/types";
 
 interface IAllInfoProps {
   product: IProduct;
   className?: string;
-  handleSection: (section: string) => () => void;
+  handleSection: (params: URLSearchParamsInit) => void;
   addProductToCart: () => void;
   toggleProductWishlist: () => void;
   isProductLiked: boolean;
@@ -208,7 +209,7 @@ function AllInfo({
           </ul>
           <button
             className={styles["characteristics__show-all"]}
-            onClick={handleSection("Characteristics")}
+            onClick={() => handleSection({ nav: "characteristics" })}
           >
             {t("characteristics.showAll")}
             <ArrowCommon

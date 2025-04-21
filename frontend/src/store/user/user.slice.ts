@@ -383,7 +383,6 @@ const userSlice = createSlice({
         state.status = "pending";
       })
       .addCase(fetchWishlist.fulfilled, (state, action) => {
-        console.log(action.payload);
         state.status = "succeeded";
         state.wishlist = action.payload;
       })

@@ -3,7 +3,12 @@ import { RootState, useAppDispatch } from "../../store/store";
 import styles from "./Product.module.css";
 import { useEffect, useState } from "react";
 import { fetchProduct } from "../../store/product/product.slice";
-import { useLocation, useSearchParams } from "react-router-dom";
+import {
+  URLSearchParamsInit,
+  useLocation,
+  useParams,
+  useSearchParams,
+} from "react-router-dom";
 import { UIBreadcrumbs } from "../../components/UI";
 import Head from "./Head/Head";
 import AllInfo from "./AllInfo/AllInfo";
@@ -16,26 +21,83 @@ import {
   deleteFromWishlist,
   fetchWishlist,
 } from "../../store/user/user.slice";
+import { IProduct } from "../../store/types";
 
-function RenderSection({ nav }: { nav: string | null }) {}
+function RenderSection({
+  nav,
+  product,
+  handleSection,
+  addProductToCart,
+  toggleProductWishlist,
+  isProductLiked,
+}: {
+  nav: string | null;
+  product: IProduct;
+  handleSection: (params: URLSearchParamsInit) => void;
+  addProductToCart: () => void;
+  toggleProductWishlist: () => void;
+  isProductLiked: boolean;
+}) {
+  if (nav === "allInfo")
+    return (
+      <AllInfo
+        className={styles.product__body}
+        product={product}
+        handleSection={handleSection}
+        addProductToCart={addProductToCart}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
+      />
+    );
+  else if (nav === "characteristics")
+    return (
+      <Characteristics
+        product={product}
+        addProductToCart={addProductToCart}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
+      />
+    );
+  else if (nav === "reviews")
+    return (
+      <Reviews
+        product={product}
+        addProductToCart={addProductToCart}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
+      />
+    );
+  else if (nav === "credit")
+    return (
+      <Credit
+        product={product}
+        addProductToCart={addProductToCart}
+        toggleProductWishlist={toggleProductWishlist}
+        isProductLiked={isProductLiked}
+      />
+    );
+}
 
 function Product() {
   const location = useLocation();
   const state = location.state;
-  const id = state.id.toString();
   const dispatch = useAppDispatch();
   const { product } = useSelector((state: RootState) => state.product);
   const { access, wishlist } = useSelector((state: RootState) => state.user);
   const [searchParams, setSearchParams] = useSearchParams();
   const nav = searchParams.get("nav");
+  const params = useParams();
+  const id = state?.id?.toString();
+
+  useEffect(() => {
+    if (id) {
+      dispatch(fetchProduct({ id }));
+    } else if (params) dispatch(fetchProduct({ id: params.product }));
+  }, [dispatch, id]);
 
   useEffect(() => {
     if (!nav) setSearchParams({ nav: "allInfo" });
   }, []);
-
-  useEffect(() => {
-    if (id) dispatch(fetchProduct(id));
-  }, [dispatch, id]);
 
   const addProductToCart = () => {
     if (access) dispatch(addToCart({ access: access, product_id: product.id }));
@@ -64,9 +126,6 @@ function Product() {
     dispatch(fetchWishlist({ access }));
   };
 
-  const [activeSection, setActiveSection] = useState("AllProducts");
-  const handleSection = (section: string) => () => setActiveSection(section);
-
   return (
     <div className={styles.product}>
       <div className="product__container">
@@ -75,44 +134,17 @@ function Product() {
           <Head
             product={product}
             className={styles["product__head"]}
-            handleSection={handleSection}
-            activeSection={activeSection}
+            handleSection={setSearchParams}
+            activeSection={nav}
           />
-          <RenderSection />
-          {nav === "allInfo" && (
-            <AllInfo
-              className={styles.product__body}
-              product={product}
-              handleSection={handleSection}
-              addProductToCart={addProductToCart}
-              toggleProductWishlist={toggleProductWishlist}
-              isProductLiked={isProductLiked}
-            />
-          )}
-          {activeSection === "Characteristics" && (
-            <Characteristics
-              product={product}
-              addProductToCart={addProductToCart}
-              toggleProductWishlist={toggleProductWishlist}
-              isProductLiked={isProductLiked}
-            />
-          )}
-          {activeSection === "Reviews" && (
-            <Reviews
-              product={product}
-              addProductToCart={addProductToCart}
-              toggleProductWishlist={toggleProductWishlist}
-              isProductLiked={isProductLiked}
-            />
-          )}
-          {activeSection === "Credit" && (
-            <Credit
-              product={product}
-              addProductToCart={addProductToCart}
-              toggleProductWishlist={toggleProductWishlist}
-              isProductLiked={isProductLiked}
-            />
-          )}
+          <RenderSection
+            nav={nav}
+            product={product}
+            handleSection={setSearchParams}
+            addProductToCart={addProductToCart}
+            toggleProductWishlist={toggleProductWishlist}
+            isProductLiked={isProductLiked}
+          />
         </div>
       </div>
     </div>

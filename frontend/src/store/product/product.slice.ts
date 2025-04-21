@@ -4,7 +4,7 @@ import { IProduct } from "../types";
 
 const fetchProduct = createAsyncThunk(
   "product/fetchProduct",
-  async (id: string) => {
+  async ({ id }: { id?: string }) => {
     const response = await fetch(
       `${import.meta.env.VITE_API_BASE_URL}/products/${id}`,
       {
@@ -70,4 +70,4 @@ const productSlice = createSlice({
   },
 });
 
-export { fetchProduct, productSlice, type IProduct };
+export { fetchProduct, productSlice };

@@ -1,14 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { UIRatingStars } from "../../../components/UI";
-import { IProduct } from "../../../store/product/product.slice";
 import styles from "./Head.module.css";
 import clsx from "clsx";
+import { URLSearchParamsInit } from "react-router-dom";
+import { IProduct } from "../../../store/types";
 
 interface IHeadProps {
   product: IProduct;
   className?: string;
-  handleSection: (section: string) => () => void;
-  activeSection: string;
+  handleSection: (params: URLSearchParamsInit) => void;
+  activeSection: string | null;
 }
 
 function Head({
@@ -46,37 +47,37 @@ function Head({
         <li
           className={clsx(
             styles.navigation__item,
-            activeSection == "AllProducts" && styles.navigation__item_active,
+            activeSection == "allInfo" && styles.navigation__item_active,
           )}
-          onClick={handleSection("AllProducts")}
+          onClick={() => handleSection({ nav: "allInfo" })}
         >
           {t("navigation.allInfo")}
         </li>
         <li
           className={clsx(
             styles.navigation__item,
-            activeSection == "Characteristics" &&
+            activeSection == "characteristics" &&
               styles.navigation__item_active,
           )}
-          onClick={handleSection("Characteristics")}
+          onClick={() => handleSection({ nav: "characteristics" })}
         >
           {t("navigation.characteristics")}
         </li>
         <li
           className={clsx(
             styles.navigation__item,
-            activeSection == "Reviews" && styles.navigation__item_active,
+            activeSection == "reviews" && styles.navigation__item_active,
           )}
-          onClick={handleSection("Reviews")}
+          onClick={() => handleSection({ nav: "reviews" })}
         >
           {t("navigation.reviews")}
         </li>
         <li
           className={clsx(
             styles.navigation__item,
-            activeSection == "Credit" && styles.navigation__item_active,
+            activeSection == "credit" && styles.navigation__item_active,
           )}
-          onClick={handleSection("Credit")}
+          onClick={() => handleSection({ nav: "credit" })}
         >
           {t("navigation.credit")}
         </li>

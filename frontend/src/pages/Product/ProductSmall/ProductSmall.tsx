@@ -1,13 +1,13 @@
-import { IProduct } from "../../../store/product/product.slice";
 import {
   CheckMarkAvailability,
   ComparisonIcon,
   LikeIcon,
 } from "../../../assets/icons";
-import { UIButton } from "../../../components/UI";
+import { UIButton, UIProductPrice } from "../../../components/UI";
 import styles from "./ProductSmall.module.css";
 import { useTranslation } from "react-i18next";
 import clsx from "clsx";
+import { IProduct } from "../../../store/types";
 
 interface IProductSmallProps {
   product: IProduct;
@@ -31,14 +31,17 @@ function ProductSmall({
       <div className={styles.product__head}>
         <img
           className={styles.product__image}
-          src={product.images[0].image}
+          src={product?.images[0]?.image}
           alt="productImage"
         />
         <div className={styles.product__title}>{product.name}</div>
       </div>
       <div className={styles.product__main}>
         <div className={styles.product__price}>
-          {product.price}
+          <UIProductPrice
+            price={product.price}
+            discount_price={product.discounted_price}
+          />
           <span className={styles.product__currency}>{t("buy.uah")}</span>
         </div>
         <div className={styles.product__availability}>

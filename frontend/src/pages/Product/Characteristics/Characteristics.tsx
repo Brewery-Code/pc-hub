@@ -1,7 +1,7 @@
 import styles from "./Characteristics.module.css";
-import { IProduct } from "../../../store/product/product.slice";
 import { useTranslation } from "react-i18next";
 import ProductSmall from "../ProductSmall/ProductSmall";
+import { IProduct } from "../../../store/types";
 
 interface ICharacteristicsProps {
   product: IProduct;
