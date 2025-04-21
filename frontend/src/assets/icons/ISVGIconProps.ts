@@ -1,5 +1,3 @@
-import { MouseEventHandler } from "react";
-
 interface ISVGIconProps {
   className?: string;
   fill?: string;
@@ -8,7 +6,7 @@ interface ISVGIconProps {
   hoverColor?: string;
   stroke?: string;
   isIconSmall?: boolean;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<SVGSVGElement>;
 }
 
 export default ISVGIconProps;

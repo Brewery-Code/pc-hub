@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { IProduct } from "../../../store/product/product.slice";
 import ProductSmall from "../ProductSmall/ProductSmall";
 import styles from "./Credit.module.css";
 import { UIButton } from "../../../components/UI";
@@ -11,6 +10,7 @@ import {
 } from "../../../assets/icons";
 import { useRef, useState } from "react";
 import clsx from "clsx";
+import { IProduct } from "../../../store/types";
 
 interface ICreditProps {
   product: IProduct;

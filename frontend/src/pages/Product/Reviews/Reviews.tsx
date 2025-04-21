@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { IProduct } from "../../../store/product/product.slice";
 import ProductSmall from "../ProductSmall/ProductSmall";
 import styles from "./Reviews.module.css";
 import { UIButton, UIRatingStars } from "../../../components/UI";
 import reviewerIcon from "../../../assets/img/avatar1.png";
 import { CartIcon, CommentIcon, LikeFingerIcon } from "../../../assets/icons";
 import clsx from "clsx";
+import { IProduct } from "../../../store/types";
 
 interface IReviewsProps {
   product: IProduct;
