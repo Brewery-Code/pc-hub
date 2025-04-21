@@ -1,4 +1,5 @@
 from django.conf import settings
+from rest_framework.decorators import api_view
 from rest_framework.generics import ListAPIView, get_object_or_404
 from rest_framework.viewsets import ViewSet
 from .models import *
@@ -303,5 +304,6 @@ class WishlistViewSet(ViewSet):
                 )
 
 
+@api_view(["GET"])
 def index(request):
     return Response("Здарова голова")
