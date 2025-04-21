@@ -251,8 +251,19 @@
   stroke: var(--accent-orange);
 }
 
+.card_dark:hover .head__like-icon {
+  fill: none;
+}
+
+.card_dark:hover .head__like-icon_active {
+  fill: var(--accent-orange);
+}
+
 .card_dark .description {
   background-color: var(--dark);
+}
+
+.card_dark .description__text {
   color: var(--soft);
 }
 
