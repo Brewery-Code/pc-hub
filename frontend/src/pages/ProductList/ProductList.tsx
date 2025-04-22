@@ -11,6 +11,12 @@ import { IProduct } from "../../store/types";
 import { useTranslation } from "react-i18next";
 import { TFunctionNonStrict } from "i18next";
 
+function RenderListTitle({ slug }: { slug: string }) {
+  let newStr = slug.charAt(0).toUpperCase() + slug.slice(1);
+  newStr = newStr.replace(/-/g, " ");
+  return newStr;
+}
+
 function RenderProductList({
   productList,
   cardType,
@@ -62,11 +68,11 @@ function ProductList() {
         <div className={styles.productList__body}>
           <div className={styles.head}>
             <UIBreadcrumbs />
-            <h4 className={styles.head__title}>{category}</h4>
+            <h4 className={styles.head__title}>
+              {/* <RenderListTitle slug={category} /> */}
+            </h4>
             <div className={styles.nav}>
-              <div className={styles.nav__filters}>
-                iowejfewoijfiowejfoiwejiofj
-              </div>
+              <div className={styles.nav__filters}></div>
               <div className={styles.nav__view}>
                 <RowViewIcon
                   className={clsx(
@@ -86,17 +92,19 @@ function ProductList() {
             </div>
           </div>
           <div className={styles.productList__main}>
-            <aside className={styles.filter}>Filters</aside>
+            <aside className={styles.filter}>Filters will be added later</aside>
             <RenderProductList
               productList={productList}
               cardType={cardType}
               t={t}
             />
           </div>
-          <UIPaginator
-            className={styles.productList__paginator}
-            totalPages={totalPages}
-          />
+          {productList[0] && (
+            <UIPaginator
+              className={styles.productList__paginator}
+              totalPages={totalPages}
+            />
+          )}
         </div>
       </div>
     </div>

@@ -1,3 +1,7 @@
+.wishlist {
+  height: 100%;
+}
+
 .wishlist__title {
   color: var(--dark-grey);
   font-size: 28px;

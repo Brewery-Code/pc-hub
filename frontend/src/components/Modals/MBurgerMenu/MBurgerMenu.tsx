@@ -14,6 +14,9 @@ import {
   LogoIcon,
 } from "../../../assets/icons";
 import styles from "./MBurgerMenu.module.css";
+import { Link } from "react-router-dom";
+import MCart from "../MCart/MCart";
+import { useState } from "react";
 
 interface IBurgerMenuProps {
   isBurgerMenuOpen: boolean;
@@ -25,6 +28,11 @@ function MBurgerMenu({
   setIsBurgerMenuOpen,
 }: IBurgerMenuProps) {
   const { t } = useTranslation("modals");
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const toggleCart = () => {
+    setIsCartOpen((prev) => !prev);
+    if (isBurgerMenuOpen) setIsBurgerMenuOpen();
+  };
 
   return createPortal(
     <UIModalBody
@@ -46,22 +54,34 @@ function MBurgerMenu({
             className={clsx(styles.menu__language, "only-mobile")}
           />
           <Register />
-          <div className={clsx(styles.menu__nav, "only-mobile")}>
+          <Link
+            to="/catalog/"
+            className={clsx(styles.menu__nav, "only-mobile")}
+            onClick={setIsBurgerMenuOpen}
+          >
             <CatalogIcon className={styles["menu__catalog-icon"]} />
             {t("burgerMenu.catalog")}
-          </div>
-          <div className={clsx(styles.menu__nav, "only-mobile")}>
+          </Link>
+          <div
+            className={clsx(styles.menu__nav, "only-mobile")}
+            onClick={toggleCart}
+          >
             <CartIcon className={styles["menu__cart-icon"]} />
             {t("burgerMenu.cart")}
           </div>
+          <MCart isCartOpen={isCartOpen} toggleCart={toggleCart} />
           <div className={clsx(styles.menu__nav, "only-mobile")}>
             <ComparisonIcon className={styles["menu__comparison-icon"]} />
             {t("burgerMenu.comparison")}
           </div>
-          <div className={clsx(styles.menu__nav, "only-mobile")}>
+          <Link
+            to="/user/?nav=wishlist"
+            className={clsx(styles.menu__nav, "only-mobile")}
+            onClick={setIsBurgerMenuOpen}
+          >
             <LikeIcon className={styles["menu__like-icon"]} />
             {t("burgerMenu.likes")}
-          </div>
+          </Link>
           <Accordions className={styles.menu__accordions} />
           <Contacts className={styles.menu__contacts} />
           <Social className={styles.menu__social} />

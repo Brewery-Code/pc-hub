@@ -12,6 +12,7 @@ body {
 }
 
 .main {
+  /* overflow: hidden; */
   flex: 1 1 auto;
   margin-top: 137px;
   background-color: var(--white);
@@ -28,6 +29,7 @@ body {
   visibility: hidden;
   opacity: 0;
   position: absolute;
+  /* display: none; */
 }
 
 .only-desktop {
@@ -38,6 +40,7 @@ body {
     visibility: inherit;
     opacity: 1;
     position: inherit;
+    /* display: unset; */
   }
 
   .only-desktop {

@@ -1,5 +1,9 @@
 .head {
-  position: relative;
+  /* position: relative; */
+  /* z-index: 10;
+  position: sticky;
+  top: 10px; */
+  background-color: var(--white);
 }
 
 .head__row {
@@ -42,6 +46,8 @@
 }
 
 .navigation {
+  /* position: sticky;
+  top: 200px; */
   display: flex;
   align-items: center;
   margin-top: 24px;
