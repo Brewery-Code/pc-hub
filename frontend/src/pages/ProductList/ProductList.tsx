@@ -7,8 +7,38 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { GridViewIcon, RowViewIcon } from "../../assets/icons";
 import clsx from "clsx";
+import { IProduct } from "../../store/types";
+import { useTranslation } from "react-i18next";
+import { TFunctionNonStrict } from "i18next";
+
+function RenderProductList({
+  productList,
+  cardType,
+  t,
+}: {
+  productList: IProduct[];
+  cardType: "row" | "grid";
+  t: TFunctionNonStrict<"productList", undefined>;
+}) {
+  if (productList[0]) {
+    return (
+      <div
+        className={clsx(
+          cardType === "grid" && styles.grid,
+          cardType === "row" && styles.row,
+        )}
+      >
+        {productList.map((product, index) => (
+          <UIProductCard product={product} key={index} type={cardType} />
+        ))}
+      </div>
+    );
+  } else
+    return <div className={styles.productList__empty}>{t("list.empty")}</div>;
+}
 
 function ProductList() {
+  const { t } = useTranslation("productList");
   const [searchParams] = useSearchParams();
   const category = searchParams.get("category") || "";
   const page = searchParams.get("page") || "1";
@@ -57,16 +87,11 @@ function ProductList() {
           </div>
           <div className={styles.productList__main}>
             <aside className={styles.filter}>Filters</aside>
-            <div
-              className={clsx(
-                cardType === "grid" && styles.grid,
-                cardType === "row" && styles.row,
-              )}
-            >
-              {productList.map((product, index) => (
-                <UIProductCard product={product} key={index} type={cardType} />
-              ))}
-            </div>
+            <RenderProductList
+              productList={productList}
+              cardType={cardType}
+              t={t}
+            />
           </div>
           <UIPaginator
             className={styles.productList__paginator}

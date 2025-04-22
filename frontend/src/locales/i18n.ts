@@ -13,6 +13,8 @@ import enProduct from "./en/product.json";
 import ukProduct from "./uk/product.json";
 import enUser from "./en/user.json";
 import ukUser from "./uk/user.json";
+import enProductList from "./en/productList.json";
+import ukProductList from "./uk/productList.json";
 
 i18n
   .use(LanguageDetector)
@@ -26,6 +28,7 @@ i18n
         catalog: enCatalog,
         product: enProduct,
         user: enUser,
+        productList: enProductList,
       },
       uk: {
         components: ukComponents,
@@ -34,6 +37,7 @@ i18n
         catalog: ukCatalog,
         product: ukProduct,
         user: ukUser,
+        productList: ukProductList,
       },
     },
     detection: {

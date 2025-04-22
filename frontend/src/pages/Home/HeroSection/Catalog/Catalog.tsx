@@ -27,9 +27,7 @@ function Catalog({ className }: ICatalogProps) {
         <ul className={clsx(styles.catalog__body, className)}>
           {catalog.map((category) => (
             <li key={category.id} className={styles.category}>
-              <Link
-                to={`/home/catalog/${category.slug}/${category.slug}-list}`}
-              >
+              <Link to={`/catalog/${category.slug}/`}>
                 <div className={styles.category__row}>
                   <img
                     className={styles.category__img}
@@ -49,17 +47,23 @@ function Catalog({ className }: ICatalogProps) {
                       className={styles.subcategory__item}
                       key={subcategory.id}
                     >
-                      <Link
-                        to={`/home/catalog/${category.slug}/${subcategory.slug}-list`}
-                      >
+                      <Link to={`/products?category=${category?.slug}`}>
                         <div className={styles.subcategory__title}>
                           {subcategory.name}
                         </div>
                       </Link>
-                      <ul className={styles["product-list"]}>
+                      <ul
+                        className={clsx(
+                          styles["product-list"],
+                          subcategory.children[0] &&
+                            styles["product-list_active"],
+                        )}
+                      >
                         {subcategory.children.map((item) => (
                           <Link
-                            to={`/home/catalog/${category.slug}/${item.slug}-list`}
+                            to={`/products?category=${item?.slug}`}
+                            key={item.id}
+                            className={styles.product__itemContainer}
                           >
                             <li className={styles.product__item} key={item.id}>
                               {item.name}

@@ -14,18 +14,20 @@ function Category({ category, isCatalog }: ICategoryProps) {
   return (
     <Link
       to={
-        isCatalog ? `${category.slug}/` : `/products?category=${category.slug}`
+        isCatalog && category
+          ? `${category.slug}/`
+          : `/products?category=${category?.slug}`
       }
     >
       <div className={styles.category}>
         <div className={styles["category__img-container"]}>
           <img
             className={styles.category__img}
-            src={category.image}
+            src={category?.image}
             alt="categoryImg"
           />
         </div>
-        <div className={styles.category__name}>{category.name}</div>
+        <div className={styles.category__name}>{category?.name}</div>
       </div>
     </Link>
   );

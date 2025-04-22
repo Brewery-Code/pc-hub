@@ -16,13 +16,13 @@ import { useTranslation } from "react-i18next";
 function Catalog() {
   const dispatch = useAppDispatch();
   const status = useSelector((state: RootState) => state.catalog.status);
+  const { category } = useParams();
   useEffect(() => {
     if (status === "idle") {
       dispatch(fetchCatalog());
     }
   }, [status, dispatch]);
 
-  const { category } = useParams();
   const selectedCategory = useSelector((state: RootState) =>
     selectCategory(state, category ? category : undefined),
   );
@@ -44,7 +44,7 @@ function Catalog() {
               <Category category={selectedCategory!} isCatalog={isCatalog} />
             )}
             {isCatalog
-              ? selectedCategory.map(
+              ? selectedCategory?.map(
                   (category: ICategory | ICategoryChildren, index: number) => (
                     <Category
                       key={index}

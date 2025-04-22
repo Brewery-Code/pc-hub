@@ -88,4 +88,4 @@ const productListSlice = createSlice({
   },
 });
 
-export { productListSlice, fetchProductList, type IProduct };
+export { productListSlice, fetchProductList };

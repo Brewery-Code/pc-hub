@@ -83,6 +83,7 @@ export default function MCart({ isCartOpen, toggleCart }: IMCartProps) {
             color="secondary"
             style="outline"
             className={styles.modal__continueButton}
+            onClick={toggleCart}
           >
             {t("cart.continue")}
           </UIButton>
