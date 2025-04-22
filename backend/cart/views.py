@@ -66,38 +66,56 @@ class CartViewSet(ViewSet):
         :Returns:
             Response:
                 - 200 OK: Якщо список товару повернено успішно
-
         """
         self.activate_translation(request)
+
         if request.user.is_authenticated:
             cart = self.get_cart(request)
             cart_items = CartItem.objects.filter(cart=cart)
-            total_price = cart_items.aggregate(total=Sum("price"))["total"] or 0
 
-            items = [
-                {
-                    "id": item.product.id,
-                    "name": item.product.name,
-                    "slug": item.product.slug,
-                    "quantity": item.quantity,
-                    "price": item.price,
-                    "discounted_price": item.product.discounted_price,
-                    "main_image": get_main_image_url(request, item.product),
-                }
-                for item in cart_items
-            ]
+            total_price = 0
+            items = []
+
+            for item in cart_items:
+                product = item.product
+                effective_price = (
+                    product.discounted_price if product.discounted_price else item.price
+                )
+                total_price += effective_price * item.quantity
+
+                items.append(
+                    {
+                        "id": product.id,
+                        "name": product.name,
+                        "slug": product.slug,
+                        "quantity": item.quantity,
+                        "price": item.price,
+                        "discounted_price": product.discounted_price,
+                        "main_image": get_main_image_url(request, product),
+                    }
+                )
+
             response_data = {
                 "cart_id": cart.id,
                 "total_price": total_price,
                 "items": items,
             }
+
         else:
             session_cart = self.get_cart(request)
             items = []
             total_price = 0
+
             for product_id_str, data in session_cart.items():
                 try:
                     product = Product.objects.get(pk=int(product_id_str))
+                    effective_price = (
+                        product.discounted_price
+                        if product.discounted_price
+                        else data["price"]
+                    )
+                    total_price += effective_price * data["quantity"]
+
                     items.append(
                         {
                             "id": product.id,
@@ -109,14 +127,15 @@ class CartViewSet(ViewSet):
                             "main_image": get_main_image_url(request, product),
                         }
                     )
-                    total_price += data["price"] * data["quantity"]
                 except Product.DoesNotExist:
                     continue
+
             response_data = {
                 "cart_id": None,
                 "total_price": total_price,
                 "items": items,
             }
+
         return Response(response_data, status=status.HTTP_200_OK)
 
     def create(self, request) -> Response:
