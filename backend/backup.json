@@ -10400,7 +10400,7 @@
         "discounted_price": 25499,
         "rating": 0.0,
         "created_at": "2025-04-18T08:14:44.264Z",
-        "updated_at": "2025-04-19T06:38:52.165Z",
+        "updated_at": "2025-04-19T12:06:23.425Z",
         "brand": 6,
         "warranty": 12,
         "delivery_options": [
@@ -10888,6 +10888,286 @@
     }
 },
 {
+    "model": "product.product",
+    "pk": 20,
+    "fields": {
+        "name": "Монітор 27\" Samsung Odyssey G50D (LS27DG502EIXCI) -- QHD 2K / IPS / 180Hz / 1 мс (GTG) / HDR10 / FreeSync Premium / G-Sync Compatible / Pivot / Black Equalizer",
+        "name_en": "Monitor 27\" Samsung Odyssey G50D (LS27DG502EIXCI) -- QHD 2K / IPS / 180Hz / 1 ms (GTG) / HDR10 / FreeSync Premium / G-Sync Compatible / Pivot / Black Equalizer",
+        "name_uk": "Монітор 27\" Samsung Odyssey G50D (LS27DG502EIXCI) -- QHD 2K / IPS / 180Hz / 1 мс (GTG) / HDR10 / FreeSync Premium / G-Sync Compatible / Pivot / Black Equalizer",
+        "slug": "27-samsung-odyssey-g50d-ls27dg502eixci-qhd-2k-ips-180hz-1-gtg-hdr10-freesync-premium-g-sync-compatible-pivot-black-equalizer",
+        "description": "Побачити те, що приховано\r\nVESA DisplayHDR 400\r\nПобачте кожну деталь із технологією DisplayHDR 400. Розкрийте всіх ворогів, що зачаїлися в темряві, завдяки роздільній здатності з винятковою деталізацією, глибоким чорним і сліпучо білим кольорами. Кожна дрібничка висвітлюється з максимальною чіткістю навіть у найтемніших сценах.",
+        "description_en": "See what's hidden\r\nVESA DisplayHDR 400\r\nSee every detail with DisplayHDR 400 technology. Uncover enemies lurking in the dark with resolution that delivers exceptional detail, deep blacks, and dazzling whites. Every detail is illuminated with maximum clarity, even in the darkest scenes.",
+        "description_uk": "Побачити те, що приховано\r\nVESA DisplayHDR 400\r\nПобачте кожну деталь із технологією DisplayHDR 400. Розкрийте всіх ворогів, що зачаїлися в темряві, завдяки роздільній здатності з винятковою деталізацією, глибоким чорним і сліпучо білим кольорами. Кожна дрібничка висвітлюється з максимальною чіткістю навіть у найтемніших сценах.",
+        "price": 11999.0,
+        "stock_quantity": 2,
+        "discounted_price": 11299,
+        "rating": 0.0,
+        "created_at": "2025-04-21T08:04:41.579Z",
+        "updated_at": "2025-04-21T08:04:41.579Z",
+        "brand": 16,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 21,
+    "fields": {
+        "name": "Монітор 27\" MSI MAG 274QRF-QD E2 -- Quantum Dot / Rapid IPS QHD (2K) / 180Hz / 1ms GtG / 8-Bit + FRC / DisplayHDR 400 / Type-C 65W PD / G-Sync Compatible / Adaptive Sync / HAS / Pivot / KVM / Console Mode 2K 120Hz",
+        "name_en": "Monitor 27\" MSI MAG 274QRF-QD E2 -- Quantum Dot / Rapid IPS QHD (2K) / 180Hz / 1ms GtG / 8-Bit + FRC / DisplayHDR 400 / Type-C 65W PD / G-Sync Compatible / Adaptive Sync / HAS / Pivot / KVM / Console Mode 2K 120Hz",
+        "name_uk": "Монітор 27\" MSI MAG 274QRF-QD E2 -- Quantum Dot / Rapid IPS QHD (2K) / 180Hz / 1ms GtG / 8-Bit + FRC / DisplayHDR 400 / Type-C 65W PD / G-Sync Compatible / Adaptive Sync / HAS / Pivot / KVM / Console Mode 2K 120Hz",
+        "slug": "msi-mag-274qrf-qd-e2-27-quantum-dot-rapid-ips-qhd-180hz-1ms-hdr400-usb-c-kvm",
+        "description": "Насолоджуйтесь своїми яскравими перемогами на екрані ігрового монітора MSI MAG 274QRF-QD E2\r\n\r\nМаючи РК-матрицю з високою роздільною здатністю WQHD (2560x1440) з технологією квантових точок (Quantum Dot), низьким часом відгуку 1мс GTG і високою частотою оновлення 180 Гц, він надасть вам відчутну перевагу над суперниками. Втілюючи в собі найсучасніші технології, включаючи адаптивну синхронізацію Adaptive-Sync, ця модель буде чудовим вибором для ігор для змагань.\r\n\r\nRapid IPS-панель з чудовою якістю зображення: точна передача кольорів і висока яскравість.\r\nСпеціальний шар наночастинок – квантових точок – забезпечує широкий колірний охоплення: 94% Adobe RGB, 98% DCI-P3 та 150% SRGB. Це особливо важливо для професійної обробки візуального контенту.\r\nФормат WQHD: висока роздільна здатність забезпечує чітке та деталізоване зображення.\r\nТехнологія Rapid Boost (180Гц + 1мс) – це буде суттєва перевага в динамічних іграх, що вимагають точної та швидкої реакції.\r\nАдаптивна синхронізація Adaptive-Sync.\r\nСтандарт VESA DisplayHDR 400 – розширений динамічний діапазон підвищує контрастність.\r\nПідсвічування Mystic Light: персоналізація ігрової системи.\r\nЕргономічна підставка: зручне налаштування положення екрана монітора.\r\nТехнологія Less Blue Light Pro: апаратне зменшення енергії синього світла (з довжиною хвилі від 415 до 455нм).\r\nСерія AG (MSI ARSENAL GAMING) призначений для геймерів, які хочуть домінувати на полях віртуальних битв. Натхнена незрівнянною міцністю і бездоганною надійністю військової техніки, вона включає повноцінний ігровий арсенал. Окрім відмінних технічних характеристик, пристрої MAG можуть похвалитися оригінальним дизайном, що відображає сильний характер усієї серії.\r\n\r\nХарактеристики",
+        "description_en": "Enjoy your vivid victories on the screen of the MSI MAG 274QRF-QD E2 gaming monitor\r\n\r\nWith a high-resolution WQHD (2560x1440) LCD panel featuring Quantum Dot technology, a low 1ms GTG response time, and a high 180Hz refresh rate, this monitor gives you a tangible edge over your opponents. Packed with cutting-edge technologies, including Adaptive-Sync, this model is an excellent choice for competitive gaming.\r\n\r\nRapid IPS panel with outstanding image quality: accurate color reproduction and high brightness.\r\n\r\nSpecial layer of nano-particles — Quantum Dots — delivers wide color gamut: 94% Adobe RGB, 98% DCI-P3, and 150% sRGB. This is especially important for professional visual content editing.\r\n\r\nWQHD resolution: high resolution ensures crisp and detailed images.\r\n\r\nRapid Boost technology (180Hz + 1ms) — a key advantage in fast-paced games that require precise and quick reactions.\r\n\r\nAdaptive-Sync technology.\r\n\r\nVESA DisplayHDR 400 standard — extended dynamic range enhances contrast.\r\n\r\nMystic Light backlight: personalize your gaming setup.\r\n\r\nErgonomic stand: easily adjust the monitor's position for comfortable viewing.\r\n\r\nLess Blue Light Pro technology: hardware-level reduction of blue light energy (wavelengths between 415 and 455nm).\r\n\r\nAG Series (MSI ARSENAL GAMING) is designed for gamers who want to dominate the virtual battlefield. Inspired by the unmatched durability and reliability of military equipment, it offers a full arsenal for gaming. In addition to excellent technical specs, MAG devices boast a unique design that reflects the strong character of the entire series.",
+        "description_uk": "Насолоджуйтесь своїми яскравими перемогами на екрані ігрового монітора MSI MAG 274QRF-QD E2\r\n\r\nМаючи РК-матрицю з високою роздільною здатністю WQHD (2560x1440) з технологією квантових точок (Quantum Dot), низьким часом відгуку 1мс GTG і високою частотою оновлення 180 Гц, він надасть вам відчутну перевагу над суперниками. Втілюючи в собі найсучасніші технології, включаючи адаптивну синхронізацію Adaptive-Sync, ця модель буде чудовим вибором для ігор для змагань.\r\n\r\nRapid IPS-панель з чудовою якістю зображення: точна передача кольорів і висока яскравість.\r\nСпеціальний шар наночастинок – квантових точок – забезпечує широкий колірний охоплення: 94% Adobe RGB, 98% DCI-P3 та 150% SRGB. Це особливо важливо для професійної обробки візуального контенту.\r\nФормат WQHD: висока роздільна здатність забезпечує чітке та деталізоване зображення.\r\nТехнологія Rapid Boost (180Гц + 1мс) – це буде суттєва перевага в динамічних іграх, що вимагають точної та швидкої реакції.\r\nАдаптивна синхронізація Adaptive-Sync.\r\nСтандарт VESA DisplayHDR 400 – розширений динамічний діапазон підвищує контрастність.\r\nПідсвічування Mystic Light: персоналізація ігрової системи.\r\nЕргономічна підставка: зручне налаштування положення екрана монітора.\r\nТехнологія Less Blue Light Pro: апаратне зменшення енергії синього світла (з довжиною хвилі від 415 до 455нм).\r\nСерія AG (MSI ARSENAL GAMING) призначений для геймерів, які хочуть домінувати на полях віртуальних битв. Натхнена незрівнянною міцністю і бездоганною надійністю військової техніки, вона включає повноцінний ігровий арсенал. Окрім відмінних технічних характеристик, пристрої MAG можуть похвалитися оригінальним дизайном, що відображає сильний характер усієї серії.\r\n\r\nХарактеристики",
+        "price": 12799.0,
+        "stock_quantity": 5,
+        "discounted_price": 11399,
+        "rating": 0.0,
+        "created_at": "2025-04-21T08:16:39.231Z",
+        "updated_at": "2025-04-21T08:16:39.231Z",
+        "brand": 11,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 22,
+    "fields": {
+        "name": "Монітор 24\" Asus VG249QL3A (90LM09G0-B01170) FullHD / Fast IPS / 180Hz / 1 мс GTG / FreeSync Premium / G-Sync Compatible / Shadow Boost / Speakers 2W",
+        "name_en": "Monitor 24\" Asus VG249QL3A (90LM09G0-B01170) — FullHD / Fast IPS / 180Hz / 1ms GTG / FreeSync Premium / G-Sync Compatible / Shadow Boost / 2W Speakers",
+        "name_uk": "Монітор 24\" Asus VG249QL3A (90LM09G0-B01170) FullHD / Fast IPS / 180Hz / 1 мс GTG / FreeSync Premium / G-Sync Compatible / Shadow Boost / Speakers 2W",
+        "slug": "24-asus-vg249ql3a-90lm09g0-b01170-fullhd-fast-ips-180hz-1-gtg-freesync-premium-g-sync-compatible-shadow-boost-speakers-2w",
+        "description": "гровий монітор TUF Gaming VG249QL3A: 24\" (видима область 23.8\") Full HD (1920 x 1080), 180 Гц, Fast IPS, ELMB, 1 мс GTG, FreeSync Premium , G-Sync Compatible, Variable Overdrive, 99% sRGB, регулювання висоти.\r\n\r\n23.8-дюймовий ігровий монітор із панеллю Fast IPS роздільною здатністю Full HD (1920 x 1080) і високою частотою оновлення (180 Гц), призначений для професійних кіберспортсменів і захоплених геймерів\r\nЧас відгуку 1 мс (GTG) і технологія ASUS Extreme Low Motion Blur (ELMB) для мінімізації розмиття динамічного зображення\r\nСертифікації FreeSync Premium і G-Sync Compatible: висока якість зображення за рахунок змінної частоти оновлення екрана (активовано за замовчуванням)\r\nТехнологія Shadow Boost покращує відображення темних фрагментів ігрових сцен, не впливаючи на світлі\r\nІгровий монітор TUF Gaming VG249QL3A оснащений 23.8-дюймовою панеллю Fast IPS із роздільною здатністю Full HD й частотою оновлення 180 Гц. Підтримка технологій ASUS Extreme Low Motion Blur, AMD FreeSync Premium, G-SYNC Compatible і VESA AdaptiveSync забезпечує неймовірну плавність відтворення ігрового зображення. Крім того, цей монітор відтворює 99% кольорів простору sRGB, що означає чудову якість кольорів і високу контрастність.\r\n\r\nЧастота оновлення 180 Гц, час відгуку 1 мс (GTG)\r\nВідмінною особливістю монітора є підвищена частота оновлення екрана – 180 Гц, за рахунок чого поліпшується плавність відображення динамічних сцен в іграх: від шутерів до гоночних симуляторів. Висока частота оновлення дозволяє грати з найвищими налаштуваннями якості та дозволяє миттєво реагувати на те, що відображається на екрані.\r\n\r\nAdaptiveSync\r\nЩоб підвищити якість зображення в динамічних комп’ютерних іграх, монітор дозволяє активувати адаптивну синхронізацію. Він сумісний із технологіями AMD FreeSync Premium, NVIDIA G-Sync Compatible та VESA AdaptiveSync.\r\n\r\nExtreme Low Motion Blur (ELMB)\r\nТехнологія мінімізації розмиття зображення ASUS Extreme Low Motion Blur (ELMB) дає змогу монітору видавати більш чітке зображення під час показу динамічних ігрових сцен, при цьому час відгуку становить 1 мс (GTG). Вона дає змогу монітору видавати більш чітке зображення під час показу динамічних ігрових сцен.\r\n\r\nVariable Overdrive\r\nВбудована технологія ASUS Variable Overdrive дає змогу динамічно налаштовувати параметри Overdrive відповідно до зміни частоти кадрів, щоб оптимізувати зображення в будь-якій грі. Виберіть, наскільки сильний ефект ви бажаєте отримати, а потім дозвольте монітору це зробити.\r\n\r\nІнтуїтивне керування\r\nПрограмне забезпечення DisplayWidget Center отримало новий інтерфейс, що дозволяє користувачам легко змінювати налаштування монітора за допомогою миші, тож немає необхідності відкривати екранне меню.\r\n\r\nРізні варіанти підключень\r\nМонітор пропонує широкий набір інтерфейсів для підключення до джерела сигналу, зокрема два порти HDMI 2.0, та DisplayPort 1.2.",
+        "description_en": "TUF Gaming VG249QL3A Gaming Monitor: 24\" (23.8\" viewable) Full HD (1920 x 1080), 180Hz, Fast IPS, ELMB, 1ms GTG, FreeSync Premium, G-Sync Compatible, Variable Overdrive, 99% sRGB, Height Adjustable\r\n\r\nThe 23.8-inch Fast IPS gaming monitor with Full HD (1920 x 1080) resolution and an ultra-high 180Hz refresh rate is designed for professional esports players and avid gamers.\r\n\r\n1ms (GTG) response time and ASUS Extreme Low Motion Blur (ELMB) technology minimize motion blur for crystal-clear action.\r\n\r\nCertified FreeSync Premium and G-Sync Compatible support ensures tear-free, stutter-free gameplay with variable refresh rate enabled by default.\r\n\r\nShadow Boost enhances visibility in dark scenes without overexposing bright areas, helping you spot enemies hiding in shadows.\r\n\r\nDelivers 99% sRGB color gamut coverage for vivid and accurate color reproduction—ideal for both gaming and content creation.\r\n\r\n180Hz refresh rate & 1ms response time provide ultra-smooth visuals and lightning-fast response in shooters, racing games, and more.\r\n\r\nAdaptiveSync support ensures compatibility with AMD FreeSync Premium, NVIDIA G-Sync Compatible, and VESA AdaptiveSync for fluid gameplay.\r\n\r\nExtreme Low Motion Blur (ELMB) sharpens fast-moving visuals, maintaining clarity during intense action.\r\n\r\nASUS Variable Overdrive dynamically adjusts overdrive levels based on frame rates for the best performance in any game.\r\n\r\nDisplayWidget Center offers intuitive on-screen control over monitor settings via mouse, eliminating the need to use OSD buttons.\r\n\r\nVersatile connectivity options include 2× HDMI 2.0 ports and 1× DisplayPort 1.2, ensuring seamless compatibility with PCs and consoles.",
+        "description_uk": "гровий монітор TUF Gaming VG249QL3A: 24\" (видима область 23.8\") Full HD (1920 x 1080), 180 Гц, Fast IPS, ELMB, 1 мс GTG, FreeSync Premium , G-Sync Compatible, Variable Overdrive, 99% sRGB, регулювання висоти.\r\n\r\n23.8-дюймовий ігровий монітор із панеллю Fast IPS роздільною здатністю Full HD (1920 x 1080) і високою частотою оновлення (180 Гц), призначений для професійних кіберспортсменів і захоплених геймерів\r\nЧас відгуку 1 мс (GTG) і технологія ASUS Extreme Low Motion Blur (ELMB) для мінімізації розмиття динамічного зображення\r\nСертифікації FreeSync Premium і G-Sync Compatible: висока якість зображення за рахунок змінної частоти оновлення екрана (активовано за замовчуванням)\r\nТехнологія Shadow Boost покращує відображення темних фрагментів ігрових сцен, не впливаючи на світлі\r\nІгровий монітор TUF Gaming VG249QL3A оснащений 23.8-дюймовою панеллю Fast IPS із роздільною здатністю Full HD й частотою оновлення 180 Гц. Підтримка технологій ASUS Extreme Low Motion Blur, AMD FreeSync Premium, G-SYNC Compatible і VESA AdaptiveSync забезпечує неймовірну плавність відтворення ігрового зображення. Крім того, цей монітор відтворює 99% кольорів простору sRGB, що означає чудову якість кольорів і високу контрастність.\r\n\r\nЧастота оновлення 180 Гц, час відгуку 1 мс (GTG)\r\nВідмінною особливістю монітора є підвищена частота оновлення екрана – 180 Гц, за рахунок чого поліпшується плавність відображення динамічних сцен в іграх: від шутерів до гоночних симуляторів. Висока частота оновлення дозволяє грати з найвищими налаштуваннями якості та дозволяє миттєво реагувати на те, що відображається на екрані.\r\n\r\nAdaptiveSync\r\nЩоб підвищити якість зображення в динамічних комп’ютерних іграх, монітор дозволяє активувати адаптивну синхронізацію. Він сумісний із технологіями AMD FreeSync Premium, NVIDIA G-Sync Compatible та VESA AdaptiveSync.\r\n\r\nExtreme Low Motion Blur (ELMB)\r\nТехнологія мінімізації розмиття зображення ASUS Extreme Low Motion Blur (ELMB) дає змогу монітору видавати більш чітке зображення під час показу динамічних ігрових сцен, при цьому час відгуку становить 1 мс (GTG). Вона дає змогу монітору видавати більш чітке зображення під час показу динамічних ігрових сцен.\r\n\r\nVariable Overdrive\r\nВбудована технологія ASUS Variable Overdrive дає змогу динамічно налаштовувати параметри Overdrive відповідно до зміни частоти кадрів, щоб оптимізувати зображення в будь-якій грі. Виберіть, наскільки сильний ефект ви бажаєте отримати, а потім дозвольте монітору це зробити.\r\n\r\nІнтуїтивне керування\r\nПрограмне забезпечення DisplayWidget Center отримало новий інтерфейс, що дозволяє користувачам легко змінювати налаштування монітора за допомогою миші, тож немає необхідності відкривати екранне меню.\r\n\r\nРізні варіанти підключень\r\nМонітор пропонує широкий набір інтерфейсів для підключення до джерела сигналу, зокрема два порти HDMI 2.0, та DisplayPort 1.2.",
+        "price": 7099.0,
+        "stock_quantity": 1,
+        "discounted_price": 5999,
+        "rating": 0.0,
+        "created_at": "2025-04-21T08:26:45.366Z",
+        "updated_at": "2025-04-21T08:26:45.366Z",
+        "brand": 5,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 23,
+    "fields": {
+        "name": "Монітор 27\" Acer EK271EBI (UM.HE1CD.E01) IPS FHD / 100Hz / 1ms / AMD FreeSync / Low Blue Light / HDMI",
+        "name_en": "Monitor 27\" Acer EK271EBI (UM.HE1CD.E01) — IPS FHD / 100Hz / 1ms / AMD FreeSync / Low Blue Light / HDMI",
+        "name_uk": "Монітор 27\" Acer EK271EBI (UM.HE1CD.E01) IPS FHD / 100Hz / 1ms / AMD FreeSync / Low Blue Light / HDMI",
+        "slug": "27-acer-ek271ebi-umhe1cde01-ips-fhd-100hz-1ms-amd-freesync-low-blue-light-hdmi",
+        "description": "Монітор 27 Acer EK271EBI D-Sub HDMI IPS 100Hz 5ms Full HD (UM.HE1CD.E01) відрізняється передовими технологіями та високою функціональністю, призначений як для професійних користувачів, так і для цінителів високоякісного зображення в домашніх умовах. Цей монітор забезпечує високу деталізацію зображення завдяки роздільній здатності Full HD та розміру екрана у 27 дюймів, що робить його ідеальним вибором для роботи з графікою, перегляду відео високої чіткості та ігрового процесу.\r\n\r\nIPS-матриця з кутами огляду 178° дозволяє зберігати стабільність передачі кольору навіть при зміні ракурсу перегляду, що критично важливо для дизайнерів і архітекторів. Висока контрастність у 3000:1 та яскравість у 250 кд/м² гарантують глибокі чорні та яскраві білі відтінки, необхідні для професійної фото та відео обробки.\r\n\r\nЧас відгуку 5 мс і частота оновлення 100 Гц забезпечують плавність і чуйність динамічних сцен у відеоіграх і фільмах, а технологія AMD FreeSync виключає ефект розриву зображення, що є невідємним фактором для геймерів. Матове покриття екрана мінімізує відображення та відблиски, дозволяючи комфортно використовувати монітор у приміщеннях з різним освітленням.\r\n\r\nДля підключення до різноманітних пристроїв передбачені порти HDMI та VGA, що робить монітор універсальним рішенням для підключення як до сучасних, так і до старіших джерел сигналу. Можливість нахилу екрана та стандарт кріплення VESA 100x100 мм надають додаткову ергономіку та зручність у використанні.",
+        "description_en": "Acer EK271EBI 27\" Monitor (UM.HE1CD.E01) — D-Sub / HDMI / IPS / 100Hz / 5ms / Full HD / AMD FreeSync / Low Blue Light\r\n\r\nThe Acer EK271EBI 27-inch monitor combines advanced technologies and high functionality, making it an excellent choice for both professional users and those who appreciate high-quality visuals at home. With its Full HD resolution and spacious 27\" screen, it delivers sharp and detailed images—ideal for graphic work, watching high-definition videos, and gaming.\r\n\r\nThe IPS panel with 178° wide viewing angles ensures consistent color accuracy from virtually any angle, which is essential for designers, architects, and content creators. A 3000:1 contrast ratio and 250 nits of brightness offer deep blacks and vivid whites—perfect for photo and video editing.\r\n\r\nA 5ms response time and 100Hz refresh rate provide smooth visuals and responsive performance in fast-paced games and action scenes, while AMD FreeSync eliminates screen tearing, ensuring a seamless gaming experience. The anti-glare matte screen minimizes reflections, allowing comfortable use in various lighting conditions.\r\n\r\nEquipped with both HDMI and VGA (D-Sub) ports, the monitor offers versatile connectivity to both modern and legacy devices. It also features tilt adjustment and VESA 100x100 mm compatibility for flexible mounting and improved ergonomics.",
+        "description_uk": "Монітор 27 Acer EK271EBI D-Sub HDMI IPS 100Hz 5ms Full HD (UM.HE1CD.E01) відрізняється передовими технологіями та високою функціональністю, призначений як для професійних користувачів, так і для цінителів високоякісного зображення в домашніх умовах. Цей монітор забезпечує високу деталізацію зображення завдяки роздільній здатності Full HD та розміру екрана у 27 дюймів, що робить його ідеальним вибором для роботи з графікою, перегляду відео високої чіткості та ігрового процесу.\r\n\r\nIPS-матриця з кутами огляду 178° дозволяє зберігати стабільність передачі кольору навіть при зміні ракурсу перегляду, що критично важливо для дизайнерів і архітекторів. Висока контрастність у 3000:1 та яскравість у 250 кд/м² гарантують глибокі чорні та яскраві білі відтінки, необхідні для професійної фото та відео обробки.\r\n\r\nЧас відгуку 5 мс і частота оновлення 100 Гц забезпечують плавність і чуйність динамічних сцен у відеоіграх і фільмах, а технологія AMD FreeSync виключає ефект розриву зображення, що є невідємним фактором для геймерів. Матове покриття екрана мінімізує відображення та відблиски, дозволяючи комфортно використовувати монітор у приміщеннях з різним освітленням.\r\n\r\nДля підключення до різноманітних пристроїв передбачені порти HDMI та VGA, що робить монітор універсальним рішенням для підключення як до сучасних, так і до старіших джерел сигналу. Можливість нахилу екрана та стандарт кріплення VESA 100x100 мм надають додаткову ергономіку та зручність у використанні.",
+        "price": 4999.0,
+        "stock_quantity": 0,
+        "discounted_price": 4299,
+        "rating": 0.0,
+        "created_at": "2025-04-21T08:37:45.079Z",
+        "updated_at": "2025-04-21T08:37:45.079Z",
+        "brand": 1,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 24,
+    "fields": {
+        "name": "Монітор 24\" MSI G244F E2 -- Rapid IPS / 180Hz / 1ms / 8-Bit / DCI-P3 92% / AMD FreeSync / Adaptive Sync",
+        "name_en": "Monitor 24\" MSI G244F E2 — Rapid IPS / 180Hz / 1ms / 8-Bit / 92% DCI-P3 / AMD FreeSync / Adaptive Sync",
+        "name_uk": "Монітор 24\" MSI G244F E2 -- Rapid IPS / 180Hz / 1ms / 8-Bit / DCI-P3 92% / AMD FreeSync / Adaptive Sync",
+        "slug": "msi-g244f-e2-24-rapid-ips-180hz-1ms-freesync-dci-p3",
+        "description": "Монітор MSI може відображати більше відтінків, ніж звичайні. Точна передача кольору означає реалістичне зображення, що сприяє ще більшому зануренню в гру.\r\nШирокі кути огляду дають більше свободи під час встановлення ігрового монітора MSI без компромісів з погляду якості зображення. При погляді під кутом кольору на його екрані спотворюватимуться значно менше в порівнянні з моніторами, що володіють скромнішими кутами огляду.",
+        "description_en": "The MSI monitor displays a wider range of shades compared to standard displays. Its accurate color reproduction delivers lifelike visuals, enhancing immersion in every game.\r\nWide viewing angles provide greater flexibility when setting up your MSI gaming monitor, without compromising image quality. Even when viewed from the side, colors remain consistent and less distorted than on monitors with narrower viewing angles.",
+        "description_uk": "Монітор MSI може відображати більше відтінків, ніж звичайні. Точна передача кольору означає реалістичне зображення, що сприяє ще більшому зануренню в гру.\r\nШирокі кути огляду дають більше свободи під час встановлення ігрового монітора MSI без компромісів з погляду якості зображення. При погляді під кутом кольору на його екрані спотворюватимуться значно менше в порівнянні з моніторами, що володіють скромнішими кутами огляду.",
+        "price": 6599.0,
+        "stock_quantity": 0,
+        "discounted_price": 5499,
+        "rating": 0.0,
+        "created_at": "2025-04-21T08:55:16.478Z",
+        "updated_at": "2025-04-21T08:55:16.478Z",
+        "brand": 11,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 25,
+    "fields": {
+        "name": "Монітор Samsung 34\" Odyssey G8 G850 (LS34DG852SIXUA) -- QD OLED / 0.03 мс / 175Гц / 10-Bit / DCI P3 99.3% / HDR400 True Black / FreeSync Premium / G-SYNC Compatible",
+        "name_en": "Monitor 34\" Samsung Odyssey G8 G850 (LS34DG852SIXUA) — QD-OLED / 0.03ms / 175Hz / 10-Bit / 99.3% DCI-P3 / HDR400 True Black / FreeSync Premium / G-SYNC Compatible",
+        "name_uk": "Монітор Samsung 34\" Odyssey G8 G850 (LS34DG852SIXUA) -- QD OLED / 0.03 мс / 175Гц / 10-Bit / DCI P3 99.3% / HDR400 True Black / FreeSync Premium / G-SYNC Compatible",
+        "slug": "samsung-odyssey-g8-g850-34-qd-oled-175hz-003ms-hdr400-freesync-gsync",
+        "description": "Захопливий вид із OLED\r\nOLED-екран, підсилений процесором Neo Quantum, відтворює яскравіші білі та більш насичені чорні відтінки з майже безмежною контрастністю кольорів.",
+        "description_en": "Captivating View with OLED\r\nThe OLED display, enhanced by the Neo Quantum processor, delivers brighter whites and deeper blacks with near-infinite color contrast.",
+        "description_uk": "Захопливий вид із OLED\r\nOLED-екран, підсилений процесором Neo Quantum, відтворює яскравіші білі та більш насичені чорні відтінки з майже безмежною контрастністю кольорів.",
+        "price": 41999.0,
+        "stock_quantity": 3,
+        "discounted_price": 39999,
+        "rating": 0.0,
+        "created_at": "2025-04-21T09:56:07.526Z",
+        "updated_at": "2025-04-21T09:56:07.526Z",
+        "brand": 16,
+        "warranty": 24,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 26,
+    "fields": {
+        "name": "Монітор 27\" MSI G271CQP E2 -- VA 1000R QHD (2K) / 170Hz / 1ms / 8-Bit + FRC / sRGB 110% / Adaptive-Sync / G-Sync Compatible / HAS / Console Mode",
+        "name_en": "Monitor 27\" MSI G271CQP E2 — VA 1000R QHD (2K) / 170Hz / 1ms / 8-Bit + FRC / 110% sRGB / Adaptive-Sync / G-Sync Compatible / HAS / Console Mode",
+        "name_uk": "Монітор 27\" MSI G271CQP E2 -- VA 1000R QHD (2K) / 170Hz / 1ms / 8-Bit + FRC / sRGB 110% / Adaptive-Sync / G-Sync Compatible / HAS / Console Mode",
+        "slug": "msi-g271cqp-e2-27-va-1000r-qhd-170hz-1ms-srgb-110-freesync-gsync",
+        "description": "Монітор MSI 27\" G271CQP-E2 - це інноваційний екран з діагоналлю 27 дюймів, спеціально розроблений для геймінгу і високопродуктивної роботи. Завдяки технології VA і роздільній здатності 2560x1440, він забезпечує дивовижну якість зображення. Вказані порти HDMI, DP, а також забезпечують плавний геймплей без розривів у зображенні. З частотою оновлення 170 Гц і часом відгуку 1 мс, цей вигнутий монітор ідеально підходить для геймерів.",
+        "description_en": "The MSI 27\" G271CQP-E2 Monitor is an innovative display designed specifically for gaming and high-performance work. With a VA panel and a resolution of 2560x1440, it delivers stunning image quality. Equipped with HDMI and DP ports, it ensures smooth gameplay with no screen tearing. Featuring a 170Hz refresh rate and 1ms response time, this curved monitor is perfect for gamers seeking immersive and responsive visuals.",
+        "description_uk": "Монітор MSI 27\" G271CQP-E2 - це інноваційний екран з діагоналлю 27 дюймів, спеціально розроблений для геймінгу і високопродуктивної роботи. Завдяки технології VA і роздільній здатності 2560x1440, він забезпечує дивовижну якість зображення. Вказані порти HDMI, DP, а також забезпечують плавний геймплей без розривів у зображенні. З частотою оновлення 170 Гц і часом відгуку 1 мс, цей вигнутий монітор ідеально підходить для геймерів.",
+        "price": 8499.0,
+        "stock_quantity": 5,
+        "discounted_price": 7299,
+        "rating": 0.0,
+        "created_at": "2025-04-21T10:01:49.538Z",
+        "updated_at": "2025-04-21T10:01:49.538Z",
+        "brand": 11,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 27,
+    "fields": {
+        "name": "Монітор 27\" MSI MPG 274URF QD -- Quantum Dot 4K UHD / Rapid IPS / 160Hz / 0.5ms(GtG / 8-Bit + FRC / DCI-P3 98% / AMD FreeSync Premium / G-SYNC Compatible / KVM / Type-C PD 65W",
+        "name_en": "Monitor 27\" MSI MPG 274URF QD — Quantum Dot 4K UHD / Rapid IPS / 160Hz / 0.5ms (GtG) / 8-Bit + FRC / 98% DCI-P3 / AMD FreeSync Premium / G-SYNC Compatible / KVM / Type-C PD 65W",
+        "name_uk": "Монітор 27\" MSI MPG 274URF QD -- Quantum Dot 4K UHD / Rapid IPS / 160Hz / 0.5ms(GtG / 8-Bit + FRC / DCI-P3 98% / AMD FreeSync Premium / G-SYNC Compatible / KVM / Type-C PD 65W",
+        "slug": "msi-mpg-274urf-qd-27-quantum-dot-4k-160hz-0-5ms-gsync-freesync",
+        "description": "Милуйтеся своїми яскравими перемогами на екрані ігрового монітора MPG 274URF QD.\r\nВолодіючи РК-матрицею з роздільною здатністю UHD (3840x3160), високою частотою оновлення 160 Гц і низьким часом відгуку - 0.5 мс (GtG, Min.), він надасть вам відчутну перевагу над суперниками. Втілюючи в собі найсучасніші технології, включно з технологією синхронізації Freesync Premium, ця модель буде чудовим вибором для ваших ігор.\r\nПанель Rapid IPS - забезпечує час відгуку 0.5 мс (GtG, мін.)\r\nQuantum Dot - нанокристали формують більше світла та розширюють кольорову палітру, забезпечуючи високі значення максимальної яскравості. Своєю чергою це дає змогу зробити зображення більш барвистим і забезпечити широкий динамічний діапазон.\r\nНайвища роздільна здатність - 4K UHD\r\nВисока частота оновлення 160 Гц\r\nШвидкий час відгуку 0.5 мс (GtG, мін.)\r\nІнтерфейс HDMI 2.1: підтримка режиму 4K/120 Гц із частотою пропускання 48 Гбіт/с, ідеально для ігрових консолей\r\nЕргономічна підставка: зручне налаштування положення екрана монітора\r\nСертифікація VESA DisplayHDR 400: розширений динамічний діапазон збільшує контрастність\r\nТехнологія AI Vision: Нова технологія AI Vision дає змогу не тільки виявляти деталі в темних ділянках, а й підвищувати загальну яскравість і насичувати кольори\r\nKVM-модуль\r\nКеруйте декількома пристроями за допомогою одного набору клавіатури, миші та ігрового монітора MSI.\r\n\r\nЗниження інтенсивності синього світла\r\nМонітори MSI оптимізовані для зниження інтенсивності випромінювання екрана в синій складовій видимого спектра, тому ви можете грати протягом тривалішого часу без втоми очей.\r\n\r\nRapid IPS\r\nДисплей Rapid IPS забезпечує геймерів надшвидким часом відгуку 1 мс GTG, що значно знижує ймовірність розмиття екрана. Кришталево чисте зображення, безумовно, дасть вам конкурентну перевагу під час прийняття точних рішень у динамічних іграх.\r\n\r\nLess Blue Light Premium\r\nЯк любитель ігор, ми розуміємо, наскільки нестерпно, коли ваш екран стає жовтим після використання меншої кількості синього світла. Less Blue Light Premium використовує апаратне рішення для зменшення світлового випромінювання в синьо-фіолетовому сегменті спектра синього світла без шкоди для кольору або якості зображення. Сертифіковане апаратне рішення EYESAFE ідеально знижує довжину хвилі шкідливого випромінювання світла та підтримує колірну гаму й колірну температуру, забезпечуючи бездоганну якість зображення та ігровий процес.\r\n\r\nMSI HDR Technology\r\nІгровий монітор MSI обладнаний технологією HDR, яка дає змогу створювати зображення з більшою деталізацією, ширшим діапазоном кольорів і схожим на те, що бачить людське око, як порівняти з традиційним монітором. Підтримує Windows 11 Auto HDR.\r\n\r\nOptix Scope\r\nСтріляйте з укриття і вбивайте своїх супротивників, перш ніж вони зможуть зреагувати. Вбудована лупа забезпечує багатоступеневе масштабування за допомогою гарячих клавіш для швидкого перемикання збільшення. Екран може підтримувати роботу, тож незалежно від того, яка зброя використовується, вона може стати снайперською гвинтівкою й атакувати ворогів на далеких дистанціях.\r\n\r\nРозумний приціл\r\nТочка прицілювання автоматично змінює колір, роблячи її видимою в будь-який час.",
+        "description_en": "Admire your vibrant victories on the screen of the MSI MPG 274URF QD gaming monitor.\r\nEquipped with a Quantum Dot LCD panel and UHD (3840x2160) resolution, this monitor delivers stunning color contrast and brightness. With a 160Hz refresh rate and a lightning-fast 0.5ms (GtG, Min.) response time, it provides a noticeable advantage over your opponents. It also incorporates the latest technology, including FreeSync Premium synchronization, making it the perfect choice for your gaming setup.\r\n\r\nKey Features:\r\n\r\nRapid IPS Panel: Offers a 0.5ms (GtG, Min.) response time.\r\n\r\nQuantum Dot Technology: Nanocrystals enhance light transmission, broadening the color palette and achieving high maximum brightness levels for vivid images and an expanded dynamic range.\r\n\r\n4K UHD Resolution: Experience sharp, ultra-detailed visuals with the highest resolution.\r\n\r\n160Hz Refresh Rate: Smooth gameplay without tearing, perfect for fast-paced action.\r\n\r\n0.5ms (GtG, Min.) Response Time: Ensures clarity and responsiveness, minimizing motion blur.\r\n\r\nHDMI 2.1 Interface: Supports 4K/120Hz mode with 48Gbps bandwidth, perfect for gaming consoles.\r\n\r\nErgonomic Stand: Convenient height adjustment and tilt options for improved viewing comfort.\r\n\r\nVESA DisplayHDR 400 Certification: Enhances contrast with extended dynamic range.\r\n\r\nAI Vision Technology: Automatically adjusts brightness, enhances colors, and reveals hidden details in dark scenes.\r\n\r\nKVM Module: Manage multiple devices using one keyboard, mouse, and monitor.\r\n\r\nBlue Light Reduction: Optimized to reduce blue light emission, minimizing eye strain during extended gaming sessions.\r\n\r\nLess Blue Light Premium: Hardware solution to reduce harmful blue light without compromising image quality. Certified EYESAFE technology.\r\n\r\nMSI HDR Technology: Supports enhanced detail, wider color range, and a more realistic image compared to traditional monitors. Supports Windows 11 Auto HDR.\r\n\r\nOptix Scope: Built-in magnification allows for multi-level zoom with hotkeys to quickly switch between zoom levels. Perfect for sniping.\r\n\r\nSmart Crosshair: Automatically changes the reticle's color, making it visible at all times, even in the most intense moments.",
+        "description_uk": "Милуйтеся своїми яскравими перемогами на екрані ігрового монітора MPG 274URF QD.\r\nВолодіючи РК-матрицею з роздільною здатністю UHD (3840x3160), високою частотою оновлення 160 Гц і низьким часом відгуку - 0.5 мс (GtG, Min.), він надасть вам відчутну перевагу над суперниками. Втілюючи в собі найсучасніші технології, включно з технологією синхронізації Freesync Premium, ця модель буде чудовим вибором для ваших ігор.\r\nПанель Rapid IPS - забезпечує час відгуку 0.5 мс (GtG, мін.)\r\nQuantum Dot - нанокристали формують більше світла та розширюють кольорову палітру, забезпечуючи високі значення максимальної яскравості. Своєю чергою це дає змогу зробити зображення більш барвистим і забезпечити широкий динамічний діапазон.\r\nНайвища роздільна здатність - 4K UHD\r\nВисока частота оновлення 160 Гц\r\nШвидкий час відгуку 0.5 мс (GtG, мін.)\r\nІнтерфейс HDMI 2.1: підтримка режиму 4K/120 Гц із частотою пропускання 48 Гбіт/с, ідеально для ігрових консолей\r\nЕргономічна підставка: зручне налаштування положення екрана монітора\r\nСертифікація VESA DisplayHDR 400: розширений динамічний діапазон збільшує контрастність\r\nТехнологія AI Vision: Нова технологія AI Vision дає змогу не тільки виявляти деталі в темних ділянках, а й підвищувати загальну яскравість і насичувати кольори\r\nKVM-модуль\r\nКеруйте декількома пристроями за допомогою одного набору клавіатури, миші та ігрового монітора MSI.\r\n\r\nЗниження інтенсивності синього світла\r\nМонітори MSI оптимізовані для зниження інтенсивності випромінювання екрана в синій складовій видимого спектра, тому ви можете грати протягом тривалішого часу без втоми очей.\r\n\r\nRapid IPS\r\nДисплей Rapid IPS забезпечує геймерів надшвидким часом відгуку 1 мс GTG, що значно знижує ймовірність розмиття екрана. Кришталево чисте зображення, безумовно, дасть вам конкурентну перевагу під час прийняття точних рішень у динамічних іграх.\r\n\r\nLess Blue Light Premium\r\nЯк любитель ігор, ми розуміємо, наскільки нестерпно, коли ваш екран стає жовтим після використання меншої кількості синього світла. Less Blue Light Premium використовує апаратне рішення для зменшення світлового випромінювання в синьо-фіолетовому сегменті спектра синього світла без шкоди для кольору або якості зображення. Сертифіковане апаратне рішення EYESAFE ідеально знижує довжину хвилі шкідливого випромінювання світла та підтримує колірну гаму й колірну температуру, забезпечуючи бездоганну якість зображення та ігровий процес.\r\n\r\nMSI HDR Technology\r\nІгровий монітор MSI обладнаний технологією HDR, яка дає змогу створювати зображення з більшою деталізацією, ширшим діапазоном кольорів і схожим на те, що бачить людське око, як порівняти з традиційним монітором. Підтримує Windows 11 Auto HDR.\r\n\r\nOptix Scope\r\nСтріляйте з укриття і вбивайте своїх супротивників, перш ніж вони зможуть зреагувати. Вбудована лупа забезпечує багатоступеневе масштабування за допомогою гарячих клавіш для швидкого перемикання збільшення. Екран може підтримувати роботу, тож незалежно від того, яка зброя використовується, вона може стати снайперською гвинтівкою й атакувати ворогів на далеких дистанціях.\r\n\r\nРозумний приціл\r\nТочка прицілювання автоматично змінює колір, роблячи її видимою в будь-який час.",
+        "price": 24999.0,
+        "stock_quantity": 2,
+        "discounted_price": 21999,
+        "rating": 0.0,
+        "created_at": "2025-04-21T10:08:18.784Z",
+        "updated_at": "2025-04-21T10:08:18.784Z",
+        "brand": 11,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 28,
+    "fields": {
+        "name": "Монітор 32\" Samsung Odyssey G6 S32BG650 (LS32BG650EIXUA) 2K QHD VA 1000R / 240Гц / 1мс / DisplayHDR600 / 8-Bit + FRC / DCI-P3 95% / FreeSync Premium Pro / G-SYNC Compatible / Smart TV / WiFi / BT 5.2 / HDMI 2.1",
+        "name_en": "Monitor 32\" Samsung Odyssey G6 S32BG650 (LS32BG650EIXUA) 2K QHD VA, 1000R Curvature / 240Hz / 1ms DisplayHDR 600 / 8-bit + FRC / 95% DCI-P3 Coverage FreeSync Premium Pro / G-SYNC Compatible Smart TV / Wi-Fi / Bluetooth 5.2 / HDMI 2.1",
+        "name_uk": "Монітор 32\" Samsung Odyssey G6 S32BG650 (LS32BG650EIXUA) 2K QHD VA 1000R / 240Гц / 1мс / DisplayHDR600 / 8-Bit + FRC / DCI-P3 95% / FreeSync Premium Pro / G-SYNC Compatible / Smart TV / WiFi / BT 5.2 / HDMI 2.1",
+        "slug": "samsung-odyssey-g6-32-s32bg650-qhd-240hz-hdr600-freesync-gsync-smart-tv",
+        "description": "Роздільна здатність QHD\r\nВаш ігровий світ стане більш реалістичним, ніж будь-коли раніше. Роздільна здатність QHD, що в 1.7 рази перевищує щільність пікселів у форматі Full HD, забезпечує неймовірно деталізоване, чітке зображення. Насолоджуйтеся повнішим оглядом і більшим простором для охоплення всіх подій.",
+        "description_en": "QHD Resolution\r\nYour gaming world becomes more realistic than ever before. QHD resolution, with 1.7 times the pixel density of Full HD, delivers incredibly detailed and crisp visuals. Enjoy a broader view and more screen space to take in all the action.",
+        "description_uk": "Роздільна здатність QHD\r\nВаш ігровий світ стане більш реалістичним, ніж будь-коли раніше. Роздільна здатність QHD, що в 1.7 рази перевищує щільність пікселів у форматі Full HD, забезпечує неймовірно деталізоване, чітке зображення. Насолоджуйтеся повнішим оглядом і більшим простором для охоплення всіх подій.",
+        "price": 18999.0,
+        "stock_quantity": 2,
+        "discounted_price": 18599,
+        "rating": 0.0,
+        "created_at": "2025-04-22T06:14:28.723Z",
+        "updated_at": "2025-04-22T06:14:28.723Z",
+        "brand": 16,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "product.product",
+    "pk": 29,
+    "fields": {
+        "name": "Монітор 34\" AOC U34E2M / WQHD (Ultrawide 2K) VA / 100Hz / 8-Bit / sRGB 115% / / Adaptive Sync / Flicker-Free / Low Blue Light / Picture-in/by-Picture",
+        "name_en": "Monitor 34\" AOC U34E2M WQHD (Ultrawide 2K) VA / 100Hz / 8-bit sRGB 115% Coverage / Adaptive Sync Flicker-Free / Low Blue Light Picture-in-Picture / Picture-by-Picture",
+        "name_uk": "Монітор 34\" AOC U34E2M / WQHD (Ultrawide 2K) VA / 100Hz / 8-Bit / sRGB 115% / / Adaptive Sync / Flicker-Free / Low Blue Light / Picture-in/by-Picture",
+        "slug": "aoc-u34e2m-34-wqhd-ultrawide-100hz-srgb-adaptive-sync",
+        "description": "Монітор AOC U34E2M має 34-дюймову панель з матрицею VA та роздільною здатністю Ultrawide QHD дозвіл 21:9 дарує неймовірні враження від перегляду та дозволяє розширити робочу площу екрана для більш продуктивної та багатозадачної роботи. Завдяки портам HDMI та DP підтримуються різні формати введення.\r\n\r\nРозширення WIDE QHD (WQHD)\r\nЗавдяки роздільній здатності 3440 x 1440, Wide Quad HD (QHD), досягаються чудова якість і чіткість зображення, що дозволяють побачити кожну деталь. Велике співвідношення сторін 21:9 ідеально підійде для перегляду фільмів у широкому форматі, а також дозволить повністю поринути у новітню гру. Крім того, воно забезпечує більше місця для роботи. 8-бітове кодування кольорів забезпечує широку палітру для передачі живих природних зображень.\r\n\r\nПАНЕЛЬ VA\r\nПанель VA (Vertical Alignment) відображає глибший чорний колір і має високу контрастність для більш живого та яскравого зображення.\r\n\r\n100 Гц ЧАСТОТА ОБНОВЛЕННЯ\r\nЧастота зміни кадрів у два рази швидше в порівнянні з іншими моніторами – забудьте про зависання зображення та розмите зображення. Завдяки частоті оновлення 100 Гц кожен кадр буде чітким, ви побачите наплавну послідовність кадрів, а також зможете точно завдати ударів противнику та оцінити високошвидкісні перегони у всій їхній красі.\r\n\r\nHDMI\r\nHDMI (High-Definition Multimedia Interface) підтримується ігровими консолями поточного покоління, сучасними графічними професорами та ТВ-приставками, з підтримкою системи захисту цифрового вмісту HDCP. HDMI версії 1. 3-1. 4b підтримує частоти оновлення 144 Гц при 1080p і 75 Гц при 1440p, в той час, як HDMI версій 2. 0-2. 0b підтримує 240 Гц при 1080p, 144 Гц при 1440p та 60 Гц при 2160p (4K).\r\n\r\nPICTURE BY PICTURE (PBP)\r\nФункція послідовного виведення зображень дозволяє одночасно використовувати кілька джерел відеосигналу (наприклад, ноутбук та настільний ПК) та виводити їх на один екран. Широкий огляд дарує більший контроль над ситуацією та значно підвищує вашу ефективність під час стрімінгу, роботи чи гри.\r\n\r\nFLICKER FREE\r\nУ технології Flicker-Free AOC застосовується система підсвічування на основі згладженого постійного струму, знижуючи мерехтіння зображення. При максимально зниженому навантаженні та втомі очей ви зможете насолодитися тривалим ігровим марафоном з комфортом!\r\n\r\nLOW BLUE LIGHT\r\nКороткі хвилі синього кольору можуть стати причиною погіршення зору. Технологія AOC Low Blue Light повністю блокує шкідливе синє проміння без втрати колірних якостей дисплея. Інші спроби усунення та зменшення променів синього кольору включають застосування різних фільтрів та параметрів для отримання затемненого зображення та зображення у жовтих відтінках.\r\n\r\nБЕЗРАМНА КОНСТРУКЦІЯ\r\nКрім сучасного та привабливого зовнішнього вигляду, безрамні конструкції забезпечують безшовний вигляд при використанні кількох моніторів. Ваш курсор/вікна більше не пропадатимуть у темній безодні рамок під час встановлення кількох моніторів поруч один з одним.\r\n\r\nADAPTIVE SYNC\r\nAdaptive Sync синхронізує вертикальну частоту оновлення монітора з частотою кадрів відеокарти, тим самим забезпечуючи плавність будь-якого ігрового процесу шляхом усунення затримок, розривів та тремтіння зображення. Ця функція також корисна при перегляді відео та інших візуальних мультимедіа, а також покращує плавність перегляду.\r\n\r\nVESA MOUNT\r\nПідставки AOC Ergo Base забезпечують універсальність, міцність та простоту використання одночасно. Ви все ще хочете використовувати настінне кріплення чи скласти комбінацію з кількох моніторів на настільних підставках? Кріплення VESA забезпечують максимальну гнучкість. Вгору ногами, в поворотному режимі, один на одному – кріпіть монітору, куди побажаєте за допомогою кріплень та підставок сторонніх виробників завдяки можливостям кріплення VESA.\r\n\r\nГАРАНТІЯ 3 роки\r\nAOC підкріплює якість кожного окремого монітора за допомогою великої трирічної гарантії, яка набирає чинності в день придбання. Протягом терміну дії гарантії всі дисплеї AOC з виробничими дефектами або несправні компоненти безкоштовно ремонтуватимуться або замінюватимуться.",
+        "description_en": "AOC U34E2M Monitor – Immersive Productivity and Entertainment\r\n34” VA Panel with Ultrawide QHD Resolution\r\nThe AOC U34E2M features a 34-inch VA panel with Ultrawide QHD 21:9 resolution, delivering an immersive viewing experience and significantly expanding your screen space for improved productivity and multitasking. HDMI and DisplayPort inputs ensure compatibility with various devices and content formats.\r\n\r\nWide QHD (WQHD) Resolution\r\nWith a resolution of 3440 x 1440, Wide Quad HD offers stunning clarity and detail, allowing you to see every nuance. The 21:9 aspect ratio is perfect for watching wide-format movies and diving into the latest games, while also giving you more workspace. The 8-bit color depth provides a broad palette for rich, natural visuals.\r\n\r\nVA Panel\r\nThe Vertical Alignment (VA) panel delivers deeper blacks and higher contrast for vivid and lifelike images.\r\n\r\n100Hz Refresh Rate\r\nWith a refresh rate twice as fast as standard monitors, you can say goodbye to stutter and blur. The 100Hz refresh rate ensures smooth visuals, clearer frames, and precise tracking — ideal for fast-paced gaming or high-speed video playback.\r\n\r\nHDMI Connectivity\r\nCompatible with current-gen gaming consoles, modern graphics cards, and media players.\r\n\r\nHDMI 1.3–1.4b: 144Hz @1080p, 75Hz @1440p\r\n\r\nHDMI 2.0–2.0b: 240Hz @1080p, 144Hz @1440p, 60Hz @4K\r\n\r\nPicture-by-Picture (PBP)\r\nThe PBP feature lets you connect and display content from two different sources simultaneously (e.g., a laptop and a desktop PC), ideal for multitasking, streaming, or monitoring multiple systems at once.\r\n\r\nFlicker-Free Technology\r\nAOC’s Flicker-Free technology uses a DC backlight system to reduce flickering, minimizing eye strain and fatigue — perfect for long gaming sessions or extended work hours.\r\n\r\nLow Blue Light\r\nAOC’s Low Blue Light mode blocks harmful shortwave blue light without compromising color quality, unlike traditional filters that darken the image or shift tones to yellow.\r\n\r\nFrameless Design\r\nThe sleek frameless design not only looks modern but also offers a seamless multi-monitor setup experience with minimal distraction.\r\n\r\nAdaptive Sync\r\nAdaptive Sync technology synchronizes your monitor’s refresh rate with the GPU’s frame rate, eliminating tearing, stutter, and input lag — ensuring a smoother experience whether you’re gaming or watching high-speed video.\r\n\r\nVESA Mount Compatibility\r\nMount your monitor exactly where you want it with VESA compatibility — whether on a wall, multi-monitor stand, or ergonomic arm. The AOC Ergo Base also ensures stability and ease of adjustment.\r\n\r\n3-Year Warranty\r\nAOC backs each monitor with a solid 3-year warranty from the date of purchase. Any manufacturing defects or component failures will be repaired or replaced free of charge within this period.",
+        "description_uk": "Монітор AOC U34E2M має 34-дюймову панель з матрицею VA та роздільною здатністю Ultrawide QHD дозвіл 21:9 дарує неймовірні враження від перегляду та дозволяє розширити робочу площу екрана для більш продуктивної та багатозадачної роботи. Завдяки портам HDMI та DP підтримуються різні формати введення.\r\n\r\nРозширення WIDE QHD (WQHD)\r\nЗавдяки роздільній здатності 3440 x 1440, Wide Quad HD (QHD), досягаються чудова якість і чіткість зображення, що дозволяють побачити кожну деталь. Велике співвідношення сторін 21:9 ідеально підійде для перегляду фільмів у широкому форматі, а також дозволить повністю поринути у новітню гру. Крім того, воно забезпечує більше місця для роботи. 8-бітове кодування кольорів забезпечує широку палітру для передачі живих природних зображень.\r\n\r\nПАНЕЛЬ VA\r\nПанель VA (Vertical Alignment) відображає глибший чорний колір і має високу контрастність для більш живого та яскравого зображення.\r\n\r\n100 Гц ЧАСТОТА ОБНОВЛЕННЯ\r\nЧастота зміни кадрів у два рази швидше в порівнянні з іншими моніторами – забудьте про зависання зображення та розмите зображення. Завдяки частоті оновлення 100 Гц кожен кадр буде чітким, ви побачите наплавну послідовність кадрів, а також зможете точно завдати ударів противнику та оцінити високошвидкісні перегони у всій їхній красі.\r\n\r\nHDMI\r\nHDMI (High-Definition Multimedia Interface) підтримується ігровими консолями поточного покоління, сучасними графічними професорами та ТВ-приставками, з підтримкою системи захисту цифрового вмісту HDCP. HDMI версії 1. 3-1. 4b підтримує частоти оновлення 144 Гц при 1080p і 75 Гц при 1440p, в той час, як HDMI версій 2. 0-2. 0b підтримує 240 Гц при 1080p, 144 Гц при 1440p та 60 Гц при 2160p (4K).\r\n\r\nPICTURE BY PICTURE (PBP)\r\nФункція послідовного виведення зображень дозволяє одночасно використовувати кілька джерел відеосигналу (наприклад, ноутбук та настільний ПК) та виводити їх на один екран. Широкий огляд дарує більший контроль над ситуацією та значно підвищує вашу ефективність під час стрімінгу, роботи чи гри.\r\n\r\nFLICKER FREE\r\nУ технології Flicker-Free AOC застосовується система підсвічування на основі згладженого постійного струму, знижуючи мерехтіння зображення. При максимально зниженому навантаженні та втомі очей ви зможете насолодитися тривалим ігровим марафоном з комфортом!\r\n\r\nLOW BLUE LIGHT\r\nКороткі хвилі синього кольору можуть стати причиною погіршення зору. Технологія AOC Low Blue Light повністю блокує шкідливе синє проміння без втрати колірних якостей дисплея. Інші спроби усунення та зменшення променів синього кольору включають застосування різних фільтрів та параметрів для отримання затемненого зображення та зображення у жовтих відтінках.\r\n\r\nБЕЗРАМНА КОНСТРУКЦІЯ\r\nКрім сучасного та привабливого зовнішнього вигляду, безрамні конструкції забезпечують безшовний вигляд при використанні кількох моніторів. Ваш курсор/вікна більше не пропадатимуть у темній безодні рамок під час встановлення кількох моніторів поруч один з одним.\r\n\r\nADAPTIVE SYNC\r\nAdaptive Sync синхронізує вертикальну частоту оновлення монітора з частотою кадрів відеокарти, тим самим забезпечуючи плавність будь-якого ігрового процесу шляхом усунення затримок, розривів та тремтіння зображення. Ця функція також корисна при перегляді відео та інших візуальних мультимедіа, а також покращує плавність перегляду.\r\n\r\nVESA MOUNT\r\nПідставки AOC Ergo Base забезпечують універсальність, міцність та простоту використання одночасно. Ви все ще хочете використовувати настінне кріплення чи скласти комбінацію з кількох моніторів на настільних підставках? Кріплення VESA забезпечують максимальну гнучкість. Вгору ногами, в поворотному режимі, один на одному – кріпіть монітору, куди побажаєте за допомогою кріплень та підставок сторонніх виробників завдяки можливостям кріплення VESA.\r\n\r\nГАРАНТІЯ 3 роки\r\nAOC підкріплює якість кожного окремого монітора за допомогою великої трирічної гарантії, яка набирає чинності в день придбання. Протягом терміну дії гарантії всі дисплеї AOC з виробничими дефектами або несправні компоненти безкоштовно ремонтуватимуться або замінюватимуться.",
+        "price": 11789.0,
+        "stock_quantity": 1,
+        "discounted_price": 10199,
+        "rating": 0.0,
+        "created_at": "2025-04-22T06:20:49.555Z",
+        "updated_at": "2025-04-22T06:23:03.792Z",
+        "brand": 17,
+        "warranty": 12,
+        "delivery_options": [
+            2,
+            3,
+            4,
+            5,
+            6
+        ]
+    }
+},
+{
     "model": "product.productcategory",
     "pk": 1,
     "fields": {
@@ -10909,14 +11189,6 @@
     "fields": {
         "product": 2,
         "category": 100
-    }
-},
-{
-    "model": "product.productcategory",
-    "pk": 4,
-    "fields": {
-        "product": 2,
-        "category": 71
     }
 },
 {
@@ -11253,6 +11525,230 @@
     "fields": {
         "product": 19,
         "category": 84
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 47,
+    "fields": {
+        "product": 20,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 48,
+    "fields": {
+        "product": 20,
+        "category": 220
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 49,
+    "fields": {
+        "product": 21,
+        "category": 217
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 50,
+    "fields": {
+        "product": 21,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 51,
+    "fields": {
+        "product": 21,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 52,
+    "fields": {
+        "product": 22,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 53,
+    "fields": {
+        "product": 22,
+        "category": 216
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 54,
+    "fields": {
+        "product": 23,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 55,
+    "fields": {
+        "product": 23,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 56,
+    "fields": {
+        "product": 24,
+        "category": 217
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 57,
+    "fields": {
+        "product": 24,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 58,
+    "fields": {
+        "product": 24,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 59,
+    "fields": {
+        "product": 25,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 60,
+    "fields": {
+        "product": 25,
+        "category": 220
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 61,
+    "fields": {
+        "product": 25,
+        "category": 106
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 62,
+    "fields": {
+        "product": 25,
+        "category": 108
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 63,
+    "fields": {
+        "product": 26,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 64,
+    "fields": {
+        "product": 26,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 65,
+    "fields": {
+        "product": 26,
+        "category": 217
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 66,
+    "fields": {
+        "product": 27,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 67,
+    "fields": {
+        "product": 27,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 68,
+    "fields": {
+        "product": 27,
+        "category": 217
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 69,
+    "fields": {
+        "product": 28,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 70,
+    "fields": {
+        "product": 28,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 71,
+    "fields": {
+        "product": 28,
+        "category": 220
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 72,
+    "fields": {
+        "product": 29,
+        "category": 104
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 73,
+    "fields": {
+        "product": 29,
+        "category": 105
+    }
+},
+{
+    "model": "product.productcategory",
+    "pk": 74,
+    "fields": {
+        "product": 29,
+        "category": 106
     }
 },
 {
@@ -11703,6 +12199,132 @@
         "name": "Звукова система",
         "name_en": "Sound system",
         "name_uk": "Звукова система"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 52,
+    "fields": {
+        "name": "Час реакції матриці",
+        "name_en": "Matrix reaction time",
+        "name_uk": "Час реакції матриці"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 53,
+    "fields": {
+        "name": "Яскравість дисплея",
+        "name_en": "Display brightness",
+        "name_uk": "Яскравість дисплея"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 54,
+    "fields": {
+        "name": "Особливості",
+        "name_en": "Features",
+        "name_uk": "Особливості"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 55,
+    "fields": {
+        "name": "Контрасність дисплея",
+        "name_en": "Display contrast",
+        "name_uk": "Контрасність дисплея"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 56,
+    "fields": {
+        "name": "ПІдсвітка матриці",
+        "name_en": "Matrix backlight",
+        "name_uk": "ПІдсвітка матриці"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 57,
+    "fields": {
+        "name": "Кут огляду горизонтальний",
+        "name_en": "The viewing angle is horizontal",
+        "name_uk": "Кут огляду горизонтальний"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 58,
+    "fields": {
+        "name": "Ігрові технології",
+        "name_en": "Game technologies",
+        "name_uk": "Ігрові технології"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 59,
+    "fields": {
+        "name": "Відношення сторін",
+        "name_en": "The relationship of the parties",
+        "name_uk": "Відношення сторін"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 60,
+    "fields": {
+        "name": "VESA",
+        "name_en": "VESA",
+        "name_uk": "VESA"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 61,
+    "fields": {
+        "name": "Максимальна кількість кольорів",
+        "name_en": "Maximum number of colors",
+        "name_uk": "Максимальна кількість кольорів"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 62,
+    "fields": {
+        "name": "Фірмові технології",
+        "name_en": "Branded technologies",
+        "name_uk": "Фірмові технології"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 63,
+    "fields": {
+        "name": "Варіанти регулювання положення дисплея",
+        "name_en": "Display position adjustment options",
+        "name_uk": "Варіанти регулювання положення дисплея"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 64,
+    "fields": {
+        "name": "Тип матриці",
+        "name_en": "Matrix type",
+        "name_uk": "Тип матриці"
+    }
+},
+{
+    "model": "product.attribute",
+    "pk": 65,
+    "fields": {
+        "name": "Форма екрану",
+        "name_en": "Screen form",
+        "name_uk": "Форма екрану"
     }
 },
 {
@@ -16206,6 +16828,1851 @@
     }
 },
 {
+    "model": "product.productattribute",
+    "pk": 501,
+    "fields": {
+        "product": 20,
+        "attribute": 37,
+        "value": "180 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 502,
+    "fields": {
+        "product": 20,
+        "attribute": 36,
+        "value": "27\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 503,
+    "fields": {
+        "product": 20,
+        "attribute": 39,
+        "value": "2560x1440 (2K QHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 504,
+    "fields": {
+        "product": 20,
+        "attribute": 52,
+        "value": "1 мс (GTG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 505,
+    "fields": {
+        "product": 20,
+        "attribute": 53,
+        "value": "350 кд/м2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 506,
+    "fields": {
+        "product": 20,
+        "attribute": 64,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 507,
+    "fields": {
+        "product": 20,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nБезрамковий (Сinema screen)\r\nПоворотний екран (Pivot)\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 508,
+    "fields": {
+        "product": 20,
+        "attribute": 55,
+        "value": "1000:1 (Typ)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 509,
+    "fields": {
+        "product": 20,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 510,
+    "fields": {
+        "product": 20,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 511,
+    "fields": {
+        "product": 20,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 512,
+    "fields": {
+        "product": 20,
+        "attribute": 58,
+        "value": "AMD FreeSync\r\nNVIDIA G-SYNC\r\nNVIDIA G-SYNC Compatible"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 513,
+    "fields": {
+        "product": 20,
+        "attribute": 59,
+        "value": "16:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 514,
+    "fields": {
+        "product": 20,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 515,
+    "fields": {
+        "product": 20,
+        "attribute": 60,
+        "value": "100x100 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 516,
+    "fields": {
+        "product": 20,
+        "attribute": 61,
+        "value": "16.7 млн (макс.)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 517,
+    "fields": {
+        "product": 20,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 518,
+    "fields": {
+        "product": 20,
+        "attribute": 62,
+        "value": "HDR10\r\nsRGB Coverage 99%\r\nEye Saver Mode\r\nFlicker Free\r\nFreeSync Premium\r\nG-Sync Compatible\r\nScreen Size Optimizer\r\nBlack Equalizer\r\nRefresh Rate Optimizor\r\nSuper Arena Gaming UX\r\nAuto Source Switch\r\nUltrawide Game View\r\nDisplay Port Version 1.2\r\nHDMI Version 2.0\r\nЗовнішній адаптер живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 519,
+    "fields": {
+        "product": 20,
+        "attribute": 13,
+        "value": "З підставкою: 6,1. Без підставки: 4,4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 520,
+    "fields": {
+        "product": 20,
+        "attribute": 63,
+        "value": "Нахил: -2.0 ° (± 2.0 °) ~ + 22.0 ° (± 2.0 °)\r\nPivot (Портретний режим): -2 ° (±2.0˚) ~ 92 ° (±2.0˚)\r\nОбертання у площині столу: -30.0 ° (± 2.0 °) ~ + 30.0 ° (± 2.0 °)\r\nРегульована за висотою підставка: 120.0 мм (±5.0 мм)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 521,
+    "fields": {
+        "product": 20,
+        "attribute": 14,
+        "value": "Монітор\r\nКомплект підставки\r\nКабель живлення 1.5 м\r\nКабель Display Port\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 522,
+    "fields": {
+        "product": 21,
+        "attribute": 37,
+        "value": "180 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 523,
+    "fields": {
+        "product": 21,
+        "attribute": 36,
+        "value": "27\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 524,
+    "fields": {
+        "product": 21,
+        "attribute": 39,
+        "value": "2560x1440 (2K QHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 525,
+    "fields": {
+        "product": 21,
+        "attribute": 52,
+        "value": "1 мс (GtG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 526,
+    "fields": {
+        "product": 21,
+        "attribute": 53,
+        "value": "400 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 527,
+    "fields": {
+        "product": 21,
+        "attribute": 64,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 528,
+    "fields": {
+        "product": 21,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nUSB-концентратор\r\nПоворотний екран (Pivot)\r\nПідтримка HDR\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 529,
+    "fields": {
+        "product": 21,
+        "attribute": 55,
+        "value": "1000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 530,
+    "fields": {
+        "product": 21,
+        "attribute": 56,
+        "value": "Quantum Dot LED (QLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 531,
+    "fields": {
+        "product": 21,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2\r\nUSB Type-A\r\nUSB type-C"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 532,
+    "fields": {
+        "product": 21,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 533,
+    "fields": {
+        "product": 21,
+        "attribute": 58,
+        "value": "Adaptive Sync\r\nNVIDIA G-SYNC Compatible"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 534,
+    "fields": {
+        "product": 21,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 535,
+    "fields": {
+        "product": 21,
+        "attribute": 60,
+        "value": "75x75 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 536,
+    "fields": {
+        "product": 21,
+        "attribute": 61,
+        "value": "1.07 млрд, 10 bits (8 bits + FRC)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 537,
+    "fields": {
+        "product": 21,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 538,
+    "fields": {
+        "product": 21,
+        "attribute": 62,
+        "value": "Anti-Flicker\r\nLess Blue Light"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 539,
+    "fields": {
+        "product": 21,
+        "attribute": 13,
+        "value": "6.3"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 540,
+    "fields": {
+        "product": 21,
+        "attribute": 63,
+        "value": "Кут нахилу: -5° ~ 20°\r\nПоворот -45° ~ 45°\r\nРегулювання за висотою 0 ~ 130 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 541,
+    "fields": {
+        "product": 21,
+        "attribute": 15,
+        "value": "Adobe RGB / DCI-P3 / sRGB 94%/98%/150%\r\nKVM-модуль"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 542,
+    "fields": {
+        "product": 21,
+        "attribute": 14,
+        "value": "Монітор\r\nКабель DisplayPort\r\nКабель живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 543,
+    "fields": {
+        "product": 22,
+        "attribute": 37,
+        "value": "180 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 544,
+    "fields": {
+        "product": 22,
+        "attribute": 36,
+        "value": "23.8\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 545,
+    "fields": {
+        "product": 22,
+        "attribute": 39,
+        "value": "1920x1080 (FullHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 546,
+    "fields": {
+        "product": 22,
+        "attribute": 52,
+        "value": "1 мс (GTG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 547,
+    "fields": {
+        "product": 22,
+        "attribute": 53,
+        "value": "350 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 548,
+    "fields": {
+        "product": 22,
+        "attribute": 64,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 549,
+    "fields": {
+        "product": 22,
+        "attribute": 54,
+        "value": "Безрамковий (Сinema screen)\r\nПоворотний екран (Pivot)\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 550,
+    "fields": {
+        "product": 22,
+        "attribute": 55,
+        "value": "1000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 551,
+    "fields": {
+        "product": 22,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 552,
+    "fields": {
+        "product": 22,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 553,
+    "fields": {
+        "product": 22,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 554,
+    "fields": {
+        "product": 22,
+        "attribute": 58,
+        "value": "AMD FreeSync Premium\r\nAdaptive Sync\r\nNVIDIA G-SYNC Compatible"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 555,
+    "fields": {
+        "product": 22,
+        "attribute": 59,
+        "value": "16:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 556,
+    "fields": {
+        "product": 22,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 557,
+    "fields": {
+        "product": 22,
+        "attribute": 60,
+        "value": "100x100 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 558,
+    "fields": {
+        "product": 22,
+        "attribute": 61,
+        "value": "16.7 млн"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 559,
+    "fields": {
+        "product": 22,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 560,
+    "fields": {
+        "product": 22,
+        "attribute": 13,
+        "value": "5.4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 561,
+    "fields": {
+        "product": 22,
+        "attribute": 63,
+        "value": "Нахил (Tilt):+23°~ -5\r\nПоворот (Swivel):+15°~-15°\r\nПоворот (Pivot): +90°/-90°\r\nРегулювання висоти ( Height Adjustment):0~120mm"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 562,
+    "fields": {
+        "product": 22,
+        "attribute": 15,
+        "value": "Low Blue Light\r\nFlicker Free\r\nColor Temp. Selection\r\nTrace Free\r\nGame Visual\r\nGame Plus\r\nExtreme Low Motion Blur\r\nТехнологія VRR :(Adaptive-Sync)\r\nGameFast Input\r\nShadow Boost\r\nDisplayWidget Center"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 563,
+    "fields": {
+        "product": 22,
+        "attribute": 14,
+        "value": "Кабель DisplayPort\r\nШнур живлення\r\nКороткий посібник\r\nГарантійний талон"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 564,
+    "fields": {
+        "product": 23,
+        "attribute": 37,
+        "value": "100 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 565,
+    "fields": {
+        "product": 23,
+        "attribute": 36,
+        "value": "27\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 566,
+    "fields": {
+        "product": 23,
+        "attribute": 39,
+        "value": "1920x1080 (FullHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 567,
+    "fields": {
+        "product": 23,
+        "attribute": 52,
+        "value": "1 ms (VRB) / 4 ms (GTG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 568,
+    "fields": {
+        "product": 23,
+        "attribute": 53,
+        "value": "250 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 569,
+    "fields": {
+        "product": 23,
+        "attribute": 64,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 570,
+    "fields": {
+        "product": 23,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nБезрамковий (Сinema screen)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 571,
+    "fields": {
+        "product": 23,
+        "attribute": 55,
+        "value": "1000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 572,
+    "fields": {
+        "product": 23,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 573,
+    "fields": {
+        "product": 23,
+        "attribute": 7,
+        "value": "HDMI\r\nVGA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 574,
+    "fields": {
+        "product": 23,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 575,
+    "fields": {
+        "product": 23,
+        "attribute": 58,
+        "value": "AMD FreeSync"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 576,
+    "fields": {
+        "product": 23,
+        "attribute": 59,
+        "value": "16:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 577,
+    "fields": {
+        "product": 23,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 578,
+    "fields": {
+        "product": 23,
+        "attribute": 60,
+        "value": "75x75 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 579,
+    "fields": {
+        "product": 23,
+        "attribute": 61,
+        "value": "16.7 млн ​​(6 bit + FRC)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 580,
+    "fields": {
+        "product": 23,
+        "attribute": 13,
+        "value": "4кг"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 581,
+    "fields": {
+        "product": 23,
+        "attribute": 63,
+        "value": "-5/+15"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 582,
+    "fields": {
+        "product": 23,
+        "attribute": 15,
+        "value": "ZeroFrame\r\nBlue Light Filter\r\nFlicker-Less\r\nComfyview\r\nVisionCare 1.0\r\nLow Dimmingм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 583,
+    "fields": {
+        "product": 23,
+        "attribute": 14,
+        "value": "Монітор з підставкою\r\nКабель HDMI\r\nБлок живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 584,
+    "fields": {
+        "product": 24,
+        "attribute": 37,
+        "value": "180 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 585,
+    "fields": {
+        "product": 24,
+        "attribute": 36,
+        "value": "23.8\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 586,
+    "fields": {
+        "product": 24,
+        "attribute": 39,
+        "value": "1920x1080 (FullHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 587,
+    "fields": {
+        "product": 24,
+        "attribute": 52,
+        "value": "1 мс"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 588,
+    "fields": {
+        "product": 24,
+        "attribute": 53,
+        "value": "300 nits"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 589,
+    "fields": {
+        "product": 24,
+        "attribute": 64,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 590,
+    "fields": {
+        "product": 24,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nБезрамковий (Сinema screen)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 591,
+    "fields": {
+        "product": 24,
+        "attribute": 55,
+        "value": "1000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 592,
+    "fields": {
+        "product": 24,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 593,
+    "fields": {
+        "product": 24,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 594,
+    "fields": {
+        "product": 24,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 595,
+    "fields": {
+        "product": 24,
+        "attribute": 58,
+        "value": "AMD FreeSync Premium\r\nAdaptive Sync"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 596,
+    "fields": {
+        "product": 24,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 597,
+    "fields": {
+        "product": 24,
+        "attribute": 61,
+        "value": "16.7 млн (8-Bit)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 598,
+    "fields": {
+        "product": 24,
+        "attribute": 60,
+        "value": "75x75 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 599,
+    "fields": {
+        "product": 24,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 600,
+    "fields": {
+        "product": 24,
+        "attribute": 63,
+        "value": "Кут нахилу: -5 ° - 20 °"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 601,
+    "fields": {
+        "product": 24,
+        "attribute": 15,
+        "value": "Глибина кольору: 8 bits\r\nSRGB: 123 %\r\nБезрамковий дизайн\r\nAnti-Flicker\r\nLess Blue Light\r\nNight Vision"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 602,
+    "fields": {
+        "product": 24,
+        "attribute": 14,
+        "value": "1 x HDMI кабель\r\n1 x Кабель живлення"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 603,
+    "fields": {
+        "product": 25,
+        "attribute": 37,
+        "value": "175 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 604,
+    "fields": {
+        "product": 25,
+        "attribute": 36,
+        "value": "34\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 605,
+    "fields": {
+        "product": 25,
+        "attribute": 39,
+        "value": "3440x1440"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 606,
+    "fields": {
+        "product": 25,
+        "attribute": 52,
+        "value": "0.03 мс (GTG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 607,
+    "fields": {
+        "product": 25,
+        "attribute": 53,
+        "value": "250 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 608,
+    "fields": {
+        "product": 25,
+        "attribute": 64,
+        "value": "OLED"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 609,
+    "fields": {
+        "product": 25,
+        "attribute": 54,
+        "value": "Bluetooth\r\nFlicker-Free\r\nSmart TV\r\nWi-Fi\r\nБезрамковий (Сinema screen)\r\nПідтримка HDR\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 610,
+    "fields": {
+        "product": 25,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 611,
+    "fields": {
+        "product": 25,
+        "attribute": 65,
+        "value": "Вигнутий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 612,
+    "fields": {
+        "product": 25,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 613,
+    "fields": {
+        "product": 25,
+        "attribute": 58,
+        "value": "AMD FreeSync Premium\r\nNVIDIA G-SYNC Compatible"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 614,
+    "fields": {
+        "product": 25,
+        "attribute": 59,
+        "value": "Відношення сторін\r\n21:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 615,
+    "fields": {
+        "product": 25,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 616,
+    "fields": {
+        "product": 25,
+        "attribute": 61,
+        "value": "1.07 мільярда (10-bit)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 617,
+    "fields": {
+        "product": 25,
+        "attribute": 62,
+        "value": "Quantum Dot OLED\r\nVirtual AIM Point\r\nGame Mode\r\nGame Bar 2.0\r\nMobile to Screen - Mirroring, DLNA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 618,
+    "fields": {
+        "product": 25,
+        "attribute": 13,
+        "value": "З підставкою: 7,5. Без підставки: 5,5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 619,
+    "fields": {
+        "product": 25,
+        "attribute": 63,
+        "value": "Нахил -2° ~ 20°\r\nHAS (Регульована по висоті підставка) 120.0 ± 5.0 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 620,
+    "fields": {
+        "product": 25,
+        "attribute": 15,
+        "value": "Smart TV Tizen™ + Web Service Microsoft 365\r\nDisplayHDR True Black 400\r\nHDR10+\r\nРежим захисту очей (Eye Saver Mode)\r\nКомпенсація мерехтіння екрану (Flicker Free)\r\nMini-Display Port\r\nMicro HDMI 2.1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 621,
+    "fields": {
+        "product": 25,
+        "attribute": 14,
+        "value": "Мережевий кабель 1.5 м Mini-Display Port кабель\r\nПульт дистанційного керування"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 622,
+    "fields": {
+        "product": 26,
+        "attribute": 37,
+        "value": "170 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 623,
+    "fields": {
+        "product": 26,
+        "attribute": 36,
+        "value": "27\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 624,
+    "fields": {
+        "product": 26,
+        "attribute": 39,
+        "value": "2560x1440 (2K QHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 625,
+    "fields": {
+        "product": 26,
+        "attribute": 52,
+        "value": "1 мс (MPRT)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 626,
+    "fields": {
+        "product": 26,
+        "attribute": 53,
+        "value": "250 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 627,
+    "fields": {
+        "product": 26,
+        "attribute": 64,
+        "value": "VA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 628,
+    "fields": {
+        "product": 26,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nБезрамковий (Сinema screen)\r\nПідтримка HDR\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 629,
+    "fields": {
+        "product": 26,
+        "attribute": 55,
+        "value": "3000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 630,
+    "fields": {
+        "product": 26,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 631,
+    "fields": {
+        "product": 26,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2\r\nTRS mini-jack (3.5 мм)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 632,
+    "fields": {
+        "product": 26,
+        "attribute": 65,
+        "value": "Вигнутий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 633,
+    "fields": {
+        "product": 26,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 634,
+    "fields": {
+        "product": 26,
+        "attribute": 58,
+        "value": "Adaptive Sync\r\nNVIDIA G-SYNC Compatible"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 635,
+    "fields": {
+        "product": 26,
+        "attribute": 59,
+        "value": "16:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 636,
+    "fields": {
+        "product": 26,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 637,
+    "fields": {
+        "product": 26,
+        "attribute": 60,
+        "value": "75x75 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 638,
+    "fields": {
+        "product": 26,
+        "attribute": 61,
+        "value": "16.7 млн"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 639,
+    "fields": {
+        "product": 26,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 640,
+    "fields": {
+        "product": 26,
+        "attribute": 13,
+        "value": "5.65"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 641,
+    "fields": {
+        "product": 26,
+        "attribute": 63,
+        "value": "Регулювання нахилу: -5° ~ 20°\r\nПоворот (ліворуч/праворуч): -30° ~ 30°\r\nПоворот екрану: -5° ~ 5°\r\nРегулювання висоти: 0 ~ 130 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 642,
+    "fields": {
+        "product": 26,
+        "attribute": 14,
+        "value": "Монітор\r\nПідставка\r\nКабель живлення\r\nКабель Display Port\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 643,
+    "fields": {
+        "product": 27,
+        "attribute": 37,
+        "value": "160 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 644,
+    "fields": {
+        "product": 27,
+        "attribute": 36,
+        "value": "27\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 645,
+    "fields": {
+        "product": 27,
+        "attribute": 39,
+        "value": "3840x2160 (4K UltraHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 646,
+    "fields": {
+        "product": 27,
+        "attribute": 52,
+        "value": "0.5 мс (GtG, хв.)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 647,
+    "fields": {
+        "product": 27,
+        "attribute": 53,
+        "value": "400 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 648,
+    "fields": {
+        "product": 27,
+        "attribute": 64,
+        "value": "IPS"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 649,
+    "fields": {
+        "product": 27,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nUSB-концентратор\r\nБезрамковий (Сinema screen)\r\nПоворотний екран (Pivot)\r\nПідтримка HDR\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 650,
+    "fields": {
+        "product": 27,
+        "attribute": 55,
+        "value": "1000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 651,
+    "fields": {
+        "product": 27,
+        "attribute": 56,
+        "value": "Quantum Dot LED (QLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 652,
+    "fields": {
+        "product": 27,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2\r\nTRS mini-jack (3.5 мм)\r\nUSB Type-A\r\nUSB type-C"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 653,
+    "fields": {
+        "product": 27,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 654,
+    "fields": {
+        "product": 27,
+        "attribute": 59,
+        "value": "16:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 655,
+    "fields": {
+        "product": 27,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 656,
+    "fields": {
+        "product": 27,
+        "attribute": 60,
+        "value": "75x75 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 657,
+    "fields": {
+        "product": 27,
+        "attribute": 61,
+        "value": "1.07 млрд, 10біт (8біт + FRC)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 658,
+    "fields": {
+        "product": 27,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 659,
+    "fields": {
+        "product": 27,
+        "attribute": 13,
+        "value": "6.4"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 660,
+    "fields": {
+        "product": 27,
+        "attribute": 63,
+        "value": "Нахил: -5 ° ~ 20 °\r\nПоворот: -30 ° ~ 30 °\r\nОбертання: -90 ° ~ 90 °\r\nЗа висотою: 0 ~ 110 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 661,
+    "fields": {
+        "product": 27,
+        "attribute": 15,
+        "value": "VESA DisplayHDR 400\r\nAdobe RGB / DCI-P3 / SRGB: 99% / 98% / 145%"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 662,
+    "fields": {
+        "product": 27,
+        "attribute": 14,
+        "value": "Монітор\r\nКабель живлення\r\nБлок живлення\r\nДокументація"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 663,
+    "fields": {
+        "product": 28,
+        "attribute": 37,
+        "value": "240 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 664,
+    "fields": {
+        "product": 28,
+        "attribute": 36,
+        "value": "31.5\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 665,
+    "fields": {
+        "product": 28,
+        "attribute": 39,
+        "value": "2560x1440 (2K QHD)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 666,
+    "fields": {
+        "product": 28,
+        "attribute": 52,
+        "value": "1 мс (GtG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 667,
+    "fields": {
+        "product": 28,
+        "attribute": 53,
+        "value": "600 кд/м² (Пікова)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 668,
+    "fields": {
+        "product": 28,
+        "attribute": 64,
+        "value": "VA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 669,
+    "fields": {
+        "product": 28,
+        "attribute": 54,
+        "value": "Bluetooth\r\nFlicker-Free\r\nSmart TV\r\nUSB-концентратор\r\nWi-Fi\r\nБезрамковий (Сinema screen)\r\nПоворотний екран (Pivot)\r\nРегулювання за висотою"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 670,
+    "fields": {
+        "product": 28,
+        "attribute": 55,
+        "value": "2500:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 671,
+    "fields": {
+        "product": 28,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 672,
+    "fields": {
+        "product": 28,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2\r\nRJ-45 (LAN)\r\nTRS mini-jack (3.5 мм)\r\nUSB Type-A"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 673,
+    "fields": {
+        "product": 28,
+        "attribute": 65,
+        "value": "Вигнутий"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 674,
+    "fields": {
+        "product": 28,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 675,
+    "fields": {
+        "product": 28,
+        "attribute": 58,
+        "value": "AMD FreeSync Premium Pro\r\nAdaptive Sync\r\nNVIDIA G-SYNC Compatible"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 676,
+    "fields": {
+        "product": 28,
+        "attribute": 59,
+        "value": "16:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 677,
+    "fields": {
+        "product": 28,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 678,
+    "fields": {
+        "product": 28,
+        "attribute": 60,
+        "value": "100x100 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 679,
+    "fields": {
+        "product": 28,
+        "attribute": 61,
+        "value": "1.07 млрд (8-Bit + FRC)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 680,
+    "fields": {
+        "product": 28,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 681,
+    "fields": {
+        "product": 28,
+        "attribute": 62,
+        "value": "AMD FreeSync Premium Pro\r\nNvidia's ‘G-SYNC Compatible\r\nVESA DisplayHDR 600 certification\r\nРежим захисту очей (Eye Saver Mode)\r\nКомпенсація мерехтіння екрана (Flicker Free)\r\nОптимізатор рівня чорного Black Equalize\r\nКартинка-у-картинці (Picture In Picture)\r\nКолірний обхват 95% DCI-P3\r\nКолірний обхват 125% sRGB"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 682,
+    "fields": {
+        "product": 28,
+        "attribute": 13,
+        "value": "З підставкою: 8,2. Без підставки: 6,5"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 683,
+    "fields": {
+        "product": 28,
+        "attribute": 63,
+        "value": "Обертання у площині столу: -15° ~ +15°\r\nHAS (Регульована за висотою підставка): 120 мм\r\nPivot (Портретний режим): -2° ~ +92°\r\nНахил: -9° ~ 13°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 684,
+    "fields": {
+        "product": 28,
+        "attribute": 15,
+        "value": "Smart TV ОС Tizen\r\nMicrosoft 365\r\nWi-Fi 5\r\nEthernet (LAN)\r\nBluetooth 5,2\r\nЗвіт про заводське калібрування"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 685,
+    "fields": {
+        "product": 28,
+        "attribute": 14,
+        "value": "Монітор\r\nМережевий кабель 1.5 м\r\nDP кабель\r\nПульт ДК"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 686,
+    "fields": {
+        "product": 29,
+        "attribute": 39,
+        "value": "100 Гц"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 687,
+    "fields": {
+        "product": 29,
+        "attribute": 36,
+        "value": "34\""
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 688,
+    "fields": {
+        "product": 29,
+        "attribute": 39,
+        "value": "3440x1440"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 689,
+    "fields": {
+        "product": 29,
+        "attribute": 52,
+        "value": "1 мс (MPRT) 4 мс (GtG)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 690,
+    "fields": {
+        "product": 29,
+        "attribute": 53,
+        "value": "300 кд/м²"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 691,
+    "fields": {
+        "product": 29,
+        "attribute": 64,
+        "value": "VA"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 692,
+    "fields": {
+        "product": 29,
+        "attribute": 54,
+        "value": "Flicker-Free\r\nБезрамковий (Сinema screen)\r\nПідтримка HDR"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 693,
+    "fields": {
+        "product": 29,
+        "attribute": 55,
+        "value": "4000:1"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 694,
+    "fields": {
+        "product": 29,
+        "attribute": 56,
+        "value": "LED (WLED)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 695,
+    "fields": {
+        "product": 29,
+        "attribute": 7,
+        "value": "DisplayPort\r\nHDMI х 2\r\nTRS mini-jack (3.5 мм)"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 696,
+    "fields": {
+        "product": 29,
+        "attribute": 58,
+        "value": "AMD FreeSync\r\nAdaptive Sync"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 697,
+    "fields": {
+        "product": 29,
+        "attribute": 57,
+        "value": "178°"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 698,
+    "fields": {
+        "product": 29,
+        "attribute": 59,
+        "value": "21:9"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 699,
+    "fields": {
+        "product": 29,
+        "attribute": 27,
+        "value": "Black"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 700,
+    "fields": {
+        "product": 29,
+        "attribute": 60,
+        "value": "100x100 мм"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 701,
+    "fields": {
+        "product": 29,
+        "attribute": 61,
+        "value": "16.7 млн"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 702,
+    "fields": {
+        "product": 29,
+        "attribute": 40,
+        "value": "Матове"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 703,
+    "fields": {
+        "product": 29,
+        "attribute": 13,
+        "value": "7.67"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 704,
+    "fields": {
+        "product": 29,
+        "attribute": 15,
+        "value": "Adaptive Syncs\r\nsRGB 115%\r\nDCI-P3 91%\r\nLow Blue Light\r\nFlicker-Free\r\nMultiView PbP\r\n3-side frameless"
+    }
+},
+{
+    "model": "product.productattribute",
+    "pk": 705,
+    "fields": {
+        "product": 29,
+        "attribute": 14,
+        "value": "Монітор з підставкою\r\nКабель HDMI\r\nКабель живлення\r\nУгода користувача"
+    }
+},
+{
     "model": "product.categoryattribute",
     "pk": 2,
     "fields": {
@@ -18703,6 +21170,789 @@
     "fields": {
         "product": 19,
         "image": "product_images/04/19/files/product-2025-04-19_11-56-21_Wo761Ja.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 207,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 208,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_MaILddt.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 209,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_MYJV4gt.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 210,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_8bq90F4.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 211,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_3Y9KmiJ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 212,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_ggbNaLx.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 213,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_awAKb4X.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 214,
+    "fields": {
+        "product": 20,
+        "image": "product_images/04/21/files/product-2025-04-21_11-04-41_ATt1UdF.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 215,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 216,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_OC9XZXh.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 217,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_6G4BXXg.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 218,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_QNqsObM.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 219,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_P1LpQwk.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 220,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_685A4qI.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 221,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_RYHuPfx.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 222,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_YpGLut1.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 223,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_CydiPCG.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 224,
+    "fields": {
+        "product": 21,
+        "image": "product_images/04/21/files/product-2025-04-21_11-16-39_7urNQ0H.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 225,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 226,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_FcdxTLZ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 227,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_VCGjxNU.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 228,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_iRqqf47.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 229,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_Mr3nz7Z.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 230,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_c69gFJ9.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 231,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_XDmLqgh.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 232,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_NFNbukJ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 233,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_dA0ta16.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 234,
+    "fields": {
+        "product": 22,
+        "image": "product_images/04/21/files/product-2025-04-21_11-26-45_fTLbYMD.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 235,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 236,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_VhtE174.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 237,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_KXFfSiB.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 238,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_YxWSttj.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 239,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_F4HZLQV.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 240,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_bSB7ETZ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 241,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_NZZgVQb.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 242,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_cwkyNll.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 243,
+    "fields": {
+        "product": 23,
+        "image": "product_images/04/21/files/product-2025-04-21_11-37-45_unXl2VF.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 244,
+    "fields": {
+        "product": 24,
+        "image": "product_images/04/21/files/product-2025-04-21_11-55-16.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 245,
+    "fields": {
+        "product": 24,
+        "image": "product_images/04/21/files/product-2025-04-21_11-55-16_f7Z6TND.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 246,
+    "fields": {
+        "product": 24,
+        "image": "product_images/04/21/files/product-2025-04-21_11-55-16_D7QRIqK.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 247,
+    "fields": {
+        "product": 24,
+        "image": "product_images/04/21/files/product-2025-04-21_11-55-16_uAVsZOO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 248,
+    "fields": {
+        "product": 24,
+        "image": "product_images/04/21/files/product-2025-04-21_11-55-16_jNsg9sY.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 249,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 250,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_7rF2RQB.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 251,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_D2wUpdG.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 252,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_4RAJQQy.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 253,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_5ZLORQL.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 254,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_hF6H96b.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 255,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_5VpUfsf.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 256,
+    "fields": {
+        "product": 25,
+        "image": "product_images/04/21/files/product-2025-04-21_12-56-07_4OyALub.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 257,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 258,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_SWMdjHQ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 259,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_ICARf8Z.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 260,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_kB2sZuT.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 261,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_E9nLsfb.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 262,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_1ru38Ks.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 263,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_KuC7wbi.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 264,
+    "fields": {
+        "product": 26,
+        "image": "product_images/04/21/files/product-2025-04-21_13-01-49_B3t1sns.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 265,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 266,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_fYZkZQj.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 267,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_ugKnDYb.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 268,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_y6IIK8u.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 269,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_VtQvxbO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 270,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_D9SJt4N.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 271,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_yZzazgd.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 272,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_QRyqDVd.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 273,
+    "fields": {
+        "product": 27,
+        "image": "product_images/04/21/files/product-2025-04-21_13-08-18_335nlVH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 274,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 275,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_i7agQa4.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 276,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_oOazTkg.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 277,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_xCSc6p6.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 278,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_OZbVjTk.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 279,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_vtiIzeO.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 280,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_KL7qA4l.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 281,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_hZYOUpN.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 282,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_p4z7Pwm.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 283,
+    "fields": {
+        "product": 28,
+        "image": "product_images/04/22/files/product-2025-04-22_09-14-28_yEiGzF0.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 284,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49.webp",
+        "is_main": true
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 285,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_XG53Foi.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 286,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_K0KsRGF.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 287,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_DvQ6W6A.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 288,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_X2xFsXJ.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 289,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_uI03SyH.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 290,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_H81rFap.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 291,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_NE8FoUy.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 292,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_0ttHsHr.webp",
+        "is_main": false
+    }
+},
+{
+    "model": "product.productimage",
+    "pk": 293,
+    "fields": {
+        "product": 29,
+        "image": "product_images/04/22/files/product-2025-04-22_09-20-49_xeAIQDN.webp",
         "is_main": false
     }
 },
