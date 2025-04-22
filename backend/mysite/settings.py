@@ -171,6 +171,7 @@ CORS_ALLOW_HEADERS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
+
 # Rest Framework settings
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
@@ -189,14 +190,15 @@ SIMPLE_JWT = {
     # Налаштування для cookie:
     "AUTH_COOKIE": "access_token",
     "AUTH_COOKIE_DOMAIN": None,
-    "AUTH_COOKIE_SECURE": True,
+    "AUTH_COOKIE_SECURE": False,  # False True
     "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_PATH": "/",
-    "AUTH_COOKIE_SAMESITE": "None",
+    "AUTH_COOKIE_SAMESITE": "Lax",  # None
 }
-SESSION_COOKIE_SECURE = True  # обов'язково, бо HTTPS
-SESSION_COOKIE_SAMESITE = "None"  # бо бек і фронт на різних доменах
-SESSION_COOKIE_HTTPONLY = True  # залишаєш, захищає від XSS
+# Deploy only
+# SESSION_COOKIE_SECURE = True
+# SESSION_COOKIE_SAMESITE = "None"
+# SESSION_COOKIE_HTTPONLY = True
 
 
 # Languages
