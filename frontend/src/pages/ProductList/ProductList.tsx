@@ -11,11 +11,11 @@ import { IProduct } from "../../store/types";
 import { useTranslation } from "react-i18next";
 import { TFunctionNonStrict } from "i18next";
 
-function RenderListTitle({ slug }: { slug: string }) {
-  let newStr = slug.charAt(0).toUpperCase() + slug.slice(1);
-  newStr = newStr.replace(/-/g, " ");
-  return newStr;
-}
+// function RenderListTitle({ slug }: { slug: string }) {
+//   let newStr = slug.charAt(0).toUpperCase() + slug.slice(1);
+//   newStr = newStr.replace(/-/g, " ");
+//   return newStr;
+// }
 
 function RenderProductList({
   productList,
