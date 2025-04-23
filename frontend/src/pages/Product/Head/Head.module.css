@@ -69,6 +69,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 114%;
+  cursor: pointer;
+}
+
+.navigation__item:hover {
+  transform: scale(1.1);
 }
 
 .navigation__item_active {
