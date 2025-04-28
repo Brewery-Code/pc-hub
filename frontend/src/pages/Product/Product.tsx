@@ -9,7 +9,6 @@ import {
   useParams,
   useSearchParams,
 } from "react-router-dom";
-import { UIBreadcrumbs } from "../../components/UI";
 import Head from "./Head/Head";
 import AllInfo from "./AllInfo/AllInfo";
 import Characteristics from "./Characteristics/Characteristics";
@@ -128,15 +127,15 @@ function Product() {
 
   return (
     <div className={styles.product}>
-      <div className="product__container">
-        <div className={styles.product__body}>
-          <UIBreadcrumbs className={styles.product__breadcrumbs} />
-          <Head
-            product={product}
-            className={styles["product__head"]}
-            handleSection={setSearchParams}
-            activeSection={nav}
-          />
+      {/* <div className="product__container"> */}
+      <div className={styles.product__body}>
+        <Head
+          product={product}
+          className={styles["product__head"]}
+          handleSection={setSearchParams}
+          activeSection={nav}
+        />
+        <div className="product__container">
           <RenderSection
             nav={nav}
             product={product}
@@ -147,6 +146,7 @@ function Product() {
           />
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }

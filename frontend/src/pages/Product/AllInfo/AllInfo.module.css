@@ -431,8 +431,12 @@
   }
 
   .images__container {
+    position: relative;
+    left: -16px;
     overflow-x: auto;
     order: 1;
+    width: calc(100% + 32px);
+    padding: 0 16px;
   }
 
   .images__list {

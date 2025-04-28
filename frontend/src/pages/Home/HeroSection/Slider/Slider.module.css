@@ -73,7 +73,9 @@
 
 @media (max-width: 767.8px) {
   .slider {
-    overflow: visible;
+    /* overflow: visible; */
+    left: -16px;
+    width: calc(100% + 32px);
   }
 
   .slider__item {
@@ -81,7 +83,7 @@
     align-items: end;
     gap: 6px;
     width: calc(100% + 32px);
-    padding: 54px 16px 0 16px;
+    padding: 54px 32px 0 32px;
   }
 
   .slider__title {
@@ -106,7 +108,7 @@
 
   .counter {
     justify-content: end;
-    right: 0;
+    right: 16px;
     bottom: 12px;
   }
 }

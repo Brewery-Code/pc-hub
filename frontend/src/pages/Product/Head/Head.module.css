@@ -1,14 +1,19 @@
 .head {
-  /* position: relative; */
-  /* z-index: 10;
+  z-index: 10;
   position: sticky;
-  top: 10px; */
+  top: -49px;
+  width: 100%;
   background-color: var(--white);
+}
+
+.head__breadcrumbs {
+  /* margin-top: 32px; */
 }
 
 .head__row {
   display: flex;
   justify-content: space-between;
+  margin-top: 48px;
 }
 
 .head__name {
@@ -46,11 +51,18 @@
 }
 
 .navigation {
-  /* position: sticky;
-  top: 200px; */
+  overflow-x: scroll;
+  position: relative;
   display: flex;
   align-items: center;
   margin-top: 24px;
+}
+
+@media (max-width: 767.8px) {
+  .navigation {
+    left: -16px;
+    width: calc(100% + 32px);
+  }
 }
 
 .navigation::before {
@@ -70,10 +82,11 @@
   font-size: 14px;
   line-height: 114%;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .navigation__item:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 .navigation__item_active {

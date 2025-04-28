@@ -181,7 +181,15 @@
 }
 
 @media (max-width: 767.8px) {
+  .reviews {
+    overflow: hidden;
+    position: relative;
+    left: -16px;
+    width: calc(100% + 32px);
+  }
+
   .reviews__title {
+    margin-left: 16px;
     font-size: 18px;
     line-height: 133%;
   }

@@ -40,25 +40,35 @@
   stroke: var(--soft);
 }
 
-.button__filled:hover {
-  background-color: var(--color-hover);
-  border: 2px solid var(--color-hover);
+@media (hover: hover) {
+  .button__filled:hover {
+    background-color: var(--color-hover);
+    border: 2px solid var(--color-hover);
+  }
+
+  .button__filled:active {
+    border: 2px solid var(--color-active);
+    box-shadow: 0 0 3px var(--color-shadow);
+  }
+
+  .button__filled:disabled {
+    background-color: var(--grey-scale-20);
+    color: var(--grey-scale-40);
+    border: 2px solid var(--grey-scale-40);
+  }
+
+  .button__filled:disabled svg {
+    fill: var(--grey-scale-40);
+    stroke: var(--grey-scale-40);
+  }
 }
 
-.button__filled:active {
-  border: 2px solid var(--color-active);
-  box-shadow: 0 0 3px var(--color-shadow);
-}
-
-.button__filled:disabled {
-  background-color: var(--grey-scale-20);
-  color: var(--grey-scale-40);
-  border: 2px solid var(--grey-scale-40);
-}
-
-.button__filled:disabled svg {
-  fill: var(--grey-scale-40);
-  stroke: var(--grey-scale-40);
+@media (hover: none) {
+  .button__filled:active {
+    border: 2px solid var(--color-active);
+    box-shadow: 0 0 3px var(--color-shadow);
+    background-color: var(--color-hover);
+  }
 }
 
 .button__outline {

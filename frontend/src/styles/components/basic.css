@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
@@ -40,7 +40,7 @@ body {
     visibility: inherit;
     opacity: 1;
     position: inherit;
-    /* display: unset; */
+    /* display: inherit; */
   }
 
   .only-desktop {
