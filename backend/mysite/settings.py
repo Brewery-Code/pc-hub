@@ -190,15 +190,15 @@ SIMPLE_JWT = {
     # Налаштування для cookie:
     "AUTH_COOKIE": "access_token",
     "AUTH_COOKIE_DOMAIN": None,
-    "AUTH_COOKIE_SECURE": True,  # False True
+    "AUTH_COOKIE_SECURE": False,  # False True
     "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_PATH": "/",
-    "AUTH_COOKIE_SAMESITE": "None",  # None
+    "AUTH_COOKIE_SAMESITE": "Lux",  # None
 }
 # Deploy only
-SESSION_COOKIE_SECURE = True
-SESSION_COOKIE_SAMESITE = "None"
-SESSION_COOKIE_HTTPONLY = True
+# SESSION_COOKIE_SECURE = True
+# SESSION_COOKIE_SAMESITE = "None"
+# SESSION_COOKIE_HTTPONLY = True
 
 
 # Languages
