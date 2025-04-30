@@ -18,6 +18,10 @@ services:
     volumes:
       - /app/node_modules
       - ./frontend:/app
+    deploy:
+      resources:
+        limits:
+          cpus: '0.3'
   backend:
     build: ./backend
     restart: always
@@ -33,6 +37,16 @@ services:
     restart: always
     ports:
       - '8888:8080'
+  elasticsearch:
+    image: elasticsearch:7.10.1
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - '9200:9200'
+    volumes:
+      - es_data:/usr/share/elasticsearch/data/
 
 volumes:
   postgres_data:
+  es_data:

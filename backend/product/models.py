@@ -1,6 +1,5 @@
 from datetime import timedelta
 import random
-from unicodedata import category
 from django.utils.timezone import now
 from django.db import models
 from mptt.models import MPTTModel, TreeForeignKey
