@@ -193,7 +193,7 @@ SIMPLE_JWT = {
     "AUTH_COOKIE_SECURE": False,  # False True
     "AUTH_COOKIE_HTTP_ONLY": True,
     "AUTH_COOKIE_PATH": "/",
-    "AUTH_COOKIE_SAMESITE": "Lux",  # None
+    "AUTH_COOKIE_SAMESITE": "Lax",  # None
 }
 # Deploy only
 # SESSION_COOKIE_SECURE = True
