@@ -10,18 +10,6 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-  frontend:
-    build: ./frontend
-    restart: always
-    ports:
-      - '5173:5173'
-    volumes:
-      - /app/node_modules
-      - ./frontend:/app
-    deploy:
-      resources:
-        limits:
-          cpus: '0.3'
   backend:
     build: ./backend
     restart: always
