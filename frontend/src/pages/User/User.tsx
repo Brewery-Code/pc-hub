@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import { URLSearchParamsInit, useSearchParams } from "react-router-dom";
 import Wishlist from "./Wishlist/Wishlist";
 import { useEffect } from "react";
+import Profile from "./Profile/Profile";
 
 const PrintContent = ({
   nav,
@@ -23,7 +24,7 @@ const PrintContent = ({
   else if (nav === "wishlist") return <Wishlist />;
   else if (nav === "viewed") return <div className="">Later</div>;
   else if (nav === "reviews") return <div className="">Later</div>;
-  else if (nav === "profile") return <div className="">Later</div>;
+  else if (nav === "profile") return <Profile />;
   else setSearchParams({ nav: "profile" });
 };
 

@@ -12,5 +12,22 @@
     "copy": "Копіювати посилання",
     "send": "Відправити другу",
     "empty": "Ваш список покищо порожній"
+  },
+  "profile": {
+    "title": "Персональні дані",
+    "uploadImg": "Завантажити фото",
+    "fullName": "ПІБ",
+    "phone": "Телефон",
+    "email": "Email",
+    "delivery": "Спосіб доставки",
+    "social": "Соцмережі",
+    "linkAccount": "Прив'язати акаунт",
+    "notification": "Налаштування сповіщень",
+    "notificationSys": "Система сповіщень",
+    "promotions": "Акції",
+    "companyNews": "Новини компанії",
+    "industryNews": "Новини індустрії",
+    "changePassword": "Змінити пароль",
+    "logOut": "Вийти"
   }
 }

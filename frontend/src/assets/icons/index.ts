@@ -52,3 +52,5 @@ export { default as BasketIcon } from "./BasketIcon";
 export { default as LetterIcon } from "./LetterIcon";
 export { default as ShareIcon } from "./ShareIcon";
 export { default as CopyLinkIcon } from "./CopyLinkIcon";
+export { default as PenIcon } from "./PenIcon";
+export { default as GoogleColorfulIcon } from "./GoogleColorfulIcon";

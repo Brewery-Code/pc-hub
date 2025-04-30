@@ -12,5 +12,22 @@
     "copy": "Copy link",
     "send": "Send to friend",
     "empty": "Your list is still empty"
+  },
+  "profile": {
+    "title": "Personal data",
+    "uploadImg": "Upload img",
+    "fullName": "Full name",
+    "phone": "Phone",
+    "email": "Email",
+    "delivery": "Delivery method",
+    "social": "Social network",
+    "linkAccount": "Link account",
+    "notification": "Notification settings",
+    "notificationSys": "Notification system",
+    "promotions": "Promotions",
+    "companyNews": "Company news",
+    "industryNews": "Industry news",
+    "changePassword": "Change password",
+    "logOut": "Log out"
   }
 }

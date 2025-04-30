@@ -51,7 +51,7 @@
 }
 
 .navigation {
-  overflow-x: scroll;
+  overflow-x: auto;
   position: relative;
   display: flex;
   align-items: center;
